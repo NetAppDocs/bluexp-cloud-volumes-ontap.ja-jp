@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: task-verify-autosupport.html 
 keywords: autosupport, set up autosupport, test autosupport, asup, test asup 
-summary: AutoSupport は、システムの健常性をプロアクティブに監視し、ネットアップテクニカルサポートにメッセージを送信します。デフォルトでは、各ノードで AutoSupport が有効になっており、 HTTPS 転送プロトコルを使用してテクニカルサポートにメッセージを送信できます。 
+summary: AutoSupport は、システムの健常性をプロアクティブに監視し、ネットアップテクニカルサポートにメッセージを送信します。デフォルトでは、各ノードで AutoSupport が有効になっており、 HTTPS 転送プロトコルを使用してテクニカルサポートにメッセージを送信できます。AutoSupport がこれらのメッセージを送信できることを確認することをお勧めします。 
 ---
 = AutoSupport のセットアップを確認します
 :hardbreaks:
@@ -16,9 +16,7 @@ summary: AutoSupport は、システムの健常性をプロアクティブに�
 [role="lead"]
 AutoSupport は、システムの健常性をプロアクティブに監視し、ネットアップテクニカルサポートにメッセージを送信します。デフォルトでは、各ノードで AutoSupport が有効になっており、 HTTPS 転送プロトコルを使用してテクニカルサポートにメッセージを送信できます。AutoSupport がこれらのメッセージを送信できることを確認することをお勧めします。
 
-インスタンスを起動する前に Cloud Manager Account Admin がプロキシサーバを Cloud Manager に追加していた場合、 AutoSupport はそのプロキシサーバを Cloud Volumes ONTAP メッセージに使用するように設定されます。
-
-必要な設定手順は、 Cloud Volumes ONTAP インスタンスまたは環境のプロキシサービスを介してアウトバウンドのインターネット接続を確立することだけです。詳細については、クラウドプロバイダのネットワーク要件を参照してください。
+必要な設定手順は、 Cloud Volumes ONTAP がアウトバウンドインターネットに接続されていることを確認することだけです。詳細については、クラウドプロバイダのネットワーク要件を参照してください。
 
 ifdef::aws[]
 

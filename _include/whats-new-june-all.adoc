@@ -18,4 +18,4 @@ Cloud Volumes ONTAP の高度な管理を行う必要がある場合は、ONTAP 
 
 この拡張ビューは、Cloud Volumes ONTAP 9.10.0以降でプレビューとして使用できます。今後のリリースでは、この点をさらに改良し、機能を強化する予定です。製品内のチャットでご意見をお寄せください。
 
-link:task-administer-advanced-view.html["詳細については、「詳細ビュー」を参照してください"]。
+https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-administer-advanced-view.html["詳細については、「詳細ビュー」を参照してください"]。

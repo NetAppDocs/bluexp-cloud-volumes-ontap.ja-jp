@@ -95,11 +95,11 @@ HA ペアの場合は、 4 つの VPC が必要です。これらの各 VPC は�
 
 共有 VPC を使用すると、複数のプロジェクトの仮想ネットワークを設定し、一元管理できます。ホストプロジェクト _ で共有 VPC ネットワークをセットアップし、 Connector および Cloud Volumes ONTAP 仮想マシンインスタンスをサービスプロジェクト _ で導入できます。 https://cloud.google.com/vpc/docs/shared-vpc["Google Cloud のドキュメント：「 Shared VPC Overview"^]。
 
-link:task-creating-connectors-gcp.html#shared-vpc-permissions["Connector の導入でカバーされている必要な共有 VPC の権限を確認します"]。
+https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-creating-connectors-gcp.html#shared-vpc-permissions["Connector の導入でカバーされている必要な共有 VPC の権限を確認します"^]
 
 --
 VPC でのパケットミラーリング:: https://cloud.google.com/vpc/docs/packet-mirroring["パケットミラーリング"^] Cloud Volumes ONTAP を導入する Google Cloud VPC で無効にする必要があります。パケットミラーリングがイネーブルの場合、 Cloud Volumes ONTAP は正常に動作しません。
-Cloud Volumes ONTAP 用のアウトバウンドインターネットアクセス:: Cloud Volumes ONTAP では、ネットアップ AutoSupport にメッセージを送信するためにアウトバウンドインターネットアクセスが必要です。ネットアップ AutoSupport は、ストレージの健全性をプロアクティブに監視します。
+Cloud Volumes ONTAP 用のアウトバウンドインターネットアクセス:: Cloud Volumes ONTAP では、ネットアップAutoSupport へのアウトバウンドのインターネットアクセスが必要です。ネットアップは、システムの健常性をプロアクティブに監視し、ネットアップテクニカルサポートにメッセージを送信します。
 +
 --
 Cloud Volumes ONTAP が AutoSupport メッセージを送信できるように、ルーティングポリシーとファイアウォールポリシーで次のエンドポイントへの HTTP / HTTPS トラフィックを許可する必要があります。
@@ -107,7 +107,13 @@ Cloud Volumes ONTAP が AutoSupport メッセージを送信できるように�
 * \ https://support.netapp.com/aods/asupmessage
 * \ https://support.netapp.com/asupprod/post/1.0/postAsup
 +
-link:task-verify-autosupport.html["AutoSupport の検証方法について説明します"]。
+アウトバウンドのインターネット接続を使用してAutoSupport メッセージを送信できない場合、Cloud Managerは、コネクタをプロキシサーバとして使用するようにCloud Volumes ONTAP システムを自動的に設定します。唯一の要件は、コネクタのファイアウォールがポート3128上の_INBOUND接続を許可することです。コネクタを展開した後、このポートを開く必要があります。
+
++
+Cloud Volumes ONTAP に厳密なアウトバウンドルールを定義した場合は、Cloud Volumes ONTAP ファイアウォールがポート3128で_OUTBOUND接続を許可することも必要です。
+
++
+アウトバウンドのインターネットアクセスが使用可能であることを確認したら、 AutoSupport をテストしてメッセージを送信できることを確認します。手順については、を参照してください https://docs.netapp.com/us-en/ontap/system-admin/setup-autosupport-task.html["ONTAP のドキュメント：「 AutoSupport のセットアップ"^]。
 
 +
 
@@ -220,9 +226,7 @@ HA 構成を導入する場合は、 VPC 0 の Cloud Volumes ONTAP のファイ�
 
 === インバウンドルール
 
-HAペアの場合、事前定義されたファイアウォールポリシーのインバウンドトラフィックのソースフィルタは0.0.0.0/0です。
-
-シングルノードシステムの場合は、導入時に事前定義されたファイアウォールポリシーのソースフィルタを選択できます。
+作業環境を作成する場合、展開時に定義済みファイアウォールポリシーのソースフィルタを選択できます。
 
 * *選択したVPCのみ*：インバウンドトラフィックのソースフィルタは、Cloud Volumes ONTAP システムのVPCのサブネット範囲、およびコネクタが存在するVPCのサブネット範囲です。これが推奨されるオプションです。
 * *すべてのVPC *：インバウンドトラフィックのソースフィルタは0.0.0.0/0のIP範囲です。
@@ -402,10 +406,13 @@ NOTE: source は、 Cloud Volumes ONTAP システムのインターフェイス�
 | TCP | 749 | データ LIF （ NFS 、 CIFS ） | Active Directory フォレスト | Kerberos V Change & Set Password （ RPCSEC_GSS ） 
 
 
-.2+| AutoSupport | HTTPS | 443 | ノード管理 LIF | support.netapp.com | AutoSupport （デフォルトは HTTPS ） 
+.3+| AutoSupport | HTTPS | 443 | ノード管理 LIF | support.netapp.com | AutoSupport （デフォルトは HTTPS ） 
 
 
 | HTTP | 80 | ノード管理 LIF | support.netapp.com | AutoSupport （転送プロトコルが HTTPS から HTTP に変更された場合のみ） 
+
+
+| TCP | 3128 | ノード管理 LIF | コネクタ | アウトバウンドのインターネット接続が使用できない場合に、コネクタのプロキシサーバを介してAutoSupport メッセージを送信する 
 
 
 | クラスタ | すべてのトラフィック | すべてのトラフィック | 1 つのノード上のすべての LIF | もう一方のノードのすべての LIF | クラスタ間通信（ Cloud Volumes ONTAP HA のみ） 
@@ -478,6 +485,9 @@ HA ノードから HA メディエーターへの通信は、ポート 3260 （ 
 
 
 | HTTPS | 443 | クライアント Web ブラウザからローカルへの HTTPS アクセスを提供します ユーザインターフェイス 
+
+
+| TCP | 3128 | Cloud Volumes ONTAP からネットアップサポートにAutoSupport メッセージを送信するためのインターネットアクセスを提供します。このポートは、コネクタの導入後に手動で開く必要があります。 
 |===
 
 

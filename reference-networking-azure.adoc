@@ -26,7 +26,7 @@ Azure では、次のネットワーク要件を満たしている必要があ�
 
 === アウトバウンドインターネットアクセス
 
-Cloud Volumes ONTAP では、ネットアップ AutoSupport にメッセージを送信するためにアウトバウンドインターネットアクセスが必要です。ネットアップ AutoSupport は、ストレージの健全性をプロアクティブに監視します。
+Cloud Volumes ONTAP ノードには、NetApp AutoSupport へのアウトバウンドインターネットアクセスが必要です。ネットアップは、システムの健常性をプロアクティブに監視し、ネットアップテクニカルサポートにメッセージを送信します。
 
 Cloud Volumes ONTAP が AutoSupport メッセージを送信できるように、ルーティングポリシーとファイアウォールポリシーで次のエンドポイントへの HTTP / HTTPS トラフィックを許可する必要があります。
 
@@ -34,7 +34,11 @@ Cloud Volumes ONTAP が AutoSupport メッセージを送信できるように�
 * \ https://support.netapp.com/asupprod/post/1.0/postAsup
 
 
-link:task-verify-autosupport["AutoSupport の検証方法について説明します"]。
+アウトバウンドのインターネット接続を使用してAutoSupport メッセージを送信できない場合、Cloud Managerは、コネクタをプロキシサーバとして使用するようにCloud Volumes ONTAP システムを自動的に設定します。唯一の要件は、コネクタのセキュリティグループがポート3128で_ inbound_connectionsを許可することです。コネクタを展開した後、このポートを開く必要があります。
+
+Cloud Volumes ONTAP に厳密なアウトバウンドルールを定義した場合は、Cloud Volumes ONTAP セキュリティグループがポート3128で_OUTBOUND接続を許可する必要もあります。
+
+アウトバウンドのインターネットアクセスが使用可能であることを確認したら、 AutoSupport をテストしてメッセージを送信できることを確認します。手順については、を参照してください https://docs.netapp.com/us-en/ontap/system-admin/setup-autosupport-task.html["ONTAP のドキュメント：「 AutoSupport のセットアップ"^]。
 
 
 
@@ -105,7 +109,11 @@ Cloud Volumes ONTAP のセキュリティグループには、インバウンド
 
 ==== シングルノードシステムのインバウンドルール
 
-次のルールでは、説明で特定の着信トラフィックがブロックされている場合を除き、トラフィックは許可されます。
+作業環境を作成し、事前定義されたセキュリティグループを選択する場合、次のいずれかの範囲内でトラフィックを許可するように選択できます。
+
+* *選択したVNetのみ*：インバウンドトラフィックのソースは、Cloud Volumes ONTAP システムのVNetのサブネット範囲およびコネクタが存在するVNetのサブネット範囲です。これが推奨されるオプションです。
+* *すべてのVNet *：インバウンドトラフィックの送信元は0.0.0.0/0のIP範囲です。
+
 
 [cols="4*"]
 |===
@@ -187,7 +195,11 @@ Cloud Volumes ONTAP のセキュリティグループには、インバウンド
 
 ==== HA システムのインバウンドルール
 
-次のルールでは、説明で特定の着信トラフィックがブロックされている場合を除き、トラフィックは許可されます。
+作業環境を作成し、事前定義されたセキュリティグループを選択する場合、次のいずれかの範囲内でトラフィックを許可するように選択できます。
+
+* *選択したVNetのみ*：インバウンドトラフィックのソースは、Cloud Volumes ONTAP システムのVNetのサブネット範囲およびコネクタが存在するVNetのサブネット範囲です。これが推奨されるオプションです。
+* *すべてのVNet *：インバウンドトラフィックの送信元は0.0.0.0/0のIP範囲です。
+
 
 
 NOTE: HA システムのインバウンドデータトラフィックは Azure Standard Load Balancer を経由するため、シングルノードシステムよりもインバウンドルールが少なくなります。そのため、「 AllowAzureLoadBalancerInBound 」ルールに示されているように、ロードバランサからのトラフィックがオープンである必要があります。
@@ -310,10 +322,13 @@ NOTE: source は、 Cloud Volumes ONTAP システムのインターフェイス�
 | 749 | TCP | データ LIF （ NFS 、 CIFS ） | Active Directory フォレスト | Kerberos V Change & Set Password （ RPCSEC_GSS ） 
 
 
-.2+| AutoSupport | HTTPS | 443 | ノード管理 LIF | support.netapp.com | AutoSupport （デフォルトは HTTPS ） 
+.3+| AutoSupport | HTTPS | 443 | ノード管理 LIF | support.netapp.com | AutoSupport （デフォルトは HTTPS ） 
 
 
 | HTTP | 80 | ノード管理 LIF | support.netapp.com | AutoSupport （転送プロトコルが HTTPS から HTTP に変更された場合のみ） 
+
+
+| TCP | 3128 | ノード管理 LIF | コネクタ | アウトバウンドのインターネット接続が使用できない場合に、コネクタのプロキシサーバを介してAutoSupport メッセージを送信する 
 
 
 | DHCP | 68 | UDP | ノード管理 LIF | DHCP | 初回セットアップ用の DHCP クライアント 
@@ -409,6 +424,9 @@ Connector では、パブリッククラウド環境内のリソースとプロ�
 
 
 | 443 | HTTPS | クライアント Web ブラウザからローカルへの HTTPS アクセスを提供します ユーザインターフェイス 
+
+
+| TCP | 3128 | Cloud Volumes ONTAP からネットアップサポートにAutoSupport メッセージを送信するためのインターネットアクセスを提供します。このポートは、コネクタの導入後に手動で開く必要があります。 
 |===
 
 

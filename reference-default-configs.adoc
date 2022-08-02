@@ -30,19 +30,30 @@ Cloud Manager 3.9.5 リリース以降では、最初の Storage VM で論理ス
 ** FlexCache
 ** FlexClone
 ** iSCSI
+** マルチテナント暗号化キー管理（MTEKM）、Cloud Volumes ONTAP 9.11.1以降
 ** NetApp Volume Encryption （ライセンス使用システムまたは登録従量課金制システムの場合のみ）
 ** NFS
-** SnapMirror
-** SnapRestore
-** SnapVault
 
 
-* デフォルトでは、いくつかのネットワークインターフェイスが作成されます。
+
+
+ifdef::aws[]
+
+endif::aws[]
+
+ifdef::azure[]
+
+endif::azure[]
+
+* SnapMirror
+* SnapRestore
+* SnapVault
 +
-** クラスタ管理 LIF
-** クラスタ間 LIF
+** デフォルトでは、いくつかのネットワークインターフェイスが作成されます。
 
 
+* クラスタ管理 LIF
+* クラスタ間 LIF
 
 
 ifdef::azure[]

@@ -113,14 +113,11 @@
   <block id="2314a962fc7e0ac7dda6195c6f360f4b" category="list-text"><block ref="db77ce175669fb218596bba2e453e02d" category="inline-link-rx"></block>。</block>
   <block id="445dc7bb8ccc81428483cecee1404d6b" category="inline-link">監視サービスの詳細については、こちらをご覧ください</block>
   <block id="4e03233e36e923a0d7f74b1004629370" category="list-text"><block ref="8a3d5c1ba6867422d22c39f174678452" category="inline-link-rx"></block>。</block>
-  <block id="60a25406d79caadf1f174203c28605a0" category="list-text">* 場所と接続 * ：場所、リソースグループ、セキュリティグループを選択し、チェックボックスを選択して、コネクタとターゲットの場所間のネットワーク接続を確認します。</block>
-  <block id="ce5bf551379459c1c61d2a204061c455" category="cell">場所</block>
   <block id="528bcd2ec74d12fe449b36e916b83f02" category="cell">シングルノードシステムの場合は、 Cloud Volumes ONTAP を導入するアベイラビリティゾーンを選択できます。AZ を選択しない場合は、 Cloud Manager によってその AZ が選択されます。</block>
   <block id="dd23acac46f17cbfd4d5541f8ee3c7a1" category="cell">リソースグループ</block>
   <block id="2d6e88c43d1b87d3d042cce1773371b7" category="paragraph">Cloud Volumes ONTAP の新しいリソースグループを作成するか、既存のリソースグループを使用します。Cloud Volumes ONTAP には、新しい専用のリソースグループを使用することを推奨します。既存の共有リソースグループに Cloud Volumes ONTAP を導入することは可能ですが、データ損失のリスクがあるため推奨されません。詳細については、上記の警告を参照してください。</block>
   <block id="c9187ee1a002f195f99a19e00d1b9596" category="paragraph">Azure に導入する Cloud Volumes ONTAP HA ペアごとに専用のリソースグループを使用する必要があります。リソースグループでサポートされる HA ペアは 1 つだけです。Azure リソースグループに 2 つ目の Cloud Volumes ONTAP HA ペアを導入しようとすると、 Cloud Manager で接続の問題が発生します。</block>
   <block id="21c199e82e474a9a5607a2b9ccb8e66f" category="inline-link">必要な権限</block>
-  <block id="338578acf7e0dc54ebcd8c3592f0b022" category="cell">セキュリティグループ</block>
   <block id="aeba611d332bf85ad8d5a14dd92fa935" category="inline-link-macro">デフォルトのセキュリティグループを表示します</block>
   <block id="44651ffc55fe78607ad39789f43eab9b" category="cell">既存のセキュリティグループを選択する場合は、 Cloud Volumes ONTAP の要件を満たす必要があります。 <block ref="f88b68abd6e0fcb97b26739e6dccf3c6" category="inline-link-macro-rx"></block>。</block>
   <block id="045ab321baf13520d6d643ff584cda4b" category="list-text">* 充電方法と NSS アカウント * ：このシステムで使用する充電オプションを指定し、ネットアップサポートサイトのアカウントを指定します。</block>
@@ -741,11 +738,8 @@
   <block id="7ad9575195738d8c7f1b3ae6cea26ee2" category="list-text">ノードベースの PAYGO ライセンスを使用する場合は、必要に応じて別のライセンスを選択できます。</block>
   <block id="124da972831d8567648a5d865ca52285" category="list-text">マシンタイプを選択し、チェックボックスを選択して、変更の影響を理解したことを確認し、 * OK * をクリックします。</block>
   <block id="a8e111d8043785d9d556635c64194b73" category="paragraph">Cloud Volumes ONTAP が新しい設定でリブートします。</block>
-  <block id="4289ae12bb06fa5bc1a703b903e13d7f" category="summary">AutoSupport は、システムの健常性をプロアクティブに監視し、ネットアップテクニカルサポートにメッセージを送信します。デフォルトでは、各ノードで AutoSupport が有効になっており、 HTTPS 転送プロトコルを使用してテクニカルサポートにメッセージを送信できます。</block>
   <block id="f6e43df1ac65ed84364d47e2313ea212" category="doc">AutoSupport のセットアップを確認します</block>
   <block id="57f882d4d9318a77bccc1fe367a42ab5" category="paragraph">AutoSupport は、システムの健常性をプロアクティブに監視し、ネットアップテクニカルサポートにメッセージを送信します。デフォルトでは、各ノードで AutoSupport が有効になっており、 HTTPS 転送プロトコルを使用してテクニカルサポートにメッセージを送信できます。AutoSupport がこれらのメッセージを送信できることを確認することをお勧めします。</block>
-  <block id="ca44d887da8f0d2b0c21e31874f2f11b" category="paragraph">インスタンスを起動する前に Cloud Manager Account Admin がプロキシサーバを Cloud Manager に追加していた場合、 AutoSupport はそのプロキシサーバを Cloud Volumes ONTAP メッセージに使用するように設定されます。</block>
-  <block id="9c8a47badbd17e6a1cb9539b9b0ceefb" category="paragraph">必要な設定手順は、 Cloud Volumes ONTAP インスタンスまたは環境のプロキシサービスを介してアウトバウンドのインターネット接続を確立することだけです。詳細については、クラウドプロバイダのネットワーク要件を参照してください。</block>
   <block id="abf5b5a005179d4c9f5ca821865c42bc" category="inline-link-macro">AWS ネットワークの要件</block>
   <block id="68f8afb64bf315ecd826b59e29a3471b" category="list-text"><block ref="68f8afb64bf315ecd826b59e29a3471b" category="inline-link-macro-rx"></block></block>
   <block id="daf41a49145010c540b7cc18af1c579b" category="inline-link-macro">Azure ネットワークの要件</block>
@@ -1645,7 +1639,6 @@
   <block id="d78c51305ff97e9da7f4c5cb3d1d3453" category="cell">すべての UDP</block>
   <block id="3dc508776ae41d76d647e62358d55180" category="section-title">Cloud Volumes ONTAP のセキュリティグループ</block>
   <block id="d991e60dbce1c74dc50b148edfc8bbba" category="paragraph">Cloud Volumes ONTAP ノードのセキュリティグループには、インバウンドとアウトバウンドの両方のルールが必要です。</block>
-  <block id="4a0ed8041426b30c39ae888d3e61bd7e" category="paragraph">定義済みセキュリティグループのインバウンドルールの送信元は 0.0.0.0/0 です。</block>
   <block id="d4b4ed7579a4f9267cc7dff8a948018e" category="cell">すべての ICMP</block>
   <block id="fbabb5b35538d91f91e0e1d4f56ff5a4" category="cell">インスタンスの ping を実行します</block>
   <block id="ababfee3bb5ff05f9b0368cea51ee877" category="cell">クラスタ管理 LIF の IP アドレスを使用した System Manager Web コンソールへの HTTP アクセス</block>
@@ -1707,13 +1700,9 @@
   <block id="a1a264e616e24563d4b8f8b5795ea403" category="section-title">一般的な要件</block>
   <block id="3091fa13c48831b4d7d6e8b6cb4b5bb1" category="paragraph">AWS では、次の要件を満たす必要があります。</block>
   <block id="5908bdfb58aef23bebf7df36d49b9dfb" category="section-title">Cloud Volumes ONTAP ノードのアウトバウンドインターネットアクセス</block>
-  <block id="b5f56557a73320f7b6812655c44ec6e7" category="paragraph">Cloud Volumes ONTAP ノードでは、ネットアップ AutoSupport にメッセージを送信するために、アウトバウンドインターネットアクセスが必要です。ネットアップ AutoSupport は、ストレージの健全性をプロアクティブに監視します。</block>
-  <block id="333cacedc7e8f6e8e3f0638337eed133" category="paragraph">Cloud Volumes ONTAP から AutoSupport メッセージを送信できるように、ルーティングポリシーとファイアウォールポリシーで次のエンドポイントへの AWS HTTP/HTTPS トラフィックを許可する必要があります。</block>
   <block id="ea42efb0eb933b55c2c4a89d521450df" category="list-text">\ https://support.netapp.com/aods/asupmessage</block>
   <block id="139bae98c3a8ead645c078cb26b93bd1" category="list-text">\ https://support.netapp.com/asupprod/post/1.0/postAsup</block>
   <block id="478c1991e02e68a88a4f2e550c670a76" category="paragraph">NAT インスタンスがある場合は、プライベートサブネットからインターネットへの HTTPS トラフィックを許可する着信セキュリティグループルールを定義する必要があります。</block>
-  <block id="683f646f6e5507593f5fcc04e80ed15c" category="inline-link-macro">AutoSupport の設定方法について説明します</block>
-  <block id="87a7fccd38150fe70605e12fc964f911" category="paragraph"><block ref="87c7a9fe36f8ac16bd3a925052a238d9" category="inline-link-macro-rx"></block>。</block>
   <block id="06606cd8200a61c1bae33d7388ecad3e" category="section-title">HA メディエータのアウトバウンドインターネットアクセス</block>
   <block id="af02a1d35914a788c9da7b1c26185fae" category="paragraph">HA メディエータインスタンスは、 AWS EC2 サービスへのアウトバウンド接続を持っている必要があります。これにより、ストレージのフェイルオーバーを支援できます。接続を提供するには、パブリック IP アドレスを追加するか、プロキシサーバを指定するか、または手動オプションを使用します。</block>
   <block id="cbdf0e4a6b992dae978b69b70468f5fe" category="inline-link">AWS ドキュメント：「 Interface VPC Endpoints 」（ AWS PrivateLink ）</block>
@@ -1855,7 +1844,6 @@
   <block id="86a342f075ca5d85dc5033d1092f71cd" category="list-text"><block ref="86a342f075ca5d85dc5033d1092f71cd" category="inline-link-rx"></block></block>
   <block id="d973a667e3de5eb61f931fdb2637403e" category="inline-link">Cloud Manager が AWS 権限を使用して実行する処理</block>
   <block id="765b45ee186cc8b058fcb43896ff3625" category="list-text"><block ref="765b45ee186cc8b058fcb43896ff3625" category="inline-link-rx"></block></block>
-  <block id="027dae3b418c53f12cff1ce4f431fcbc" category="paragraph">メディエーターは、 F1 マイクロインスタンス上で Linux オペレーティングシステムを実行し、それぞれ 10 GB の標準永続ディスクを 2 つ使用します。</block>
   <block id="fb60cc8b1c07b3747a72dcf7ce2f2f58" category="list-text">1 つまたは 3 つのゾーン（推奨）。</block>
   <block id="0f3118cdf0606432dbda8dd0e39d7d10" category="paragraph">3 つのゾーンを選択すると、 2 つのノードとメディエーターが別々の Google Cloud ゾーンに配置されます。</block>
   <block id="57634383537fa922f1a5f4ab683aa664" category="list-text">4 つの Virtual Private Cloud （ VPC ；仮想プライベートクラウド）</block>
@@ -1866,8 +1854,6 @@
   <block id="b176654c993f9caf39e56971d244d457" category="paragraph">次の概念図は、 Cloud Volumes ONTAP HA ペアとそのコンポーネントを示しています。</block>
   <block id="e957cab16552d6fdb00d1af0f33ad800" category="paragraph"><block ref="e957cab16552d6fdb00d1af0f33ad800" category="inline-image-macro-rx" type="image"></block></block>
   <block id="1ed4ce2b9693ec306d333d8aa7807aa9" category="paragraph">Google Cloud のメディエーターインスタンスの重要な詳細を次に示します。</block>
-  <block id="2da66e5268eebc2356295c3045a1d710" category="list-text">F1 - マイクロ</block>
-  <block id="af8d2091eeb01ec487c6fe8d98a2b3f3" category="list-text">それぞれ 10GiB の標準的な永続ディスク 2 本。</block>
   <block id="48c4b347a69acc97f71ef6775bf6260d" category="list-text">Debian の場合、デフォルトのクラウドユーザは「 admin 」です。Google Cloud は、 Google Cloud コンソールまたは gcloud コマンドラインから SSH アクセスが要求された場合に、「 admin 」ユーザの証明書を作成して追加します。root 権限を取得するには 'sudo を指定します</block>
   <block id="b9c7a6d43bec359b40ab04efb944c7c4" category="list-text">RPO （ Recovery Point Objective ：目標復旧時点）は 0 秒です。</block>
   <block id="bf7c76034279e30c18d14dc7990ee330" category="paragraph">データはトランザクション的に整合性が保たれ、データ損失は発生しません。</block>
@@ -2020,7 +2006,6 @@
   <block id="60ea35784e9124871c8660254244462f" category="list-text">Cloud Volumes ONTAP に独自のセキュリティグループを使用する場合は、アウトバウンドルールで HTTP 接続を許可し、 Cloud Volumes ONTAP がソフトウェアイメージにアクセスできるようにしてください。</block>
   <block id="f5de24cfcd33a2271ffc824aa8782176" category="admonition">事前定義された Cloud Volumes ONTAP セキュリティグループは、デフォルトでアウトバウンド HTTP 接続を許可します。</block>
   <block id="a0b1807d647c5ece7bc49bd539f7dcc6" category="inline-link">ネットアップサポートサイト</block>
-  <block id="8695397faff7d05d9f1c0033d043e173" category="list-text">からソフトウェアイメージを取得します<block ref="70d20994fb787313c0b72e7369b667db" category="inline-link-rx"></block>。</block>
   <block id="3e3318ff6382b95c2c0c29be3a83b97d" category="list-text">ソフトウェアイメージを、ファイルの提供元となるコネクタまたは HTTP サーバ上のディレクトリにコピーします。</block>
   <block id="622d340226a193aeab33f4890e2110c9" category="paragraph">たとえば、ソフトウェアイメージをコネクタ上の次のパスにコピーできます。</block>
   <block id="1b19ae48e0693419e1e905991459c290" category="paragraph">/opt/application/NetApp/cloudmanager/docx_occm/data/ontap/images/`</block>
@@ -2427,7 +2412,6 @@
   <block id="75fb76c71939b7f9f3ee363c4aec2044" category="section-title">コネクタのルール</block>
   <block id="e41468f89241b53dc9a8cebeff010b25" category="cell">クライアント Web ブラウザからローカルユーザインターフェイスへの HTTP アクセス、および Cloud Data Sense からの接続を提供します</block>
   <block id="dff8e9c2ac33381546d96deea9922999" category="cell">3128</block>
-  <block id="187604dd1244abc6ff03471775e9f32d" category="cell">AWS ネットワークで NAT やプロキシを使用していない場合に、 Cloud Data Sense インスタンスにインターネットアクセスを提供します</block>
   <block id="f27967c4c8769094dfb727988a22cbfa" category="paragraph">コネクタの事前定義されたセキュリティグループは、すべての発信トラフィックを開きます。これが可能な場合は、基本的なアウトバウンドルールに従います。より厳格なルールが必要な場合は、高度なアウトバウンドルールを使用します。</block>
   <block id="4c7e4350b2ac4e79ecdf1d8f33b2d41e" category="paragraph">発信トラフィックに固定ルールが必要な場合は、次の情報を使用して、コネクタによる発信通信に必要なポートだけを開くことができます。</block>
   <block id="a94c44d83136ca0aa23c397adb28b116" category="admonition">送信元 IP アドレスは、コネクタホストです。</block>
@@ -2488,10 +2472,7 @@
   <block id="412590af9448ac66459e9c3d686de880" category="doc">Azure の Cloud Volumes ONTAP のネットワーク要件</block>
   <block id="72928bd9aacf64df0eb1285c03f5f5c0" category="section-title">Cloud Volumes ONTAP の要件</block>
   <block id="098d8cb8c4a1291e10ee07b333610f24" category="paragraph">Azure では、次のネットワーク要件を満たしている必要があります。</block>
-  <block id="5558be4010db9853d7ae70d1751b4223" category="paragraph">Cloud Volumes ONTAP では、ネットアップ AutoSupport にメッセージを送信するためにアウトバウンドインターネットアクセスが必要です。ネットアップ AutoSupport は、ストレージの健全性をプロアクティブに監視します。</block>
   <block id="a882b8d486f84abfbb2472c835d49dbf" category="paragraph">Cloud Volumes ONTAP が AutoSupport メッセージを送信できるように、ルーティングポリシーとファイアウォールポリシーで次のエンドポイントへの HTTP / HTTPS トラフィックを許可する必要があります。</block>
-  <block id="c69996d91acca6afe1c33117a5a9fda1" category="inline-link-macro">AutoSupport の検証方法について説明します</block>
-  <block id="98f9a1d240aa10fa6d33fe47800f1928" category="paragraph"><block ref="63a4bc19361b5cf6516e2fe555a9d3db" category="inline-link-macro-rx"></block>。</block>
   <block id="1d9e509ddb93a176b7d369a91ad7deaf" category="section-title">IP アドレス</block>
   <block id="0607fcfa6c6be84dd2b604cfb69f20c0" category="paragraph">Cloud Manager が Azure の Cloud Volumes ONTAP に次の数の IP アドレスを割り当てます。</block>
   <block id="cceb8f7ed659db95ecee6b568724f01a" category="list-text">シングルノード： 5 つの IP アドレス</block>
@@ -2512,7 +2493,6 @@
   <block id="4d8a9bd6c95fb67b241450304a4a409e" category="paragraph">セキュリティグループを作成する必要はありません。セキュリティグループは Cloud Manager で自動的に作成されます。独自のルールを使用する必要がある場合は、以下のセキュリティグループルールを参照してください。</block>
   <block id="3e6c8dc9303c2f38ff34d61b2015d240" category="paragraph">Cloud Manager で作成される Azure セキュリティグループには、 Cloud Volumes ONTAP が正常に動作するために必要なインバウンドとアウトバウンドのルールが含まれています。テスト目的でポートを参照したり、独自のセキュリティグループを使用したりする場合に使用します。</block>
   <block id="4d6ace52affbdd48b9198aac825d4a2c" category="section-title">シングルノードシステムのインバウンドルール</block>
-  <block id="858abc6f4e6f4c8e250c4d7fbbae8db5" category="paragraph">次のルールでは、説明で特定の着信トラフィックがブロックされている場合を除き、トラフィックは許可されます。</block>
   <block id="c42224c337274e7fec977a288d37b9e7" category="cell">優先順位と名前</block>
   <block id="61d97465e73d077d903ed05e56b55172" category="cell">ポートおよびプロトコル</block>
   <block id="f7fadb9ea6f0f7f74a2adcb14ed1502a" category="cell">ソースとデスティネーションの 2 つです</block>
@@ -2617,7 +2597,6 @@
   <block id="36e4d5ff70cec517180ae18f1c34d2fd" category="list-text">市場から年間契約を結んでいる場合、導入する Cloud Volumes ONTAP システムにはその契約が適用されます。BYOL と年間市場契約を組み合わせることはできません。</block>
   <block id="e22ac25b066b201473de7aa700ef5d92" category="section-title">価格設定</block>
   <block id="49fc376ed35249f3841846ede4dab884" category="inline-link">NetApp Cloud Central</block>
-  <block id="48ad756d03abbc6e0fe01e9831a6e964" category="paragraph">価格設定の詳細については、を参照してください<block ref="073c3927129b02897890200010eee524" category="inline-link-rx"></block>。</block>
   <block id="25b035aed2fdd6599b8102a76363fdec" category="section-title">無償トライアルを利用できます</block>
   <block id="1f0b82560627b660c6c6958a1df834b8" category="section-title">サポートされている構成</block>
   <block id="4e4c431843fe55f93c074808800bf7d0" category="paragraph">容量ベースのライセンスパッケージは Cloud Volumes ONTAP 9.7 以降で利用できます。</block>
@@ -2693,12 +2672,10 @@
   <block id="e7654a639cfe016ac3f5047f52f87c75" category="inline-link">Google Cloud のドキュメント：「 Shared VPC Overview</block>
   <block id="f28d7231806e634c25dd18c690acf69d" category="paragraph">共有 VPC を使用すると、複数のプロジェクトの仮想ネットワークを設定し、一元管理できます。ホストプロジェクト _ で共有 VPC ネットワークをセットアップし、 Connector および Cloud Volumes ONTAP 仮想マシンインスタンスをサービスプロジェクト _ で導入できます。<block ref="415c6368db149e27aa23722d9aeafade" category="inline-link-rx"></block>。</block>
   <block id="9bbb7f4f51c49edeb24f8a9b17a2d5f4" category="inline-link-macro">Connector の導入でカバーされている必要な共有 VPC の権限を確認します</block>
-  <block id="79ead8c87cfd1662612cedcf5dbfd0c3" category="paragraph"><block ref="c04355bfa1cd768f01b43074b42d51cc" category="inline-link-macro-rx"></block>。</block>
   <block id="0d8050524ef140aadb3a681481890b39" category="list-text">VPC でのパケットミラーリング</block>
   <block id="4d6aebef0af2c2c1118b467bdf0dadf0" category="inline-link">パケットミラーリング</block>
   <block id="7c0126eb5fa57fb86ccb4cf44811856d" category="list-text"><block ref="581f54bac504640f66f842676676be03" category="inline-link-rx"></block> Cloud Volumes ONTAP を導入する Google Cloud VPC で無効にする必要があります。パケットミラーリングがイネーブルの場合、 Cloud Volumes ONTAP は正常に動作しません。</block>
   <block id="d3d79704bb54117545a4635e1d22fc65" category="list-text">Cloud Volumes ONTAP 用のアウトバウンドインターネットアクセス</block>
-  <block id="0da96f2feb7789b80105a2a9de6c2876" category="paragraph"><block ref="ff4064bf7ea0ef6a5de7ecf5d1a47eb6" category="inline-link-macro-rx"></block>。</block>
   <block id="4c896c50345c5252f4b0e8fc4bf10723" category="admonition">HA ペアを使用している場合、 HA メディエーターではアウトバウンドのインターネットアクセスは必要ありません。</block>
   <block id="6c0c0f02dbc1bb2b2e19a272f5785eec" category="list-text">Cloud Manager は、次の数のプライベート IP アドレスを GCP の Cloud Volumes ONTAP に割り当てます。</block>
   <block id="e7787f4da96c754ed6401b93cf7a96ee" category="list-text">* シングルノード * ： 3 または 4 つのプライベート IP アドレス</block>
@@ -3005,9 +2982,6 @@
   <block id="6101eef8fd3b11affed5baa0379eb7b5" category="inline-link-macro">AWS ワークシート</block>
   <block id="c333af2368ba1204c1886470cc3a6275" category="list-text">* 場所と接続 * ：に記録したネットワーク情報を入力します <block ref="d659a2562f8cbd6b4b774d087092f457" category="inline-link-macro-rx"></block>。</block>
   <block id="6f27ddf091b10f1dfd4ab13be0759ec7" category="paragraph">AWS Outpost を使用している場合は、 Outpost VPC を選択して、その Outpost に単一のノードの Cloud Volumes ONTAP システムを導入できます。エクスペリエンスは、 AWS に存在する他の VPC と同じです。</block>
-  <block id="bfe0eea2027cb3091ff6951f343f7ca5" category="paragraph">次の図は、入力済みのページを示しています。</block>
-  <block id="800800a47f4a26dcd93a9a0cf14de3df" category="inline-image-macro">スクリーンショット：新しい Cloud Volumes ONTAP インスタンスの VPC ページが入力されています。</block>
-  <block id="019f12b9309f57da6e180e443b629a1a" category="paragraph"><block ref="019f12b9309f57da6e180e443b629a1a" category="inline-image-macro-rx" type="image"></block></block>
   <block id="94b720129da1fad395a78adb9dd8004f" category="list-text">* データ暗号化 * ：データ暗号化なし、または AWS で管理する暗号化を選択します。</block>
   <block id="8d4e0ae3c5be71d9c725659a6203fb6f" category="paragraph">AWS で管理する暗号化の場合は、アカウントまたは別の AWS アカウントから別の Customer Master Key （ CMK ；カスタマーマスターキー）を選択できます。</block>
   <block id="7238e3ed6732433c6a3fc43c882f2749" category="inline-link-macro">Cloud 用の AWS KMS の設定方法については、こちらをご覧ください Volume ONTAP の略</block>
@@ -3036,10 +3010,6 @@
   <block id="3dc0546ee23c197fd25bc3ef988c8a30" category="list-text">*HA 導入モデル *: HA 構成を選択します。</block>
   <block id="9e31e4f9e8f37fa86acefdb611c2e044" category="inline-link-macro">AWS での Cloud Volumes ONTAP HA</block>
   <block id="fdf00fa5f9f4609b595b4c51f6ee33e9" category="paragraph">導入モデルの概要については、を参照してください <block ref="ed2ce72ffe8bc52d52047e3f4134a246" category="inline-link-macro-rx"></block>。</block>
-  <block id="deac3e946d45fe083cb525ba5711f1b6" category="list-text">* Region &amp; VPC * ： AWS ワークシートに記録したネットワーク情報を入力します。</block>
-  <block id="1324514f4164c64fbc53bffc0b8ee036" category="paragraph">次の図は、複数の AZ 構成に対応するページを示しています。</block>
-  <block id="c64d86e84e1786d33e7bfe37abf58592" category="inline-image-macro">スクリーンショット： HA 設定の VPC ページが入力されています。インスタンスごとに異なる可用性ゾーンが選択されます。</block>
-  <block id="9d3d383901a1ec722aaa434b01aea6fa" category="paragraph"><block ref="9d3d383901a1ec722aaa434b01aea6fa" category="inline-image-macro-rx" type="image"></block></block>
   <block id="f98a5304a879db170932a941d6782d7c" category="list-text">* 接続と SSH 認証 * ： HA ペアとメディエーターの接続方法を選択します。</block>
   <block id="7f09e4815f5de7673aaab2126613b950" category="list-text">* フローティング IP * ：複数の AZ を選択した場合は、フローティング IP アドレスを指定します。</block>
   <block id="33b13cf0139beac8e5ee5b05deaa6127" category="paragraph">IP アドレスは、その地域のすべての VPC の CIDR ブロックの外側にある必要があります。詳細については、を参照してください <block ref="f5127e7e3006bcff7058d08df580da25" category="inline-link-macro-rx"></block>。</block>
@@ -3344,8 +3314,6 @@
   <block id="6c6c472de3f0cea0f21c8e31be81490c" category="list-text">NAS データ LIF を作成します。</block>
   <block id="477dc9bfd99f5e3ed09c8dbdc76a2c7c" category="list-text">DNS 通信と SMB 通信を提供する iSCSI LIF を作成します。</block>
   <block id="1d690a933c240dda520f6527f56da475" category="paragraph">9.7 以降のリリースでは、特定の Cloud Volumes ONTAP 構成で複数の Storage VM を使用できます。にアクセスします<block ref="7a96f232274f5a7cebcb1f6a52cc095f" category="inline-link-rx"></block> 使用している Cloud Volumes ONTAP のバージョンでサポートされる Storage VM 数を確認してください。</block>
-  <block id="7c631216018c939fdeeed5e8807fc718" category="paragraph">HAペアの場合、事前定義されたファイアウォールポリシーのインバウンドトラフィックのソースフィルタは0.0.0.0/0です。</block>
-  <block id="cd2edcd7e3c4d8236b1a1ff235d1b803" category="paragraph">シングルノードシステムの場合は、導入時に事前定義されたファイアウォールポリシーのソースフィルタを選択できます。</block>
   <block id="62978cf670cdcd284392400fa0cb70a9" category="list-text">*選択したVPCのみ*：インバウンドトラフィックのソースフィルタは、Cloud Volumes ONTAP システムのVPCのサブネット範囲、およびコネクタが存在するVPCのサブネット範囲です。これが推奨されるオプションです。</block>
   <block id="ba2e1bf50371835f50d77c05a977d80c" category="list-text">*すべてのVPC *：インバウンドトラフィックのソースフィルタは0.0.0.0/0のIP範囲です。</block>
   <block id="4fa4c5ae842db9adb7911d016ca19362" category="paragraph">独自のファイアウォールポリシーを使用する場合は、Cloud Volumes ONTAP と通信する必要のあるすべてのネットワークを追加し、内部のGoogleロードバランサが正常に機能するように両方のアドレス範囲を追加してください。これらのアドレスは 130.211.0.0/22 および 35.191.0.0/16 です。詳細については、を参照してください<block ref="ec02114a2c39456710780c7d788390e7" category="inline-link-rx"></block>。</block>
@@ -3786,7 +3754,6 @@
   <block id="129cb997dac90f5eb582bd49d3cae82c" category="paragraph">Cloud Volumes ONTAP の高度な管理を行う必要がある場合は、ONTAP システムに付属の管理インターフェイスであるONTAP System Managerを使用します。高度な管理のためにCloud Managerを終了する必要がないように、Cloud ManagerのインターフェイスはCloud Managerに直接組み込まれています。</block>
   <block id="07bba549da0c5d9af2f0531199cb73e0" category="paragraph">この拡張ビューは、Cloud Volumes ONTAP 9.10.0以降でプレビューとして使用できます。今後のリリースでは、この点をさらに改良し、機能を強化する予定です。製品内のチャットでご意見をお寄せください。</block>
   <block id="f303a87fe6efba259b752f5a9e11064b" category="inline-link-macro">詳細については、「詳細ビュー」を参照してください</block>
-  <block id="0c6e9220b6dd38f763ce6082c0125be9" category="paragraph"><block ref="cf41d716430563f350a841f38af568db" category="inline-link-macro-rx"></block>。</block>
   <block id="18f1ba3764c7c45f17295cada3f1b2ff" category="section-title">Amazon EBS Elastic Volumesのサポート</block>
   <block id="2e2c03493705dc64283827f16a01fab5" category="paragraph">Cloud Volumes ONTAP アグリゲートでAmazon EBS Elastic Volumes機能がサポートされるため、パフォーマンスが向上して容量が追加されると同時に、必要に応じて基盤となるディスク容量がCloud Managerで自動的に拡張されます。</block>
   <block id="1fb2d1e9760db598bc140d6df5875a5f" category="paragraph">Elastic Volumeは、Cloud Volumes ONTAP 9.11.0システム以降、GP3およびio1 EBSディスクタイプでサポートされます。</block>
@@ -3800,7 +3767,6 @@
   <block id="b58bf50dd57317d50ce59551de45158f" category="section-title">サービスエンドポイントを使用する場合は、ネットワークアクセスが制限されます</block>
   <block id="982c0b0bc19727a7a5017f464489da09" category="paragraph">Cloud Volumes ONTAP とストレージアカウント間の接続にVNetサービスエンドポイントを使用する際に、Cloud Managerはネットワークアクセスを制限するようになりました。Azure Private Link接続を無効にすると、Cloud Managerはサービスエンドポイントを使用します。</block>
   <block id="e020ad0693308c5d73b7fe4c7bafd660" category="inline-link-macro">Cloud Volumes ONTAP でのAzureプライベートリンク接続の詳細については、こちらをご覧ください</block>
-  <block id="572f029bc460b235b79bf593e07bce0a" category="paragraph"><block ref="11d2e9af90a503c65edc8ce2e258f040" category="inline-link-macro-rx"></block>。</block>
   <block id="aace3e8a265fffb87e8d7fbd81d6adb9" category="section-title">Google CloudでのStorage VMの作成がサポートされます</block>
   <block id="c248c01b69af03d24d1cd7a6b9ee8e7b" category="paragraph">Google CloudのCloud Volumes ONTAP では、9.11.1リリース以降、複数のStorage VMがサポートされています。このリリースのコネクタから、Cloud Managerを使用して、Google CloudのCloud Volumes ONTAP HAペアにStorage VMを作成できます。</block>
   <block id="33fdc8eb46b228d804c2bf216d7ab788" category="paragraph">Storage VMの作成をサポートするには、次のコネクタに対する新しいGoogle Cloud権限が必要です。</block>
@@ -3808,7 +3774,6 @@
   <block id="ab9d588372f30d162e50dbbed45980eb" category="inline-link">Google CloudのStorage VMの制限に関する詳細を確認できます</block>
   <block id="7859fc06f13ff8714740aa72213f86e7" category="list-text"><block ref="7859fc06f13ff8714740aa72213f86e7" category="inline-link-rx"></block></block>
   <block id="3a7eebf972f838daafe4ea7948002b3d" category="inline-link-macro">Google CloudでCloud Volumes ONTAP 向けのデータ提供用Storage VMを作成する方法をご確認ください</block>
-  <block id="4d4f80e19da50b86ec7f247f81baedf7" category="list-text"><block ref="4d4f80e19da50b86ec7f247f81baedf7" category="inline-link-macro-rx"></block></block>
   <block id="a4b1f03cb2371b278489814c31e9785d" category="list-text">オプション：NVEの機能を検証するテストボリュームを作成する</block>
   <block id="e683d2190ea99600c0a7bda058b93d36" category="paragraph">vol create -vserver_svm_name_-volume_name_-aggregate _aggr_size_state online -policy default’</block>
   <block id="652f5bb57cb09b4930d22c8b8241e77c" category="summary">Cloud Volumes ONTAP CLI では、すべての管理コマンドを実行できます。高度なタスクを実行する場合や、 CLI を使い慣れている場合は、 CLI の使用を推奨します。CLIにはSSHを使用して接続できます。</block>
@@ -4111,7 +4076,6 @@
   <block id="d9c05beb7c27c53dc1cb952afddea3ac" category="section-title">Elastic Volumesの機能拡張</block>
   <block id="119ffefd11e6681de49e316bc16a471d" category="paragraph">Cloud Managerで、ユーザインターフェイスからCloud Volumes ONTAP の作業環境を作成する際に、Amazon EBS Elastic Volumes機能がサポートされるようになりました。Elastic Volumes機能は、GP3またはio1ディスクを使用している場合、デフォルトで有効になっています。初期容量はストレージのニーズに基づいて選択し、Cloud Volumes ONTAP の導入後に変更することができます。</block>
   <block id="0c5741d0ec0127a10c28f7c82579da32" category="inline-link-macro">Elastic VolumesのAWSサポートの詳細については、こちらをご覧ください</block>
-  <block id="3cc8cd9bef921086f444d55cf1ea25c6" category="paragraph"><block ref="a2865c7bad4b206df6582ad55cba915e" category="inline-link-macro-rx"></block>。</block>
   <block id="7fb4d101a5e000398c4d5b4c48b802a6" category="section-title">AWSのONTAP S3ライセンス</block>
   <block id="c86d179c90248acd6ebdba05bd94320c" category="section-title">Azure Cloudリージョンが新たにサポートされます</block>
   <block id="c55cc410beff8f86afc3ba8027b681f7" category="paragraph">9.10.1リリース以降、Azure West US 3リージョンでCloud Volumes ONTAP がサポートされるようになりました。</block>
@@ -4246,4 +4210,102 @@
   <block id="6459a9ada2e38351f8beba8f79c30a5f" category="paragraph">独自のポリシーを使用する場合は、それが満たされている必要があります <block ref="f5cab54abdefb42b27e2bac59f2262c2" category="inline-link-macro-rx"></block>。</block>
   <block id="e26c5d07fc30848902a99c95897441b4" category="sidebar">IAMロールを設定する</block>
   <block id="15cbb1f16ecbbcee7df3dcd252b9d2ef" category="paragraph">データの階層化が有効になっていると、 WORM を有効にできません。</block>
+  <block id="99123ff1f286571f4f132406bca18925" category="paragraph"><block ref="11c4f2829711a4e26e15905edcd472ba" category="inline-link-rx"></block>。</block>
+  <block id="100be8dcbbcc59f2ebf3f8adc67c339e" category="paragraph"><block ref="d66c222d0debdee1d122564fd1972ee2" category="inline-link-rx"></block>。</block>
+  <block id="a40bd5ac4324e93c0e2ae46a5e2a5a11" category="list-text"><block ref="a40bd5ac4324e93c0e2ae46a5e2a5a11" category="inline-link-rx"></block></block>
+  <block id="03d0e3d377c8f72f85a65849b2c14989" category="paragraph"><block ref="201cdfb67db3458b44b5103e61a586f5" category="inline-link-rx"></block>。</block>
+  <block id="1bbedbfdc08c3ed9498540dc734fa96a" category="doc">MTEKMライセンス</block>
+  <block id="6412f38167d8bd5882b37955a102350e" category="paragraph">バージョン9.11.1以降を実行している新規および既存のCloud Volumes ONTAP システムに、Multi-tenant Encryption Key Management（MTEKM）ライセンスが追加されました。</block>
+  <block id="c43a4aedaaa96e7a4c838a24978b6052" category="paragraph">マルチテナントの外部キー管理を使用すると、NetApp Volume Encryptionの使用時に、個々のStorage VM（SVM）でKMIPサーバを介して独自のキーを保持できます。</block>
+  <block id="6b8afb72156ec7e5aff9808d22a9eb10" category="inline-link">ネットアップの暗号化ソリューションでボリュームを暗号化する方法について説明します</block>
+  <block id="58d699d73838a8f3d0660e52bb5df744" category="paragraph"><block ref="c9a99e5900c97d829a142b9eef78ba06" category="inline-link-rx"></block>。</block>
+  <block id="824f455afa0ae197e5e7156988b6dc50" category="section-title">プロキシサーバ</block>
+  <block id="f0823a7c4bb0823970669d0756fceb8a" category="paragraph">Cloud Volumes ONTAP メッセージの送信にアウトバウンドのインターネット接続を使用できない場合に、AutoSupport システムがプロキシサーバとしてコネクタを使用するようにCloud Managerで自動的に設定されるようになりました。</block>
+  <block id="80f5caa6fde5a9410197e8753e6f4625" category="paragraph">AutoSupport は、システムの健常性をプロアクティブに監視し、ネットアップテクニカルサポートにメッセージを送信します。</block>
+  <block id="5fc25795a93f92bfee952eef3220d9e5" category="paragraph">唯一の要件は、コネクタのセキュリティグループがポート3128で_ inbound_connectionsを許可することです。コネクタを展開した後、このポートを開く必要があります。</block>
+  <block id="b69737a8aa6d54e160fd215ef53825b5" category="section-title">充電方法を変更します</block>
+  <block id="2ce6294ffa35428110be8d048560952f" category="paragraph">容量ベースのライセンスを使用するCloud Volumes ONTAP システムの充電方法を変更できるようになりました。たとえば、Essentialsパッケージを含むCloud Volumes ONTAP システムを導入した場合、ビジネスニーズの変化に応じて、そのシステムをProfessionalパッケージに変更できます。この機能は、デジタルウォレットから使用できます。</block>
+  <block id="63b54c0d3b4fb8e35270bfdf7b2bdcbb" category="inline-link">充電方法を変更する方法について説明します</block>
+  <block id="41bfdfd8eb98d1c3acb217f5420b6818" category="paragraph"><block ref="895cb871a858d35efad6129a7ae888ab" category="inline-link-rx"></block>。</block>
+  <block id="41b5565824d562a55cfa454b5b57da3d" category="section-title">セキュリティグループの機能拡張</block>
+  <block id="68519dd54d9e3922e66ec5b7a67c39e0" category="paragraph">Cloud Volumes ONTAP 作業環境を作成するときに、ユーザインターフェイスを使用して、事前定義されたセキュリティグループで選択したネットワークのみ（推奨）またはすべてのネットワーク内のトラフィックを許可するかどうかを選択できるようになりました。</block>
+  <block id="2261cc540df38326c53234c3d2d87794" category="inline-image-macro">セキュリティグループを選択したときに作業環境ウィザードで使用可能なAllow traffic withinオプションを示すスクリーンショット。</block>
+  <block id="4c4a915707766fae320a6c1004e2969d" category="paragraph"><block ref="4c4a915707766fae320a6c1004e2969d" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="3ae1886c49dab0e65e020c2758daff67" category="paragraph"><block ref="6f81c4ca34877706a163afe91c466abd" category="inline-link-rx"></block>。</block>
+  <block id="662442d32a5fd91298fcf8b6391fdf17" category="section-title">充電方法を変更します</block>
+  <block id="a117b4a94f6f90aef089573b1f002d26" category="paragraph">容量ベースのライセンスを使用するCloud Volumes ONTAP システムの充電方法を変更できます。たとえば、Essentialsパッケージを含むCloud Volumes ONTAP システムを導入した場合、ビジネスニーズの変化に応じて、そのシステムをProfessionalパッケージに変更できます。</block>
+  <block id="856fccc2c5d9211dbd784e97c60dd9bc" category="paragraph">現時点では、最適化充電方法への変更はサポートされていません。</block>
+  <block id="3397777d22d2d5f746157ca31f0d8460" category="list-text">[*充電方法*（Cloud Volumes ONTAP *）]タブで、[*充電方法の変更*（* Change Charging method *）]</block>
+  <block id="731d5463e4c6962d26d5b5d4b345930e" category="inline-image-macro">[課金方法の変更]ボタンが表のすぐ上にある、デジタルウォレットのCloud Volumes ONTAP ページのスクリーンショット。</block>
+  <block id="e98a6fb0343d664e817b1f922b7a92f1" category="paragraph"><block ref="e98a6fb0343d664e817b1f922b7a92f1" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="de4b4e176958ea7181911ce715504321" category="list-text">作業環境を選択して新しい充電方法を選択し、パッケージタイプを変更するとサービス料金に影響することを確認します。</block>
+  <block id="b0d246ceb3cd290ace3abd509e982f73" category="inline-image-macro">Cloud Volumes ONTAP 作業環境の新しい充電方法を選択する[充電方法の変更]ダイアログボックスのスクリーンショット。</block>
+  <block id="6e594f7cd72195c88515a50fcfc2397e" category="paragraph"><block ref="6e594f7cd72195c88515a50fcfc2397e" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="5331b4ea3bd1ef32d06c003e7e8f1c3d" category="list-text">[充電方法の変更*]をクリックします。</block>
+  <block id="f3c1e05bbe0f90b6a71543aa541c175f" category="paragraph">Cloud Volumes ONTAP システムの課金方法がCloud Managerで変更されました。</block>
+  <block id="41687868b5d65bd96b455ce93a771517" category="paragraph">また、Digital Walletは、作成した変更を反映するために、各パッケージタイプの消費済み容量を更新する場合があります。</block>
+  <block id="ee738151c1f4fb3d95f9f37c55f51f67" category="cell">セキュリティグループが生成されました</block>
+  <block id="9706edb1b3def1f358ab8bac741ca122" category="paragraph">Cloud Managerでセキュリティグループを生成するように設定した場合は、トラフィックを許可する方法を選択する必要があります。</block>
+  <block id="736117f693040571db69267153b2d26c" category="list-text">「* Selected VPC Only *」を選択した場合、インバウンドトラフィックのソースは、選択したVPCのサブネット範囲と、コネクタが存在するVPCのサブネット範囲です。これが推奨されるオプションです。</block>
+  <block id="deb6808c65d1809351087abd4e05656f" category="list-text">どのVPC *も選択した場合、インバウンドトラフィックのソースは0.0.0.0/0のIP範囲になります。</block>
+  <block id="078c55f3ef3238d9472d9b211da498b5" category="cell">既存のセキュリティグループを使用する</block>
+  <block id="d71f3f48867a1eec8f01c7982cfcf5b9" category="cell">既存のファイアウォールポリシーを使用する場合は、必要なルールが含まれていることを確認してください。 <block ref="52a4fffcb589b84d48cb7d2cc71fba3f" category="inline-link-macro-rx"></block>。</block>
+  <block id="ceade9f8bf2ef85c7b37aed2340a9d2b" category="list-text">*場所と接続*（単一AZ）または*リージョンとVPC *（複数のAZ）：AWSワークシートに記録したネットワーク情報を入力します。</block>
+  <block id="d9b6015407c2f35cf98a557256370e83" category="list-text">E2-micro（以前はF1-microインスタンスが使用されていました）</block>
+  <block id="0982661f22694d2c8b62e37a8cbea7d6" category="list-text">それぞれ10GiBの標準的な永続ディスク2本</block>
+  <block id="6ebde9b80ea03f71d125a635cb158add" category="cell">ポリシーが生成されました</block>
+  <block id="0b392f872171569e5244ad16ea2616d4" category="cell">既存のを使用します</block>
+  <block id="6e539d2ea7d82ed0e31c450e64ff8c04" category="section-title">最適化</block>
+  <block id="a131e5df30c445534883b2b08d3f9e4e" category="paragraph">プロビジョニングされた容量とI/O処理の料金は別途お支払いください。</block>
+  <block id="258f58bf86a685fa4951f45a75224c86" category="list-text">Cloud Volumes ONTAP のシングルノードまたはHA</block>
+  <block id="ac8875b922d75fca71aa495c421855a6" category="list-text">充電は、ストレージと使用量（I/O）という2つのコストコンポーネントに基づいています。</block>
+  <block id="5bf349d9a4df0ebb199c8dedb951539e" category="paragraph">データレプリケーションのI/Oは、課金されるI/O使用量にカウントされません。</block>
+  <block id="050a8b75e1382967bf1140508c5b62b6" category="list-text">Azure Marketplaceでのみ、従量課金制または年間契約として提供されます</block>
+  <block id="cd709b16b7a535f5ecfcfbe3f849b353" category="list-text">選択したVMタイプでサポートされる：E4s_v3、E4ds_v4、DS4_v2、DS13_v2、E8s_v3、 およびE8ds_v4</block>
+  <block id="98b2954d7b26ad04d4f74c70881d3ece" category="section-title">Edge Cache（エッジキャッシュ）</block>
+  <block id="0e6fc7a8a0a2e83eed1877313299a807" category="paragraph">Cloud Volume Edge Cacheのライセンスを提供します。</block>
+  <block id="cbea577daebf267793d8d7234ee50729" category="list-text">分散型企業向けのビジネス継続性とデータ保護を備えたプロフェッショナルパッケージと同じ機能を提供します</block>
+  <block id="90083db3dbad73e69a817501be172673" category="list-text">設置面積の小さいWindows VMを使用して、各場所でインテリジェントなエッジキャッシングを実現します</block>
+  <block id="c42bae5dc6b1d94a8229aa520a055d09" category="list-text">最小30TiB：6つのエッジノードを含む</block>
+  <block id="9228e835b818682287047b781e3a92b5" category="list-text">1つのエッジノードに3つのTiBごとに追加容量を購入</block>
+  <block id="7c4c7c30514b4cc21e76f21acfaacf2a" category="inline-link">Cloud Volume Edgeキャッシュがビジネスにどのように役立つかをご確認ください</block>
+  <block id="20044e95e1ba41fb44c428898ee01dc2" category="paragraph"><block ref="20044e95e1ba41fb44c428898ee01dc2" category="inline-link-rx"></block></block>
+  <block id="54dcd2c31a61414eef44d6ac931b8f57" category="paragraph">+ OptimizedパッケージとEdge Cacheパッケージは、BYOLでは使用できません。</block>
+  <block id="69ab7c49a4285d04bdc7e75b51a4a476" category="section-title">パッケージの変更</block>
+  <block id="5bdd4028830bea76f4939d67baa460ff" category="paragraph">導入後、容量ベースのライセンスを使用するCloud Volumes ONTAP システムのパッケージを変更できます。たとえば、Essentialsパッケージを含むCloud Volumes ONTAP システムを導入した場合、ビジネスニーズの変化に応じて、そのシステムをProfessionalパッケージに変更できます。</block>
+  <block id="ec3e25d80cfc0e5561493729eadecef7" category="paragraph"><block ref="ea19fa0e06a6047bcaabb9af62b066c3" category="inline-link-macro-rx"></block>。</block>
+  <block id="489518be96f533be752ec89389b6c58b" category="paragraph">価格設定の詳細については、を参照してください<block ref="24b216641bc5543dd17dac9f0e1e68f7" category="inline-link-rx"></block>。</block>
+  <block id="43cd867e31d6181725d728349aa4babc" category="paragraph">作業環境を作成し、事前定義されたセキュリティグループを選択する場合、次のいずれかの範囲内でトラフィックを許可するように選択できます。</block>
+  <block id="7fc4193225022c993e7d4bb64422ca5c" category="list-text">*選択したVPCのみ*：インバウンドトラフィックのソースは、Cloud Volumes ONTAP システムのVPCのサブネット範囲、およびコネクタが存在するVPCのサブネット範囲です。これが推奨されるオプションです。</block>
+  <block id="156399d98a61244bd71cdb8ff85e53cd" category="list-text">*すべてのVPC *：インバウンドトラフィックのソースは0.0.0.0/0のIP範囲です。</block>
+  <block id="f8ee8582a6b700d886898642f29f7b30" category="paragraph">Cloud Volumes ONTAP ノードには、NetApp AutoSupport へのアウトバウンドインターネットアクセスが必要です。ネットアップは、システムの健常性をプロアクティブに監視し、ネットアップテクニカルサポートにメッセージを送信します。</block>
+  <block id="779df8e7551940abf87bd694b09b95ad" category="paragraph">アウトバウンドのインターネット接続を使用してAutoSupport メッセージを送信できない場合、Cloud Managerは、コネクタをプロキシサーバとして使用するようにCloud Volumes ONTAP システムを自動的に設定します。唯一の要件は、コネクタのセキュリティグループがポート3128で_ inbound_connectionsを許可することです。コネクタを展開した後、このポートを開く必要があります。</block>
+  <block id="0e3e7ba11a5d193853da473b9d805b91" category="paragraph">Cloud Volumes ONTAP に厳密なアウトバウンドルールを定義した場合は、Cloud Volumes ONTAP セキュリティグループがポート3128で_OUTBOUND接続を許可する必要もあります。</block>
+  <block id="f0eca0b63b34e521acec088180836948" category="paragraph">必要な設定手順は、 Cloud Volumes ONTAP がアウトバウンドインターネットに接続されていることを確認することだけです。詳細については、クラウドプロバイダのネットワーク要件を参照してください。</block>
+  <block id="88683f91a600720f22d2f3542a3af2ea" category="list-text">*場所*：リージョン、アベイラビリティゾーン、VNet、およびサブネットを選択し、チェックボックスを選択してコネクタとターゲットの場所間のネットワーク接続を確認します。</block>
+  <block id="de908965dc022756e01253bb2ab070dc" category="list-text">*接続性*:新しいリソースグループまたは既存のリソースグループを選択し、事前定義されたセキュリティグループを使用するか、独自のリソースグループを使用するかを選択します。</block>
+  <block id="e95464b98c902ebad35546ca12a620a4" category="cell">アベイラビリティゾーン</block>
+  <block id="c62cb6ffba40dfccd9137c53e13ffa06" category="list-text">「選択したVNetのみ」を選択した場合のインバウンドトラフィックのソースは、選択したVNetのサブネット範囲およびコネクタが存在するVNetのサブネット範囲です。これが推奨されるオプションです。</block>
+  <block id="af5480ae1c406371c200cbecf7ae3ae3" category="list-text">「すべてのVNet *」を選択した場合、インバウンドトラフィックの送信元は0.0.0.0/0のIP範囲になります。</block>
+  <block id="37fce366f49fadbb4cd779195ad526fd" category="list-text">マルチテナント暗号化キー管理（MTEKM）、Cloud Volumes ONTAP 9.11.1以降</block>
+  <block id="8f2c4dcc319947ae616fd10e4743c3f2" category="paragraph"><block ref="8f2c4dcc319947ae616fd10e4743c3f2" category="inline-link-rx"></block></block>
+  <block id="99ac8cc27f368522d020a76c65551219" category="list-text">Cloud Volumes ONTAP では、ネットアップAutoSupport へのアウトバウンドのインターネットアクセスが必要です。ネットアップは、システムの健常性をプロアクティブに監視し、ネットアップテクニカルサポートにメッセージを送信します。</block>
+  <block id="faa229c0646aedb8542a9360e9a5d558" category="paragraph">アウトバウンドのインターネット接続を使用してAutoSupport メッセージを送信できない場合、Cloud Managerは、コネクタをプロキシサーバとして使用するようにCloud Volumes ONTAP システムを自動的に設定します。唯一の要件は、コネクタのファイアウォールがポート3128上の_INBOUND接続を許可することです。コネクタを展開した後、このポートを開く必要があります。</block>
+  <block id="20df81b10ec53f3723942b914b6125f2" category="paragraph">Cloud Volumes ONTAP に厳密なアウトバウンドルールを定義した場合は、Cloud Volumes ONTAP ファイアウォールがポート3128で_OUTBOUND接続を許可することも必要です。</block>
+  <block id="72d5371b4a8014dbf2df076044553ab6" category="paragraph">作業環境を作成する場合、展開時に定義済みファイアウォールポリシーのソースフィルタを選択できます。</block>
+  <block id="6cf46adb3fb6177f186428a0cac9190b" category="cell">アウトバウンドのインターネット接続が使用できない場合に、コネクタのプロキシサーバを介してAutoSupport メッセージを送信する</block>
+  <block id="2fcfd53faae8a46d655bdd5bf49e4324" category="cell">Cloud Volumes ONTAP からネットアップサポートにAutoSupport メッセージを送信するためのインターネットアクセスを提供します。このポートは、コネクタの導入後に手動で開く必要があります。</block>
+  <block id="84d78cb2b5253a0b7912f4b35a0a5276" category="list-text">からソフトウェアイメージを取得します<block ref="66da4490d1acc2c130b3158cd12dade2" category="inline-link-rx"></block>。</block>
+  <block id="3f10ba55f7b5ee2ce092504fcea72477" category="section-title">2022年7月31日</block>
+  <block id="5d95d03306d738eddc1fcb7b61b6151a" category="paragraph">コネクタの3.9.21リリースでは、次の変更が加えられました。</block>
+  <block id="cb8e43d2f95cb40206b28ff3def0b89c" category="section-title">2022年7月18日</block>
+  <block id="98ec171ea5a9061794734313fc3bfc8a" category="section-title">Azureの新しいライセンスパッケージです</block>
+  <block id="84b9d69f0957a24ce7fbed46c5b0ab12" category="paragraph">Azure Marketplaceサブスクリプションでのお支払い時に、Cloud Volumes ONTAP 用に2つの容量ベースのライセンスパッケージが新たに提供されます。</block>
+  <block id="99c581fb257fff513bc65272d605290f" category="list-text">*最適化*：プロビジョニングされた容量とI/O処理に別々に課金します</block>
+  <block id="e4bdb4038975db929f91098fe2d7ec12" category="inline-link">Cloud Volume エッジキャッシュ</block>
+  <block id="acc34707a7642d8ca31b72c25ca50920" category="list-text">* Edge Cache*:のライセンス<block ref="1bc1fd590dd203d9bb10cdd372d8de71" category="inline-link-rx"></block></block>
+  <block id="2d66a0b2e45838b2ebcec83efd6c765c" category="inline-link">これらのライセンスパッケージの詳細については、こちらをご覧ください</block>
+  <block id="ee76810836e6a3bb9dd07dfba26221a1" category="paragraph"><block ref="ddf7de7bfe14bcbf78a072c21440c1a8" category="inline-link-rx"></block>。</block>
+  <block id="c3c41ceeecb96e561c7ec71ffc1c62fe" category="list-text">*選択したVNetのみ*：インバウンドトラフィックのソースは、Cloud Volumes ONTAP システムのVNetのサブネット範囲およびコネクタが存在するVNetのサブネット範囲です。これが推奨されるオプションです。</block>
+  <block id="35b1e30bbf7722e3019259ffb8c9f0b7" category="list-text">*すべてのVNet *：インバウンドトラフィックの送信元は0.0.0.0/0のIP範囲です。</block>
 </blocks>

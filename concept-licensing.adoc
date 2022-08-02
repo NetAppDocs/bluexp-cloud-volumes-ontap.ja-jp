@@ -65,6 +65,26 @@ Cloud Volumes ONTAP のすべての機能をネットアップから無償で提
 
 
 
+ifdef::azure[]
+
+
+
+==== 最適化
+
+プロビジョニングされた容量とI/O処理の料金は別途お支払いください。
+
+* Cloud Volumes ONTAP のシングルノードまたはHA
+* 充電は、ストレージと使用量（I/O）という2つのコストコンポーネントに基づいています。
++
+データレプリケーションのI/Oは、課金されるI/O使用量にカウントされません。
+
+* Azure Marketplaceでのみ、従量課金制または年間契約として提供されます
+* 選択したVMタイプでサポートされる：E4s_v3、E4ds_v4、DS4_v2、DS13_v2、E8s_v3、 およびE8ds_v4
+* ネットアップのクラウドデータサービスを追加コストで利用できます
+
+
+endif::azure[]
+
 
 
 ==== Essentialsをクリックします
@@ -94,6 +114,25 @@ Cloud Volumes ONTAP のすべての機能をネットアップから無償で提
 * ネットアップのクラウドデータサービスを追加コストで利用できます
 
 
+ifdef::azure[]
+
+
+
+==== Edge Cache（エッジキャッシュ）
+
+Cloud Volume Edge Cacheのライセンスを提供します。
+
+* 分散型企業向けのビジネス継続性とデータ保護を備えたプロフェッショナルパッケージと同じ機能を提供します
+* 設置面積の小さいWindows VMを使用して、各場所でインテリジェントなエッジキャッシングを実現します
+* 最小30TiB：6つのエッジノードを含む
+* 1つのエッジノードに3つのTiBごとに追加容量を購入
+* Azure Marketplaceでのみ、従量課金制または年間契約として提供されます
+
+
+https://cloud.netapp.com/cloud-volumes-edge-cache["Cloud Volume Edgeキャッシュがビジネスにどのように役立つかをご確認ください"^]
+
+endif::azure[]
+
 
 
 === 消費モデル
@@ -101,6 +140,14 @@ Cloud Volumes ONTAP のすべての機能をネットアップから無償で提
 容量ベースのライセンスパッケージには、次の消費モデルがあります。
 
 * * BYOL *：ネットアップから購入したライセンス。任意のクラウドプロバイダでCloud Volumes ONTAP を導入する際に使用できます。
+
+
+ifdef::azure[]
+
++ OptimizedパッケージとEdge Cacheパッケージは、BYOLでは使用できません。
+
+endif::azure[]
+
 * * PAYGO *：クラウドプロバイダの市場から1時間ごとのサブスクリプション。
 * * Annual *：クラウドプロバイダの市場から年間契約。
 
@@ -121,9 +168,17 @@ Cloud Volumes ONTAP のすべての機能をネットアップから無償で提
 
 
 
+=== パッケージの変更
+
+導入後、容量ベースのライセンスを使用するCloud Volumes ONTAP システムのパッケージを変更できます。たとえば、Essentialsパッケージを含むCloud Volumes ONTAP システムを導入した場合、ビジネスニーズの変化に応じて、そのシステムをProfessionalパッケージに変更できます。
+
+link:task-manage-capacity-licenses.html["充電方法を変更する方法について説明します"]。
+
+
+
 === 価格設定
 
-価格設定の詳細については、を参照してください https://cloud.netapp.com/ontap-cloud["NetApp Cloud Central"^]。
+価格設定の詳細については、を参照してください https://cloud.netapp.com/pricing?hsCtaTracking=4f8b7b77-8f63-4b73-b5af-ee09eab4fbd6%7C5fefbc99-396c-4084-99e6-f1e22dc8ffe7["NetApp Cloud Central"^]。
 
 
 

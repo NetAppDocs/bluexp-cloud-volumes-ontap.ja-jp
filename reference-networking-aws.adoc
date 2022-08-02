@@ -26,9 +26,9 @@ AWS では、次の要件を満たす必要があります。
 
 === Cloud Volumes ONTAP ノードのアウトバウンドインターネットアクセス
 
-Cloud Volumes ONTAP ノードでは、ネットアップ AutoSupport にメッセージを送信するために、アウトバウンドインターネットアクセスが必要です。ネットアップ AutoSupport は、ストレージの健全性をプロアクティブに監視します。
+Cloud Volumes ONTAP ノードには、NetApp AutoSupport へのアウトバウンドインターネットアクセスが必要です。ネットアップは、システムの健常性をプロアクティブに監視し、ネットアップテクニカルサポートにメッセージを送信します。
 
-Cloud Volumes ONTAP から AutoSupport メッセージを送信できるように、ルーティングポリシーとファイアウォールポリシーで次のエンドポイントへの AWS HTTP/HTTPS トラフィックを許可する必要があります。
+Cloud Volumes ONTAP が AutoSupport メッセージを送信できるように、ルーティングポリシーとファイアウォールポリシーで次のエンドポイントへの HTTP / HTTPS トラフィックを許可する必要があります。
 
 * \ https://support.netapp.com/aods/asupmessage
 * \ https://support.netapp.com/asupprod/post/1.0/postAsup
@@ -36,7 +36,11 @@ Cloud Volumes ONTAP から AutoSupport メッセージを送信できるよう�
 
 NAT インスタンスがある場合は、プライベートサブネットからインターネットへの HTTPS トラフィックを許可する着信セキュリティグループルールを定義する必要があります。
 
-link:task-verify-autosupport.html["AutoSupport の設定方法について説明します"]。
+アウトバウンドのインターネット接続を使用してAutoSupport メッセージを送信できない場合、Cloud Managerは、コネクタをプロキシサーバとして使用するようにCloud Volumes ONTAP システムを自動的に設定します。唯一の要件は、コネクタのセキュリティグループがポート3128で_ inbound_connectionsを許可することです。コネクタを展開した後、このポートを開く必要があります。
+
+Cloud Volumes ONTAP に厳密なアウトバウンドルールを定義した場合は、Cloud Volumes ONTAP セキュリティグループがポート3128で_OUTBOUND接続を許可する必要もあります。
+
+アウトバウンドのインターネットアクセスが使用可能であることを確認したら、 AutoSupport をテストしてメッセージを送信できることを確認します。手順については、を参照してください https://docs.netapp.com/us-en/ontap/system-admin/setup-autosupport-task.html["ONTAP のドキュメント：「 AutoSupport のセットアップ"^]。
 
 
 

@@ -111,6 +111,35 @@ image:screenshot-digital-wallet-packages.png["プロフェッショナルパッ�
 
 
 
+== 充電方法を変更します
+
+容量ベースのライセンスを使用するCloud Volumes ONTAP システムの充電方法を変更できます。たとえば、Essentialsパッケージを含むCloud Volumes ONTAP システムを導入した場合、ビジネスニーズの変化に応じて、そのシステムをProfessionalパッケージに変更できます。
+
+ifdef::azure[]
+
+現時点では、最適化充電方法への変更はサポートされていません。
+
+endif::azure[]
+
+.手順
+. 左側のナビゲーションメニューから、* Digital Wallet *を選択します。
+. [*充電方法*（Cloud Volumes ONTAP *）]タブで、[*充電方法の変更*（* Change Charging method *）]
++
+image:screenshot-digital-wallet-charging-method-button.png["[課金方法の変更]ボタンが表のすぐ上にある、デジタルウォレットのCloud Volumes ONTAP ページのスクリーンショット。"]
+
+. 作業環境を選択して新しい充電方法を選択し、パッケージタイプを変更するとサービス料金に影響することを確認します。
++
+image:screenshot-digital-wallet-charging-method.png["Cloud Volumes ONTAP 作業環境の新しい充電方法を選択する[充電方法の変更]ダイアログボックスのスクリーンショット。"]
+
+. [充電方法の変更*]をクリックします。
+
+
+Cloud Volumes ONTAP システムの課金方法がCloud Managerで変更されました。
+
+また、Digital Walletは、作成した変更を反映するために、各パッケージタイプの消費済み容量を更新する場合があります。
+
+
+
 == 容量ベースのライセンスを削除する
 
 容量ベースのライセンスの期限が切れて使用できなくなった場合は、いつでも削除できます。

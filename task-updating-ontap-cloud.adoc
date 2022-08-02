@@ -262,7 +262,7 @@ Cloud Volumes ONTAP ソフトウェアイメージをコネクタまたは HTTP 
 
 NOTE: 事前定義された Cloud Volumes ONTAP セキュリティグループは、デフォルトでアウトバウンド HTTP 接続を許可します。
 
-. からソフトウェアイメージを取得します https://mysupport.netapp.com/products/p/cloud_ontap.html["ネットアップサポートサイト"^]。
+. からソフトウェアイメージを取得します https://mysupport.netapp.com/site/products/all/details/cloud-volumes-ontap/downloads-tab["ネットアップサポートサイト"^]。
 . ソフトウェアイメージを、ファイルの提供元となるコネクタまたは HTTP サーバ上のディレクトリにコピーします。
 +
 たとえば、ソフトウェアイメージをコネクタ上の次のパスにコピーできます。
