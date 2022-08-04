@@ -24,7 +24,7 @@ Cloud Volumes ONTAP システムは、クラウドプロバイダのコンソー
 NOTE: Cloud Manager がクラウドプロバイダに Cloud Volumes ONTAP を導入すると、インスタンスでの終了保護が有効になります。このオプションを使用すると、偶発的な終了を防止できます
 
 .手順
-. 作業環境で Cloud Backup を有効にした場合は、バックアップしたデータが引き続き必要かどうかを確認してから https://docs.netapp.com/us-en/cloud-manager-backup-restore/task-managing-backups.html#deleting-backups["必要に応じて、バックアップを削除します"^]。
+. 作業環境で Cloud Backup を有効にした場合は、バックアップしたデータが引き続き必要かどうかを確認してから https://docs.netapp.com/us-en/cloud-manager-backup-restore/task-manage-backups-ontap.html#deleting-backups["必要に応じて、バックアップを削除します"^]。
 +
 クラウドバックアップは、設計上 Cloud Volumes ONTAP から独立しています。Cloud Volumes ONTAP システムを削除しても、 Cloud Backup はバックアップを自動的に削除しません。また、システムを削除した後でバックアップを削除するための UI で現在サポートされていません。
 

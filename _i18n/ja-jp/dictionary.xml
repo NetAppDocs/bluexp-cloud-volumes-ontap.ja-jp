@@ -429,7 +429,6 @@
   <block id="1b044bb64b9bbe28f6c0512f65cdaa86" category="paragraph">作業環境を削除しても、 Cloud Backup のバックアップや Cloud Data Sense のインスタンスや監視など、他のサービスによって管理されているリソースは削除されません。手動で削除する必要があります。そうしないと、これらのリソースの料金が引き続き請求されます。</block>
   <block id="a4b6dd7a7574be8d2cc8a2fe53d10bd1" category="admonition">Cloud Manager がクラウドプロバイダに Cloud Volumes ONTAP を導入すると、インスタンスでの終了保護が有効になります。このオプションを使用すると、偶発的な終了を防止できます</block>
   <block id="ab3fdba113c7d85bf4272c78761ef0b8" category="inline-link">必要に応じて、バックアップを削除します</block>
-  <block id="8e7b1963d43e3f3ba3b7bfa84c9d8060" category="list-text">作業環境で Cloud Backup を有効にした場合は、バックアップしたデータが引き続き必要かどうかを確認してから<block ref="05162ddbcf131729dac461924d397f23" category="inline-link-rx"></block>。</block>
   <block id="a06dfc814bad1cf7d8af36ecb8d7caf2" category="paragraph">クラウドバックアップは、設計上 Cloud Volumes ONTAP から独立しています。Cloud Volumes ONTAP システムを削除しても、 Cloud Backup はバックアップを自動的に削除しません。また、システムを削除した後でバックアップを削除するための UI で現在サポートされていません。</block>
   <block id="953135468f926ef23950412ea3483834" category="list-text">この作業環境で Cloud Data Sense または Monitoring を有効にし、他の作業環境でこれらのサービスを使用していない場合は、それらのサービスのインスタンスを削除する必要があります。</block>
   <block id="7121e7b9f702c61fbd2b509d05e53715" category="inline-link">Cloud Data Sense インスタンスの詳細については、こちらをご覧ください</block>
@@ -4308,4 +4307,5 @@
   <block id="ee76810836e6a3bb9dd07dfba26221a1" category="paragraph"><block ref="ddf7de7bfe14bcbf78a072c21440c1a8" category="inline-link-rx"></block>。</block>
   <block id="c3c41ceeecb96e561c7ec71ffc1c62fe" category="list-text">*選択したVNetのみ*：インバウンドトラフィックのソースは、Cloud Volumes ONTAP システムのVNetのサブネット範囲およびコネクタが存在するVNetのサブネット範囲です。これが推奨されるオプションです。</block>
   <block id="35b1e30bbf7722e3019259ffb8c9f0b7" category="list-text">*すべてのVNet *：インバウンドトラフィックの送信元は0.0.0.0/0のIP範囲です。</block>
+  <block id="4c6b5df3fe9b762b973dc2bdcbd77ada" category="list-text">作業環境で Cloud Backup を有効にした場合は、バックアップしたデータが引き続き必要かどうかを確認してから<block ref="a63fe511bda1d904c92110dce9e2b88b" category="inline-link-rx"></block>。</block>
 </blocks>
