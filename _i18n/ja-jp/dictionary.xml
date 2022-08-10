@@ -4233,7 +4233,6 @@
   <block id="3ae1886c49dab0e65e020c2758daff67" category="paragraph"><block ref="6f81c4ca34877706a163afe91c466abd" category="inline-link-rx"></block>。</block>
   <block id="662442d32a5fd91298fcf8b6391fdf17" category="section-title">充電方法を変更します</block>
   <block id="a117b4a94f6f90aef089573b1f002d26" category="paragraph">容量ベースのライセンスを使用するCloud Volumes ONTAP システムの充電方法を変更できます。たとえば、Essentialsパッケージを含むCloud Volumes ONTAP システムを導入した場合、ビジネスニーズの変化に応じて、そのシステムをProfessionalパッケージに変更できます。</block>
-  <block id="856fccc2c5d9211dbd784e97c60dd9bc" category="paragraph">現時点では、最適化充電方法への変更はサポートされていません。</block>
   <block id="3397777d22d2d5f746157ca31f0d8460" category="list-text">[*充電方法*（Cloud Volumes ONTAP *）]タブで、[*充電方法の変更*（* Change Charging method *）]</block>
   <block id="731d5463e4c6962d26d5b5d4b345930e" category="inline-image-macro">[課金方法の変更]ボタンが表のすぐ上にある、デジタルウォレットのCloud Volumes ONTAP ページのスクリーンショット。</block>
   <block id="e98a6fb0343d664e817b1f922b7a92f1" category="paragraph"><block ref="e98a6fb0343d664e817b1f922b7a92f1" category="inline-image-macro-rx" type="image"></block></block>
@@ -4258,7 +4257,6 @@
   <block id="a131e5df30c445534883b2b08d3f9e4e" category="paragraph">プロビジョニングされた容量とI/O処理の料金は別途お支払いください。</block>
   <block id="258f58bf86a685fa4951f45a75224c86" category="list-text">Cloud Volumes ONTAP のシングルノードまたはHA</block>
   <block id="ac8875b922d75fca71aa495c421855a6" category="list-text">充電は、ストレージと使用量（I/O）という2つのコストコンポーネントに基づいています。</block>
-  <block id="5bf349d9a4df0ebb199c8dedb951539e" category="paragraph">データレプリケーションのI/Oは、課金されるI/O使用量にカウントされません。</block>
   <block id="050a8b75e1382967bf1140508c5b62b6" category="list-text">Azure Marketplaceでのみ、従量課金制または年間契約として提供されます</block>
   <block id="cd709b16b7a535f5ecfcfbe3f849b353" category="list-text">選択したVMタイプでサポートされる：E4s_v3、E4ds_v4、DS4_v2、DS13_v2、E8s_v3、 およびE8ds_v4</block>
   <block id="98b2954d7b26ad04d4f74c70881d3ece" category="section-title">Edge Cache（エッジキャッシュ）</block>
@@ -4308,4 +4306,8 @@
   <block id="c3c41ceeecb96e561c7ec71ffc1c62fe" category="list-text">*選択したVNetのみ*：インバウンドトラフィックのソースは、Cloud Volumes ONTAP システムのVNetのサブネット範囲およびコネクタが存在するVNetのサブネット範囲です。これが推奨されるオプションです。</block>
   <block id="35b1e30bbf7722e3019259ffb8c9f0b7" category="list-text">*すべてのVNet *：インバウンドトラフィックの送信元は0.0.0.0/0のIP範囲です。</block>
   <block id="4c6b5df3fe9b762b973dc2bdcbd77ada" category="list-text">作業環境で Cloud Backup を有効にした場合は、バックアップしたデータが引き続き必要かどうかを確認してから<block ref="a63fe511bda1d904c92110dce9e2b88b" category="inline-link-rx"></block>。</block>
+  <block id="af54c7f362b7672b7ad2b66397fd230c" category="list-text">最適化された充電方法への変更はサポートされていません。</block>
+  <block id="990da7f1ae0e8fb8294bff04c936ecaa" category="list-text">Edge Cacheライセンスとの間での変更はサポートされていません。</block>
+  <block id="cfdb32f80009b1e5c5c0468dda9f013d" category="paragraph">クラウドプロバイダの市場からプライベートオファーまたは契約を結んでいる場合、契約に含まれていない課金方式に変更すると、BYOL（ネットアップからライセンスを購入した場合）またはPAYGOに対して課金されます。</block>
+  <block id="a2e5678d48654234a84ed14a48c17119" category="paragraph">データレプリケーション（SnapMirror）やNDMPに関連するI/Oは料金に含まれません。</block>
 </blocks>
