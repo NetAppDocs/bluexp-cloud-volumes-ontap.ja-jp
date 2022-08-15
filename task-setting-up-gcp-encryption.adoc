@@ -27,7 +27,7 @@ Google Cloud Storage では常にデータが暗号化されてからディス�
 +
 [source, yaml]
 ----
-- cloudkms.cryptoKeyVersions.list
+- cloudkms.cryptoKeyVersions.useToEncrypt
 - cloudkms.cryptoKeys.get
 - cloudkms.cryptoKeys.list
 - cloudkms.keyRings.list
