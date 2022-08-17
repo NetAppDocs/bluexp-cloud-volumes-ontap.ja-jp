@@ -4310,4 +4310,5 @@
   <block id="990da7f1ae0e8fb8294bff04c936ecaa" category="list-text">Edge Cacheライセンスとの間での変更はサポートされていません。</block>
   <block id="cfdb32f80009b1e5c5c0468dda9f013d" category="paragraph">クラウドプロバイダの市場からプライベートオファーまたは契約を結んでいる場合、契約に含まれていない課金方式に変更すると、BYOL（ネットアップからライセンスを購入した場合）またはPAYGOに対して課金されます。</block>
   <block id="a2e5678d48654234a84ed14a48c17119" category="paragraph">データレプリケーション（SnapMirror）やNDMPに関連するI/Oは料金に含まれません。</block>
+  <block id="240bee2f94d72e6a18a1263f971266c2" category="cell">コネクタへの接続と、クラスタ管理LIFのIPアドレスを使用したSystem Manager WebコンソールへのHTTPSアクセス</block>
 </blocks>
