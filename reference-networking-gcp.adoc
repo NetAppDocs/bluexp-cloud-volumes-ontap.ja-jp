@@ -72,7 +72,7 @@ HA ペアの作成時に、 Cloud Manager から 4 つの VPC を選択するよ
 * vPC-0 ：データおよびノードへのインバウンド接続
 * vPC-1 、 VPC -2 、および VPC -3 ：ノードと HA メディエーター間の内部通信
 +
-image:diagram_gcp_ha.png[""]
+image:diagram_gcp_ha.png["この概念図は、クラウドボリュームのHAペアと構成に必要な4つのVPCを示したものです。"]
 
 
 

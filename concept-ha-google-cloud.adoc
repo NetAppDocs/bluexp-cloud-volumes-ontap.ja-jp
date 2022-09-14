@@ -39,7 +39,7 @@ link:reference-networking-gcp.html["ネットワーク要件について説明�
 
 次の概念図は、 Cloud Volumes ONTAP HA ペアとそのコンポーネントを示しています。
 
-image:diagram_gcp_ha.png[""]
+image:diagram_gcp_ha.png["Cloud Volumes ONTAP HAペアとそのコンポーネントの概念図。"]
 
 
 

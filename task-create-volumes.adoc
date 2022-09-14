@@ -228,7 +228,7 @@ NOTE: テンプレートを使用する場合にのみ、 NFS ボリュームま
 
 .手順
 . キャンバスページで、ボリュームをプロビジョニングする Cloud Volumes ONTAP システムの名前をクリックします。
-. をクリックします image:screenshot_gallery_options.gif[""] > * テンプレートからボリュームを追加 * 。
+. をクリックします image:screenshot_gallery_options.gif["3つの横のドットのアイコン。"] > * テンプレートからボリュームを追加 * 。
 +
 image:screenshot_template_add_vol_cvo.png["テンプレートから新しいボリュームを追加する方法を示すスクリーンショット。"]
 
