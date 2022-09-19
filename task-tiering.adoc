@@ -24,27 +24,27 @@ summary: ホットデータ用の SSD または HDD の高パフォーマンス�
 [role="quick-margin-list"]
 ifdef::aws[]
 
-* AWS では、 S3 への VPC エンドポイントが必要です。 <<Requirements to tier cold data to AWS S3,詳細はこちら。>>。
+* AWS では、 S3 への VPC エンドポイントが必要です。  to tier cold data to AWS S3,詳細はこちら。。
 
 
 endif::aws[]
 
 ifdef::azure[]
 
-* Azure では、 Cloud Manager に必要な権限が付与されていれば何も実行する必要はありません。 <<Requirements to tier cold data to Azure Blob storage,詳細はこちら。>>。
+* Azure では、 Cloud Manager に必要な権限が付与されていれば何も実行する必要はありません。  to tier cold data to Azure Blob storage,詳細はこちら。。
 
 
 endif::azure[]
 
 ifdef::gcp[]
 
-* Google Cloudの場合は、プライベートGoogleアクセスのサブネットを設定し、サービスアカウントを設定する必要があります。 <<Requirements to tier cold data to a Google Cloud Storage bucket,詳細はこちら。>>。
+* Google Cloudの場合は、プライベートGoogleアクセスのサブネットを設定し、サービスアカウントを設定する必要があります。  to tier cold data to a Google Cloud Storage bucket,詳細はこちら。。
 
 
 endif::gcp[]
 
 [role="quick-margin-para"]
-ボリュームでデータ階層化を有効にするには、アグリゲートでデータ階層化が有効になっている必要があります。新しいボリュームと既存のボリュームの要件を確認しておく必要があります。 <<Ensuring that tiering is enabled on aggregates,詳細はこちら。>>。
+ボリュームでデータ階層化を有効にするには、アグリゲートでデータ階層化が有効になっている必要があります。新しいボリュームと既存のボリュームの要件を確認しておく必要があります。  that tiering is enabled on aggregates,詳細はこちら。。
 
 [role="quick-margin-para"]
 ボリュームを作成、変更、またはレプリケートするときに、 Cloud Manager から階層化ポリシーを選択するよう求められます。
@@ -60,7 +60,7 @@ endif::gcp[]
 * 大容量階層用のオブジェクトストアを作成する必要はありません。クラウドマネージャーがそれを実現します。
 * システムレベルでデータの階層化を有効にする必要はありません。
 +
-Cloud Manager は、システム作成時にコールドデータ用のオブジェクトストアを作成し、 <<Enabling data tiering after implementing the requirements,接続または権限に問題がないことが必要です>>。その後は、ボリューム（および場合によっては、 <<Ensuring that tiering is enabled on aggregates,アグリゲート>>）。
+Cloud Manager は、システム作成時にコールドデータ用のオブジェクトストアを作成し、  data tiering after implementing the requirements,接続または権限に問題がないことが必要です。その後は、ボリューム（および場合によっては、  that tiering is enabled on aggregates,アグリゲート）。
 
 
 
@@ -193,7 +193,7 @@ endif::gcp[]
 接続や権限に問題がなければ、 Cloud Manager はシステムの作成時にコールドデータ用のオブジェクトストアを作成します。システムを作成するまで上記の要件を満たしていない場合は、階層化を手動で有効にする必要があります。これにより、オブジェクトストアが作成されます。
 
 .手順
-. <<Requirements,すべての要件を満たしていることを確認します>>。
+. ,すべての要件を満たしていることを確認します。
 . キャンバスページで、 Cloud Volumes ONTAP インスタンスの名前をダブルクリックします。
 . メニューアイコンをクリックし、 * 容量階層化を有効にする * を選択します。
 +
@@ -203,7 +203,7 @@ image:screenshot_enable_capacity_tiering.gif["Cloud Manager がデータ階層�
 このオプションが表示されるのは、 Cloud Manager システムの作成時にデータの階層化を有効にできなかった場合のみです。
 
 +
-Google Cloudでは、このオプションを表示する前にサービスアカウントをCloud Volumes ONTAP に接続する必要があります。 <<Requirements,すべての要件を満たしていることを確認します>>。
+Google Cloudでは、このオプションを表示する前にサービスアカウントをCloud Volumes ONTAP に接続する必要があります。 ,すべての要件を満たしていることを確認します。
 
 . Enable * をクリックします。これにより、この Cloud Volumes ONTAP システムで階層化データに使用するオブジェクトストアが Cloud Manager で作成されます。
 

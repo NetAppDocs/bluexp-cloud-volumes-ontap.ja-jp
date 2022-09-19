@@ -20,6 +20,45 @@ Cloud Manager の Cloud Volumes ONTAP 管理の新機能について説明しま
 
 
 
+== 2022年9月18日
+
+コネクタの3.9.22リリースでは、次の変更が加えられました。
+
+
+
+=== デジタルウォレットの機能強化
+
+* デジタルウォレットに、最適化されたI/Oライセンスパッケージと、アカウント全体でCloud Volumes ONTAP システム用にプロビジョニングされたWORM容量の概要が表示されます。
++
+これらの詳細情報は、充電状況や容量の追加購入が必要かどうかを把握するのに役立ちます。
+
++
+https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-manage-capacity-licenses.html["アカウントの使用済み容量を表示する方法について説明します"]。
+
+* 1つの充電方法から最適化された充電方法に変更できるようになりました。
++
+https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-manage-capacity-licenses.html["充電方法を変更する方法について説明します"]。
+
+
+
+
+
+=== コストとパフォーマンスを最適化
+
+Cloud Volumes ONTAP システムのコストとパフォーマンスをキャンバスから直接最適化できるようになりました。
+
+作業環境を選択したら、コストとパフォーマンスの最適化*オプションを選択して、Cloud Volumes ONTAP のインスタンスタイプを変更できます。サイズの小さいインスタンスを選択するとコストを削減できますが、サイズの大きいインスタンスに変更することでパフォーマンスを最適化できます。
+
+image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-cloud-volumes-ontap/main/media/screenshot-optimize-cost-performance.png["作業環境を選択した後にキャンバスから利用できるコストとパフォーマンスの最適化オプションのスクリーンショット。"]
+
+
+
+=== AutoSupport 通知
+
+Cloud Volumes ONTAP システムからAutoSupport メッセージを送信できない場合に、Cloud Managerから通知が生成されるようになりました。この通知には、ネットワークの問題のトラブルシューティングに使用できる手順へのリンクが記載されています。
+
+
+
 == 2022年7月31日
 
 コネクタの3.9.21リリースでは、次の変更が加えられました。

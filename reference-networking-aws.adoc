@@ -42,6 +42,8 @@ Cloud Volumes ONTAP に厳密なアウトバウンドルールを定義した場
 
 アウトバウンドのインターネットアクセスが使用可能であることを確認したら、 AutoSupport をテストしてメッセージを送信できることを確認します。手順については、を参照してください https://docs.netapp.com/us-en/ontap/system-admin/setup-autosupport-task.html["ONTAP のドキュメント：「 AutoSupport のセットアップ"^]。
 
+AutoSupport メッセージを送信できないことがCloud Managerから通知された場合は、 link:task-verify-autosupport.html#troubleshoot-your-autosupport-configuration["AutoSupport 構成のトラブルシューティングを行います"]。
+
 
 
 === HA メディエータのアウトバウンドインターネットアクセス

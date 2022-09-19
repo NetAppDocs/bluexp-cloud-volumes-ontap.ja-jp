@@ -137,10 +137,10 @@ TIP: サポートに登録されていないシステムにも、新しいバー
 
 アップグレードを実行する前に、システムの準備ができていることを確認し、必要な設定の変更を行ってください。
 
-* <<Plan for downtime>>
-* <<Verify that automatic giveback is still enabled>>
-* <<Suspend SnapMirror transfers>>
-* <<Verify that aggregates are online>>
+*  for downtime
+*  that automatic giveback is still enabled
+*  SnapMirror transfers
+*  that aggregates are online
 
 
 
@@ -209,9 +209,9 @@ image:screenshot_aggr_state.gif["スクリーンショット：アグリゲー�
 
 == Cloud Volumes ONTAP をアップグレードします
 
-新しいバージョンがアップグレード可能になると、 Cloud Manager から通知が表示されます。この通知からアップグレードプロセスを開始できます。詳細については、を参照してください <<Upgrade from Cloud Manager notifications>>。
+新しいバージョンがアップグレード可能になると、 Cloud Manager から通知が表示されます。この通知からアップグレードプロセスを開始できます。詳細については、を参照してください  from Cloud Manager notifications。
 
-外部 URL 上のイメージを使用してソフトウェアのアップグレードを実行するもう 1 つの方法。このオプションは、 Cloud Manager が S3 バケットにアクセスしてソフトウェアをアップグレードできない場合、またはパッチを適用して提供された場合に役立ちます。詳細については、を参照してください <<Upgrade from an image available at a URL>>。
+外部 URL 上のイメージを使用してソフトウェアのアップグレードを実行するもう 1 つの方法。このオプションは、 Cloud Manager が S3 バケットにアクセスしてソフトウェアをアップグレードできない場合、またはパッチを適用して提供された場合に役立ちます。詳細については、を参照してください  from an image available at a URL。
 
 
 
@@ -250,7 +250,16 @@ SnapMirror 転送を一時停止した場合は、 System Manager を使用し�
 
 Cloud Volumes ONTAP ソフトウェアイメージをコネクタまたは HTTP サーバに配置し、 Cloud Manager からのソフトウェアのアップグレードを開始できます。Cloud Manager が S3 バケットにアクセスしてソフトウェアをアップグレードできない場合に、この方法を使用できます。
 
-ボリュームやアグリゲートの作成などの Cloud Manager の処理が Cloud Volumes ONTAP システムで実行されていないことを確認します。
+.作業を開始する前に
+* ボリュームやアグリゲートの作成などの Cloud Manager の処理が Cloud Volumes ONTAP システムで実行されていないことを確認します。
+* ONTAP イメージのホストにHTTPSを使用する場合は、SSL認証の問題が原因でアップグレードが失敗する可能性がありますが、これは証明書がないことが原因です。回避策 では、ONTAP とCloud Managerの間の認証に使用するCA署名証明書を生成してインストールします。
++
+手順を追った操作手順については、ネットアップのナレッジベースを参照してください。
+
++
+https://kb.netapp.com/Advice_and_Troubleshooting/Cloud_Services/Cloud_Manager/How_to_configure_Cloud_Manager_as_an_HTTPS_server_to_host_upgrade_images["ネットアップの技術情報アーティクル：「How to configure Cloud Manager as an HTTPS server to host upgrade images"^]
+
+
 
 .手順
 . オプション： Cloud Volumes ONTAP ソフトウェアイメージをホストできる HTTP サーバを設定します。

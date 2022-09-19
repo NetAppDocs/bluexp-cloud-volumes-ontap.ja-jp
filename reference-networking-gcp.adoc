@@ -122,6 +122,10 @@ TIP: HA ペアを使用している場合、 HA メディエーターではア�
 
 
 --
+
+
+AutoSupport メッセージを送信できないことがCloud Managerから通知された場合は、 link:task-verify-autosupport.html#troubleshoot-your-autosupport-configuration["AutoSupport 構成のトラブルシューティングを行います"]。
+
 プライベート IP アドレス:: Cloud Manager は、次の数のプライベート IP アドレスを GCP の Cloud Volumes ONTAP に割り当てます。
 +
 --
@@ -157,8 +161,8 @@ Cloud Volumes ONTAP を API を使用して導入する場合、 Storage VM （ 
 --
 HA 構成には、次の 2 組のファイアウォールルールが必要です。
 
-* VPC -0 の HA コンポーネントのルールセット。これらのルールにより、 Cloud Volumes ONTAP へのデータアクセスが可能になります。 <<Firewall rules for Cloud Volumes ONTAP,詳細はこちら。>>。
-* VPC -1 、 VPC -2 、および VPC -3 の HA コンポーネントに関するもう 1 つのルールセット。これらのルールは、 HA コンポーネント間のインバウンド通信とアウトバウンド通信に対してオープンです。 <<Firewall rules for Cloud Volumes ONTAP,詳細はこちら。>>。
+* VPC -0 の HA コンポーネントのルールセット。これらのルールにより、 Cloud Volumes ONTAP へのデータアクセスが可能になります。  rules for Cloud Volumes ONTAP,詳細はこちら。。
+* VPC -1 、 VPC -2 、および VPC -3 の HA コンポーネントに関するもう 1 つのルールセット。これらのルールは、 HA コンポーネント間のインバウンド通信とアウトバウンド通信に対してオープンです。  rules for Cloud Volumes ONTAP,詳細はこちら。。
 
 
 --
@@ -457,7 +461,7 @@ NOTE: source は、 Cloud Volumes ONTAP システムのインターフェイス�
 
 == VPC -1 、 VPC -2 、および VPC -3 のファイアウォールルール
 
-GCP では、 4 つの VPC 間で HA 構成が導入されます。VPC -0 の HA 構成に必要なファイアウォールルール はです <<Firewall rules for Cloud Volumes ONTAP,Cloud Volumes ONTAP については上記のリストを参照してください>>。
+GCP では、 4 つの VPC 間で HA 構成が導入されます。VPC -0 の HA 構成に必要なファイアウォールルール はです  rules for Cloud Volumes ONTAP,Cloud Volumes ONTAP については上記のリストを参照してください。
 
 一方、 Cloud Manager で VPC -1 、 VPC -2 、および VPC -3 のインスタンスに対して作成される事前定義されたファイアウォールルールによって、 _All_protocols とポートを介した入力通信が有効になります。これらのルールに従って、 HA ノード間の通信が可能になります。
 

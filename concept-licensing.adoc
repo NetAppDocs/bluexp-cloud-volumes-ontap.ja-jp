@@ -58,7 +58,7 @@ Cloud Volumes ONTAP のすべての機能をネットアップから無償で提
 * ネットアップのアカウント 1 つにつき、最大 10 台の Cloud Volumes ONTAP システムを任意のクラウドプロバイダで使用できます。
 * Cloud Volumes ONTAP システム用にプロビジョニングされた容量が 500GiB を超えると、 Cloud Manager はシステムを Essentials パッケージに変換します。
 +
-システムがEssentialsパッケージに変換されるとすぐに、が表示されます <<Notes about charging,最低料金>> 適用されます。
+システムがEssentialsパッケージに変換されるとすぐに、が表示されます  about charging,最低料金 適用されます。
 
 +
 プロビジョニングされた容量が 500GiB 未満の他のシステムは、 Freemium （ Freemium 製品を使用して導入されている場合）に残ります。
