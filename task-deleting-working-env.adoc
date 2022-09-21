@@ -39,7 +39,7 @@ NOTE: Cloud Manager がクラウドプロバイダに Cloud Volumes ONTAP を導
 .. キャンバスページで、削除する Cloud Volumes ONTAP 作業環境の名前をダブルクリックします。
 .. メニューアイコンをクリックし、 * 削除 * をクリックします。
 +
-image:screenshot_delete_cloud_volumes_ontap.gif["削除アクションを含む作業環境で使用可能なメニューを示すスクリーンショット。"]
+image:screenshot_delete_cloud_volumes_ontap.png["削除アクションを含む作業環境で使用可能なメニューを示すスクリーンショット。"]
 
 .. 作業環境の名前を入力し、 * 削除 * をクリックします。
 +
