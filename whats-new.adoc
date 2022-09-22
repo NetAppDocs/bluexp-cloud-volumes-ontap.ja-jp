@@ -99,8 +99,6 @@ Cloud Volumes ONTAP 作業環境を作成するときに、ユーザインター
 
 image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-cloud-volumes-ontap/main/media/screenshot-allow-traffic.png["セキュリティグループを選択したときに作業環境ウィザードで使用可能なAllow traffic withinオプションを示すスクリーンショット。"]
 
-ifdef::azure[]
-
 
 
 == 2022年7月18日
@@ -117,8 +115,6 @@ Azure Marketplaceサブスクリプションでのお支払い時に、Cloud Vol
 
 https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/concept-licensing.html#packages["これらのライセンスパッケージの詳細については、こちらをご覧ください"]。
 
-endif::azure[]
-
 
 
 == 2022年7月3日
@@ -132,8 +128,6 @@ endif::azure[]
 デジタルウォレットに、アカウントで消費された合計容量とライセンスパッケージで消費された容量が表示されるようになりました。この情報は、料金の支払い方法や、容量の追加購入が必要かどうかを把握するのに役立ちます。
 
 image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-cloud-volumes-ontap/main/media/screenshot-digital-wallet-summary.png["容量ベースのライセンスのデジタルウォレットページを示すスクリーンショット。アカウントの使用済み容量の概要が表示され、ライセンスパッケージ別に容量が表示されます。"]
-
-ifdef::aws[]
 
 
 
@@ -151,10 +145,6 @@ AWSでバージョン9.11.0以降を実行している新規および既存のCl
 
 https://docs.netapp.com/us-en/ontap/object-storage-management/index.html["ONTAP で S3 オブジェクトストレージサービスを設定および管理する方法について説明します"^]
 
-endif::aws[]
-
-ifdef::azure[]
-
 
 
 === Azure Cloudリージョンが新たにサポートされます
@@ -170,14 +160,6 @@ https://cloud.netapp.com/cloud-volumes-global-regions["Cloud Volumes ONTAP で�
 バージョン9.9.1以降を実行する新規および既存のCloud Volumes ONTAP システムにONTAP S3ライセンスが追加されました。
 
 https://docs.netapp.com/us-en/ontap/object-storage-management/index.html["ONTAP で S3 オブジェクトストレージサービスを設定および管理する方法について説明します"^]
-
-endif::azure[]
-
-ifdef::gcp[]
-
-<stdin>で未解決のディレクティブ:_include/whats-new-July - GCP.adoc[]
-
-endif::gcp[]
 
 
 
@@ -202,8 +184,6 @@ Cloud Volumes ONTAP の高度な管理を行う必要がある場合は、ONTAP 
 この拡張ビューは、Cloud Volumes ONTAP 9.10.0以降でプレビューとして使用できます。今後のリリースでは、この点をさらに改良し、機能を強化する予定です。製品内のチャットでご意見をお寄せください。
 
 https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-administer-advanced-view.html["詳細については、「詳細ビュー」を参照してください"]。
-
-ifdef::aws[]
 
 
 
@@ -232,10 +212,6 @@ Cloud Volumes ONTAP 9.11.1では、AWS VPC共有がサポートされていま�
 
 link:task-deploy-aws-shared-vpc.html["共有サブネットにHAペアを導入する方法について説明します"]。
 
-endif::aws[]
-
-ifdef::azure[]
-
 
 
 === サービスエンドポイントを使用する場合は、ネットワークアクセスが制限されます
@@ -243,10 +219,6 @@ ifdef::azure[]
 Cloud Volumes ONTAP とストレージアカウント間の接続にVNetサービスエンドポイントを使用する際に、Cloud Managerはネットワークアクセスを制限するようになりました。Azure Private Link接続を無効にすると、Cloud Managerはサービスエンドポイントを使用します。
 
 https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-enabling-private-link.html["Cloud Volumes ONTAP でのAzureプライベートリンク接続の詳細については、こちらをご覧ください"]。
-
-endif::azure[]
-
-ifdef::gcp[]
 
 
 
@@ -266,8 +238,6 @@ ONTAP CLIまたはSystem Managerを使用して、シングルノードシステ
 * https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-limits-gcp.html#storage-vm-limits["Google CloudのStorage VMの制限に関する詳細を確認できます"^]
 * https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-managing-svms-gcp.html["Google CloudでCloud Volumes ONTAP 向けのデータ提供用Storage VMを作成する方法をご確認ください"]
 
-
-endif::gcp[]
 
 
 
@@ -297,8 +267,6 @@ K8sタブは以前のでは廃止されており、現在は削除されてい�
 
 https://docs.netapp.com/us-en/cloud-manager-kubernetes/concept-kubernetes.html["Cloud ManagerでのKubernetesのデータ管理について説明します"^]
 
-ifdef::azure[]
-
 
 
 === Azureの年間契約
@@ -308,10 +276,6 @@ EssentialsパッケージとProfessionalパッケージは、年間契約を通�
 ネットアップがお客様とプライベートオファーを共有したあとは、Azure Marketplaceでの作業環境の作成時にサブスクリプションするときに、年間プランを選択できます。
 
 https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/concept-licensing.html["ライセンスの詳細については、こちらをご覧ください"]。
-
-endif::azure[]
-
-ifdef::aws[]
 
 
 
@@ -335,10 +299,6 @@ https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-tiering.htm
 これらの権限は、Cloud Managerによる配置グループの作成方法を最適化するために必要になります。
 
 Cloud Managerに追加したAWSクレデンシャルの各セットに、これらの権限を必ず付与してください。 https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-permissions-aws.html["AWSの最新のコネクタポリシーを確認します"^]。
-
-endif::aws[]
-
-ifdef::gcp[]
 
 
 
@@ -380,8 +340,6 @@ https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-configs-gcp
 Cloud Volumes ONTAP で使用するGoogle Cloudサービスアカウントを選択すると、Cloud Managerに各サービスアカウントに関連付けられているEメールアドレスが表示されるようになりました。メールアドレスを表示すると、同じ名前を共有するサービスアカウントを区別しやすくなります。
 
 image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-cloud-volumes-ontap/main/media/screenshot-google-cloud-service-account.png["サービスアカウントフィールドのスクリーンショット"]
-
-endif::gcp[]
 
 
 
