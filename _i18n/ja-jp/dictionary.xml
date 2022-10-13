@@ -3199,7 +3199,6 @@
   <block id="cad02caeb4ee636c87f28b0bb1263080" category="inline-link-macro">サポートされるクライアントプロトコルおよびバージョンについて説明します</block>
   <block id="f0ddee23dd0d83f105bbdaa15ff5d87a" category="paragraph"><block ref="43c09f3d08ec80b50648a2a905bca06c" category="inline-link-macro-rx"></block>。</block>
   <block id="a6a8d3a613b6b7ece18f688d168e5cda" category="cell">API が AWS や ONTAP 、クラウドデータ検知、ランサムウェアサービス、ネットアップへの AutoSupport メッセージの送信を呼び出します</block>
-  <block id="de2241fea60d98698faaa196ff73ee80" category="paragraph">サポートダッシュボードを使用すると、すべてのネットアップサポートサイトのアカウントを 1 箇所から追加および管理できます。</block>
   <block id="0046efb3377274ff3215d4b30269809e" category="list-text">Cloud Manager コンソールの右上にあるヘルプアイコンをクリックし、 * Support * を選択します。</block>
   <block id="b50f0a46135bcb7083b1f2f82032fc26" category="inline-image-macro">[ ヘルプ ] メニューのスクリーンショット。サポートは最初に表示されるオプションです</block>
   <block id="868d9aa88f16ea923af1d15eac5d2647" category="paragraph"><block ref="868d9aa88f16ea923af1d15eac5d2647" category="inline-image-macro-rx" type="image"></block></block>
@@ -4434,4 +4433,7 @@
   <block id="49265e8ef749144b85748114012266a8" category="cell">iSCSI プロトコルを使用したクライアントアクセス。システムでは、その他の重要なネットワークワークフローにも使用されます。これらのLIFは必須であり、削除しないでください。</block>
   <block id="f61e4d929e921b5a3ae0bb6f78fe9b6c" category="cell">¥https://*.cloudmanager.cloud.netapp.com¥https://cloudmanager.cloud.netapp.com</block>
   <block id="4df8bb837bc00b990bb9e359a33c532c" category="list-text">Web ブラウザを開き、次の URL を入力します。<block ref="484de961b6aa06a7131bf90e9cc3be46" category="inline-link-rx"></block></block>
+  <block id="77bdda0b5be7d2725f2b5941d74db0e2" category="paragraph">サポートダッシュボードを使用すると、NetApp Support Site アカウントを追加して管理し、Cloud Managerで使用できます。</block>
+  <block id="328a2c1e7778e9edaf79d90c51409ac4" category="list-text">お客様レベルのアカウントをお持ちの場合は、1つ以上のNSSアカウントを追加することもできます。</block>
+  <block id="4fde72c535fd0cd463dbeb49347cdfae" category="list-text">パートナーアカウントまたはリセラーアカウントをお持ちの場合は、1つ以上のNSSアカウントを追加できますが、お客様レベルのアカウントと一緒に追加することはできません。</block>
 </blocks>
