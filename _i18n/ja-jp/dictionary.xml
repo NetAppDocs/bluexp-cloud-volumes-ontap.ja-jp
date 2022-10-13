@@ -1571,7 +1571,6 @@
   <block id="47ef31752bdcdd73b07b1fe8976c82a6" category="list-text">デフォルトのストレージオプションはそのままにしておく必要があります。</block>
   <block id="b901bc33967dc36bebafa77250edd08b" category="list-text">コネクタに必要な接続方法は、 SSH 、 HTTP 、 HTTPS です。</block>
   <block id="2a74a4ca6ca91fb8d3c6b38fc9233a4f" category="list-text">コネクタインスタンスに接続されているホストから Cloud Manager をセットアップします。</block>
-  <block id="7ad92db9fd68840a78d3bc935cff8f64" category="list-text">Web ブラウザを開き、次の URL を入力します。<block ref="17a92846c731483b51192cc0d49cf97e" category="inline-link-rx"></block></block>
   <block id="4d0564ff4d1bbd71234a0838722dfc93" category="list-text">AWS サービスに接続するためのプロキシサーバを指定します。</block>
   <block id="c3e84141ad53b58cc86262388ac9e4a6" category="list-text">手順 1 で取得した証明書をアップロードします。</block>
   <block id="2d354fadd521725ccc56833965bb4440" category="list-text">セットアップウィザードの手順に従って、 Cloud Manager をセットアップします。</block>
@@ -1802,7 +1801,6 @@
   <block id="b8724da75fb917e992576b17378e66b3" category="cell">エンドポイント</block>
   <block id="8963387394e2ee3e2a5a9ba160566a58" category="cell">\ https://support.netapp.com</block>
   <block id="db9e137068a05efe5440105c2494b7f1" category="cell">ライセンス情報を取得し、ネットアップサポートに AutoSupport メッセージを送信するため。</block>
-  <block id="9e434ddc2ad4b9de005368b77254223d" category="cell">\ https://*.cloudmanager.cloud.netapp.com</block>
   <block id="6021edb3dc94e2b4496476a9e46f9e38" category="cell">Cloud Manager 内で SaaS の機能やサービスを提供できます。</block>
   <block id="554841a7559bd190d883de523464d1d1" category="cell">¥ https://cloudmanagerinfraprod.azurecr.io ¥ https://*.blob.core.windows.net</block>
   <block id="065880318484084e9bfe33ea9c6a8702" category="cell">をクリックして、 Connector と Docker コンポーネントをアップグレードします。</block>
@@ -4434,4 +4432,6 @@
   <block id="684375e279a289295b72a006d93e2c4c" category="paragraph">このプロセスについては、ネットアップからご連絡ください。これは、新規ユーザ向けの1回限りのオンボーディング演習です。</block>
   <block id="cc7175a084ebd6e004cb2c751c162569" category="paragraph">NetApp Support Site アカウントを作成したら、Cloud Managerに移動してこのNSSアカウントを追加して以降の登録を行うことができます。</block>
   <block id="49265e8ef749144b85748114012266a8" category="cell">iSCSI プロトコルを使用したクライアントアクセス。システムでは、その他の重要なネットワークワークフローにも使用されます。これらのLIFは必須であり、削除しないでください。</block>
+  <block id="f61e4d929e921b5a3ae0bb6f78fe9b6c" category="cell">¥https://*.cloudmanager.cloud.netapp.com¥https://cloudmanager.cloud.netapp.com</block>
+  <block id="4df8bb837bc00b990bb9e359a33c532c" category="list-text">Web ブラウザを開き、次の URL を入力します。<block ref="484de961b6aa06a7131bf90e9cc3be46" category="inline-link-rx"></block></block>
 </blocks>
