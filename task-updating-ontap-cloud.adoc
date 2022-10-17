@@ -274,10 +274,12 @@ NOTE: 事前定義された Cloud Volumes ONTAP セキュリティグループ�
 . からソフトウェアイメージを取得します https://mysupport.netapp.com/site/products/all/details/cloud-volumes-ontap/downloads-tab["ネットアップサポートサイト"^]。
 . ソフトウェアイメージを、ファイルの提供元となるコネクタまたは HTTP サーバ上のディレクトリにコピーします。
 +
-たとえば、ソフトウェアイメージをコネクタ上の次のパスにコピーできます。
+2つのパスを使用できます。正しいパスはコネクタのバージョンによって異なります。
 
 +
-/opt/application/NetApp/cloudmanager/docx_occm/data/ontap/images/`
+** /opt/application/NetApp/cloudmanager/docx_occm/data/ontap/images/`
+** /opt/application/netapp/cloudmanager/ontap/images/
+
 
 . Cloud Manager の作業環境で、メニューアイコンをクリックし、 * Advanced > Update Cloud Volumes ONTAP * をクリックします。
 . アップデートソフトウェアのページで、 URL を入力し、 * イメージの変更 * をクリックします。
