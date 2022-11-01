@@ -31,7 +31,7 @@ Storage VM は ONTAP 内で実行される仮想マシンであり、クライ�
 
 == Storage VM を作成
 
-ライセンスでサポートされている場合は、1つのノードシステムまたはHAペアに複数のStorage VMを作成できます。HAペアにStorage VMを作成するにはCloud Manager APIを使用する必要があります。一方、CLIまたはSystem Managerを使用して、単一のノードシステムにStorage VMを作成できます。
+ライセンスでサポートされている場合は、1つのノードシステムまたはHAペアに複数のStorage VMを作成できます。HAペアでStorage VMを作成する場合はBlueXP APIを使用する必要がありますが、CLIまたはSystem Managerを使用してシングルノードシステムでStorage VMを作成できます。
 
 
 
@@ -101,9 +101,9 @@ vserver add-aggregates -vserver <svm-name> -aggregates <aggr1,aggr2>
 
 === HA ペア
 
-Google CloudのCloud Volumes ONTAP システムでStorage VMを作成するには、Cloud Manager APIを使用する必要があります。Cloud ManagerではStorage VMに必要なLIFサービスが設定されるほか、アウトバウンドのSMB / CIFS通信に必要なiSCSI LIFが設定されるため、APIを使用する（System ManagerやCLIを使用することはない）必要があります。
+Google CloudのCloud Volumes ONTAP システムでStorage VMを作成するには、BlueXP APIを使用する必要があります。BlueXPでは、必要なLIFサービスがStorage VMに設定され、アウトバウンドのSMB / CIFS通信に必要なiSCSI LIFが設定されるため、API（System ManagerやCLIではなく）を使用する必要があります。
 
-Cloud Managerは、Google Cloudで必要なIPアドレスを割り当て、SMB / NFSアクセス用のデータLIFとアウトバウンドSMB通信用のiSCSI LIFを備えたStorage VMを作成します。
+BlueXPはGoogle Cloudで必要なIPアドレスを割り当て、SMB / NFSアクセス用のデータLIFとアウトバウンドSMB通信用のiSCSI LIFを備えたStorage VMを作成します。
 
 3.9.19リリースから、Cloud Volumes ONTAP HAペアのStorage VMを作成および管理するために、Connectorでは次の権限が必要になります。
 
@@ -133,7 +133,7 @@ Cloud Managerは、Google Cloudで必要なIPアドレスを割り当て、SMB /
 
 == HAペアのStorage VMを管理します
 
-Cloud Manager APIでは、HAペアのStorage VMの名前変更と削除もサポートされます。
+また、BlueXP APIでは、HAペアのStorage VMの名前変更と削除もサポートされています。
 
 
 

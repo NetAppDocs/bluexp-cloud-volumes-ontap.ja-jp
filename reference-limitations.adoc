@@ -16,27 +16,27 @@ summary: 既知の制限事項は、このリリースの製品でサポート�
 [role="lead"]
 既知の制限事項は、このリリースの製品でサポートされていないプラットフォーム、デバイス、機能、または製品と正しく相互運用できない機能を特定します。これらの制限事項を慎重に確認してください
 
-これらの制限は、 Cloud Manager での Cloud Volumes ONTAP の管理に固有のものです。Cloud Volumes ONTAP ソフトウェア自体の制限を確認するには、次の手順を実行します。 https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-limitations.html["Cloud Volumes ONTAP のリリースノートに移動します"^]
+これらの制限は、BlueXP（旧Cloud Manager）のCloud Volumes ONTAP 管理に固有のものです。Cloud Volumes ONTAP ソフトウェア自体の制限を確認するには、次の手順を実行します。 https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-limitations.html["Cloud Volumes ONTAP のリリースノートに移動します"^]
 
 
 
-== Cloud Manager は FlexGroup ボリュームをサポートしていません
+== BlueXPではFlexGroup ボリュームはサポートされていません
 
-Cloud Volumes ONTAP では FlexGroup ボリュームがサポートされますが、 Cloud Manager ではサポートされません。System Manager または CLI から FlexGroup ボリュームを作成する場合は、 Cloud Manager の容量管理モードを手動に設定する必要があります。FlexGroup ボリュームで自動モードが適切に機能しない可能性があります。
+Cloud Volumes ONTAP はFlexGroup ボリュームをサポートしていますが、BlueXPはサポートしていません。System ManagerまたはCLIからFlexGroup ボリュームを作成する場合は、BlueXPの容量管理モードを手動に設定する必要があります。FlexGroup ボリュームで自動モードが適切に機能しない可能性があります。
 
 
 
-== Cloud Managerは、Cloud Volumes ONTAP ではS3をサポートしていません
+== BlueXPは、Cloud Volumes ONTAP でS3をサポートしていません
 
-一部のクラウドプロバイダでは、Cloud Volumes ONTAP がS3をスケールアウトストレージのオプションとしてサポートしていますが、Cloud Managerはこの機能の管理機能を提供していません。CLI を使用することが、 Cloud Volumes ONTAP からの S3 クライアントアクセスを設定するためのベストプラクティスです。詳細については、を参照してください http://docs.netapp.com/ontap-9/topic/com.netapp.doc.pow-s3-cg/home.html["S3 構成パワーガイド"^]。
+一部のクラウドプロバイダでは、Cloud Volumes ONTAP がS3をスケールアウトストレージのオプションとしてサポートしていますが、BlueXPにはこの機能の管理機能はありません。CLI を使用することが、 Cloud Volumes ONTAP からの S3 クライアントアクセスを設定するためのベストプラクティスです。詳細については、を参照してください http://docs.netapp.com/ontap-9/topic/com.netapp.doc.pow-s3-cg/home.html["S3 構成パワーガイド"^]。
 
 link:concept-client-protocols.html["S3およびその他のクライアントプロトコルに対するCloud Volumes ONTAP のサポートに関する詳細を確認できます"]。
 
 
 
-== Cloud Manager では、 Storage VM のディザスタリカバリはサポートされていません
+== BlueXPでは、Storage VMのディザスタリカバリはサポートされていません
 
-Cloud Manager では、 Storage VM ディザスタリカバリのセットアップやオーケストレーションはサポートされていません。System Manager または CLI を使用する必要があります。
+BlueXPでは、Storage VMディザスタリカバリのセットアップやオーケストレーションはサポートされていません。System Manager または CLI を使用する必要があります。
 
 * https://library.netapp.com/ecm/ecm_get_file/ECMLP2839856["SVM ディザスタリカバリ設定エクスプレスガイド"^]
 * https://library.netapp.com/ecm/ecm_get_file/ECMLP2839857["『 SVM ディザスタリカバリエクスプレスガイド』"^]

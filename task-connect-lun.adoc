@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: task-connect-lun.html 
 keywords: lun, connect lun, iscsi lun, target iqn, iqn 
-summary: iSCSI ボリュームを作成すると、 Cloud Manager によって自動的に LUN が作成されます。ボリュームごとに 1 つの LUN を作成するだけでシンプルになり、管理は不要です。ボリュームの作成後、 IQN を使用してホストから LUN に接続します。 
+summary: iSCSIボリュームを作成すると、BlueXPによって自動的にLUNが作成されます。ボリュームごとに 1 つの LUN を作成するだけでシンプルになり、管理は不要です。ボリュームの作成後、 IQN を使用してホストから LUN に接続します。 
 ---
 = LUN をホストに接続します
 :hardbreaks:
@@ -14,15 +14,16 @@ summary: iSCSI ボリュームを作成すると、 Cloud Manager によって�
 
 
 [role="lead"]
-iSCSI ボリュームを作成すると、 Cloud Manager によって自動的に LUN が作成されます。ボリュームごとに 1 つの LUN を作成するだけでシンプルになり、管理は不要です。ボリュームの作成後、 IQN を使用してホストから LUN に接続します。
+iSCSIボリュームを作成すると、BlueXPによって自動的にLUNが作成されます。ボリュームごとに 1 つの LUN を作成するだけでシンプルになり、管理は不要です。ボリュームの作成後、 IQN を使用してホストから LUN に接続します。
 
 次の点に注意してください。
 
-* Cloud Manager の自動容量管理は、 LUN には適用されません。Cloud Manager で LUN を作成すると自動拡張機能が無効になります。
+* BlueXPの自動容量管理はLUNには適用されませんBlueXPでLUNを作成すると'自動拡張機能が無効になります
 * LUN は、 System Manager または CLI を使用して追加で作成できます。
 
 
 .手順
+. 左側のナビゲーションメニューから、* Storage > Canvas *を選択します。
 . キャンバスページで、ボリュームを管理する Cloud Volumes ONTAP 作業環境をダブルクリックします。
 . ボリュームを選択し、 * Target IQN * をクリックします。
 . [* Copy*] をクリックして IQN 名をコピーします。

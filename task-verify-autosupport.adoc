@@ -30,7 +30,7 @@ Cloud Volumes ONTAP が AutoSupport メッセージを送信できるように�
 * \ https://support.netapp.com/asupprod/post/1.0/postAsup
 
 
-アウトバウンドのインターネット接続を使用してAutoSupport メッセージを送信できない場合、Cloud Managerは、コネクタをプロキシサーバとして使用するようにCloud Volumes ONTAP システムを自動的に設定します。唯一の要件は、コネクタのセキュリティグループがポート3128で_ inbound_connectionsを許可することです。コネクタを展開した後、このポートを開く必要があります。
+AutoSupport メッセージの送信にアウトバウンドのインターネット接続が使用できない場合、Cloud Volumes ONTAP システムは自動的にコネクタをプロキシサーバとして使用するように設定されます。唯一の要件は、コネクタのセキュリティグループがポート3128で_ inbound_connectionsを許可することです。コネクタを展開した後、このポートを開く必要があります。
 
 Cloud Volumes ONTAP に厳密なアウトバウンドルールを定義した場合は、Cloud Volumes ONTAP セキュリティグループがポート3128で_OUTBOUND接続を許可する必要もあります。
 
@@ -40,7 +40,7 @@ Cloud Volumes ONTAP に厳密なアウトバウンドルールを定義した場
 
 == AutoSupport 構成のトラブルシューティングを行います
 
-アウトバウンド接続を使用できず、Cloud Volumes ONTAP システムでコネクタをプロキシサーバとして使用するようにCloud Managerで設定できない場合は、「<作業環境名> is unable to send AutoSupport messages」というメッセージがCloud Managerから通知される。
+アウトバウンド接続が使用できず、BlueXPがコネクタをプロキシサーバとして使用するようにCloud Volumes ONTAP システムを設定できない場合は、「<作業環境名> is unable to send AutoSupport messages」というBlueXPから通知が届きます。
 
 ネットワークの問題が原因でこのメッセージが表示される可能性が高いです。
 

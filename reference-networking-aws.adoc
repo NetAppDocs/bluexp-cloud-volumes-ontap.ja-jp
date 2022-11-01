@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: reference-networking-aws.html 
 keywords: networking, network, requirements, connection, connections, vpc, security group, security groups, subnets, vpn, internet, nat, s3, dns, ad, active directory, az, availability zone, floating IP, floating, SVM, management LIF, route, route tables, proxy, HTTP, private, tier, s3 endpoint, tiering, storage tier, storage tiering, proxy server, nat device, vpn, snapmanager, snapcenter, iscsi, nfs, cifs, nas, san, outbound, inbound, connections, autosupport, ha, ha pair, high availability 
-summary: Cloud Manager は、 IP アドレス、ネットマスク、ルートなど、 Cloud Volumes ONTAP 用のネットワークコンポーネントのセットアップを処理します。アウトバウンドのインターネットアクセスが可能であること、十分な数のプライベート IP アドレスを利用できること、適切な接続が確立されていることなどを確認する必要があります。 
+summary: BlueXPは、IPアドレス、ネットマスク、ルートなど、Cloud Volumes ONTAP のネットワークコンポーネントのセットアップを処理します。アウトバウンドのインターネットアクセスが可能であること、十分な数のプライベート IP アドレスを利用できること、適切な接続が確立されていることなどを確認する必要があります。 
 ---
 = Cloud Volumes ONTAP in AWS のネットワーク要件
 :hardbreaks:
@@ -14,7 +14,7 @@ summary: Cloud Manager は、 IP アドレス、ネットマスク、ルート�
 
 
 [role="lead"]
-Cloud Manager は、 IP アドレス、ネットマスク、ルートなど、 Cloud Volumes ONTAP 用のネットワークコンポーネントのセットアップを処理します。アウトバウンドのインターネットアクセスが可能であること、十分な数のプライベート IP アドレスを利用できること、適切な接続が確立されていることなどを確認する必要があります。
+BlueXP（旧Cloud Manager）は、IPアドレス、ネットマスク、ルートなど、Cloud Volumes ONTAP 用のネットワークコンポーネントのセットアップを処理します。アウトバウンドのインターネットアクセスが可能であること、十分な数のプライベート IP アドレスを利用できること、適切な接続が確立されていることなどを確認する必要があります。
 
 
 
@@ -36,13 +36,13 @@ Cloud Volumes ONTAP が AutoSupport メッセージを送信できるように�
 
 NAT インスタンスがある場合は、プライベートサブネットからインターネットへの HTTPS トラフィックを許可する着信セキュリティグループルールを定義する必要があります。
 
-アウトバウンドのインターネット接続を使用してAutoSupport メッセージを送信できない場合、Cloud Managerは、コネクタをプロキシサーバとして使用するようにCloud Volumes ONTAP システムを自動的に設定します。唯一の要件は、コネクタのセキュリティグループがポート3128で_ inbound_connectionsを許可することです。コネクタを展開した後、このポートを開く必要があります。
+AutoSupport メッセージの送信にアウトバウンドのインターネット接続が使用できない場合、Cloud Volumes ONTAP システムは自動的にコネクタをプロキシサーバとして使用するように設定されます。唯一の要件は、コネクタのセキュリティグループがポート3128で_ inbound_connectionsを許可することです。コネクタを展開した後、このポートを開く必要があります。
 
 Cloud Volumes ONTAP に厳密なアウトバウンドルールを定義した場合は、Cloud Volumes ONTAP セキュリティグループがポート3128で_OUTBOUND接続を許可する必要もあります。
 
 アウトバウンドのインターネットアクセスが使用可能であることを確認したら、 AutoSupport をテストしてメッセージを送信できることを確認します。手順については、を参照してください https://docs.netapp.com/us-en/ontap/system-admin/setup-autosupport-task.html["ONTAP のドキュメント：「 AutoSupport のセットアップ"^]。
 
-AutoSupport メッセージを送信できないことがCloud Managerから通知された場合は、 link:task-verify-autosupport.html#troubleshoot-your-autosupport-configuration["AutoSupport 構成のトラブルシューティングを行います"]。
+AutoSupport メッセージを送信できないことがBlueXPから通知された場合は、 link:task-verify-autosupport.html#troubleshoot-your-autosupport-configuration["AutoSupport 構成のトラブルシューティングを行います"]。
 
 
 
@@ -56,15 +56,15 @@ HA メディエータインスタンスは、 AWS EC2 サービスへのアウ�
 
 === プライベート IP アドレス
 
-必要な数のプライベート IP アドレスが Cloud Manager から Cloud Volumes ONTAP に自動的に割り当てられます。ネットワークに十分な数のプライベート IP アドレスがあることを確認する必要があります。
+BlueXPは、必要な数のプライベートIPアドレスを自動的にCloud Volumes ONTAP に割り当てます。ネットワークに十分な数のプライベート IP アドレスがあることを確認する必要があります。
 
-Cloud Volumes ONTAP に対して Cloud Manager が割り当てる LIF の数は、シングルノードシステムと HA ペアのどちらを導入するかによって異なります。LIF は、物理ポートに関連付けられた IP アドレスです。
+Cloud Volumes ONTAP 用に割り当てられるLIFの数は、シングルノードシステムとHAペアのどちらを導入するかによって異なります。LIF は、物理ポートに関連付けられた IP アドレスです。
 
 
 
 ==== シングルノードシステムの IP アドレス
 
-Cloud Manager は、 1 つのノードシステムに 6 つの IP アドレスを割り当てます。
+BlueXPでは、1つのノードシステムに6つのIPアドレスが割り当てられています。
 
 * クラスタ管理 LIF
 * ノード管理 LIF
@@ -160,7 +160,7 @@ TIP: 複数のアベイラビリティゾーンに導入すると、いくつか
 
 === セキュリティグループ
 
-Cloud Manager ではセキュリティグループを作成する必要がないため、セキュリティグループを作成する必要はありません。自分で使用する必要がある場合は、を参照してください link:reference-security-groups.html["セキュリティグループのルール"]。
+セキュリティグループを作成する必要はありません。BlueXPではセキュリティグループが自動的に作成されます。自分で使用する必要がある場合は、を参照してください link:reference-security-groups.html["セキュリティグループのルール"]。
 
 
 
@@ -200,7 +200,7 @@ link:task-deploy-aws-shared-vpc.html["共有サブネットにHAペアを導入�
 
 == 複数の AZ にまたがる HA ペアに関する要件
 
-複数の可用性ゾーン（ AZS ）を使用する Cloud Volumes ONTAP HA 構成には、 AWS ネットワークの追加要件が適用されます。HA ペアを起動する前に、作業環境の作成時に Cloud Manager でネットワークの詳細を入力する必要があるため、これらの要件を確認しておく必要があります。
+複数の可用性ゾーン（ AZS ）を使用する Cloud Volumes ONTAP HA 構成には、 AWS ネットワークの追加要件が適用されます。HAペアを起動する前に、作業環境の作成時にBlueXPでネットワークの詳細を入力する必要があるため、これらの要件を確認してください。
 
 HA ペアの仕組みについては、を参照してください link:concept-ha.html["ハイアベイラビリティペア"]。
 
@@ -218,7 +218,7 @@ NAS データおよびクラスタ / SVM 管理用のフローティング IP �
 
 NOTE: SnapCenter for Windows または SnapDrive を HA ペアで使用する場合は、 SVM 管理 LIF 用にフローティング IP アドレスが必要です。
 
-Cloud Volumes ONTAP HA 作業環境を作成するときに、 Cloud Manager でフローティング IP アドレスを入力する必要があります。Cloud Manager は、システムの起動時に IP アドレスを HA ペアに割り当てます。
+Cloud Volumes ONTAP HA作業環境を作成する場合は、BlueXPでフローティングIPアドレスを入力する必要があります。システムの起動時に、HAペアにIPアドレスが割り当てられます。
 
 フローティング IP アドレスは、 HA 構成を導入する AWS リージョン内のどの VPC の CIDR ブロックにも属していない必要があります。フローティング IP アドレスは、リージョン内の VPC の外部にある論理サブネットと考えてください。
 
@@ -227,14 +227,14 @@ Cloud Volumes ONTAP HA 作業環境を作成するときに、 Cloud Manager で
 image:diagram_ha_floating_ips.png["この概念図は、 AWS リージョン内の 5 つの VPC の CIDR ブロックと、それらの VPC の CIDR ブロックに属さない 3 つのフローティング IP アドレスを示しています。"]
 
 
-NOTE: Cloud Manager は、 iSCSI アクセス用と、 VPC 外のクライアントからの NAS アクセス用に、自動的に静的 IP アドレスを作成します。これらの種類の IP アドレスの要件を満たす必要はありません。
+NOTE: BlueXPでは、VPCの外部にあるクライアントからのiSCSIアクセスとNASアクセスに対して、自動的に静的IPアドレスが作成されます。これらの種類の IP アドレスの要件を満たす必要はありません。
 
 --
 外部からのフローティング IP アクセスを可能にする中継ゲートウェイ VPC:: 必要に応じて、 link:task-setting-up-transit-gateway.html["AWS 転送ゲートウェイを設定します"] HA ペアが配置されている VPC の外部から HA ペアのフローティング IP アドレスにアクセスできるようにします。
-ルートテーブル:: Cloud Manager でフローティング IP アドレスを指定すると、フローティング IP アドレスへのルートを含むルーティングテーブルを選択するよう求められます。これにより、 HA ペアへのクライアントアクセスが可能になります。
+ルートテーブル:: BlueXPでフローティングIPアドレスを指定すると、フローティングIPアドレスへのルートを含むルートテーブルを選択するように求められます。これにより、 HA ペアへのクライアントアクセスが可能になります。
 +
 --
-vPC （メインルートテーブル）内のサブネットのルートテーブルが 1 つだけの場合、 Cloud Manager はそのルートテーブルにフローティング IP アドレスを自動的に追加します。ルーティングテーブルが複数ある場合は、 HA ペアの起動時に正しいルーティングテーブルを選択することが非常に重要です。そうしないと、一部のクライアントが Cloud Volumes ONTAP にアクセスできない場合があります。
+VPC内のサブネット用のルーティングテーブルが1つ（メインルーティングテーブル）だけの場合は、そのルーティングテーブルにフローティングIPアドレスが自動的に追加されます。ルーティングテーブルが複数ある場合は、 HA ペアの起動時に正しいルーティングテーブルを選択することが非常に重要です。そうしないと、一部のクライアントが Cloud Volumes ONTAP にアクセスできない場合があります。
 
 たとえば、異なるルートテーブルに関連付けられた 2 つのサブネットがあるとします。ルーティングテーブル A を選択し、ルーティングテーブル B は選択しなかった場合、ルーティングテーブル A に関連付けられたサブネット内のクライアントは HA ペアにアクセスできますが、ルーティングテーブル B に関連付けられたサブネット内のクライアントはアクセスできません。
 
@@ -290,7 +290,7 @@ Connector では、パブリッククラウド環境内のリソースとプロ�
 | \ https://support.netapp.com | ライセンス情報を取得し、ネットアップサポートに AutoSupport メッセージを送信するため。 
 
 
-| ¥https://*.cloudmanager.cloud.netapp.com¥https://cloudmanager.cloud.netapp.com | Cloud Manager 内で SaaS の機能やサービスを提供できます。 
+| ¥https://*.cloudmanager.cloud.netapp.com¥https://cloudmanager.cloud.netapp.com | BlueXPでSaaSの機能とサービスを提供するため。 
 
 
 | ¥ https://cloudmanagerinfraprod.azurecr.io ¥ https://*.blob.core.windows.net | をクリックして、 Connector と Docker コンポーネントをアップグレードします。 

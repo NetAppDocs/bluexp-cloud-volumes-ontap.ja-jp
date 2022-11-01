@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: reference-security-groups.html 
 keywords: security group, security groups, rules, ports, aws, inbound, outbound, rules 
-summary: Cloud Manager は、 Cloud Manager と Cloud Volumes ONTAP が正常に動作するために必要なインバウンドルールとアウトバウンドルールを含む AWS セキュリティグループを作成します。テスト目的または独自のポートを使用する必要がある場合には、ポートを参照してください。 
+summary: BlueXPでは、BlueXPとCloud Volumes ONTAP が正常に動作するために必要なインバウンドとアウトバウンドのルールを含むAWSセキュリティグループが作成されます。テスト目的または独自のポートを使用する必要がある場合には、ポートを参照してください。 
 ---
 = AWS のセキュリティグループルール
 :hardbreaks:
@@ -14,7 +14,7 @@ summary: Cloud Manager は、 Cloud Manager と Cloud Volumes ONTAP が正常に
 
 
 [role="lead"]
-Cloud Manager で作成される AWS セキュリティグループには、コネクタと Cloud Volumes ONTAP が正常に動作するために必要なインバウンドとアウトバウンドのルールが含まれています。テスト目的でポートを参照したり、独自のセキュリティグループを使用したりする場合に使用します。
+BlueXPでは、ConnectorとCloud Volumes ONTAP が正常に動作するために必要なインバウンドとアウトバウンドのルールを含むAWSセキュリティグループが作成されます。テスト目的でポートを参照したり、独自のセキュリティグループを使用したりする場合に使用します。
 
 
 
@@ -329,7 +329,7 @@ NOTE: ポート 443 および 53 を開く代わりに、ターゲットサブ�
 
 Cloud Volumes ONTAP HA構成用に事前定義された内部セキュリティグループには、次のルールが含まれています。このセキュリティグループを使用すると、HAノード間、メディエーターとノード間の通信が可能になります。
 
-Cloud Manager は常にこのセキュリティグループを作成します。独自のオプションはありません。
+BlueXPでは常にこのセキュリティグループが作成されます。独自のオプションはありません。
 
 
 
@@ -428,7 +428,7 @@ NOTE: 送信元 IP アドレスは、コネクタホストです。
 | TCP | 8088 | S3 へのバックアップ | S3 へのバックアップを API で呼び出します 
 
 
-| DNS | UDP | 53 | DNS | Cloud Manager による DNS 解決に使用されます 
+| DNS | UDP | 53 | DNS | BlueXPによるDNS解決に使用されます 
 
 
 | クラウドデータの意味 | HTTP | 80 | Cloud Data Sense インスタンス | Cloud Volumes ONTAP に最適なクラウドデータ 

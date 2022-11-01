@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: task-getting-started-gcp.html 
-keywords: google cloud platform, gcp, deploy cloud manager, launch cloud manager, create cloud manager, getting started, networking, gcp networking, service account, tiering, data tiering, bucket, fabricpool, cloud backup, storage access key, gcp role, role, iam role, permissions, gcp permissions 
+keywords: google cloud platform, gcp, cloud manager, deploy BlueXP, launch BlueXP, create BlueXP, getting started, networking, gcp networking, service account, tiering, data tiering, bucket, fabricpool, cloud backup, storage access key, gcp role, role, iam role, permissions, gcp permissions 
 summary: Cloud Volumes ONTAP for GCP の使用を開始するには、いくつかの手順を実行します。 
 ---
 = Google Cloud の Cloud Volumes ONTAP のクイックスタート
@@ -20,10 +20,10 @@ Cloud Volumes ONTAP for GCP の使用を開始するには、いくつかの手�
 を持っていなければ https://docs.netapp.com/us-en/cloud-manager-setup-admin/concept-connectors.html["コネクタ"^] ただし、アカウント管理者がアカウントを作成する必要があります。 https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-creating-connectors-gcp.html["GCP でコネクターを作成する方法を説明します"^]。
 
 [role="quick-margin-para"]
-最初の Cloud Volumes ONTAP 作業環境を作成する際、まだコネクタがない場合は、 Cloud Manager からコネクタの導入を求められます。
+Cloud Volumes ONTAP の最初の作業環境を作成するときに、まだコネクタがない場合はコネクタの導入を求めるメッセージがBlueXP（旧Cloud Manager）に表示されます。
 
 [role="quick-margin-para"]
-Cloud Manager には、ワークロードの要件に応じた事前設定パッケージが用意されています。または、独自の設定を作成することもできます。独自の設定を選択する場合は、使用可能なオプションを理解しておく必要があります。
+BlueXPでは、ワークロード要件に合わせて事前設定されたパッケージを提供しています。また、独自の構成を作成することもできます。独自の設定を選択する場合は、使用可能なオプションを理解しておく必要があります。
 
 [role="quick-margin-para"]
 link:task-planning-your-config-gcp.html["構成の計画の詳細については、こちらをご覧ください"]。
@@ -65,7 +65,7 @@ https://cloud.google.com/apis/docs/getting-started#enabling_apis["プロジェ�
 [ 作業環境の追加 ] をクリックし、展開するシステムのタイプを選択して、ウィザードの手順を実行します。 link:task-deploying-gcp.html["詳細な手順を参照してください"]。
 
 .関連リンク
-* https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-creating-connectors-gcp.html["Cloud Manager からコネクタを作成します"^]
+* https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-creating-connectors-gcp.html["BlueXPからコネクタを作成しています"^]
 * https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-installing-linux.html["Linux ホストへの Connector ソフトウェアのインストール"^]
-* https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-permissions-gcp.html["Cloud Manager が GCP 権限を使用して実行する処理"^]
+* https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-permissions-gcp.html["GCP権限でのBlueXPの動作"^]
 

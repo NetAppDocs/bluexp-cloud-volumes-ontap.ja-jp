@@ -75,7 +75,7 @@ EBS ディスクタイプ:: EBS ディスクタイプの違いは次のとおり
 --
 * _General Purpose SSD （ GP3 ） _ ディスクは、幅広いワークロードに対してコストとパフォーマンスのバランスを取る最も低コストの SSD です。パフォーマンスは、 IOPS とスループットを基準に定義されます。GP3 ディスクは Cloud Volumes ONTAP 9.7 以降でサポートされています。
 +
-GP3 ディスクを選択すると、 Cloud Manager はデフォルトの IOPS とスループットの値を入力し、選択したディスクサイズに基づいて gp2 ディスクに相当するパフォーマンスを提供します。この値を増やすと、コストを高くしてもパフォーマンスを向上させることができますが、パフォーマンスが低下する可能性があるため、値を小さくすることはできません。つまり、デフォルト値をそのまま使用するか、値を大きくします。低くしないでください。 https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ebs-volume-types.html#gp3-ebs-volume-type["GP3 ディスクとそのパフォーマンスについては、こちらをご覧ください"^]。
+GP3ディスクを選択すると、選択したディスクサイズに基づいて、gp2ディスクに相当するパフォーマンスを提供するデフォルトのIOPSとスループットの値がBlueXPによって設定されます。この値を増やすと、コストを高くしてもパフォーマンスを向上させることができますが、パフォーマンスが低下する可能性があるため、値を小さくすることはできません。つまり、デフォルト値をそのまま使用するか、値を大きくします。低くしないでください。 https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ebs-volume-types.html#gp3-ebs-volume-type["GP3 ディスクとそのパフォーマンスについては、こちらをご覧ください"^]。
 
 +
 Cloud Volumes ONTAP は、GP3ディスクを使用したAmazon EBS Elastic Volumes機能をサポートしています。 link:concept-aws-elastic-volumes.html["Elastic Volumesのサポートに関する詳細情報"]。
@@ -93,7 +93,7 @@ NOTE: スループット最適化 HDD （ st1 ）を使用している場合、�
 
 
 --
-EBS ディスクサイズ:: をサポートしない構成を選択した場合 link:concept-aws-elastic-volumes.html["Amazon EBS Elastic Volumes機能"]を選択した場合、Cloud Volumes ONTAP システムの起動時に初期ディスクサイズを選択する必要があります。その後、次の操作を実行できます link:concept-storage-management.html["システムの容量を Cloud Manager で管理できます"]必要に応じて link:task-create-aggregates.html["アグリゲートの作成は自分で行います"]、次の点に注意してください。
+EBS ディスクサイズ:: をサポートしない構成を選択した場合 link:concept-aws-elastic-volumes.html["Amazon EBS Elastic Volumes機能"]を選択した場合、Cloud Volumes ONTAP システムの起動時に初期ディスクサイズを選択する必要があります。その後、次の操作を実行できます link:concept-storage-management.html["システムの容量をBlueXPが管理できるようにします"]必要に応じて link:task-create-aggregates.html["アグリゲートの作成は自分で行います"]、次の点に注意してください。
 +
 --
 * アグリゲート内のディスクはすべて同じサイズである必要があります。
@@ -118,7 +118,7 @@ video::GELcXmOuYPw[youtube,width=848,height=480]
 
 == デフォルトのシステムディスクを表示します
 
-ユーザデータ用のストレージに加えて、 Cloud Manager は Cloud Volumes ONTAP システムデータ（ブートデータ、ルートデータ、コアデータ、 NVRAM ）用のクラウドストレージも購入します。計画を立てる場合は、 Cloud Volumes ONTAP を導入する前にこれらの詳細を確認すると役立つ場合があります。
+ユーザデータ用のストレージに加えて、BlueXPはCloud Volumes ONTAP システムデータ（ブートデータ、ルートデータ、コアデータ、NVRAM）用のクラウドストレージも購入します。計画を立てる場合は、 Cloud Volumes ONTAP を導入する前にこれらの詳細を確認すると役立つ場合があります。
 
 link:reference-default-configs.html#aws["AWS で Cloud Volumes ONTAP システムデータのデフォルトディスクを表示する"]。
 
@@ -218,13 +218,13 @@ AWS で Cloud Volumes ONTAP を起動する場合は、 VPC ネットワーク�
 
 == 書き込み速度を選択します
 
-Cloud Manager では、 Cloud Volumes ONTAP の書き込み速度を選択できます。書き込み速度を選択する前に、高速書き込みを使用する場合の標準設定と高設定の違い、およびリスクと推奨事項を理解しておく必要があります。 link:concept-write-speed.html["書き込み速度の詳細については、こちらをご覧ください。"]。
+BlueXPでは、Cloud Volumes ONTAP の書き込み速度設定を選択できます。書き込み速度を選択する前に、高速書き込みを使用する場合の標準設定と高設定の違い、およびリスクと推奨事項を理解しておく必要があります。 link:concept-write-speed.html["書き込み速度の詳細については、こちらをご覧ください。"]。
 
 
 
 == ボリュームの使用プロファイルを選択してください
 
-ONTAP には、必要なストレージの合計容量を削減できるストレージ効率化機能がいくつか搭載されています。Cloud Manager でボリュームを作成する場合は、これらの機能を有効にするプロファイルを選択するか、無効にするプロファイルを選択できます。これらの機能の詳細については、使用するプロファイルを決定する際に役立ちます。
+ONTAP には、必要なストレージの合計容量を削減できるストレージ効率化機能がいくつか搭載されています。BlueXPでボリュームを作成するときに、これらの機能を有効にするプロファイル、または無効にするプロファイルを選択できます。これらの機能の詳細については、使用するプロファイルを決定する際に役立ちます。
 
 NetApp Storage Efficiency 機能には、次のようなメリットがあります。
 

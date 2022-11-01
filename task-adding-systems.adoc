@@ -2,9 +2,9 @@
 sidebar: sidebar 
 permalink: task-adding-systems.html 
 keywords: discover, discovering, add, adding, existing 
-summary: 既存の Cloud Volumes ONTAP システムを検出して Cloud Manager に追加できます。この処理は、新しい Cloud Manager システムを導入した場合に実行できます。 
+summary: 既存のCloud Volumes ONTAP システムを検出し、BlueXPに追加できます。これは、新しいBlueXPシステムを導入した場合に可能性があります。 
 ---
-= Cloud Manager に既存の Cloud Volumes ONTAP システムを追加
+= 既存のCloud Volumes ONTAP システムをBlueXPに追加する
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,11 +14,12 @@ summary: 既存の Cloud Volumes ONTAP システムを検出して Cloud Manager
 
 
 [role="lead"]
-既存の Cloud Volumes ONTAP システムを検出して Cloud Manager に追加できます。この処理は、新しい Cloud Manager システムを導入した場合に実行できます。
+既存のCloud Volumes ONTAP システムを検出し、BlueXPに追加できます。これは、新しいBlueXPシステムを導入した場合に可能性があります。
 
 Cloud Volumes ONTAP 管理者ユーザアカウントのパスワードを知っている必要があります。
 
 .手順
+. 左側のナビゲーションメニューから、* Storage > Canvas *を選択します。
 . キャンバスページで、 * 作業環境の追加 * をクリックします。
 . システムが配置されているクラウドプロバイダを選択します。
 . Cloud Volumes ONTAP システムのタイプを選択します。
@@ -35,4 +36,4 @@ endif::aws[]
 . [ 資格情報 ] ページで、 Cloud Volumes ONTAP 管理者ユーザーのパスワードを入力し、 [ * 移動 ] をクリックします。
 
 
-Cloud Manager によって Cloud Volumes ONTAP インスタンスがワークスペースに追加されます。
+Cloud Volumes ONTAP インスタンスがワークスペースに追加されます。

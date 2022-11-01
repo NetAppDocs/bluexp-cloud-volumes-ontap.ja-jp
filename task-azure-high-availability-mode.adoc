@@ -18,7 +18,7 @@ Microsoft Azureの高可用性モードを有効にして、計画外のフェ�
 
 Cloud Volumes ONTAP 9.10.1リリースから、Microsoft Azureで実行されるCloud Volumes ONTAP HAペアの計画外フェイルオーバー時間が短縮され、NFSv4がサポートされるようになりました。これらの機能拡張をCloud Volumes ONTAP で使用できるようにするには、Azureサブスクリプションでハイアベイラビリティ機能を有効にする必要があります。
 
-Azureサブスクリプションでこの機能を有効にする必要がある場合、Cloud Managerから「Action Required」メッセージにこれらの詳細が表示されます。
+Azureサブスクリプションでこの機能を有効にする必要がある場合、「Action Required」メッセージにこれらの詳細が表示されます。
 
 次の点に注意してください。
 

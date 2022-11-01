@@ -78,7 +78,7 @@ ifdef::aws[]
 
 === AWS Key Management Service の略
 
-AWS で Cloud Volumes ONTAP システムを起動する場合、を使用してデータ暗号化を有効にできます http://docs.aws.amazon.com/kms/latest/developerguide/overview.html["AWS Key Management Service （ KMS ；キー管理サービス）"^]。Cloud Manager は、 Customer Master Key （ CMK ）を使用してデータキーを要求します。
+AWS で Cloud Volumes ONTAP システムを起動する場合、を使用してデータ暗号化を有効にできます http://docs.aws.amazon.com/kms/latest/developerguide/overview.html["AWS Key Management Service （ KMS ；キー管理サービス）"^]。BlueXPは、Customer Master Key（CMK）を使用してデータキーを要求します。
 
 
 TIP: Cloud Volumes ONTAP システムの作成後に AWS のデータ暗号化方式を変更することはできません。
@@ -107,7 +107,7 @@ ifdef::gcp[]
 
 https://cloud.google.com/security/encryption-at-rest/["Google Cloud Platform の保存データ暗号化機能"^] Cloud Volumes ONTAP ではデフォルトで有効になっています。セットアップは必要ありません。
 
-Google Cloud Storage では常にデータが暗号化されてからディスクに書き込まれますが、 Cloud Manager API を使用して、 _cuser-managed 暗号化キー _ を使用する Cloud Volumes ONTAP システムを作成できます。これらは、 Cloud Key Management Service を使用して GCP で生成および管理するキーです。 link:task-setting-up-gcp-encryption.html["詳細はこちら。"]。
+Google Cloud Storageでは、データがディスクに書き込まれる前に常に暗号化されますが、BlueXP APIを使用して、_お客様が管理する暗号化キー_を使用するCloud Volumes ONTAP システムを作成できます。これらは、 Cloud Key Management Service を使用して GCP で生成および管理するキーです。 link:task-setting-up-gcp-encryption.html["詳細はこちら。"]。
 
 endif::gcp[]
 
@@ -127,13 +127,13 @@ ONTAP システムでウィルス対策機能を設定および管理する方�
 
 == ランサムウェアからの保護
 
-ランサムウェア攻撃は、ビジネス時間、リソース、評判を低下させる可能性があります。Cloud Manager では、ランサムウェアに対応したネットアップソリューションを実装できます。これにより、可視化、検出、修復のための効果的なツールが提供されます。
+ランサムウェア攻撃は、ビジネス時間、リソース、評判を低下させる可能性があります。BlueXPを使用すると、NetApp解決策 for Ransomwareを実装できます。これにより、可視化、検出、修復のための効果的なツールが提供されます。
 
-* Cloud Manager は、 Snapshot ポリシーで保護されていないボリュームを特定し、それらのボリュームのデフォルトの Snapshot ポリシーをアクティブ化できます。
+* BlueXPでは、Snapshotポリシーで保護されていないボリュームが特定され、それらのボリュームでデフォルトのSnapshotポリシーをアクティブ化できます。
 +
 Snapshot コピーは読み取り専用であり、ランサムウェアによる破損を防止します。単一のファイルコピーまたは完全なディザスタリカバリソリューションのイメージを作成する際の単位を提供することもできます。
 
-* Cloud Manager では、 ONTAP の FPolicy ソリューションを有効にすることで、一般的なランサムウェアのファイル拡張子をブロックすることもできます。
+* BlueXPでは、ONTAPのFPolicy解決策 を有効にすることで、ランサムウェアの一般的なファイル拡張子をブロックすることもできます。
 
 
 image:screenshot_ransomware_protection.gif["作業環境内から利用できる「ランサムウェア対策」ページを示すスクリーンショット画面には、 Snapshot ポリシーが適用されていないボリュームの数と、ランサムウェアのファイル拡張子をブロックする機能が表示されます。"]

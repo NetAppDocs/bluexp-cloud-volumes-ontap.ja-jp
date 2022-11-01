@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: concept-cvo-aiq-digital-advisor.html 
 keywords: concepts, active iq digital advisor, cloud volumes ontap 
-summary: Active IQ デジタルアドバイザは、 ONTAP クラスタの運用、セキュリティ、パフォーマンスを 1 つの画面で最適化できるように、 Cloud Manager UI に統合されています。 
+summary: 'Active IQ デジタルアドバイザは"BlueXP UIに統合されているため"1つの画面でONTAP クラスタの操作"セキュリティ"パフォーマンスを最適化できます' 
 ---
 = Active IQ デジタルアドバイザを使用して Cloud Volumes ONTAP システムを最適化します
 :hardbreaks:
@@ -14,7 +14,7 @@ summary: Active IQ デジタルアドバイザは、 ONTAP クラスタの運用
 
 
 [role="lead"]
-https://www.netapp.com/services/support/active-iq/["Active IQ デジタルアドバイザ"] Cloud Manager UI に統合されているため、 Cloud Volumes ONTAP システムの運用、セキュリティ、パフォーマンスを一元的に最適化できます。
+https://www.netapp.com/services/support/active-iq/["Active IQ デジタルアドバイザ"] は、BlueXP（旧Cloud Manager）UIに統合されているため、Cloud Volumes ONTAP システムの運用、セキュリティ、パフォーマンスを1つの画面で最適化できます。
 
 
 
@@ -38,21 +38,21 @@ Cloud Volumes ONTAP デジタルアドバイザは、 NSS アカウント内の�
 
 == コスト
 
-Cloud Manager でこのサービスを使用するコストは発生しません。
+このサービスはBlueXPで無料でご利用いただけます。
 
 
 
-== Active IQ Digital Advisor と Cloud Manager の連携
+== Active IQ Digital AdvisorがBlueXPとどのように連携するか
 
-Active IQ Digital Advisor のユーザインターフェイスは、 Cloud Manager に完全に統合されています。
+Active IQ デジタルアドバイザのユーザインターフェイスは、BlueXPに完全に統合されています。
 
-Cloud Manager で、 * Active IQ * サービスをクリックします。
+BlueXPで、Active IQ サービスをクリックします。
 
-* Cloud Manager に既存の NSS アカウントをすでに登録している場合は、スタンドアロンの実装で参照してくださいのように、 Active IQ デジタルアドバイザ UI が表示されます https://activeiq.netapp.com/[]。
+* BlueXPに既存のNSSアカウントを登録済みの場合は、Active IQ Digital AdvisorのUIがスタンドアロン実装の場合と同じように表示されます https://activeiq.netapp.com/[]。
 +
-image:screenshot_aiq_digital_advisor.png["Cloud Manager の Active IQ デジタルアドバイザユーザインターフェイスのスクリーンショット。"]
+image:screenshot_aiq_digital_advisor.png["BlueXPのActive IQ Digital Advisorユーザーインタフェースのスクリーンショット"]
 
-* Cloud Manager に NSS アカウントを登録していない場合は、 https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-adding-nss-accounts.html["NSS アカウントを今すぐ登録してください"^] 次に、 Active IQ デジタルアドバイザ UI が表示されます。
+* BlueXPでNSSアカウントを登録していない場合は、 https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-adding-nss-accounts.html["NSS アカウントを今すぐ登録してください"^] 次に、 Active IQ デジタルアドバイザ UI が表示されます。
 
 
 

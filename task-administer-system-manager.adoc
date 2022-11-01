@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: task-administer-advanced-view.html 
 keywords: system manager, advanced view, access system manager, load system manager, use system manager 
-summary: Cloud Volumes ONTAP の高度な管理が必要な場合は、ONTAP システムに付属の管理インターフェイスであるONTAP System Managerを使用して実行できます。高度な管理のためにCloud Managerを終了する必要がないように、Cloud ManagerのインターフェイスはCloud Managerに直接組み込まれています。 
+summary: Cloud Volumes ONTAP の高度な管理が必要な場合は、ONTAP システムに付属の管理インターフェイスであるONTAP System Managerを使用して実行できます。BlueXPにはSystem Managerインターフェイスが搭載されているので、高度な管理のためにBlueXPを残す必要はありません。 
 ---
 = 拡張ビューを使用してCloud Volumes ONTAP を管理します
 :hardbreaks:
@@ -14,7 +14,7 @@ summary: Cloud Volumes ONTAP の高度な管理が必要な場合は、ONTAP シ
 
 
 [role="lead"]
-Cloud Volumes ONTAP の高度な管理が必要な場合は、ONTAP システムに付属の管理インターフェイスであるONTAP System Managerを使用して実行できます。高度な管理のためにCloud Managerを終了する必要がないように、Cloud ManagerのインターフェイスはCloud Managerに直接組み込まれています。
+Cloud Volumes ONTAP の高度な管理が必要な場合は、ONTAP システムに付属の管理インターフェイスであるONTAP System Managerを使用して実行できます。BlueXPにはSystem Managerインターフェイスが搭載されているので、高度な管理のためにBlueXPを残す必要はありません。
 
 この拡張ビューはプレビューとして使用できます。今後のリリースでは、この点をさらに改良し、機能を強化する予定です。製品内のチャットでご意見をお寄せください。
 
@@ -22,7 +22,7 @@ Cloud Volumes ONTAP の高度な管理が必要な場合は、ONTAP システム
 
 == の機能
 
-Cloud ManagerのAdvanced Viewでは、次の管理機能を使用できます。
+BlueXPの詳細ビューでは、次の管理機能を使用できます。
 
 * 高度なストレージ管理
 +
@@ -62,11 +62,11 @@ System Managerインターフェイスに表示されるいくつかの機能は
 
 * クラウド階層化
 +
-クラウド階層化サービスはCloud Volumes ONTAP ではサポートされていません。ボリュームの作成時に、Cloud Managerの標準ビューからオブジェクトストレージへのデータの階層化が直接設定されている必要があります。
+クラウド階層化サービスはCloud Volumes ONTAP ではサポートされていません。ボリュームを作成するときは、BlueXPの標準ビューからデータをオブジェクトストレージに階層化するように直接設定する必要があります。
 
 * 階層
 +
-アグリゲートの管理（ローカル階層とクラウド階層を含む）はSystem Managerではサポートされていません。アグリゲートは、Cloud Managerの標準ビューから直接管理する必要があります。
+アグリゲートの管理（ローカル階層とクラウド階層を含む）はSystem Managerではサポートされていません。アグリゲートは、BlueXPのStandard Viewから直接管理する必要があります。
 
 * ファームウェアのアップグレード
 +
@@ -83,6 +83,7 @@ Cloud Volumes ONTAP では、[クラスタ]>[設定*]ページからの自動フ
 Cloud Volumes ONTAP 作業環境を開き、詳細ビューオプションをクリックします。
 
 .手順
+. 左側のナビゲーションメニューから、* Storage > Canvas *を選択します。
 . キャンバスページで、Cloud Volumes ONTAP システムの名前をダブルクリックします。
 . 右上の*[拡張表示に切り替える]をクリックします。
 +
@@ -90,7 +91,7 @@ image:screenshot-cvo-advanced-view.png["詳細ビューに切り替えオプシ�
 
 . 確認メッセージが表示されたら、そのメッセージを読み、*閉じる*をクリックします。
 . System Managerを使用してCloud Volumes ONTAP を管理する。
-. 必要に応じて、* Standard Viewに切り替え*をクリックして、Cloud Managerを使用した標準的な管理に戻ります。
+. 必要に応じて、[標準表示に切り替える]をクリックして、BlueXPを使用した標準管理に戻ります。
 +
 image:screenshot-cvo-standard-view.png["標準ビューに切り替えオプションを示すCloud Volumes ONTAP 作業環境のスクリーンショット。"]
 

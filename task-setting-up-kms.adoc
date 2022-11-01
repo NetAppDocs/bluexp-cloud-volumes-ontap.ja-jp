@@ -19,14 +19,14 @@ Cloud Volumes ONTAP で Amazon 暗号化を使用する場合は、 AWS Key Mana
 .手順
 . アクティブな Customer Master Key （ CMK ）が存在することを確認します。
 +
-CMK は、 AWS 管理の CMK または顧客管理の CMK にすることができます。Cloud Manager および Cloud Volumes ONTAP と同じ AWS アカウントにすることも、別の AWS アカウントにすることもできます。
+CMK は、 AWS 管理の CMK または顧客管理の CMK にすることができます。BlueXPやCloud Volumes ONTAP と同じAWSアカウントにすることも、別のAWSアカウントに含めることもできます。
 
 +
 https://docs.aws.amazon.com/kms/latest/developerguide/concepts.html#master_keys["AWS ドキュメント：「 Customer Master Keys （ CMK ；カスタマーマスターキー）」"^]
 
-. 各 CMK のキーポリシーを変更します。変更するには、 Cloud Manager に a_key user_権限 を付与する IAM ロールを追加します。
+. BlueXPに「a_key user__」権限を提供するIAMロールを追加して、各CMKのキーポリシーを変更します。
 +
-IAM ロールをキーユーザとして追加すると、 Cloud Volumes ONTAP で CMK を使用する権限が Cloud Manager に付与されます。
+IAMロールをキーユーザとして追加すると、Cloud Volumes ONTAP でCMKを使用するためのBlueXP権限が付与されます。
 
 +
 https://docs.aws.amazon.com/kms/latest/developerguide/editing-keys.html["AWS のドキュメント：「キーの編集"^]
@@ -37,11 +37,11 @@ https://docs.aws.amazon.com/kms/latest/developerguide/editing-keys.html["AWS の
 .. キーを選択します。
 .. General configuration * ペインで、キーの ARN をコピーします。
 +
-Cloud Volumes ONTAP システムの作成時には、 Cloud Manager の ARN の指定が必要になります。
+Cloud Volumes ONTAP システムを作成するときは、BlueXPにARNを提供する必要があります。
 
-.. その他の AWS アカウント * ペインで、 Cloud Manager に権限を付与する AWS アカウントを追加します。
+.. [* Other AWS accounts *（その他のAWSアカウント*）]ペインで、BlueXPに権限を付与するAWSアカウントを追加します。
 +
-ほとんどの場合、 Cloud Manager が配置されているアカウントです。Cloud Manager が AWS にインストールされていない場合、 Cloud Manager に AWS アクセスキーを指定したアカウントになります。
+ほとんどの場合、これはBlueXPが存在するアカウントです。BlueXPがAWSにインストールされていない場合は、BlueXPにAWSアクセスキーを提供したアカウントになります。
 
 +
 image:screenshot_cmk_add_accounts.gif["このスクリーンショットは、 AWS KMS コンソールの「 Add other AWS accounts 」ボタンを示しています。"]
@@ -49,11 +49,11 @@ image:screenshot_cmk_add_accounts.gif["このスクリーンショットは、 A
 +
 image:screenshot_cmk_add_accounts_dialog.gif["このスクリーンショットは、 AWS KMS コンソールの「その他の AWS アカウント」ダイアログボックスを示しています。"]
 
-.. 次に、 Cloud Manager に権限を付与する AWS アカウントに切り替えて、 IAM コンソールを開きます。
+.. 次に、BlueXPに権限を付与するAWSアカウントに切り替えて、IAMコンソールを開きます。
 .. 以下の権限を含む IAM ポリシーを作成します。
-.. Cloud Manager に権限を付与する IAM ロールまたは IAM ユーザにポリシーを関連付けます。
+.. このポリシーを、BlueXPに対する権限を提供するIAMロールまたはIAMユーザに関連付けます。
 +
-次のポリシーは、 Cloud Manager が外部 AWS アカウントから CMK を使用するために必要な権限を提供します。「リソース」セクションで、リージョンとアカウント ID を必ず変更してください。
+次のポリシーは、BlueXPが外部AWSアカウントからCMKを使用するために必要な権限を提供します。「リソース」セクションで、リージョンとアカウント ID を必ず変更してください。
 
 +
 [source, json]

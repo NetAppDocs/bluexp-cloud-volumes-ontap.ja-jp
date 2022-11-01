@@ -26,8 +26,9 @@ NOTE: 複数の AZS に導入されている場合、 Cloud Volumes ONTAP HA 構
 endif::aws[]
 
 .手順
-. Cloud Manager で、クラスタ管理インターフェイスの IP アドレスを特定します。
+. BlueXPで、クラスタ管理インターフェイスのIPアドレスを特定します。
 +
+.. 左側のナビゲーションメニューから、* Storage > Canvas *を選択します。
 .. キャンバスページで、 Cloud Volumes ONTAP システムを選択します。
 .. 右側のペインに表示されるクラスタ管理 IP アドレスをコピーします。
 

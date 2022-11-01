@@ -28,9 +28,9 @@ link:concept-licensing.html["Cloud Volumes ONTAP ライセンスの詳細につ�
 
 ネットアップの営業担当者からライセンスを購入されると、ネットアップからシリアル番号と追加のライセンス情報を記載したEメールが送信されます。
 
-その間、Cloud Managerはネットアップのライセンスサービスを自動的に照会し、ネットアップサポートサイトのアカウントに関連付けられているライセンスに関する詳細を取得します。エラーがなければ、Cloud Managerはライセンスをデジタルウォレットに自動的に追加します。
+一方、BlueXPは、ネットアップのライセンスサービスに自動的に問い合わせて、NetApp Support Site アカウントに関連付けられているライセンスの詳細を取得します。エラーがなければ、BlueXPは自動的にデジタルウォレットにライセンスを追加します。
 
-Cloud Managerでライセンスを追加できない場合は、手動でDigital Walletに追加する必要があります。たとえば、インターネットにアクセスできない場所にConnectorがインストールされている場合は、ライセンスを自分で追加する必要があります。  purchased licenses to your account,購入済みライセンスをアカウントに追加する方法について説明します。
+BlueXPでライセンスを追加できない場合は、手動でDigital Walletにライセンスを追加する必要があります。たとえば、インターネットにアクセスできない場所にConnectorがインストールされている場合は、ライセンスを自分で追加する必要があります。  purchased licenses to your account,購入済みライセンスをアカウントに追加する方法について説明します。
 
 
 
@@ -75,11 +75,11 @@ image:screenshot-digital-wallet-packages.png["プロフェッショナルパッ�
 
 == 購入済みライセンスをアカウントに追加します
 
-購入したライセンスがデジタルウォレットに表示されない場合は、Cloud Managerにライセンスを追加して、容量をCloud Volumes ONTAP で使用できるようにする必要があります。
+購入したライセンスがDigital Walletに表示されない場合は、ライセンスをBlueXPに追加して、Cloud Volumes ONTAP で使用できるようにする必要があります。
 
 .必要なもの
-* Cloud Manager にライセンスのシリアル番号またはライセンスファイルを指定する必要があります。
-* シリアル番号を入力する場合は、最初にが必要です https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-adding-nss-accounts.html["Cloud Manager にネットアップサポートサイトのアカウントを追加します"^]。シリアル番号へのアクセスが許可されているネットアップサポートサイトのアカウントです。
+* ライセンスファイルまたはライセンスファイルのシリアル番号をBlueXPに提供する必要があります。
+* シリアル番号を入力する場合は、最初にが必要です https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-adding-nss-accounts.html["NetApp Support Site アカウントをBlueXPに追加します"^]。シリアル番号へのアクセスが許可されているNetApp Support Siteのアカウントです。
 
 
 .手順
@@ -96,9 +96,9 @@ image:screenshot-digital-wallet-packages.png["プロフェッショナルパッ�
 
 == 容量ベースのライセンスを更新する
 
-容量を追加購入した場合やライセンス期間を延長した場合は、 Cloud Manager によってデジタルウォレットのライセンスが自動的に更新されます。必要なことは何もありません。
+追加容量を購入した場合やライセンス期間を延長した場合は、デジタルウォレットのライセンスがBlueXPによって自動的に更新されます。必要なことは何もありません。
 
-ただし、インターネットにアクセスできない場所に Cloud Manager を導入した場合は、 Cloud Manager でライセンスを手動で更新する必要があります。
+ただし、インターネットにアクセスできない場所にBlueXPを導入した場合は、BlueXPでライセンスを手動で更新する必要があります。
 
 ライセンスファイル（ HA ペアがある場合は _files_ ）。
 
@@ -136,7 +136,7 @@ image:screenshot-digital-wallet-charging-method.png["Cloud Volumes ONTAP 作業�
 . [充電方法の変更*]をクリックします。
 
 
-Cloud Volumes ONTAP システムの課金方法がCloud Managerで変更されました。
+BlueXPは、Cloud Volumes ONTAP システムの充電方法を変更します。
 
 また、Digital Walletは、作成した変更を反映するために、各パッケージタイプの消費済み容量を更新する場合があります。
 

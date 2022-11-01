@@ -23,7 +23,8 @@ Cloud Volumes ONTAP で使用するライセンスオプションを決定した
 プロビジョニングされた容量が最大500GiBのCloud Volumes ONTAP を無料で使用するには、Freemium製品を選択してください。 link:concept-licensing.html#freemium-offering["Freemium 製品の詳細をご覧ください"]。
 
 .手順
-. キャンバスページで、*作業環境の追加*をクリックし、Cloud Managerの手順に従います。
+. 左側のナビゲーションメニューから、* Storage > Canvas *を選択します。
+. キャンバスページで、*Add Working Environment*をクリックし、BlueXPの手順に従います。
 +
 .. [*詳細とクレデンシャル*]ページで、[クレデンシャルの編集]、[サブスクリプションの追加]の順にクリックし、プロンプトに従ってAzure Marketplaceで従量課金制サービスに登録します。
 +
@@ -32,7 +33,7 @@ Cloud Volumes ONTAP で使用するライセンスオプションを決定した
 +
 image:screenshot-azure-paygo-subscription.png["Cloud Volumes ONTAP の作業環境を作成する場合のPAYGOサブスクリプションオプションのスクリーンショット。"]
 
-.. Cloud Managerに戻ったら、課金方法のページが表示されたら「* Freemium *」を選択します。
+.. BlueXPに戻ったら、充電方法のページにアクセスして「* Freemium *」を選択します。
 +
 image:screenshot-freemium.png["Cloud Volumes ONTAP 作業環境を作成する際のFreemiumオプションのスクリーンショット。"]
 
@@ -67,14 +68,14 @@ link:concept-licensing.html["容量単位のライセンスに関する詳細は
 
 .手順
 . https://cloud.netapp.com/contact-cds["ライセンスの取得については、ネットアップの営業部門にお問い合わせください"^]
-. https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-adding-nss-accounts.html#add-an-nss-account["Cloud Managerにネットアップサポートサイトのアカウントを追加します"^]
+. https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-adding-nss-accounts.html#add-an-nss-account["NetApp Support Site アカウントをBlueXPに追加します"^]
 +
-Cloud Managerは、ネットアップのライセンスサービスを自動的に照会して、ネットアップサポートサイトのアカウントに関連付けられているライセンスに関する詳細を取得します。エラーがなければ、Cloud Managerはライセンスをデジタルウォレットに自動的に追加します。
+BlueXPは、ネットアップのライセンスサービスを自動的に照会し、NetApp Support Site アカウントに関連付けられているライセンスの詳細を取得します。エラーがなければ、BlueXPは自動的にデジタルウォレットにライセンスを追加します。
 
 +
 Cloud Volumes ONTAP で使用するには、ライセンスがデジタルウォレットから入手できる必要があります。必要に応じて、を実行できます link:task-manage-capacity-licenses.html#add-purchased-licenses-to-your-account["手動でライセンスをDigital Walletに追加します"]。
 
-. キャンバスページで、*作業環境の追加*をクリックし、Cloud Managerの手順に従います。
+. キャンバスページで、*Add Working Environment*をクリックし、BlueXPの手順に従います。
 +
 .. [*詳細とクレデンシャル*]ページで、[クレデンシャルの編集]、[サブスクリプションの追加]の順にクリックし、プロンプトに従ってAzure Marketplaceで従量課金制サービスに登録します。
 +
@@ -83,7 +84,7 @@ Cloud Volumes ONTAP で使用するには、ライセンスがデジタルウォ
 +
 image:screenshot-azure-paygo-subscription.png["Cloud Volumes ONTAP の作業環境を作成する場合のPAYGOサブスクリプションオプションのスクリーンショット。"]
 
-.. Cloud Managerに戻ったら、課金方法のページで容量ベースのパッケージを選択します。
+.. BlueXPに戻ったら、[課金方法]ページにアクセスして容量ベースのパッケージを選択します。
 +
 image:screenshot-professional.png["Cloud Volumes ONTAP 作業環境を作成する際のプロフェッショナルオプションのスクリーンショット。"]
 
@@ -102,13 +103,14 @@ link:task-deploying-otc-azure.html["ステップバイステップの手順を�
 Cloud Volumes ONTAP 作業環境を作成すると、Azure Marketplaceで提供されている契約に登録するよう求められます。このサブスクリプションは、充電のための作業環境に関連付けられます。同じサブスクリプションを追加の作業環境に使用できます。
 
 .手順
-. キャンバスページで、*作業環境の追加*をクリックし、Cloud Managerの手順に従います。
+. 左側のナビゲーションメニューから、* Storage > Canvas *を選択します。
+. キャンバスページで、*Add Working Environment*をクリックし、BlueXPの手順に従います。
 +
 .. [*詳細とクレデンシャル*]ページで、[クレデンシャルの編集]、[サブスクリプションの追加]の順にクリックし、プロンプトに従ってAzure Marketplaceで従量課金制サービスに登録します。
 +
 image:screenshot-azure-paygo-subscription.png["Cloud Volumes ONTAP の作業環境を作成する場合のPAYGOサブスクリプションオプションのスクリーンショット。"]
 
-.. Cloud Managerに戻ったら、課金方法のページで容量ベースのパッケージを選択します。
+.. BlueXPに戻ったら、[課金方法]ページにアクセスして容量ベースのパッケージを選択します。
 +
 image:screenshot-professional.png["Cloud Volumes ONTAP 作業環境を作成する際のプロフェッショナルオプションのスクリーンショット。"]
 
@@ -135,11 +137,11 @@ TIP: Azureアカウントに関連付けられたAzure Marketplaceのサブス�
 +
 ネットアップがお客様とプライベートオファーを共有したあとは、Azure Marketplaceでの作業環境の作成時にサブスクリプションするときに、年間プランを選択できます。
 
-. キャンバスページで、*作業環境の追加*をクリックし、Cloud Managerの手順に従います。
+. キャンバスページで、*Add Working Environment*をクリックし、BlueXPの手順に従います。
 +
 .. [*詳細と資格情報*]ページで、[資格情報の編集]>[サブスクリプションの追加]>[続行*]をクリックします。
 .. Azureポータルで、Azureアカウントと共有している年間プランを選択し、* Subscribe *をクリックします。
-.. Cloud Managerに戻ったら、課金方法のページで容量ベースのパッケージを選択します。
+.. BlueXPに戻ったら、[課金方法]ページにアクセスして容量ベースのパッケージを選択します。
 +
 image:screenshot-professional.png["Cloud Volumes ONTAP 作業環境を作成する際のプロフェッショナルオプションのスクリーンショット。"]
 
@@ -157,9 +159,9 @@ Keystone Flexサブスクリプションは、ビジネスの成長に合わせ�
 
 .手順
 . まだサブスクリプションをお持ちでない場合は、 https://www.netapp.com/forms/keystone-sales-contact/["ネットアップにお問い合わせください"^]
-. mailto ： ng-keystone-success@netapp.com [ ネットアップにお問い合わせください ] 1 つ以上の Keystone Flex Subscriptions で Cloud Manager のユーザアカウントを承認します。
+. mailto：ng-keystone-success@netapp.com [ネットアップにお問い合わせください] 1つ以上のKeystone Flex SubscriptionsでBlueXPユーザアカウントを承認してください。
 . ネットアップがお客様のアカウントを許可したあと、 link:task-manage-keystone.html#link-a-subscription["Cloud Volumes ONTAP で使用するサブスクリプションをリンクします"]。
-. キャンバスページで、*作業環境の追加*をクリックし、Cloud Managerの手順に従います。
+. キャンバスページで、*Add Working Environment*をクリックし、BlueXPの手順に従います。
 +
 .. 充電方法を選択するように求められたら、Keystone Flexサブスクリプションの課金方法を選択します。
 +

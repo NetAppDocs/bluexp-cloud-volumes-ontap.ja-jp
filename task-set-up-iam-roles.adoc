@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: task-set-up-iam-roles.html 
 keywords: iam role, mediator role, cloud volumes ontap role, policy, iam policy, permissions 
-summary: 各Cloud Volumes ONTAP ノードには、必要な権限を提供するIAMロールが関連付けられている必要があります。HAメディエーターについても同様です。Cloud ManagerでIAMロールを作成するのが最も簡単ですが、独自のロールを使用することもできます。 
+summary: 各Cloud Volumes ONTAP ノードには、必要な権限を提供するIAMロールが関連付けられている必要があります。HAメディエーターについても同様です。BlueXPでIAMロールを作成するのが最も簡単ですが、自分の役割を使用することもできます。 
 ---
 = Cloud Volumes ONTAP 用のIAMロールを設定します
 :hardbreaks:
@@ -14,9 +14,9 @@ summary: 各Cloud Volumes ONTAP ノードには、必要な権限を提供する
 
 
 [role="lead"]
-必要な権限を持つIAMロールを各Cloud Volumes ONTAP ノードに関連付ける必要があります。HAメディエーターについても同様です。Cloud ManagerでIAMロールを作成するのが最も簡単ですが、独自のロールを使用することもできます。
+必要な権限を持つIAMロールを各Cloud Volumes ONTAP ノードに関連付ける必要があります。HAメディエーターについても同様です。BlueXPでIAMロールを作成するのが最も簡単ですが、自分の役割を使用することもできます。
 
-このタスクはオプションです。Cloud Volumes ONTAP 作業環境を作成する際、デフォルトでは、Cloud ManagerにIAMロールを自動的に作成するように設定されています。ビジネスのセキュリティポリシーでIAMロールを自分で作成する必要がある場合は、次の手順を実行します。
+このタスクはオプションです。Cloud Volumes ONTAP 作業環境を作成する場合、デフォルトでは、BlueXPでIAMロールを作成することができます。ビジネスのセキュリティポリシーでIAMロールを自分で作成する必要がある場合は、次の手順を実行します。
 
 
 NOTE: AWS Commercialクラウド サービス 環境でIAMロールを独自に割り当てる必要があります。 link:task-getting-started-aws-c2s.html["C2SにCloud Volumes ONTAP を導入する方法を学習します"]。

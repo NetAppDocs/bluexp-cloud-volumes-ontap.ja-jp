@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: task-protecting-ransomware.html 
 keywords: snapshot policy, ransomware, protection, fpolicy, block, extension, attacks 
-summary: ランサムウェア攻撃は、ビジネス時間、リソース、評判を低下させる可能性があります。Cloud Manager では、ランサムウェアに対応したネットアップソリューションを実装できます。これにより、可視化、検出、修復のための効果的なツールが提供されます。 
+summary: ランサムウェア攻撃は、ビジネス時間、リソース、評判を低下させる可能性があります。BlueXPを使用すると、NetApp解決策 for Ransomwareを実装できます。これにより、可視化、検出、修復のための効果的なツールが提供されます。 
 ---
 = ランサムウェアからの保護を強化
 :hardbreaks:
@@ -14,7 +14,7 @@ summary: ランサムウェア攻撃は、ビジネス時間、リソース、�
 
 
 [role="lead"]
-ランサムウェア攻撃は、ビジネス時間、リソース、評判を低下させる可能性があります。Cloud Manager では、ランサムウェアに対応したネットアップソリューションを実装できます。これにより、可視化、検出、修復のための効果的なツールが提供されます。
+ランサムウェア攻撃は、ビジネス時間、リソース、評判を低下させる可能性があります。BlueXPを使用すると、NetApp解決策 for Ransomwareを実装できます。これにより、可視化、検出、修復のための効果的なツールが提供されます。
 
 .手順
 . 作業環境で、「 * ランサムウェア * 」アイコンをクリックします。
@@ -39,7 +39,7 @@ NetApp Snapshot テクノロジは、ランサムウェアの修復に業界最�
 
 +
 
-TIP: Cloud Manager では、 Cloud Volumes ONTAP で FPolicy をアクティブ化するときにこのスコープを作成します。このリストは、一般的なランサムウェアのファイルタイプに基づいています。ブロックされるファイル拡張子をカスタマイズするには、 Cloud Volumes ONTAP CLI から _ vserver fpolicy policy scope_コマンド を使用します。
+TIP: Cloud Volumes ONTAP でFPolicyをアクティブ化すると、このスコープが作成されます。このリストは、一般的なランサムウェアのファイルタイプに基づいています。ブロックされるファイル拡張子をカスタマイズするには、 Cloud Volumes ONTAP CLI から _ vserver fpolicy policy scope_コマンド を使用します。
 
 
 

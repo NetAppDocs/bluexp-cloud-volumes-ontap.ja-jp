@@ -56,7 +56,7 @@ Cloud Volumes ONTAP のすべての機能をネットアップから無償で提
 * ネットアップによるサポートは含まれていません。
 * Cloud Volumes ONTAP システムあたりのプロビジョニング可能な容量は 500GiB に制限されています。
 * ネットアップのアカウント 1 つにつき、最大 10 台の Cloud Volumes ONTAP システムを任意のクラウドプロバイダで使用できます。
-* Cloud Volumes ONTAP システム用にプロビジョニングされた容量が 500GiB を超えると、 Cloud Manager はシステムを Essentials パッケージに変換します。
+* Cloud Volumes ONTAP システム用にプロビジョニングされた容量が500GiBを超えると、BlueXPはシステムをEssentialsパッケージに変換します。
 +
 システムがEssentialsパッケージに変換されるとすぐに、が表示されます  about charging,最低料金 適用されます。
 
@@ -178,7 +178,7 @@ link:task-manage-capacity-licenses.html["充電方法を変更する方法につ
 
 === 価格設定
 
-価格設定の詳細については、を参照してください https://cloud.netapp.com/pricing?hsCtaTracking=4f8b7b77-8f63-4b73-b5af-ee09eab4fbd6%7C5fefbc99-396c-4084-99e6-f1e22dc8ffe7["NetApp Cloud Central"^]。
+価格設定の詳細については、を参照してください https://cloud.netapp.com/pricing?hsCtaTracking=4f8b7b77-8f63-4b73-b5af-ee09eab4fbd6%7C5fefbc99-396c-4084-99e6-f1e22dc8ffe7["NetApp BlueXPのWebサイト"^]。
 
 
 
@@ -191,7 +191,7 @@ link:task-manage-capacity-licenses.html["充電方法を変更する方法につ
 Cloud Volumes ONTAP のソフトウェアライセンス料金は1時間ごとに発生しませんが、クラウドプロバイダからインフラ料金が請求されます。
 
 
-TIP: Cloud Managerには、無償トライアルが開始されたとき、7日が残ったとき、および1日が残っているときに通知が送信されます。例：image:screenshot-free-trial-notification.png["Cloud Managerインターフェイスの通知のスクリーンショット。無償トライアルの残りの日数は7日です。"]
+TIP: 無料トライアルが開始されたとき、7日間残っているとき、残りの1日があるときに、BlueXPに通知が届きます。例：image:screenshot-free-trial-notification.png["BlueXPインターフェイスでの通知のスクリーンショット。無料トライアルで残り7日間しか残っていないことを示しています。"]
 
 
 
@@ -245,7 +245,7 @@ https://docs.netapp.com/us-en/cloud-manager-setup-admin/concept-netapp-accounts.
 
 ==== 最低料金
 
-プライマリ（読み取り/書き込み）ボリュームが1つ以上あるStorage VMをデータ提供する場合は、最小4TiBの料金が発生します。プライマリボリュームの合計が4TiBを下回る場合、Cloud ManagerはそのStorage VMに4TiBの最小料金を適用します。
+プライマリ（読み取り/書き込み）ボリュームが1つ以上あるStorage VMをデータ提供する場合は、最小4TiBの料金が発生します。プライマリボリュームの合計が4TiBを下回った場合、BlueXPはそのStorage VMに4TiBの最小料金を適用します。
 
 まだボリュームをプロビジョニングしていない場合は、最小料金は適用されません。
 

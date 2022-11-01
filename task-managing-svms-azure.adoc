@@ -632,4 +632,4 @@ network interface service-policy add-service -vserver <svm-name> -policy default
 
 --
 ====
-HA ペアに Storage VM を作成したら、その SVM でストレージをプロビジョニングする前に 12 時間待つことを推奨します。Cloud Volumes ONTAP 9.10.1 リリース以降、 Cloud Manager は HA ペアのロードバランサの設定を 12 時間おきにスキャンします。新しい SVM がある場合、 Cloud Manager はより短い計画外フェイルオーバーを実現する設定を有効にします。
+HA ペアに Storage VM を作成したら、その SVM でストレージをプロビジョニングする前に 12 時間待つことを推奨します。Cloud Volumes ONTAP 9.10.1リリース以降、12時間の間にHAペアのロードバランサの設定がスキャンされます。新しいSVMがある場合、計画外フェイルオーバーを短時間にする設定がBlueXPで有効になります。

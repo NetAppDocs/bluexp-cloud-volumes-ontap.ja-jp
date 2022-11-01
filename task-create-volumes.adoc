@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: task-create-volumes.html 
 keywords: storage, provisioning, iscsi, nfs, cifs, volumes, create a volume, add a volume, create volumes, add volumes, creating a volume, adding a volume, provision volume, provision a volume, provisioning volumes, add volume to second node, add volume to node 2, templates 
-summary: 初期 Cloud Volumes ONTAP システムの起動後にストレージの追加が必要になった場合は、 FlexVol Manager から NFS 、 CIFS 、または iSCSI 用の新しい ボリュームを作成できます。 
+summary: 初期のCloud Volumes ONTAP システムの起動後にストレージの追加が必要になった場合は、BlueXPからNFS、CIFS、またはiSCSI用の新しいFlexVol ボリュームを作成できます。 
 ---
 = FlexVol ボリュームを作成します
 :hardbreaks:
@@ -14,11 +14,11 @@ summary: 初期 Cloud Volumes ONTAP システムの起動後にストレージ�
 
 
 [role="lead"]
-初期 Cloud Volumes ONTAP システムの起動後にストレージの追加が必要になった場合は、 FlexVol Manager から NFS 、 CIFS 、または iSCSI 用の新しい ボリュームを作成できます。
+初期のCloud Volumes ONTAP システムの起動後にストレージの追加が必要になった場合は、BlueXPからNFS、CIFS、またはiSCSI用の新しいFlexVol ボリュームを作成できます。
 
-Cloud Manager では、いくつかの方法で新しいボリュームを作成できます。
+BlueXPでは、いくつかの方法で新しいボリュームを作成できます。
 
-* 新しいボリュームの詳細を指定し、基盤となるデータアグリゲートを Cloud Manager で処理できるようにします。  a volume,詳細はこちら。。
+* 新しいボリュームの詳細を指定し、基盤となるデータアグリゲートをBlueXPで処理できるようにします。  a volume,詳細はこちら。。
 * 任意のデータアグリゲート上にボリュームを作成します。  a volume,詳細はこちら。。
 * テンプレートからボリュームを作成し、データベースやストリーミングサービスなど特定のアプリケーションのワークロード要件に合わせてボリュームを最適化します。  a volume from a template,詳細はこちら。。
 * HA 構成の第 2 ノードにボリュームを作成する。  a volume on the second node in an HA configuration,詳細はこちら。。
@@ -30,7 +30,7 @@ Cloud Manager では、いくつかの方法で新しいボリュームを作成
 
 ボリュームのプロビジョニングに関する注意事項は次のとおりです。
 
-* iSCSI ボリュームを作成すると、 Cloud Manager によって自動的に LUN が作成されます。ボリュームごとに 1 つの LUN だけを作成することでシンプルになり、管理は不要になります。ボリュームを作成したら、  a LUN to a host,IQN を使用して、から LUN に接続します ホスト。
+* iSCSIボリュームを作成すると、BlueXPによって自動的にLUNが作成されます。ボリュームごとに 1 つの LUN だけを作成することでシンプルになり、管理は不要になります。ボリュームを作成したら、  a LUN to a host,IQN を使用して、から LUN に接続します ホスト。
 * LUN は、 System Manager または CLI を使用して追加で作成できます。
 
 
@@ -46,11 +46,12 @@ endif::aws[]
 
 == ボリュームを作成します
 
-ボリュームを作成する最も一般的な方法は、必要なボリュームタイプを指定してから、 Cloud Manager によってディスク割り当てが自動的に処理されるようにすることです。ボリュームを作成するアグリゲートを選択することもできます。
+ボリュームを作成する最も一般的な方法は、必要なボリュームのタイプを指定してから、BlueXPがディスク割り当てを処理することです。ボリュームを作成するアグリゲートを選択することもできます。
 
 .手順
+. 左側のナビゲーションメニューから、* Storage > Canvas *を選択します。
 . キャンバスページで、 FlexVol ボリュームをプロビジョニングする Cloud Volumes ONTAP システムの名前をダブルクリックします。
-. Cloud Manager にディスク割り当ての処理を許可して新しいボリュームを作成するか、ボリュームの特定のアグリゲートを選択します。
+. BlueXPにディスク割り当ての処理を許可して新しいボリュームを作成するか、ボリュームの特定のアグリゲートを選択します。
 +
 特定のアグリゲートを選択することが推奨されるのは、 Cloud Volumes ONTAP システムのデータアグリゲートを十分に理解している場合のみです。
 
@@ -93,7 +94,7 @@ Volumes （ボリューム）タブで、 * Add Volume * > * New volume * （ボ
 |===
 .. * プロトコル * ：ボリューム（ NFS 、 CIFS 、または iSCSI ）用のプロトコルを選択し、必要な情報を入力します。
 +
-CIFS を選択し、サーバがセットアップされていない場合は、 * Next * をクリックしたあとに、 CIFS 接続のセットアップを求めるメッセージが Cloud Manager に表示されます。
+[CIFS]を選択し、サーバが設定されていない場合は、[Next]をクリックすると、CIFS接続の設定を求めるメッセージが表示されます。
 
 +
 link:concept-client-protocols.html["サポートされるクライアントプロトコルおよびバージョンについて説明します"]。
@@ -107,7 +108,7 @@ link:concept-client-protocols.html["サポートされるクライアントプ�
 .NFS
 --
 Access Control の略:: クライアントがボリュームを使用できるようにするカスタムエクスポートポリシーを選択します。
-エクスポートポリシー:: ボリュームにアクセスできるサブネット内のクライアントを定義します。デフォルトでは、 Cloud Manager はサブネット内のすべてのインスタンスへのアクセスを提供する値を入力します。
+エクスポートポリシー:: ボリュームにアクセスできるサブネット内のクライアントを定義します。デフォルトでは、BlueXPはサブネット内のすべてのインスタンスへのアクセスを提供する値を入力します。
 
 
 --
@@ -154,7 +155,7 @@ ifdef::gcp[]
 endif::gcp[]
 
 DNS ドメイン:: Cloud Volumes ONTAP Storage Virtual Machine （ SVM ）の DNS ドメイン。ほとんどの場合、ドメインは AD ドメインと同じです。
-NTP サーバ:: Active Directory DNS を使用して NTP サーバを設定するには、「 Active Directory ドメインを使用」を選択します。別のアドレスを使用して NTP サーバを設定する必要がある場合は、 API を使用してください。を参照してください https://docs.netapp.com/us-en/cloud-manager-automation/index.html["Cloud Manager 自動化に関するドキュメント"^] を参照してください。
+NTP サーバ:: Active Directory DNS を使用して NTP サーバを設定するには、「 Active Directory ドメインを使用」を選択します。別のアドレスを使用して NTP サーバを設定する必要がある場合は、 API を使用してください。を参照してください https://docs.netapp.com/us-en/cloud-manager-automation/index.html["BlueXP自動化ドキュメント"^] を参照してください。
 +
 --
 NTP サーバは、 CIFS サーバを作成するときにのみ設定できます。CIFS サーバを作成したあとで設定することはできません。
@@ -165,7 +166,7 @@ NTP サーバは、 CIFS サーバを作成するときにのみ設定できま�
 --
 .iSCSI
 --
-LUN:: iSCSI ストレージターゲットは LUN （論理ユニット）と呼ばれ、標準のブロックデバイスとしてホストに提示されます。iSCSI ボリュームを作成すると、 Cloud Manager によって自動的に LUN が作成されます。ボリュームごとに 1 つの LUN を作成するだけでシンプルになり、管理は不要です。ボリュームを作成したら、 link:task-connect-lun.html["IQN を使用して、から LUN に接続します ホスト"]。
+LUN:: iSCSI ストレージターゲットは LUN （論理ユニット）と呼ばれ、標準のブロックデバイスとしてホストに提示されます。iSCSIボリュームを作成すると、BlueXPによって自動的にLUNが作成されます。ボリュームごとに 1 つの LUN を作成するだけでシンプルになり、管理は不要です。ボリュームを作成したら、 link:task-connect-lun.html["IQN を使用して、から LUN に接続します ホスト"]。
 イニシエータグループ:: イニシエータグループ（ igroup ）は、ストレージシステム上の指定した LUN にアクセスできるホストを指定します
 ホストイニシエータ（ IQN ）:: iSCSI ターゲットは、標準のイーサネットネットワークアダプタ（ NIC ）、ソフトウェアイニシエータを搭載した TOE カード、 CNA 、または専用の HBA を使用してネットワークに接続され、 iSCSI Qualified Name （ IQN ）で識別されます。
 
@@ -213,7 +214,7 @@ ONTAP には、必要なストレージの合計容量を削減できるスト�
 . * レビュー * ：ボリュームの詳細を確認して、 * 追加 * をクリックします。
 
 
-Cloud Manager によって、 Cloud Volumes ONTAP システムにボリュームが作成されます。
+Cloud Volumes ONTAP システムにボリュームが作成されます。
 
 
 
@@ -227,6 +228,7 @@ Cloud Manager によって、 Cloud Volumes ONTAP システムにボリューム
 NOTE: テンプレートを使用する場合にのみ、 NFS ボリュームまたは CIFS ボリュームを作成できます。
 
 .手順
+. 左側のナビゲーションメニューから、* Storage > Canvas *を選択します。
 . キャンバスページで、ボリュームをプロビジョニングする Cloud Volumes ONTAP システムの名前をクリックします。
 . をクリックします image:screenshot_gallery_options.gif["3つの横のドットのアイコン。"] > * テンプレートからボリュームを追加 * 。
 +
@@ -271,18 +273,19 @@ image:screenshot_template_creating_resource_cvo.png["テンプレートから新
 
 == HA 構成の第 2 ノードにボリュームを作成する
 
-デフォルトでは、 Cloud Manager は HA 構成の最初のノードにボリュームを作成します。両方のノードがクライアントにデータを提供するアクティブ / アクティブ構成が必要な場合は、 2 番目のノードにアグリゲートとボリュームを作成する必要があります。
+デフォルトでは、HA構成の第1ノードにボリュームが作成されます。両方のノードがクライアントにデータを提供するアクティブ / アクティブ構成が必要な場合は、 2 番目のノードにアグリゲートとボリュームを作成する必要があります。
 
 .手順
+. 左側のナビゲーションメニューから、* Storage > Canvas *を選択します。
 . キャンバスページで、アグリゲートを管理する Cloud Volumes ONTAP 作業環境の名前をダブルクリックします。
 . メニューアイコンをクリックし、 [ * 詳細設定 ] > [ 高度な割り当て * ] をクリックします。
 . Add Aggregate * をクリックして、アグリゲートを作成します。
 . Home Node には、 HA ペアの 2 番目のノードを選択します。
-. Cloud Manager でアグリゲートが作成されたら、そのアグリゲートを選択して * ボリュームの作成 * をクリックします。
+. BlueXPでアグリゲートが作成されたら、そのアグリゲートを選択し、*ボリュームの作成*をクリックします。
 . 新しいボリュームの詳細を入力し、 * Create * をクリックします。
 
 
-Cloud Manager によって、 HA ペアの 2 つ目のノードにボリュームが作成されます。
+BlueXPでは、HAペアの2つ目のノードにボリュームが作成されます。
 
 ifdef::aws[]
 

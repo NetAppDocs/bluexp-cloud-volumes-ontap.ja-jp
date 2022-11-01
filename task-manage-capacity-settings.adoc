@@ -21,10 +21,10 @@ summary: アグリゲートの管理を自分で行うには、ディスクの�
 コネクタ設定を変更するには、アカウント管理者権限が必要です。
 
 .手順
-. Cloud Manager コンソールの右上にある設定アイコンをクリックし、 * コネクタ設定 * を選択します。
+. BlueXPコンソールの右上にある[設定]アイコンをクリックし、[*コネクタの設定*]を選択します。
 . *容量*で、次のいずれかの設定を変更します。
 +
-Capacity Management Mode （容量管理モード）:: ストレージ容量の決定についてCloud Managerから通知するかどうか、またはCloud Managerが容量の要件を自動的に管理するかどうかを選択します。
+Capacity Management Mode （容量管理モード）:: ストレージ容量の決定についてBlueXPから通知するかどうか、またはBlueXPが容量要件を自動的に管理するかどうかを選択します。
 +
 --
 link:concept-storage-management.html#capacity-management["容量管理モードの仕組みをご確認ください"]。

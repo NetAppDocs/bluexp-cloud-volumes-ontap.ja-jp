@@ -47,11 +47,12 @@ link:task-set-up-licensing-aws.html["ライセンスの設定方法について�
 
 == AWS でのシングルノード Cloud Volumes ONTAP システムの起動
 
-Cloud Volumes ONTAP を AWS で起動する場合は、 Cloud Manager で新しい作業環境を作成する必要があります。
+AWSでCloud Volumes ONTAP を起動する場合は、BlueXPで新しい作業環境を作成する必要があります
 
-作業環境を作成した直後に、 Cloud Manager は指定された vPC でテストインスタンスを起動して接続を確認します。成功すると、 Cloud Manager はすぐにインスタンスを終了し、 Cloud Volumes ONTAP システムの導入を開始します。Cloud Manager が接続を確認できない場合、作業環境の作成は失敗します。テストインスタンスは、 t2.nano （デフォルトの vPC テナンシーの場合）または m3.medium （専用の vPC テナンシーの場合）のいずれかです。
+作業環境を作成した直後に、指定されたVPCでテストインスタンスを起動して接続を検証します。成功すると、すぐにインスタンスが終了し、Cloud Volumes ONTAP システムの導入が開始されます。BlueXPが接続を検証できない場合は'作業環境の作成に失敗しますテストインスタンスは、 t2.nano （デフォルトの vPC テナンシーの場合）または m3.medium （専用の vPC テナンシーの場合）のいずれかです。
 
 .手順
+. 左側のナビゲーションメニューから、* Storage > Canvas *を選択します。
 . [[subscribe] キャンバスページで、 * 作業環境の追加 * をクリックし、プロンプトに従います。
 . * 場所を選択 * ：「 * Amazon Web Services * 」と「 * Cloud Volumes ONTAP シングルノード * 」を選択します。
 . プロンプトが表示されたら、 https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-creating-connectors-aws.html["コネクタを作成します"^]。
@@ -65,16 +66,16 @@ Cloud Volumes ONTAP を AWS で起動する場合は、 Cloud Manager で新し�
 | フィールド | 説明 
 
 
-| 作業環境名 | Cloud Manager は、作業環境名を使用して、 Cloud Volumes ONTAP システムと Amazon EC2 インスタンスの両方に名前を付けます。また、このオプションを選択した場合は、事前定義されたセキュリティグループのプレフィックスとして名前が使用されます。 
+| 作業環境名 | BlueXPでは、作業環境名を使用してCloud Volumes ONTAP システムとAmazon EC2インスタンスの両方に名前を付けます。また、このオプションを選択した場合は、事前定義されたセキュリティグループのプレフィックスとして名前が使用されます。 
 
 
-| タグを追加します | AWS タグは、 AWS リソースのメタデータです。Cloud Manager は、 Cloud Volumes ONTAP インスタンスおよびインスタンスに関連付けられた各 AWS リソースにタグを追加します。作業環境を作成するときに、ユーザインターフェイスから最大 4 つのタグを追加し、作成後にさらに追加できます。API では、作業環境の作成時にタグを 4 つに制限することはありません。タグの詳細については、を参照してください https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/Using_Tags.html["AWS ドキュメント：「 Tagging your Amazon EC2 Resources"^]。 
+| タグを追加します | AWS タグは、 AWS リソースのメタデータです。BlueXPは、Cloud Volumes ONTAP インスタンスとそのインスタンスに関連付けられている各AWSリソースにタグを追加します。作業環境を作成するときに、ユーザインターフェイスから最大 4 つのタグを追加し、作成後にさらに追加できます。API では、作業環境の作成時にタグを 4 つに制限することはありません。タグの詳細については、を参照してください https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/Using_Tags.html["AWS ドキュメント：「 Tagging your Amazon EC2 Resources"^]。 
 
 
 | ユーザ名とパスワード | Cloud Volumes ONTAP クラスタ管理者アカウントのクレデンシャルです。このクレデンシャルを使用して、 System Manager またはその CLI から Cloud Volumes ONTAP に接続できます。default_admin_user の名前をそのまま使用するか ' カスタム・ユーザー名に変更します 
 
 
-| 資格情報を編集します | このシステムを導入するアカウントに関連付けられている AWS クレデンシャルを選択します。この Cloud Volumes ONTAP システムで使用する AWS Marketplace サブスクリプションを関連付けることもできます。Add Subscription * をクリックして、選択したクレデンシャルを新しい AWS Marketplace サブスクリプションに関連付けます。サブスクリプションは、年間契約の場合と、 Cloud Volumes ONTAP の料金を 1 時間ごとに支払う場合があります。https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-adding-aws-accounts.html["Cloud Manager に AWS クレデンシャルを追加する方法について説明します"^]。 
+| 資格情報を編集します | このシステムを導入するアカウントに関連付けられている AWS クレデンシャルを選択します。この Cloud Volumes ONTAP システムで使用する AWS Marketplace サブスクリプションを関連付けることもできます。Add Subscription * をクリックして、選択したクレデンシャルを新しい AWS Marketplace サブスクリプションに関連付けます。サブスクリプションは、年間契約の場合と、 Cloud Volumes ONTAP の料金を 1 時間ごとに支払う場合があります。https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-adding-aws-accounts.html["BlueXPにAWSクレデンシャルを追加する方法について説明します"^]。 
 |===
 +
 次のビデオでは、従量課金制の Marketplace サブスクリプションを AWS クレデンシャルに関連付ける方法を紹介します。
@@ -83,13 +84,12 @@ Cloud Volumes ONTAP を AWS で起動する場合は、 Cloud Manager で新し�
 video::video_subscribing_aws.mp4[width=848,height=480]
 +
 
-TIP: 複数の IAM ユーザが同じ AWS アカウントで作業する場合は、各ユーザにサブスクライブする必要があります。最初のユーザがサブスクライブすると、次の図に示すように、 AWS Marketplace から後続のユーザに登録済みであることが通知されます。AWS_account_ のサブスクリプションが設定されている間、各 IAM ユーザは、そのサブスクリプションに自分自身を関連付ける必要があります。以下のメッセージが表示された場合は、 * ここをクリック * リンクをクリックして Cloud Central にアクセスし、処理を完了してください。image:screenshot_aws_marketplace.gif["AWS アカウントにすでにサブスクリプションが設定されているものの、特定の IAM ユーザがサブスクリプションを設定していない場合に、 Cloud Manager for Cloud Volumes ONTAP のサブスクリプションページを示すスクリーンショット。"]
+TIP: 複数の IAM ユーザが同じ AWS アカウントで作業する場合は、各ユーザにサブスクライブする必要があります。最初のユーザがサブスクライブすると、次の図に示すように、 AWS Marketplace から後続のユーザに登録済みであることが通知されます。AWS_account_ のサブスクリプションが設定されている間、各 IAM ユーザは、そのサブスクリプションに自分自身を関連付ける必要があります。次のメッセージが表示されたら、[Click here *（ここをクリック）]リンクをクリックしてBlueXP Webサイトにアクセスし、プロセスを完了します。image:screenshot_aws_marketplace.gif["AWSアカウントにサブスクリプションがすでに設定されているものの、特定のIAMユーザがサブスクリプションを設定していない場合に、BlueXP for Cloud Volumes ONTAP のサブスクリプションページを示すスクリーンショット。"]
 
 . * サービス *: サービスを有効にしておくか、 Cloud Volumes ONTAP で使用しない個々のサービスを無効にします。
 +
-** https://docs.netapp.com/us-en/cloud-manager-data-sense/concept-cloud-compliance.html["クラウドデータセンスの詳細をご確認ください"^]。
-** https://docs.netapp.com/us-en/cloud-manager-backup-restore/concept-backup-to-cloud.html["Cloud Backup の詳細については、こちらをご覧ください"^]。
-** https://docs.netapp.com/us-en/cloud-manager-monitoring/concept-monitoring.html["モニタリングの詳細"^]。
+** https://docs.netapp.com/us-en/cloud-manager-data-sense/concept-cloud-compliance.html["クラウドデータセンスの詳細をご確認ください"^]
+** https://docs.netapp.com/us-en/cloud-manager-backup-restore/concept-backup-to-cloud.html["Cloud Backup の詳細については、こちらをご覧ください"^]
 
 
 . * 場所と接続 * ：に記録したネットワーク情報を入力します link:task-planning-your-config.html#aws-network-information-worksheet["AWS ワークシート"]。
@@ -106,7 +106,7 @@ TIP: 複数の IAM ユーザが同じ AWS アカウントで作業する場合�
 
 
 | セキュリティグループが生成されました  a| 
-Cloud Managerでセキュリティグループを生成するように設定した場合は、トラフィックを許可する方法を選択する必要があります。
+BlueXPがセキュリティグループを生成するようにした場合は、トラフィックを許可する方法を選択する必要があります。
 
 ** 「* Selected VPC Only *」を選択した場合、インバウンドトラフィックのソースは、選択したVPCのサブネット範囲と、コネクタが存在するVPCのサブネット範囲です。これが推奨されるオプションです。
 ** どのVPC *も選択した場合、インバウンドトラフィックのソースは0.0.0.0/0のIP範囲になります。
@@ -144,14 +144,14 @@ link:concept-security.html#encryption-of-data-at-rest["サポートされてい�
 +
 いずれかのパッケージを選択した場合、ボリュームを指定し、構成を確認および承認するだけで済みます。
 
-. * IAM ロール * ： Cloud Manager にロールを割り当てるには、デフォルトのオプションを使用することを推奨します。
+. *IAMの役割*: BlueXPが役割を作成できるようにするには、既定のオプションをそのまま使用することをお勧めします。
 +
 独自のポリシーを使用する場合は、それが満たされている必要があります link:task-set-up-iam-roles.html["Cloud Volumes ONTAP ノードのポリシーの要件"]。
 
 . *ライセンス*：必要に応じてCloud Volumes ONTAP のバージョンを変更し、インスタンスタイプとインスタンステナンシーを選択します。
 +
 
-NOTE: 選択したバージョンで新しいリリース候補、一般的な可用性、またはパッチリリースが利用可能な場合は、作業環境の作成時に Cloud Manager によってシステムがそのバージョンに更新されます。たとえば、Cloud Volumes ONTAP 9.10.1と9.10.1 P4が利用可能になっていれば、更新が実行されます。たとえば、 9.6 から 9.7 への更新など、あるリリースから別のリリースへの更新は行われません。
+NOTE: 選択したバージョンで新しいリリース候補、一般提供、またはパッチリリースが利用可能な場合、作業環境の作成時にシステムがそのバージョンに更新されます。たとえば、Cloud Volumes ONTAP 9.10.1と9.10.1 P4が利用可能になっていれば、更新が実行されます。たとえば、 9.6 から 9.7 への更新など、あるリリースから別のリリースへの更新は行われません。
 
 . *基盤となるストレージリソース*：ディスクタイプを選択し、基盤となるストレージを構成して、データの階層化を有効にするかどうかを選択します。
 +
@@ -159,8 +159,8 @@ NOTE: 選択したバージョンで新しいリリース候補、一般的な�
 
 +
 ** ディスクタイプは最初のボリューム（およびアグリゲート）用です。以降のボリューム（およびアグリゲート）には別のディスクタイプを選択できます。
-** GP3ディスクまたはio1ディスクを選択した場合、Cloud ManagerはAWSのElastic Volumes機能を使用して、必要に応じて基盤となるストレージディスク容量を自動的に増やします。初期容量はストレージのニーズに基づいて選択し、Cloud Volumes ONTAP の導入後に変更することができます。 link:concept-aws-elastic-volumes.html["Elastic VolumesのAWSサポートの詳細については、こちらをご覧ください"]。
-** gp2ディスクまたはst1ディスクを選択する場合、シンプルなプロビジョニングオプションを使用する場合、初期アグリゲートおよびCloud Managerで作成される追加のアグリゲートのすべてのディスクサイズを選択できます。Advanced Allocation オプションを使用すると、異なるディスクサイズを使用するアグリゲートを作成できます。
+** GP3またはio1ディスクを選択した場合、BlueXPはAWSのElastic Volumes機能を使用して、必要に応じて、基盤となるストレージディスク容量を自動的に増やします。初期容量はストレージのニーズに基づいて選択し、Cloud Volumes ONTAP の導入後に変更することができます。 link:concept-aws-elastic-volumes.html["Elastic VolumesのAWSサポートの詳細については、こちらをご覧ください"]。
+** gp2ディスクまたはst1ディスクを選択する場合、シンプルなプロビジョニングオプションを使用する場合、初期アグリゲートおよびBlueXPで作成される追加のアグリゲートのすべてのディスクサイズを選択できます。Advanced Allocation オプションを使用すると、異なるディスクサイズを使用するアグリゲートを作成できます。
 ** ボリュームを作成または編集するときに、特定のボリューム階層化ポリシーを選択できます。
 ** データの階層化を無効にすると、以降のアグリゲートで有効にすることができます。
 +
@@ -194,7 +194,7 @@ link:concept-client-protocols.html["サポートされるクライアントプ�
 | サイズ | 入力できる最大サイズは、シンプロビジョニングを有効にするかどうかによって大きく異なります。シンプロビジョニングを有効にすると、現在使用可能な物理ストレージよりも大きいボリュームを作成できます。 
 
 
-| アクセス制御（ NFS のみ） | エクスポートポリシーは、ボリュームにアクセスできるサブネット内のクライアントを定義します。デフォルトでは、 Cloud Manager はサブネット内のすべてのインスタンスへのアクセスを提供する値を入力します。 
+| アクセス制御（ NFS のみ） | エクスポートポリシーは、ボリュームにアクセスできるサブネット内のクライアントを定義します。デフォルトでは、BlueXPはサブネット内のすべてのインスタンスへのアクセスを提供する値を入力します。 
 
 
 | 権限とユーザー / グループ（ CIFS のみ） | これらのフィールドを使用すると、ユーザおよびグループ（アクセスコントロールリストまたは ACL とも呼ばれる）の共有へのアクセスレベルを制御できます。ローカルまたはドメインの Windows ユーザまたはグループ、 UNIX ユーザまたはグループを指定できます。ドメインの Windows ユーザ名を指定する場合は、 domain\username 形式でユーザのドメインを指定する必要があります。 
@@ -206,7 +206,7 @@ link:concept-client-protocols.html["サポートされるクライアントプ�
 | アドバンストオプション（ NFS のみ） | ボリュームの NFS バージョンを NFSv3 または NFSv4 のいずれかで選択してください。 
 
 
-| イニシエータグループと IQN （ iSCSI のみ） | iSCSI ストレージターゲットは LUN （論理ユニット）と呼ばれ、標準のブロックデバイスとしてホストに提示されます。イニシエータグループは、 iSCSI ホストのノード名のテーブルであり、どのイニシエータがどの LUN にアクセスできるかを制御します。iSCSI ターゲットは、標準のイーサネットネットワークアダプタ（ NIC ）、ソフトウェアイニシエータを搭載した TOE カード、 CNA 、または専用の HBA を使用してネットワークに接続され、 iSCSI Qualified Name （ IQN ）で識別されます。iSCSI ボリュームを作成すると、 Cloud Manager によって自動的に LUN が作成されます。ボリュームごとに 1 つの LUN だけを作成することでシンプルになり、管理は不要になります。ボリュームを作成したら、 link:task-connect-lun.html["IQN を使用して、から LUN に接続します ホスト"]。 
+| イニシエータグループと IQN （ iSCSI のみ） | iSCSI ストレージターゲットは LUN （論理ユニット）と呼ばれ、標準のブロックデバイスとしてホストに提示されます。イニシエータグループは、 iSCSI ホストのノード名のテーブルであり、どのイニシエータがどの LUN にアクセスできるかを制御します。iSCSI ターゲットは、標準のイーサネットネットワークアダプタ（ NIC ）、ソフトウェアイニシエータを搭載した TOE カード、 CNA 、または専用の HBA を使用してネットワークに接続され、 iSCSI Qualified Name （ IQN ）で識別されます。iSCSIボリュームを作成すると、BlueXPによって自動的にLUNが作成されます。ボリュームごとに 1 つの LUN だけを作成することでシンプルになり、管理は不要になります。ボリュームを作成したら、 link:task-connect-lun.html["IQN を使用して、から LUN に接続します ホスト"]。 
 |===
 +
 次の図は、 CIFS プロトコルの [Volume] ページの設定を示しています。
@@ -239,7 +239,7 @@ image:screenshot_cot_vol.gif["スクリーンショット： Cloud Volumes ONTAP
 | DNS ドメイン | Cloud Volumes ONTAP Storage Virtual Machine （ SVM ）の DNS ドメイン。ほとんどの場合、ドメインは AD ドメインと同じです。 
 
 
-| NTP サーバ | Active Directory DNS を使用して NTP サーバを設定するには、「 Active Directory ドメインを使用」を選択します。別のアドレスを使用して NTP サーバを設定する必要がある場合は、 API を使用してください。を参照してください https://docs.netapp.com/us-en/cloud-manager-automation/index.html["Cloud Manager 自動化に関するドキュメント"^] を参照してください。NTP サーバは、 CIFS サーバを作成するときにのみ設定できます。CIFS サーバを作成したあとで設定することはできません。 
+| NTP サーバ | Active Directory DNS を使用して NTP サーバを設定するには、「 Active Directory ドメインを使用」を選択します。別のアドレスを使用して NTP サーバを設定する必要がある場合は、 API を使用してください。を参照してください https://docs.netapp.com/us-en/cloud-manager-automation/index.html["BlueXP自動化ドキュメント"^] を参照してください。NTP サーバは、 CIFS サーバを作成するときにのみ設定できます。CIFS サーバを作成したあとで設定することはできません。 
 |===
 . * 使用状況プロファイル、ディスクタイプ、階層化ポリシー * ：必要に応じて、 Storage Efficiency 機能を有効にするかどうかを選択し、ボリューム階層化ポリシーを編集します。
 +
@@ -248,14 +248,14 @@ image:screenshot_cot_vol.gif["スクリーンショット： Cloud Volumes ONTAP
 . * レビューと承認 *: 選択内容を確認して確認します。
 +
 .. 設定の詳細を確認します。
-.. 詳細情報 * をクリックして、 Cloud Manager で購入するサポートと AWS リソースの詳細を確認します。
+.. [詳細情報*]をクリックして、BlueXPが購入するサポートとAWSリソースの詳細を確認します。
 .. [* I understand ... * （理解しています ... * ） ] チェックボックスを選択
 .. [Go*] をクリックします。
 
 
 
 
-Cloud Manager が Cloud Volumes ONTAP インスタンスを起動します。タイムラインで進行状況を追跡できます。
+Cloud Volumes ONTAP インスタンスが起動します。タイムラインで進行状況を追跡できます。
 
 Cloud Volumes ONTAP インスタンスの起動時に問題が発生した場合は、障害メッセージを確認してください。また、作業環境を選択して、 [ 環境の再作成 ] をクリックすることもできます。
 
@@ -273,13 +273,14 @@ Cloud Volumes ONTAP インスタンスの起動時に問題が発生した場合
 
 == AWS での Cloud Volumes ONTAP HA ペアの起動
 
-Cloud Volumes ONTAP HA ペアを AWS で起動する場合は、 Cloud Manager で HA 作業環境を作成する必要があります。
+AWSでCloud Volumes ONTAP HAペアを起動するには、BlueXPでHA作業環境を作成する必要があります。
 
 現時点では、 AWS アウトポストで HA ペアがサポートされていません。
 
-作業環境を作成した直後に、 Cloud Manager は指定された vPC でテストインスタンスを起動して接続を確認します。成功すると、 Cloud Manager はすぐにインスタンスを終了し、 Cloud Volumes ONTAP システムの導入を開始します。Cloud Manager が接続を確認できない場合、作業環境の作成は失敗します。テストインスタンスは、 t2.nano （デフォルトの vPC テナンシーの場合）または m3.medium （専用の vPC テナンシーの場合）のいずれかです。
+作業環境を作成した直後に、指定されたVPCでテストインスタンスを起動して接続を検証します。成功すると、すぐにインスタンスが終了し、Cloud Volumes ONTAP システムの導入が開始されます。BlueXPが接続を検証できない場合は'作業環境の作成に失敗しますテストインスタンスは、 t2.nano （デフォルトの vPC テナンシーの場合）または m3.medium （専用の vPC テナンシーの場合）のいずれかです。
 
 .手順
+. 左側のナビゲーションメニューから、* Storage > Canvas *を選択します。
 . Canvas ページで、 * Add Working Environment * をクリックし、画面の指示に従います。
 . * 場所を選択 * ：「 * Amazon Web Services * 」と「 * Cloud Volumes ONTAP シングルノード * 」を選択します。
 . * 詳細とクレデンシャル * ：必要に応じて、 AWS のクレデンシャルとサブスクリプションを変更し、作業環境名を入力してタグを追加し、パスワードを入力します。
@@ -292,16 +293,16 @@ Cloud Volumes ONTAP HA ペアを AWS で起動する場合は、 Cloud Manager �
 | フィールド | 説明 
 
 
-| 作業環境名 | Cloud Manager は、作業環境名を使用して、 Cloud Volumes ONTAP システムと Amazon EC2 インスタンスの両方に名前を付けます。また、このオプションを選択した場合は、事前定義されたセキュリティグループのプレフィックスとして名前が使用されます。 
+| 作業環境名 | BlueXPでは、作業環境名を使用してCloud Volumes ONTAP システムとAmazon EC2インスタンスの両方に名前を付けます。また、このオプションを選択した場合は、事前定義されたセキュリティグループのプレフィックスとして名前が使用されます。 
 
 
-| タグを追加します | AWS タグは、 AWS リソースのメタデータです。Cloud Manager は、 Cloud Volumes ONTAP インスタンスおよびインスタンスに関連付けられた各 AWS リソースにタグを追加します。作業環境を作成するときに、ユーザインターフェイスから最大 4 つのタグを追加し、作成後にさらに追加できます。API では、作業環境の作成時にタグを 4 つに制限することはありません。タグの詳細については、を参照してください https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/Using_Tags.html["AWS ドキュメント：「 Tagging your Amazon EC2 Resources"^]。 
+| タグを追加します | AWS タグは、 AWS リソースのメタデータです。BlueXPは、Cloud Volumes ONTAP インスタンスとそのインスタンスに関連付けられている各AWSリソースにタグを追加します。作業環境を作成するときに、ユーザインターフェイスから最大 4 つのタグを追加し、作成後にさらに追加できます。API では、作業環境の作成時にタグを 4 つに制限することはありません。タグの詳細については、を参照してください https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/Using_Tags.html["AWS ドキュメント：「 Tagging your Amazon EC2 Resources"^]。 
 
 
 | ユーザ名とパスワード | Cloud Volumes ONTAP クラスタ管理者アカウントのクレデンシャルです。このクレデンシャルを使用して、 System Manager またはその CLI から Cloud Volumes ONTAP に接続できます。default_admin_user の名前をそのまま使用するか ' カスタム・ユーザー名に変更します 
 
 
-| 資格情報を編集します | この Cloud Volumes ONTAP システムで使用する AWS クレデンシャルと Marketplace サブスクリプションを選択します。Add Subscription * をクリックして、選択したクレデンシャルを新しい AWS Marketplace サブスクリプションに関連付けます。サブスクリプションは、年間契約の場合と、 Cloud Volumes ONTAP の料金を 1 時間ごとに支払う場合があります。NetApp （ BYOL ）からライセンスを直接購入した場合、 AWS サブスクリプションは必要ありません。https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-adding-aws-accounts.html["Cloud Manager に AWS クレデンシャルを追加する方法について説明します"^]。 
+| 資格情報を編集します | この Cloud Volumes ONTAP システムで使用する AWS クレデンシャルと Marketplace サブスクリプションを選択します。Add Subscription * をクリックして、選択したクレデンシャルを新しい AWS Marketplace サブスクリプションに関連付けます。サブスクリプションは、年間契約の場合と、 Cloud Volumes ONTAP の料金を 1 時間ごとに支払う場合があります。NetApp （ BYOL ）からライセンスを直接購入した場合、 AWS サブスクリプションは必要ありません。https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-adding-aws-accounts.html["BlueXPにAWSクレデンシャルを追加する方法について説明します"^]。 
 |===
 +
 次のビデオでは、従量課金制の Marketplace サブスクリプションを AWS クレデンシャルに関連付ける方法を紹介します。
@@ -310,13 +311,12 @@ Cloud Volumes ONTAP HA ペアを AWS で起動する場合は、 Cloud Manager �
 video::video_subscribing_aws.mp4[width=848,height=480]
 +
 
-TIP: 複数の IAM ユーザが同じ AWS アカウントで作業する場合は、各ユーザにサブスクライブする必要があります。最初のユーザがサブスクライブすると、次の図に示すように、 AWS Marketplace から後続のユーザに登録済みであることが通知されます。AWS_account_ のサブスクリプションが設定されている間、各 IAM ユーザは、そのサブスクリプションに自分自身を関連付ける必要があります。以下のメッセージが表示された場合は、 * ここをクリック * リンクをクリックして Cloud Central にアクセスし、処理を完了してください。image:screenshot_aws_marketplace.gif["AWS アカウントにすでにサブスクリプションが設定されているものの、特定の IAM ユーザがサブスクリプションを設定していない場合に、 Cloud Manager for Cloud Volumes ONTAP のサブスクリプションページを示すスクリーンショット。"]
+TIP: 複数の IAM ユーザが同じ AWS アカウントで作業する場合は、各ユーザにサブスクライブする必要があります。最初のユーザがサブスクライブすると、次の図に示すように、 AWS Marketplace から後続のユーザに登録済みであることが通知されます。AWS_account_ のサブスクリプションが設定されている間、各 IAM ユーザは、そのサブスクリプションに自分自身を関連付ける必要があります。次のメッセージが表示されたら、[Click here *（ここをクリック）]リンクをクリックしてBlueXP Webサイトにアクセスし、プロセスを完了します。image:screenshot_aws_marketplace.gif["AWSアカウントにサブスクリプションがすでに設定されているものの、特定のIAMユーザがサブスクリプションを設定していない場合に、BlueXP for Cloud Volumes ONTAP のサブスクリプションページを示すスクリーンショット。"]
 
 . * サービス *: この Cloud Volumes ONTAP システムで使用しない個々のサービスを有効または無効にしておきます。
 +
-** https://docs.netapp.com/us-en/cloud-manager-data-sense/concept-cloud-compliance.html["クラウドデータセンスの詳細をご確認ください"^]。
-** https://docs.netapp.com/us-en/cloud-manager-backup-restore/task-backup-to-s3.html["Cloud Backup の詳細については、こちらをご覧ください"^]。
-** https://docs.netapp.com/us-en/cloud-manager-monitoring/concept-monitoring.html["モニタリングの詳細"^]。
+** https://docs.netapp.com/us-en/cloud-manager-data-sense/concept-cloud-compliance.html["クラウドデータセンスの詳細をご確認ください"^]
+** https://docs.netapp.com/us-en/cloud-manager-backup-restore/task-backup-to-s3.html["Cloud Backup の詳細については、こちらをご覧ください"^]
 
 
 . *HA 導入モデル *: HA 構成を選択します。
@@ -334,7 +334,7 @@ TIP: 複数の IAM ユーザが同じ AWS アカウントで作業する場合�
 
 
 | セキュリティグループが生成されました  a| 
-Cloud Managerでセキュリティグループを生成するように設定した場合は、トラフィックを許可する方法を選択する必要があります。
+BlueXPがセキュリティグループを生成するようにした場合は、トラフィックを許可する方法を選択する必要があります。
 
 ** 「* Selected VPC Only *」を選択した場合、インバウンドトラフィックのソースは、選択したVPCのサブネット範囲と、コネクタが存在するVPCのサブネット範囲です。これが推奨されるオプションです。
 ** どのVPC *も選択した場合、インバウンドトラフィックのソースは0.0.0.0/0のIP範囲になります。
@@ -381,14 +381,14 @@ link:concept-security.html#encryption-of-data-at-rest["サポートされてい�
 +
 いずれかのパッケージを選択した場合、ボリュームを指定し、構成を確認および承認するだけで済みます。
 
-. * IAM ロール * ： Cloud Manager にロールを割り当てるには、デフォルトのオプションを使用することを推奨します。
+. *IAMの役割*: BlueXPが役割を作成できるようにするには、既定のオプションをそのまま使用することをお勧めします。
 +
 独自のポリシーを使用する場合は、それが満たされている必要があります link:task-set-up-iam-roles.html["Cloud Volumes ONTAP ノードと HA のポリシー要件 メディエーター"]。
 
 . *ライセンス*：必要に応じてCloud Volumes ONTAP のバージョンを変更し、インスタンスタイプとインスタンステナンシーを選択します。
 +
 
-NOTE: 選択したバージョンで新しいリリース候補、一般的な可用性、またはパッチリリースが利用可能な場合は、作業環境の作成時に Cloud Manager によってシステムがそのバージョンに更新されます。たとえば、Cloud Volumes ONTAP 9.10.1と9.10.1 P4が利用可能になっていれば、更新が実行されます。たとえば、 9.6 から 9.7 への更新など、あるリリースから別のリリースへの更新は行われません。
+NOTE: 選択したバージョンで新しいリリース候補、一般提供、またはパッチリリースが利用可能な場合、作業環境の作成時にシステムがそのバージョンに更新されます。たとえば、Cloud Volumes ONTAP 9.10.1と9.10.1 P4が利用可能になっていれば、更新が実行されます。たとえば、 9.6 から 9.7 への更新など、あるリリースから別のリリースへの更新は行われません。
 
 . *基盤となるストレージリソース*：ディスクタイプを選択し、基盤となるストレージを構成して、データの階層化を有効にするかどうかを選択します。
 +
@@ -396,8 +396,8 @@ NOTE: 選択したバージョンで新しいリリース候補、一般的な�
 
 +
 ** ディスクタイプは最初のボリューム（およびアグリゲート）用です。以降のボリューム（およびアグリゲート）には別のディスクタイプを選択できます。
-** GP3ディスクまたはio1ディスクを選択した場合、Cloud ManagerはAWSのElastic Volumes機能を使用して、必要に応じて基盤となるストレージディスク容量を自動的に増やします。初期容量はストレージのニーズに基づいて選択し、Cloud Volumes ONTAP の導入後に変更することができます。 link:concept-aws-elastic-volumes.html["Elastic VolumesのAWSサポートの詳細については、こちらをご覧ください"]。
-** gp2ディスクまたはst1ディスクを選択する場合、シンプルなプロビジョニングオプションを使用する場合、初期アグリゲートおよびCloud Managerで作成される追加のアグリゲートのすべてのディスクサイズを選択できます。Advanced Allocation オプションを使用すると、異なるディスクサイズを使用するアグリゲートを作成できます。
+** GP3またはio1ディスクを選択した場合、BlueXPはAWSのElastic Volumes機能を使用して、必要に応じて、基盤となるストレージディスク容量を自動的に増やします。初期容量はストレージのニーズに基づいて選択し、Cloud Volumes ONTAP の導入後に変更することができます。 link:concept-aws-elastic-volumes.html["Elastic VolumesのAWSサポートの詳細については、こちらをご覧ください"]。
+** gp2ディスクまたはst1ディスクを選択する場合、シンプルなプロビジョニングオプションを使用する場合、初期アグリゲートおよびBlueXPで作成される追加のアグリゲートのすべてのディスクサイズを選択できます。Advanced Allocation オプションを使用すると、異なるディスクサイズを使用するアグリゲートを作成できます。
 ** ボリュームを作成または編集するときに、特定のボリューム階層化ポリシーを選択できます。
 ** データの階層化を無効にすると、以降のアグリゲートで有効にすることができます。
 +
@@ -431,7 +431,7 @@ link:concept-client-protocols.html["サポートされるクライアントプ�
 | サイズ | 入力できる最大サイズは、シンプロビジョニングを有効にするかどうかによって大きく異なります。シンプロビジョニングを有効にすると、現在使用可能な物理ストレージよりも大きいボリュームを作成できます。 
 
 
-| アクセス制御（ NFS のみ） | エクスポートポリシーは、ボリュームにアクセスできるサブネット内のクライアントを定義します。デフォルトでは、 Cloud Manager はサブネット内のすべてのインスタンスへのアクセスを提供する値を入力します。 
+| アクセス制御（ NFS のみ） | エクスポートポリシーは、ボリュームにアクセスできるサブネット内のクライアントを定義します。デフォルトでは、BlueXPはサブネット内のすべてのインスタンスへのアクセスを提供する値を入力します。 
 
 
 | 権限とユーザー / グループ（ CIFS のみ） | これらのフィールドを使用すると、ユーザおよびグループ（アクセスコントロールリストまたは ACL とも呼ばれる）の共有へのアクセスレベルを制御できます。ローカルまたはドメインの Windows ユーザまたはグループ、 UNIX ユーザまたはグループを指定できます。ドメインの Windows ユーザ名を指定する場合は、 domain\username 形式でユーザのドメインを指定する必要があります。 
@@ -443,7 +443,7 @@ link:concept-client-protocols.html["サポートされるクライアントプ�
 | アドバンストオプション（ NFS のみ） | ボリュームの NFS バージョンを NFSv3 または NFSv4 のいずれかで選択してください。 
 
 
-| イニシエータグループと IQN （ iSCSI のみ） | iSCSI ストレージターゲットは LUN （論理ユニット）と呼ばれ、標準のブロックデバイスとしてホストに提示されます。イニシエータグループは、 iSCSI ホストのノード名のテーブルであり、どのイニシエータがどの LUN にアクセスできるかを制御します。iSCSI ターゲットは、標準のイーサネットネットワークアダプタ（ NIC ）、ソフトウェアイニシエータを搭載した TOE カード、 CNA 、または専用の HBA を使用してネットワークに接続され、 iSCSI Qualified Name （ IQN ）で識別されます。iSCSI ボリュームを作成すると、 Cloud Manager によって自動的に LUN が作成されます。ボリュームごとに 1 つの LUN だけを作成することでシンプルになり、管理は不要になります。ボリュームを作成したら、 link:task-connect-lun.html["IQN を使用して、から LUN に接続します ホスト"]。 
+| イニシエータグループと IQN （ iSCSI のみ） | iSCSI ストレージターゲットは LUN （論理ユニット）と呼ばれ、標準のブロックデバイスとしてホストに提示されます。イニシエータグループは、 iSCSI ホストのノード名のテーブルであり、どのイニシエータがどの LUN にアクセスできるかを制御します。iSCSI ターゲットは、標準のイーサネットネットワークアダプタ（ NIC ）、ソフトウェアイニシエータを搭載した TOE カード、 CNA 、または専用の HBA を使用してネットワークに接続され、 iSCSI Qualified Name （ IQN ）で識別されます。iSCSIボリュームを作成すると、BlueXPによって自動的にLUNが作成されます。ボリュームごとに 1 つの LUN だけを作成することでシンプルになり、管理は不要になります。ボリュームを作成したら、 link:task-connect-lun.html["IQN を使用して、から LUN に接続します ホスト"]。 
 |===
 +
 次の図は、 CIFS プロトコルの [Volume] ページの設定を示しています。
@@ -476,7 +476,7 @@ image:screenshot_cot_vol.gif["スクリーンショット： Cloud Volumes ONTAP
 | DNS ドメイン | Cloud Volumes ONTAP Storage Virtual Machine （ SVM ）の DNS ドメイン。ほとんどの場合、ドメインは AD ドメインと同じです。 
 
 
-| NTP サーバ | Active Directory DNS を使用して NTP サーバを設定するには、「 Active Directory ドメインを使用」を選択します。別のアドレスを使用して NTP サーバを設定する必要がある場合は、 API を使用してください。を参照してください https://docs.netapp.com/us-en/cloud-manager-automation/index.html["Cloud Manager 自動化に関するドキュメント"^] を参照してください。NTP サーバは、 CIFS サーバを作成するときにのみ設定できます。CIFS サーバを作成したあとで設定することはできません。 
+| NTP サーバ | Active Directory DNS を使用して NTP サーバを設定するには、「 Active Directory ドメインを使用」を選択します。別のアドレスを使用して NTP サーバを設定する必要がある場合は、 API を使用してください。を参照してください https://docs.netapp.com/us-en/cloud-manager-automation/index.html["BlueXP自動化ドキュメント"^] を参照してください。NTP サーバは、 CIFS サーバを作成するときにのみ設定できます。CIFS サーバを作成したあとで設定することはできません。 
 |===
 . * 使用状況プロファイル、ディスクタイプ、階層化ポリシー * ：必要に応じて、 Storage Efficiency 機能を有効にするかどうかを選択し、ボリューム階層化ポリシーを編集します。
 +
@@ -485,14 +485,14 @@ image:screenshot_cot_vol.gif["スクリーンショット： Cloud Volumes ONTAP
 . * レビューと承認 *: 選択内容を確認して確認します。
 +
 .. 設定の詳細を確認します。
-.. 詳細情報 * をクリックして、 Cloud Manager で購入するサポートと AWS リソースの詳細を確認します。
+.. [詳細情報*]をクリックして、BlueXPが購入するサポートとAWSリソースの詳細を確認します。
 .. [* I understand ... * （理解しています ... * ） ] チェックボックスを選択
 .. [Go*] をクリックします。
 
 
 
 
-Cloud Manager が Cloud Volumes ONTAP HA ペアを起動します。タイムラインで進行状況を追跡できます。
+Cloud Volumes ONTAP HAペアが起動します。タイムラインで進行状況を追跡できます。
 
 HA ペアの起動で問題が発生した場合は、障害メッセージを確認します。また、作業環境を選択して、 [ 環境の再作成 ] をクリックすることもできます。
 

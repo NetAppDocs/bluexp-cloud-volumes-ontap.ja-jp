@@ -20,11 +20,11 @@ Cloud Volumes ONTAP がデフォルトでどのように設定されているか
 
 == デフォルトのセットアップ
 
-* Cloud Manager は、 Cloud Volumes ONTAP の導入時にデータを提供する Storage VM を 1 つ作成します。追加の Storage VM をサポートする構成もあります。 link:task-managing-svms.html["Storage VM の管理に関する詳細情報"]。
+* BlueXPでは、Cloud Volumes ONTAP を導入するとデータ提供用のStorage VMが1つ作成されます。追加の Storage VM をサポートする構成もあります。 link:task-managing-svms.html["Storage VM の管理に関する詳細情報"]。
 +
-Cloud Manager 3.9.5 リリース以降では、最初の Storage VM で論理スペースのレポートが有効になります。スペースが論理的に報告されると、 ONTAP は、 Storage Efficiency 機能で削減されたすべての物理スペースが使用済みと報告するようにボリュームスペースを報告します。
+BlueXP 3.9.5リリース以降では、最初のStorage VMで論理スペースのレポートが有効になります。スペースが論理的に報告されると、 ONTAP は、 Storage Efficiency 機能で削減されたすべての物理スペースが使用済みと報告するようにボリュームスペースを報告します。
 
-* Cloud Manager は、次の ONTAP 機能ライセンスを Cloud Volumes ONTAP に自動的にインストールします。
+* BlueXPでは、次のONTAP 機能ライセンスがCloud Volumes ONTAP に自動的にインストールされます。
 +
 ** CIFS
 ** FlexCache
@@ -97,14 +97,14 @@ NOTE: クラウドプロバイダの要件により、Cloud Volumes ONTAP のLIF
 +
 バックアップにはからアクセスできます https://ipaddress/occm/offboxconfig/[] ここで、 _ipaddress_ はコネクタホストの IP アドレスです。
 
-** Cloud Manager は、他の管理ツール（ System Manager や CLI など）とは異なるボリューム属性をいくつか設定します。
+** BlueXPでは、他の管理ツール（System ManagerやCLIなど）とは異なる方法でいくつかのボリューム属性を設定します。
 +
-次の表に、 Cloud Manager がデフォルトとは異なる設定にしたボリューム属性を示します。
+次の表に、BlueXPで設定されるボリューム属性とデフォルト値の違いを示します。
 
 +
 [cols="15,85"]
 |===
-| 属性 | Cloud Manager によって設定される値 
+| 属性 | BlueXPによって設定された値 
 
 
 | オートサイズモード | 成長 
@@ -137,7 +137,7 @@ NOTE: アカウント管理者は、 [ 設定 ] ページからこの値を変�
 
 == システムデータ用の内蔵ディスク
 
-ユーザデータ用のストレージに加えて、 Cloud Manager はシステムデータ用のクラウドストレージも購入します。
+ユーザデータ用のストレージに加えて、BlueXPはシステムデータ用のクラウドストレージも購入します。
 
 ifdef::aws[]
 
@@ -230,7 +230,7 @@ endif::gcp[]
 
 === ディスクが存在する場所
 
-Cloud Manager は次のようにストレージを配置します。
+BlueXPでは'次のようにストレージが配置されます
 
 * ブートデータは、インスタンスまたは仮想マシンに接続されたディスクにあります。
 +

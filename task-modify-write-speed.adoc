@@ -14,7 +14,7 @@ summary: ストレージニーズの変化に合わせて Cloud Volumes ONTAP �
 
 
 [role="lead"]
-Cloud Manager では、 Cloud Volumes ONTAP に対して通常または高速の書き込み速度を選択できます。デフォルトの書き込み速度は normal です。ワークロードで高速書き込みパフォーマンスが必要な場合は、高速書き込み速度に変更できます。
+BlueXPを使用すると、Cloud Volumes ONTAP で通常の書き込み速度または高速の書き込み速度を選択できます。デフォルトの書き込み速度は normal です。ワークロードで高速書き込みパフォーマンスが必要な場合は、高速書き込み速度に変更できます。
 
 高速の書き込み速度は、すべてのタイプのシングルノードシステムと一部のHAペア構成でサポートされています。でサポートされている構成を表示します https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/["Cloud Volumes ONTAP リリースノート"^]
 

@@ -24,7 +24,7 @@ HA ペアを導入する場合は、を実行します link:concept-ha-google-cl
 
 GCP では、次の要件を満たす必要があります。
 
-内部ロードバランサ:: Cloud Manager は、 Cloud Volumes ONTAP HA ペアへの受信トラフィックを管理する Google Cloud 内部ロードバランサ（ TCP / UDP ）を 4 つ自動作成します。セットアップは必要ありませんネットワークトラフィックを通知し、セキュリティ上の問題を緩和するだけで、この要件が満たされることがわかりました。
+内部ロードバランサ:: BlueXPでは、Cloud Volumes ONTAP HAペアへの着信トラフィックを管理するGoogle Cloud内部ロードバランサ（TCP/UDP）が自動的に4つ作成されます。セットアップは必要ありませんネットワークトラフィックを通知し、セキュリティ上の問題を緩和するだけで、この要件が満たされることがわかりました。
 +
 --
 クラスタ管理用のロードバランサで、 1 つは Storage VM （ SVM ）管理用、もう 1 つはノード 1 への NAS トラフィック用、もう 1 つはノード 2 への NAS トラフィック用です。
@@ -47,7 +47,7 @@ GCP では、次の要件を満たす必要があります。
 
 
 --
-HA ペア用のゾーン:: 複数のゾーンまたは単一のゾーンに HA 構成を導入することで、データの高可用性を確保できます。HA ペアの作成時には、 Cloud Manager から複数のゾーンまたは単一のゾーンの選択を求められます。
+HA ペア用のゾーン:: 複数のゾーンまたは単一のゾーンに HA 構成を導入することで、データの高可用性を確保できます。HAペアを作成すると、複数のゾーンまたは単一のゾーンを選択するように求められます。
 +
 --
 * 複数のゾーン（推奨）
@@ -67,7 +67,7 @@ Cloud Volumes ONTAP HA 構成では、単一のゾーンに導入する場合は
 HA ペア用の仮想プライベートクラウド × 4:: HA 構成には、 4 つの Virtual Private Cloud （ VPC ；仮想プライベートクラウド）が必要です。GCP では各ネットワークインターフェイスが別々の VPC ネットワークに存在する必要があるため、 4 つの VPC が必要です。
 +
 --
-HA ペアの作成時に、 Cloud Manager から 4 つの VPC を選択するよう求められます。
+HAペアを作成するときに、4つのVPCを選択するように要求されます。
 
 * vPC-0 ：データおよびノードへのインバウンド接続
 * vPC-1 、 VPC -2 、および VPC -3 ：ノードと HA メディエーター間の内部通信
@@ -107,7 +107,7 @@ Cloud Volumes ONTAP が AutoSupport メッセージを送信できるように�
 * \ https://support.netapp.com/aods/asupmessage
 * \ https://support.netapp.com/asupprod/post/1.0/postAsup
 +
-アウトバウンドのインターネット接続を使用してAutoSupport メッセージを送信できない場合、Cloud Managerは、コネクタをプロキシサーバとして使用するようにCloud Volumes ONTAP システムを自動的に設定します。唯一の要件は、コネクタのファイアウォールがポート3128上の_INBOUND接続を許可することです。コネクタを展開した後、このポートを開く必要があります。
+AutoSupport メッセージの送信にアウトバウンドのインターネット接続が使用できない場合、Cloud Volumes ONTAP システムは自動的にコネクタをプロキシサーバとして使用するように設定されます。唯一の要件は、コネクタのファイアウォールがポート3128上の_INBOUND接続を許可することです。コネクタを展開した後、このポートを開く必要があります。
 
 +
 Cloud Volumes ONTAP に厳密なアウトバウンドルールを定義した場合は、Cloud Volumes ONTAP ファイアウォールがポート3128で_OUTBOUND接続を許可することも必要です。
@@ -124,9 +124,9 @@ TIP: HA ペアを使用している場合、 HA メディエーターではア�
 --
 
 
-AutoSupport メッセージを送信できないことがCloud Managerから通知された場合は、 link:task-verify-autosupport.html#troubleshoot-your-autosupport-configuration["AutoSupport 構成のトラブルシューティングを行います"]。
+AutoSupport メッセージを送信できないことがBlueXPから通知された場合は、 link:task-verify-autosupport.html#troubleshoot-your-autosupport-configuration["AutoSupport 構成のトラブルシューティングを行います"]。
 
-プライベート IP アドレス:: Cloud Manager は、次の数のプライベート IP アドレスを GCP の Cloud Volumes ONTAP に割り当てます。
+プライベート IP アドレス:: BlueXPは、次の数のプライベートIPアドレスをGCPのCloud Volumes ONTAP に割り当てます。
 +
 --
 * * シングルノード * ： 3 または 4 つのプライベート IP アドレス
@@ -156,7 +156,7 @@ Cloud Volumes ONTAP を API を使用して導入する場合、 Storage VM （ 
 
 
 --
-ファイアウォールルール:: ファイアウォールルールを作成する必要はありません。ファイアウォールルールは Cloud Manager で自動的に作成されます。独自のファイアウォールを使用する必要がある場合は、以下のファイアウォールルールを参照してください。
+ファイアウォールルール:: ファイアウォールルールを作成する必要はありません。BlueXPはファイアウォールルールを作成します。独自のファイアウォールを使用する必要がある場合は、以下のファイアウォールルールを参照してください。
 +
 --
 HA 構成には、次の 2 組のファイアウォールルールが必要です。
@@ -169,7 +169,7 @@ HA 構成には、次の 2 組のファイアウォールルールが必要で�
 の Cloud Volumes ONTAP から Google Cloud Storage への接続 データ階層化:: コールドデータを Google Cloud Storage バケットに階層化する場合は、 Cloud Volumes ONTAP が配置されているサブネットをプライベート Google Access 用に設定する必要があります（ HA ペアを使用している場合、これは VPC 0 のサブネットです）。手順については、を参照してください https://cloud.google.com/vpc/docs/configure-private-google-access["Google Cloud のドキュメント：「 Configuring Private Google Access"^]。
 +
 --
-Cloud Manager でデータの階層化を設定するための追加の手順については、を参照してください link:task-tiering.html["コールドデータを低コストのオブジェクトストレージに階層化する"]。
+BlueXPでデータの階層化を設定するために必要な追加手順については'を参照してください link:task-tiering.html["コールドデータを低コストのオブジェクトストレージに階層化する"]。
 
 --
 他のネットワーク内の ONTAP システムへの接続:: GCP 内の Cloud Volumes ONTAP システムと他のネットワーク内の ONTAP システムの間でデータをレプリケートするには、 VPC と他のネットワーク（たとえば社内ネットワーク）の間に VPN 接続が必要です。
@@ -211,7 +211,7 @@ Connector では、パブリッククラウド環境内のリソースとプロ�
 | \ https://support.netapp.com | ライセンス情報を取得し、ネットアップサポートに AutoSupport メッセージを送信するため。 
 
 
-| ¥https://*.cloudmanager.cloud.netapp.com¥https://cloudmanager.cloud.netapp.com | Cloud Manager 内で SaaS の機能やサービスを提供できます。 
+| ¥https://*.cloudmanager.cloud.netapp.com¥https://cloudmanager.cloud.netapp.com | BlueXPでSaaSの機能とサービスを提供するため。 
 
 
 | ¥ https://cloudmanagerinfraprod.azurecr.io ¥ https://*.blob.core.windows.net | をクリックして、 Connector と Docker コンポーネントをアップグレードします。 
@@ -220,7 +220,7 @@ Connector では、パブリッククラウド環境内のリソースとプロ�
 
 == Cloud Volumes ONTAP のファイアウォールルール
 
-Cloud Manager は、 Cloud Volumes ONTAP が正常に動作するために必要なインバウンドとアウトバウンドのルールを含む GCP ファイアウォールルールを作成します。テスト目的または独自のファイアウォールルールを使用する場合は、ポートを参照してください。
+BlueXPでは、Cloud Volumes ONTAP が正常に動作するために必要な着信および発信ルールを含むGCPファイアウォールルールが作成されます。テスト目的または独自のファイアウォールルールを使用する場合は、ポートを参照してください。
 
 Cloud Volumes ONTAP のファイアウォールルールには、インバウンドとアウトバウンドの両方のルールが必要です。
 
@@ -463,7 +463,7 @@ NOTE: source は、 Cloud Volumes ONTAP システムのインターフェイス�
 
 GCP では、 4 つの VPC 間で HA 構成が導入されます。VPC -0 の HA 構成に必要なファイアウォールルール はです  rules for Cloud Volumes ONTAP,Cloud Volumes ONTAP については上記のリストを参照してください。
 
-一方、 Cloud Manager で VPC -1 、 VPC -2 、および VPC -3 のインスタンスに対して作成される事前定義されたファイアウォールルールによって、 _All_protocols とポートを介した入力通信が有効になります。これらのルールに従って、 HA ノード間の通信が可能になります。
+一方、BlueXPでVPC -1、VPC -2、およびVPC -3のインスタンスに対して作成される定義済みのファイアウォールルールにより、_All_protocolsとポートでの入力通信が可能になります。これらのルールに従って、 HA ノード間の通信が可能になります。
 
 HA ノードから HA メディエーターへの通信は、ポート 3260 （ iSCSI ）を介して行われます。
 
@@ -532,5 +532,5 @@ NOTE: 送信元 IP アドレスは、コネクタホストです。
 | API コールと AutoSupport | HTTPS | 443 | アウトバウンドインターネットおよび ONTAP クラスタ管理 LIF | API が GCP と ONTAP にコールし、クラウドデータを検知してランサムウェア対策サービスに送信し、 AutoSupport メッセージをネットアップに送信します 
 
 
-| DNS | UDP | 53 | DNS | Cloud Manager による DNS 解決に使用されます 
+| DNS | UDP | 53 | DNS | BlueXPによるDNS解決に使用されます 
 |===

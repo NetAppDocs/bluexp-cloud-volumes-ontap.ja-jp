@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: concept-aws-elastic-volumes.html 
 keywords: elastic volumes, ev, ebs elastic volumes, ebs, amazon ebs, disk growth 
-summary: Cloud Volumes ONTAP アグリゲートでAmazon EBS Elastic Volumes機能がサポートされるため、パフォーマンスが向上して容量が追加されると同時に、必要に応じて基盤となるディスク容量がCloud Managerで自動的に拡張されます。 
+summary: Cloud Volumes ONTAP アグリゲートでAmazon EBS Elastic Volumes機能がサポートされるため、パフォーマンスが向上し、容量が追加されます。また、必要に応じて基盤となるディスク容量が自動的に拡張されます。 
 ---
 = AWSのElastic Volumes
 :hardbreaks:
@@ -14,7 +14,7 @@ summary: Cloud Volumes ONTAP アグリゲートでAmazon EBS Elastic Volumes機�
 
 
 [role="lead"]
-Cloud Volumes ONTAP アグリゲートでAmazon EBS Elastic Volumes機能がサポートされるため、パフォーマンスが向上して容量が追加されると同時に、必要に応じて基盤となるディスク容量がCloud Managerで自動的に拡張されます。
+Cloud Volumes ONTAP アグリゲートでAmazon EBS Elastic Volumes機能がサポートされるため、パフォーマンスが向上し、容量が追加されます。また、必要に応じて基盤となるディスク容量が自動的に拡張されます。
 
 
 
@@ -22,7 +22,7 @@ Cloud Volumes ONTAP アグリゲートでAmazon EBS Elastic Volumes機能がサ�
 
 * ディスクの動的な拡張
 +
-Cloud Managerは、Cloud Volumes ONTAP の実行中およびディスクの接続中にディスクサイズを動的に拡張できます。
+BlueXPは、Cloud Volumes ONTAP の実行中およびディスクの接続中に、ディスクのサイズを動的に増やすことができます。
 
 * パフォーマンスの向上
 +
@@ -79,13 +79,13 @@ Elastic Volumes機能が有効になっているアグリゲートは、1つま�
 
 image:diagram-aws-elastic-volumes-one-raid-group.png["この概念図は、同じサイズの4つのディスクで構成されるアグリゲートとRAIDグループを示しています。"]
 
-アグリゲートが作成されると、Cloud Managerは1つのRAIDグループから始まります。追加の容量が必要になった場合、Cloud ManagerはRAIDグループ内のすべてのディスクの容量を同じ量だけ増やしてアグリゲートを拡張します。容量の増加は、最小256 GiBまたはアグリゲートのサイズの10%です。
+BlueXPでアグリゲートが作成されると、1つのRAIDグループから始まります。追加の容量が必要になった場合、BlueXPはRAIDグループ内のすべてのディスクの容量を同じ量だけ増やして、アグリゲートを拡張します。容量の増加は、最小256 GiBまたはアグリゲートのサイズの10%です。
 
 たとえば、アグリゲートが1TiBの場合、各ディスクは250GiBです。アグリゲートの容量の10%は100GiBです。これは256GiBよりも小さいため、アグリゲートのサイズは256GiB以上（各ディスクで64GiB）増加します。
 
-Cloud Volumes ONTAP システムの実行中、およびディスクが接続されている間は、Cloud Managerによってディスクのサイズが拡張されます。変更はシステムの停止を伴わないものです。
+Cloud Volumes ONTAP システムの実行中およびディスクが接続されている間は、BlueXPによってディスクのサイズが増加します。変更はシステムの停止を伴わないものです。
 
-アグリゲートが64TiB（各ディスクで16TiB）に達すると、Cloud Managerは容量の追加用に2つ目のRAIDグループを作成します。この2つ目のRAIDグループは、最初のRAIDグループと同様に機能します。つまり、同じ容量のディスクが4本あり、最大64TiBまで拡張できます。つまり、アグリゲートの最大容量は128TiBになります。
+アグリゲートが64TiB（各ディスクで16TiB）に達すると、BlueXPは容量を追加するために2つ目のRAIDグループを作成します。この2つ目のRAIDグループは、最初のRAIDグループと同様に機能します。つまり、同じ容量のディスクが4本あり、最大64TiBまで拡張できます。つまり、アグリゲートの最大容量は128TiBになります。
 
 次に、2つのRAIDグループを含むアグリゲートの例を示します。最初のRAIDグループの容量が上限に達しており、2番目のRAIDグループのディスクには十分な空きスペースがあります。
 
@@ -95,10 +95,10 @@ image:diagram-aws-elastic-volumes-two-raid-groups.png["この概念図は、同�
 
 === ボリュームを作成したときの動作
 
-GP3ディスクまたはio1ディスクを使用するボリュームを作成すると、Cloud Managerは次のようにアグリゲート上にボリュームを作成します。
+GP3またはio1ディスクを使用するボリュームを作成すると、次のようにアグリゲート上にボリュームが作成されます。
 
-* Elastic Volumesが有効になっている既存のGP3アグリゲートまたはio1アグリゲートがある場合、Cloud Managerはそのアグリゲートにボリュームを作成します。
-* Elastic Volumesが有効なGP3アグリゲートまたはio1アグリゲートが複数ある場合、Cloud Managerは、必要なリソースの量が最も少ないボリュームをアグリゲート上に作成します。
+* Elastic Volumesが有効になっている既存のGP3アグリゲートまたはio1アグリゲートがある場合、BlueXPはそのアグリゲートにボリュームを作成します。
+* Elastic Volumesが有効になっているGP3アグリゲートまたはio1アグリゲートが複数ある場合、BlueXPは、最小限のリソースを必要とするボリュームをアグリゲート上に作成します。
 * Elastic Volumesが有効になっていないGP3アグリゲートまたはio1アグリゲートだけがシステムに存在する場合、そのアグリゲートにボリュームが作成されます。
 +
 [NOTE]
@@ -110,7 +110,7 @@ GP3ディスクまたはio1ディスクを使用するボリュームを作成�
 
 
 ====
-* 既存のアグリゲートに十分な容量がない場合、Cloud ManagerはElastic Volumesが有効なアグリゲートを作成し、その新しいアグリゲートにボリュームを作成します。
+* 既存のアグリゲートに十分な容量がない場合は、Elastic Volumesを有効にしてアグリゲートが作成され、その新しいアグリゲートにボリュームが作成されます。
 +
 アグリゲートのサイズは、要求されたボリュームサイズと10%の容量に基づいて決まります。
 
@@ -122,8 +122,8 @@ GP3ディスクまたはio1ディスクを使用するボリュームを作成�
 
 コネクタの容量管理モードは、他のタイプのアグリゲートと同様にElastic Volumesと連携します。
 
-* 自動モードが有効な場合（デフォルト設定）、容量の追加が必要になると、Cloud Managerによってアグリゲートのサイズが自動的に拡張されます。
-* 容量管理モードを手動に変更すると、Cloud Managerは追加の容量の購入を承認するかどうかを確認するメッセージを表示します。
+* 自動モードが有効な場合（デフォルト設定）、容量を追加する必要があると、BlueXPによってアグリゲートのサイズが自動的に拡張されます。
+* 容量管理モードを手動に変更すると、追加の容量を購入する承認を求めるメッセージが表示されます。
 
 
 link:concept-storage-management.html#capacity-management["容量管理モードの詳細については、こちらをご覧ください"]。
@@ -132,13 +132,13 @@ link:concept-storage-management.html#capacity-management["容量管理モード�
 
 == 制限
 
-アグリゲートのサイズの拡張には最大で6時間かかることがあります。その期間、Cloud Managerはそのアグリゲートに容量を追加で要求することはできません。
+アグリゲートのサイズの拡張には最大で6時間かかることがあります。この間、BlueXPはそのアグリゲートに容量を追加することはできません。
 
 
 
 == Elastic Volumesとの連携方法
 
-Elastic VolumesとCloud Managerは次のように連携できます。
+Elastic Volumesは、BlueXPで次のように操作できます。
 
 * GP3ディスクまたはio1ディスクを使用する場合は、初期アグリゲートでElastic Volumesが有効になっている新しいシステムを作成します
 +
@@ -146,7 +146,7 @@ link:task-deploying-otc-aws.html["Cloud Volumes ONTAP システムの作成方�
 
 * Elastic Volumesが有効になっているアグリゲートに新しいボリュームを作成します
 +
-GP3ディスクまたはio1ディスクを使用するボリュームを作成すると、Elastic Volumesが有効になっているアグリゲートにCloud Managerでボリュームが自動的に作成されます。詳細については、を参照してください  happens when you create a volume。
+GP3またはio1ディスクを使用するボリュームを作成すると、Elastic Volumesが有効になっているアグリゲートにボリュームが自動的に作成されます。詳細については、を参照してください  happens when you create a volume。
 
 +
 link:task-create-volumes.html["ボリュームを作成する方法について説明します"]。
@@ -156,7 +156,7 @@ link:task-create-volumes.html["ボリュームを作成する方法について�
 Cloud Volumes ONTAP システムがバージョン9.11.0以降で作成されていれば、GP3ディスクまたはio1ディスクを使用する新しいアグリゲートでは、Elastic Volumesが自動的に有効になります。
 
 +
-アグリゲートを作成する際、Cloud Managerによってアグリゲートの容量サイズの入力が求められます。これは、ディスクサイズとディスク数を選択する他の設定とは異なります。
+アグリゲートを作成すると、アグリゲートの容量サイズを確認するプロンプトが表示されます。これは、ディスクサイズとディスク数を選択する他の設定とは異なります。
 
 +
 次のスクリーンショットは、GP3ディスクで構成される新しいアグリゲートの例を示しています。
@@ -176,7 +176,7 @@ image:screenshot-elastic-volumes-enabled.png["2つのアグリゲートを示す
 
 * アグリゲートに容量を追加します
 +
-Cloud Managerでは必要に応じてアグリゲートに容量を自動的に追加できますが、手動で容量を拡張することもできます。
+BlueXPでは必要に応じて自動的にアグリゲートに容量が追加されますが、手動で容量を増やすことができます。
 
 +
 link:task-manage-aggregates.html["アグリゲートの容量を増やす方法について説明します"]。

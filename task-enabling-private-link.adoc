@@ -20,20 +20,20 @@ Cloud Volumes ONTAP は、関連付けられたストレージアカウントへ
 
 == 概要
 
-デフォルトでは、Cloud Managerは、Cloud Volumes ONTAP とそれに関連付けられたストレージアカウント間の接続にAzure Private Linkを有効にします。Azure Private Linkは、Azureのエンドポイント間の接続を保護し、パフォーマンスを向上させます。
+BlueXPでは、Cloud Volumes ONTAP とそれに関連付けられたストレージアカウント間の接続用にAzure Private Linkがデフォルトで有効になっています。Azure Private Linkは、Azureのエンドポイント間の接続を保護し、パフォーマンスを向上させます。
 
 必要に応じて、Azureプライベートリンクの代わりにサービスエンドポイントを使用するようにCloud Volumes ONTAP を設定できます。
 
-どちらの構成でも、Cloud ManagerはCloud Volumes ONTAP アカウントとストレージアカウント間の接続に関して常にネットワークアクセスを制限します。ネットワークアクセスは、Cloud Volumes ONTAP が導入されているVNetおよびコネクタが導入されているVNetに限定されます。
+どちらの構成でも、BlueXPは常にCloud Volumes ONTAP とストレージアカウント間の接続に対するネットワークアクセスを制限します。ネットワークアクセスは、Cloud Volumes ONTAP が導入されているVNetおよびコネクタが導入されているVNetに限定されます。
 
 
 
 == 代わりにAzure Private Linkを無効にし、サービスエンドポイントを使用してください
 
-ビジネスで必要な場合は、Cloud Managerで設定を変更して、Azure Private Linkの代わりにサービスエンドポイントを使用するようにCloud Volumes ONTAP を設定できます。この設定を変更すると、新しく作成した環境 Cloud Volumes ONTAP システムに変更が適用されます。
+ビジネスで必要な場合は、BlueXPの設定を変更して、Azureプライベートリンクの代わりにサービスエンドポイントを使用するようにCloud Volumes ONTAP を設定できます。この設定を変更すると、新しく作成した環境 Cloud Volumes ONTAP システムに変更が適用されます。
 
 .手順
-. Cloud Manager コンソールの右上にある設定アイコンをクリックし、 * コネクタ設定 * を選択します。
+. BlueXPコンソールの右上にある[設定]アイコンをクリックし、[*コネクタの設定*]を選択します。
 . [*Azure* ] で、 [* Azure プライベートリンクを使用する *] をクリックします。
 . Cloud Volumes ONTAP とストレージアカウント間のプライベートリンク接続 * の選択を解除します。
 . [ 保存（ Save ） ] をクリックします。
@@ -43,13 +43,13 @@ Cloud Volumes ONTAP は、関連付けられたストレージアカウントへ
 
 == Azureプライベートリンクを使用する
 
-ほとんどの場合、Cloud Volumes ONTAP でAzureプライベートリンクを設定するために必要な作業はありません。Cloud ManagerでAzureプライベートリンクを管理できます。ただし、 Azure Private DNS を使用する場合は、構成ファイルを編集する必要があります。また、Azureのコネクタの場所に関する要件も把握しておく必要があります。
+ほとんどの場合、Cloud Volumes ONTAP でAzureプライベートリンクを設定するために必要な作業はありません。BlueXPはAzureプライベートリンクを管理しています。ただし、 Azure Private DNS を使用する場合は、構成ファイルを編集する必要があります。また、Azureのコネクタの場所に関する要件も把握しておく必要があります。
 
 
 
 === プライベートリンク接続の仕組み
 
-Cloud Manager が Azure に Cloud Volumes ONTAP を導入すると、リソースグループにプライベートエンドポイントが作成されます。プライベートエンドポイントは、Cloud Volumes ONTAP のストレージアカウントに関連付けられます。その結果、 Cloud Volumes ONTAP ストレージへのアクセスは、 Microsoft バックボーンネットワークを経由します。
+BlueXPがAzureにCloud Volumes ONTAP を導入すると、リソースグループにプライベートエンドポイントが作成されます。プライベートエンドポイントは、Cloud Volumes ONTAP のストレージアカウントに関連付けられます。その結果、 Cloud Volumes ONTAP ストレージへのアクセスは、 Microsoft バックボーンネットワークを経由します。
 
 VNet へのプライベート VPN 接続または ExpressRoute 接続を使用する場合、クライアントが Cloud Volumes ONTAP と同じ VNet 内、ピア VNet 内、またはオンプレミスネットワーク内にある場合、クライアントアクセスはプライベートリンクを経由します。
 
@@ -65,9 +65,9 @@ image:diagram_azure_private_link.png["この概念図は、 Cloud Volumes ONTAP 
 
 
 
-=== Cloud Manager に Azure プライベート DNS の詳細を指定します
+=== AzureプライベートDNSの詳細をBlueXPに提供します
 
-を使用する場合 https://docs.microsoft.com/en-us/azure/dns/private-dns-overview["Azure プライベート DNS"^]では、各コネクタの構成ファイルを変更する必要があります。そうしないと、 Cloud Manager で Cloud Volumes ONTAP とそれに関連付けられたストレージアカウント間の Azure Private Link 接続を有効にできません。
+を使用する場合 https://docs.microsoft.com/en-us/azure/dns/private-dns-overview["Azure プライベート DNS"^]では、各コネクタの構成ファイルを変更する必要があります。それ以外の場合、Cloud Volumes ONTAP とそれに関連付けられたストレージアカウント間のAzure Private Link接続を有効にすることはできません。
 
 DNS 名は Azure DNS の命名規則と一致している必要があります 要件 https://docs.microsoft.com/en-us/azure/storage/common/storage-private-endpoints#dns-changes-for-private-endpoints["Azure のドキュメントを参照"^]。
 
@@ -104,11 +104,11 @@ subscriptionKeywordは、プライベートDNSゾーンがコネクタとは異�
 
 === 障害発生時のロールバックを有効にする
 
-Cloud Manager が特定のアクションの一部として Azure Private Link の作成に失敗すると、 Azure Private Link 接続なしで処理を完了します。このエラーは、新しい作業環境（シングルノードまたは HA ペア）の作成時、または HA ペアで次の操作が行われた場合に発生します。新しいアグリゲートの作成、既存のアグリゲートへのディスクの追加、 32TiB を超える場合の新しいストレージアカウントの作成。
+BlueXPが特定のアクションの一部としてAzure Private Linkを作成できない場合、Azure Private Link接続なしで処理を完了します。このエラーは、新しい作業環境（シングルノードまたは HA ペア）の作成時、または HA ペアで次の操作が行われた場合に発生します。新しいアグリゲートの作成、既存のアグリゲートへのディスクの追加、 32TiB を超える場合の新しいストレージアカウントの作成。
 
-Cloud Manager で Azure Private Link を作成できない場合、このデフォルトの動作を変更するためにロールバックを有効にすることができます。これにより、企業のセキュリティ規制を完全に遵守することができます。
+このデフォルトの動作は、BlueXPでAzure Private Linkの作成に失敗した場合にロールバックを有効にすることで変更できます。これにより、企業のセキュリティ規制を完全に遵守することができます。
 
-ロールバックを有効にすると、 Cloud Manager は処理を停止し、処理の一環として作成されたすべてのリソースをロールバックします。
+ロールバックを有効にすると、アクションが停止し、アクションの一部として作成されたすべてのリソースがロールバックされます。
 
 ロールバックの有効化は API でのみサポートされます。
 

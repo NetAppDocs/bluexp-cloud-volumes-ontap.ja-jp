@@ -40,9 +40,9 @@ AWS でデータ階層化を有効にすると、 Cloud Volumes ONTAP はホッ�
 大容量階層:: Cloud Volumes ONTAP システムは、アクセス頻度の低いデータを1つのS3バケットに階層化します。
 +
 --
-Cloud Manager は、作業環境ごとに 1 つの S3 バケットを作成して、 fabric-pool-_cluster unique identifier_ という名前を付けます。ボリュームごとに異なる S3 バケットが作成されることはありません。
+BlueXPでは、作業環境ごとに1つのS3バケットが作成され、fabric-pool-_cluster unique identifier_という名前が付けられています。ボリュームごとに異なる S3 バケットが作成されることはありません。
 
-Cloud Managerは、S3バケットを作成する際に次のデフォルト設定を使用します。
+BlueXPはS3バケットを作成する際、次のデフォルト設定を使用します。
 
 * ストレージクラス：Standard
 * デフォルトの暗号化：無効
@@ -81,9 +81,9 @@ Azure でデータ階層化を有効にすると、 Cloud Volumes ONTAP は、�
 大容量階層:: Cloud Volumes ONTAP システムは、アクセス頻度の低いデータを単一のBLOBコンテナに階層化します。
 +
 --
-Cloud Managerは、Cloud Volumes ONTAP 作業環境ごとにコンテナを含む新しいストレージアカウントを作成します。ストレージアカウントの名前はランダムです。ボリュームごとに異なるコンテナは作成されません。
+BlueXPでは、Cloud Volumes ONTAP の作業環境ごとに1つのコンテナを持つ新しいストレージアカウントが作成されます。ストレージアカウントの名前はランダムです。ボリュームごとに異なるコンテナは作成されません。
 
-Cloud Managerは、次の設定でストレージアカウントを作成します。
+BlueXPでは、次の設定でストレージアカウントが作成されます。
 
 * アクセス層：ホット
 * パフォーマンス：標準
@@ -124,9 +124,9 @@ Google Cloudでデータ階層化を有効にすると、Cloud Volumes ONTAP は
 大容量階層:: Cloud Volumes ONTAP システムは、アクセス頻度の低いデータを1つのGoogle Cloud Storageバケットに階層化します。
 +
 --
-Cloud Managerは、作業環境ごとにバケットを作成し、fabric-pool-_cluster unique identifier_という名前を付けます。ボリュームごとに異なるバケットが作成されることはありません。
+BlueXPは'各作業環境用にバケットを作成し'fabric-pool-_cluster unique identifier_という名前を付けますボリュームごとに異なるバケットが作成されることはありません。
 
-Cloud Managerは、バケットを作成する際に次のデフォルト設定を使用します。
+BlueXPでバケットを作成すると、次のデフォルト設定が使用されます。
 
 * 場所の種類：地域
 * ストレージクラス：Standard
@@ -168,7 +168,7 @@ endif::gcp[]
 
 TIP: 最小クーリング期間とデフォルトのアグリゲートしきい値を 50% に変更できます（詳細については後述します）。 http://docs.netapp.com/ontap-9/topic/com.netapp.doc.dot-mgng-stor-tier-fp/GUID-AD522711-01F9-4413-A254-929EAE871EBF.html["冷却期間を変更する方法について説明します"^] および http://docs.netapp.com/ontap-9/topic/com.netapp.doc.dot-mgng-stor-tier-fp/GUID-8FC4BFD5-F258-4AA6-9FCB-663D42D92CAA.html["しきい値を変更する方法について説明します"^]。
 
-Cloud Manager では、ボリュームを作成または変更するときに、次のボリューム階層化ポリシーのいずれかを選択できます。
+BlueXPでは、ボリュームを作成または変更するときに、次のボリューム階層化ポリシーから選択できます。
 
 Snapshot のみ:: アグリゲートの容量が 50% に達すると、 Cloud Volumes ONTAP は、アクティブなファイルシステムに関連付けられていない Snapshot コピーのコールドユーザデータを容量階層に階層化します。冷却期間は約 2 日間です。
 +
@@ -193,7 +193,7 @@ Snapshot のみ:: アグリゲートの容量が 50% に達すると、 Cloud Vo
 なし:: ボリュームのデータをパフォーマンス階層に保持し、容量階層に移動できないようにします。
 
 
-ボリュームをレプリケートする場合、データをオブジェクトストレージに階層化するかどうかを選択できます。このように設定すると、 Cloud Manager は * Backup * ポリシーをデータ保護ボリュームに適用します。Cloud Volumes ONTAP 9.6 以降では、「 * all * 」階層化ポリシーがバックアップポリシーに置き換えられます。
+ボリュームをレプリケートする場合、データをオブジェクトストレージに階層化するかどうかを選択できます。その場合は、データ保護ボリュームに*Backup*ポリシーが適用されます。Cloud Volumes ONTAP 9.6 以降では、「 * all * 」階層化ポリシーがバックアップポリシーに置き換えられます。
 
 
 

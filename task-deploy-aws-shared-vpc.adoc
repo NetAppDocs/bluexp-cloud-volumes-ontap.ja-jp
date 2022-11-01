@@ -30,7 +30,7 @@ image:diagram-aws-vpc-sharing.png["共有VPCにおけるCloud Volumes ONTAP HA�
 
 以下の手順で説明するように、サブネットを参加者アカウントと共有し、VPC所有者アカウント内にIAMロールとセキュリティグループを作成する必要があります。
 
-Cloud Volumes ONTAP の作業環境を作成すると、Cloud ManagerによってIAMロールが自動的に作成されてメディエーターに関連付けられます。このロールは、VPC所有者アカウントで作成したIAMロールを前提としており、HAペアに関連付けられているルーティングテーブルを変更します。
+Cloud Volumes ONTAP 作業環境を作成すると、自動的にIAMロールが作成され、メディエーターに関連付けられます。このロールは、VPC所有者アカウントで作成したIAMロールを前提としており、HAペアに関連付けられているルーティングテーブルを変更します。
 
 .手順
 . VPC所有者アカウントのサブネットを参加者アカウントと共有します。
@@ -42,7 +42,7 @@ https://docs.aws.amazon.com/vpc/latest/userguide/vpc-sharing.html#vpc-sharing-sh
 
 . VPC所有者アカウントで、Cloud Volumes ONTAP のセキュリティグループを作成します。
 +
-link:reference-security-groups.html["Cloud Volumes ONTAP のセキュリティグループルールを参照してください"]。HAメディエーターのセキュリティグループを作成する必要はありません。クラウドマネージャーがそれを実現します。
+link:reference-security-groups.html["Cloud Volumes ONTAP のセキュリティグループルールを参照してください"]。HAメディエーターのセキュリティグループを作成する必要はありません。BlueXPはそのような機能を提供します。
 
 . VPC所有者アカウントで、次の権限を含むIAMロールを作成します。
 +
@@ -58,7 +58,7 @@ Action": [
                 "ec2:ReplaceRoute",
                 "ec2:UnassignPrivateIpAddresses"
 ----
-. Cloud Manager APIを使用して、新しいCloud Volumes ONTAP 作業環境を作成します。
+. BlueXP APIを使用して'新しいCloud Volumes ONTAP 作業環境を作成します
 +
 次のフィールドを指定する必要があります。
 

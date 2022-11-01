@@ -133,7 +133,7 @@ sidebar:
         url: "/task-manage-capacity-settings.html"
     - title: Storage VM 管理
       entries:
-      - title: Cloud Manager で Storage VM を使用できます
+      - title: BlueXPでStorage VMを操作します
         url: "/task-managing-svms.html"
       - title: AWS で Storage VM を作成します
         flavor: aws
@@ -336,11 +336,11 @@ homepage:
     links:
     - title: ネットアップコミュニティ
       url: https://community.netapp.com/t5/Cloud-Volumes-ONTAP/bd-p/CloudVolumes
-    - title: Cloud Central のブログです
+    - title: BlueXPのウェブサイトのblog
       url: https://cloud.netapp.com/blog/topic/cloud-volumes-ontap
     - title: クラウドに関する Web セミナー
       url: https://cloud.netapp.com/events
 product-family:
-  name: Cloud Manager
+  name: BlueXP
   repo: cloud-manager-family
-  sidebar_label: Cloud Manager のすべてのドキュメント
+  sidebar_label: BlueXPのすべてのマニュアル

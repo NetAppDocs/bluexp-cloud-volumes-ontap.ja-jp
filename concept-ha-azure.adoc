@@ -22,9 +22,9 @@ Cloud Volumes ONTAP ハイアベイラビリティ（ HA ）ペアは、クラ�
 
 Azure の Cloud Volumes ONTAP HA 構成には、次のコンポーネントが含まれています。
 
-image:diagram_ha_azure.png["「ロードバランサが Cloud Manager とクライアントからの受信トラフィックを管理する概念図。可用性セットに含まれる 2 つの Cloud Volumes ONTAP ノード、ブートデータ用の SSD ディスク、および顧客データ用のページ Blob 」"]
+image:diagram_ha_azure.png["ロードバランサがBlueXPおよびクライアントからの着信トラフィックを管理する概念図、可用性セット内の2つのCloud Volumes ONTAP ノード、ブートデータ用のSSDディスク、および顧客データ用のPage Blobを示しています。"]
 
-Cloud Manager で導入される Azure コンポーネントは次のとおりです。
+BlueXPによって導入されるAzureコンポーネントについては、次の点に注意してください。
 
 Azure Standard Load Balancer の略:: ロードバランサは、 Cloud Volumes ONTAP HA ペアへの着信トラフィックを管理します。
 可用性セット:: Azure 可用性セットは、 Cloud Volumes ONTAP ノードを論理的にグループ化したものです。可用性セットを使用すると、ノードが異なる障害になっていることを確認し、ドメインを更新して冗長性と可用性を確保できます。 https://docs.microsoft.com/en-us/azure/virtual-machines/availability-set-overview["可用性セットの詳細については、 Azure のドキュメントを参照してください"^]。
@@ -38,7 +38,7 @@ Azure Standard Load Balancer の略:: ロードバランサは、 Cloud Volumes 
 https://docs.microsoft.com/en-us/azure/storage/common/storage-scalability-targets["Azure のドキュメント：「 Azure Storage スケーラビリティー and performance targets for storage accounts"^]。
 
 * Azure BLOB ストレージへのデータ階層化には 1 つのストレージアカウントが必要です。
-* Cloud Volumes ONTAP 9.7 以降では、 Cloud Manager で HA ペア用に作成するストレージアカウントを汎用 v2 のストレージアカウントに使用できます。
+* Cloud Volumes ONTAP 9.7以降では、HAペア用にBlueXPで作成されるストレージアカウントは汎用v2のストレージアカウントです。
 * 作業環境の作成時に、 Cloud Volumes ONTAP 9.7 HA ペアから Azure ストレージアカウントへの HTTPS 接続を有効にすることができます。このオプションを有効にすると、書き込みパフォーマンスに影響する可能性があります。作業環境の作成後に設定を変更することはできません。
 
 

@@ -25,7 +25,7 @@ Cloud Volumes ONTAP データは、を使用して Azure で自動的に暗号�
 Cloud Volumes ONTAP で顧客管理キーを使用する場合は、次の手順を実行する必要があります。
 
 . Azure で、キーヴォールトを作成し、そのヴォールトでキーを生成します
-. Cloud Manager から、 API を使用して、キーを使用する Cloud Volumes ONTAP 作業環境を作成します
+. BlueXPから'APIを使用して'キーを使用するCloud Volumes ONTAP 作業環境を作成します
 
 
 
@@ -52,7 +52,7 @@ HA ペア::
 +
 --
 * Cloud Volumes ONTAP 用のすべての Azure ストレージアカウントは、お客様が管理するキーを使用して暗号化されます。
-* ルートディスク、ブートディスク、およびデータディスクの場合、 Cloud Manager はを使用します https://docs.microsoft.com/en-us/azure/virtual-machines/disk-encryption["ディスク暗号化セット"^]を使用して、管理対象ディスクで暗号化キーを管理できます。
+* ルートディスク、ブートディスク、データディスクの場合、BlueXPはを使用します https://docs.microsoft.com/en-us/azure/virtual-machines/disk-encryption["ディスク暗号化セット"^]を使用して、管理対象ディスクで暗号化キーを管理できます。
 * 新しいデータディスクでも同じディスク暗号化セットが使用されます。
 * NVRAM とコアディスクは、お客様が管理するキーではなく、 Microsoft が管理するキーを使用して暗号化されます。
 
@@ -97,9 +97,9 @@ HA ペア::
 
 == 暗号化キーを使用する作業環境を作成します
 
-キーヴォールトを作成して暗号化キーを生成したら、そのキーを使用するように設定した新しい Cloud Volumes ONTAP システムを作成できます。これらの手順は、 Cloud Manager API を使用してサポートされています。
+キーヴォールトを作成して暗号化キーを生成したら、そのキーを使用するように設定した新しい Cloud Volumes ONTAP システムを作成できます。これらの手順は、BlueXP APIを使用してサポートされています。
 
-シングルノードの Cloud Volumes ONTAP システムでお客様が管理するキーを使用する場合は、 Cloud Manager Connector で次の権限を確認します。
+シングルノードのCloud Volumes ONTAP システムで顧客管理キーを使用する場合は、BlueXP Connectorに次の権限があることを確認します。
 
 [source, json]
 ----
@@ -116,7 +116,7 @@ https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-permissions-az
 NOTE: 最初の3つの権限はHAペアには必要ありません。
 
 .手順
-. 次の Cloud Manager API 呼び出しを使用して、 Azure サブスクリプション内の主要なバックアップのリストを取得します。
+. 次のBlueXP API呼び出しを使用して、Azureサブスクリプション内の主要なボルトのリストを取得します。
 +
 HA ペアの場合：「 GET /azure-ha/ma/metadata/vaults 」
 
@@ -129,7 +129,7 @@ HA ペアの場合：「 GET /azure-ha/ma/metadata/vaults 」
 +
 https://docs.netapp.com/us-en/cloud-manager-automation/cm/api_ref_resources.html#azure-hametadata["この API 呼び出しの詳細を確認してください"^]。
 
-. 次の Cloud Manager API 呼び出しを使用して、バックアップ内のキーのリストを取得します。
+. 次のBlueXP API呼び出しを使用して、ボルト内のキーのリストを取得します。
 +
 HA ペアの場合：「 GET /azure-ha/ma/metadata/keys - vault 」
 
@@ -142,7 +142,7 @@ HA ペアの場合：「 GET /azure-ha/ma/metadata/keys - vault 」
 +
 https://docs.netapp.com/us-en/cloud-manager-automation/cm/api_ref_resources.html#azure-hametadata["この API 呼び出しの詳細を確認してください"^]。
 
-. 次の Cloud Manager API 呼び出しを使用して Cloud Volumes ONTAP システムを作成します。
+. 次のBlueXP API呼び出しを使用してCloud Volumes ONTAP システムを作成します
 +
 .. HA ペアの場合：
 +

@@ -26,7 +26,7 @@ link:concept-licensing.html["Cloud Volumes ONTAP ライセンスの詳細につ�
 
 == アカウントを承認します
 
-Cloud Manager で Keystone Flex Subscriptions を使用して管理する前に、ネットアップに連絡して、 Keystone Flex Subscriptions で Cloud Manager ユーザアカウントを承認する必要があります。
+BlueXPでKeystone Flex Subscriptionsを使用して管理する前に、ネットアップに連絡して、Keystone Flex SubscriptionsでBlueXPユーザーアカウントを承認する必要があります。
 
 .手順
 . 左側のナビゲーションメニューから、* Digital Wallet *を選択します。
@@ -58,13 +58,13 @@ image:screenshot-keystone-link.png["サブスクリプションのリンクオ�
 
 
 
-これで、 Cloud Manager アカウントにリンクされ、 Cloud Volumes ONTAP の作業環境を作成する際に選択できるようになります。
+これで、サブスクリプションがBlueXPアカウントにリンクされ、Cloud Volumes ONTAP 作業環境の作成時に選択できるようになりました。
 
 
 
 == コミット済み容量を増やして申請してください
 
-サブスクリプションのコミット済み容量を調整する必要がある場合は、 Cloud Manager のインターフェイスから直接要求を送信できます。
+サブスクリプションのコミット済み容量を調整する必要がある場合は、BlueXPインターフェイスから直接リクエストを送信できます。
 
 .手順
 . 左側のナビゲーションメニューから、* Digital Wallet *を選択します。
@@ -91,4 +91,4 @@ image:screenshot-keystone-request.png["サブスクリプションのコミッ�
 . リンクを解除するサブスクリプションの場合は、をクリックします image:icon-action.png["横方向の 3 つの点を示すアイコン"] をクリックし、 * リンク解除 * を選択します。
 
 
-このサブスクリプションへのリンクが Cloud Manager アカウントから解除され、 Cloud Volumes ONTAP の作業環境を作成する際に選択できなくなります。
+サブスクリプションがBlueXPアカウントからリンク解除され、Cloud Volumes ONTAP 作業環境の作成時に選択できなくなりました。
