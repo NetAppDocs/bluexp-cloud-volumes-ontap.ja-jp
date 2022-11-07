@@ -196,6 +196,8 @@ sidebar:
           url: "/task-overriding-cifs-locks.html"
         - title: Azure Private Linkまたはサービスエンドポイントを使用する
           url: "/task-enabling-private-link.html"
+        - title: リソースグループを移動する
+          url: "/task-moving-resource-groups-azure.html"
       - title: Google Cloudの管理
         flavor: gcp
         entries:

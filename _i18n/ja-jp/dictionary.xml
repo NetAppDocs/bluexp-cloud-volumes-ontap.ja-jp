@@ -2485,11 +2485,8 @@
   <block id="552690dff240721c335dffa2d29b8ef8" category="paragraph">キーの新しいバージョンを作成すると、 Cloud Volumes ONTAP では自動的に最新のキーバージョンが使用されます。</block>
   <block id="0ea67820edee1410e568b14bb70835d0" category="section-title">データの暗号化方法</block>
   <block id="145da5369fc47bfb6b1cd09c08d698b0" category="paragraph">お客様が管理するキーを使用するように設定された Cloud Volumes ONTAP 作業環境を作成すると、 Cloud Volumes ONTAP データは次のように暗号化されます。</block>
-  <block id="6a3d2b5873e00648ba601f7a2af1a7a4" category="list-text">Cloud Volumes ONTAP 用のすべての Azure ストレージアカウントは、お客様が管理するキーを使用して暗号化されます。</block>
-  <block id="51037ebff676c4939694e74fa5a85b6e" category="list-text">新しいストレージアカウント（ディスクやアグリゲートを追加する場合など）も同じキーを使用します。</block>
   <block id="2301d2b9fcb3fe6f26482aff37ea2c54" category="inline-link">ディスク暗号化セット</block>
   <block id="5dab396463f2f277886102bf78fe661b" category="list-text">新しいデータディスクでも同じディスク暗号化セットが使用されます。</block>
-  <block id="cfdbba0560e1880e7195e870b6813736" category="list-text">NVRAM とコアディスクは、お客様が管理するキーではなく、 Microsoft が管理するキーを使用して暗号化されます。</block>
   <block id="8764c9ec9f17252b7df37e1710ec9e5a" category="section-title">キーボールトを作成し、キーを生成します</block>
   <block id="d01b7a4314685f64d972ad7a1fad92aa" category="paragraph">キーヴォールトは、 Cloud Volumes ONTAP システムを作成するときと同じ Azure サブスクリプションとリージョンに配置する必要があります。</block>
   <block id="0355ddb77a5b72eb0604153dc1393f12" category="inline-link">Azure サブスクリプションでキーヴォールトを作成します</block>
@@ -2499,7 +2496,6 @@
   <block id="1be48617ce5825c4bd54ef885eef8a65" category="list-text">次のオプションを有効にする必要があります。</block>
   <block id="ba6db2df53167b0fe62e3b5c762cbbf1" category="list-text">* Soft -delete * （このオプションはデフォルトで有効ですが、 DISABLE_NOT BE 無効にする必要があります）</block>
   <block id="fd08f80d1ec5aa4440248321eace716f" category="list-text">* パージ保護 *</block>
-  <block id="75914e843b290769c8b2944ccc107c89" category="list-text">* Azure Disk Encryption for Volume Encryption * （シングルノード Cloud Volumes ONTAP システムのみ）</block>
   <block id="8079302cfd5fd5ac16a06e331392b172" category="inline-link">キーボールトでキーを生成します</block>
   <block id="08226457c01755d5b1d666bac6bf1add" category="list-text"><block ref="f3e81382631201ff959343d3ba9dea1c" category="inline-link-rx"></block>。</block>
   <block id="4bad1b88b2d24ff3ad1376a54e1bddbd" category="paragraph">キーに関する次の要件に注意してください。</block>
@@ -4431,4 +4427,37 @@
   <block id="edeea5f1bc7f7fc7a2966961ec39210e" category="sidebar">BlueXPでStorage VMを操作します</block>
   <block id="ff93781ff90bf605d8b3070c1501b28f" category="sidebar">BlueXPのウェブサイトのblog</block>
   <block id="7a45e6298bb69116e2c6db653fb88884" category="sidebar">BlueXPのすべてのマニュアル</block>
+  <block id="1223a21ec0a7e82e77ac43bd74628f1e" category="list-text">Azure HAシングルアベイラビリティゾーン</block>
+  <block id="dcd61ff34229ba534213e8501446885a" category="list-text">Cloud Volumes ONTAP 用のすべてのAzureストレージアカウントは、お客様が管理するキーを使用して暗号化されます。^1</block>
+  <block id="08408518b6366a9a8bb69802d83d5e3c" category="list-text">新しいストレージアカウント（ディスクやアグリゲートを追加する場合など）も同じキーを使用します。^ 1^</block>
+  <block id="efbd2c7930ae2087a4719eb7c262b95d" category="list-text">ONTAP 9.10.1P3以降では、NVRAMおよびコアディスクの場合、BlueXPはを使用します<block ref="c7a6854bb19ab523fbe585f89a860944" category="inline-link-rx"></block>を使用して、管理対象ディスクで暗号化キーを管理できます。下位バージョンでは、顧客管理キーの代わりにMicrosoft管理キーが使用されます。</block>
+  <block id="9dca67fbd1fac23e7aff5774ec0afa2a" category="list-text">Cloud Volumes ONTAP 用のすべての Azure ストレージアカウントは、お客様が管理するキーを使用して暗号化されます。^1 ^</block>
+  <block id="6d69087e8037af0164a0779028792a7b" category="list-text">ONTAP 9.9.2.1P7から、NVRAMおよびコアディスクに対して、BlueXPはディスク暗号化セットを使用します。これにより、管理対象ディスクで暗号化キーを管理できるようになります。下位バージョンでは、顧客管理キーの代わりにMicrosoft管理キーが使用されます。</block>
+  <block id="8b213ded385c637758f8c3705eb6386a" category="list-title">脚注</block>
+  <block id="ab9a6656c154c96464d829868998ba40" category="list-text">作成時にストレージアカウントを暗号化する場合は、Cloud Volumes ONTAP 作成要求でリソースのIDを作成して指定する必要があります。これは、すべてのタイプの導入に当てはまります。これを指定しない場合、ストレージアカウントは暗号化されますが、BlueXPではまずMicrosoftが管理するキー暗号化を使用してストレージアカウントを作成し、次にストレージアカウントを更新してお客様が管理するキーを使用するようにします。</block>
+  <block id="d07f270590b573e1e499b9c9aed87fb4" category="list-text">* Azure Disk Encryption for Volume Encryption*</block>
+  <block id="619dc876da25600cdf36ffbec25d908e" category="summary">Cloud Volumes ONTAP ではAzureリソースグループの移動がサポートされていますが、ワークフローはAzureコンソールでのみ実行されます。</block>
+  <block id="6c2dc09b272a4aed6d56a3438a190129" category="doc">リソースグループを移動しています</block>
+  <block id="26d9e2ceeedec062543b6a4a27db01a1" category="paragraph">同じAzureサブスクリプション内で、あるリソースグループからAzure内の別のリソースグループに作業環境を移動することができます。異なるAzureサブスクリプション間でのリソースグループの移動はサポートされていません。</block>
+  <block id="d88235dd3e716412ac91be3dfa4023a4" category="list-text">作業環境を* Canvas *から削除します。</block>
+  <block id="02c73c19fdf0f5023f8a72d040197018" category="paragraph">作業環境を削除する方法については、を参照してください <block ref="9dd47557c6bc134ec03be5246bea41e0" category="inline-link-macro-rx"></block>。</block>
+  <block id="2432571dc15a8d67f6eec5f65d85e73f" category="list-text">Azureコンソールでリソースグループ移動を実行する。</block>
+  <block id="4593d9667ed2d90debaf928ba5605850" category="inline-link-macro">Microsoft Azureのドキュメントで、リソースを新しいリソースグループまたはサブスクリプションに移動する</block>
+  <block id="341c978d4ed833ff82feb36aba36ade0" category="paragraph">移動を完了するには、を参照してください <block ref="252fa4d56b2364e5af99ca61bfb066f4" category="inline-link-macro-rx"></block>。</block>
+  <block id="f2fe5653f91dfb127425583565d157db" category="list-text">Canvas *で、作業環境を確認します。</block>
+  <block id="628dfcbee044de30f5862101a64854ef" category="list-text">作業環境の情報で新しいリソースグループを探します。</block>
+  <block id="268c52a1e1197b595712cb880346cba4" category="paragraph">新しいリソースグループには、作業環境とそのリソース（VM、ディスク、ストレージアカウント、ネットワークインターフェイス、Snapshot）が含まれます。</block>
+  <block id="5a4346a01828d72104a6540080377b25" category="section-title">2022年11月6日</block>
+  <block id="2325f561a20765def93d682f14cae306" category="paragraph">コネクタの3.9.23リリースでは、次の変更が加えられました。</block>
+  <block id="6d5ba1b41fa03c2fdf0d747769a6b053" category="section-title">Azureでリソースグループを移動しています</block>
+  <block id="ea55da5ec5028d99103c938ded49761c" category="paragraph">同じAzureサブスクリプション内で、Azure内の1つのリソースグループから別のリソースグループに作業環境を移動できるようになりました。</block>
+  <block id="d015054d89d4ecbe893f21f5ab9700c0" category="paragraph">詳細については、を参照してください <block ref="8d94a006f1853b408e5763a514426526" category="inline-link-macro-rx"></block>。</block>
+  <block id="b6a2ac7b66db8e93b936023f17401626" category="section-title">NDMP-copy証明書</block>
+  <block id="c348c640ca478b45f3a3d9e14bb0695b" category="paragraph">ONTAP VolumeでのNDMPコピーの使用が認定されました。</block>
+  <block id="ab5a83d8e39547c5fb30a1fda984aebb" category="inline-link">NDMP 設定の概要</block>
+  <block id="e4b4f60ab9fe08116659a5e12d6db4a8" category="paragraph">NDMPの設定方法および使用方法については、を参照してください<block ref="9c57f7cf04e123991a3c88e286feb189" category="inline-link-rx"></block>。</block>
+  <block id="5e7de773a189ac8974753f9ce70a3dc5" category="section-title">Azureのマネージドディスク暗号化機能をサポート</block>
+  <block id="a09181ba1488df77bf9950cb483e97e8" category="paragraph">作成時にすべての管理対象ディスクを暗号化できる、新しいAzure権限が追加されました。</block>
+  <block id="7343d251ecc72fc362a0ce85cf11a9fe" category="paragraph">この新機能の詳細については、を参照してください<block ref="91da0725d8642ccf887bde4d4604033e" category="inline-link-rx"></block>。</block>
+  <block id="a81c707e35ab82b2b21b18864fb458e9" category="sidebar">リソースグループを移動する</block>
 </blocks>
