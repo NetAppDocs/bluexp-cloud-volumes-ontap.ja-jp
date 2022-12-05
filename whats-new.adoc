@@ -20,6 +20,24 @@ BlueXP（旧称Cloud Manager）でのCloud Volumes ONTAP 管理の新機能に�
 
 
 
+== 2022年12月4日
+
+コネクタの3.9.24リリースでは、次の変更が加えられました。
+
+
+
+=== Cloud Volumes ONTAP の作成中に、Worm+ Cloud Backupを利用できるようになりました
+
+Cloud Volumes ONTAP の作成プロセスで、Write Once、Read Many（WORM）、およびCloud Backupの両方の機能をアクティブ化できるようになりました。
+
+
+
+=== イスラエルでGoogle Cloudがサポートされるようになりました
+
+イスラエルのリージョンは、Google Cloud for Cloud Volumes ONTAP とConnector for Cloud Volumes ONTAP 9.11.1 P3以降でサポートされるようになりました。
+
+
+
 == 2022年11月6日
 
 コネクタの3.9.23リリースでは、次の変更が加えられました。

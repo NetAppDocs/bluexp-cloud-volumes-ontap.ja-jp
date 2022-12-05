@@ -2558,7 +2558,6 @@
   <block id="42ba4ecf0d44d7f0f8b1f23fcd9240ed" category="list-text">最終的には、必要なパフォーマンスを継続的に提供するディスクサイズを選択する必要があります。</block>
   <block id="144201862f58fd8327905be75f594393" category="list-text">4 TiB のディスクを 6 台使用するなど、大容量のディスクを選択した場合でも、 EC2 インスタンスの帯域幅が制限に達する可能性があるため、すべての IOPS が得られないことがあります。</block>
   <block id="98495077f72553e0d5ba98d8177af291" category="paragraph">EBS ディスクのパフォーマンスの詳細については、を参照してください<block ref="5f00b7f6405ad1bb7d391aa3c3ef6190" category="inline-link-rx"></block>。</block>
-  <block id="5bee39e5cdf73892d684fdac021599f2" category="paragraph">AWS での Cloud Volumes ONTAP システムのサイジングに関する詳細については、次のビデオを参照してください。</block>
   <block id="6d887d21049039b65defd1f905fd21e5" category="inline-link-macro">AWS で Cloud Volumes ONTAP システムデータのデフォルトディスクを表示する</block>
   <block id="e29d76c746533b661338b9103b2546c1" category="paragraph"><block ref="ee3828e24717bc4fd1707ccdda9b4399" category="inline-link-macro-rx"></block>。</block>
   <block id="f6556e06515d3498d35873d8ad30c257" category="paragraph">AWS で Cloud Volumes ONTAP を起動する場合は、 VPC ネットワークの詳細を指定する必要があります。ワークシートを使用して、管理者から情報を収集できます。</block>
@@ -3880,16 +3879,13 @@
   <block id="5b2b7f628f804bcb786a097c7e45aa41" category="inline-link">NetApp Support Site ユーザー登録フォーム</block>
   <block id="0c4a8b62da9473fbd5401273c4f85ee0" category="list-text">を実行してNetApp Support Site アカウントを作成します<block ref="041bcb6d9bdf91f7d6ac92ae3a196e12" category="inline-link-rx"></block></block>
   <block id="d61c9f72493817776f392db42ac446a2" category="list-text">適切なユーザレベルを選択してください。通常は*ネットアップのお客様/エンドユーザ*がこれに該当します。</block>
-  <block id="d6cb31c22f8f843a781cccec33157281" category="list-text">シリアル番号のフィールドには、上記のCloud Managerアカウントのシリアル番号（960xxxx）を必ずコピーしてください。これにより、アカウント処理が高速化されます。</block>
   <block id="e9b1f53d6cabb3394833a4e102eb6a69" category="section-title">ネットアップのソリューションを初めて導入する場合は</block>
   <block id="c20c107d0d4eef6351660f3590324232" category="paragraph">ネットアップ製品を初めてご利用になり、NSSアカウントをお持ちでない場合は、以下の手順に従ってください。</block>
-  <block id="59dd2a274c2c6a3cc5b3dce08109019d" category="list-text">Support Registrationのページで、Cloud ManagerアカウントIDのシリアル番号を確認します。</block>
   <block id="ef5e63bb6b6827440a13cc2ec7e9cf56" category="paragraph"><block ref="ef5e63bb6b6827440a13cc2ec7e9cf56" category="inline-image-macro-rx" type="image"></block></block>
   <block id="dd50e314c18933734174c1156dd9237f" category="inline-link">ネットアップサポート登録サイト</block>
   <block id="78f94e749b89d69dcbf3baff21ccb958" category="list-text">に移動します<block ref="e1c4be66250fd76d5c52bfe2cb7daee2" category="inline-link-rx"></block> 「*ネットアップ登録のお客様ではありません*」を選択します。</block>
   <block id="d4f633ef130727b2776fa7f45024ca7d" category="list-text">必須フィールドに入力します（赤いアスタリスクのフィールド）。</block>
   <block id="1128fc8d5ec64880f4d49337ed798d31" category="list-text">[*製品ライン*（Product Line *）]フィールドで、[* Cloud Manager *]を選択し、該当する課金プロバイダーを選択します。</block>
-  <block id="1192dec4cc2b923397748a651cef178f" category="list-text">前述の手順2からCloud Managerアカウントのシリアル番号をコピーし、セキュリティチェックを完了して、ネットアップのグローバルデータプライバシーポリシーを読み、確認します。</block>
   <block id="3a24c87c9971d2011b4df223718f84b4" category="paragraph">この安全なトランザクションを完了するために、メールボックスに電子メールがすぐに送信されます。確認メールが数分で届かない場合は、必ずスパムフォルダを確認してください。</block>
   <block id="03413baeca1ff7222737d8ce299bd4e8" category="list-text">Eメールからアクションを確認します。</block>
   <block id="201080500e946070a2e4873042507c77" category="paragraph">確認ではネットアップにリクエストが送信され、NetApp Support Site アカウントを作成することを推奨します。</block>
@@ -3897,9 +3893,7 @@
   <block id="49265e8ef749144b85748114012266a8" category="cell">iSCSI プロトコルを使用したクライアントアクセス。システムでは、その他の重要なネットワークワークフローにも使用されます。これらのLIFは必須であり、削除しないでください。</block>
   <block id="f61e4d929e921b5a3ae0bb6f78fe9b6c" category="cell">¥https://*.cloudmanager.cloud.netapp.com¥https://cloudmanager.cloud.netapp.com</block>
   <block id="4df8bb837bc00b990bb9e359a33c532c" category="list-text">Web ブラウザを開き、次の URL を入力します。<block ref="484de961b6aa06a7131bf90e9cc3be46" category="inline-link-rx"></block></block>
-  <block id="77bdda0b5be7d2725f2b5941d74db0e2" category="paragraph">サポートダッシュボードを使用すると、NetApp Support Site アカウントを追加して管理し、Cloud Managerで使用できます。</block>
   <block id="328a2c1e7778e9edaf79d90c51409ac4" category="list-text">お客様レベルのアカウントをお持ちの場合は、1つ以上のNSSアカウントを追加することもできます。</block>
-  <block id="4fde72c535fd0cd463dbeb49347cdfae" category="list-text">パートナーアカウントまたはリセラーアカウントをお持ちの場合は、1つ以上のNSSアカウントを追加できますが、お客様レベルのアカウントと一緒に追加することはできません。</block>
   <block id="752a2c1ba3bb227b061216ee70132a08" category="paragraph">2つのパスを使用できます。正しいパスはコネクタのバージョンによって異なります。</block>
   <block id="93f9a2aa0331918bf3f1a44fb42f791e" category="list-text">/opt/application/netapp/cloudmanager/ontap/images/</block>
   <block id="9a34c8001fb2a94f36b91cd1711ee39f" category="paragraph">HA ペアに Storage VM を作成したら、その SVM でストレージをプロビジョニングする前に 12 時間待つことを推奨します。Cloud Volumes ONTAP 9.10.1リリース以降、12時間の間にHAペアのロードバランサの設定がスキャンされます。新しいSVMがある場合、計画外フェイルオーバーを短時間にする設定がBlueXPで有効になります。</block>
@@ -4460,4 +4454,15 @@
   <block id="a09181ba1488df77bf9950cb483e97e8" category="paragraph">作成時にすべての管理対象ディスクを暗号化できる、新しいAzure権限が追加されました。</block>
   <block id="7343d251ecc72fc362a0ce85cf11a9fe" category="paragraph">この新機能の詳細については、を参照してください<block ref="91da0725d8642ccf887bde4d4604033e" category="inline-link-rx"></block>。</block>
   <block id="a81c707e35ab82b2b21b18864fb458e9" category="sidebar">リソースグループを移動する</block>
+  <block id="83ec139c80a3d5b2f11f1a94eed47cd2" category="section-title">2022年12月4日</block>
+  <block id="612111851a1740ab34a9d35045621084" category="paragraph">コネクタの3.9.24リリースでは、次の変更が加えられました。</block>
+  <block id="afb589d73d8814d7f9075b4db6f76911" category="section-title">Cloud Volumes ONTAP の作成中に、Worm+ Cloud Backupを利用できるようになりました</block>
+  <block id="4d0c93d7ce5ce6f6010669f660c38d43" category="paragraph">Cloud Volumes ONTAP の作成プロセスで、Write Once、Read Many（WORM）、およびCloud Backupの両方の機能をアクティブ化できるようになりました。</block>
+  <block id="4d9d8c1f4a4820e4fe54b4e7d8733a68" category="section-title">イスラエルでGoogle Cloudがサポートされるようになりました</block>
+  <block id="4ff0d60c5d06bf54def05888e62a6d9e" category="paragraph">イスラエルのリージョンは、Google Cloud for Cloud Volumes ONTAP とConnector for Cloud Volumes ONTAP 9.11.1 P3以降でサポートされるようになりました。</block>
+  <block id="f2575f6d19024f7288cf78d7dc5b3db9" category="paragraph">サポートダッシュボードを使用すると、NetApp Support Site アカウントを追加して管理し、BlueXPで使用できます。</block>
+  <block id="e3cd99e4aa330ae6bdfb3754d83ae962" category="list-text">パートナーアカウントまたはリセラーアカウントをお持ちの場合は、1つ以上のNSSアカウントを追加することはできますが、お客様レベルのアカウントと一緒に追加することはできません。</block>
+  <block id="2974170a8b1b5b4a2ac69aacd4c1c9c3" category="list-text">サポート登録ページでアカウントIDのシリアル番号を確認します。</block>
+  <block id="50a1dc01b7312307c34a888071586955" category="list-text">上記の手順2からアカウントのシリアル番号をコピーし、セキュリティチェックを完了して、ネットアップのグローバルデータプライバシーポリシーを確認します。</block>
+  <block id="cc8b0535948da368f832027c19b7f853" category="list-text">シリアル番号フィールドには、上記のアカウントのシリアル番号（960xxxx）を必ずコピーしてください。これにより、アカウント処理が高速化されます。</block>
 </blocks>
