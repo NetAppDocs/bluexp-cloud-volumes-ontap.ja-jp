@@ -16,6 +16,7 @@ summary: 既存のCloud Volumes ONTAP システムを検出し、BlueXPに追加
 [role="lead"]
 既存のCloud Volumes ONTAP システムを検出し、BlueXPに追加できます。これは、新しいBlueXPシステムを導入した場合に可能性があります。
 
+.作業を開始する前に
 Cloud Volumes ONTAP 管理者ユーザアカウントのパスワードを知っている必要があります。
 
 .手順
@@ -36,4 +37,5 @@ endif::aws[]
 . [ 資格情報 ] ページで、 Cloud Volumes ONTAP 管理者ユーザーのパスワードを入力し、 [ * 移動 ] をクリックします。
 
 
+.結果
 Cloud Volumes ONTAP インスタンスがワークスペースに追加されます。

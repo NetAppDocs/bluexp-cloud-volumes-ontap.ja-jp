@@ -30,7 +30,7 @@ link:concept-licensing.html["Cloud Volumes ONTAP ライセンスの詳細につ�
 
 一方、BlueXPは、ネットアップのライセンスサービスに自動的に問い合わせて、NetApp Support Site アカウントに関連付けられているライセンスの詳細を取得します。エラーがなければ、BlueXPは自動的にデジタルウォレットにライセンスを追加します。
 
-BlueXPでライセンスを追加できない場合は、手動でDigital Walletにライセンスを追加する必要があります。たとえば、インターネットにアクセスできない場所にConnectorがインストールされている場合は、ライセンスを自分で追加する必要があります。  purchased licenses to your account,購入済みライセンスをアカウントに追加する方法について説明します。
+BlueXPでライセンスを追加できない場合は、手動でDigital Walletにライセンスを追加する必要があります。たとえば、インターネットにアクセスできない場所にConnectorがインストールされている場合は、ライセンスを自分で追加する必要があります。 <<購入済みライセンスをアカウントに追加します,購入済みライセンスをアカウントに追加する方法について説明します>>。
 
 
 
@@ -100,6 +100,7 @@ image:screenshot-digital-wallet-packages.png["プロフェッショナルパッ�
 
 ただし、インターネットにアクセスできない場所にBlueXPを導入した場合は、BlueXPでライセンスを手動で更新する必要があります。
 
+.必要なもの
 ライセンスファイル（ HA ペアがある場合は _files_ ）。
 
 .手順
@@ -117,10 +118,12 @@ image:screenshot-digital-wallet-packages.png["プロフェッショナルパッ�
 
 ifdef::azure[]
 
+.制限事項
 Edge Cacheライセンスとの間での変更はサポートされていません。
 
 endif::azure[]
 
+.重要事項
 クラウドプロバイダの市場からプライベートオファーまたは契約を結んでいる場合、契約に含まれていない課金方式に変更すると、BYOL（ネットアップからライセンスを購入した場合）またはPAYGOに対して課金されます。
 
 .手順
@@ -136,6 +139,7 @@ image:screenshot-digital-wallet-charging-method.png["Cloud Volumes ONTAP 作業�
 . [充電方法の変更*]をクリックします。
 
 
+.結果
 BlueXPは、Cloud Volumes ONTAP システムの充電方法を変更します。
 
 また、Digital Walletは、作成した変更を反映するために、各パッケージタイプの消費済み容量を更新する場合があります。

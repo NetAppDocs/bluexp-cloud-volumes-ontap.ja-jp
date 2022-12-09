@@ -20,7 +20,11 @@ Cloud Volumes ONTAP ハイアベイラビリティ（ HA ）ペアは、クラ�
 
 == HA コンポーネント
 
-Azure の Cloud Volumes ONTAP HA 構成には、次のコンポーネントが含まれています。
+
+
+=== HAページのBLOB設定
+
+AzureのCloud Volumes ONTAP HAページBLOB構成には、次のコンポーネントが含まれています。
 
 image:diagram_ha_azure.png["ロードバランサがBlueXPおよびクライアントからの着信トラフィックを管理する概念図、可用性セット内の2つのCloud Volumes ONTAP ノード、ブートデータ用のSSDディスク、および顧客データ用のPage Blobを示しています。"]
 
@@ -39,6 +43,29 @@ https://docs.microsoft.com/en-us/azure/storage/common/storage-scalability-target
 
 * Azure BLOB ストレージへのデータ階層化には 1 つのストレージアカウントが必要です。
 * Cloud Volumes ONTAP 9.7以降では、HAペア用にBlueXPで作成されるストレージアカウントは汎用v2のストレージアカウントです。
+* 作業環境の作成時に、 Cloud Volumes ONTAP 9.7 HA ペアから Azure ストレージアカウントへの HTTPS 接続を有効にすることができます。このオプションを有効にすると、書き込みパフォーマンスに影響する可能性があります。作業環境の作成後に設定を変更することはできません。
+
+
+--
+
+
+
+
+=== HAの複数のアベイラビリティゾーン構成
+
+AzureのCloud Volumes ONTAP HAマルチアベイラビリティゾーン構成には、次のコンポーネントが含まれています。
+
+image:diagram_ha_azure_maz.png["ロードバランサがBlueXPとクライアントからの着信トラフィックを管理する概念図、2つのアベイラビリティゾーンにある2つのCloud Volumes ONTAP ノード、ブートデータ用のSSDディスク、および顧客データ用の管理対象ディスクを示しています。"]
+
+BlueXPによって導入されるAzureコンポーネントについては、次の点に注意してください。
+
+Azure Standard Load Balancer の略:: ロードバランサは、 Cloud Volumes ONTAP HA ペアへの着信トラフィックを管理します。
+可用性ゾーン:: 2つのCloud Volumes ONTAP ノードが異なるアベイラビリティゾーンに導入されています。アベイラビリティゾーンを使用すると、各ノードが異なる障害ドメインに配置されます。 https://learn.microsoft.com/en-us/azure/storage/common/storage-redundancy["Azure Storageの冗長性に関する詳細については、Azureのドキュメントを参照してください"^]。
+ディスク:: お客様のデータは、ゾーン冗長ストレージ（ZRS）管理ディスクに格納されています。各ノードがもう一方のノードのストレージにアクセスできます。には追加のストレージも必要です link:reference-default-configs.html#boot-and-root-data-for-cloud-volumes-ontap["ブート、ルート、パートナールート、コアの各データ"]。
+ストレージアカウント::
++
+--
+* 管理対象ディスクにはストレージアカウントが 1 つ必要です。HAペア用にBlueXPで作成されるストレージアカウントは、汎用v2ストレージアカウントです。
 * 作業環境の作成時に、 Cloud Volumes ONTAP 9.7 HA ペアから Azure ストレージアカウントへの HTTPS 接続を有効にすることができます。このオプションを有効にすると、書き込みパフォーマンスに影響する可能性があります。作業環境の作成後に設定を変更することはできません。
 
 

@@ -41,6 +41,7 @@ image:screenshot-keystone-overview.png["Keystone Flex Subscriptions のリスト
 
 
 
+.次の手順
 Cloud Volumes ONTAP で使用するサブスクリプションをリンクします。
 
 
@@ -58,6 +59,7 @@ image:screenshot-keystone-link.png["サブスクリプションのリンクオ�
 
 
 
+.結果
 これで、サブスクリプションがBlueXPアカウントにリンクされ、Cloud Volumes ONTAP 作業環境の作成時に選択できるようになりました。
 
 
@@ -77,6 +79,7 @@ image:screenshot-keystone-request.png["サブスクリプションのコミッ�
 . 下にスクロールしてリクエストの詳細を入力し、 [ 送信 ] をクリックします。
 
 
+.結果
 リクエストに応じて、ネットアップのシステムで処理用のチケットが作成されます。
 
 
@@ -91,4 +94,5 @@ image:screenshot-keystone-request.png["サブスクリプションのコミッ�
 . リンクを解除するサブスクリプションの場合は、をクリックします image:icon-action.png["横方向の 3 つの点を示すアイコン"] をクリックし、 * リンク解除 * を選択します。
 
 
+.結果
 サブスクリプションがBlueXPアカウントからリンク解除され、Cloud Volumes ONTAP 作業環境の作成時に選択できなくなりました。

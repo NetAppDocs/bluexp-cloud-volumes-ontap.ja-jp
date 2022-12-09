@@ -16,16 +16,19 @@ summary: いくつかの手順で、 Cloud Volumes ONTAP for Azure を使い始�
 [role="lead"]
 いくつかの手順で、 Cloud Volumes ONTAP for Azure を使い始めましょう。
 
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png["1つ"] コネクタを作成します
 [role="quick-margin-para"]
 を持っていなければ https://docs.netapp.com/us-en/cloud-manager-setup-admin/concept-connectors.html["コネクタ"^] ただし、アカウント管理者がアカウントを作成する必要があります。 https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-creating-connectors-azure.html["Azure でコネクタを作成する方法について説明します"^]。
 
 [role="quick-margin-para"]
 Cloud Volumes ONTAP の最初の作業環境を作成するときに、まだコネクタがない場合はコネクタの導入を求めるメッセージがBlueXP（旧Cloud Manager）に表示されます。
 
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["2 つ"] 構成を計画
 [role="quick-margin-para"]
 BlueXPでは、ワークロード要件に合わせて事前設定されたパッケージを提供しています。また、独自の構成を作成することもできます。独自の設定を選択する場合は、使用可能なオプションを理解しておく必要があります。 link:task-planning-your-config-azure.html["詳細はこちら。"]。
 
-.<span class="image"><img src="https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png"[] Alt="3"></span> ネットワークを設定します
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png["3つ"] ネットワークをセットアップします
+[role="quick-margin-list"]
 . VNet とサブネットがコネクタと Cloud Volumes ONTAP 間の接続をサポートすることを確認します。
 . ターゲット VNet からのアウトバウンドインターネットアクセスを有効にして、コネクタと Cloud Volumes ONTAP が複数のエンドポイントに接続できるようにします。
 +
@@ -36,6 +39,7 @@ BlueXPでは、ワークロード要件に合わせて事前設定されたパ�
 [role="quick-margin-para"]
 link:reference-networking-azure.html["ネットワーク要件の詳細については、こちらをご覧ください"]。
 
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-4.png["4."] BlueXPを使用してCloud Volumes ONTAP を起動します
 [role="quick-margin-para"]
 [ 作業環境の追加 ] をクリックし、展開するシステムのタイプを選択して、ウィザードの手順を実行します。 link:task-deploying-otc-azure.html["詳細な手順を参照してください"]。
 

@@ -18,37 +18,42 @@ summary: ホットデータ用の SSD または HDD の高パフォーマンス�
 
 データの階層化を設定するには、次の操作を実行する必要があります。
 
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png["1つ"] サポートされている構成を選択します
 [role="quick-margin-para"]
 ほとんどの構成がサポートされています。最新バージョンを実行している Cloud Volumes ONTAP システムがある場合は、に進んでください。 link:task-tiering.html#configurations-that-support-data-tiering["詳細はこちら。"]。
 
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["2 つ"] Cloud Volumes ONTAP とオブジェクトストレージ間の接続を確認します
 [role="quick-margin-list"]
 ifdef::aws[]
 
-* AWS では、 S3 への VPC エンドポイントが必要です。  to tier cold data to AWS S3,詳細はこちら。。
+* AWS では、 S3 への VPC エンドポイントが必要です。 <<コールドデータを AWS S3 に階層化するための要件,詳細はこちら。>>。
 
 
 endif::aws[]
 
 ifdef::azure[]
 
-* Azureでは、必要な権限がBlueXPに割り当てられていれば何も行う必要はありません。  to tier cold data to Azure Blob storage,詳細はこちら。。
+* Azureでは、必要な権限がBlueXPに割り当てられていれば何も行う必要はありません。 <<コールドデータを Azure BLOB ストレージに階層化するための要件,詳細はこちら。>>。
 
 
 endif::azure[]
 
 ifdef::gcp[]
 
-* Google Cloudの場合は、プライベートGoogleアクセスのサブネットを設定し、サービスアカウントを設定する必要があります。  to tier cold data to a Google Cloud Storage bucket,詳細はこちら。。
+* Google Cloudの場合は、プライベートGoogleアクセスのサブネットを設定し、サービスアカウントを設定する必要があります。 <<コールドデータを Google Cloud Storage に階層化するための要件 バケット,詳細はこちら。>>。
 
 
 endif::gcp[]
 
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png["3つ"] 階層化が有効なアグリゲートがあることを確認してください
 [role="quick-margin-para"]
-ボリュームでデータ階層化を有効にするには、アグリゲートでデータ階層化が有効になっている必要があります。新しいボリュームと既存のボリュームの要件を確認しておく必要があります。  that tiering is enabled on aggregates,詳細はこちら。。
+ボリュームでデータ階層化を有効にするには、アグリゲートでデータ階層化が有効になっている必要があります。新しいボリュームと既存のボリュームの要件を確認しておく必要があります。 <<アグリゲートで階層化が有効になっていることを確認してください,詳細はこちら。>>。
 
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-4.png["4."] ボリュームを作成、変更、またはレプリケートするときに階層化ポリシーを選択します
 [role="quick-margin-para"]
 ボリュームを作成、変更、または複製するときに、階層化ポリシーを選択するよう求めるメッセージが表示されます。
 
+[role="quick-margin-list"]
 * link:task-tiering.html#tiering-data-from-read-write-volumes["読み取り / 書き込みボリュームでのデータの階層化"]
 * link:task-tiering.html#tiering-data-from-data-protection-volumes["データ保護ボリューム上のデータの階層化"]
 
@@ -60,7 +65,7 @@ endif::gcp[]
 * 大容量階層用のオブジェクトストアを作成する必要はありません。BlueXPはそのような機能を提供します。
 * システムレベルでデータの階層化を有効にする必要はありません。
 +
-BlueXPでは'システムの作成時にコールドデータ用のオブジェクトストアが作成されます  data tiering after implementing the requirements,接続または権限に問題がないことが必要です。その後は、ボリューム（および場合によっては、  that tiering is enabled on aggregates,アグリゲート）。
+BlueXPでは'システムの作成時にコールドデータ用のオブジェクトストアが作成されます <<要件の実装後にデータ階層化を有効化,接続または権限に問題がないことが必要です>>。その後は、ボリューム（および場合によっては、 <<アグリゲートで階層化が有効になっていることを確認してください,アグリゲート>>）。
 
 
 
@@ -193,7 +198,7 @@ endif::gcp[]
 BlueXPでは'接続やアクセス権に問題がない限り'システムの作成時にコールドデータ用のオブジェクトストアが作成されますシステムを作成するまで上記の要件を満たしていない場合は、階層化を手動で有効にする必要があります。これにより、オブジェクトストアが作成されます。
 
 .手順
-. ,すべての要件を満たしていることを確認します。
+. <<要件,すべての要件を満たしていることを確認します>>。
 . 左側のナビゲーションメニューから、* Storage > Canvas *を選択します。
 . キャンバスページで、 Cloud Volumes ONTAP インスタンスの名前をダブルクリックします。
 . メニューアイコンをクリックし、 * 容量階層化を有効にする * を選択します。
@@ -204,7 +209,7 @@ image:screenshot_enable_capacity_tiering.gif["BlueXPがデータ階層化を有�
 このオプションは、BlueXPがシステムを作成したときにデータの階層化を有効にできなかった場合にのみ表示されます。
 
 +
-Google Cloudでは、このオプションを表示する前にサービスアカウントをCloud Volumes ONTAP に接続する必要があります。 ,すべての要件を満たしていることを確認します。
+Google Cloudでは、このオプションを表示する前にサービスアカウントをCloud Volumes ONTAP に接続する必要があります。 <<要件,すべての要件を満たしていることを確認します>>。
 
 . [有効]をクリックします。これにより、BlueXPはこのCloud Volumes ONTAP システムが階層化データに使用するオブジェクトストアを作成できます。
 
@@ -240,6 +245,7 @@ image:screenshot_aggr_tiering.gif["階層化ステータスを含むBlueXPのア
 . 接続するクラウド階層を選択し、 * 保存 * をクリックします。
 
 
+.次の手順
 次のセクションで説明するように、新規および既存のボリュームでデータ階層化を有効にできます。
 
 

@@ -35,4 +35,5 @@ image:screenshot_menu_registration.gif["スクリーンショット： Cloud Vol
 . ネットアップサポートサイトのアカウントを選択し、 * 登録 * をクリックします。
 
 
+.結果
 BlueXPを使用すると、システムがネットアップに登録されます。

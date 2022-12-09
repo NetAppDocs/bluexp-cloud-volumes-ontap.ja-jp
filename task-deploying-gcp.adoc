@@ -254,6 +254,7 @@ image:screenshot_cot_vol.gif["スクリーンショット： Cloud Volumes ONTAP
 
 
 
+.結果
 BlueXPがCloud Volumes ONTAP システムを導入しましたタイムラインで進行状況を追跡できます。
 
 Cloud Volumes ONTAP システムの導入で問題が発生した場合は、障害メッセージを確認してください。作業環境を選択し、 * 環境の再作成 * をクリックすることもできます。
@@ -466,6 +467,7 @@ image:screenshot_cot_vol.gif["スクリーンショット： Cloud Volumes ONTAP
 
 
 
+.結果
 BlueXPがCloud Volumes ONTAP システムを導入しましたタイムラインで進行状況を追跡できます。
 
 Cloud Volumes ONTAP システムの導入で問題が発生した場合は、障害メッセージを確認してください。作業環境を選択し、 * 環境の再作成 * をクリックすることもできます。

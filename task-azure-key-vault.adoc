@@ -35,14 +35,14 @@ AKVを使用する場合、デフォルトではクラウドキー管理エン�
 
 == 設定プロセス
 
-AzureにCloud Volumes ONTAP 構成を登録する方法と、Azure Key Vaultとキーを作成する方法を概説しています。これらの手順をすでに完了している場合は、特に、で正しい設定を行っていることを確認してください をクリックし、に進みます 。
+AzureにCloud Volumes ONTAP 構成を登録する方法と、Azure Key Vaultとキーを作成する方法を概説しています。これらの手順をすでに完了している場合は、特に、で正しい設定を行っていることを確認してください <<create-akv>>をクリックし、に進みます <<ontap>>。
 
-* 
-* 
-* 
-* 
-* 
-* 
+* <<azure-app>>
+* <<secret>>
+* <<create-akv>>
+* <<key>>
+* <<AAD>>
+* <<ontap>>
 
 
 [[azure-app]]

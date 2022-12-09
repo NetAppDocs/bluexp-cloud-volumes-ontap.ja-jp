@@ -16,19 +16,22 @@ summary: Cloud Volumes ONTAP for GCP の使用を開始するには、いくつ�
 [role="lead"]
 Cloud Volumes ONTAP for GCP の使用を開始するには、いくつかの手順を実行します。
 
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png["1つ"] コネクタを作成します
 [role="quick-margin-para"]
 を持っていなければ https://docs.netapp.com/us-en/cloud-manager-setup-admin/concept-connectors.html["コネクタ"^] ただし、アカウント管理者がアカウントを作成する必要があります。 https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-creating-connectors-gcp.html["GCP でコネクターを作成する方法を説明します"^]。
 
 [role="quick-margin-para"]
 Cloud Volumes ONTAP の最初の作業環境を作成するときに、まだコネクタがない場合はコネクタの導入を求めるメッセージがBlueXP（旧Cloud Manager）に表示されます。
 
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["2 つ"] 構成を計画
 [role="quick-margin-para"]
 BlueXPでは、ワークロード要件に合わせて事前設定されたパッケージを提供しています。また、独自の構成を作成することもできます。独自の設定を選択する場合は、使用可能なオプションを理解しておく必要があります。
 
 [role="quick-margin-para"]
 link:task-planning-your-config-gcp.html["構成の計画の詳細については、こちらをご覧ください"]。
 
-.<span class="image"><img src="https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png"[] Alt="3"></span> ネットワークを設定します
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png["3つ"] ネットワークをセットアップします
+[role="quick-margin-list"]
 . VPC とサブネットがコネクタと Cloud Volumes ONTAP 間の接続をサポートしていることを確認します。
 . データの階層化を有効にする場合は、 https://cloud.google.com/vpc/docs/configure-private-google-access["プライベート Google アクセス用の Cloud Volumes ONTAP サブネットを設定します"^]。
 . HA ペアを導入する場合は、それぞれ独自のサブネットを持つ 4 つの VPC があることを確認します。
@@ -42,6 +45,7 @@ link:task-planning-your-config-gcp.html["構成の計画の詳細については
 [role="quick-margin-para"]
 link:reference-networking-gcp.html["ネットワーク要件の詳細については、こちらをご覧ください"]。
 
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-4.png["4."] サービスアカウントを設定します
 [role="quick-margin-para"]
 Cloud Volumes ONTAP には、 2 つの目的で Google Cloud サービスアカウントが必要です。1 つ目は、を有効にする場合です link:concept-data-tiering.html["データの階層化"] Google Cloud でコールドデータを低コストのオブジェクトストレージに階層化すること。2 つ目は、を有効にした場合です https://docs.netapp.com/us-en/cloud-manager-backup-restore/concept-backup-to-cloud.html["Cloud Backup サービスの略"^] ボリュームを低コストのオブジェクトストレージにバックアップできます。
 
@@ -51,9 +55,11 @@ Cloud Volumes ONTAP には、 2 つの目的で Google Cloud サービスアカ�
 [role="quick-margin-para"]
 link:task-creating-gcp-service-account.html["詳細な手順を参照してください"]。
 
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-5.png["5 つ"] Google Cloud API を有効にします
 [role="quick-margin-para"]
 https://cloud.google.com/apis/docs/getting-started#enabling_apis["プロジェクトで次の Google Cloud API を有効にします"^]。これらの API は、コネクタと Cloud Volumes ONTAP を導入するために必要です。
 
+[role="quick-margin-list"]
 * Cloud Deployment Manager V2 API
 * クラウドロギング API
 * Cloud Resource Manager API の略
@@ -61,6 +67,7 @@ https://cloud.google.com/apis/docs/getting-started#enabling_apis["プロジェ�
 * ID およびアクセス管理（ IAM ） API
 
 
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-6.png["6"] BlueXPを使用してCloud Volumes ONTAP を起動します
 [role="quick-margin-para"]
 [ 作業環境の追加 ] をクリックし、展開するシステムのタイプを選択して、ウィザードの手順を実行します。 link:task-deploying-gcp.html["詳細な手順を参照してください"]。
 

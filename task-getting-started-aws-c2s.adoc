@@ -418,6 +418,7 @@ NOTE: あとでサイズを変更する必要がある場合は、 Advanced allo
 
 
 
+.結果
 Cloud Volumes ONTAP インスタンスが起動します。タイムラインで進行状況を追跡できます。
 
 

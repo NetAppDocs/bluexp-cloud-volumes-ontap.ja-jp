@@ -60,6 +60,6 @@ NOTE: 2021 年 12 月 3 日時点で、ネットアップは NSS アカウント
 
 
 
-== 次の手順
+== 次のステップ
 
 を参照してください https://docs.netapp.com/us-en/active-iq/index.html["Active IQ デジタルアドバイザのドキュメント"] を参照してください。

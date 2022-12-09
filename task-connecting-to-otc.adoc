@@ -16,6 +16,7 @@ summary: Cloud Volumes ONTAP CLI では、すべての管理コマンドを実�
 [role="lead"]
 Cloud Volumes ONTAP CLI では、すべての管理コマンドを実行できます。高度なタスクを実行する場合や、 CLI を使い慣れている場合は、 CLI の使用を推奨します。Secure Shell （ SSH ）を使用して CLI に接続できます。
 
+.作業を開始する前に
 SSH を使用して Cloud Volumes に接続するホスト ONTAP は、 Cloud Volumes ONTAP にネットワーク接続している必要があります。たとえば、クラウドプロバイダネットワーク内のジャンプホストからSSHを使用する場合などです。
 
 ifdef::aws[]

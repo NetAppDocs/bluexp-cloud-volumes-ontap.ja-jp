@@ -59,6 +59,7 @@ Storage VM を作成して LIF を割り当てる前に、 Azure で IP アド�
 
 SVM 管理 LIF を作成する場合は、上記の手順を繰り返して追加の IP アドレスを作成します。
 
+.完了後
 作成したプライベート IP アドレスをコピーします。新しい Storage VM の LIF を作成するときに、これらの IP アドレスを指定する必要があります。
 
 
@@ -242,6 +243,7 @@ image:screenshot_azure_lb_rule.gif["Azure ポータルに、上記のフィー�
 
 --
 ====
+.完了後
 作成したプライベート IP アドレスをコピーします。新しい Storage VM の LIF を作成するときに、これらの IP アドレスを指定する必要があります。
 
 
@@ -632,4 +634,5 @@ network interface service-policy add-service -vserver <svm-name> -policy default
 
 --
 ====
+.次の手順
 HA ペアに Storage VM を作成したら、その SVM でストレージをプロビジョニングする前に 12 時間待つことを推奨します。Cloud Volumes ONTAP 9.10.1リリース以降、12時間の間にHAペアのロードバランサの設定がスキャンされます。新しいSVMがある場合、計画外フェイルオーバーを短時間にする設定がBlueXPで有効になります。

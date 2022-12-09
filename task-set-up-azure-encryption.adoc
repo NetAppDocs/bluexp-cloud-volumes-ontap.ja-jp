@@ -49,7 +49,7 @@ Azure HAシングルアベイラビリティゾーン::
 
 
 --
-シングルノード::
+複数のゾーンにまたがるシングルノードまたはHAペア::
 +
 --
 * Cloud Volumes ONTAP 用のすべての Azure ストレージアカウントは、お客様が管理するキーを使用して暗号化されます。^1 ^
@@ -82,7 +82,7 @@ Azure HAシングルアベイラビリティゾーン::
 +
 *** * Soft -delete * （このオプションはデフォルトで有効ですが、 DISABLE_NOT BE 無効にする必要があります）
 *** * パージ保護 *
-*** * Azure Disk Encryption for Volume Encryption*
+*** * Azure Disk Encryption for Volume Encryption *（シングルノードシステムの場合、または複数のゾーンのHAペアの場合）
 
 
 
@@ -104,6 +104,7 @@ Azure HAシングルアベイラビリティゾーン::
 
 キーヴォールトを作成して暗号化キーを生成したら、そのキーを使用するように設定した新しい Cloud Volumes ONTAP システムを作成できます。これらの手順は、BlueXP APIを使用してサポートされています。
 
+.必要な権限
 シングルノードのCloud Volumes ONTAP システムで顧客管理キーを使用する場合は、BlueXP Connectorに次の権限があることを確認します。
 
 [source, json]
@@ -119,7 +120,7 @@ Azure HAシングルアベイラビリティゾーン::
 https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-permissions-azure.html["権限の最新のリストを表示します"^]
 
 
-NOTE: 最初の3つの権限はHAペアには必要ありません。
+NOTE: 権限は、単一ゾーンのHAペアには必要ありません。
 
 .手順
 . 次のBlueXP API呼び出しを使用して、Azureサブスクリプション内の主要なボルトのリストを取得します。
@@ -192,4 +193,5 @@ https://docs.netapp.com/us-en/cloud-manager-automation/cm/api_ref_resources.html
 
 
 
+.結果
 新しい Cloud Volumes ONTAP システムで、お客様が管理するキーを使用してデータを暗号化するように設定しておきます。

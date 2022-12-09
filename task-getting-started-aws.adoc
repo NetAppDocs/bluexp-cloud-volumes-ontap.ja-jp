@@ -16,16 +16,19 @@ summary: いくつかの手順で、 Cloud Volumes ONTAP for AWS を使い始め
 [role="lead"]
 いくつかの手順で、 AWS で Cloud Volumes ONTAP を使い始めましょう。
 
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png["1つ"] コネクタを作成します
 [role="quick-margin-para"]
 を持っていなければ https://docs.netapp.com/us-en/cloud-manager-setup-admin/concept-connectors.html["コネクタ"^] ただし、アカウント管理者がアカウントを作成する必要があります。 https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-creating-connectors-aws.html["AWS でコネクタを作成する方法について説明します"^]。
 
 [role="quick-margin-para"]
 Cloud Volumes ONTAP の最初の作業環境を作成するときに、まだコネクタがない場合はコネクタの導入を求めるメッセージがBlueXP（旧Cloud Manager）に表示されます。
 
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["2 つ"] 構成を計画
 [role="quick-margin-para"]
 BlueXPでは、ワークロード要件に合わせて事前設定されたパッケージを提供しています。また、独自の構成を作成することもできます。独自の設定を選択する場合は、使用可能なオプションを理解しておく必要があります。 link:task-planning-your-config.html["詳細はこちら。"]。
 
-.<span class="image"><img src="https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png"[] Alt="3"></span> ネットワークを設定します
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png["3つ"] ネットワークをセットアップします
+[role="quick-margin-list"]
 . VPC とサブネットがコネクタと Cloud Volumes ONTAP 間の接続をサポートしていることを確認します。
 . ターゲット VPC からのアウトバウンドインターネットアクセスを有効にして、コネクタと Cloud Volumes ONTAP が複数のエンドポイントに接続できるようにします。
 +
@@ -40,9 +43,11 @@ Cloud Volumes ONTAP から低コストのオブジェクトストレージにコ
 [role="quick-margin-para"]
 link:reference-networking-aws.html["ネットワーク要件の詳細については、こちらをご覧ください"]。
 
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-4.png["4."] AWS KMS を設定します
 [role="quick-margin-para"]
 Cloud Volumes ONTAP で Amazon 暗号化を使用する場合は、アクティブなカスタマーマスターキー（ CMK ）が存在することを確認する必要があります。また、コネクタに「 a_key user__ 」という権限を付与する IAM ロールを追加して、各 CMK のキーポリシーを変更する必要があります。 link:task-setting-up-kms.html["詳細はこちら。"]。
 
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-5.png["5 つ"] BlueXPを使用してCloud Volumes ONTAP を起動します
 [role="quick-margin-para"]
 [ 作業環境の追加 ] をクリックし、展開するシステムのタイプを選択して、ウィザードの手順を実行します。 link:task-deploying-otc-aws.html["詳細な手順を参照してください"]。
 

@@ -161,8 +161,8 @@ Cloud Volumes ONTAP を API を使用して導入する場合、 Storage VM （ 
 --
 HA 構成には、次の 2 組のファイアウォールルールが必要です。
 
-* VPC -0 の HA コンポーネントのルールセット。これらのルールにより、 Cloud Volumes ONTAP へのデータアクセスが可能になります。  rules for Cloud Volumes ONTAP,詳細はこちら。。
-* VPC -1 、 VPC -2 、および VPC -3 の HA コンポーネントに関するもう 1 つのルールセット。これらのルールは、 HA コンポーネント間のインバウンド通信とアウトバウンド通信に対してオープンです。  rules for Cloud Volumes ONTAP,詳細はこちら。。
+* VPC -0 の HA コンポーネントのルールセット。これらのルールにより、 Cloud Volumes ONTAP へのデータアクセスが可能になります。 <<Cloud Volumes ONTAP のファイアウォールルール,詳細はこちら。>>。
+* VPC -1 、 VPC -2 、および VPC -3 の HA コンポーネントに関するもう 1 つのルールセット。これらのルールは、 HA コンポーネント間のインバウンド通信とアウトバウンド通信に対してオープンです。 <<Cloud Volumes ONTAP のファイアウォールルール,詳細はこちら。>>。
 
 
 --
@@ -461,7 +461,7 @@ NOTE: source は、 Cloud Volumes ONTAP システムのインターフェイス�
 
 == VPC -1 、 VPC -2 、および VPC -3 のファイアウォールルール
 
-GCP では、 4 つの VPC 間で HA 構成が導入されます。VPC -0 の HA 構成に必要なファイアウォールルール はです  rules for Cloud Volumes ONTAP,Cloud Volumes ONTAP については上記のリストを参照してください。
+GCP では、 4 つの VPC 間で HA 構成が導入されます。VPC -0 の HA 構成に必要なファイアウォールルール はです <<Cloud Volumes ONTAP のファイアウォールルール,Cloud Volumes ONTAP については上記のリストを参照してください>>。
 
 一方、BlueXPでVPC -1、VPC -2、およびVPC -3のインスタンスに対して作成される定義済みのファイアウォールルールにより、_All_protocolsとポートでの入力通信が可能になります。これらのルールに従って、 HA ノード間の通信が可能になります。
 

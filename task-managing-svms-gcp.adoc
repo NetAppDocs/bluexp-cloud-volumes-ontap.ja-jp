@@ -105,6 +105,7 @@ Google CloudのCloud Volumes ONTAP システムでStorage VMを作成するに�
 
 BlueXPはGoogle Cloudで必要なIPアドレスを割り当て、SMB / NFSアクセス用のデータLIFとアウトバウンドSMB通信用のiSCSI LIFを備えたStorage VMを作成します。
 
+.必要なGoogle Cloud権限
 3.9.19リリースから、Cloud Volumes ONTAP HAペアのStorage VMを作成および管理するために、Connectorでは次の権限が必要になります。
 
 [source, yaml]
