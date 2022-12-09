@@ -22,7 +22,7 @@ Cloud Volumes ONTAP ハイアベイラビリティ（ HA ）ペアは、クラ�
 
 
 
-=== HAページのBLOB設定
+=== ページblobを使用したHA単一アベイラビリティゾーン構成
 
 AzureのCloud Volumes ONTAP HAページBLOB構成には、次のコンポーネントが含まれています。
 
@@ -51,6 +51,22 @@ https://docs.microsoft.com/en-us/azure/storage/common/storage-scalability-target
 
 
 
+=== 共有管理対象ディスクを使用するHAシングルアベイラビリティゾーン構成
+
+共有管理対象ディスク上で実行されるCloud Volumes ONTAP HAシングルアベイラビリティゾーン構成には、次のコンポーネントが含まれます。
+
+image:diagram_ha_azure_saz_lrs.png["ロードバランサがBlueXPおよびクライアントからの着信トラフィックを管理する概念図、可用性セット内の2つのCloud Volumes ONTAP ノード、ブートデータ用のSSDディスク、顧客データ用のLRS管理ディスクを示しています。"]
+
+BlueXPによって導入されるAzureコンポーネントについては、次の点に注意してください。
+
+Azure Standard Load Balancer の略:: ロードバランサは、 Cloud Volumes ONTAP HA ペアへの着信トラフィックを管理します。
+可用性セット:: Azure 可用性セットは、 Cloud Volumes ONTAP ノードを論理的にグループ化したものです。可用性セットを使用すると、ノードが異なる障害になっていることを確認し、ドメインを更新して冗長性と可用性を確保できます。 https://docs.microsoft.com/en-us/azure/virtual-machines/availability-set-overview["可用性セットの詳細については、 Azure のドキュメントを参照してください"^]。
+ディスク:: お客様のデータは、ローカル冗長ストレージ（LRS）管理対象ディスクに格納されています。各ノードがもう一方のノードのストレージにアクセスできます。には追加のストレージも必要です link:reference-default-configs.html#boot-and-root-data-for-cloud-volumes-ontap["ブート、ルート、パートナーのルート、コア、NVRAMの各データ"]。
+ストレージアカウント:: ストレージアカウントは、診断ログの処理とBLOBストレージへの階層化を行うディスクベースの管理環境で使用されます。
+
+
+
+
 === HAの複数のアベイラビリティゾーン構成
 
 AzureのCloud Volumes ONTAP HAマルチアベイラビリティゾーン構成には、次のコンポーネントが含まれています。
@@ -62,14 +78,7 @@ BlueXPによって導入されるAzureコンポーネントについては、次
 Azure Standard Load Balancer の略:: ロードバランサは、 Cloud Volumes ONTAP HA ペアへの着信トラフィックを管理します。
 可用性ゾーン:: 2つのCloud Volumes ONTAP ノードが異なるアベイラビリティゾーンに導入されています。アベイラビリティゾーンを使用すると、各ノードが異なる障害ドメインに配置されます。 https://learn.microsoft.com/en-us/azure/storage/common/storage-redundancy["Azure Storageの冗長性に関する詳細については、Azureのドキュメントを参照してください"^]。
 ディスク:: お客様のデータは、ゾーン冗長ストレージ（ZRS）管理ディスクに格納されています。各ノードがもう一方のノードのストレージにアクセスできます。には追加のストレージも必要です link:reference-default-configs.html#boot-and-root-data-for-cloud-volumes-ontap["ブート、ルート、パートナールート、コアの各データ"]。
-ストレージアカウント::
-+
---
-* 管理対象ディスクにはストレージアカウントが 1 つ必要です。HAペア用にBlueXPで作成されるストレージアカウントは、汎用v2ストレージアカウントです。
-* 作業環境の作成時に、 Cloud Volumes ONTAP 9.7 HA ペアから Azure ストレージアカウントへの HTTPS 接続を有効にすることができます。このオプションを有効にすると、書き込みパフォーマンスに影響する可能性があります。作業環境の作成後に設定を変更することはできません。
-
-
---
+ストレージアカウント:: ストレージアカウントは、診断ログの処理とBLOBストレージへの階層化を行うディスクベースの管理環境で使用されます。
 
 
 

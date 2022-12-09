@@ -106,7 +106,7 @@ NOTE: iSCSI IPは、iSCSIプロトコルを使用したクライアントアク�
 
 
 
-NOTE: NIC3は、ページBLOBシステムを使用するHA導入にのみ適用できます。
+NOTE: NIC3は、ページBLOBストレージを使用するHA環境にのみ適用できます。
 
 上記のIPアドレスは、フェイルオーバーイベントの際に移行されません。
 
@@ -122,9 +122,9 @@ NOTE: NIC3は、ページBLOBシステムを使用するHA導入にのみ適用�
 
 === Azure サービスへのセキュアな接続
 
-BlueXPでは、Cloud Volumes ONTAP とAzureストレージアカウント間の接続用にAzure Private Linkがデフォルトで有効になっています。
+BlueXPでは、Cloud Volumes ONTAP とAzureページBLOBストレージアカウント間の接続用にAzure Private Linkがデフォルトで有効になっています。
 
-ほとんどの場合、必要な操作はありません。一方、必要な操作はまったくありません。一方、Blue XPはAzure Private Linkを管理しています。ただし、 Azure プライベート DNS を使用している場合は、構成ファイルを編集する必要があります。また、Azureのコネクタの場所に関する要件も把握しておく必要があります。
+ほとんどの場合、必要な操作は何もありません。BlueXPはAzure Private Linkを管理します。ただし、 Azure プライベート DNS を使用している場合は、構成ファイルを編集する必要があります。また、Azureのコネクタの場所に関する要件も把握しておく必要があります。
 
 ビジネスニーズに応じて、プライベートリンク接続を無効にすることもできます。リンクを無効にすると、Cloud Volumes ONTAP はサービスエンドポイントを使用するように設定されます。
 
@@ -460,7 +460,20 @@ Connector では、パブリッククラウド環境内のリソースとプロ�
 | \ https://support.netapp.com | ライセンス情報を取得し、ネットアップサポートに AutoSupport メッセージを送信するため。 
 
 
-| ¥https://*.cloudmanager.cloud.netapp.com¥https://cloudmanager.cloud.netapp.com | BlueXPでSaaSの機能とサービスを提供するため。 
+ a| 
+\ https://*.api.bluexp.netapp.com
+
+\ https://api.bluexp.netapp.com
+
+\ https://*.cloudmanager.cloud.netapp.com
+
+\ https://cloudmanager.cloud.netapp.com
+ a| 
+BlueXPでSaaSの機能とサービスを提供するため。
+
+
+NOTE: コネクターは現在、「cloudmanager.cloud.netapp.com"」に接続していますが、今後のリリースでapi.bluexp.netapp.com"への連絡を開始します。
+
 
 
 | ¥ https://cloudmanagerinfraprod.azurecr.io ¥ https://*.blob.core.windows.net | をクリックして、 Connector と Docker コンポーネントをアップグレードします。 

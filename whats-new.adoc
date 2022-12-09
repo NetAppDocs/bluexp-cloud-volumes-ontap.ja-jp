@@ -20,6 +20,12 @@ BlueXP（旧称Cloud Manager）でのCloud Volumes ONTAP 管理の新機能に�
 
 
 
+=== Cloud Volumes ONTAP 9.12.1
+
+BlueXPでは、Cloud Volumes ONTAP 9.12.1を導入および管理できるようになりました。新機能やその他のクラウドプロバイダリージョンのサポートが含まれます。https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes["このリリースのに含まれる新機能について説明します Cloud Volumes ONTAP"^]
+
+
+
 == 2022年12月4日
 
 コネクタの3.9.24リリースでは、次の変更が加えられました。
@@ -35,6 +41,20 @@ Cloud Volumes ONTAP の作成プロセスで、Write Once、Read Many（WORM）�
 === イスラエルでGoogle Cloudがサポートされるようになりました
 
 イスラエルのリージョンは、Google Cloud for Cloud Volumes ONTAP とConnector for Cloud Volumes ONTAP 9.11.1 P3以降でサポートされるようになりました。
+
+
+
+== 2022年11月15日
+
+コネクタの3.9.23リリースでは、次の変更が加えられました。
+
+
+
+=== GCPのONTAP S3ライセンス
+
+ONTAP Cloud Platformでバージョン9.12.1以降を実行する新規および既存のCloud Volumes ONTAP システムに、S3ライセンスが含まれるようになりました。
+
+https://docs.netapp.com/us-en/ontap/object-storage-management/index.html["ONTAP で S3 オブジェクトストレージサービスを設定および管理する方法について説明します"^]
 
 
 

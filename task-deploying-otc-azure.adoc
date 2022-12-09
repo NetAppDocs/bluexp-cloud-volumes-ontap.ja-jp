@@ -104,9 +104,6 @@ video::video_subscribing_azure.mp4[width=848,height=480]
 | フィールド | 説明 
 
 
-| アベイラビリティゾーン | シングルノードシステムの場合は、 Cloud Volumes ONTAP を導入するアベイラビリティゾーンを選択できます。AZを選択しない場合は、BlueXPによってそのAZが選択されます。 
-
-
 | リソースグループ  a| 
 Cloud Volumes ONTAP の新しいリソースグループを作成するか、既存のリソースグループを使用します。Cloud Volumes ONTAP には、新しい専用のリソースグループを使用することを推奨します。既存の共有リソースグループに Cloud Volumes ONTAP を導入することは可能ですが、データ損失のリスクがあるため推奨されません。詳細については、上記の警告を参照してください。
 
@@ -159,19 +156,12 @@ link:concept-data-tiering.html["データ階層化の詳細については、こ
 
 
 
-. * 書き込み速度と WORM * （シングルノードシステムのみ）： * Normal * または * High * 書き込み速度を選択し、必要に応じて Write Once 、 Read Many （ WORM ）ストレージをアクティブにします。
+. * Write Speed & WORM * ：「 * Normal * 」または「 * High * write speed 」を選択し、必要に応じて Write Once 、 Read Many （ WORM ）ストレージをアクティブにします。
 +
 link:concept-write-speed.html["書き込み速度の詳細については、こちらをご覧ください。"]。
 
 +
 データの階層化が有効になっていると、 WORM を有効にできません。
-
-+
-link:concept-worm.html["WORM ストレージの詳細については、こちらをご覧ください。"]。
-
-. * Secure Communication to Storage & WORM * （ HA のみ）： Azure ストレージアカウントへの HTTPS 接続を有効にするかどうかを選択し、必要に応じて Write Once Read Many （ WORM ）ストレージをアクティブにします。
-+
-HTTPS 接続は、 Cloud Volumes ONTAP 9.7 の HA ペアから Azure のストレージアカウントへの接続です。このオプションを有効にすると、書き込みパフォーマンスに影響する可能性があります。作業環境の作成後に設定を変更することはできません。
 
 +
 link:concept-worm.html["WORM ストレージの詳細については、こちらをご覧ください。"]。
@@ -332,9 +322,6 @@ video::video_subscribing_azure.mp4[width=848,height=480]
 | フィールド | 説明 
 
 
-| アベイラビリティゾーン | シングルノードシステムの場合は、 Cloud Volumes ONTAP を導入するアベイラビリティゾーンを選択できます。AZを選択しない場合は、BlueXPによってそのAZが選択されます。 
-
-
 | リソースグループ  a| 
 Cloud Volumes ONTAP の新しいリソースグループを作成するか、既存のリソースグループを使用します。Cloud Volumes ONTAP には、新しい専用のリソースグループを使用することを推奨します。既存の共有リソースグループに Cloud Volumes ONTAP を導入することは可能ですが、データ損失のリスクがあるため推奨されません。詳細については、上記の警告を参照してください。
 
@@ -377,7 +364,6 @@ NOTE: 選択したバージョンで新しいリリース候補、一般提供�
 次の点に注意してください。
 
 +
-** ディスクタイプは初期ボリューム用です。以降のボリュームでは、別のディスクタイプを選択できます。
 ** シンプルなプロビジョニングオプションを使用した場合、ディスクサイズは、初期アグリゲートのすべてのディスクと、BlueXPで作成される追加のアグリゲートのサイズです。Advanced Allocation オプションを使用すると、異なるディスクサイズを使用するアグリゲートを作成できます。
 +
 ディスク・サイズの選択については、を参照してください link:task-planning-your-config-azure.html#sizing-your-system-in-azure["Azure でのシステムのサイジング"]。
@@ -389,9 +375,12 @@ link:concept-data-tiering.html["データ階層化の詳細については、こ
 
 
 
-. * 書き込み速度と WORM * （シングルノードシステムのみ）： * Normal * または * High * 書き込み速度を選択し、必要に応じて Write Once 、 Read Many （ WORM ）ストレージをアクティブにします。
+. * Write Speed & WORM * ：「 * Normal * 」または「 * High * write speed 」を選択し、必要に応じて Write Once 、 Read Many （ WORM ）ストレージをアクティブにします。
 +
 link:concept-write-speed.html["書き込み速度の詳細については、こちらをご覧ください。"]。
+
++
+このオプションは、特定のVMタイプに対してのみ使用できます。サポートされるVMタイプについては、を参照してください link:https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-configs-azure.html#ha-pairs["HAペアのライセンスでサポートされる構成"]。
 
 +
 データの階層化が有効になっていると、 WORM を有効にできません。
@@ -399,9 +388,9 @@ link:concept-write-speed.html["書き込み速度の詳細については、こ�
 +
 link:concept-worm.html["WORM ストレージの詳細については、こちらをご覧ください。"]。
 
-. * Secure Communication to Storage & WORM * （ HA のみ）： Azure ストレージアカウントへの HTTPS 接続を有効にするかどうかを選択し、必要に応じて Write Once Read Many （ WORM ）ストレージをアクティブにします。
+. *ストレージとWORMへのセキュアな通信*：AzureストレージアカウントへのHTTPS接続を有効にするかどうかを選択し、必要に応じてWrite Once Read Many（WORM）ストレージをアクティブ化します。
 +
-HTTPS 接続は、 Cloud Volumes ONTAP 9.7 の HA ペアから Azure のストレージアカウントへの接続です。このオプションを有効にすると、書き込みパフォーマンスに影響する可能性があります。作業環境の作成後に設定を変更することはできません。
+HTTPS接続は、Cloud Volumes ONTAP 9.7のHAペアからAzureページBLOBストレージアカウントに確立されます。このオプションを有効にすると、書き込みパフォーマンスに影響する可能性があります。作業環境の作成後に設定を変更することはできません。
 
 +
 link:concept-worm.html["WORM ストレージの詳細については、こちらをご覧ください。"]。

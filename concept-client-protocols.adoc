@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: concept-client-protocols.html 
 keywords: client protocols, client version, smb version, nfs version, protocol versions, s3, smb, nfs, iscsi, cifs 
-summary: Cloud Volumes ONTAP は、 iSCSI 、 NFS 、 SMB 、 S3 のクライアントプロトコルをサポートしています。 
+summary: Cloud Volumes ONTAP は、iSCSI、NFS、SMB、NVMe-TCP、およびS3クライアントプロトコルをサポートします。 
 ---
 = クライアントプロトコル
 :hardbreaks:
@@ -14,7 +14,7 @@ summary: Cloud Volumes ONTAP は、 iSCSI 、 NFS 、 SMB 、 S3 のクライア
 
 
 [role="lead"]
-Cloud Volumes ONTAP は、 iSCSI 、 NFS 、 SMB 、 S3 のクライアントプロトコルをサポートしています。
+Cloud Volumes ONTAP は、iSCSI、NFS、SMB、NVMe-TCP、およびS3クライアントプロトコルをサポートします。
 
 
 
@@ -43,3 +43,11 @@ endif::aws[]
 ifdef::azure[]
 
 endif::azure[]
+
+
+
+== nvme-tcpが表示されます
+
+Cloud Volumes ONTAP バージョン9.12.1以降を使用している場合、クラウドプロバイダではnvme-tcpがサポートされます。BlueXPには、NVMe-oF TCPの管理機能はありません。
+
+ONTAP を使用したNVMeの設定の詳細については、を参照してください https://docs.netapp.com/us-en/ontap/san-admin/configure-svm-nvme-task.html["NVMe用のStorage VMを設定する"^]。

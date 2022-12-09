@@ -30,7 +30,14 @@ WORM ストレージにコミットされたファイルは、保持期間が過
 
 WORM ストレージの充電は、合計プロビジョニング容量に基づいて 1 時間ごとに行われます。
 
-https://cloud.netapp.com/pricing["WORM ストレージの価格設定については、こちらをご覧ください"^]。
+Cloud Volumes ONTAP 9.10.1以降では、次の充電動作について理解しておく必要があります。
+
+* ONTAP 9.10.1以降では、WORMボリュームとWORM以外のボリュームを同じアグリゲートに配置できるようになりました。
+* Cloud Volumes ONTAP 作業環境の作成時にWORMを有効にすると、BlueXPで作成したすべてのボリュームでWORMが有効になります。ただし、ONTAP CLIまたはSystem Managerを使用して、WORMを無効にしたボリュームを作成できます。これらのボリュームはWORM状態のままです。
+* 作業環境の作成時にWORMを有効にしないと、BlueXPで作成したすべてのボリュームでWORMが無効になります。これらのボリュームのWORMレートでは課金されません。ただし、ONTAP CLIまたはSystem Managerを使用してWORM対応ボリュームを作成することができます。これらのボリュームはWORM状態に基づいて料金が請求されます。
+
+
+https://cloud.netapp.com/pricing["WORM ストレージの価格設定については、こちらをご覧ください"^]
 
 
 

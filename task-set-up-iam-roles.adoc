@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: task-set-up-iam-roles.html 
 keywords: iam role, mediator role, cloud volumes ontap role, policy, iam policy, permissions 
-summary: 各Cloud Volumes ONTAP ノードには、必要な権限を提供するIAMロールが関連付けられている必要があります。HAメディエーターについても同様です。BlueXPでIAMロールを作成するのが最も簡単ですが、自分の役割を使用することもできます。 
+summary: 必要な権限を持つIAMロールを各Cloud Volumes ONTAP ノードに関連付ける必要があります。HAメディエーターについても同様です。BlueXPでIAMロールを作成するのが最も簡単ですが、自分の役割を使用することもできます。 
 ---
 = Cloud Volumes ONTAP 用のIAMロールを設定します
 :hardbreaks:
@@ -16,7 +16,7 @@ summary: 各Cloud Volumes ONTAP ノードには、必要な権限を提供する
 [role="lead"]
 必要な権限を持つIAMロールを各Cloud Volumes ONTAP ノードに関連付ける必要があります。HAメディエーターについても同様です。BlueXPでIAMロールを作成するのが最も簡単ですが、自分の役割を使用することもできます。
 
-このタスクはオプションです。Cloud Volumes ONTAP 作業環境を作成する場合、デフォルトでは、BlueXPでIAMロールを作成することができます。ビジネスのセキュリティポリシーでIAMロールを自分で作成する必要がある場合は、次の手順を実行します。
+このタスクはオプションです。Cloud Volumes ONTAP 作業環境を作成する場合、デフォルトでは、BlueXPでIAMロールを作成することができます。ビジネスのセキュリティポリシーでIAMロールの作成が手動で求められる場合は、次の手順を実行します。
 
 
 NOTE: AWS Commercialクラウド サービス 環境でIAMロールを独自に割り当てる必要があります。 link:task-getting-started-aws-c2s.html["C2SにCloud Volumes ONTAP を導入する方法を学習します"]。
@@ -25,7 +25,7 @@ NOTE: AWS Commercialクラウド サービス 環境でIAMロールを独自に�
 . AWS IAMコンソールに移動します。
 . 次の権限を含むIAMポリシーを作成します。
 +
-** Cloud Volumes ONTAP ノード
+** Cloud Volumes ONTAP ノードのベースポリシー
 +
 [role="tabbed-block"]
 ====
@@ -118,6 +118,122 @@ NOTE: AWS Commercialクラウド サービス 環境でIAMロールを独自に�
 ----
 --
 ====
+** Cloud Volumes ONTAP ノードのバックアップポリシー
++
+Cloud Volumes ONTAP システムでクラウドバックアップを使用する場合は、ノードのIAMロールに次の2つ目のポリシーを含める必要があります。
+
++
+[role="tabbed-block"]
+====
+.標準領域
+--
+[source, json]
+----
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Action": [
+                "s3:ListBucket",
+                "s3:GetBucketLocation"
+            ],
+            "Resource": "arn:aws:s3:::netapp-backup*",
+            "Effect": "Allow"
+        },
+        {
+            "Action": [
+                "s3:GetObject",
+                "s3:PutObject",
+                "s3:DeleteObject",
+                "s3:ListAllMyBuckets",
+                "s3:PutObjectTagging",
+                "s3:GetObjectTagging",
+                "s3:RestoreObject",
+                "s3:GetBucketObjectLockConfiguration",
+                "s3:GetObjectRetention",
+                "s3:PutBucketObjectLockConfiguration",
+                "s3:PutObjectRetention"
+            ],
+            "Resource": "arn:aws:s3:::netapp-backup*/*",
+            "Effect": "Allow"
+        }
+    ]
+}
+----
+--
+.GovCloud（US）リージョン
+--
+[source, json]
+----
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Action": [
+                "s3:ListBucket",
+                "s3:GetBucketLocation"
+            ],
+            "Resource": "arn:aws-us-gov:s3:::netapp-backup*",
+            "Effect": "Allow"
+        },
+        {
+            "Action": [
+                "s3:GetObject",
+                "s3:PutObject",
+                "s3:DeleteObject",
+                "s3:ListAllMyBuckets",
+                "s3:PutObjectTagging",
+                "s3:GetObjectTagging",
+                "s3:RestoreObject",
+                "s3:GetBucketObjectLockConfiguration",
+                "s3:GetObjectRetention",
+                "s3:PutBucketObjectLockConfiguration",
+                "s3:PutObjectRetention"
+            ],
+            "Resource": "arn:aws-us-gov:s3:::netapp-backup*/*",
+            "Effect": "Allow"
+        }
+    ]
+}
+----
+--
+.C2S環境
+--
+[source, json]
+----
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Action": [
+                "s3:ListBucket",
+                "s3:GetBucketLocation"
+            ],
+            "Resource": "arn:aws-iso:s3:::netapp-backup*",
+            "Effect": "Allow"
+        },
+        {
+            "Action": [
+                "s3:GetObject",
+                "s3:PutObject",
+                "s3:DeleteObject",
+                "s3:ListAllMyBuckets",
+                "s3:PutObjectTagging",
+                "s3:GetObjectTagging",
+                "s3:RestoreObject",
+                "s3:GetBucketObjectLockConfiguration",
+                "s3:GetObjectRetention",
+                "s3:PutBucketObjectLockConfiguration",
+                "s3:PutObjectRetention"
+            ],
+            "Resource": "arn:aws-iso:s3:::netapp-backup*/*",
+            "Effect": "Allow"
+        }
+    ]
+}
+----
+--
+====
 ** HA メディエータ
 +
 [source, json]
@@ -143,7 +259,7 @@ NOTE: AWS Commercialクラウド サービス 環境でIAMロールを独自に�
 ----
 
 
-. IAMロールを作成し、前の手順で作成したポリシーをそのロールに関連付けます。
+. IAMロールを作成し、作成したポリシーを関連付けます。
 
 
 .結果
