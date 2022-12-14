@@ -1309,10 +1309,8 @@
   <block id="c0954cac84549fc6e8eaef628e57836c" category="list-text">AWS の Cloud Volumes ONTAP リソースのコスト情報</block>
   <block id="42f8643eb52a942747937327c72c8361" category="section-title">導入の概要</block>
   <block id="7dbc114b490b3587afece94d9d3cfb10" category="paragraph">C2S で Cloud Volumes ONTAP を使用するにはいくつかの手順を実行します。</block>
-  <block id="dadad980953d2a143598b983de397916" category="list-text">AWS 環境の準備</block>
   <block id="48779c5be1cd521ff10b7f3bcc805a25" category="paragraph">これには、ネットワークの設定、 Cloud Volumes ONTAP への登録、権限の設定、および必要に応じて AWS KMS のセットアップが含まれます。</block>
   <block id="f14f364d88ae94a22fecdfb6080b3c8b" category="paragraph">以下に、各手順について説明します。</block>
-  <block id="aa82b0633ff8ba724f265336515caa95" category="section-title">AWS 環境を準備</block>
   <block id="ab674d97a0dbbc87ca939d68d82e8a08" category="paragraph">AWS 環境はいくつかの要件を満たす必要があります。</block>
   <block id="4e85b7aafac6d2da235acd904c8d01ca" category="section-title">ネットワークをセットアップします</block>
   <block id="7c5d8bf27092bf15632098a9cc75b95e" category="paragraph">Cloud Volumes ONTAP が適切に動作するように AWS ネットワークをセットアップします。</block>
@@ -1356,7 +1354,6 @@
   <block id="38bfdffb2647d7fe06154cb0192f2725" category="list-text">* レビュー * ：詳細を確認し、エンドユーザーライセンス契約を承認します。</block>
   <block id="ce844b01a8ab7308a739495c52892c79" category="list-text">CA 署名証明書のインストールを完了するには、 EC2 コンソールからコネクタインスタンスを再起動します。</block>
   <block id="665230f4bd95f60852b6fc1b7f05c103" category="list-text">コネクタが再起動したら、セットアップウィザードで作成した管理者ユーザアカウントを使用してログインします。</block>
-  <block id="0439cfd9ea85ab415d89910478b93050" category="section-title">Cloud Volumes ONTAP を起動します</block>
   <block id="6f177e279944db659b80f0020df93964" category="list-text">ライセンスを購入した場合は、ネットアップから受け取ったライセンスファイルが必要です。ライセンスファイルは JSON 形式の .NLF ファイルです。</block>
   <block id="4b91157a6d4a5e01b05a5a74492fcdeb" category="list-text">HA メディエーターへのキーベースの SSH 認証を有効にするには、キーペアが必要です。</block>
   <block id="41c4defb4c9e45cc91ee861e1c4ca018" category="list-text">作業環境ページで、 * 作業環境の追加 * をクリックします。</block>
@@ -4053,34 +4050,7 @@
   <block id="27f1a07e4eef2fc0ab102135404da657" category="paragraph">次の例は、 VPC 1 のルートテーブルを示しています。フローティング IP アドレスへのルートと、クライアントが配置されている VPC 2 へのルートが含まれます。BlueXPでは、HAペアを展開すると、フローティングIPがルートテーブルに自動的に追加されました。</block>
   <block id="9036b8f651252283ddfb9a00295cfa70" category="paragraph">BlueXPで正しいIPアドレスを確認するには、ボリュームを選択し、*コマンドのマウント*をクリックします。</block>
   <block id="e0bda1591b7559424f02d1adbbd3965d" category="summary">標準のAWSリージョンと同様に、AWS Commercialクラウド サービス （C2S）環境でBlueXP（旧Cloud Manager）を使用してCloud Volumes ONTAP を導入できます。C2Sはクラウドストレージにエンタープライズクラスの機能を提供します。AWS C2S は米国に固有の閉じたリージョンですIntelligence Community 。このページの手順は、 AWS C2S リージョンユーザにのみ該当します。</block>
-  <block id="6ca14d846a91be8fc4a733dd59d26bb0" category="paragraph">標準のAWSリージョンと同様に、でBlueXP（旧Cloud Manager）を使用できます<block ref="5d288b71381e3fb57ca0bda26da6a1f9" category="inline-link-rx"></block> Cloud Volumes ONTAP を導入する環境。クラウドストレージにエンタープライズクラスの機能を提供します。AWS C2S は米国に固有の閉じたリージョンですIntelligence Community 。このページの手順は、 AWS C2S リージョンユーザにのみ該当します。</block>
-  <block id="bda314d4db62f6485dba94ee7b5e958c" category="paragraph">次の機能は、C2S環境のBlueXPから利用できます。</block>
-  <block id="2527c2f14da4d4a76bdcc768e351a161" category="list-text">ネットアップの クラウド サービス はどれもBlueXPからは入手できません</block>
-  <block id="59ec8e7ffb59b70829efbb137b9f7f91" category="list-text">BlueXPとの統合</block>
-  <block id="33054e4c4ec78cdbffe4024718f5be95" category="list-text">BlueXPからの自動ソフトウェアアップグレード</block>
-  <block id="45c4ad7dba466646715a91a3183fdfc3" category="list-text">コネクタの取り付けとBlueXPのセットアップ</block>
-  <block id="fd1e9efd73db6c68ae813a5dcd96dbb2" category="paragraph">BlueXPを使用してCloud Volumes ONTAP を導入する前に'a_connector_を 作成する必要がありますConnectorを使用すると、BlueXPはパブリッククラウド環境内のリソースとプロセスを管理できます（Cloud Volumes ONTAP を含む）。</block>
-  <block id="3fdc426d6997d4400cf7d2e53ee56a44" category="paragraph">コネクタインスタンスにインストールされているソフトウェアからBlueXPにログインします。</block>
-  <block id="559be73d173c7576334007c917f2d2e9" category="list-text">BlueXPからCloud Volumes ONTAP を起動しています</block>
-  <block id="e684b73c48d55ad9b15bfb7822aaaf57" category="paragraph">Cloud Volumes ONTAP をBlueXPから導入するには、Marketplaceサブスクリプションが必要です。</block>
-  <block id="bbe002df8ce994abffcdaf271c9726f1" category="paragraph">Cloud Volumes ONTAP インスタンスを起動するには、BlueXPを使用する必要があります。Cloud Volumes ONTAP インスタンスを EC2 コンソールから起動しないでください。</block>
-  <block id="66d395d7b7513a02ba2e6527b9b995e1" category="paragraph">AWS Commercialクラウド サービス 環境でアクションを実行するために必要な権限をBlueXPおよびCloud Volumes ONTAP に提供するIAMポリシーとロールを設定する。</block>
-  <block id="9aca057db466fd868d2377f6d780fa68" category="paragraph">BlueXPからCloud Volumes ONTAP 作業環境を作成するときに、Cloud Volumes ONTAP とHAメディエーターのIAMロールを選択できます。</block>
-  <block id="3878b10a2a7831177ba0bf3ef76534a1" category="paragraph">Cloud Volumes ONTAP システムを作成するときは、BlueXPにARNを提供する必要があります。</block>
-  <block id="a24753bcb03f2891cb8a9941ea3734de" category="list-text">BlueXPインスタンスのIAMロールをCMKの主要ユーザーのリストに追加します。</block>
-  <block id="83057eeba50af289c3119322d79424e5" category="paragraph">これにより、Cloud Volumes ONTAP でCMKを使用するためのBlueXP権限が与えられます。</block>
-  <block id="cdd86305d9cc6338876073837834569f" category="section-title">BlueXPをインストールしてセットアップします</block>
-  <block id="0117fe5f98f9bb1fb928ff6f24c0d297" category="paragraph">AWSでCloud Volumes ONTAP システムを起動するには、まずAWS MarketplaceからConnectorインスタンスを起動し、次にログインしてBlueXPをセットアップする必要があります。</block>
-  <block id="4f00f71b9f16d5b5de7af5cb24e11347" category="paragraph">セットアッププロセス中に証明書をアップロードする必要があります。BlueXPでは、HTTPS経由でAWSに要求を送信するときに信頼された証明書が使用されます。</block>
-  <block id="00e18132402ce28d7379ed3276cd9288" category="list-text">AWS Intelligence Community MarketplaceのBlueXPのページにアクセスします。</block>
-  <block id="e0352c069670409718cfa65aea1b8233" category="list-text">コネクタインスタンスに接続されているホストからBlueXPをセットアップします。</block>
-  <block id="75c823904b8a5c65869664dacb62ce46" category="list-text">セットアップウィザードの手順を実行して、BlueXPをセットアップします。</block>
-  <block id="5f68277f8f52710e172b7a7f44256583" category="list-text">*System Details*:このBlueXPインスタンスの名前を入力し、会社名を入力します。</block>
-  <block id="5379059ebeaf7deef65b4f49d91a62bf" category="list-text">*ユーザーの作成*: BlueXPの管理に使用する管理者ユーザーを作成します。</block>
-  <block id="61e54effa4b228c6b5c3964eaeebc3c4" category="paragraph">Cloud Volumes ONTAP インスタンスは、BlueXPで新しい作業環境を作成することで、AWS Commercialクラウド サービス 環境で起動できます。</block>
   <block id="d9bc9104669da346ed2fadb2cb686999" category="paragraph">Cloud Volumes ONTAP インスタンスが起動します。タイムラインで進行状況を追跡できます。</block>
-  <block id="aacee944a23f52158d9116740999b043" category="paragraph">BlueXPは、クラウドで正常に動作するためにBlueXPおよびCloud Volumes ONTAP が必要とするインバウンドおよびアウトバウンドのルールを含むセキュリティグループを作成します。テスト目的または独自のセキュリティグループを使用する場合は、ポートを参照してください。</block>
-  <block id="8ca645485256e03a1b061de11213bb57" category="paragraph">Cloud Volumes ONTAP HA Mediator 用に事前定義された内部セキュリティグループには、次のルールが含まれています。BlueXPでは常にこのセキュリティグループが作成されます。独自のオプションはありません。</block>
   <block id="93f5e6c9fa12acc64acdb6b378a09bdd" category="doc">BlueXPでStorage VMを管理します</block>
   <block id="50660b7473b276b2ca6ffca877133e87" category="paragraph">BlueXPでは、System ManagerまたはCLIから作成した追加のStorage VMがサポートされます。</block>
   <block id="3a7da23df37c318afca891bae50b8b40" category="paragraph">Cloud Volumes ONTAP 用に作成した1つのStorage VMには、BlueXPによって自動的に名前が付けられます。厳密な命名基準がある場合は、 Storage VM の名前を変更できます。たとえば、 ONTAP クラスタの Storage VM の命名規則に沿った名前に変更できます。</block>
@@ -4576,4 +4546,39 @@
   <block id="75081fb4982f7b843e702079b35f0ed4" category="paragraph"><block ref="3fe75f10a35597997861eca633c30fa7" category="inline-link-rx"></block>。</block>
   <block id="eba1f3287bdc33dfa25c084b5e15a4c5" category="cell">9.12.1:</block>
   <block id="708ffc372ba6f36174a7930961b956ab" category="section-title">2022年12月8日</block>
+  <block id="5e1976febada1fa49b700760dd574954" category="paragraph">標準の AWS リージョンと同様に、で Cloud Manager を使用できます<block ref="5d288b71381e3fb57ca0bda26da6a1f9" category="inline-link-rx"></block> Cloud Volumes ONTAP を導入する環境。クラウドストレージにエンタープライズクラスの機能を提供します。AWS C2S は米国に固有の閉じたリージョンですIntelligence Community 。このページの手順は、 AWS C2S リージョンユーザにのみ該当します。</block>
+  <block id="2d0867b6a9603b07d840b96ca1528053" category="section-title">C2Sでサポートされているバージョン</block>
+  <block id="d8c9328d84b7250ac992afdd5368aaa2" category="list-text">Cloud Volumes ONTAP 9.8がサポートされています</block>
+  <block id="44ea8a993710d0101dfe9031f76256f1" category="list-text">コネクタのバージョン3.9.4がサポートされています</block>
+  <block id="8f5457d70cb41e409f56734c39e0d5d6" category="paragraph">Connectorは、AWSでCloud Volumes ONTAP を導入して管理するために必要なソフトウェアです。Connector インスタンスにインストールされているソフトウェアから Cloud Manager にログインします。Cloud ManagerのSaaS Webサイトは、C2S環境ではサポートされていません。</block>
+  <block id="dae07c7817c5b878613418fce2bc47a4" category="admonition">Cloud Managerの名前はBlueXPに変更されましたが、コネクタのバージョン3.9.4に含まれているユーザインターフェイスはまだCloud Managerと呼ばれるため、C2SではCloud Managerとして引き続き参照しています。</block>
+  <block id="953b8019e01e302cfda1407c42757ca9" category="paragraph">C2S 環境の Cloud Manager から使用可能な機能は次のとおりです。</block>
+  <block id="92c64f1847bb1326cce66cc7f4bc8454" category="list-text">ネットアップのどのクラウドサービスも Cloud Manager からは使用できません。</block>
+  <block id="a11bc353b91c78f50a85b950845a4b38" category="list-text">Cloud Manager からのソフトウェアの自動アップグレード</block>
+  <block id="7668ed26cf424d7f7440ce0f230438e3" category="list-text"><block ref="70354dfe51c75681a6ee1c0148ca26ba" category="inline-xref-macro-rx"></block></block>
+  <block id="3b53f9d6057054fc25b0889239745085" category="list-text"><block ref="438b9fbe00ba2f3369249568b2e0205d" category="inline-xref-macro-rx"></block></block>
+  <block id="2e0e99403b74be7a5455c5f8ff21a2ec" category="paragraph">Cloud Manager を使用して Cloud Volumes ONTAP を導入するには、コネクタを作成する必要があります。Connector を使用すると、 Cloud Manager でパブリッククラウド環境内のリソースとプロセス（ Cloud Volumes ONTAP を含む）を管理できます。</block>
+  <block id="26742afe0446e71796a9332243fb3983" category="paragraph">Connector インスタンスにインストールされているソフトウェアから Cloud Manager にログインします。</block>
+  <block id="25975a6f2b2fb500b1c5ce430865daf2" category="list-text"><block ref="d6d32fe8e125af163f491889e868bcb1" category="inline-xref-macro-rx"></block></block>
+  <block id="40727b40295de6679a15e7ab918b6c93" category="section-title">AWS環境の準備</block>
+  <block id="f45971f8804dbe27a85371847149f156" category="paragraph">Cloud Manager から Cloud Volumes ONTAP を導入するには、 Marketplace サブスクリプションが必要です。</block>
+  <block id="b7a04099516f8430d91ecc6b9df3f486" category="paragraph">Cloud Volumes ONTAP インスタンスを起動するには、 Cloud Manager を使用する必要があります。Cloud Volumes ONTAP インスタンスを EC2 コンソールから起動しないでください。</block>
+  <block id="74800ff1ec3d5552aaa473310f1b4c2c" category="paragraph">AWS Commercialクラウド サービス 環境でアクションを実行するために必要な権限をコネクタとCloud Volumes ONTAP に提供するIAMポリシーとロールを設定する。</block>
+  <block id="82d76c39afb12299fd89e2b035a2fc70" category="paragraph">Cloud Volumes ONTAP の IAM ロールと HA メディエーターは、 Cloud Manager から Cloud Volumes ONTAP の作業環境を作成するときに選択できます。</block>
+  <block id="83de5a123d83fde5dcaaf6811cf06320" category="paragraph">Cloud Volumes ONTAP システムの作成時には、 Cloud Manager の ARN の指定が必要になります。</block>
+  <block id="abe7689876592f7424a214b07792ca15" category="list-text">コネクタインスタンスのIAMロールをCMKのキーユーザのリストに追加します。</block>
+  <block id="ea80d9267d93b8f0dcd057ae999b94ab" category="paragraph">これにより、 Cloud Manager には、 Cloud Volumes ONTAP で CMK を使用する権限が与えられます。</block>
+  <block id="95b4a625010cf2cf69514209c19dbc3e" category="section-title">ConnectorのインストールとCloud Managerのセットアップ</block>
+  <block id="4c06b45d24ad980552c52a9cbf857f23" category="paragraph">AWS で Cloud Volumes ONTAP システムを起動するには、まず AWS Marketplace から Connector インスタンスを起動してから、ログインして Cloud Manager をセットアップする必要があります。</block>
+  <block id="0c7a137062facbdd9af5451dcc9caf1c" category="paragraph">セットアッププロセス中に証明書をアップロードする必要があります。Cloud Manager は、 HTTPS 経由で AWS に要求を送信する際に信頼された証明書を使用します。</block>
+  <block id="c419f8d91e9428c13e4b489550591f42" category="list-text">AWS Intelligence Community Marketplace の Cloud Manager のページに移動します。</block>
+  <block id="2a74a4ca6ca91fb8d3c6b38fc9233a4f" category="list-text">コネクタインスタンスに接続されているホストから Cloud Manager をセットアップします。</block>
+  <block id="2d354fadd521725ccc56833965bb4440" category="list-text">セットアップウィザードの手順に従って、 Cloud Manager をセットアップします。</block>
+  <block id="dd6fb2ba019c1dfb48ea66d8189f5b19" category="list-text">* System Details * ： Cloud Manager インスタンスの名前を入力し、会社名を入力します。</block>
+  <block id="f996b51d4b8d0dffa87f16768fa11b0d" category="list-text">* ユーザの作成 * ： Cloud Manager の管理に使用する管理者ユーザを作成します。</block>
+  <block id="9e9b668de9a168aa4348af261abcf3d8" category="section-title">Cloud ManagerからCloud Volumes ONTAP を起動しています</block>
+  <block id="da7224d72b7c308843ae6ce07ceaa3d0" category="paragraph">Cloud Manager で新しい作業環境を作成することで、 AWS Commercial クラウドサービス環境で Cloud Volumes ONTAP インスタンスを起動できます。</block>
+  <block id="8a7f23615316304155b79b66eb77b5b8" category="paragraph">Cloud Manager が Cloud Volumes ONTAP インスタンスを起動します。タイムラインで進行状況を追跡できます。</block>
+  <block id="579a953172073c3fe33dc907abd6b3f8" category="paragraph">Cloud Manager で作成されるセキュリティグループには、 Cloud Manager と Cloud Volumes ONTAP がクラウドで正常に動作するために必要なインバウンドとアウトバウンドのルールが含まれています。テスト目的または独自のセキュリティグループを使用する場合は、ポートを参照してください。</block>
+  <block id="f4b34b24cc464b0154bd81cd6d906233" category="paragraph">Cloud Volumes ONTAP HA Mediator 用に事前定義された内部セキュリティグループには、次のルールが含まれています。Cloud Manager は常にこのセキュリティグループを作成します。独自のオプションはありません。</block>
 </blocks>
