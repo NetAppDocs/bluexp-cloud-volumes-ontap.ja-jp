@@ -20,13 +20,27 @@ BlueXP（旧称Cloud Manager）でのCloud Volumes ONTAP 管理の新機能に�
 
 
 
+== 2022年12月15日
+
+
+
+=== Cloud Volumes ONTAP 9.12.0
+
+BlueXPでは、AWSとGoogle CloudにCloud Volumes ONTAP 9.12.0を導入して管理できるようになりました。
+
+https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes["このリリースのに含まれる新機能について説明します Cloud Volumes ONTAP"^]。
+
+
+
 == 2022年12月8日
 
 
 
 === Cloud Volumes ONTAP 9.12.1
 
-BlueXPでは、Cloud Volumes ONTAP 9.12.1を導入および管理できるようになりました。新機能やその他のクラウドプロバイダリージョンのサポートが含まれます。https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes["このリリースのに含まれる新機能について説明します Cloud Volumes ONTAP"^]
+BlueXPでは、Cloud Volumes ONTAP 9.12.1を導入および管理できるようになりました。新機能やその他のクラウドプロバイダリージョンのサポートが含まれます。
+
+https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes["このリリースのに含まれる新機能について説明します Cloud Volumes ONTAP"^]
 
 
 
