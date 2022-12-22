@@ -4329,7 +4329,6 @@
   <block id="1456e010de4447704584caa0f583807b" category="cell">ラベルは GCP リソースのメタデータです。BlueXPは、システムに関連付けられたCloud Volumes ONTAP システムとGCPリソースにラベルを追加します。作業環境の作成時にユーザインターフェイスからラベルを 4 つまで追加し、その後追加することができます。API では、作業環境の作成時にラベルを 4 つに制限することはありません。ラベルの詳細については、を参照してください<block ref="fa397f5b6985fa16ac695ba7d4f7a5a5" category="inline-link-rx"></block>。</block>
   <block id="23b98688a84e3975fec56c5adda952e4" category="paragraph">Cloud Volumes ONTAP を配置するプロジェクトを選択します。既定のプロジェクトは、BlueXPが存在するプロジェクトです。</block>
   <block id="851527495c0afb57caeba39ab6e50d4f" category="paragraph">ドロップダウンリストに他のプロジェクトが表示されない場合は、まだBlueXPサービスアカウントを他のプロジェクトに関連付けていません。Google Cloud コンソールに移動し、 IAM サービスを開き、プロジェクトを選択します。BlueXPロールを持つサービスアカウントをそのプロジェクトに追加しますプロジェクトごとにこの手順を繰り返す必要があります。</block>
-  <block id="f521dfd49dba963e7b19cc773f33be00" category="admonition">これは、BlueXP用に設定したサービスアカウントです。 <block ref="d1082cc762c3232516ac569780f04ada" category="inline-link-macro-rx"></block>。</block>
   <block id="e11609cdeba36e9154797798b7bb710f" category="paragraph">BlueXPがファイアウォールポリシーを生成するようにした場合は、トラフィックを許可する方法を選択する必要があります。</block>
   <block id="4f4736bd9b3e508042a30af6279a85b0" category="list-text">Cloud Volumes ONTAP インスタンスでサービスアカウントを設定します。このサービスアカウントは、 Google Cloud Storage バケットへのデータ階層化の権限を提供します。Connectorサービスアカウントを階層化サービスアカウントのユーザーとして追加してください。追加しないと、BlueXPから選択できません</block>
   <block id="a696f74c5e0abf27caa52c3cb3b4a270" category="list-text">[詳細情報*]をクリックして、BlueXPが購入するサポートとGCPリソースの詳細を確認します。</block>
@@ -4588,4 +4587,5 @@
   <block id="80df4292f7c986dbd0920bb576487060" category="paragraph">BlueXPでは、AWSとGoogle CloudにCloud Volumes ONTAP 9.12.0を導入して管理できるようになりました。</block>
   <block id="abd10f7bee2f791a9e8f76bf98163c27" category="paragraph">BlueXPでは、Cloud Volumes ONTAP 9.12.1を導入および管理できるようになりました。新機能やその他のクラウドプロバイダリージョンのサポートが含まれます。</block>
   <block id="fdfad4872e8eceed069f74f82808d36e" category="list-text">ルート、ブート、NVRAM、コア、データディスクの場合、BlueXPはディスク暗号化セットを使用します。これにより、管理対象ディスクで暗号化キーを管理できます。</block>
+  <block id="da9740256f1fda9e06aa732d86702abc" category="admonition">これは、BlueXP用に設定したサービスアカウントです。 <block ref="0f8a0ed359c33dd5dbb02a467fa98093" category="inline-link-macro-rx"></block>。</block>
 </blocks>

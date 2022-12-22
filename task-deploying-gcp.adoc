@@ -88,7 +88,7 @@ Cloud Volumes ONTAP を配置するプロジェクトを選択します。既定
 ドロップダウンリストに他のプロジェクトが表示されない場合は、まだBlueXPサービスアカウントを他のプロジェクトに関連付けていません。Google Cloud コンソールに移動し、 IAM サービスを開き、プロジェクトを選択します。BlueXPロールを持つサービスアカウントをそのプロジェクトに追加しますプロジェクトごとにこの手順を繰り返す必要があります。
 
 
-NOTE: これは、BlueXP用に設定したサービスアカウントです。 link:task-creating-gcp-service-account.html["このページで説明されているように"]。
+NOTE: これは、BlueXP用に設定したサービスアカウントです。 link:https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-creating-connectors-gcp.html#set-up-a-service-account-for-the-connector["このページで説明されているように"^]。
 
 [ サブスクリプションの追加 ] をクリックして、選択した資格情報をサブスクリプションに関連付けます。
 
@@ -307,7 +307,7 @@ Cloud Volumes ONTAP を配置するプロジェクトを選択します。既定
 ドロップダウンリストに他のプロジェクトが表示されない場合は、まだBlueXPサービスアカウントを他のプロジェクトに関連付けていません。Google Cloud コンソールに移動し、 IAM サービスを開き、プロジェクトを選択します。BlueXPロールを持つサービスアカウントをそのプロジェクトに追加しますプロジェクトごとにこの手順を繰り返す必要があります。
 
 
-NOTE: これは、BlueXP用に設定したサービスアカウントです。 link:task-creating-gcp-service-account.html["このページで説明されているように"]。
+NOTE: これは、BlueXP用に設定したサービスアカウントです。 link:https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-creating-connectors-gcp.html#set-up-a-service-account-for-the-connector["このページで説明されているように"^]。
 
 [ サブスクリプションの追加 ] をクリックして、選択した資格情報をサブスクリプションに関連付けます。
 
