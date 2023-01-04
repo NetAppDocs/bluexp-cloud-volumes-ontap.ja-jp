@@ -65,8 +65,6 @@ Cloud Volumes ONTAP のすべての機能をネットアップから無償で提
 
 
 
-ifdef::azure[]
-
 
 
 ==== 最適化
@@ -78,12 +76,41 @@ ifdef::azure[]
 +
 データレプリケーション（SnapMirror）やNDMPに関連するI/Oは料金に含まれません。
 
-* Azure Marketplaceでのみ、従量課金制または年間契約として提供されます
-* 選択したVMタイプでサポートされる：E4s_v3、E4ds_v4、DS4_v2、DS13_v2、E8s_v3、 およびE8ds_v4
-* ネットアップのクラウドデータサービスを追加コストで利用できます
+
+
+ifdef::azure[]
+
+* Azure Marketplaceでは、従量課金制または年間契約として提供されています
 
 
 endif::azure[]
+
+ifdef::gcp[]
+
+* Google Cloud Marketplaceでは、従量課金制サービスまたは年間契約として提供されます
+
+
+endif::gcp[]
+
+* 選択したVMタイプでサポートされます：
+
+
+ifdef::azure[]
+
+* Azureの場合：E4s_v3、E4ds_v4、DS4_v2、DS13_v2、E8s_v3、およびE8ds_v4
+
+
+endif::azure[]
+
+ifdef::gcp[]
+
+* Google Cloudの場合：n2-standard-4、n2-standard-8
+
+
+endif::gcp[]
+
+* ネットアップのクラウドデータサービスを追加コストで利用できます
+
 
 
 
@@ -114,8 +141,6 @@ endif::azure[]
 * ネットアップのクラウドデータサービスを追加コストで利用できます
 
 
-ifdef::azure[]
-
 
 
 ==== Edge Cache（エッジキャッシュ）
@@ -126,12 +151,23 @@ Cloud Volume Edge Cacheのライセンスを提供します。
 * 設置面積の小さいWindows VMを使用して、各場所でインテリジェントなエッジキャッシングを実現します
 * 最小30TiB：6つのエッジノードを含む
 * 1つのエッジノードに3つのTiBごとに追加容量を購入
-* Azure Marketplaceでのみ、従量課金制または年間契約として提供されます
 
 
-https://cloud.netapp.com/cloud-volumes-edge-cache["Cloud Volume Edgeキャッシュがビジネスにどのように役立つかをご確認ください"^]
+ifdef::azure[]
+
+* Azure Marketplaceでは、従量課金制または年間契約として提供されています
+
 
 endif::azure[]
+
+ifdef::gcp[]
+
+* Google Cloud Marketplaceでは、従量課金制サービスまたは年間契約として提供されます
+
+
+endif::gcp[]
+
+https://cloud.netapp.com/cloud-volumes-edge-cache["Cloud Volume Edgeキャッシュがビジネスにどのように役立つかをご確認ください"^]
 
 
 

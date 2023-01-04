@@ -20,6 +20,28 @@ BlueXP（旧称Cloud Manager）でのCloud Volumes ONTAP 管理の新機能に�
 
 
 
+== 2023年1月3日
+
+コネクタの3.9.25リリースでは、次の変更が加えられました。
+
+
+
+=== Google Cloudで提供されているライセンスパッケージ
+
+最適化さCloud Volumes ONTAP れた容量ベースのライセンスパッケージとエッジキャッシュ容量ベースのライセンスパッケージは、Google Cloud Marketplaceで従量課金制サービスまたは年間契約として提供されます。
+
+を参照してください link:https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/concept-licensing.html#packages["Cloud Volumes ONTAP ライセンス"^]。
+
+
+
+=== Cloud Volumes ONTAP のデフォルト設定
+
+マルチテナント暗号化キー管理（MTEKM）ライセンスは新しいCloud Volumes ONTAP 環境には含まれなくなりました。
+
+Cloud Volumes ONTAP とともに自動的にインストールされるONTAP 機能ライセンスの詳細については、を参照してください link:https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/reference-default-configs.html["Cloud Volumes ONTAP のデフォルト設定"^]。
+
+
+
 == 2022年12月15日
 
 

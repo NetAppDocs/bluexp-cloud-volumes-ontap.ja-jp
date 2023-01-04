@@ -22,7 +22,6 @@ AKVを使用する場合、デフォルトではクラウドキー管理エン�
 .前提条件
 * Cloud Volumes ONTAP でバージョン9.10.1以降が実行されている必要があります
 * Volume Encryption（VE）ライセンスがインストールされている（ネットアップサポートに登録されている各Cloud Volumes ONTAP システムにNetApp Volume Encryptionライセンスが自動的にインストールされる）
-* Multi-tenant Encryption Key Management （ MTEKM ）ライセンスがインストールされています
 * クラスタ管理者またはSVMの管理者である必要があります
 * アクティブなAzureサブスクリプション
 
