@@ -113,7 +113,7 @@ BlueXPは、割り当てられていないライセンスを選択したサー�
 * 例 *
 
 +
-image:screenshot_license_generator.gif["スクリーンショット： NetApp License File Generator Web ページの例を示しています。このページには、パスワード、製品（ NetApp Cloud Volumes ONTAP BYOL for AWS ）、製品のシリアル番号が表示されています。"]
+image:screenshot-license-generator.png["スクリーンショット：NetApp License Generator Webページの例を示しています。このWebページには、利用可能な製品ラインが表示されています。"]
 
 . 電子メールまたは直接ダウンロードで serialnumber.nlf JSON ファイルを受信するかどうかを選択します。
 
