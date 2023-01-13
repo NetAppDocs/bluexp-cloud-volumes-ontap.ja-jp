@@ -3676,8 +3676,6 @@
   <block id="0e6fc7a8a0a2e83eed1877313299a807" category="paragraph">Cloud Volume Edge Cacheのライセンスを提供します。</block>
   <block id="cbea577daebf267793d8d7234ee50729" category="list-text">分散型企業向けのビジネス継続性とデータ保護を備えたプロフェッショナルパッケージと同じ機能を提供します</block>
   <block id="90083db3dbad73e69a817501be172673" category="list-text">設置面積の小さいWindows VMを使用して、各場所でインテリジェントなエッジキャッシングを実現します</block>
-  <block id="c42bae5dc6b1d94a8229aa520a055d09" category="list-text">最小30TiB：6つのエッジノードを含む</block>
-  <block id="9228e835b818682287047b781e3a92b5" category="list-text">1つのエッジノードに3つのTiBごとに追加容量を購入</block>
   <block id="7c4c7c30514b4cc21e76f21acfaacf2a" category="inline-link">Cloud Volume Edgeキャッシュがビジネスにどのように役立つかをご確認ください</block>
   <block id="20044e95e1ba41fb44c428898ee01dc2" category="paragraph"><block ref="20044e95e1ba41fb44c428898ee01dc2" category="inline-link-rx"></block></block>
   <block id="54dcd2c31a61414eef44d6ac931b8f57" category="paragraph">+ OptimizedパッケージとEdge Cacheパッケージは、BYOLでは使用できません。</block>
@@ -4621,4 +4619,5 @@
   <block id="c975ffb3e3e23a37bf8f249186a33e9a" category="paragraph">どちらのオプションを選択してもかまいません <block ref="67a3b6c0cb52274370d571e06a09839a" category="inline-xref-macro-rx"></block>。</block>
   <block id="432afd81656ecff91097001b2dbff0ad" category="section-title">バージョン9.10.0以前</block>
   <block id="ee11a9e37983cbc9cebba6a139158639" category="paragraph">新しい作業環境を作成するときに、 Cloud Volumes ONTAP システムで WORM ストレージをアクティブにできます。個々のボリュームで WORM ストレージをアクティブ化することはできません -- WORM はシステムレベルでアクティブ化する必要がありますアクティブ化できるのは、作業環境を作成した場合のみです。</block>
+  <block id="05f24457306e58dd0ea1e99766bc28dc" category="list-text">3台のTiBを購入するごとに、1つのエッジノードを使用します</block>
 </blocks>
