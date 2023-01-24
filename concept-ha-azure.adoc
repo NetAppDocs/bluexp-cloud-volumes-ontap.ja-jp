@@ -76,7 +76,7 @@ image:diagram_ha_azure_maz.png["ロードバランサがBlueXPとクライアン
 BlueXPによって導入されるAzureコンポーネントについては、次の点に注意してください。
 
 Azure Standard Load Balancer の略:: ロードバランサは、 Cloud Volumes ONTAP HA ペアへの着信トラフィックを管理します。
-可用性ゾーン:: 2つのCloud Volumes ONTAP ノードが異なるアベイラビリティゾーンに導入されています。アベイラビリティゾーンを使用すると、各ノードが異なる障害ドメインに配置されます。 https://learn.microsoft.com/en-us/azure/storage/common/storage-redundancy["Azure Storageの冗長性に関する詳細については、Azureのドキュメントを参照してください"^]。
+可用性ゾーン:: 2つのCloud Volumes ONTAP ノードが異なるアベイラビリティゾーンに導入されています。アベイラビリティゾーンを使用すると、各ノードが異なる障害ドメインに配置されます。 https://learn.microsoft.com/en-us/azure/virtual-machines/disks-redundancy#zone-redundant-storage-for-managed-disks["Azureゾーン冗長ストレージの詳細については、Azureのドキュメントを参照してください"^]。
 ディスク:: お客様のデータは、ゾーン冗長ストレージ（ZRS）管理ディスクに格納されています。各ノードがもう一方のノードのストレージにアクセスできます。には追加のストレージも必要です link:reference-default-configs.html#boot-and-root-data-for-cloud-volumes-ontap["ブート、ルート、パートナールート、コアの各データ"]。
 ストレージアカウント:: ストレージアカウントは、診断ログの処理とBLOBストレージへの階層化を行うディスクベースの管理環境で使用されます。
 
