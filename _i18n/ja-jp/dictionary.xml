@@ -1541,14 +1541,7 @@
   <block id="b3f2fa100e111e8d78c1729bbe7330b9" category="inline-image-macro">この概念図は、 Cloud Volumes ONTAP HA アーキテクチャのコンポーネントを示しています。 2 つの Cloud Volumes ONTAP ノードと 1 つのメディエーターインスタンスが、それぞれ別々のアベイラビリティゾーンに配置されています。</block>
   <block id="8baf5cc352903972240801715cac9720" category="paragraph"><block ref="8baf5cc352903972240801715cac9720" category="inline-image-macro-rx" type="image"></block></block>
   <block id="a02218676e4b3b1478891bbfdaee427f" category="section-title">コネクタの要件</block>
-  <block id="be541d1f37f2cc0c7ba1cfd7fcfbb4db" category="section-title">ターゲットネットワークへの接続</block>
   <block id="c8f224037ea295aeec347c94779d9932" category="section-title">アウトバウンドインターネットアクセス</block>
-  <block id="c0dfa216f26874dae52a89e0090a3358" category="paragraph">Connector では、パブリッククラウド環境内のリソースとプロセスを管理するためにアウトバウンドインターネットアクセスが必要です。</block>
-  <block id="b8724da75fb917e992576b17378e66b3" category="cell">エンドポイント</block>
-  <block id="8963387394e2ee3e2a5a9ba160566a58" category="cell">\ https://support.netapp.com</block>
-  <block id="db9e137068a05efe5440105c2494b7f1" category="cell">ライセンス情報を取得し、ネットアップサポートに AutoSupport メッセージを送信するため。</block>
-  <block id="554841a7559bd190d883de523464d1d1" category="cell">¥ https://cloudmanagerinfraprod.azurecr.io ¥ https://*.blob.core.windows.net</block>
-  <block id="065880318484084e9bfe33ea9c6a8702" category="cell">をクリックして、 Connector と Docker コンポーネントをアップグレードします。</block>
   <block id="47a9dec41b05cb9452bf85a6b7a24260" category="summary">いくつかの手順で、 Cloud Volumes ONTAP for AWS を使い始めましょう。</block>
   <block id="486388bbe4cda183a0e74df6ada2a454" category="doc">AWS での Cloud Volumes ONTAP のクイックスタート</block>
   <block id="ecd871e3e8bbcd8fb9b67fde1abb1ca5" category="paragraph">いくつかの手順で、 AWS で Cloud Volumes ONTAP を使い始めましょう。</block>
@@ -2109,7 +2102,6 @@
   <block id="92d6097e791c2b01c7cc0104f3a00d02" category="inline-link">Google Cloud のドキュメント：「 Using customer-managed encryption keys</block>
   <block id="8d6456bdd46775a0bde58d79fa727b86" category="paragraph">詳細については、を参照してください<block ref="0d1fec14af342ac3f0970d5f69f9ea12" category="inline-link-rx"></block></block>
   <block id="4d5272b77be8e6cf2d9611b8c660d0aa" category="list-text">作業環境を作成するときは、 API 要求で "GcpEncryption" パラメータを使用します。</block>
-  <block id="17cdbe368c7c729de5966fefda692ad9" category="summary">Cloud Volumes ONTAP システムが適切に動作するように Azure ネットワークをセットアップします。これには、コネクタと Cloud Volumes ONTAP のネットワークも含まれます。</block>
   <block id="412590af9448ac66459e9c3d686de880" category="doc">Azure の Cloud Volumes ONTAP のネットワーク要件</block>
   <block id="72928bd9aacf64df0eb1285c03f5f5c0" category="section-title">Cloud Volumes ONTAP の要件</block>
   <block id="098d8cb8c4a1291e10ee07b333610f24" category="paragraph">Azure では、次のネットワーク要件を満たしている必要があります。</block>
@@ -2264,11 +2256,6 @@
   <block id="8b26f0918bd84f8f658268af9e2d60ac" category="list-text"><block ref="8b26f0918bd84f8f658268af9e2d60ac" category="inline-link-macro-rx"></block></block>
   <block id="ebd1806e62b51cb0c1b6db8082e0666d" category="inline-link-macro">Google Cloud に Cloud Volumes ONTAP を使用して NetApp FlexCache を導入する方法</block>
   <block id="dd8a20d5a7875f2be225fbdc1a4c18bf" category="list-text"><block ref="dd8a20d5a7875f2be225fbdc1a4c18bf" category="inline-link-macro-rx"></block></block>
-  <block id="c1a944514f668a6530be7821e4a430f3" category="summary">Cloud Volumes ONTAP システムが正常に動作するように、 Google Cloud Platform ネットワークをセットアップします。これには、コネクタと Cloud Volumes ONTAP のネットワークも含まれます。</block>
-  <block id="a74ee89365e6df5e260d1051917ad0ea" category="doc">Cloud Volumes ONTAP in GCP のネットワーク要件</block>
-  <block id="26f701fd34070cdff3f09a341ace7632" category="inline-link-macro">GCP での HA ペアの仕組みをご確認ください</block>
-  <block id="16e04d05ebe78ce811365e6363616985" category="paragraph">HA ペアを導入する場合は、を実行します <block ref="34f7e91e8936b0b0eaed95f473b90e44" category="inline-link-macro-rx"></block>。</block>
-  <block id="394894d4a834735632bdc966f17ca917" category="paragraph">GCP では、次の要件を満たす必要があります。</block>
   <block id="0b92442656d83f3067193055685902c8" category="list-text">内部ロードバランサ</block>
   <block id="bed26a3b752abff1e6e50d64a46ef060" category="paragraph">クラスタ管理用のロードバランサで、 1 つは Storage VM （ SVM ）管理用、もう 1 つはノード 1 への NAS トラフィック用、もう 1 つはノード 2 への NAS トラフィック用です。</block>
   <block id="a3f8b70147487a4cbe0d1e707fb50ec9" category="paragraph">各ロードバランサの設定は次のとおりです。</block>
@@ -2281,17 +2268,11 @@
   <block id="0777a377adfb71ee50970edc3940dc96" category="list-text">1 つの UDP 転送ルール</block>
   <block id="8141cbd2dd808b9e48e91eaf3d5f2fe1" category="list-text">グローバルアクセスは無効です</block>
   <block id="83d4ff33554cb62b1f10057bae8d85ce" category="paragraph">グローバルアクセスはデフォルトでは無効になっていますが、展開後に有効にすることができます。クロスリージョントラフィックのレイテンシが大幅に高くなるため、この機能は無効にしました。誤ってリージョン間にマウントすることが原因でマイナスの体験が得られないようにしたいと考えていました。このオプションを有効にすることは、ビジネスニーズに固有のものです。</block>
-  <block id="75f83e966c01c1de3b682a52f8d4c7c0" category="list-text">HA ペア用のゾーン</block>
-  <block id="0a27741a79d0e9ca18ec583e983bfb93" category="list-text">HA ペア用の仮想プライベートクラウド × 4</block>
-  <block id="9aac39c2eff8d072fd62e0e718e5684b" category="list-text">HA 構成には、 4 つの Virtual Private Cloud （ VPC ；仮想プライベートクラウド）が必要です。GCP では各ネットワークインターフェイスが別々の VPC ネットワークに存在する必要があるため、 4 つの VPC が必要です。</block>
   <block id="d05ee1603902a8831c88a7a4e2d05592" category="list-text">vPC-0 ：データおよびノードへのインバウンド接続</block>
   <block id="420f5bde5fe8d88334d70c6e271fafb1" category="list-text">vPC-1 、 VPC -2 、および VPC -3 ：ノードと HA メディエーター間の内部通信</block>
-  <block id="3d13cafcfa05e263c4df4bafb6f8f947" category="list-text">HA ペアのサブネット</block>
   <block id="8a8c42c41cee152d79d679a14f70eab6" category="list-text">VPC ごとにプライベートサブネットが必要です。</block>
   <block id="79dd843cdbd0a98276c26f29bded2257" category="paragraph">コネクタを VPC 0 に配置する場合は、サブネットで Private Google Access を有効にして API にアクセスし、データの階層化を有効にする必要があります。</block>
   <block id="879d9e5531b71e6c91d2bb1771c06d40" category="paragraph">これらの VPC 内のサブネットには、個別の CIDR 範囲が必要です。CIDR 範囲を重複させることはできません。</block>
-  <block id="115b6c4bc1559957108cd2e500828c8d" category="list-text">シングルノードシステムに対応した 1 つの仮想プライベートクラウド</block>
-  <block id="50db7350c142ba7d29f00df81b4c786b" category="list-text">シングルノードシステムには 1 つの VPC が必要です。</block>
   <block id="b9ea9f76a11191d80f8fe1abc9437eb6" category="list-text">共有 VPC</block>
   <block id="f3d03214bf75026b54f5b2c16fec0e81" category="list-text">Cloud Volumes ONTAP とコネクタは、 Google Cloud の共有 VPC とスタンドアロンの VPC でサポートされます。</block>
   <block id="d3a2a7fdaa8373f4a0dca1f16e49c9c1" category="paragraph">シングルノードシステムの場合は、 VPC は共有 VPC またはスタンドアロン VPC のどちらかになります。</block>
@@ -2302,42 +2283,26 @@
   <block id="0d8050524ef140aadb3a681481890b39" category="list-text">VPC でのパケットミラーリング</block>
   <block id="4d6aebef0af2c2c1118b467bdf0dadf0" category="inline-link">パケットミラーリング</block>
   <block id="7c0126eb5fa57fb86ccb4cf44811856d" category="list-text"><block ref="581f54bac504640f66f842676676be03" category="inline-link-rx"></block> Cloud Volumes ONTAP を導入する Google Cloud VPC で無効にする必要があります。パケットミラーリングがイネーブルの場合、 Cloud Volumes ONTAP は正常に動作しません。</block>
-  <block id="d3d79704bb54117545a4635e1d22fc65" category="list-text">Cloud Volumes ONTAP 用のアウトバウンドインターネットアクセス</block>
   <block id="4c896c50345c5252f4b0e8fc4bf10723" category="admonition">HA ペアを使用している場合、 HA メディエーターではアウトバウンドのインターネットアクセスは必要ありません。</block>
-  <block id="e7787f4da96c754ed6401b93cf7a96ee" category="list-text">* シングルノード * ： 3 または 4 つのプライベート IP アドレス</block>
   <block id="c0d1b864d00da3eb6415590dfa2621ab" category="paragraph">Cloud Volumes ONTAP を API を使用して導入する場合、 Storage VM （ SVM ）管理 LIF の作成をスキップし、次のフラグを指定できます。</block>
   <block id="9389c2cd70872a229cd788537557d183" category="paragraph">'kipsvmManagementLIF ： true</block>
   <block id="2be40f62b7c4e1d13a18dcc030852bf8" category="paragraph">LIF は、物理ポートに関連付けられた IP アドレスです。SnapCenter などの管理ツールには、 Storage VM （ SVM ）管理 LIF が必要です。</block>
-  <block id="a4dcab9c1ee36b30447e9cfab646cbc8" category="list-text">* HA ペア * ： 14 または 15 個のプライベート IP アドレス</block>
   <block id="0ac7ae25c356474957d53018f385f434" category="list-text">VPC -0 の 7 つまたは 8 つのプライベート IP アドレス</block>
   <block id="16dba371e7c3be679c75a860acf986a5" category="list-text">VPC 1 用のプライベート IP アドレスが 2 つあります</block>
   <block id="3b36c3b05500e8c44c01c05c2c597b97" category="list-text">VPC 2 のプライベート IP アドレス × 2</block>
   <block id="75a392272a1bb675ed8f846182436d6e" category="list-text">VPC 3 つのプライベート IP アドレス</block>
   <block id="4dfddd1829f7fb340bd9b36bff6e3130" category="list-text">ファイアウォールルール</block>
   <block id="2a361a1f21cbd928455b1bd06df94169" category="paragraph">HA 構成には、次の 2 組のファイアウォールルールが必要です。</block>
-  <block id="01e18e5463e6c1fc9c05a5b8a728f3ff" category="list-text">VPC -0 の HA コンポーネントのルールセット。これらのルールにより、 Cloud Volumes ONTAP へのデータアクセスが可能になります。 <block ref="889fb5c02a9d32a6457688ad005f7e96" category="inline-xref-macro-rx"></block>。</block>
-  <block id="204347da7430e0509c4b62949e49e5dc" category="list-text">VPC -1 、 VPC -2 、および VPC -3 の HA コンポーネントに関するもう 1 つのルールセット。これらのルールは、 HA コンポーネント間のインバウンド通信とアウトバウンド通信に対してオープンです。 <block ref="889fb5c02a9d32a6457688ad005f7e96" category="inline-xref-macro-rx"></block>。</block>
-  <block id="d9352b05e7fd32136338aa8bf365e170" category="list-text">の Cloud Volumes ONTAP から Google Cloud Storage への接続 データ階層化</block>
   <block id="5e74b536fe3c8bd111e49f783c8e991c" category="inline-link">Google Cloud のドキュメント：「 Configuring Private Google Access</block>
   <block id="9e0ae4847043d43d71330ce503e69ac8" category="list-text">コールドデータを Google Cloud Storage バケットに階層化する場合は、 Cloud Volumes ONTAP が配置されているサブネットをプライベート Google Access 用に設定する必要があります（ HA ペアを使用している場合、これは VPC 0 のサブネットです）。手順については、を参照してください<block ref="6db326f0ee07df97e25069fccf883deb" category="inline-link-rx"></block>。</block>
   <block id="df025646ed6854c0696237c0ac916446" category="list-text">他のネットワーク内の ONTAP システムへの接続</block>
-  <block id="14725afebf967c0c497c447ebcaf1764" category="list-text">GCP 内の Cloud Volumes ONTAP システムと他のネットワーク内の ONTAP システムの間でデータをレプリケートするには、 VPC と他のネットワーク（たとえば社内ネットワーク）の間に VPN 接続が必要です。</block>
   <block id="2fbb401eef4220b4a89cce3e59325dcb" category="inline-link">Google Cloud のドキュメント：「 Cloud VPN Overview</block>
   <block id="6d1472a8434e4945740fa177e609f886" category="paragraph">手順については、を参照してください<block ref="1bc8aad79f56acf8c242cfb981c11ee1" category="inline-link-rx"></block>。</block>
-  <block id="e0ab516914623c72df4ff708af6cdd54" category="section-title">Cloud Volumes ONTAP のファイアウォールルール</block>
-  <block id="4907f0fb8777892173f7e34fa56bfcdb" category="paragraph">Cloud Volumes ONTAP のファイアウォールルールには、インバウンドとアウトバウンドの両方のルールが必要です。</block>
-  <block id="bcf66fd73f27e271725271d68f4723a9" category="paragraph">HA 構成を導入する場合は、 VPC 0 の Cloud Volumes ONTAP のファイアウォールルールを以下に示します。</block>
   <block id="1147a9bceab35dc98b14493a462a8f27" category="inline-link">Google Cloud ドキュメント：ロードバランサファイアウォールルール</block>
   <block id="1395d3dc336eac468612e7bbe8281f7a" category="cell">63001-63050</block>
   <block id="06fb5a0f91eb3d073524ac0c7e590c54" category="cell">プローブポートをロードバランシングして、どのノードが正常であるかを判断します （ HA ペアの場合のみ必要）</block>
-  <block id="9fda35946418ee004d3cdc93c12473b4" category="section-title">VPC -1 、 VPC -2 、および VPC -3 のファイアウォールルール</block>
   <block id="4e9d1f4e3c452c7aba2d9cc51c690416" category="inline-xref">Cloud Volumes ONTAP については上記のリストを参照してください</block>
-  <block id="8ab03e4616af1a81bd7e097e2a865c29" category="paragraph">GCP では、 4 つの VPC 間で HA 構成が導入されます。VPC -0 の HA 構成に必要なファイアウォールルール はです <block ref="6696339384f87dfedda2136f4a028ff0" category="inline-xref-macro-rx"></block>。</block>
   <block id="e83b31d42852ca12480d330a3385214f" category="paragraph">HA ノードから HA メディエーターへの通信は、ポート 3260 （ iSCSI ）を介して行われます。</block>
-  <block id="fa6661c729382092acdf9b6930de105e" category="section-title">コネクタのファイアウォールルール</block>
-  <block id="5ea521a799e1cf043cd101ec326044f6" category="paragraph">コネクタのファイアウォールルールには、インバウンドとアウトバウンドの両方のルールが必要です。</block>
-  <block id="aa414a57d6f1347fc5212beb06655a8e" category="paragraph">コネクタの定義済みファイアウォールルールによって、すべてのアウトバウンドトラフィックが開かれます。これが可能な場合は、基本的なアウトバウンドルールに従います。より厳格なルールが必要な場合は、高度なアウトバウンドルールを使用します。</block>
-  <block id="bd83f7d2350eb6b777b2622dfd275ab6" category="paragraph">コネクタの定義済みファイアウォールルールには、次のアウトバウンドルールが含まれています。</block>
   <block id="aef294321c5e9daca32778610304f081" category="summary">いくつかの手順で、 Cloud Volumes ONTAP for Azure を使い始めましょう。</block>
   <block id="6b9ec885733dcee16db8c4d8dde6312a" category="doc">Azure での Cloud Volumes ONTAP のクイックスタート</block>
   <block id="019fd7c8c6395aedf9e4d8fe995febee" category="inline-link">Azure でコネクタを作成する方法について説明します</block>
@@ -2773,7 +2738,6 @@
   <block id="8aaf101e623c543c7eef3c65f6233366" category="list-text">メッセージが表示されたら、 [* Continue （続行） ] をクリックして Microsoft ログインページにリダイレクトします。</block>
   <block id="19d089db572ee6a1e154a0c9c9e57bfd" category="paragraph">ネットアップは、サポートとライセンスに固有の認証サービスのアイデンティティプロバイダとして Microsoft Azure Active Directory を使用しています。</block>
   <block id="465ec6d5eafa3524c948c99d8bfcd306" category="list-text">ログインページで、ネットアップサポートサイトの登録 E メールアドレスとパスワードを入力して認証プロセスを実行します。</block>
-  <block id="6dabf2a1195c84bdf3b7bf30e5ddf080" category="cell">API が GCP と ONTAP にコールし、クラウドデータを検知してランサムウェア対策サービスに送信し、 AutoSupport メッセージをネットアップに送信します</block>
   <block id="e9c44bbfd795a5d63d74c6a77afee70d" category="paragraph">著作権に関する声明、商標、特許などにアクセスできます。</block>
   <block id="6016a2b341113bf496b719905398ecd2" category="section-title">著作権</block>
   <block id="09e95b77ffe81fe465a83ba99efad5c8" category="paragraph"><block ref="09e95b77ffe81fe465a83ba99efad5c8" category="inline-link-rx"></block></block>
@@ -2930,7 +2894,6 @@
   <block id="81cc31df8f1cfdded8f19bde6b378f31" category="section-title">HA構成の内部セキュリティグループに関するルール</block>
   <block id="7893e453f8f5e33915b2a7890867e098" category="paragraph">Cloud Volumes ONTAP HA構成用に事前定義された内部セキュリティグループには、次のルールが含まれています。このセキュリティグループを使用すると、HAノード間、メディエーターとノード間の通信が可能になります。</block>
   <block id="52bb55c8099e551b91ec50d983141e9a" category="paragraph">Azure内のCloud Volumes ONTAP システムと他のネットワーク内のONTAP システム間でデータをレプリケートするには、企業ネットワークなど、Azure VNetとその他のネットワーク間にVPN接続が必要です。</block>
-  <block id="d17764ffa4b2b993f35778d5e7c1f22e" category="cell">APIがAzureとONTAP にコールし、クラウドデータを検知してランサムウェアサービスに感染し、AutoSupport メッセージをネットアップに送信</block>
   <block id="aa73f4eb582c3e0e9bca433f741e8a12" category="inline-link-macro">S3およびその他のクライアントプロトコルに対するCloud Volumes ONTAP のサポートに関する詳細を確認できます</block>
   <block id="b19dcb5d79169da5722547be25d81a05" category="paragraph"><block ref="2b5ab7e81cd6465f0e4fd342fda67520" category="inline-link-macro-rx"></block>。</block>
   <block id="2f2289dc4d144dd69a1fd73eaab183e0" category="summary">一部のCloud Volumes ONTAP 構成にはローカルのNVMeストレージが含まれており、Cloud Volumes ONTAP はパフォーマンスを向上させるためにFlash Cacheとして使用します。</block>
@@ -3930,7 +3893,6 @@
   <block id="2a37f0bf23209f41128e5c28160ecd0b" category="paragraph">Azureリソースグループに2つ目のCloud Volumes ONTAP HAペアを導入しようとすると、接続の問題が発生します。</block>
   <block id="ce23ccd5f69f45f3f2a022750ab9d6e7" category="paragraph">セキュリティグループを作成する必要はありません。BlueXPではセキュリティグループが自動的に作成されます。独自のルールを使用する必要がある場合は、以下のセキュリティグループルールを参照してください。</block>
   <block id="196affcedcabdcd9243dfaab58327dae" category="paragraph">BlueXPでは、Cloud Volumes ONTAP が正常に動作するために必要なインバウンドとアウトバウンドのルールを含むAzureセキュリティグループが作成されます。テスト目的でポートを参照したり、独自のセキュリティグループを使用したりする場合に使用します。</block>
-  <block id="23486ca53d499245ebae5460cf6d10ad" category="cell">BlueXPでSaaSの機能とサービスを提供するため。</block>
   <block id="ecd87ae03b07f0712964d94eb75683a5" category="cell">BlueXPによるDNS解決に使用されます</block>
   <block id="4350eea5911affd7e2c237dd5705777c" category="list-text">BlueXPでは、Cloud Volumes ONTAP を導入するとデータ提供用のStorage VMが1つ作成されます。追加の Storage VM をサポートする構成もあります。 <block ref="a7cc00a0b341c53959a0ff9bb9ec925b" category="inline-link-macro-rx"></block>。</block>
   <block id="d3ba63f114f62f143d97434a92eb48a8" category="paragraph">BlueXP 3.9.5リリース以降では、最初のStorage VMで論理スペースのレポートが有効になります。スペースが論理的に報告されると、 ONTAP は、 Storage Efficiency 機能で削減されたすべての物理スペースが使用済みと報告するようにボリュームスペースを報告します。</block>
@@ -4041,10 +4003,7 @@
   <block id="0d5b8e06664cffcf9f498e7821c89481" category="list-text">複数のゾーンまたは単一のゾーンに HA 構成を導入することで、データの高可用性を確保できます。HAペアを作成すると、複数のゾーンまたは単一のゾーンを選択するように求められます。</block>
   <block id="44b028753f7a7976b8be9d11b1afed32" category="paragraph">HAペアを作成するときに、4つのVPCを選択するように要求されます。</block>
   <block id="c44db905496bb7220714be5427afb035" category="paragraph">AutoSupport メッセージの送信にアウトバウンドのインターネット接続が使用できない場合、Cloud Volumes ONTAP システムは自動的にコネクタをプロキシサーバとして使用するように設定されます。唯一の要件は、コネクタのファイアウォールがポート3128上の_INBOUND接続を許可することです。コネクタを展開した後、このポートを開く必要があります。</block>
-  <block id="8c9d06136a351aef5233e159f1b086f5" category="list-text">BlueXPは、次の数のプライベートIPアドレスをGCPのCloud Volumes ONTAP に割り当てます。</block>
-  <block id="c3872c89a315822852621c448e41aac4" category="list-text">ファイアウォールルールを作成する必要はありません。BlueXPはファイアウォールルールを作成します。独自のファイアウォールを使用する必要がある場合は、以下のファイアウォールルールを参照してください。</block>
   <block id="33e7d975fa9a0910415fa300d8bf304a" category="paragraph">BlueXPでデータの階層化を設定するために必要な追加手順については'を参照してください <block ref="9ae9bcf59853ba48ce2658a41db24feb" category="inline-link-macro-rx"></block>。</block>
-  <block id="e468ba21e4a82ddfaf9b8e28f74bb73b" category="paragraph">BlueXPでは、Cloud Volumes ONTAP が正常に動作するために必要な着信および発信ルールを含むGCPファイアウォールルールが作成されます。テスト目的または独自のファイアウォールルールを使用する場合は、ポートを参照してください。</block>
   <block id="639c4a9b76126cf4712751dee5546383" category="paragraph">一方、BlueXPでVPC -1、VPC -2、およびVPC -3のインスタンスに対して作成される定義済みのファイアウォールルールにより、_All_protocolsとポートでの入力通信が可能になります。これらのルールに従って、 HA ノード間の通信が可能になります。</block>
   <block id="3ef69cb41da937aa60ab5fbab53eb42a" category="list-text">Cloud Volumes ONTAP をアップグレードすると、必要に応じてメディエーターインスタンスも更新されます。</block>
   <block id="5d345d14f8662bfe45d8562fba90c487" category="list-text">BlueXPからCloud Volumes ONTAP HAペアを作成すると、メディエーターインスタンスのキーペアを指定するように求められます。このキーペアは、を使用したSSHアクセスに使用できます<block ref="21232f297a57a5a743894a0e4a801fc3" prefix=" " category="inline-code"></block> ユーザ：</block>
@@ -4169,7 +4128,6 @@
   <block id="0dbd392deaa683187b56036c1e13a1a6" category="list-text">お客様が管理する暗号化キーを使用し、データをオブジェクトストレージに階層化する場合、BlueXPは、永続ディスクの暗号化に使用されるのと同じキーを使用しようとします。キーを使用するには、まず Google Cloud Storage バケットを有効にする必要があります。</block>
   <block id="2f75073874e4641aa2be5b8208fdfe64" category="paragraph">を参照してください<block ref="cf06621be2a2bfce0ef0595deee16955" category="inline-link-rx"></block> "GcpEncryption" パラメータの使用方法の詳細については、を参照してください。</block>
   <block id="2f1e7d6affd61098f336e5b1777ec8e2" category="summary">BlueXPは、IPアドレス、ネットマスク、ルートなど、Cloud Volumes ONTAP のネットワークコンポーネントのセットアップを処理します。アウトバウンドのインターネットアクセスが可能であること、十分な数のプライベート IP アドレスを利用できること、適切な接続が確立されていることなどを確認する必要があります。</block>
-  <block id="716fe391ac4cd57434ca473a86d6a7da" category="paragraph">BlueXP（旧Cloud Manager）は、IPアドレス、ネットマスク、ルートなど、Cloud Volumes ONTAP 用のネットワークコンポーネントのセットアップを処理します。アウトバウンドのインターネットアクセスが可能であること、十分な数のプライベート IP アドレスを利用できること、適切な接続が確立されていることなどを確認する必要があります。</block>
   <block id="b28334323356fda049acaa1568ee382c" category="paragraph">BlueXPは、必要な数のプライベートIPアドレスを自動的にCloud Volumes ONTAP に割り当てます。ネットワークに十分な数のプライベート IP アドレスがあることを確認する必要があります。</block>
   <block id="bdc0bf1240a907023821eccea893d017" category="paragraph">Cloud Volumes ONTAP 用に割り当てられるLIFの数は、シングルノードシステムとHAペアのどちらを導入するかによって異なります。LIF は、物理ポートに関連付けられた IP アドレスです。</block>
   <block id="7a4fc6df5acc7a338525efe76c970bd8" category="paragraph">BlueXPでは、1つのノードシステムに6つのIPアドレスが割り当てられています。</block>
@@ -4464,11 +4422,6 @@
   <block id="7ec6925d846a27916198adf7334fcae3" category="list-text">Cloud Volumes ONTAP 作業環境の作成時にWORMを有効にすると、BlueXPで作成したすべてのボリュームでWORMが有効になります。ただし、ONTAP CLIまたはSystem Managerを使用して、WORMを無効にしたボリュームを作成できます。これらのボリュームはWORM状態のままです。</block>
   <block id="3101fb677e91832ce5fd2af7de4c1850" category="list-text">作業環境の作成時にWORMを有効にしないと、BlueXPで作成したすべてのボリュームでWORMが無効になります。これらのボリュームのWORMレートでは課金されません。ただし、ONTAP CLIまたはSystem Managerを使用してWORM対応ボリュームを作成することができます。これらのボリュームはWORM状態に基づいて料金が請求されます。</block>
   <block id="38aefad2ca205e663da97b7fdd932dcf" category="paragraph"><block ref="38aefad2ca205e663da97b7fdd932dcf" category="inline-link-rx"></block></block>
-  <block id="37ba276f010f4ea07f1196b487811443" category="paragraph">\ https://*.api.bluexp.netapp.com</block>
-  <block id="e1095ff19466581c5274f67123c95036" category="paragraph">\ https://api.bluexp.netapp.com</block>
-  <block id="9e434ddc2ad4b9de005368b77254223d" category="paragraph">\ https://*.cloudmanager.cloud.netapp.com</block>
-  <block id="115781a0043a85f8707c5c99fd02dc75" category="paragraph">\ https://cloudmanager.cloud.netapp.com</block>
-  <block id="7eea1027ea51763c57b7b5965f1ba900" category="admonition">コネクターは現在、「cloudmanager.cloud.netapp.com"」に接続していますが、今後のリリースでapi.bluexp.netapp.com"への連絡を開始します。</block>
   <block id="b9eeb00cda3e979e1efe9bef61f951fc" category="list-text">Azure HAの複数のアベイラビリティゾーン</block>
   <block id="0f8e1302b6dedb536c0490b7602b0b32" category="list-text">ONTAP 9.10.1P3以降では、NVRAMおよびコアディスクの場合、BlueXPはを使用します<block ref="c7a6854bb19ab523fbe585f89a860944" category="inline-link-rx"></block>を使用して、管理対象ディスクで暗号化キーを管理できます。下位バージョンでは、顧客管理キーの代わりにMicrosoft管理キーが使用されます。</block>
   <block id="5aabc9069557be7e4aeff466605cbc75" category="list-text">シングルノード</block>
@@ -4552,19 +4505,6 @@
   <block id="579a953172073c3fe33dc907abd6b3f8" category="paragraph">Cloud Manager で作成されるセキュリティグループには、 Cloud Manager と Cloud Volumes ONTAP がクラウドで正常に動作するために必要なインバウンドとアウトバウンドのルールが含まれています。テスト目的または独自のセキュリティグループを使用する場合は、ポートを参照してください。</block>
   <block id="f4b34b24cc464b0154bd81cd6d906233" category="paragraph">Cloud Volumes ONTAP HA Mediator 用に事前定義された内部セキュリティグループには、次のルールが含まれています。Cloud Manager は常にこのセキュリティグループを作成します。独自のオプションはありません。</block>
   <block id="3f2a41d3e64efd3d137a5132f84eb8b6" category="paragraph">Cloud Volumes ONTAP 用に割り当てられるLIFの数は、シングルノードシステムとHAペアのどちらを導入するかによって異なります。LIF は、物理ポートに関連付けられた IP アドレスです。SnapCenter などの管理ツールには、 SVM 管理 LIF が必要です。</block>
-  <block id="df290139b26527b2473b1e82a36386d4" category="paragraph">コネクタがパブリッククラウド環境内のリソースやプロセスを管理できるように、ネットワークを設定します。コネクタの仮想ネットワークとサブネットを使用する以外に、次の要件が満たされていることを確認する必要があります。</block>
-  <block id="2f03f8dd45cb031f8f3cce95fd4acefc" category="paragraph">Connectorでは、作成する作業環境の種類と有効にするサービスへのネットワーク接続が必要です。</block>
-  <block id="3f92e0c134aea90b900c9d9fb8728adc" category="paragraph">たとえば、会社のネットワークにコネクタをインストールする場合は、Cloud Volumes ONTAP を起動する仮想ネットワークへのVPN接続を設定する必要があります。</block>
-  <block id="3ae1b8362f96338c0c28c7652251bc8b" category="paragraph">すべての送信インターネットトラフィックにHTTPプロキシを導入する必要がある場合は、HTTPプロキシに関する次の情報を取得します。</block>
-  <block id="75ba8d70e3692ba200f0e0df37b4d2ae" category="list-text">IP アドレス</block>
-  <block id="2daf1cb573c2c61422faf64610cf9402" category="list-text">クレデンシャル</block>
-  <block id="6a3f3799bc264d32568bb7169ddd515a" category="list-text">HTTPS証明書</block>
-  <block id="338578acf7e0dc54ebcd8c3592f0b022" category="section-title">セキュリティグループ</block>
-  <block id="ae6252cb830dbd695650f78870fe4309" category="inline-link">ローカル UI</block>
-  <block id="4f85ea1fc2337ca87ea3957b6ed0f523" category="paragraph">コネクタへの着信トラフィックは、コネクタを起動した場合や、コネクタがAutoSupport メッセージのプロキシとして使用されている場合を除き、受信トラフィックはありません。へのアクセスは、 HTTP および HTTPS を使用して提供されます<block ref="b66a5441ef03e9f48be36352f5f78769" category="inline-link-rx"></block>は、まれな状況で使用します。SSH が必要になるのは、トラブルシューティングのためにホストに接続する必要がある場合のみです。</block>
-  <block id="d72a801b2f49d6a4ed170ebdf3cf0efc" category="section-title">IPアドレスの制限</block>
-  <block id="65d425afa00c3ead65e6a786e55b60bc" category="inline-link">この制限事項の詳細については、こちらをご覧ください</block>
-  <block id="9b1f033bcac0595326d8acd1ef89e52c" category="paragraph">172の範囲のIPアドレスと競合する可能性があります。<block ref="120cc620882c590412757bc531a4f583" category="inline-link-rx"></block>。</block>
   <block id="236afd214a59ab065a50ccb9cbbbe4c2" category="cell">9.12.0</block>
   <block id="97145bbcb02af5e728740b1d40bd2046" category="section-title">2022年12月15日</block>
   <block id="bf748f930fa11e46773ff6f7b815e480" category="section-title">Cloud Volumes ONTAP 9.12.0</block>
@@ -4628,4 +4568,36 @@
   <block id="02efcbea18b9485a78a41871dce1e64d" category="list-text"><block ref="02efcbea18b9485a78a41871dce1e64d" category="inline-link-macro-rx"></block></block>
   <block id="6d50c94851edb68865f91b19a7c8e802" category="inline-link">Azureゾーン冗長ストレージの詳細については、Azureのドキュメントを参照してください</block>
   <block id="d0dd1e24dc3eec7e346159d97577b2a5" category="list-text">2つのCloud Volumes ONTAP ノードが異なるアベイラビリティゾーンに導入されています。アベイラビリティゾーンを使用すると、各ノードが異なる障害ドメインに配置されます。<block ref="ac08b397e7ae08c3f76d7057ac214476" category="inline-link-rx"></block>。</block>
+  <block id="806bf55e3fada643423a5e8b443a821f" category="summary">Cloud Volumes ONTAP システムが正常に動作するように、Google Cloudネットワークをセットアップします。</block>
+  <block id="b2a93ab6944b01da98f77474158de584" category="doc">Google CloudでのCloud Volumes ONTAP のネットワーク要件</block>
+  <block id="589257f6242e3a6232a5f72f7867c4b6" category="inline-link-macro">Google CloudでのHAペアの仕組みをご確認ください</block>
+  <block id="c8e39b92d04aae2c3a6d3e6f428d480e" category="paragraph">HA ペアを導入する場合は、を実行します <block ref="135d51832239d75e9eff2c1e7574765f" category="inline-link-macro-rx"></block>。</block>
+  <block id="26cc43b1e094bf317e2d9013491cb9af" category="paragraph">Google Cloudでは、次の要件を満たす必要があります。</block>
+  <block id="cd28e0a76ff845ef2e9e5eeced367a01" category="section-title">シングルノードシステムに固有の要件</block>
+  <block id="d9358a4b713f2c5cc37fadb9fef3c574" category="paragraph">シングルノードシステムを導入する場合は、ネットワークが次の要件を満たしていることを確認してください。</block>
+  <block id="1ec1df3337524963212c8e27b42ab3cc" category="section-title">1つのVPC</block>
+  <block id="5bd17b13142e93319e9f09e96063763a" category="paragraph">シングルノードシステムにはVirtual Private Cloud（VPC；仮想プライベートクラウド）が1つ必要です。</block>
+  <block id="268f43c6ccc1a99cbd92114c3903e0f1" category="paragraph">BlueXPは、Google Cloudのシングルノードシステムに3つまたは4つのプライベートIPアドレスを割り当てます。</block>
+  <block id="fea70579987e879c99c2df3cebf39f70" category="section-title">HAペアに固有の要件</block>
+  <block id="549263475571fab7c340abda30733212" category="paragraph">HAペアを導入する場合は、ネットワークが次の要件を満たしていることを確認します。</block>
+  <block id="5dadc4e112da073feca16f4aff4ba237" category="section-title">1つまたは複数のゾーン</block>
+  <block id="4c62b2e0648ccb7cc5ac07de5a4c67f4" category="section-title">4つの仮想プライベートクラウド</block>
+  <block id="0fc9a4a783a2856e3a35ee9b12a2f357" category="paragraph">HA 構成には、 4 つの Virtual Private Cloud （ VPC ；仮想プライベートクラウド）が必要です。Google Cloudでは各ネットワークインターフェイスを別 々 のVPCネットワークに配置する必要があるため、VPCは4つ必要です。</block>
+  <block id="74cd215a46d2bd96fc35dad7ef313283" category="section-title">サブネット</block>
+  <block id="206f49c25e0bbd2da69d30f14f4f222d" category="paragraph">BlueXPは、Google CloudのHAペアに14または15個のプライベートIPアドレスを割り当てます。</block>
+  <block id="974715540568df2f5efe3c40777931b7" category="section-title">Google Cloud Storageに接続してデータを階層化</block>
+  <block id="53c6f0799470bd2e67e7902192e11c7c" category="paragraph">Google Cloud内のCloud Volumes ONTAP システムと他のネットワーク内のONTAP システムの間でデータをレプリケートするには、VPCと他のネットワーク（たとえば、社内ネットワーク）の間にVPN接続が必要です。</block>
+  <block id="8bb6cd6de4a896f626b89e711d40aa4c" category="paragraph">BlueXPは、Cloud Volumes ONTAP が正常に動作するために必要なインバウンドとアウトバウンドのルールを含むGoogle Cloudファイアウォールルールを作成します。テスト目的または独自のファイアウォールルールを使用する場合は、ポートを参照してください。</block>
+  <block id="30f3abb35963e0cd7d66dc08581087c9" category="paragraph">Cloud Volumes ONTAP のファイアウォールルールには、インバウンドとアウトバウンドの両方のルールが必要です。HA 構成を導入する場合は、 VPC 0 の Cloud Volumes ONTAP のファイアウォールルールを以下に示します。</block>
+  <block id="cb97a2b297b246ea14d6c17e8e5ee28a" category="list-text">VPC -0 の HA コンポーネントのルールセット。これらのルールにより、 Cloud Volumes ONTAP へのデータアクセスが可能になります。</block>
+  <block id="853d5f8d41b181e1e73157826ecc4287" category="inline-xref">vPC-2、およびVPC-3について詳しくはこちらをご覧ください</block>
+  <block id="9cd85fea135b7ad7c981c3cc1f75a6ea" category="list-text">VPC -1 、 VPC -2 、および VPC -3 の HA コンポーネントに関するもう 1 つのルールセット。これらのルールは、 HA コンポーネント間のインバウンド通信とアウトバウンド通信に対してオープンです。 <block ref="8d9dee5ea3dbe6098c688583dd57c09d" category="inline-xref-macro-rx"></block>。</block>
+  <block id="ae2d87942e6697528344ccace68364e3" category="section-title">VPC -1、VPC -2、およびVPC -3のルール</block>
+  <block id="5fb73c1af98e831dcfe0ce66f4582d3b" category="paragraph">Google Cloudでは、4つのVPC間にHA構成が導入されます。VPC -0 の HA 構成に必要なファイアウォールルール はです <block ref="8216cabe940880477030118a8a765034" category="inline-xref-macro-rx"></block>。</block>
+  <block id="4fad8964dcacb8a6d329f6e2e57a2af9" category="paragraph">コネクタをまだ作成していない場合は、コネクタのネットワーク要件も確認してください。</block>
+  <block id="f63c987d15807845ae712461b133bad5" category="inline-link">コネクタのネットワーク要件を確認します</block>
+  <block id="fec3732f829761687c4a94dc2dcf4ef5" category="paragraph"><block ref="fec3732f829761687c4a94dc2dcf4ef5" category="inline-link-rx"></block></block>
+  <block id="0f5cc196efac5a9fadb7272e55c7d686" category="summary">Cloud Volumes ONTAP システムが適切に動作するように Azure ネットワークをセットアップします。</block>
+  <block id="323c8a1d29b771e63edf9d7a9968be4e" category="paragraph"><block ref="323c8a1d29b771e63edf9d7a9968be4e" category="inline-link-rx"></block></block>
+  <block id="f483cdf3bbc75344ed7ba476a346b3ae" category="paragraph"><block ref="f483cdf3bbc75344ed7ba476a346b3ae" category="inline-link-rx"></block></block>
 </blocks>
