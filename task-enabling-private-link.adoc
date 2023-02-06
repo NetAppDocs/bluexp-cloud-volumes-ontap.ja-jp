@@ -43,7 +43,7 @@ BlueXPでは、Cloud Volumes ONTAP とそれに関連付けられたストレー
 
 == Azureプライベートリンクを使用する
 
-ほとんどの場合、Cloud Volumes ONTAP でAzureプライベートリンクを設定するために必要な作業はありません。BlueXPはAzureプライベートリンクを管理しています。ただし、 Azure Private DNS を使用する場合は、構成ファイルを編集する必要があります。また、Azureのコネクタの場所に関する要件も把握しておく必要があります。
+ほとんどの場合、Cloud Volumes ONTAP でAzureプライベートリンクを設定するために必要な作業はありません。BlueXPはAzureプライベートリンクを管理しています。ただし、 Azure プライベート DNS を使用している場合は、構成ファイルを編集する必要があります。また、Azureのコネクタの場所に関する要件も把握しておく必要があります。
 
 
 
@@ -81,6 +81,7 @@ DNS 名は Azure DNS の命名規則と一致している必要があります �
    "resource-group" : "<resource group name of the DNS zone>",
    "subscription" : "<subscription ID>",
    "use-existing" : true
+   "create-private-dns-zone-link" : true
 }
 ....
 +

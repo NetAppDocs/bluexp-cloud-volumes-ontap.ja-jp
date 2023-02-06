@@ -20,6 +20,36 @@ BlueXP（旧称Cloud Manager）でのCloud Volumes ONTAP 管理の新機能に�
 
 
 
+== 2023年2月5日
+
+コネクタの3.9.26リリースでは、次の変更が加えられました。
+
+
+
+=== AWSでの配置グループの作成
+
+AWS HA単一アベイラビリティゾーン（AZ）環境で配置グループを作成するための新しい設定が追加されました。失敗した配置グループの作成をバイパスして、AWS HA単一のAZ環境を正常に完了できるようにすることができます。
+
+配置グループの作成設定の詳細については、を参照してください link:https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-configure-placement-group-failure-aws.html#overview["AWS HA単一AZ用の配置グループの作成を設定する"^]。
+
+
+
+=== プライベートDNSゾーン設定の更新
+
+Azureプライベートリンクの使用時にプライベートDNSゾーンと仮想ネットワークの間にリンクを作成しないように、新しい設定が追加されました。作成はデフォルトで有効になっています。
+
+link:https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-enabling-private-link.html#provide-bluexp-with-details-about-your-azure-private-dns["AzureプライベートDNSの詳細をBlueXPに提供します"^]
+
+
+
+=== WORMストレージとデータ階層化
+
+Cloud Volumes ONTAP 9.8以降のシステムを作成するときに、データ階層化とWORMストレージの両方を有効にできるようになりました。WORMストレージによるデータ階層化を有効にすると、データをクラウドのオブジェクトストアに階層化できます。
+
+link:https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/concept-worm.html["WORMストレージについて説明します。"^]
+
+
+
 == 2023年1月1日
 
 コネクタの3.9.25リリースでは、次の変更が加えられました。

@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: concept-worm.html 
-keywords: worm, write once, read many, snaplock, retain, retention, period, cloud worm, worm storage 
+keywords: worm, write once, read many, snaplock, retain, retention, period, cloud worm, worm storage, tiering 
 summary: Cloud Volumes ONTAP システム上で Write Once Read Many （ WORM ）ストレージをアクティブにして、指定した保存期間内にファイルを変更せずに保持できます。クラウド WORM ストレージには SnapLock テクノロジが採用されており、 WORM ファイルはファイルレベルで保護されます。 
 ---
 = WORM ストレージ
@@ -81,9 +81,21 @@ Cloud Volumes ONTAP システムで WORM ストレージをアクティブにし
 
 
 
+== WORMとデータの階層化
+
+Cloud Volumes ONTAP 9.8以降の新規システムを作成する場合は、データ階層化とWORMストレージの両方を有効にすることができます。WORMストレージによるデータ階層化を有効にすると、データをクラウドのオブジェクトストアに階層化できます。
+
+データ階層化とWORMストレージの両方を有効にする場合は、次の点に注意してください。
+
+* オブジェクトストレージに階層化されたデータには、ONTAP のWORM機能は含まれていません。WORMの機能をエンドツーエンドで維持するには、バケットの権限を正しく設定する必要があります。
+* オブジェクトストレージに階層化されたデータはWORM機能を保持しません。つまり、バケットとコンテナへのフルアクセス権を持つ技術的には、ONTAP によって階層化されたオブジェクトをだれでも削除できます。
+* Cloud Volumes ONTAP 9.8へのリバートまたはダウングレードは、WORMと階層化を有効にしたあとはブロックされます。
+
+
+
+
 == 制限
 
 * Cloud Volumes ONTAP の WORM ストレージは、「信頼されたストレージ管理者」モデルで機能します。WORM ファイルは書き換えから保護されますが、期限切れ前の WORM データがボリュームに含まれていた場合でも、クラスタ管理者はボリュームを削除できます。
 * 信頼できるストレージ管理者モデルに加えて、 Cloud Volumes ONTAP の WORM ストレージも「信頼できるクラウド管理者」モデルで暗黙的に動作します。クラウド管理者は、クラウドプロバイダからクラウドストレージを直接削除するか、編集することで、有効期限が切れる前に WORM データを削除できました。
-* WORM ストレージをアクティブ化すると、オブジェクトストレージへのデータ階層化を有効にできません。
 

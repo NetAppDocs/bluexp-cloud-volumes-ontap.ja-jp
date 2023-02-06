@@ -1,10 +1,10 @@
 ---
 sidebar: sidebar 
 permalink: task-deploying-gcp.html 
-keywords: Cloud Volumes ONTAP, deploying, launching, creating, deploy, launch, create, gcp, BYOL, license key, serial number, location, license, preconfigured packages, programmatic deployments, disk size, write speed, access control, volume protection, usage profile, register, CIFS share, quota, qtree, HA, high availability, gcp ha, ha in gcp, ha pair 
+keywords: Cloud Volumes ONTAP, deploying, launching, creating, deploy, launch, create,  BYOL, license key, serial number, location, license, preconfigured packages, programmatic deployments, disk size, write speed, access control, volume protection, usage profile, register, CIFS share, quota, qtree, HA, high availability, google cloud ha, ha in google cloud, ha pair 
 summary: Cloud Volumes ONTAP は、シングルシステム構成または Google Cloud Platform の HA ペアとして起動できます。 
 ---
-= GCP での Cloud Volumes ONTAP の起動
+= Google Cloud で Cloud Volumes ONTAP を起動しています
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,7 +14,7 @@ summary: Cloud Volumes ONTAP は、シングルシステム構成または Googl
 
 
 [role="lead"]
-Cloud Volumes ONTAP は、シングルノード構成または Google Cloud Platform の HA ペアとして起動できます。
+Cloud Volumes ONTAP は、シングルノード構成またはGoogle CloudのHAペアとして起動できます。
 
 
 
@@ -32,7 +32,7 @@ Cloud Volumes ONTAP は、シングルノード構成または Google Cloud Plat
 
 * 使用する構成についての理解。
 +
-設定を選択し、管理者から GCP ネットワーク情報を取得して準備を完了しておく必要があります。詳細については、を参照してください link:task-planning-your-config-gcp.html["Cloud Volumes ONTAP 構成を計画"]。
+構成を選択し、管理者からGoogle Cloudネットワーク情報を入手しておく必要があります。詳細については、を参照してください link:task-planning-your-config-gcp.html["Cloud Volumes ONTAP 構成を計画"]。
 
 * Cloud Volumes ONTAP のライセンスを設定するために必要な事項を理解する。
 +
@@ -51,9 +51,9 @@ link:task-set-up-licensing-gcp.html["ライセンスの設定方法について�
 
 
 
-== GCP でシングルノードシステムを起動する
+== Google Cloudでのシングルノードシステムの起動
 
-GCPでCloud Volumes ONTAP を起動するには、BlueXPで作業環境を作成します。
+BlueXPで作業環境を作成し、Cloud Volumes ONTAP をGoogle Cloudで起動します。
 
 .手順
 . 左側のナビゲーションメニューから、* Storage > Canvas *を選択します。
@@ -70,13 +70,13 @@ GCPでCloud Volumes ONTAP を起動するには、BlueXPで作業環境を作成
 | フィールド | 説明 
 
 
-| 作業環境名 | BlueXPは、作業環境名を使用して、Cloud Volumes ONTAP システムとGCP VMインスタンスの両方に名前を付けます。また、このオプションを選択した場合は、事前定義されたセキュリティグループのプレフィックスとして名前が使用されます。 
+| 作業環境名 | BlueXPは、作業環境名を使用して、Cloud Volumes ONTAP システムとGoogle Cloud VMインスタンスの両方に名前を付けます。また、このオプションを選択した場合は、事前定義されたセキュリティグループのプレフィックスとして名前が使用されます。 
 
 
 | サービスアカウント名 | を使用する場合は link:concept-data-tiering.html["データの階層化"] または https://docs.netapp.com/us-en/cloud-manager-backup-restore/concept-backup-to-cloud.html["クラウドバックアップ"^] Cloud Volumes ONTAP では、 * サービスアカウント * を有効にして、事前定義されたストレージ管理者ロールが割り当てられたサービスアカウントを選択する必要があります。 link:task-creating-gcp-service-account.html["サービスアカウントの作成方法について説明します"]。 
 
 
-| ラベルを追加します | ラベルは GCP リソースのメタデータです。BlueXPは、システムに関連付けられたCloud Volumes ONTAP システムとGCPリソースにラベルを追加します。作業環境の作成時にユーザインターフェイスからラベルを 4 つまで追加し、その後追加することができます。API では、作業環境の作成時にラベルを 4 つに制限することはありません。ラベルの詳細については、を参照してください https://cloud.google.com/compute/docs/labeling-resources["Google Cloud のドキュメント：「 Labeling Resources"^]。 
+| ラベルを追加します | ラベルは、Google Cloudリソースのメタデータです。BlueXPは、システムに関連付けられているCloud Volumes ONTAP システムとGoogle Cloudリソースにラベルを追加します。作業環境の作成時にユーザインターフェイスからラベルを 4 つまで追加し、その後追加することができます。API では、作業環境の作成時にラベルを 4 つに制限することはありません。ラベルの詳細については、を参照してください https://cloud.google.com/compute/docs/labeling-resources["Google Cloud のドキュメント：「 Labeling Resources"^]。 
 
 
 | ユーザ名とパスワード | Cloud Volumes ONTAP クラスタ管理者アカウントのクレデンシャルです。このクレデンシャルを使用して、 System Manager またはその CLI から Cloud Volumes ONTAP に接続できます。default_admin_user の名前をそのまま使用するか ' カスタム・ユーザー名に変更します 
@@ -92,15 +92,19 @@ NOTE: これは、BlueXP用に設定したサービスアカウントです。 l
 
 [ サブスクリプションの追加 ] をクリックして、選択した資格情報をサブスクリプションに関連付けます。
 
-従量課金制の Cloud Volumes ONTAP システムを作成するには、 GCP Marketplace から Cloud Volumes ONTAP へのサブスクリプションに関連付けられている GCP プロジェクトを選択する必要があります。
+従量課金制のCloud Volumes ONTAP システムを作成するには、Google Cloud MarketplaceからCloud Volumes ONTAP へのサブスクリプションに関連付けられているGoogle Cloudプロジェクトを選択する必要があります。
 
 |===
 +
-次のビデオでは、従量課金制の Marketplace サブスクリプションを GCP プロジェクトに関連付ける方法を説明します。または、の手順に従って、に登録します https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-adding-gcp-accounts.html["Marketplace サブスクリプションと GCP クレデンシャルの関連付け"^] セクション。
+次のビデオでは、従量課金制のMarketplaceサブスクリプションをGoogle Cloudプロジェクトに関連付ける方法を紹介します。または、の手順に従って、に登録します https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-adding-gcp-accounts.html["MarketplaceサブスクリプションとGoogle Cloudクレデンシャルの関連付け"^] セクション。
 
 +
 video::video_subscribing_gcp.mp4[width=848,height=480]
 . * サービス * ：このシステムで使用するサービスを選択します。クラウドバックアップまたは階層化を選択するには、手順 3 でサービスアカウントを指定しておく必要があります。
++
+
+TIP: WORMとデータの階層化を利用する場合は、クラウドバックアップを無効にし、バージョン9.8以降のCloud Volumes ONTAP 作業環境を導入する必要があります。
+
 . *場所と接続性*：場所を選択し、ファイアウォールポリシーを選択して、データ階層化のためのGoogle Cloudストレージへのネットワーク接続を確認します。
 +
 次の表では、ガイダンスが必要なフィールドについて説明します。
@@ -148,30 +152,33 @@ NOTE: 選択したバージョンで新しいリリース候補、一般提供�
 シンプルなプロビジョニングオプションを使用した場合、ディスクサイズは、初期アグリゲートのすべてのディスクと、BlueXPで作成される追加のアグリゲートのサイズです。Advanced Allocation オプションを使用すると、異なるディスクサイズを使用するアグリゲートを作成できます。
 
 +
-ディスクの種類とサイズの選択については、を参照してください link:task-planning-your-config-gcp.html#sizing-your-system-in-gcp["GCP でシステムのサイジングを行う"]。
+ディスクの種類とサイズの選択については、を参照してください link:task-planning-your-config-gcp.html#sizing-your-system-in-gcp["Google Cloudでのシステムのサイジング"]。
 
-. * Write Speed & WORM * ：「 * Normal * 」または「 * High * write speed 」を選択し、必要に応じて Write Once 、 Read Many （ WORM ）ストレージをアクティブにします。
+. *書き込み速度とWORM *：
 +
-書き込み速度の選択はシングルノードシステムでのみサポートされます。
-
+.. 必要に応じて、「標準」または「高速」の書き込み速度を選択します。
 +
 link:concept-write-speed.html["書き込み速度の詳細については、こちらをご覧ください。"]。
 
+.. 必要に応じて、Write Once、Read Many（WORM）ストレージをアクティブにします。
 +
-データの階層化が有効になっていると、 WORM を有効にできません。
+Cloud Volumes ONTAP 9.7以前のバージョンでデータ階層化が有効になっている場合は、WORMを有効にすることはできません。Cloud Volumes ONTAP 9.8へのリバートまたはダウングレードは、WORMと階層化を有効にしたあとはブロックされます。
 
 +
 link:concept-worm.html["WORM ストレージの詳細については、こちらをご覧ください。"]。
 
-. * Google Cloud Platform でのデータ階層化 * ：最初のアグリゲートでデータの階層化を有効にするかどうかを選択し、階層化されたデータのストレージクラスを選択してから、事前に定義されたストレージ管理者ロール（ Cloud Volumes ONTAP 9.7 以降で必要）を持つサービスアカウントを選択します。 または GCP アカウントを選択します（ Cloud Volumes ONTAP 9.6 では必須）。
+.. WORMストレージをアクティブ化する場合は、保持期間を選択します。
+
+
+. * Google Cloud Platformでのデータ階層化*：最初のアグリゲートでデータの階層化を有効にするかどうかを選択し、階層化されたデータのストレージクラスを選択してから、事前に定義されたストレージ管理者ロール（Cloud Volumes ONTAP 9.7以降で必要）を持つサービスアカウントを選択します。または、Google Cloudアカウントを選択します（Cloud Volumes ONTAP 9.6に必要）。
 +
 次の点に注意してください。
 
 +
 ** Cloud Volumes ONTAP インスタンスでサービスアカウントを設定します。このサービスアカウントは、 Google Cloud Storage バケットへのデータ階層化の権限を提供します。Connectorサービスアカウントを階層化サービスアカウントのユーザーとして追加してください。追加しないと、BlueXPから選択できません
-** GCP アカウントの追加については、を参照してください https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-adding-gcp-accounts.html["でのデータ階層化のための GCP アカウントの設定と追加 9.6."^]。
+** Google Cloudアカウントの追加については、を参照してください https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-adding-gcp-accounts.html["9.6でのデータ階層化用にGoogle Cloudアカウントを設定および追加します"^]。
 ** ボリュームを作成または編集するときに、特定のボリューム階層化ポリシーを選択できます。
-** データの階層化を無効にした場合は、後続のアグリゲートで有効にできますが、システムをオフにして GCP コンソールからサービスアカウントを追加する必要があります。
+** データの階層化を無効にすると、以降のアグリゲートで有効にすることができますが、システムの電源をオフにして、Google Cloudコンソールからサービスアカウントを追加する必要があります。
 +
 link:concept-data-tiering.html["データ階層化の詳細については、こちらをご覧ください。"]。
 
@@ -247,7 +254,7 @@ image:screenshot_cot_vol.gif["スクリーンショット： Cloud Volumes ONTAP
 . * レビューと承認 *: 選択内容を確認して確認します。
 +
 .. 設定の詳細を確認します。
-.. [詳細情報*]をクリックして、BlueXPが購入するサポートとGCPリソースの詳細を確認します。
+.. サポートの詳細とBlueXPが購入するGoogle Cloudのリソースを確認するには、[詳細情報*]をクリックします。
 .. [* I understand ... * （理解しています ... * ） ] チェックボックスを選択
 .. [Go*] をクリックします。
 
@@ -271,9 +278,9 @@ Cloud Volumes ONTAP システムの導入で問題が発生した場合は、障
 
 
 
-== GCP で HA ペアを起動する
+== Google CloudでのHAペアの起動
 
-GCPでCloud Volumes ONTAP を起動するには、BlueXPで作業環境を作成します。
+BlueXPで作業環境を作成し、Cloud Volumes ONTAP をGoogle Cloudで起動します。
 
 .手順
 . 左側のナビゲーションメニューから、* Storage > Canvas *を選択します。
@@ -289,13 +296,13 @@ GCPでCloud Volumes ONTAP を起動するには、BlueXPで作業環境を作成
 | フィールド | 説明 
 
 
-| 作業環境名 | BlueXPは、作業環境名を使用して、Cloud Volumes ONTAP システムとGCP VMインスタンスの両方に名前を付けます。また、このオプションを選択した場合は、事前定義されたセキュリティグループのプレフィックスとして名前が使用されます。 
+| 作業環境名 | BlueXPは、作業環境名を使用して、Cloud Volumes ONTAP システムとGoogle Cloud VMインスタンスの両方に名前を付けます。また、このオプションを選択した場合は、事前定義されたセキュリティグループのプレフィックスとして名前が使用されます。 
 
 
 | サービスアカウント名 | を使用する場合は link:concept-data-tiering.html["階層化"] または https://docs.netapp.com/us-en/cloud-manager-backup-restore/concept-backup-to-cloud.html["クラウドバックアップ"^] サービスを利用するには、 * Service Account * スイッチを有効にし、事前定義された Storage Admin ロールが割り当てられたサービスアカウントを選択する必要があります。 
 
 
-| ラベルを追加します | ラベルは GCP リソースのメタデータです。BlueXPは、システムに関連付けられたCloud Volumes ONTAP システムとGCPリソースにラベルを追加します。作業環境の作成時にユーザインターフェイスからラベルを 4 つまで追加し、その後追加することができます。API では、作業環境の作成時にラベルを 4 つに制限することはありません。ラベルの詳細については、を参照してください https://cloud.google.com/compute/docs/labeling-resources["Google Cloud のドキュメント：「 Labeling Resources"^]。 
+| ラベルを追加します | ラベルは、Google Cloudリソースのメタデータです。BlueXPは、システムに関連付けられているCloud Volumes ONTAP システムとGoogle Cloudリソースにラベルを追加します。作業環境の作成時にユーザインターフェイスからラベルを 4 つまで追加し、その後追加することができます。API では、作業環境の作成時にラベルを 4 つに制限することはありません。ラベルの詳細については、を参照してください https://cloud.google.com/compute/docs/labeling-resources["Google Cloud のドキュメント：「 Labeling Resources"^]。 
 
 
 | ユーザ名とパスワード | Cloud Volumes ONTAP クラスタ管理者アカウントのクレデンシャルです。このクレデンシャルを使用して、 System Manager またはその CLI から Cloud Volumes ONTAP に接続できます。default_admin_user の名前をそのまま使用するか ' カスタム・ユーザー名に変更します 
@@ -311,15 +318,19 @@ NOTE: これは、BlueXP用に設定したサービスアカウントです。 l
 
 [ サブスクリプションの追加 ] をクリックして、選択した資格情報をサブスクリプションに関連付けます。
 
-従量課金制の Cloud Volumes ONTAP システムを作成するには、 GCP Marketplace から Cloud Volumes ONTAP へのサブスクリプションに関連付けられている GCP プロジェクトを選択する必要があります。
+従量課金制のCloud Volumes ONTAP システムを作成するには、Google Cloud MarketplaceからCloud Volumes ONTAP へのサブスクリプションに関連付けられているGoogle Cloudプロジェクトを選択する必要があります。
 
 |===
 +
-次のビデオでは、従量課金制の Marketplace サブスクリプションを GCP プロジェクトに関連付ける方法を説明します。または、の手順に従って、に登録します https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-adding-gcp-accounts.html["Marketplace サブスクリプションと GCP クレデンシャルの関連付け"^] セクション。
+次のビデオでは、従量課金制のMarketplaceサブスクリプションをGoogle Cloudプロジェクトに関連付ける方法を紹介します。または、の手順に従って、に登録します https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-adding-gcp-accounts.html["MarketplaceサブスクリプションとGoogle Cloudクレデンシャルの関連付け"^] セクション。
 
 +
 video::video_subscribing_gcp.mp4[width=848,height=480]
 . * サービス * ：このシステムで使用するサービスを選択します。クラウドバックアップまたは階層化を選択するには、手順 3 でサービスアカウントを指定しておく必要があります。
++
+
+TIP: WORMとデータの階層化を利用する場合は、クラウドバックアップを無効にし、バージョン9.8以降のCloud Volumes ONTAP 作業環境を導入する必要があります。
+
 . *HA 配置モデル *: HA 構成用に複数のゾーン ( 推奨 ) または単一ゾーンを選択します。次に、リージョンとゾーンを選択します。
 +
 link:concept-ha-google-cloud.html["HA 導入モデルの詳細については、こちらをご覧ください"]。
@@ -371,20 +382,32 @@ NOTE: 選択したバージョンで新しいリリース候補、一般提供�
 シンプルなプロビジョニングオプションを使用した場合、ディスクサイズは、初期アグリゲートのすべてのディスクと、BlueXPで作成される追加のアグリゲートのサイズです。Advanced Allocation オプションを使用すると、異なるディスクサイズを使用するアグリゲートを作成できます。
 
 +
-ディスクの種類とサイズの選択については、を参照してください link:task-planning-your-config-gcp.html#sizing-your-system-in-gcp["GCP でシステムのサイジングを行う"]。
+ディスクの種類とサイズの選択については、を参照してください link:task-planning-your-config-gcp.html#sizing-your-system-in-gcp["Google Cloudでのシステムのサイジング"]。
 
-. * WORM * ：必要に応じて、 Write Once Read Many （ WORM ）ストレージをアクティブにします。
+. *書き込み速度とWORM *：
 +
-データの階層化が有効になっていると、 WORM を有効にできません。 link:concept-worm.html["WORM ストレージの詳細については、こちらをご覧ください。"]。
+.. 必要に応じて、「標準」または「高速」の書き込み速度を選択します。
++
+link:concept-write-speed.html["書き込み速度の詳細については、こちらをご覧ください。"]。
 
-. * Google Cloud Platform でのデータ階層化 * ：最初のアグリゲートでデータの階層化を有効にするかどうかを選択し、階層化データのストレージクラスを選択してから、定義済みの Storage Admin ロールを持つサービスアカウントを選択します。
+.. 必要に応じて、Write Once、Read Many（WORM）ストレージをアクティブにします。
++
+Cloud Volumes ONTAP 9.7以前のバージョンでデータ階層化が有効になっている場合は、WORMを有効にすることはできません。Cloud Volumes ONTAP 9.8へのリバートまたはダウングレードは、WORMと階層化を有効にしたあとはブロックされます。
+
++
+link:concept-worm.html["WORM ストレージの詳細については、こちらをご覧ください。"]。
+
+.. WORMストレージをアクティブ化する場合は、保持期間を選択します。
+
+
+. * Google Cloudでのデータ階層化*：最初のアグリゲートでデータの階層化を有効にするかどうかを選択し、階層化データのストレージクラスを選択してから、定義済みのStorage Adminロールを持つサービスアカウントを選択します。
 +
 次の点に注意してください。
 
 +
 ** Cloud Volumes ONTAP インスタンスでサービスアカウントを設定します。このサービスアカウントは、 Google Cloud Storage バケットへのデータ階層化の権限を提供します。Connectorサービスアカウントを階層化サービスアカウントのユーザーとして追加してください。追加しないと、BlueXPから選択できません。
 ** ボリュームを作成または編集するときに、特定のボリューム階層化ポリシーを選択できます。
-** データの階層化を無効にした場合は、後続のアグリゲートで有効にできますが、システムをオフにして GCP コンソールからサービスアカウントを追加する必要があります。
+** データの階層化を無効にすると、以降のアグリゲートで有効にすることができますが、システムの電源をオフにして、Google Cloudコンソールからサービスアカウントを追加する必要があります。
 +
 link:concept-data-tiering.html["データ階層化の詳細については、こちらをご覧ください。"]。
 
@@ -460,7 +483,7 @@ image:screenshot_cot_vol.gif["スクリーンショット： Cloud Volumes ONTAP
 . * レビューと承認 *: 選択内容を確認して確認します。
 +
 .. 設定の詳細を確認します。
-.. [詳細情報*]をクリックして、BlueXPが購入するサポートとGCPリソースの詳細を確認します。
+.. サポートの詳細とBlueXPが購入するGoogle Cloudのリソースを確認するには、[詳細情報*]をクリックします。
 .. [* I understand ... * （理解しています ... * ） ] チェックボックスを選択
 .. [Go*] をクリックします。
 

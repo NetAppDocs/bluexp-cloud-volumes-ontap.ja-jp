@@ -88,6 +88,10 @@ video::video_subscribing_azure.mp4[width=848,height=480]
 +
 ** https://docs.netapp.com/us-en/cloud-manager-data-sense/concept-cloud-compliance.html["クラウドデータセンスの詳細をご確認ください"^]
 ** https://docs.netapp.com/us-en/cloud-manager-backup-restore/concept-backup-to-cloud.html["Cloud Backup の詳細については、こちらをご覧ください"^]
++
+
+TIP: WORMとデータの階層化を利用する場合は、クラウドバックアップを無効にし、バージョン9.8以降のCloud Volumes ONTAP 作業環境を導入する必要があります。
+
 
 
 . *場所*：リージョン、アベイラビリティゾーン、VNet、およびサブネットを選択し、チェックボックスを選択してコネクタとターゲットの場所間のネットワーク接続を確認します。
@@ -156,15 +160,24 @@ link:concept-data-tiering.html["データ階層化の詳細については、こ
 
 
 
-. * Write Speed & WORM * ：「 * Normal * 」または「 * High * write speed 」を選択し、必要に応じて Write Once 、 Read Many （ WORM ）ストレージをアクティブにします。
+. *書き込み速度とWORM *：
++
+.. 必要に応じて、「標準」または「高速」の書き込み速度を選択します。
 +
 link:concept-write-speed.html["書き込み速度の詳細については、こちらをご覧ください。"]。
 
+.. 必要に応じて、Write Once、Read Many（WORM）ストレージをアクティブにします。
 +
-データの階層化が有効になっていると、 WORM を有効にできません。
+このオプションは、特定のVMタイプに対してのみ使用できます。サポートされるVMタイプについては、を参照してください link:https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-configs-azure.html#ha-pairs["HAペアのライセンスでサポートされる構成"]。
+
++
+Cloud Volumes ONTAP 9.7以前のバージョンでデータ階層化が有効になっている場合は、WORMを有効にすることはできません。Cloud Volumes ONTAP 9.8へのリバートまたはダウングレードは、WORMと階層化を有効にしたあとはブロックされます。
 
 +
 link:concept-worm.html["WORM ストレージの詳細については、こちらをご覧ください。"]。
+
+.. WORMストレージをアクティブ化する場合は、保持期間を選択します。
+
 
 . * ボリュームの作成 * ：新しいボリュームの詳細を入力するか、 * スキップ * をクリックします。
 +
@@ -298,6 +311,10 @@ video::video_subscribing_azure.mp4[width=848,height=480]
 +
 ** https://docs.netapp.com/us-en/cloud-manager-data-sense/concept-cloud-compliance.html["クラウドデータセンスの詳細をご確認ください"^]
 ** https://docs.netapp.com/us-en/cloud-manager-backup-restore/concept-backup-to-cloud.html["Cloud Backup の詳細については、こちらをご覧ください"^]
++
+
+TIP: WORMとデータの階層化を利用する場合は、クラウドバックアップを無効にし、バージョン9.8以降のCloud Volumes ONTAP 作業環境を導入する必要があります。
+
 
 
 . * HA導入モデル*：
@@ -375,18 +392,24 @@ link:concept-data-tiering.html["データ階層化の詳細については、こ
 
 
 
-. * Write Speed & WORM * ：「 * Normal * 」または「 * High * write speed 」を選択し、必要に応じて Write Once 、 Read Many （ WORM ）ストレージをアクティブにします。
+. *書き込み速度とWORM *：
++
+.. 必要に応じて、「標準」または「高速」の書き込み速度を選択します。
 +
 link:concept-write-speed.html["書き込み速度の詳細については、こちらをご覧ください。"]。
 
+.. 必要に応じて、Write Once、Read Many（WORM）ストレージをアクティブにします。
 +
 このオプションは、特定のVMタイプに対してのみ使用できます。サポートされるVMタイプについては、を参照してください link:https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-configs-azure.html#ha-pairs["HAペアのライセンスでサポートされる構成"]。
 
 +
-データの階層化が有効になっていると、 WORM を有効にできません。
+Cloud Volumes ONTAP 9.7以前のバージョンでデータ階層化が有効になっている場合は、WORMを有効にすることはできません。Cloud Volumes ONTAP 9.8へのリバートまたはダウングレードは、WORMと階層化を有効にしたあとはブロックされます。
 
 +
 link:concept-worm.html["WORM ストレージの詳細については、こちらをご覧ください。"]。
+
+.. WORMストレージをアクティブ化する場合は、保持期間を選択します。
+
 
 . *ストレージとWORMへのセキュアな通信*：AzureストレージアカウントへのHTTPS接続を有効にするかどうかを選択し、必要に応じてWrite Once Read Many（WORM）ストレージをアクティブ化します。
 +

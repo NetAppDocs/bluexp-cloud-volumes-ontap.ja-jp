@@ -214,7 +214,6 @@
   <block id="9ee8a2504ba9f03aae4b30973ea35ad4" category="inline-link">GCP の Cloud Volumes ONTAP でサポートされている構成</block>
   <block id="5356346579bd6c821def647592378a8a" category="paragraph">Cloud Volumes ONTAP システムの未フォーマット時の容量制限は、ライセンスに関連付けられています。追加の制限は、アグリゲートとボリュームのサイズに影響します。設定を計画する際には、これらの制限に注意する必要があります。</block>
   <block id="9265447fe548064ca54a98dd4a111bc0" category="inline-link">GCP の Cloud Volumes ONTAP でのストレージの制限</block>
-  <block id="a15ee6cc62f2676af04c7221ef99fc86" category="section-title">GCP でシステムのサイジングを行う</block>
   <block id="d1d964d1db8731b3b8174fa845b85de0" category="paragraph">Cloud Volumes ONTAP システムのサイジングを行うことで、パフォーマンスと容量の要件を満たすのに役立ちます。マシンタイプ、ディスクタイプ、およびディスクサイズを選択する際には、次の点に注意してください。</block>
   <block id="3ea4bf9da7622edeeae1bf80e9c5cded" category="list-text">マシンのタイプ</block>
   <block id="c216ce09fef0e1ef250512b3b43005f3" category="list-text">でサポートされているマシンタイプを確認します<block ref="f922a7787320953a33ee2591f979f78c" category="inline-link-rx"></block> 次に、サポートされている各マシンタイプについて Google の詳細を確認します。ワークロードの要件を、マシンタイプの vCPU とメモリの数と一致させます。各 CPU コアは、ネットワークパフォーマンスを向上させることに注意してください。</block>
@@ -308,11 +307,8 @@
   <block id="fcdf2fd9d6e147f33f4e8d5f15a8724a" category="inline-link-macro">ネットアップのランサムウェア向けソリューションの実装方法をご確認ください</block>
   <block id="8d9f62f251a8a411876740e6611a61cf" category="paragraph"><block ref="f1b4d319a2908121f0a6e639ae6c7cdc" category="inline-link-macro-rx"></block>。</block>
   <block id="eef256fe1f25b0dfdcc3971d7f0a9974" category="summary">Cloud Volumes ONTAP は、シングルシステム構成または Google Cloud Platform の HA ペアとして起動できます。</block>
-  <block id="fdbc311c4dd4bb425160f22f166435fa" category="doc">GCP での Cloud Volumes ONTAP の起動</block>
-  <block id="74b0825a91f70136708bc63f9253e89c" category="paragraph">Cloud Volumes ONTAP は、シングルノード構成または Google Cloud Platform の HA ペアとして起動できます。</block>
   <block id="8fece025a1a8fef7018449bf104a2527" category="section-title">始める前に</block>
   <block id="3a2e3bd3692b5b10d4e8d1876ea764e4" category="list-text">を用意しておく必要があります<block ref="31efb472d9740ae4bd5b3185af479587" category="inline-link-rx"></block>。</block>
-  <block id="af2fe545c466e4cd2bff03fb7e3dd4f2" category="paragraph">設定を選択し、管理者から GCP ネットワーク情報を取得して準備を完了しておく必要があります。詳細については、を参照してください <block ref="7c40283f4f533a5903d1033c57ef27f4" category="inline-link-macro-rx"></block>。</block>
   <block id="fb387d3403e9d0f4168631a5c1e65d3d" category="inline-link">プロジェクトで有効にします</block>
   <block id="3f7dd317abe229076594c229e96f375d" category="list-text">Google Cloud API はとする必要があります<block ref="2bf1d71c4d11fe94040400dbdd9bbe2e" category="inline-link-rx"></block>：</block>
   <block id="d82c8fcef9b6dd8fb6808c96dcbc5bb5" category="list-text">Cloud Deployment Manager V2 API</block>
@@ -320,7 +316,6 @@
   <block id="9e636409b20980fb5089c87705851b4d" category="list-text">Cloud Resource Manager API の略</block>
   <block id="1101b09020ade12e90a562489e315c8d" category="list-text">Compute Engine API</block>
   <block id="71660685d00034957db3f9a31c160978" category="list-text">ID およびアクセス管理（ IAM ） API</block>
-  <block id="2418d4e79163fe8a8ee473ee02e56b0d" category="section-title">GCP でシングルノードシステムを起動する</block>
   <block id="02468344d7eb024c93087ede43938890" category="list-text">* 場所を選択 * ：「 * Google Cloud * 」と「 * Cloud Volumes ONTAP * 」を選択します。</block>
   <block id="a52ac8a7b02f1fcb4758ef8608df8657" category="list-text">プロンプトが表示されたら、<block ref="3902ae0ac0b84277d412c62a8daa1bac" category="inline-link-rx"></block>。</block>
   <block id="47e8755e148fbe2f9d687cce086d2e82" category="list-text">* 詳細と認証情報 * ：プロジェクトを選択し、クラスタ名を指定します。必要に応じてサービスアカウントを選択し、ラベルを追加し、クレデンシャルを指定することもできます。</block>
@@ -334,36 +329,21 @@
   <block id="c9dac17a844d646dfb54058f973d40a5" category="cell">プロジェクトを編集します</block>
   <block id="380bfdc134190af310ad2f9812d7569f" category="inline-link-macro">このページで説明されているように</block>
   <block id="27d9b3c82bd8da92f73b89a66c20ba04" category="paragraph">[ サブスクリプションの追加 ] をクリックして、選択した資格情報をサブスクリプションに関連付けます。</block>
-  <block id="b878d292874b3ab2ea5568d71ba31a73" category="paragraph">従量課金制の Cloud Volumes ONTAP システムを作成するには、 GCP Marketplace から Cloud Volumes ONTAP へのサブスクリプションに関連付けられている GCP プロジェクトを選択する必要があります。</block>
-  <block id="0b6a93a12e94b586f0634222ff996760" category="inline-link">Marketplace サブスクリプションと GCP クレデンシャルの関連付け</block>
-  <block id="c6183bf47ae03a5fca3043b995daf4ad" category="paragraph">次のビデオでは、従量課金制の Marketplace サブスクリプションを GCP プロジェクトに関連付ける方法を説明します。または、の手順に従って、に登録します<block ref="1ca5652e3bd427104a4f5f3fa595cbd8" category="inline-link-rx"></block> セクション。</block>
   <block id="440dfcc60c7c21a1c797e881b2dd7646" category="list-text">* サービス * ：このシステムで使用するサービスを選択します。クラウドバックアップまたは階層化を選択するには、手順 3 でサービスアカウントを指定しておく必要があります。</block>
   <block id="2e5f3aa65f18453c5c51b5ffcf2214d5" category="inline-link">Google Cloud のドキュメント：「 Configuring Private Google Access</block>
   <block id="f72d7e736d5c07e6650c7c59c1d4beae" category="list-text">* 基盤となるストレージリソース * ：初期アグリゲートの設定、つまりディスクタイプと各ディスクのサイズを選択します。</block>
-  <block id="46c8ec27dde6a17388de3058e4f90f1b" category="paragraph">ディスクの種類とサイズの選択については、を参照してください <block ref="648252a904437aee014f01faec9e87c4" category="inline-link-macro-rx"></block>。</block>
-  <block id="8ee28f71a3913c6cd38d72baee984fef" category="list-text">* Write Speed &amp; WORM * ：「 * Normal * 」または「 * High * write speed 」を選択し、必要に応じて Write Once 、 Read Many （ WORM ）ストレージをアクティブにします。</block>
-  <block id="95fb8b2c3ed7d9abbd6c24af1369553c" category="paragraph">書き込み速度の選択はシングルノードシステムでのみサポートされます。</block>
-  <block id="bd33ad636739b8c6eade3eaa425ba1d4" category="list-text">* Google Cloud Platform でのデータ階層化 * ：最初のアグリゲートでデータの階層化を有効にするかどうかを選択し、階層化されたデータのストレージクラスを選択してから、事前に定義されたストレージ管理者ロール（ Cloud Volumes ONTAP 9.7 以降で必要）を持つサービスアカウントを選択します。 または GCP アカウントを選択します（ Cloud Volumes ONTAP 9.6 では必須）。</block>
-  <block id="528caeb1301c53d77a1cb7331729c1de" category="inline-link">でのデータ階層化のための GCP アカウントの設定と追加 9.6.</block>
-  <block id="256547a64d3e41d9a7c6a18d8d4243c1" category="list-text">GCP アカウントの追加については、を参照してください<block ref="73ec53281b5c885e66f789300c61c2d4" category="inline-link-rx"></block>。</block>
-  <block id="158462e318c84b41ed7070989fee5b8c" category="list-text">データの階層化を無効にした場合は、後続のアグリゲートで有効にできますが、システムをオフにして GCP コンソールからサービスアカウントを追加する必要があります。</block>
   <block id="03cb85499f4837ea1e2f43864e39d856" category="cell">CIFS サーバに関連付ける AD ドメイン内の組織単位。デフォルトは CN=Computers です。</block>
   <block id="547635b81ffb0f5ff05913c2836c7d9a" category="paragraph">詳細については、を参照してください <block ref="3385123430547e9830342b8fdb19e3d3" category="inline-link-macro-rx"></block> および <block ref="69d3706831f999336fb27703356dae22" category="inline-link-macro-rx"></block>。</block>
-  <block id="031ff168f42bf83e7c6ebec1250cef3f" category="section-title">GCP で HA ペアを起動する</block>
   <block id="7289ff9561bd8f3124de5e821bd3e8e0" category="list-text">Canvas ページで、 * Add Working Environment * をクリックし、画面の指示に従います。</block>
   <block id="b5a7d19f6788ad4a9fa68128eabe2be1" category="list-text">* 場所を選択 * ：「 * Google Cloud * 」と「 * Cloud Volumes ONTAP HA * 」を選択します。</block>
   <block id="337c62c6b6eb7319bae58701105e889c" category="inline-link-macro">階層化</block>
   <block id="44c4ed2245bcd5288c91b50f9a330bf4" category="cell">を使用する場合は <block ref="1295a10079ec492e012aa129538498c1" category="inline-link-macro-rx"></block> または<block ref="65043dfb781746b8fde5bfddb319eb97" category="inline-link-rx"></block> サービスを利用するには、 * Service Account * スイッチを有効にし、事前定義された Storage Admin ロールが割り当てられたサービスアカウントを選択する必要があります。</block>
-  <block id="65be3455c2d9a55c35fcbb66e8968d88" category="paragraph">次のビデオでは、従量課金制の Marketplace サブスクリプションを GCP プロジェクトに関連付ける方法を説明します。または、の手順に従って、に登録します<block ref="1ca5652e3bd427104a4f5f3fa595cbd8" category="inline-link-rx"></block> セクション。</block>
   <block id="166a4b640ff9a34dd7447ebf0e16518b" category="list-text">*HA 配置モデル *: HA 構成用に複数のゾーン ( 推奨 ) または単一ゾーンを選択します。次に、リージョンとゾーンを選択します。</block>
   <block id="96c883d1fa1e7ebdc724bb5cec521bbd" category="inline-link-macro">HA 導入モデルの詳細については、こちらをご覧ください</block>
   <block id="c03cb5d06936cb14d5f6dff824cc7c90" category="paragraph"><block ref="978980a9148c052b6f4164e267b317c3" category="inline-link-macro-rx"></block>。</block>
   <block id="74c223c0ac10d19fc933bf44bdfae707" category="list-text">* 接続 * ： HA 構成の場合は 4 つの VPC 、各 VPC のサブネットを選択し、ファイアウォールポリシーを選択します。</block>
   <block id="a5ee79c4e6a740f92d76e4ae26f7efd9" category="inline-link-macro">ネットワーク要件の詳細については、こちらをご覧ください</block>
   <block id="7e1b099e8ddd48733a860e9dc84718f9" category="paragraph"><block ref="81d7ec58de725abfb78667b4f46a89ab" category="inline-link-macro-rx"></block>。</block>
-  <block id="09c7f0ffca918d21158d7ea36691dcf2" category="list-text">* WORM * ：必要に応じて、 Write Once Read Many （ WORM ）ストレージをアクティブにします。</block>
-  <block id="279b45ef0c8a71337da715b526ec30ed" category="paragraph">データの階層化が有効になっていると、 WORM を有効にできません。 <block ref="b8e9389aa16366d8b675fc0ac72edf2e" category="inline-link-macro-rx"></block>。</block>
-  <block id="5a491f1bb01a92203592595fdf6ce353" category="list-text">* Google Cloud Platform でのデータ階層化 * ：最初のアグリゲートでデータの階層化を有効にするかどうかを選択し、階層化データのストレージクラスを選択してから、定義済みの Storage Admin ロールを持つサービスアカウントを選択します。</block>
   <block id="243c363888d8a767b0c39057fd91bece" category="doc">Cloud Volumes ONTAP システムを削除する</block>
   <block id="1b044bb64b9bbe28f6c0512f65cdaa86" category="paragraph">作業環境を削除しても、 Cloud Backup のバックアップや Cloud Data Sense のインスタンスや監視など、他のサービスによって管理されているリソースは削除されません。手動で削除する必要があります。そうしないと、これらのリソースの料金が引き続き請求されます。</block>
   <block id="ab3fdba113c7d85bf4272c78761ef0b8" category="inline-link">必要に応じて、バックアップを削除します</block>
@@ -847,7 +827,6 @@
   <block id="e646e16bee8b32e6ea29e30d01970a6c" category="section-title">制限</block>
   <block id="e2d4a517cbcae1c0966d5e478d743531" category="list-text">Cloud Volumes ONTAP の WORM ストレージは、「信頼されたストレージ管理者」モデルで機能します。WORM ファイルは書き換えから保護されますが、期限切れ前の WORM データがボリュームに含まれていた場合でも、クラスタ管理者はボリュームを削除できます。</block>
   <block id="6d0cc0f6b100bdce8cb06276811faff9" category="list-text">信頼できるストレージ管理者モデルに加えて、 Cloud Volumes ONTAP の WORM ストレージも「信頼できるクラウド管理者」モデルで暗黙的に動作します。クラウド管理者は、クラウドプロバイダからクラウドストレージを直接削除するか、編集することで、有効期限が切れる前に WORM データを削除できました。</block>
-  <block id="eb57ade58504f4d5c09cb5e8cd78ae55" category="list-text">WORM ストレージをアクティブ化すると、オブジェクトストレージへのデータ階層化を有効にできません。</block>
   <block id="c65544a3678422a2d15f8bc1a12dec12" category="doc">FlexVol ボリュームを作成します</block>
   <block id="6a6295e49dd6d445ae2c708b064bab15" category="list-text">任意のデータアグリゲート上にボリュームを作成します。 <block ref="f87b905002e05e67a79602c0e20e2e8c" category="inline-xref-macro-rx"></block>。</block>
   <block id="e016f8b4ca56502e28a613178565fc27" category="list-text">テンプレートからボリュームを作成し、データベースやストリーミングサービスなど特定のアプリケーションのワークロード要件に合わせてボリュームを最適化します。 <block ref="924dba442370e336c9e9ec48f12c601d" category="inline-xref-macro-rx"></block>。</block>
@@ -4220,7 +4199,6 @@
   <block id="6f3d93af7507d9ff7bead94d1ffc9cc1" category="paragraph">BlueXPでは、Cloud Volumes ONTAP とそれに関連付けられたストレージアカウント間の接続用にAzure Private Linkがデフォルトで有効になっています。Azure Private Linkは、Azureのエンドポイント間の接続を保護し、パフォーマンスを向上させます。</block>
   <block id="7dfd5068a6c1386a24bb81164b3321f3" category="paragraph">どちらの構成でも、BlueXPは常にCloud Volumes ONTAP とストレージアカウント間の接続に対するネットワークアクセスを制限します。ネットワークアクセスは、Cloud Volumes ONTAP が導入されているVNetおよびコネクタが導入されているVNetに限定されます。</block>
   <block id="2172036a4fb1da374a247000f3d0760e" category="paragraph">ビジネスで必要な場合は、BlueXPの設定を変更して、Azureプライベートリンクの代わりにサービスエンドポイントを使用するようにCloud Volumes ONTAP を設定できます。この設定を変更すると、新しく作成した環境 Cloud Volumes ONTAP システムに変更が適用されます。</block>
-  <block id="b2ae1e45589e149ddbd92b2a29aa5bd3" category="paragraph">ほとんどの場合、Cloud Volumes ONTAP でAzureプライベートリンクを設定するために必要な作業はありません。BlueXPはAzureプライベートリンクを管理しています。ただし、 Azure Private DNS を使用する場合は、構成ファイルを編集する必要があります。また、Azureのコネクタの場所に関する要件も把握しておく必要があります。</block>
   <block id="497286b7c4a76755ff0535ba3414dce0" category="paragraph">BlueXPがAzureにCloud Volumes ONTAP を導入すると、リソースグループにプライベートエンドポイントが作成されます。プライベートエンドポイントは、Cloud Volumes ONTAP のストレージアカウントに関連付けられます。その結果、 Cloud Volumes ONTAP ストレージへのアクセスは、 Microsoft バックボーンネットワークを経由します。</block>
   <block id="77bb2abfb8f3c95b3fdaf2c2e6814b89" category="section-title">AzureプライベートDNSの詳細をBlueXPに提供します</block>
   <block id="c6862ef0bb5d25a7ed0231faab734f0d" category="paragraph">を使用する場合<block ref="35609e050ed0963e042a408dda682719" category="inline-link-rx"></block>では、各コネクタの構成ファイルを変更する必要があります。それ以外の場合、Cloud Volumes ONTAP とそれに関連付けられたストレージアカウント間のAzure Private Link接続を有効にすることはできません。</block>
@@ -4268,14 +4246,10 @@
   <block id="43b4e2bfc7554b142c2e386bdb5e5828" category="paragraph">数カ月前に、 Cloud Volumes ONTAP が Amazon Web Services （ AWS ）の提供開始を宣言したことを発表しました。本日は、AWSのアウトポストでBlueXPとCloud Volumes ONTAP を検証しました。</block>
   <block id="bada065bfea7e34e9203e33edc44d46a" category="paragraph">これで、シングルノードの Cloud Volumes ONTAP システムを導入するアベイラビリティゾーンを選択できます。AZを選択しない場合は、BlueXPによってそのAZが選択されます。</block>
   <block id="4f0678a9e095858a4fa747c1c08210ee" category="paragraph">デフォルトでは、BlueXPはCloud Volumes ONTAP とそれに関連付けられたストレージアカウント間のAzure Private Link接続を有効にします。プライベートリンクは、 Azure のエンドポイント間の接続を保護します。</block>
-  <block id="e7fc9bf2d5b3fc237c8223fb2e9678d6" category="paragraph">GCPでCloud Volumes ONTAP を起動するには、BlueXPで作業環境を作成します。</block>
-  <block id="3cc94422ed10580ec406e0e90e02ed57" category="cell">BlueXPは、作業環境名を使用して、Cloud Volumes ONTAP システムとGCP VMインスタンスの両方に名前を付けます。また、このオプションを選択した場合は、事前定義されたセキュリティグループのプレフィックスとして名前が使用されます。</block>
-  <block id="1456e010de4447704584caa0f583807b" category="cell">ラベルは GCP リソースのメタデータです。BlueXPは、システムに関連付けられたCloud Volumes ONTAP システムとGCPリソースにラベルを追加します。作業環境の作成時にユーザインターフェイスからラベルを 4 つまで追加し、その後追加することができます。API では、作業環境の作成時にラベルを 4 つに制限することはありません。ラベルの詳細については、を参照してください<block ref="fa397f5b6985fa16ac695ba7d4f7a5a5" category="inline-link-rx"></block>。</block>
   <block id="23b98688a84e3975fec56c5adda952e4" category="paragraph">Cloud Volumes ONTAP を配置するプロジェクトを選択します。既定のプロジェクトは、BlueXPが存在するプロジェクトです。</block>
   <block id="851527495c0afb57caeba39ab6e50d4f" category="paragraph">ドロップダウンリストに他のプロジェクトが表示されない場合は、まだBlueXPサービスアカウントを他のプロジェクトに関連付けていません。Google Cloud コンソールに移動し、 IAM サービスを開き、プロジェクトを選択します。BlueXPロールを持つサービスアカウントをそのプロジェクトに追加しますプロジェクトごとにこの手順を繰り返す必要があります。</block>
   <block id="e11609cdeba36e9154797798b7bb710f" category="paragraph">BlueXPがファイアウォールポリシーを生成するようにした場合は、トラフィックを許可する方法を選択する必要があります。</block>
   <block id="4f4736bd9b3e508042a30af6279a85b0" category="list-text">Cloud Volumes ONTAP インスタンスでサービスアカウントを設定します。このサービスアカウントは、 Google Cloud Storage バケットへのデータ階層化の権限を提供します。Connectorサービスアカウントを階層化サービスアカウントのユーザーとして追加してください。追加しないと、BlueXPから選択できません</block>
-  <block id="a696f74c5e0abf27caa52c3cb3b4a270" category="list-text">[詳細情報*]をクリックして、BlueXPが購入するサポートとGCPリソースの詳細を確認します。</block>
   <block id="04429fb60c702313423187ef9f61c183" category="list-text">Cloud Volumes ONTAP インスタンスでサービスアカウントを設定します。このサービスアカウントは、 Google Cloud Storage バケットへのデータ階層化の権限を提供します。Connectorサービスアカウントを階層化サービスアカウントのユーザーとして追加してください。追加しないと、BlueXPから選択できません。</block>
   <block id="5d46d9d34dce758984570380cdc60f89" category="summary">Google環境をVPC Service Controlsでロックダウンする場合は、BlueXPとCloud Volumes ONTAP がどのようにGoogle APIを操作しているか、またサービスパラメータを設定してBlueXPとCloud Volumes ONTAP を展開する方法について理解しておく必要があります。</block>
   <block id="ad5571e5652bf6da2a87ff238427dd83" category="paragraph">Google Cloud環境をVPC Service Controlsでロックダウンする場合は、BlueXPとCloud Volumes ONTAP がGoogle Cloud APIとどのように連携するか、またBlueXPとCloud Volumes ONTAP を展開するためのサービス境界を構成する方法について理解しておく必要があります。</block>
@@ -4600,4 +4574,59 @@
   <block id="0f5cc196efac5a9fadb7272e55c7d686" category="summary">Cloud Volumes ONTAP システムが適切に動作するように Azure ネットワークをセットアップします。</block>
   <block id="323c8a1d29b771e63edf9d7a9968be4e" category="paragraph"><block ref="323c8a1d29b771e63edf9d7a9968be4e" category="inline-link-rx"></block></block>
   <block id="f483cdf3bbc75344ed7ba476a346b3ae" category="paragraph"><block ref="f483cdf3bbc75344ed7ba476a346b3ae" category="inline-link-rx"></block></block>
+  <block id="7dca2de7042f01604c6fa18e67e28e36" category="section-title">WORMとデータの階層化</block>
+  <block id="83f865c2acfa2b30d8adc34128a9b741" category="paragraph">Cloud Volumes ONTAP 9.8以降の新規システムを作成する場合は、データ階層化とWORMストレージの両方を有効にすることができます。WORMストレージによるデータ階層化を有効にすると、データをクラウドのオブジェクトストアに階層化できます。</block>
+  <block id="125acd88196259df48335a29149824c8" category="paragraph">データ階層化とWORMストレージの両方を有効にする場合は、次の点に注意してください。</block>
+  <block id="a915bf61fc4da5557d359b0301ad21ef" category="list-text">オブジェクトストレージに階層化されたデータには、ONTAP のWORM機能は含まれていません。WORMの機能をエンドツーエンドで維持するには、バケットの権限を正しく設定する必要があります。</block>
+  <block id="998c3b79cbc9135556e51847e16ca6c3" category="list-text">オブジェクトストレージに階層化されたデータはWORM機能を保持しません。つまり、バケットとコンテナへのフルアクセス権を持つ技術的には、ONTAP によって階層化されたオブジェクトをだれでも削除できます。</block>
+  <block id="795cfc8480eae289c5de0d65352581a1" category="list-text">Cloud Volumes ONTAP 9.8へのリバートまたはダウングレードは、WORMと階層化を有効にしたあとはブロックされます。</block>
+  <block id="8f3a22fee1fcc35025e3e68b3c7b5499" category="paragraph">ほとんどの場合、Cloud Volumes ONTAP でAzureプライベートリンクを設定するために必要な作業はありません。BlueXPはAzureプライベートリンクを管理しています。ただし、 Azure プライベート DNS を使用している場合は、構成ファイルを編集する必要があります。また、Azureのコネクタの場所に関する要件も把握しておく必要があります。</block>
+  <block id="e1bc7b26155063f1ce71b76f655669ef" category="section-title">2023年2月5日</block>
+  <block id="078640757da4b274abf89709c42d7741" category="paragraph">コネクタの3.9.26リリースでは、次の変更が加えられました。</block>
+  <block id="72c6f65b45015ee1135ff4bc2cce8860" category="section-title">AWSでの配置グループの作成</block>
+  <block id="b743dbbfdeafb74e0c5a918472cb8000" category="paragraph">AWS HA単一アベイラビリティゾーン（AZ）環境で配置グループを作成するための新しい設定が追加されました。失敗した配置グループの作成をバイパスして、AWS HA単一のAZ環境を正常に完了できるようにすることができます。</block>
+  <block id="a461eabe3ab382f71ac2e2f6d1e640ac" category="inline-link-macro">AWS HA単一AZ用の配置グループの作成を設定する</block>
+  <block id="f8574b4ca8450ebb66b430e6a34a7af0" category="paragraph">配置グループの作成設定の詳細については、を参照してください <block ref="76b771ebcb3b2314cb6a5531c78c8c56" category="inline-link-macro-rx"></block>。</block>
+  <block id="6d236ccded1ae841f7032a1cfa719500" category="section-title">プライベートDNSゾーン設定の更新</block>
+  <block id="c07e7cfc7f9b172f2a6463f65a2a4b56" category="paragraph">Azureプライベートリンクの使用時にプライベートDNSゾーンと仮想ネットワークの間にリンクを作成しないように、新しい設定が追加されました。作成はデフォルトで有効になっています。</block>
+  <block id="b4f6cf785c09e40247b4fa3feac5c2a6" category="paragraph"><block ref="b4f6cf785c09e40247b4fa3feac5c2a6" category="inline-link-macro-rx"></block></block>
+  <block id="9790d5e9d3f702b3255ef268a7bcfc80" category="section-title">WORMストレージとデータ階層化</block>
+  <block id="3277463bf1ddcca922f85a2efd92c721" category="paragraph">Cloud Volumes ONTAP 9.8以降のシステムを作成するときに、データ階層化とWORMストレージの両方を有効にできるようになりました。WORMストレージによるデータ階層化を有効にすると、データをクラウドのオブジェクトストアに階層化できます。</block>
+  <block id="2179dc7c2201ce007bdd7f0a37e78d5e" category="inline-link-macro">WORMストレージについて説明します。</block>
+  <block id="fc76ca2a106ecf45415f92e5b6f34f21" category="paragraph"><block ref="fc76ca2a106ecf45415f92e5b6f34f21" category="inline-link-macro-rx"></block></block>
+  <block id="cd46599be4a268656c67fc0d154a21ec" category="admonition">WORMとデータの階層化を利用する場合は、クラウドバックアップを無効にし、バージョン9.8以降のCloud Volumes ONTAP 作業環境を導入する必要があります。</block>
+  <block id="a0657ff0e169aee7a5734487716bb0c4" category="list-text">*書き込み速度とWORM *：</block>
+  <block id="8423b054b8164151c3151be7c37415ed" category="list-text">必要に応じて、「標準」または「高速」の書き込み速度を選択します。</block>
+  <block id="0a44bfce0bc775d87f0ac6a57bdba584" category="list-text">必要に応じて、Write Once、Read Many（WORM）ストレージをアクティブにします。</block>
+  <block id="6aeb3713e488b71d0dcbb96914a7951f" category="paragraph">Cloud Volumes ONTAP 9.7以前のバージョンでデータ階層化が有効になっている場合は、WORMを有効にすることはできません。Cloud Volumes ONTAP 9.8へのリバートまたはダウングレードは、WORMと階層化を有効にしたあとはブロックされます。</block>
+  <block id="02675533e5e8f922a01de0dd3f2892ad" category="list-text">WORMストレージをアクティブ化する場合は、保持期間を選択します。</block>
+  <block id="94fb201facd8c99956b25af1c56a2562" category="paragraph">Cloud Volumes ONTAP は、配置グループの作成に失敗したときに、単一のアベイラビリティゾーン（AZ）にAWSのハイアベイラビリティ（HA）構成の新しい導入をロールバックします。必要に応じて、配置グループを設定して、作成に失敗したときに必ずロールバックプロセスをバイパスすることで、展開を強制的に正常に完了させることができます。</block>
+  <block id="4b80314a98cf05dbcb3b2c5f33f9e79f" category="paragraph">デフォルトでは、配置グループがHA単一アベイラビリティゾーン作業環境の作成プロセスに失敗すると、配置は失敗し、ロールバックされます。また、Cloud Volumes ONTAP ノードとメディエーターインスタンスが両方とも存在しない場合は、配置グループの作成が失敗してロールバックされます。</block>
+  <block id="65f98964e7d8889df16715139a88da9d" category="paragraph">配置グループの作成に失敗するたびにロールバックプロセスをバイパスし、app.confファイルを設定して展開を続行できます。ロールバックプロセスを省略すると、導入が正常に完了し、配置グループの作成が失敗したことを示す通知がシステムによって生成され、完了した状態になります。</block>
+  <block id="8dbf64cf105a5f307a9741aab14c6d90" category="section-title">配置グループの障害時のロールバックを無効にする</block>
+  <block id="103d8850bfd2b5f919a2c306256386e7" category="paragraph">配置グループの障害をオフにするには、「rollback-on-placement-group-failure」フラグを「false」に設定する必要があります。</block>
+  <block id="53db5515d90522545dd9493db83f9ad7" category="list-text">SSHを使用してコネクタホストに接続し、ログインします。</block>
+  <block id="e5d0a443064f8c75bf5b7e1c953ec5f9" category="list-text">「rollback-on-placement-group-failure」パラメータの値を「false」に変更して、app.confを編集します。</block>
+  <block id="6b90ec112441f6a2ffc873da4c8cb544" category="admonition">デフォルトでは、「rollback-on-placement-group-failure」パラメータは「True」に設定されています。</block>
+  <block id="abb2030a97b8fa0f26925ca21ccacdce" category="paragraph">リブートは不要です。</block>
+  <block id="254d5c87d5ab437395f866390ea49cd0" category="doc">Google Cloud で Cloud Volumes ONTAP を起動しています</block>
+  <block id="952f472ceaa325aaac5f1352ed448f4e" category="paragraph">Cloud Volumes ONTAP は、シングルノード構成またはGoogle CloudのHAペアとして起動できます。</block>
+  <block id="5ce440fd1a40346ea0f26ec2424bfcb2" category="paragraph">構成を選択し、管理者からGoogle Cloudネットワーク情報を入手しておく必要があります。詳細については、を参照してください <block ref="7c40283f4f533a5903d1033c57ef27f4" category="inline-link-macro-rx"></block>。</block>
+  <block id="733156037751f70e529112a458e8ade6" category="section-title">Google Cloudでのシングルノードシステムの起動</block>
+  <block id="ee5b769fad1fe9446cc03d19d0a3d607" category="paragraph">BlueXPで作業環境を作成し、Cloud Volumes ONTAP をGoogle Cloudで起動します。</block>
+  <block id="aeeff95df93d5139e77aaa023ae4f78d" category="cell">BlueXPは、作業環境名を使用して、Cloud Volumes ONTAP システムとGoogle Cloud VMインスタンスの両方に名前を付けます。また、このオプションを選択した場合は、事前定義されたセキュリティグループのプレフィックスとして名前が使用されます。</block>
+  <block id="a4bf88119cf04fd8c616db4b8cc720b8" category="cell">ラベルは、Google Cloudリソースのメタデータです。BlueXPは、システムに関連付けられているCloud Volumes ONTAP システムとGoogle Cloudリソースにラベルを追加します。作業環境の作成時にユーザインターフェイスからラベルを 4 つまで追加し、その後追加することができます。API では、作業環境の作成時にラベルを 4 つに制限することはありません。ラベルの詳細については、を参照してください<block ref="fa397f5b6985fa16ac695ba7d4f7a5a5" category="inline-link-rx"></block>。</block>
+  <block id="9825444762440cb7be1345336853f4a6" category="paragraph">従量課金制のCloud Volumes ONTAP システムを作成するには、Google Cloud MarketplaceからCloud Volumes ONTAP へのサブスクリプションに関連付けられているGoogle Cloudプロジェクトを選択する必要があります。</block>
+  <block id="2dbb2a35f48f58340e040cb41a1d70b1" category="inline-link">MarketplaceサブスクリプションとGoogle Cloudクレデンシャルの関連付け</block>
+  <block id="493552d486a035ce25ba041dbe0317cc" category="paragraph">次のビデオでは、従量課金制のMarketplaceサブスクリプションをGoogle Cloudプロジェクトに関連付ける方法を紹介します。または、の手順に従って、に登録します<block ref="ae09191bda49c43cc387d269b21d9c61" category="inline-link-rx"></block> セクション。</block>
+  <block id="c328f8a7342e88f617f6d5b5de3ddde7" category="paragraph">ディスクの種類とサイズの選択については、を参照してください <block ref="d149bf4b730fbae097705dc422facd68" category="inline-link-macro-rx"></block>。</block>
+  <block id="06017a9b77812f0002c0c97398d0c75e" category="list-text">* Google Cloud Platformでのデータ階層化*：最初のアグリゲートでデータの階層化を有効にするかどうかを選択し、階層化されたデータのストレージクラスを選択してから、事前に定義されたストレージ管理者ロール（Cloud Volumes ONTAP 9.7以降で必要）を持つサービスアカウントを選択します。または、Google Cloudアカウントを選択します（Cloud Volumes ONTAP 9.6に必要）。</block>
+  <block id="bb74d89743a44b4a44d7b815ee74a08e" category="inline-link">9.6でのデータ階層化用にGoogle Cloudアカウントを設定および追加します</block>
+  <block id="a7e78bd76ee63b56217658f0ca0d9ae8" category="list-text">Google Cloudアカウントの追加については、を参照してください<block ref="d5ddd655d9651722d04dce7a3fd75f04" category="inline-link-rx"></block>。</block>
+  <block id="cd6afa4ed61f071f47165012e4286043" category="list-text">データの階層化を無効にすると、以降のアグリゲートで有効にすることができますが、システムの電源をオフにして、Google Cloudコンソールからサービスアカウントを追加する必要があります。</block>
+  <block id="5e80d11354160f3330ae3fb0f2186edf" category="list-text">サポートの詳細とBlueXPが購入するGoogle Cloudのリソースを確認するには、[詳細情報*]をクリックします。</block>
+  <block id="f23467ff8f84fc95ca2baa4b362c7865" category="section-title">Google CloudでのHAペアの起動</block>
+  <block id="1ed50148a7aaf99d753c01a51f01ef11" category="paragraph">次のビデオでは、従量課金制のMarketplaceサブスクリプションをGoogle Cloudプロジェクトに関連付ける方法を紹介します。または、の手順に従って、に登録します<block ref="ae09191bda49c43cc387d269b21d9c61" category="inline-link-rx"></block> セクション。</block>
+  <block id="3f73fdcd7eab5d7e67557205b890929e" category="list-text">* Google Cloudでのデータ階層化*：最初のアグリゲートでデータの階層化を有効にするかどうかを選択し、階層化データのストレージクラスを選択してから、定義済みのStorage Adminロールを持つサービスアカウントを選択します。</block>
+  <block id="1aff466e3c0d499007e1d801be1c66d9" category="sidebar">配置グループの作成を設定する</block>
 </blocks>

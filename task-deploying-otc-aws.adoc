@@ -91,6 +91,10 @@ TIP: 複数の IAM ユーザが同じ AWS アカウントで作業する場合�
 +
 ** https://docs.netapp.com/us-en/cloud-manager-data-sense/concept-cloud-compliance.html["クラウドデータセンスの詳細をご確認ください"^]
 ** https://docs.netapp.com/us-en/cloud-manager-backup-restore/concept-backup-to-cloud.html["Cloud Backup の詳細については、こちらをご覧ください"^]
++
+
+TIP: WORMとデータの階層化を利用する場合は、クラウドバックアップを無効にし、バージョン9.8以降のCloud Volumes ONTAP 作業環境を導入する必要があります。
+
 
 
 . * 場所と接続 * ：に記録したネットワーク情報を入力します link:task-planning-your-config.html#aws-network-information-worksheet["AWS ワークシート"]。
@@ -169,15 +173,21 @@ link:concept-data-tiering.html["データ階層化の仕組みをご確認くだ
 
 
 
-. * Write Speed & WORM * ：「 * Normal * 」または「 * High * write speed 」を選択し、必要に応じて Write Once 、 Read Many （ WORM ）ストレージをアクティブにします。
+. *書き込み速度とWORM *：
++
+.. 必要に応じて、「標準」または「高速」の書き込み速度を選択します。
 +
 link:concept-write-speed.html["書き込み速度の詳細については、こちらをご覧ください。"]。
 
+.. 必要に応じて、Write Once、Read Many（WORM）ストレージをアクティブにします。
 +
-データの階層化が有効になっていると、 WORM を有効にできません。
+Cloud Volumes ONTAP 9.7以前のバージョンでデータ階層化が有効になっている場合は、WORMを有効にすることはできません。Cloud Volumes ONTAP 9.8へのリバートまたはダウングレードは、WORMと階層化を有効にしたあとはブロックされます。
 
 +
 link:concept-worm.html["WORM ストレージの詳細については、こちらをご覧ください。"]。
+
+.. WORMストレージをアクティブ化する場合は、保持期間を選択します。
+
 
 . * ボリュームの作成 * ：新しいボリュームの詳細を入力するか、 * スキップ * をクリックします。
 +
@@ -321,6 +331,10 @@ TIP: 複数の IAM ユーザが同じ AWS アカウントで作業する場合�
 +
 ** https://docs.netapp.com/us-en/cloud-manager-data-sense/concept-cloud-compliance.html["クラウドデータセンスの詳細をご確認ください"^]
 ** https://docs.netapp.com/us-en/cloud-manager-backup-restore/task-backup-to-s3.html["Cloud Backup の詳細については、こちらをご覧ください"^]
++
+
+TIP: WORMとデータの階層化を利用する場合は、クラウドバックアップを無効にし、バージョン9.8以降のCloud Volumes ONTAP 作業環境を導入する必要があります。
+
 
 
 . *HA 導入モデル *: HA 構成を選択します。
@@ -409,15 +423,21 @@ link:concept-data-tiering.html["データ階層化の仕組みをご確認くだ
 
 
 
-. * Write Speed & WORM * ：「 * Normal * 」または「 * High * write speed 」を選択し、必要に応じて Write Once 、 Read Many （ WORM ）ストレージをアクティブにします。
+. *書き込み速度とWORM *：
++
+.. 必要に応じて、「標準」または「高速」の書き込み速度を選択します。
 +
 link:concept-write-speed.html["書き込み速度の詳細については、こちらをご覧ください。"]。
 
+.. 必要に応じて、Write Once、Read Many（WORM）ストレージをアクティブにします。
 +
-データの階層化が有効になっていると、 WORM を有効にできません。
+Cloud Volumes ONTAP 9.7以前のバージョンでデータ階層化が有効になっている場合は、WORMを有効にすることはできません。Cloud Volumes ONTAP 9.8へのリバートまたはダウングレードは、WORMと階層化を有効にしたあとはブロックされます。
 
 +
 link:concept-worm.html["WORM ストレージの詳細については、こちらをご覧ください。"]。
+
+.. WORMストレージをアクティブ化する場合は、保持期間を選択します。
+
 
 . * ボリュームの作成 * ：新しいボリュームの詳細を入力するか、 * スキップ * をクリックします。
 +
