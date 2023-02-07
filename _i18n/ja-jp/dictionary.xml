@@ -3047,7 +3047,6 @@
   <block id="8e3273e621dd5a9485259171b1b535e9" category="section-title">Azureでシステムのサイズを設定します</block>
   <block id="e17d83fdb14af6aea9c5838dcc9ece55" category="paragraph"><block ref="b2908e7df27905e20924b93b3ff0b803" category="inline-link-macro-rx"></block>。</block>
   <block id="96440bf30cd20c7ed50d0d7a8279917e" category="doc">Google CloudでCloud Volumes ONTAP 構成を計画する</block>
-  <block id="9b79239dba046d18af2dfc2ca929db17" category="list-text"><block ref="9b79239dba046d18af2dfc2ca929db17" category="inline-link-macro-rx"></block></block>
   <block id="18ff4ec9e6259918d45028a5d6040d91" category="section-title">サポートされているマシンタイプを選択してください</block>
   <block id="0d705fad98d8ea6c4ffe75e2508e2f92" category="section-title">GCPでシステムのサイズを設定します</block>
   <block id="9b183a2167e00c4527ad8d66a1342c3c" category="list-text">[*詳細と資格情報*]ページで、[資格情報の編集]、[サブスクリプションの追加]の順にクリックし、プロンプトに従ってGoogle Cloud Marketplaceでの従量課金制サービスに登録します。</block>
@@ -4629,4 +4628,5 @@
   <block id="1ed50148a7aaf99d753c01a51f01ef11" category="paragraph">次のビデオでは、従量課金制のMarketplaceサブスクリプションをGoogle Cloudプロジェクトに関連付ける方法を紹介します。または、の手順に従って、に登録します<block ref="ae09191bda49c43cc387d269b21d9c61" category="inline-link-rx"></block> セクション。</block>
   <block id="3f73fdcd7eab5d7e67557205b890929e" category="list-text">* Google Cloudでのデータ階層化*：最初のアグリゲートでデータの階層化を有効にするかどうかを選択し、階層化データのストレージクラスを選択してから、定義済みのStorage Adminロールを持つサービスアカウントを選択します。</block>
   <block id="1aff466e3c0d499007e1d801be1c66d9" category="sidebar">配置グループの作成を設定する</block>
+  <block id="f1e89d709c35aed2650bbf12a55f1ba1" category="list-text"><block ref="f1e89d709c35aed2650bbf12a55f1ba1" category="inline-link-macro-rx"></block></block>
 </blocks>

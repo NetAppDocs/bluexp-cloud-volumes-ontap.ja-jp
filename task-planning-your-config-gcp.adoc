@@ -23,7 +23,7 @@ Google Cloud に Cloud Volumes ONTAP を導入する場合は、ワークロー�
 Cloud Volumes ONTAP には、いくつかのライセンスオプションがあります。それぞれのオプションで、ニーズに合った消費モデルを選択できます。
 
 * link:concept-licensing.html["Cloud Volumes ONTAP のライセンスオプションについて説明します"]
-* link:task-set-up-licensing-gcp.html["ライセンスの設定方法について説明します"]
+* link:task-set-up-licensing-google.html["ライセンスの設定方法について説明します"]
 
 
 
