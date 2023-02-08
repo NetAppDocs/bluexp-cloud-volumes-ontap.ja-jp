@@ -156,17 +156,14 @@ Azureリソースグループに2つ目のCloud Volumes ONTAP HAペアを導入�
 
 
 
-=== セキュリティグループ
-
-セキュリティグループを作成する必要はありません。BlueXPではセキュリティグループが自動的に作成されます。独自のルールを使用する必要がある場合は、以下のセキュリティグループルールを参照してください。
-
-
-
 === セキュリティグループのルール
 
 BlueXPでは、Cloud Volumes ONTAP が正常に動作するために必要なインバウンドとアウトバウンドのルールを含むAzureセキュリティグループが作成されます。テスト目的でポートを参照したり、独自のセキュリティグループを使用したりする場合に使用します。
 
 Cloud Volumes ONTAP のセキュリティグループには、インバウンドルールとアウトバウンドルールの両方が必要です。
+
+
+TIP: コネクタに関する情報をお探しですか？ https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-ports-azure.html["コネクタのセキュリティグループルールを表示します"^]
 
 
 
@@ -435,4 +432,6 @@ NOTE: source は、 Cloud Volumes ONTAP システムのインターフェイス�
 
 コネクタをまだ作成していない場合は、コネクタのネットワーク要件も確認してください。
 
-https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-creating-connectors-azure.html["コネクタのネットワーク要件を確認します"^]
+* https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-creating-connectors-azure.html["コネクタのネットワーク要件を確認します"^]
+* https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-ports-azure.html["Azureのセキュリティグループルール"^]
+
