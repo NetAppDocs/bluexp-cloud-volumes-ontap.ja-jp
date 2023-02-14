@@ -3066,14 +3066,10 @@
   <block id="0c7af18d6ac0bf65ef1d6aec6f629263" category="list-text">AKVはデータSVM上でのみ設定できます</block>
   <block id="72bf37dc916a5b7107e5555c05e6deba" category="section-title">設定プロセス</block>
   <block id="29c35caadd576a358e25cf276cf3f5c4" category="list-text">優先SSHクライアントを使用してクラスタ管理LIFに接続します。</block>
-  <block id="04cf2d7d95d7d1c9ab9dbd7dbf46710c" category="list-text">ONTAP でadvanced権限モードに切り替えます。「set advanced-con off`」</block>
   <block id="d25bc3e2f3cccb27b01b1088c349f1eb" category="list-text">目的のデータSVMを特定し、そのDNS設定を確認します。「vserver services name-service dns show</block>
   <block id="fe0e659383af9bbfb75708c240c256f8" category="list-text">目的のデータSVMのDNSエントリが存在し、そのエントリにAzure DNSのエントリが含まれている場合は、対処は必要ありません。表示されない場合は、Azure DNS、プライベートDNS、またはオンプレミスサーバを指すデータSVMのDNSサーバエントリを追加します。これは、クラスタ管理SVMのエントリと一致している必要があります。vserver services name-service dns create -vserver _svm_name -domains_domain_name-servers _ip_address _'</block>
   <block id="e4919e440eb9972cf98c256c8354da12" category="list-text">データSVM用にDNSサービスが作成されたことを確認します。vserver services name-service dns show</block>
-  <block id="9d98aca60e70c6f5397deb1970b8afc4" category="list-text">アプリケーションの登録後に保存されたクライアントIDとテナントIDを使用してAzure Key Vaultを有効にします。「security key-manager external Azure enable -vserver _svm_name __-client-id_caz_client_client_ID_tenant_ID_name_azure-name_aze_key_name_-key_key_id_azure_key_id_id_`</block>
-  <block id="5ac6ffb19ceb9619fe5f2fb10414c629" category="list-text">キー管理ツールの構成を確認します。「security key-manager external Azure show</block>
   <block id="68f0035d3c55f26e0ec12ed454908a6e" category="list-text">キー管理ツールのステータスを確認します。「security key-manager external Azure check」出力は次のようになります。</block>
-  <block id="558f8f17a0bbaa44eeaadc7095d4ec67" category="paragraph">「SERVICE_Reachability」ステータスが「OK」でない場合、SVMは必要なすべての接続および権限を使用してAzure Key Vaultサービスに到達できません。初期構成で'kms _ wrapped _key_status'は'unknown'を報告します最初のボリュームが暗号化されると'ステータスはOKに変わります</block>
   <block id="776c67d51f3f1c503c9062c9d812c2b7" category="list-text">ボリュームが正しく作成および暗号化されたことを確認します。その場合、「-is-encrypted」パラメータは「true」と表示されます。vol show -vserver_svm_name_-fields is-cencryptedです</block>
   <block id="0741b6c1237f126924ebdaa3fe6dbc4e" category="doc">GoogleのCloud Key Management Serviceを使用してキーを管理します</block>
   <block id="0dbdff8ed1ef0e78c4dc84ace48205d6" category="inline-link-macro">Google Cloud Platform のキー管理サービス（ Cloud KMS ）</block>
@@ -3094,25 +3090,14 @@
   <block id="0a3c1ea98015fea252076643a7006949" category="list-text">アプリケーションの名前を指定し、サポートされているアプリケーションタイプを選択します。デフォルトの単一テナントでAzure Key Vaultの使用量が十分に設定されていること。[**登録**]を選択します。</block>
   <block id="1d409f5854c728f2ea49e519f12e2ff8" category="list-text">Azureの概要ウィンドウで、登録したアプリケーションを選択します。**アプリケーション（クライアント）ID**および**ディレクトリ（テナント）ID**を安全な場所にコピーします。これらの情報は、後で登録プロセスで必要になります。</block>
   <block id="4466def91ac19af993030eff5c4ea4ef" category="list-title">Azureクライアントシークレットを作成する</block>
-  <block id="138447381f65d7de53d276300e34ace2" category="list-text">Cloud Volumes ONTAP アプリケーション用のAzureポータルで、[** Ceritificates &amp; secrets]ペインを選択します。</block>
-  <block id="0d11323c8a6d694cbd738f596a517d2f" category="list-text">[**新しいクライアントシークレット**クライアントシークレットに意味のある名前を入力してください。ネットアップでは24カ月の有効期限を推奨していますが、クラウドガバナンスポリシーによっては、別の設定が必要になる場合があります。</block>
-  <block id="1fb1736b61369abce475039d7f448214" category="list-text">クライアントシークレットを保存するには、[**追加]を選択します。シークレットの**値**をすぐにコピーして、将来の設定のために安全な場所に保管してください。ページから移動してもシークレット値は表示されません。</block>
   <block id="2c1f18e5f9ee7d42406022e9ffe5854d" category="list-title">Azureキーバックアップを作成します</block>
-  <block id="19238aa3b8371b577668244b3228880e" category="list-text">既存のAzure Key Vaultを使用している場合は、Cloud Volumes ONTAP 構成に接続できますが、アクセスポリシーをこのプロセスの設定に合わせる必要があります。</block>
   <block id="b52e3778af65d886ba32b1fd67fdfb1b" category="list-text">Azureポータルで、[** Key Vaults（キーボルト）]セクションに移動します。</block>
-  <block id="92ffcbcc7fa86b0c7d82367345872f5a" category="list-text">[**作成**]を選択します。リソースグループ、地域、価格階層などの必要な情報を入力し、削除されたボールトを保持する日数と、パージ保護が有効かどうかを選択します。この構成ではデフォルトで十分ですが、クラウドガバナンスポリシーごとに異なる設定が必要になる場合があります。</block>
   <block id="5806c7463c14b44dd17992a1c031fa0f" category="list-text">アクセスポリシーを選択するには、** Next**を選択してください。</block>
-  <block id="a15b840e857b0be5423560edc5346ef6" category="list-text">ボリューム暗号化オプションとして[**Azure Disk Encryption]を選択し、権限モデルとして[**Vault access policy]を選択します。</block>
-  <block id="1f34b5f3ab0226f052fc177239cc4f91" category="list-text">［**アクセスポリシーの追加**］を選択します。</block>
-  <block id="68cd8db76e0574e7adc41824f92f13bf" category="list-text">[**テンプレートから構成する（オプション）**]フィールドの横にあるキャレットを選択します。次に、[** Key]、[Secret]、[Certification Management]を選択します。**</block>
   <block id="e4bff652065888d52fed75044894f9e7" category="list-text">各ドロップダウンメニュー(キー、シークレット、証明書)を選択し、**メニューリストの一番上にある[All]**を選択して、使用可能なすべてのアクセス許可を選択します。次の作業を完了しておきます</block>
-  <block id="527f287f763d308ba075a4aecc220dbe" category="list-text">**キー権限**:19が選択されています</block>
   <block id="71a8ddee35e94c488b23ac9ba055bb79" category="list-text">**シークレット権限**:8が選択されています</block>
   <block id="fee9a8fdd6aff1a6048d3ccee4f385a3" category="list-text">**証明書のアクセス許可**:16が選択されています</block>
-  <block id="a158ec2c7b6ac237a382adc4fdd76141" category="list-text">アクセスポリシーを作成するには、[**追加]を選択します。</block>
   <block id="93856c87f5f709c2bb22415396d9f2a6" category="list-text">**Next**を選択して、**Networking**オプションに進みます。</block>
   <block id="f10e4cb8be9ad6f896cadded4bf18cee" category="list-text">適切なネットワークアクセス方法を選択するか、**すべてのネットワーク**および**レビュー+作成**を選択して、キーボールトを作成します。（ネットワークアクセス方法は、ガバナンスポリシーまたは企業のクラウドセキュリティチームによって規定されている場合があります）。</block>
-  <block id="37e7091aa36439837070742f8d6bc7e9" category="list-text">キーボールトURIを記録します。作成したキーボールトで、概要メニューに移動し、右側のカラムから**Vault URI **をコピーします。これは、あとの手順で必要になります。</block>
   <block id="8925f0e46ff47371441124c2df44a2a3" category="list-title">暗号化キーを作成します</block>
   <block id="76f551dd2c984e558a618de45d9222ae" category="list-text">Cloud Volumes ONTAP 用に作成したキー・ボールトのメニューで、[** Keys**（キー**）]オプションに移動します。</block>
   <block id="4e6b60602e4345dfe01d9d28c342518e" category="list-text">[**生成/インポート**]を選択して、新しいキーを作成します。</block>
@@ -3131,7 +3116,6 @@
   <block id="a9f595a9e965e7fd1b0c9296a00dc089" category="list-text">Azureポータルで、**Virtual Networks**に移動します。</block>
   <block id="82a6e0886c87dc5bc69074249df4aa58" category="list-text">Cloud Volumes ONTAP 作業環境を展開した仮想ネットワークを選択し、ページの左側にある** Subnets **メニューを選択します。</block>
   <block id="d90b291a12c60639bd85c4fafde4ea97" category="list-text">Cloud Volumes ONTAP 環境のサブネット名をリストから選択します。</block>
-  <block id="c1c335737025d8b2354cceafcdabea4e" category="list-text">[**サービスエンドポイント**]見出しに移動します。ドロップダウンメニューで、リストから**Microsoft.AzureActiveDirectory **を選択します。</block>
   <block id="23b8cf63899cafd6a9d0b32fbdc5c6e8" category="list-text">**保存**を選択して、設定を取得します。</block>
   <block id="5bfda0e2440a8346cbb089805c29d898" category="list-title">Cloud Volumes ONTAP 構成</block>
   <block id="89fe433ed203b193e97ffc51ade125be" category="paragraph">正しく設定されていれば、Cloud Volumes ONTAP でボリュームが自動的に作成され、ボリューム暗号化が有効になります。</block>
@@ -4623,4 +4607,34 @@
   <block id="60f0453bf0393ab630be6aa37dc20180" category="inline-link">AWSのセキュリティグループのルール</block>
   <block id="f2ad0eeffca4d67e7eb677593c90d5bf" category="list-text"><block ref="f2ad0eeffca4d67e7eb677593c90d5bf" category="inline-link-rx"></block></block>
   <block id="384f4196da40ab94e0b11dc3977e8611" category="list-text">9.12.1 GA</block>
+  <block id="c8b50b13301d65b649c5dff955341f33" category="list-text">マルチテナント暗号化キー管理（MT_EK_MGMT）ライセンスが必要です</block>
+  <block id="f0ab1ba9c7cd2818ec6a7b9845d5261f" category="list-text">Azure Key Vaultアプリケーション登録用のAzureポータルで、[**証明書とシークレット**]ペインを選択します。</block>
+  <block id="07638cb7bdf5cf70a652a96bc9c441e6" category="list-text">［**新しいクライアントシークレット**］を選択します。クライアントシークレットにわかりやすい名前を入力します。ネットアップでは24カ月の有効期限を推奨していますが、クラウドガバナンスポリシーによっては、別の設定が必要になる場合があります。</block>
+  <block id="2e24e191003bd210535bb187b99bdb20" category="list-text">クライアントシークレットを作成するには、[**追加]をクリックします。**value**カラムに表示されているシークレット文字列をコピーし、後でで使用できるように安全な場所に保存します <block ref="0d835ce531ec9eb78a13d9e8f120db62" category="inline-xref-macro-rx"></block>。シークレット値は、ページから移動したあとに再び表示されません。</block>
+  <block id="eecc779e6126f4751ce25d8665d8752a" category="list-text">既存のAzure Key Vaultがある場合はCloud Volumes ONTAP 構成に接続できますが、このプロセスの設定にアクセスポリシーを適用する必要があります。</block>
+  <block id="122448c4ac87c414ab18368dae41855e" category="list-text">[**+Create]をクリックして、リソースグループ、地域、価格階層などの必要な情報を入力します。また、削除したボールトを保持する日数を入力し、キーボールトで**パージ保護を有効にする**を選択します。</block>
+  <block id="a3fc7215327425815c209a85394ac7b7" category="list-text">次のオプションを選択します。</block>
+  <block id="af5f7f2c0020b3ed0f205c32458068f6" category="list-text">[**アクセス構成**]で、[**ボールトアクセスポリシー**]を選択します。</block>
+  <block id="b9e0c7a11631ea448ff35e605b72d648" category="list-text">[**リソースアクセス**]で、[** Azure Disk Encryption for Volume Encryption**]を選択します。</block>
+  <block id="f5c11dc87be0aa92bd41fbe0503654ae" category="list-text">アクセスポリシーを追加するには、**+Create**を選択します。</block>
+  <block id="ab1ac4b8402c7f4aba23ed9129ab568e" category="list-text">[**テンプレートから構成する**]の下のドロップダウンメニューをクリックし、[**キー]、[シークレット]、[証明書管理**]テンプレートを選択します。</block>
+  <block id="4872bcef21c3e02f21757b52684f47bf" category="list-text">**キー権限**:20が選択されています</block>
+  <block id="bca072e8fff52a7319e53529df90d512" category="inline-image-macro">アクセスポリシーの作成のスクリーンショット。アクセスポリシーを作成するために必要なすべての権限の選択を示しています</block>
+  <block id="e02047bc895c66685e2c498b81be6b3b" category="paragraph"><block ref="e02047bc895c66685e2c498b81be6b3b" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="ced341d58338703f54e95bd3db0a954d" category="list-text">**Next**をクリックして、で作成した**Principal** Azure登録アプリケーションを選択します <block ref="cdef42bd73f4820f7c1e1f3c23ba776b" category="inline-xref-macro-rx"></block>。** Next **を選択します。</block>
+  <block id="ead3297d323f4e2e1b5901f516515f0c" category="admonition">1つのポリシーに割り当てることができるプリンシパルは1つだけです。</block>
+  <block id="8f613c9b4f99d908128e0e1562262e54" category="inline-image-macro">アクセスポリシープリンシパルの作成タブのスクリーンショット</block>
+  <block id="d583500a4249a3885c54806205e70c31" category="paragraph"><block ref="d583500a4249a3885c54806205e70c31" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="a5765d4b1939690e753a08c0f1e772f0" category="list-text">**「次へ」**を2回クリックして**「レビュー」および「作成」**に到着します。次に、[**作成**]をクリックします。</block>
+  <block id="02d7d5644299a84c630dbc080f8eb6a1" category="list-text">キーボールトURIを記録します。作成したキーボールトで、概要メニューに移動し、右側のカラムから**Vault URI **をコピーします。これはあとで実行する必要があります。</block>
+  <block id="dcb092b03c8c0dcaa99bfb2bfea600aa" category="list-text">[**サービスエンドポイント**]見出しに移動します。ドロップダウンメニューで、次のいずれかを選択します。</block>
+  <block id="d847c24a00a280e5290e5d14cdb0f117" category="list-text">** Microsoft.AzureActiveDirectory **</block>
+  <block id="86855d8b306c899d960bb79deeed75c7" category="list-text">**Microsoft.KeyVault **</block>
+  <block id="a76ae603816a82c4af9bddb7aee3afb9" category="list-text">** Microsoft.Storage**（オプション）</block>
+  <block id="a329f820fccae25ebe98d73c85c8006c" category="inline-image-macro">選択された3つのサービスを示すサービスエンドポイントのスクリーンショット</block>
+  <block id="892728a8cb7d01d3a80f6c63ad7a3b1a" category="paragraph"><block ref="892728a8cb7d01d3a80f6c63ad7a3b1a" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="5b430d19ce10cad3c93da5d1a58ae5da" category="list-text">ONTAP でadvanced権限モードに切り替えます。<block ref="b18455e94f1f10f091d6cc4ad2e0507e" prefix=" " category="inline-code"></block></block>
+  <block id="65533a408ee230b29deae5fd1634c46a" category="list-text">アプリケーションの登録後に保存されたクライアントIDとテナントIDを使用して、Azure Key Vaultを有効にします。<block ref="fc019c518ce1e237021d337077bd96cc" prefix=" " category="inline-code"></block></block>
+  <block id="2b92b9eae444abb7f44aa96b856847a4" category="paragraph">状況に応じて<block ref="c02e65ef2be24722283d91b62774dd3d" prefix=" " category="inline-code"></block> ステータスがではありません<block ref="e0aa021e21dddbd6d8cecec71e9cf564" prefix=" " category="inline-code"></block>では、必要なすべての接続と権限を使用してSVMがAzure Key Vaultサービスにアクセスすることはできません。Azureのネットワークポリシーとルーティングによって、プライベートVNetがAzure KeyVaultパブリックエンドポイントに到達できないようにしてください。その場合は、Azureプライベートエンドポイントを使用してVNet内からキーヴォールトにアクセスすることを検討してください。エンドポイントのプライベートIPアドレスを解決するために、SVMに静的ホストエントリを追加する必要がある場合もあります。</block>
+  <block id="840b18b97e1e55325d94f00b965a31cf" category="paragraph">。<block ref="5fb243bae51d7320aff8e09d0bb56325" prefix=" " category="inline-code"></block> が報告します<block ref="696b031073e74bf2cb98e5ef201d4aa3" prefix=" " category="inline-code"></block> 初期設定時。ステータスがに変わります<block ref="e0aa021e21dddbd6d8cecec71e9cf564" prefix=" " category="inline-code"></block> 最初のボリュームが暗号化されたあと。</block>
 </blocks>
