@@ -32,7 +32,7 @@ Flash Cacheは、特定のCloud Volumes ONTAP 構成でサポートされてい�
 
 == 制限
 
-* Flash Cache のパフォーマンス向上を利用するには、すべてのボリュームで圧縮を無効にする必要があります。
+* Cloud Volumes ONTAP 9.12.0までのFlash Cacheのパフォーマンス向上を利用するには、すべてのボリュームで圧縮を無効にする必要があります。Cloud Volumes ONTAP 9.12.1を導入またはアップグレードする場合、圧縮を無効にする必要はありません。
 +
 BlueXPからボリュームを作成するときにStorage Efficiencyを使用しないようにするか、ボリュームを作成してから http://docs.netapp.com/ontap-9/topic/com.netapp.doc.dot-cm-vsmg/GUID-8508A4CB-DB43-4D0D-97EB-859F58B29054.html["CLI を使用してデータ圧縮を無効にします"^]。
 
