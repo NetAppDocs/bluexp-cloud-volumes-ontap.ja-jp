@@ -30,7 +30,9 @@ BlueXPでは、Cloud Volumes ONTAP とそれに関連付けられたストレー
 
 == 代わりにAzure Private Linkを無効にし、サービスエンドポイントを使用してください
 
-ビジネスで必要な場合は、BlueXPの設定を変更して、Azureプライベートリンクの代わりにサービスエンドポイントを使用するようにCloud Volumes ONTAP を設定できます。この設定を変更すると、新しく作成した環境 Cloud Volumes ONTAP システムに変更が適用されます。
+ビジネスで必要な場合は、BlueXPの設定を変更して、Azureプライベートリンクの代わりにサービスエンドポイントを使用するようにCloud Volumes ONTAP を設定できます。この設定を変更すると、新しく作成した環境 Cloud Volumes ONTAP システムに変更が適用されます。サービスエンドポイントは、でのみサポートされます link:https://docs.microsoft.com/en-us/azure/availability-zones/cross-region-replication-azure#azure-cross-region-replication-pairings-for-all-geographies["Azureリージョンペア"^] コネクタとCloud Volumes ONTAP VNetの間。
+
+コネクタは、管理対象の Cloud Volumes ONTAP システムまたはにある Azure リージョンと同じ Azure リージョンに導入する必要があります https://docs.microsoft.com/en-us/azure/availability-zones/cross-region-replication-azure#azure-cross-region-replication-pairings-for-all-geographies["Azure リージョンペア"^] Cloud Volumes ONTAP システム用。
 
 .手順
 . BlueXPコンソールの右上にある[設定]アイコンをクリックし、[*コネクタの設定*]を選択します。
@@ -43,7 +45,13 @@ BlueXPでは、Cloud Volumes ONTAP とそれに関連付けられたストレー
 
 == Azureプライベートリンクを使用する
 
-ほとんどの場合、Cloud Volumes ONTAP でAzureプライベートリンクを設定するために必要な作業はありません。BlueXPはAzureプライベートリンクを管理しています。ただし、 Azure プライベート DNS を使用している場合は、構成ファイルを編集する必要があります。また、Azureのコネクタの場所に関する要件も把握しておく必要があります。
+ほとんどの場合、Cloud Volumes ONTAP でAzureプライベートリンクを設定するために必要な作業はありません。BlueXPはAzureプライベートリンクを管理しています。ただし、既存のAzureプライベートDNSゾーンを使用する場合は、構成ファイルを編集する必要があります。
+
+
+
+=== カスタムDNSの要件
+
+必要に応じて、カスタムDNSを使用する場合は、カスタムDNSサーバからAzureプライベートDNSゾーンに対する条件付きフォワーダを作成する必要があります。詳細については、を参照してください link:https://learn.microsoft.com/en-us/azure/private-link/private-endpoint-dns#on-premises-workloads-using-a-dns-forwarder["DNSフォワーダを使用するAzureのドキュメント"^]。
 
 
 
@@ -58,10 +66,7 @@ VNet へのプライベート VPN 接続または ExpressRoute 接続を使用�
 image:diagram_azure_private_link.png["この概念図は、 Cloud Volumes ONTAP へのデータアクセスと、プライベートエンドポイントを介したストレージアカウントへのプライベートリンクを示しています。"]
 
 
-
-=== Azure のコネクタの場所
-
-コネクタは、管理対象の Cloud Volumes ONTAP システムまたはにある Azure リージョンと同じ Azure リージョンに導入する必要があります https://docs.microsoft.com/en-us/azure/availability-zones/cross-region-replication-azure#azure-cross-region-replication-pairings-for-all-geographies["Azure リージョンペア"^] Cloud Volumes ONTAP システム用。この要件により、 Cloud Volumes ONTAP とそれに関連付けられたストレージアカウント間で Azure Private Link 接続が使用されるようになります。
+NOTE: コネクタシステムとCloud Volumes ONTAP システムが異なるVNetに導入されている場合は、コネクタが導入されているVNetとCloud Volumes ONTAP システムが導入されているVNet間にVNetピアリングを設定する必要があります。
 
 
 
@@ -111,7 +116,9 @@ BlueXPが特定のアクションの一部としてAzure Private Linkを作成�
 
 ロールバックを有効にすると、アクションが停止し、アクションの一部として作成されたすべてのリソースがロールバックされます。
 
-ロールバックの有効化は API でのみサポートされます。
+ロールバックは、APIまたはapp.confファイルを更新することで有効にできます。
+
+* APIを使用したロールバックを有効にします。*
 
 .ステップ
 . 次の要求本文で 'put/occm/config'API 呼び出しを使用します
@@ -119,5 +126,16 @@ BlueXPが特定のアクションの一部としてAzure Private Linkを作成�
 [source, json]
 ----
 { "rollbackOnAzurePrivateLinkFailure": true }
+----
+
+
+* app.confを更新してロールバックを有効にします*
+
+.ステップ
+. 次の要求本文で 'put/occm/config'API 呼び出しを使用します
++
+[source, json]
+----
+{ "rollbackOnAzurePrivateLinkFailure": false }
 ----
 
