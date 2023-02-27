@@ -42,7 +42,7 @@ SMB は、 Windows システム向けの従来のファイルアクセスプロ�
 
 Cloud Volumes ONTAP は、スケールアウトストレージ用のオプションとしてS3をサポートしています。S3プロトコルをサポートすることで、Storage VM（SVM）のバケットに格納されたオブジェクトへのS3クライアントアクセスを設定できます。
 
-https://docs.netapp.com/us-en/ontap/object-storage-management/index.html["ONTAP で S3 オブジェクトストレージサービスを設定および管理する方法について説明します"^]。
+link:https://docs.netapp.com/us-en/ontap/s3-multiprotocol/index.html#how-s3-multiprotocol-works["S3マルチプロトコルの仕組みを説明します"^]。link:https://docs.netapp.com/us-en/ontap/object-storage-management/index.html["ONTAP で S3 オブジェクトストレージサービスを設定および管理する方法について説明します"^]。
 
 
 
