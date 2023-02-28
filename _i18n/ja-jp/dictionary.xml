@@ -502,15 +502,8 @@
   <block id="8db7c24c4dffccaf5bf563f6d3732e89" category="list-text">System Manager または CLI を使用して、ボリュームをアグリゲートに移動します。</block>
   <block id="af0b0ecdfe1446323bef34666744c7e9" category="paragraph">ほとんどの場合、 System Manager を使用してボリュームを移動できます。</block>
   <block id="1a21197322dd87a558be86d7c5d97492" category="inline-link">ONTAP 9 ボリューム移動エクスプレスガイド</block>
-  <block id="217bcdbee54dc423980ce9fc6cc76b79" category="paragraph">手順については、を参照してください<block ref="fb045c0781ca935cf172ccf1ef6911f4" category="inline-link-rx"></block>。</block>
   <block id="6cd040ad52746e1f0492a9759d917f90" category="inline-link-macro">データ階層化のための空きスペース率について詳しくは、こちらをご覧ください</block>
-  <block id="f3e9ffaf35c2c9107fad65340c0a58ef" category="inline-xref">問題を解決する方法を認識する。</block>
-  <block id="a503739f25483871918a8a5207edf1c0" category="list-text"><block ref="c1f7d6f91a9daa0975a20f015e7d72e8" category="inline-xref-macro-rx"></block>。</block>
   <block id="5d665333f267e82f0046deebfd57476c" category="list-text">分析に基づいて、容量の問題を回避するためにボリュームを移動します。</block>
-  <block id="c78ca6c286afc3dfb94b066563deac1b" category="inline-xref">ボリュームを別のシステムに移動します。</block>
-  <block id="1c4b1721b4601b5dc6b06c5ebd7cea02" category="list-text"><block ref="80571c84b62cdae6320cf68009d86584" category="inline-xref-macro-rx"></block>。</block>
-  <block id="9b4303562671d5b474d173b347fd9b61" category="inline-xref">ボリュームを同じシステム上の別のアグリゲートに移動します。</block>
-  <block id="ae1a89f1e455b4d862ac350927ac1efe" category="list-text"><block ref="2a6a024d5d411af25d1ff07727fe0540" category="inline-xref-macro-rx"></block>。</block>
   <block id="e1b75cc4594e8fdbb5c705aee244a469" category="section-title">容量の問題を解決する方法を特定する</block>
   <block id="5a31c45fe6b6d37f4ceeb5b86c4346da" category="list-text">Action Required メッセージの詳細情報を表示して、容量制限に達したアグリゲートを特定します。</block>
   <block id="34b14acb1a2ab9863c3c5dad4fd43a16" category="paragraph">たとえば、アグリゲート aggr1 の容量が上限に達したとします。</block>
@@ -537,13 +530,10 @@
   <block id="3ebad430102b25358c29364084a76dad" category="list-text">使用可能な容量を持つ Cloud Volumes ONTAP システムを特定するか、新しいシステムを導入します。</block>
   <block id="9ffaf8150bb88e959d7eae927c0c3cc0" category="list-text">ソースの作業環境をターゲットの作業環境にドラッグアンドドロップして、ボリュームの 1 回限りのデータレプリケーションを実行します。</block>
   <block id="bf448453afbbab6dd3b54b15d2ebdcee" category="inline-link">システム間でのデータのレプリケーション</block>
-  <block id="03cfceb5dec779775f3d0affcf589362" category="paragraph">詳細については、を参照してください<block ref="6f7d40a364323bc62d4fdc75425cae64" category="inline-link-rx"></block>。</block>
   <block id="2dc704f7e20cf3c16f9def2d83a6b399" category="list-text">[Replication Status] ページに移動し、 SnapMirror 関係を解除して、レプリケートされたボリュームをデータ保護ボリュームから読み取り / 書き込みボリュームに変換します。</block>
   <block id="95be3f7b9f27ac89487465c149063782" category="inline-link">データレプリケーションのスケジュールと関係の管理</block>
-  <block id="386f4c219628b994f8c22ccccaf567af" category="paragraph">詳細については、を参照してください<block ref="0f41cde29a12d20b922d64dd196364f0" category="inline-link-rx"></block>。</block>
   <block id="7985a618100e35f9e631782c3bb28e64" category="list-text">データアクセス用にボリュームを設定します。</block>
   <block id="3592520f476679c41ae085dbea13f855" category="inline-link">ONTAP 9 ボリュームディザスタリカバリエクスプレスガイド</block>
-  <block id="a33e50c65bd1d897511af3eae58228ea" category="paragraph">データアクセス用のデスティネーションボリュームの設定については、を参照してください<block ref="af502c2f8fb660944e2ad52aad1efcc3" category="inline-link-rx"></block>。</block>
   <block id="ba425bc12c858c9fb4c4f3f36164a1a7" category="list-text">元のボリュームを削除します。</block>
   <block id="48ade27fb20d2c5d23a7a3f46a67008c" category="paragraph">詳細については、を参照してください <block ref="926e5f34b50c39795d0a59ca0afdb660" category="inline-link-macro-rx"></block>。</block>
   <block id="9b75835d1597be290e865df9d9c03011" category="section-title">容量の問題を回避するためにボリュームを別のアグリゲートに移動します</block>
@@ -2654,7 +2644,6 @@
   <block id="b64442e22e4baecde15d6214c922aa65" category="paragraph">ディスク制限によって、ディスクだけを使用することで容量制限に達することがないことに注意してください。を使用すると、ディスク制限を超えることができます <block ref="c80d06c6bbd06cbbb7b267be96c5b90c" category="inline-link-macro-rx"></block>。ディスクの制限については、を参照してください<block ref="02f1a1c120ffb5f37ea9d7c14b5f1158" category="inline-link-rx"></block>。</block>
   <block id="9402e8f13b9c1b7b1bbcad4d4c4eb4a9" category="paragraph"><block ref="9402e8f13b9c1b7b1bbcad4d4c4eb4a9" category="inline-link-rx"></block></block>
   <block id="2dcb300e9b01e5d98962a7e0c6eee87e" category="paragraph"><block ref="2dcb300e9b01e5d98962a7e0c6eee87e" category="inline-link-rx"></block></block>
-  <block id="506e74c9262ca17fcd45f9fc1bb03b87" category="paragraph">ボリュームのサイズを変更する必要がある場合は、を使用して変更できます<block ref="bfb8b856b98909d9b8eda9fe0698d61f" category="inline-link-rx"></block>。ボリュームのサイズを変更する際は、システムの容量制限を考慮してください。にアクセスします<block ref="7a96f232274f5a7cebcb1f6a52cc095f" category="inline-link-rx"></block> 詳細：</block>
   <block id="06c86f2b2f40c7b5ae916f820dace6f3" category="inline-link">Cloud Volumes ONTAP のリリースノートに移動します</block>
   <block id="eaae0996b48caf454deb2608523a1af2" category="paragraph"><block ref="a3830f1e68e521753c115aa90de96c67" category="inline-link-rx"></block>。</block>
   <block id="cd46020b2ca09f66f5c79bd35fe2da2e" category="paragraph"><block ref="4107f790de2a45bc9a00a9b75db49bc5" category="inline-link-rx"></block>。</block>
@@ -2878,7 +2867,6 @@
   <block id="656d282ec4da3b613132f8e29d6cb90e" category="paragraph">30 日間の無償トライアルをクラウドプロバイダのマーケットプレイスで従量課金制サブスクリプションで利用できます。無償トライアルには、Cloud Volumes ONTAP とクラウドバックアップが含まれています。トライアルは、市場で提供サービスに登録すると開始されます。</block>
   <block id="2986f3edb85e34a7556b412028be57fb" category="paragraph">インスタンスや容量の制限はありません。Cloud Volumes ONTAP システムは必要な数だけ導入でき、必要な容量を30日間無償で割り当てることができます。無料トライアルは、30日後に1時間ごとの有料サブスクリプションに自動的に変換されます。</block>
   <block id="631556a144b10d5d5f19603b18176e32" category="paragraph">Cloud Volumes ONTAP のソフトウェアライセンス料金は1時間ごとに発生しませんが、クラウドプロバイダからインフラ料金が請求されます。</block>
-  <block id="0fc39380a79b9b90f383fcccff782087" category="cell">CIFS サーバの名前解決を提供する DNS サーバの IP アドレス。リストされた DNS サーバには、 CIFS サーバが参加するドメインの Active Directory LDAP サーバとドメインコントローラの検索に必要なサービスロケーションレコード（ SRV ）が含まれている必要があります。ifdef::gCP[] Google Managed Active Directoryを設定している場合、デフォルトでは、169.254.169.254.169.254.169.254.169.254.169.254.169.254.169.254.169.254.169.254.169.254.169.254.169.254.6254のIPアドレスでADにアクセスできます。endif：GCP []</block>
   <block id="6c30ec25f9c157f6acd5cb63a6abee29" category="list-text">いずれかのアグリゲートでオブジェクトに古い命名規則が使用されています。両方のアグリゲートで同じ名前形式を使用する必要があります。</block>
   <block id="ea17490349895c296964a806a4f6a8d1" category="paragraph">元のアグリゲートに空きスペースがあることに注意してください。既存のボリュームまたは新しいボリュームでは、そのスペースを使用できます。このシナリオでは、スペースをクラウドプロバンスに戻すことはできません。</block>
   <block id="181e3299a212253d089ee23c58a37a10" category="list-text">EssentialsパッケージとProfessionalパッケージは、すべてのクラウドプロバイダマーケットプレイスで利用できるようになりました。</block>
@@ -4128,7 +4116,6 @@
   <block id="f162010d329e7b7904453b50a89c50d5" category="admonition">BlueXPは、選択されたディスクタイプを階層化して使用している既存のアグリゲートにボリュームを移動するか、ボリューム用に新しいアグリゲートを作成します。</block>
   <block id="13a7a73346b449660233c2025494cc6b" category="section-title">BlueXPに「Action Required」(アクションが必要です)というメッセージが表示されたら、ボリュームを移動し</block>
   <block id="d6239790c8fdf63f11c139a1d35d52f2" category="paragraph">容量の問題を回避するためにボリュームの移動が必要であることを通知する「Action Required」メッセージがBlueXPに表示されることがありますが、問題 を手動で修正する必要があります。この場合は、問題の解決方法を特定してから、 1 つ以上のボリュームを移動する必要があります。</block>
-  <block id="b3c34ebd7a4896da31735742995b6a89" category="admonition">アグリゲートの使用容量が90%に達すると、「Action Required」メッセージが表示されます。データ階層化が有効になっている場合は、アグリゲートの使用容量が 80% に達するとメッセージが表示されます。デフォルトでは、 10% の空きスペースがデータ階層化用に予約されています。 <block ref="daf1e430edb10b6c6271ed1f402acb50" category="inline-link-macro-rx"></block>。</block>
   <block id="9ea2c21203b42625092e01233ade8432" category="paragraph">容量の問題を回避するためにボリュームの移動が推奨されない場合は、移動が必要なボリュームと、そのボリュームを同じシステムの別のアグリゲートまたは別のシステムのどちらに移動すべきかを特定する必要があります。</block>
   <block id="089c5aa04f9684ce9c89262d002a1a92" category="paragraph">CMK は、 AWS 管理の CMK または顧客管理の CMK にすることができます。BlueXPやCloud Volumes ONTAP と同じAWSアカウントにすることも、別のAWSアカウントに含めることもできます。</block>
   <block id="6364b028c15709e34959be9167982fd5" category="list-text">BlueXPに「a_key user__」権限を提供するIAMロールを追加して、各CMKのキーポリシーを変更します。</block>
@@ -4644,4 +4631,18 @@
   <block id="5be2e1dfe4bf215289731df45ec8157b" category="list-text">[ケースの作成]*をクリックして、ネットアップサポートスペシャリストとのチケットをオープンします。</block>
   <block id="5db69347f06a9f63ed1f4c90e8b874e5" category="inline-link-macro">S3マルチプロトコルの仕組みを説明します</block>
   <block id="e48cc3153e7d667d87986f8e162ea872" category="paragraph"><block ref="8674fe872330e1769235c43fb746c3f7" category="inline-link-macro-rx"></block>。<block ref="5b24747aa1a4fd51dbcea213f97833c7" category="inline-link-macro-rx"></block>。</block>
+  <block id="80f73203717d2460e95dcb08c0b8c6a2" category="paragraph">ボリュームのサイズを変更する必要がある場合は、を使用して変更できます <block ref="03bbffa71060830678a71c986c6c0e67" category="inline-link-macro-rx"></block>。ボリュームのサイズを変更する際は、システムの容量制限を考慮してください。にアクセスします<block ref="7a96f232274f5a7cebcb1f6a52cc095f" category="inline-link-rx"></block> 詳細：</block>
+  <block id="2ff4be1dced06cb9c588fc9e6efd1009" category="cell">CIFS サーバの名前解決を提供する DNS サーバの IP アドレス。リストされた DNS サーバには、 CIFS サーバが参加するドメインの Active Directory LDAP サーバとドメインコントローラの検索に必要なサービスロケーションレコード（ SRV ）が含まれている必要があります。ifdef::gCP[] Google Managed Active Directoryを設定している場合、デフォルトでは、169.254.169.254.169.254.169.254.169.254.169.254.169.254.169.254.169.254.169.254.169.254.169.254.169.254.6254のIPアドレスでADにアクセスできます。endif：GCP []</block>
+  <block id="0031307525b9c7232536c8489912acba" category="list-text">Azure AD ドメインサービスを Cloud Volumes ONTAP の AD サーバとして設定するには、このフィールドに「 * OU=AADDC computers * 」または「 * OU=AADDC Users * 」と入力します。<block ref="6cfd09a964ae125f104125f00208f340" category="inline-link-macro-rx"></block></block>
+  <block id="8c69b575c72fa1fcd5f27c44ebda605c" category="list-text">Google Managed Microsoft AD を Cloud Volumes ONTAP の AD サーバとして設定するには、このフィールドに「 * OU=computers 、 OU=Cloud 」と入力します。<block ref="1b7ab571d5a2f9c86fda846ee11b6c13" category="inline-link-macro-rx"></block></block>
+  <block id="6ecb389aa5c4152ad11debb6b405d8f4" category="paragraph">手順については、を参照してください <block ref="c838ef5ca7d4c799293e9d6665f058c2" category="inline-link-macro-rx"></block>。</block>
+  <block id="3e3f3d1ee09d0c34761e81b8febdfac1" category="admonition">アグリゲートの使用容量が90%に達すると、「Action Required」メッセージが表示されます。データ階層化が有効になっている場合は、アグリゲートの使用容量が 80% に達するとメッセージが表示されます。デフォルトでは、 10% の空きスペースがデータ階層化用に予約されています。 <block ref="3db8b63393c9dee90fed2c0d21b67506" category="inline-link-macro-rx"></block>。</block>
+  <block id="2b79332b080e36571c2a54380fc5c418" category="list-text"><block ref="17047d28181f6f299ef2c58b9def85f2" category="inline-xref-macro-rx"></block>。</block>
+  <block id="97d3b1a647264740ff1eb4d6ac3f08b6" category="list-text"><block ref="53798a349f4b8eaaf382d38d42cd2fda" category="inline-xref-macro-rx"></block>。</block>
+  <block id="f44da59206fbcc578506df6f00d5030b" category="list-text"><block ref="924b7cdc66a1ab2e5f404339b85fd57a" category="inline-xref-macro-rx"></block>。</block>
+  <block id="1589be55d1846040de3b3619fc377b4a" category="paragraph">容量の問題を回避するためにボリュームを移動する必要がありますが、システムがディスクの上限に達しているため、BlueXPではこの操作を実行できません。</block>
+  <block id="621c224eaccf978de56d5c7c92dcd365" category="paragraph">詳細については、を参照してください <block ref="90f62dc404dc75e350515d756b9451b6" category="inline-link-macro-rx"></block>。</block>
+  <block id="35b10bba4deebd11fc4a8516d588a2f7" category="paragraph">詳細については、を参照してください <block ref="99d9b6ae46b04038337785859273721b" category="inline-link-macro-rx"></block>。</block>
+  <block id="5f377380cbcdf7966d890bdb7ff0faa5" category="paragraph">データアクセス用のデスティネーションボリュームの設定については、を参照してください <block ref="194d6a4dc62fd84f1ce4e3d372f4afab" category="inline-link-macro-rx"></block>。</block>
+  <block id="38e756f76c74b5075bf08a75f76e4554" category="paragraph">容量の問題を回避するには2つ以上のボリュームを移動する必要がありますが、BlueXPではこの操作を実行できません。</block>
 </blocks>

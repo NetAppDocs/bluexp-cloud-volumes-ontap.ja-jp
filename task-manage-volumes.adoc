@@ -120,7 +120,7 @@ NOTE: BlueXPは、選択されたディスクタイプを階層化して使用�
 
 デフォルトでは、スペースが不足したときにボリュームが最大サイズに自動的に拡張されます。デフォルト値は 1 、 000 で、ボリュームはサイズの 11 倍まで拡張できます。この値はコネクタの設定で設定できます。
 
-ボリュームのサイズを変更する必要がある場合は、を使用して変更できます https://docs.netapp.com/ontap-9/topic/com.netapp.doc.onc-sm-help-960/GUID-C04C2C72-FF1F-4240-A22D-BE20BB74A116.html["ONTAP システムマネージャ"^]。ボリュームのサイズを変更する際は、システムの容量制限を考慮してください。にアクセスします https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/index.html["Cloud Volumes ONTAP リリースノート"^] 詳細：
+ボリュームのサイズを変更する必要がある場合は、を使用して変更できます link:https://docs.netapp.com/ontap-9/topic/com.netapp.doc.onc-sm-help-960/GUID-C04C2C72-FF1F-4240-A22D-BE20BB74A116.html["ONTAP システムマネージャ"^]。ボリュームのサイズを変更する際は、システムの容量制限を考慮してください。にアクセスします https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/index.html["Cloud Volumes ONTAP リリースノート"^] 詳細：
 
 
 
@@ -161,14 +161,14 @@ endif::aws[]
 
 ifdef::azure[]
 
-** Azure AD ドメインサービスを Cloud Volumes ONTAP の AD サーバとして設定するには、このフィールドに「 * OU=AADDC computers * 」または「 * OU=AADDC Users * 」と入力します。https://docs.microsoft.com/en-us/azure/active-directory-domain-services/create-ou["Azure のドキュメント：「 Create an Organizational Unit （ OU ；組織単位） in an Azure AD Domain Services managed domain"^]
+** Azure AD ドメインサービスを Cloud Volumes ONTAP の AD サーバとして設定するには、このフィールドに「 * OU=AADDC computers * 」または「 * OU=AADDC Users * 」と入力します。link:https://docs.microsoft.com/en-us/azure/active-directory-domain-services/create-ou["Azure のドキュメント：「 Create an Organizational Unit （ OU ；組織単位） in an Azure AD Domain Services managed domain"^]
 
 
 endif::azure[]
 
 ifdef::gcp[]
 
-** Google Managed Microsoft AD を Cloud Volumes ONTAP の AD サーバとして設定するには、このフィールドに「 * OU=computers 、 OU=Cloud 」と入力します。https://cloud.google.com/managed-microsoft-ad/docs/manage-active-directory-objects#organizational_units["Google Cloud ドキュメント：「 Organizational Units in Google Managed Microsoft AD"^]
+** Google Managed Microsoft AD を Cloud Volumes ONTAP の AD サーバとして設定するには、このフィールドに「 * OU=computers 、 OU=Cloud 」と入力します。link:https://cloud.google.com/managed-microsoft-ad/docs/manage-active-directory-objects#organizational_units["Google Cloud ドキュメント：「 Organizational Units in Google Managed Microsoft AD"^]
 
 
 endif::gcp[]
@@ -197,7 +197,7 @@ System Manager でボリュームを移動するには、ボリュームとデ�
 ほとんどの場合、 System Manager を使用してボリュームを移動できます。
 
 +
-手順については、を参照してください http://docs.netapp.com/ontap-9/topic/com.netapp.doc.exp-vol-move/home.html["ONTAP 9 ボリューム移動エクスプレスガイド"^]。
+手順については、を参照してください link:http://docs.netapp.com/ontap-9/topic/com.netapp.doc.exp-vol-move/home.html["ONTAP 9 ボリューム移動エクスプレスガイド"^]。
 
 
 
@@ -208,14 +208,14 @@ System Manager でボリュームを移動するには、ボリュームとデ�
 容量の問題を回避するためにボリュームの移動が必要であることを通知する「Action Required」メッセージがBlueXPに表示されることがありますが、問題 を手動で修正する必要があります。この場合は、問題の解決方法を特定してから、 1 つ以上のボリュームを移動する必要があります。
 
 
-TIP: アグリゲートの使用容量が90%に達すると、「Action Required」メッセージが表示されます。データ階層化が有効になっている場合は、アグリゲートの使用容量が 80% に達するとメッセージが表示されます。デフォルトでは、 10% の空きスペースがデータ階層化用に予約されています。 link:task-tiering.html#changing-the-free-space-ratio-for-data-tiering["データ階層化のための空きスペース率について詳しくは、こちらをご覧ください"]。
+TIP: アグリゲートの使用容量が90%に達すると、「Action Required」メッセージが表示されます。データ階層化が有効になっている場合は、アグリゲートの使用容量が 80% に達するとメッセージが表示されます。デフォルトでは、 10% の空きスペースがデータ階層化用に予約されています。 link:task-tiering.html#changing-the-free-space-ratio-for-data-tiering["データ階層化のための空きスペース率について詳しくは、こちらをご覧ください"^]。
 
 .手順
-. <<容量の問題を解決する方法を特定する,問題を解決する方法を認識する。>>。
+. <<容量の問題を解決する方法を特定する>>。
 . 分析に基づいて、容量の問題を回避するためにボリュームを移動します。
 +
-** <<容量の問題を回避するためにボリュームを別のシステムに移動します,ボリュームを別のシステムに移動します。>>。
-** <<容量の問題を回避するためにボリュームを別のアグリゲートに移動します,ボリュームを同じシステム上の別のアグリゲートに移動します。>>。
+** <<容量の問題を回避するためにボリュームを別のシステムに移動します>>。
+** <<容量の問題を回避するためにボリュームを別のアグリゲートに移動します>>。
 
 
 
@@ -273,20 +273,24 @@ image:screenshot_aggr_volumes.gif["スクリーンショット：アグリゲー
 .このタスクについて
 このタスクの手順に従って、次のアクションが必要なメッセージを修正できます。
 
- Moving a volume is necessary to avoid capacity issues; however, BlueXP cannot perform this action for you because the system has reached the disk limit.
+[]
+====
+容量の問題を回避するためにボリュームを移動する必要がありますが、システムがディスクの上限に達しているため、BlueXPではこの操作を実行できません。
+
+====
 .手順
 . 使用可能な容量を持つ Cloud Volumes ONTAP システムを特定するか、新しいシステムを導入します。
 . ソースの作業環境をターゲットの作業環境にドラッグアンドドロップして、ボリュームの 1 回限りのデータレプリケーションを実行します。
 +
-詳細については、を参照してください https://docs.netapp.com/us-en/cloud-manager-replication/task-replicating-data.html["システム間でのデータのレプリケーション"^]。
+詳細については、を参照してください link:https://docs.netapp.com/us-en/cloud-manager-replication/task-replicating-data.html["システム間でのデータのレプリケーション"^]。
 
 . [Replication Status] ページに移動し、 SnapMirror 関係を解除して、レプリケートされたボリュームをデータ保護ボリュームから読み取り / 書き込みボリュームに変換します。
 +
-詳細については、を参照してください https://docs.netapp.com/us-en/cloud-manager-replication/task-replicating-data.html#managing-data-replication-schedules-and-relationships["データレプリケーションのスケジュールと関係の管理"^]。
+詳細については、を参照してください link:https://docs.netapp.com/us-en/cloud-manager-replication/task-replicating-data.html#managing-data-replication-schedules-and-relationships["データレプリケーションのスケジュールと関係の管理"^]。
 
 . データアクセス用にボリュームを設定します。
 +
-データアクセス用のデスティネーションボリュームの設定については、を参照してください http://docs.netapp.com/ontap-9/topic/com.netapp.doc.exp-sm-ic-fr/home.html["ONTAP 9 ボリュームディザスタリカバリエクスプレスガイド"^]。
+データアクセス用のデスティネーションボリュームの設定については、を参照してください link:http://docs.netapp.com/ontap-9/topic/com.netapp.doc.exp-sm-ic-fr/home.html["ONTAP 9 ボリュームディザスタリカバリエクスプレスガイド"^]。
 
 . 元のボリュームを削除します。
 +
@@ -303,7 +307,11 @@ image:screenshot_aggr_volumes.gif["スクリーンショット：アグリゲー
 .このタスクについて
 このタスクの手順に従って、次のアクションが必要なメッセージを修正できます。
 
- Moving two or more volumes is necessary to avoid capacity issues; however, BlueXP cannot perform this action for you.
+[]
+====
+容量の問題を回避するには2つ以上のボリュームを移動する必要がありますが、BlueXPではこの操作を実行できません。
+
+====
 .手順
 . 既存のアグリゲートに、移動する必要があるボリュームの使用可能な容量があるかどうかを確認します。
 +
@@ -327,7 +335,7 @@ image:screenshot_aggr_capacity.gif["スクリーンショット：アグリゲ�
 . System Manager または CLI を使用して、ボリュームをアグリゲートに移動します。
 . ほとんどの場合、 System Manager を使用してボリュームを移動できます。
 +
-手順については、を参照してください http://docs.netapp.com/ontap-9/topic/com.netapp.doc.exp-vol-move/home.html["ONTAP 9 ボリューム移動エクスプレスガイド"^]。
+手順については、を参照してください link:http://docs.netapp.com/ontap-9/topic/com.netapp.doc.exp-vol-move/home.html["ONTAP 9 ボリューム移動エクスプレスガイド"^]。
 
 
 
