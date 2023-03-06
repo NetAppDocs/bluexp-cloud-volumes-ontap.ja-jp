@@ -104,6 +104,18 @@ sidebar:
         url: "/task-set-up-licensing-google.html"
       - title: Google CloudでCloud Volumes ONTAP を起動します
         url: "/task-deploying-gcp.html"
+      - title: Google Cloud Platformイメージの検証
+        entries:
+        - title: 概要
+          url: "/concept-gcp-image-verification.html"
+        - title: GCPで画像をRaw形式に変換します
+          url: "/task-gcp-convert-image-raw.html"
+        - title: 画像署名の検証
+          entries:
+          - title: GCP署名済みイメージを確認します
+            url: "/concept-gcp-verify-signed-image.html"
+          - title: OpenSSLを使用してコンテンツを確認します
+            url: "/task-verify-openssl-gcp.html"
   - title: Cloud Volumes ONTAP を使用します
     entries:
     - title: ライセンス管理

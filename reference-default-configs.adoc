@@ -30,6 +30,7 @@ BlueXP 3.9.5リリース以降では、最初のStorage VMで論理スペース�
 ** FlexCache
 ** FlexClone
 ** iSCSI
+** Cloud Volumes ONTAP 9.12.1 GA以降、マルチテナント暗号化キー管理（MTEKM
 ** NetApp Volume Encryption （ライセンス使用システムまたは登録従量課金制システムの場合のみ）
 ** NFS
 

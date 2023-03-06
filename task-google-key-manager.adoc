@@ -20,6 +20,7 @@ Cloud KMSを使用する際は、デフォルトでデータSVM LIFがクラウ�
 .前提条件
 * Cloud Volumes ONTAP でバージョン9.10.1以降が実行されている必要があります
 * Volume Encryption （ VE ）ライセンスがインストールされている
+* Cloud Volumes ONTAP 9.12.1 GA以降、マルチテナント暗号化キー管理（MTEKM）ライセンスがインストールされています。
 * クラスタ管理者またはSVMの管理者である必要があります
 * アクティブなGoogle Cloud Platformサブスクリプション
 

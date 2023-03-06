@@ -96,7 +96,7 @@ ifdef::gcp[]
 
 シングルノードシステムを使用する場合、 Cloud Volumes ONTAP では、すべての種類のマシンで高速な書き込み速度がサポートされます。
 
-Cloud Volumes ONTAP では、 Google Cloud の HA ペアでの高速書き込みはサポートされていません。
+HAペアを使用する場合、Cloud Volumes ONTAP 9.13.0リリース以降では、いくつかのタイプのVMで高速の書き込み速度がサポートされます。にアクセスします https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-configs-gcp.html#supported-configurations-by-license["Cloud Volumes ONTAP リリースノート"^] をクリックして、高速の書き込み速度をサポートする VM タイプを確認します。
 
 https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-configs-gcp.html["Cloud の Google Cloud マシンタイプの詳細をご覧ください Volume ONTAP はをサポートします"^]。
 

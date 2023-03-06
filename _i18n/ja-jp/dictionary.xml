@@ -40,7 +40,6 @@
   <block id="bc2d1afe4b7b88784be36363245bd652" category="inline-link">Cloud Volumes ONTAP リリースノート</block>
   <block id="56ef2682280ac110060b881925a87b80" category="section-title">Google Cloud</block>
   <block id="543bcb76d6487a8515a8a34178160fca" category="paragraph">シングルノードシステムを使用する場合、 Cloud Volumes ONTAP では、すべての種類のマシンで高速な書き込み速度がサポートされます。</block>
-  <block id="a5feb10e04fddec4318f091f70667b36" category="paragraph">Cloud Volumes ONTAP では、 Google Cloud の HA ペアでの高速書き込みはサポートされていません。</block>
   <block id="e4e959caff2c6b1635b2a3bea64b35f7" category="inline-link">Cloud の Google Cloud マシンタイプの詳細をご覧ください Volume ONTAP はをサポートします</block>
   <block id="5859fb81f0cd1fbd6824d86c16923404" category="section-title">書き込み速度を選択する方法</block>
   <block id="3d64d0d43e2b3f4726dd94ece523a44b" category="inline-link-macro">既存のシステムの書き込み速度を変更する</block>
@@ -3702,10 +3701,7 @@
   <block id="1c91f3adc957364cb01d33e100ee1ea3" category="list-text">初めて導入する場合は</block>
   <block id="00fc9d0c515c69ea2c368521453d982e" category="inline-xref">ネットアップへの登録方法をご確認ください</block>
   <block id="97454ce87333f7ebd50ee38b8126fb39" category="paragraph"><block ref="37544f11913357c4e8c8a4ec607ae247" category="inline-xref-macro-rx"></block>。</block>
-  <block id="0f0a0d646a020cf3a65ce82ada4cfb01" category="list-text">お客様レベルのアカウントである必要があります（ゲストや一時アカウントは使用できません）。</block>
   <block id="1dcb63fd55c4d22e87cb32275b8cc808" category="inline-image-macro">3つの水平ドットのアイコン</block>
-  <block id="ff67299785d475e87002751aa6ab5eb8" category="list-text">ログインに成功すると、ネットアップはNSSのユーザ名を保存します。これはシステムで生成されたIDで、Eメールにマッピングされます。[*NSS Management*]ページで、から電子メールを表示できます <block ref="0d0843f26c0819e5369f690fefbf68b7" category="inline-image-macro-rx" type="image"></block> メニュー。</block>
-  <block id="505da61efe6bebebbaf092da18f64613" category="list-text">ログイン認証情報トークンを更新する必要がある場合は、の[認証情報の更新*]オプションも使用できます <block ref="0d0843f26c0819e5369f690fefbf68b7" category="inline-image-macro-rx" type="image"></block> メニュー。このオプションを使用すると、再度ログインするように求められます。</block>
   <block id="ad56c7289bc13dcf4f78c285f7f03878" category="section-title">ネットアップに登録してください</block>
   <block id="f1bac79c2c71fbd93863b9fbd718094c" category="paragraph">ネットアップサポートへの登録方法は、NetApp Support Site （NSS）アカウントがあるかどうかによって異なります。</block>
   <block id="bf4c731c0ee7f60c8018ad8f96828dda" category="section-title">NSSアカウントをお持ちの既存のお客様</block>
@@ -4645,4 +4641,123 @@
   <block id="35b10bba4deebd11fc4a8516d588a2f7" category="paragraph">詳細については、を参照してください <block ref="99d9b6ae46b04038337785859273721b" category="inline-link-macro-rx"></block>。</block>
   <block id="5f377380cbcdf7966d890bdb7ff0faa5" category="paragraph">データアクセス用のデスティネーションボリュームの設定については、を参照してください <block ref="194d6a4dc62fd84f1ce4e3d372f4afab" category="inline-link-macro-rx"></block>。</block>
   <block id="38e756f76c74b5075bf08a75f76e4554" category="paragraph">容量の問題を回避するには2つ以上のボリュームを移動する必要がありますが、BlueXPではこの操作を実行できません。</block>
+  <block id="1ee6f28ca24808cbfb56feaccf1c3e53" category="summary">Google Cloudコマンドラインを使用して、エクスポートした画像をdisk.raw形式に変換します。</block>
+  <block id="4924fff9a6684704aac6ccb1ed5fd97d" category="doc">Google Cloudで画像をRAW形式に変換します</block>
+  <block id="e42cb7ec1fc839883e3e4e1864b30d87" category="inline-link">NetApp Support Site （NSS）</block>
+  <block id="ac16be4e1060792bdf37f35e6cc518f9" category="paragraph">新しいインスタンスの導入、アップグレード、または既存のイメージで使用されているイメージは、を通じてクライアントと共有されます<block ref="c1c4e3e8a814891940b982f96af89878" category="inline-link-rx"></block>。署名済みダイジェストと証明書は、NSSポータルからダウンロードできます。ネットアップサポートが共有しているイメージに対応する、適切なリリースのダイジェストと証明書をダウンロードしていることを確認してください。たとえば、9.13.0イメージには、9.13.0署名付きダイジェストとNSSで使用できる証明書があります。</block>
+  <block id="7a8f498eae5977019b0d0c0d3ef013c0" category="section-title">この手順が必要なのはなぜですか？</block>
+  <block id="6bb0851f205415d62274497842e3218a" category="paragraph">Google Cloudからの画像は直接ダウンロードできません。署名済みダイジェストと証明書と照合してイメージを検証するには、2つのファイルを比較してイメージをダウンロードするメカニズムが必要です。これを行うには、画像をdisk.raw形式にエクスポート/変換し、結果をGoogle Cloudのストレージバケットに保存する必要があります。disk.rawファイルは、処理中にtarredおよびgzipされます。</block>
+  <block id="639031c91c1718355b2c49de79b7c8a9" category="paragraph">ユーザ/サービスアカウントには、次の操作を実行するための権限が必要です。</block>
+  <block id="8510b9d49ae3af28080e9ab3c769e316" category="list-text">Googleストレージバケットへのアクセス</block>
+  <block id="6b3a8711b7b0a7f0ca17594f3cb27910" category="list-text">Google Storageバケットに書き込みます</block>
+  <block id="bb08d6d5fcb1c5c4e9257dd97f8657e8" category="list-text">クラウドビルドジョブの作成（エクスポートプロセスで使用）</block>
+  <block id="0211c2e7a1f1b9cd2d2ff37f63d0cbfe" category="list-text">目的の画像へのアクセス</block>
+  <block id="74a5f984dcb642bac9c5327e39e6df05" category="list-text">イメージのエクスポートタスクを作成します</block>
+  <block id="65f7614896abb27a91631087b7310da5" category="paragraph">イメージを検証するには、disk.raw形式に変換してからダウンロードする必要があります。</block>
+  <block id="10868e2d56662b4588b6d2397d92a859" category="section-title">Google Cloudのコマンドラインを使用して、Google Cloudイメージをエクスポートします</block>
+  <block id="af61c0c1ee8de516a01c6e171f19abeb" category="inline-link">gcloud compute images exportコマンド</block>
+  <block id="1dd36b5da1220777ad9e1ab31632d911" category="paragraph">Cloud Storageにイメージをエクスポートする場合は、を使用することを推奨します<block ref="a4c66ff2f3c53397780a048fb09314b7" category="inline-link-rx"></block>。このコマンドは、提供されたイメージを取得し、tarredおよびgzipされるdisk.rawファイルに変換します。生成されたファイルは保存先URLに保存され、ダウンロードして検証することができます。</block>
+  <block id="26b2216a4240ad7d761b87056bdd08d6" category="paragraph">この処理を実行するには、ユーザ/アカウントに目的のバケットへのアクセスと書き込み、イメージのエクスポート、およびクラウドビルド（Googleがイメージのエクスポートに使用）の権限が必要です。</block>
+  <block id="d5d1915ba486e63c35a1f3a88839e1b0" category="paragraph">* gcloud *を使用してGoogle Cloudイメージをエクスポートします</block>
+  <block id="d2816514636c054ad7c6ba2f7c056434" category="example-title">をクリックしてスクリプトを表示します</block>
+  <block id="b9231f744254be27be6f8180edb2c230" category="paragraph">*圧縮されたファイルを抽出します*</block>
+  <block id="7687a452778371a352ce867b57724b93" category="inline-link">画像のエクスポートに関するGoogle Cloudドキュメント</block>
+  <block id="c32a24baf89135bb87bdf6dbe099b487" category="admonition">を参照してください<block ref="c7e947f0888e30efd1d729c87ccc8502" category="inline-link-rx"></block> Google Cloudを使用して画像をエクスポートする方法の詳細については、を参照してください。</block>
+  <block id="e6b411af64f8108d8230e8dc4d5ed17e" category="cell">9.13.0</block>
+  <block id="01277cd6d5e8d9a803f07b849cedae4b" category="summary">Google Cloudイメージファイルのシグネチャファイルを確認します。</block>
+  <block id="5567cef37155e1157348c6775226af57" category="doc">Google Cloudの画像検証の概要</block>
+  <block id="248cdc66c441a6612309f6e2ce80a63c" category="inline-link">NSS</block>
+  <block id="1c6fb094d8ad58a6db78e6b557985243" category="paragraph">Google Cloudのイメージ検証機能は、ネットアップの高度なセキュリティ要件に準拠しています。このタスク用に特別に生成された秘密鍵を使用して、途中でイメージに署名するためのイメージを生成するスクリプトに変更が加えられました。からダウンロードできるGoogle Cloud用の署名済みダイジェストとパブリック証明書を使用して、GCPイメージの整合性を検証できます<block ref="4af4717946461f54169780875a3b5a98" category="inline-link-rx"></block> 特定のリリースの場合。</block>
+  <block id="5745e537e1e3a11e00e50f67820a46a1" category="admonition">Google Cloudイメージの検証は、Cloud Volumes ONTAP ソフトウェアバージョン9.13.0以降でサポートされています。</block>
+  <block id="898e35e1a4bf4b025c3edec879439b08" category="section-title">サポートケースの管理（プレビュー）</block>
+  <block id="8b74b053fbeeff5c3b6f4991cb1d028d" category="paragraph">アクティブなサポートケースと解決済みのサポートケースは、BlueXPから直接表示および管理できます。NSSアカウントと会社に関連付けられたケースを管理できます。</block>
+  <block id="394ef093ad3259b9ff0fe7406f015b83" category="paragraph">ケース管理はプレビューとして使用できます。今後のリリースでは、この点をさらに改良し、機能を強化する予定です。製品内のチャットでご意見をお寄せください。</block>
+  <block id="5e4e7672ec2ba2b8a763da7f6714e212" category="list-text">ページ上部のケース管理ダッシュボードには、次の2つのビューがあります。</block>
+  <block id="01c3ffea552d74a5ae390b10e71a1f26" category="list-text">左側のビューには、指定したユーザNSSアカウントによって過去3カ月間にオープンされたケースの総数が表示されます。</block>
+  <block id="e3b6c09a5686233f72ce1ea60a1eb088" category="list-text">右側のビューには、ユーザのNSSアカウントに基づいて、過去3カ月間にオープンしたケースの総数が会社レベルで表示されます。</block>
+  <block id="b19b168cc8a2b8c984465e140256b3a2" category="paragraph">テーブルの結果には、選択したビューに関連するケースが反映されます。</block>
+  <block id="56dcadeee6b0e5c47a52673f9b5a0bb3" category="list-text">目的の列を追加または削除したり、[優先度]や[ステータス]などの列の内容をフィルタリングしたりできます。他の列には、並べ替え機能だけがあります。</block>
+  <block id="6f936762e1223311f031685422fcd3a4" category="paragraph">詳細については、以下の手順を参照してください。</block>
+  <block id="b14929795a61440e9b4ec9f8a4885ae3" category="list-text">ケースごとに、ケースノートを更新したり、ステータスが「Closed」または「Pending Closed」でないケースをクローズしたりすることができます。</block>
+  <block id="34b1296d31cefa72dae9b3a364b1f444" category="list-text">[ケース管理]*をクリックし、プロンプトが表示されたらNSSアカウントをBlueXPに追加します。</block>
+  <block id="d8ce1865cf1fe3cffd60300b4b86ad63" category="paragraph">ケース管理*ページには、BlueXPユーザアカウントに関連付けられたNSSアカウントに関連するオープンケースが表示されます。これは、* NSS管理*ページの上部に表示されるNSSアカウントと同じです。</block>
+  <block id="2ae5ae78bdb2d222f15fd8e89248709c" category="list-text">必要に応じて、テーブルに表示される情報を変更します。</block>
+  <block id="27635a52fe4c34c39ffc6430f4244ec6" category="list-text">[Organization's Cases]*で[View]*をクリックすると、会社に関連付けられているすべてのケースが表示されます。</block>
+  <block id="059e856250b59be3069246887b74a23c" category="list-text">正確な日付範囲を選択するか、別の期間を選択して、日付範囲を変更します。</block>
+  <block id="dfb3764bce2548df4e06357403f9c7d0" category="inline-image-macro">[Case Management]ページのテーブルの上にあるオプションのスクリーンショット。正確な日付範囲、または過去7日、30日、または3カ月を選択できます。</block>
+  <block id="7fcba8aeefa9960d3fc3fa08b360ba2e" category="paragraph"><block ref="7fcba8aeefa9960d3fc3fa08b360ba2e" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="a1bb576be9e5a356290f231efb51b3f5" category="list-text">列の内容をフィルタリングします。</block>
+  <block id="3753f10a59e21f58b30e3e67d416453e" category="inline-image-macro">[Status]列のフィルタオプションのスクリーンショット。[Active]や[Closed]など、特定のステータスに一致するケースを除外できます。</block>
+  <block id="37709be3a43df07d5975287545d0ba12" category="paragraph"><block ref="37709be3a43df07d5975287545d0ba12" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="1c6ea5ef583389e18e7d7bda70beaa71" category="inline-image-macro">テーブルに表示されるプラスアイコン</block>
+  <block id="1614dc8e47c0492434152c990d6c1040" category="list-text">をクリックして、テーブルに表示される列を変更します <block ref="effeab06130cddc8360822b2b706805b" category="inline-image-macro-rx" type="image"></block> 次に、表示する列を選択します。</block>
+  <block id="370b44009f1b82d0b6b178bb80cc62fa" category="inline-image-macro">表に表示できる列を示すスクリーンショット。</block>
+  <block id="5de408d7cbad49634fb25f9047498132" category="paragraph"><block ref="5de408d7cbad49634fb25f9047498132" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="ad0ae9ea1f2e8d973a9a0f6bb169f494" category="inline-image-macro">テーブルの最後の列に表示される3つの点を持つアイコン</block>
+  <block id="98efef1c8a47ed5791b41944e8ff4ec2" category="list-text">をクリックして既存のケースを管理します <block ref="a0b152b50a56901a75affebabc26ed61" category="inline-image-macro-rx" type="image"></block> 使用可能なオプションのいずれかを選択します。</block>
+  <block id="6d9dd74e7709ef802d299966f7898f6b" category="list-text">*ケースの表示*:特定のケースの詳細を表示します。</block>
+  <block id="482429810c2b00a4fa04f9900c560232" category="list-text">*ケースノートの更新*：問題の詳細を入力します。</block>
+  <block id="f791bc685c526af8296381acff10f6a0" category="list-text">*ケースをクローズ*：ケースをクローズする理由の詳細を入力し、*ケースをクローズ*をクリックします。</block>
+  <block id="e93217b2f709a398ce3c0fb753beb05f" category="inline-image-macro">テーブルの最後の列でメニューを選択した後に実行できる操作を示すスクリーンショット。</block>
+  <block id="e9a5c374fb47ed2ae5cc6108fb36d829" category="paragraph"><block ref="e9a5c374fb47ed2ae5cc6108fb36d829" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="3c6506a0407767fa4ee430c24f3b89e2" category="admonition">Flash Cache_、高速の書き込み速度、およびより高いMaximum Transmission Unit（MTU；最大伝送ユニット）8、896は、インスタンスタイプn2-standard-16、n2-standard-32、n2-standard-48、n2-standard-64で* High * write speedオプションを使用して使用できます。さらに、MTUが8、896の場合は、導入用にVCP-1、VPC-2、またはVCP-3を選択する必要があります。Flash Cache_、高速の書き込み速度、MTU 8、896は機能に依存し、設定したインスタンス内で個別に無効にすることはできません。</block>
+  <block id="c616f204302ed58d4618e3ded77f1858" category="paragraph">HAペアを使用する場合、Cloud Volumes ONTAP 9.13.0リリース以降では、いくつかのタイプのVMで高速の書き込み速度がサポートされます。にアクセスします<block ref="44033d1307c0997839bd6a3cb420c3fd" category="inline-link-rx"></block> をクリックして、高速の書き込み速度をサポートする VM タイプを確認します。</block>
+  <block id="436ea77bab9d72d8fe71dbccf1dd6613" category="list-text">Cloud Volumes ONTAP 9.12.1 GA以降、マルチテナント暗号化キー管理（MTEKM）ライセンスがインストールされています。</block>
+  <block id="51f24173f2f6195b17c8e22458037f6c" category="summary">Cloud Volumes ONTAP イメージダイジェストファイルツールを使用して、エクスポートされたGoogle Cloudイメージファイルの署名を確認します。</block>
+  <block id="f2381744b9c03db11d49cbcc38dd048d" category="doc">Google Cloudの署名済みイメージを検証します</block>
+  <block id="019892a31385e7fb7670de88abfcf3cd" category="paragraph">エクスポートされたGoogle Cloud署名済みイメージを確認するには、NSSからイメージダイジェストファイルをダウンロードして、disk.rawファイルとダイジェストファイルの内容を検証する必要があります。</block>
+  <block id="c81429443fac6104f46abd88cff6840a" category="section-title">署名済み画像検証ワークフローの概要</block>
+  <block id="89367ca4743c16d95c687430c6a0d9cc" category="paragraph">以下は、Google Cloudの署名付き画像検証ワークフロープロセスの概要です。</block>
+  <block id="11253a7af5a989f0e3e2ee767386c743" category="list-text">から<block ref="4af4717946461f54169780875a3b5a98" category="inline-link-rx"></block>次のファイルを含むGoogle Cloudアーカイブをダウンロードします。</block>
+  <block id="e197da4f69193c85d129866a2675f762" category="list-text">署名付きダイジェスト（.sig）</block>
+  <block id="6763cb37e125279317bf8422431cb36a" category="list-text">公開鍵（.pem）を含む証明書</block>
+  <block id="41008194a87291660d5b8cbbcf4e901b" category="list-text">証明書チェーン（.pem）</block>
+  <block id="20578512149c6e3b4e6524f4afc81315" category="inline-image-macro">ダイジェストファイルtar.gzがダウンロードされるNSSページを示すイメージ</block>
+  <block id="956855c49a0e0c3b22aa13808aac916f" category="paragraph"><block ref="956855c49a0e0c3b22aa13808aac916f" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="81b811e1bb7358a9bfbd1be493ad5e08" category="list-text">変換されたdisk.rawファイルをダウンロードします</block>
+  <block id="f4580c24dd557ee68edae3101b584307" category="list-text">証明書チェーンを使用して証明書を検証します</block>
+  <block id="c6843882530be14543f812c098985cdb" category="list-text">証明書に公開鍵が含まれていることを使用して、署名済みダイジェストを検証します</block>
+  <block id="98774f82cdc945a9f4d0e57b8bc015ca" category="list-text">公開鍵を使用して署名済みダイジェストを復号化し、イメージファイルのダイジェストを抽出します</block>
+  <block id="aa709fc45e05f2a5e2dd888ef8a945d0" category="list-text">ダウンロードしたdisk.rawファイルのダイジェストを作成します</block>
+  <block id="997f5d3364a511663fd4bf677e6ccd0d" category="list-text">2つのダイジェストファイルを比較して検証します</block>
+  <block id="80f2dd223bbef33f12a6f95c73d7f282" category="inline-image-macro">画像署名検証プロセスを示す画像</block>
+  <block id="acd7963bcfab60ed9803b6ce962f013d" category="paragraph"><block ref="acd7963bcfab60ed9803b6ce962f013d" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="d0693e7bf28b7bbc94287cee0e4b0768" category="section-title">2023年3月5日</block>
+  <block id="eed8585d0b45afc4676b1c89f6f22a9a" category="paragraph">コネクタの3.9.27リリースでは、次の変更が加えられました。</block>
+  <block id="e2c7f196cec5020e2b840087f6a8e068" category="section-title">Azureで16TiBと32TiBをサポート</block>
+  <block id="bfb9ab5387a727da709a7377d950cee0" category="paragraph">Cloud Volumes ONTAP では、Azureのマネージドディスクで実行される高可用性環境向けに、16TiBと32TiBのディスクサイズがサポートされるようになりました。</block>
+  <block id="8f9e72f80a7dd402a28a4b46aca286f9" category="inline-link">Azureでサポートされるディスクサイズ</block>
+  <block id="9bc26ebd17008cdc39569edf382f0b5e" category="paragraph">の詳細を確認してください<block ref="e55b1d7df019ac083c7ffec036e8de25" category="inline-link-rx"></block>。</block>
+  <block id="3cc0e97defd245de4dee36cae1e4c485" category="paragraph">バージョン9.12.1 GA以降を実行する新規および既存のCloud Volumes ONTAP システムに、マルチテナント暗号化キー管理（MTEKM）ライセンスが含まれるようになりました。</block>
+  <block id="bc912dd00b6301509fad22d6a376560d" category="paragraph"><block ref="532112271454bf057b0a2415bb119744" category="inline-link-rx"></block>。</block>
+  <block id="93616689ecb546d3ff1261cf76e33109" category="section-title">インターネットを使用しない環境のサポート </block>
+  <block id="28f5f7b773a8085f5db45145fb774c27" category="paragraph">インターネットから完全に分離されたすべてのクラウド環境でCloud Volumes ONTAP がサポートされるようになりました。これらの環境では、ノードベースのライセンス（BYOL）のみがサポートされます。容量単位のライセンスはサポートされていません。開始するには、コネクタソフトウェアを手動でインストールし、コネクタで実行されているBlueXPコンソールにログインし、BYOLライセンスをDigital Walletに追加してから、Cloud Volumes ONTAP を導入します。 </block>
+  <block id="376a158ceb7d344fa563cce2aa16018f" category="inline-link">インターネットにアクセスできない場所にコネクタを取り付けます</block>
+  <block id="6bfdfb1d6b845d41edac4f1eb0065216" category="list-text"><block ref="6bfdfb1d6b845d41edac4f1eb0065216" category="inline-link-rx"></block></block>
+  <block id="cbea6f8d2cd687c094438e0a7a38fedf" category="inline-link">コネクタのBlueXPコンソールにアクセスします</block>
+  <block id="b620510a7b9198825896459898b7bc08" category="list-text"><block ref="b620510a7b9198825896459898b7bc08" category="inline-link-rx"></block></block>
+  <block id="c09d91817b6017a3572898b867b22e36" category="inline-link">未割り当てライセンスを追加します</block>
+  <block id="587a8286d2e3b61d9f250d807b34983c" category="list-text"><block ref="587a8286d2e3b61d9f250d807b34983c" category="inline-link-rx"></block></block>
+  <block id="44579e142f1f753a153dbb19dac8125c" category="summary">OpenSSLを使用して、Google Cloudでダウンロードしたdisk.rawファイルとダイジェストファイルの内容を確認します。</block>
+  <block id="4768a2782def76fdf9b074232676aba9" category="doc">OpenSSLを使用したdisk.rawファイルおよびダイジェストファイルの内容の検証</block>
+  <block id="9790936d7b09c3cf187b770347ee60d1" category="paragraph">Google Cloudでダウンロードしたdisk.rawファイルを、で使用できるダイジェストファイルの内容と照合して確認できます<block ref="4af4717946461f54169780875a3b5a98" category="inline-link-rx"></block> OpenSSLを使用しています。</block>
+  <block id="64bba92e74e274ead8d4e951ad8c9d3a" category="admonition">イメージがLinux、Mac OS、およびWindowsマシンと互換性があるかどうかを検証するOpenSSLコマンド。</block>
+  <block id="c275ec11ecf674a6672183664681e98f" category="list-text">OpenSSLを使用して証明書を確認します。</block>
+  <block id="72d3302ad6fe92c7f4d817235e6ec413" category="list-text">ダウンロードしたdisk.rawファイル、署名、および証明書をディレクトリに配置します。</block>
+  <block id="f059e79846663b1827b8520855050095" category="list-text">OpenSSLを使用して証明書から公開鍵を抽出します。</block>
+  <block id="1ce11a955fcab73f91ead73e47d4f374" category="list-text">抽出した公開鍵を使用して署名を復号化し、ダウンロードしたdisk.rawファイルの内容を確認します。</block>
+  <block id="edcfeb86d02d7df1eb2c480ac3913d8a" category="list-text">Cloud Volumes ONTAP 9.12.1 GA以降、マルチテナント暗号化キー管理（MTEKM</block>
+  <block id="ec084bb25ed5b934c09b361069c246b2" category="list-text">NSSアカウントは、お客様レベルのアカウントである必要があります（ゲストアカウントや一時アカウントではありません）。複数のお客様レベルのNSSアカウントを設定できます。</block>
+  <block id="27387009488fe78dcc7cb7e3e432792f" category="list-text">NSSアカウントがパートナーレベルのアカウントの場合、作成できるNSSアカウントは1つだけです。お客様レベルのNSSアカウントを追加しようとすると、パートナーレベルのアカウントが存在する場合は、次のエラーメッセージが表示されます。</block>
+  <block id="d926847e4634e19a1aa7358becc0fa27" category="paragraph">「別のタイプのNSSユーザーがすでに存在するため、このアカウントではNSS顧客タイプは許可されていません。」</block>
+  <block id="a04a3a5322782e8c18d0d64be7e1ccbc" category="paragraph">既存のお客様レベルのNSSアカウントがあり、パートナーレベルのアカウントを追加しようとする場合も同様です。</block>
+  <block id="1afe8a81cfddc9fa9559e272bb6b9496" category="list-text">ログインに成功すると、ネットアップはNSSのユーザ名を保存します。</block>
+  <block id="452cd4df7b0d5eb1156519a2f3b0206b" category="paragraph">これはシステムによって生成されたIDで、電子メールにマッピングされます。[*NSS Management*]ページで、から電子メールを表示できます <block ref="0d0843f26c0819e5369f690fefbf68b7" category="inline-image-macro-rx" type="image"></block> メニュー。</block>
+  <block id="fd02e84624a2fdfd58787131aa2820b5" category="list-text">ログイン認証情報トークンを更新する必要がある場合は、の[認証情報の更新*]オプションも使用できます <block ref="0d0843f26c0819e5369f690fefbf68b7" category="inline-image-macro-rx" type="image"></block> メニュー。</block>
+  <block id="b14d512a3c64fb5df16f6721b0603c63" category="paragraph">このオプションを使用すると、再度ログインするように求められます。これらのアカウントのトークンは90日後に期限切れになります。このことを通知する通知が投稿されます。</block>
+  <block id="190ca4df9155a41a2f2d0d261c72ddc3" category="sidebar">Google Cloud Platformイメージの検証</block>
+  <block id="0bb4855e3aeb722a47c6f81b2c53c274" category="sidebar">GCPで画像をRaw形式に変換します</block>
+  <block id="5cb40010f012896cbae43d59859ac520" category="sidebar">画像署名の検証</block>
+  <block id="734726fba5c0a704a6a780254a724e08" category="sidebar">GCP署名済みイメージを確認します</block>
+  <block id="11bb059fb2906ae78eda04a864443447" category="sidebar">OpenSSLを使用してコンテンツを確認します</block>
 </blocks>
