@@ -18,10 +18,10 @@ summary: いくつかの手順で、 Cloud Volumes ONTAP for Azure を使い始�
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png["1つ"] コネクタを作成します
 [role="quick-margin-para"]
-を持っていなければ https://docs.netapp.com/us-en/cloud-manager-setup-admin/concept-connectors.html["コネクタ"^] ただし、アカウント管理者がアカウントを作成する必要があります。 https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-creating-connectors-azure.html["Azure でコネクタを作成する方法について説明します"^]。
+を持っていなければ https://docs.netapp.com/us-en/cloud-manager-setup-admin/concept-connectors.html["コネクタ"^] ただし、アカウント管理者がアカウントを作成する必要があります。 https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-creating-connectors-azure.html["Azure でコネクタを作成する方法について説明します"^]
 
 [role="quick-margin-para"]
-Cloud Volumes ONTAP の最初の作業環境を作成するときに、まだコネクタがない場合はコネクタの導入を求めるメッセージがBlueXP（旧Cloud Manager）に表示されます。
+インターネットアクセスを使用できないサブネットにCloud Volumes ONTAP を導入する場合は、コネクタを手動でインストールし、そのコネクタで実行されているBlueXPユーザインターフェイスにアクセスする必要があります。 https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-install-connector-onprem-no-internet.html["インターネットにアクセスできない場所にコネクタを手動でインストールする方法について説明します"^]
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["2 つ"] 構成を計画
 [role="quick-margin-para"]
@@ -30,9 +30,9 @@ BlueXPでは、ワークロード要件に合わせて事前設定されたパ�
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png["3つ"] ネットワークをセットアップします
 [role="quick-margin-list"]
 . VNet とサブネットがコネクタと Cloud Volumes ONTAP 間の接続をサポートすることを確認します。
-. ターゲット VNet からのアウトバウンドインターネットアクセスを有効にして、コネクタと Cloud Volumes ONTAP が複数のエンドポイントに接続できるようにします。
+. ターゲットVPCからのアウトバウンドのインターネットアクセスをNetApp AutoSupport で有効にします。
 +
-コネクタはアウトバウンドのインターネットアクセスがないと Cloud Volumes ONTAP を管理できないため、この手順は重要です。アウトバウンド接続を制限する必要がある場合は、のエンドポイントのリストを参照してください link:reference-networking-azure.html["コネクタと Cloud Volumes ONTAP"]。
+インターネットにアクセスできない場所にCloud Volumes ONTAP を導入する場合は、この手順は必要ありません。
 
 
 
