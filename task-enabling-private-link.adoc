@@ -41,6 +41,11 @@ BlueXPでは、Cloud Volumes ONTAP とそれに関連付けられたストレー
 . [ 保存（ Save ） ] をクリックします。
 
 
+.完了後
+Azure Private Linksを無効にし、コネクタがプロキシサーバーを使用している場合は、ダイレクトAPIトラフィックを有効にする必要があります。
+
+https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-configuring-proxy.html#enable-a-proxy-on-a-connector["コネクタで直接APIトラフィックを有効にする方法について説明します"^]
+
 
 
 == Azureプライベートリンクを使用する

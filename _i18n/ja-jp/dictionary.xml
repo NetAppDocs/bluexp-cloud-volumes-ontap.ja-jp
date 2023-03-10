@@ -1034,7 +1034,6 @@
   <block id="98fdd008687283335edf23e9e287cb83" category="paragraph">作業環境の作成時にストレージ階層を選択し、あとでいつでも変更できます。ストレージ階層の変更の詳細については、を参照してください <block ref="4fbc08218411ffa53189962e6368b39b" category="inline-link-macro-rx"></block>。</block>
   <block id="a38b9b490932e9d5b5db3e24784ec656" category="paragraph">データ階層化のためのストレージアクセス階層は、システム全体に適用されます。ボリューム単位ではありません。</block>
   <block id="3b8940895816a07ee6f7b4cd2d7353e3" category="list-text">パフォーマンス階層には、 SSD 永続ディスク、分散型永続ディスク、標準の永続ディスクがあります。</block>
-  <block id="56fcb51b5b1e4760266f6a808fa6396a" category="list-text">階層化データのデフォルトのストレージクラスは、 _Standard Storage_class です。データへのアクセス頻度が低い場合は、 _Nearline Storage_or_Coldline Storage_ に変更することでストレージコストを削減できます。ストレージクラスを変更すると、アクセス頻度の低いデータは Standard Storage クラスから始まり、 30 日経ってもアクセスされない場合は選択したストレージクラスに移行されます。</block>
   <block id="5097a121ff5ccfae7cb78986b23616f8" category="inline-link">Google Cloud Storage のストレージクラスの詳細については、こちらをご覧ください</block>
   <block id="3f1b0a674f5325ee098ce0196eda6d56" category="paragraph">データにアクセスするとアクセスコストが高くなるため、ストレージクラスを変更する前にこの点を考慮する必要があります。<block ref="12bb21ea227f99e4e5df122704c6f379" category="inline-link-rx"></block>。</block>
   <block id="f273810af2be19da638a9463cfa6e62a" category="paragraph">作業環境の作成時にストレージ階層を選択し、あとでいつでも変更できます。ストレージクラスの変更の詳細については、を参照してください <block ref="4fbc08218411ffa53189962e6368b39b" category="inline-link-macro-rx"></block>。</block>
@@ -2908,8 +2907,6 @@
   <block id="4fbd5770a6fd5de01bbbcf2a407118d7" category="list-text">ストレージアカウントキーへのアクセス：有効</block>
   <block id="c826704ed8ef326581305fef2036bfb6" category="list-text">TLSの最小バージョン：バージョン1.2</block>
   <block id="276a9219319519ae3ee8b320e4458068" category="list-text">インフラストラクチャの暗号化:無効</block>
-  <block id="fb3bd9a69b565a8866ad383666b98f8c" category="list-text">Azure の階層化データのデフォルトのストレージアクセス階層は、 _hot_tier です。ホット階層は、アクセス頻度の高いデータに最適です。</block>
-  <block id="45c06cdb409b9857a0b2089bf2cff7a0" category="paragraph">アクセス頻度の低いデータにアクセスしない場合は、 _cool ストレージ階層に変更することでストレージコストを削減できます。ストレージ階層を変更すると、アクセス頻度の低いデータは最初はホットストレージ階層に配置され、アクセス日数が 30 日を超えない場合はアクセス頻度の低いストレージ階層に移行されます。</block>
   <block id="f2bc66356d174d95b97b4e9b8b873540" category="list-text">Cloud Volumes ONTAP システムは、アクセス頻度の低いデータを1つのGoogle Cloud Storageバケットに階層化します。</block>
   <block id="bd15f9947281cda8b8713ff72eb007f8" category="list-text">場所の種類：地域</block>
   <block id="95e66c145ec5a9c6db0940e3c8b89f10" category="list-text">public access：オブジェクトACLに依存します</block>
@@ -3413,7 +3410,6 @@
   <block id="0d007d44f30aa9582772f6ca7709803f" category="paragraph">バックアップの数に制限はなく、あらゆる種類のCloud Volumes ONTAP 構成で容量ごとに料金が発生します。</block>
   <block id="fdb568933703a9268c5ba46f3208f414" category="list-text">Cloud Volumes ONTAP 構成のライセンスを提供します</block>
   <block id="2b7a2bda81dcf84ff8d6b600415c5e52" category="paragraph">プライマリボリュームとセカンダリボリュームの容量を同じ速度で課金する、シングルノードまたはHA</block>
-  <block id="2d856ef929513d16aba9286266a2ea92" category="list-text">Cloud Backupを使用したボリュームバックアップは無制限ですが、Professionalパッケージとともに導入されたCloud Volumes ONTAP システムのみが対象です</block>
   <block id="728fd439c2abdc887c4a5e678d7c8708" category="paragraph">容量ベースのライセンスパッケージには、次の消費モデルがあります。</block>
   <block id="fcbd09a2622ccd7b58495c6277262566" category="list-text">* BYOL *：ネットアップから購入したライセンス。任意のクラウドプロバイダでCloud Volumes ONTAP を導入する際に使用できます。</block>
   <block id="1e101142b61a711e7fbc92238adf9d20" category="list-text">* PAYGO *：クラウドプロバイダの市場から1時間ごとのサブスクリプション。</block>
@@ -4314,7 +4310,6 @@
   <block id="f30b44d93ffa429590bd7907a3d0099c" category="paragraph">Cloud Volumes ONTAP 9.10.1以降では、次の充電動作について理解しておく必要があります。</block>
   <block id="0514cef4c1e1a5949a3acc085ee50110" category="list-text">ONTAP 9.10.1以降では、WORMボリュームとWORM以外のボリュームを同じアグリゲートに配置できるようになりました。</block>
   <block id="7ec6925d846a27916198adf7334fcae3" category="list-text">Cloud Volumes ONTAP 作業環境の作成時にWORMを有効にすると、BlueXPで作成したすべてのボリュームでWORMが有効になります。ただし、ONTAP CLIまたはSystem Managerを使用して、WORMを無効にしたボリュームを作成できます。これらのボリュームはWORM状態のままです。</block>
-  <block id="3101fb677e91832ce5fd2af7de4c1850" category="list-text">作業環境の作成時にWORMを有効にしないと、BlueXPで作成したすべてのボリュームでWORMが無効になります。これらのボリュームのWORMレートでは課金されません。ただし、ONTAP CLIまたはSystem Managerを使用してWORM対応ボリュームを作成することができます。これらのボリュームはWORM状態に基づいて料金が請求されます。</block>
   <block id="38aefad2ca205e663da97b7fdd932dcf" category="paragraph"><block ref="38aefad2ca205e663da97b7fdd932dcf" category="inline-link-rx"></block></block>
   <block id="b9eeb00cda3e979e1efe9bef61f951fc" category="list-text">Azure HAの複数のアベイラビリティゾーン</block>
   <block id="0f8e1302b6dedb536c0490b7602b0b32" category="list-text">ONTAP 9.10.1P3以降では、NVRAMおよびコアディスクの場合、BlueXPはを使用します<block ref="c7a6854bb19ab523fbe585f89a860944" category="inline-link-rx"></block>を使用して、管理対象ディスクで暗号化キーを管理できます。下位バージョンでは、顧客管理キーの代わりにMicrosoft管理キーが使用されます。</block>
@@ -4440,16 +4435,11 @@
   <block id="c7db6ec8c72cc25c90f19ebafe2ddfbd" category="paragraph"><block ref="c7db6ec8c72cc25c90f19ebafe2ddfbd" category="inline-image-macro-rx" type="image"></block></block>
   <block id="770d7d25a250359f096cca82c310f07b" category="paragraph">WORMストレージをアクティブ化する方法は、使用しているCloud Volumes ONTAP のバージョンによって異なります。</block>
   <block id="f7bdab9f1b3e432deef3bba2021d518d" category="section-title">バージョン9.10.1以降</block>
-  <block id="634f99868031f4c19cc89185a03da350" category="paragraph">Cloud Volumes ONTAP 9.10.1以降では、ボリュームレベルでWORMを有効または無効にすることができます。WORMを有効にする方法はニーズによって異なります。</block>
   <block id="2c404b5c40a30cea75e4486ca42855d7" category="paragraph">新しいCloud Volumes ONTAP 作業環境を作成する場合は、WORMストレージを有効または無効にするように求められます。</block>
   <block id="1000fd534e8c9bff4332bafb5a9125aa" category="list-text">作業環境の作成時にWORMストレージを有効にすると、BlueXPで作成したすべてのボリュームでWORMが有効になります。ただし、System ManagerまたはCLIを使用して、WORMを無効にしたボリュームを作成できます。</block>
-  <block id="8614dac2e3bd328ce10de870996db0f5" category="paragraph">WORMストレージ専用のシステムを作成する場合は、このオプションを選択することを推奨します。</block>
-  <block id="53c068d69d7edf4c467cf5bb2a3193dd" category="list-text">作業環境の作成時にWORMストレージを無効にすると、BlueXPで作成したすべてのボリュームでWORMが無効になります。ただし、System ManagerまたはCLIを使用して、WORMが有効なボリュームを作成できます。</block>
-  <block id="03b892a4c3b15391f53e9a5afe77bb58" category="paragraph">同じシステム上に異なるタイプのボリュームを混在させる場合は、このオプションを選択することを推奨します。</block>
   <block id="3cbff90f9e1dd222c93cec86291eb0d2" category="inline-xref">充電の仕組みを理解する</block>
   <block id="c975ffb3e3e23a37bf8f249186a33e9a" category="paragraph">どちらのオプションを選択してもかまいません <block ref="67a3b6c0cb52274370d571e06a09839a" category="inline-xref-macro-rx"></block>。</block>
   <block id="432afd81656ecff91097001b2dbff0ad" category="section-title">バージョン9.10.0以前</block>
-  <block id="ee11a9e37983cbc9cebba6a139158639" category="paragraph">新しい作業環境を作成するときに、 Cloud Volumes ONTAP システムで WORM ストレージをアクティブにできます。個々のボリュームで WORM ストレージをアクティブ化することはできません -- WORM はシステムレベルでアクティブ化する必要がありますアクティブ化できるのは、作業環境を作成した場合のみです。</block>
   <block id="05f24457306e58dd0ea1e99766bc28dc" category="list-text">3台のTiBを購入するごとに、1つのエッジノードを使用します</block>
   <block id="0375f4855be072c7d856a0233cc21de9" category="section-title">クラウドプロバイダソリューションのサポート</block>
   <block id="be845c219bb74b14349ffa6e27e7aef3" category="paragraph">BlueXPに統合した次のクラウドプロバイダソリューションのテクニカルサポートについては、その製品のBlueXPマニュアルの「困ったときは」を参照してください。</block>
@@ -4756,4 +4746,15 @@
   <block id="686559ad5b35ebcac7c3039ba4d273ec" category="paragraph">を持っていなければ<block ref="ce642092b3a3bac7e23e8926be1087c4" category="inline-link-rx"></block> ただし、アカウント管理者がアカウントを作成する必要があります。<block ref="5057dc0bf3c81969de0b1b1e5a9bc718" category="inline-link-rx"></block></block>
   <block id="a646f605cbf6ed0d1902ed148dff6a02" category="paragraph">を持っていなければ<block ref="ce642092b3a3bac7e23e8926be1087c4" category="inline-link-rx"></block> ただし、アカウント管理者がアカウントを作成する必要があります。<block ref="e02c55c05c6081d62516fdec2316cf6c" category="inline-link-rx"></block></block>
   <block id="60a5bfe73545b12bdf2f8c33e65bedb4" category="paragraph">Cloud Volumes ONTAP HAペア用のStorage VMを作成および管理するには、コネクタに特定の権限が必要です。必要な権限はに含まれています<block ref="4e2f5782ef353f7277cd9ba2163caaf1" category="inline-link-rx"></block>。</block>
+  <block id="256b759fe821d1e6df4108737b419291" category="list-text">Cloud Backupを使用したボリュームバックアップは無制限ですが、Professionalパッケージを使用するCloud Volumes ONTAP システムのみが対象です</block>
+  <block id="c8f6e82c7aad23d387dc5633fe484591" category="paragraph">Cloud Volumes ONTAP 9.10.1以降では、ボリュームレベルでWORMを有効または無効にすることができます。</block>
+  <block id="686bb3ee7d23fdaf656f41328b5449e7" category="list-text">作業環境の作成時にWORMストレージを無効にすると、BlueXP、System Manager、またはCLIで作成するすべてのボリュームでWORMが無効になります。作成時に有効にしなかったCloud Volumes ONTAP 作業環境でWORMを有効にする場合は、ネットアップサポートとのサポートチケットを作成する必要があります。</block>
+  <block id="f4b6aa85f64f47d1816ec182949156ef" category="paragraph">新しい作業環境を作成するときに、 Cloud Volumes ONTAP システムで WORM ストレージをアクティブにできます。BlueXPで作成するすべてのボリュームでWORMが有効になっています。WORMストレージは個 々 のボリュームで無効にすることはできません。</block>
+  <block id="60e4218f85755238d0c16943a070de88" category="list-text">作業環境の作成時にWORMを有効にしないと、BlueXPで作成したすべてのボリュームでWORMが無効になります。これらのボリュームのWORMレートでは課金されません。</block>
+  <block id="39c6a1c30ae1faf01f4bd99a4757f7ae" category="paragraph">Azure Private Linksを無効にし、コネクタがプロキシサーバーを使用している場合は、ダイレクトAPIトラフィックを有効にする必要があります。</block>
+  <block id="40e86593118ce089551b3691f6bba919" category="inline-link">コネクタで直接APIトラフィックを有効にする方法について説明します</block>
+  <block id="fd4c1859263bee09c6463abbca610eae" category="paragraph"><block ref="fd4c1859263bee09c6463abbca610eae" category="inline-link-rx"></block></block>
+  <block id="aa036f3aad369ff5710a7a7d5043dcbc" category="list-text">Azure の階層化データのデフォルトのストレージアクセス階層は、 _hot_tier です。ホット階層は、大容量階層でアクセス頻度が高いデータに最適です。</block>
+  <block id="07524ae3949ffd6bf3d8864e62191d5c" category="paragraph">大容量階層のアクセス頻度の低いデータにアクセスする予定がない場合は、_cool_storage階層に変更することでストレージコストを削減できます。ストレージ階層をクールに変更すると、アクセス頻度の低い大容量階層のデータがクールなストレージ階層に直接移動します。</block>
+  <block id="3e06c5fbfb4be981b82d7b6b33bb900f" category="list-text">階層化データのデフォルトのストレージクラスは、 _Standard Storage_class です。データへのアクセス頻度が低い場合は、 _Nearline Storage_or_Coldline Storage_ に変更することでストレージコストを削減できます。ストレージクラスを変更すると、アクセス頻度の低いデータは選択したクラスに直接移動します。</block>
 </blocks>

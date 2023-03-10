@@ -137,7 +137,7 @@ endif::gcp[]
 +
 プライマリボリュームとセカンダリボリュームの容量を同じ速度で課金する、シングルノードまたはHA
 
-* Cloud Backupを使用したボリュームバックアップは無制限ですが、Professionalパッケージとともに導入されたCloud Volumes ONTAP システムのみが対象です
+* Cloud Backupを使用したボリュームバックアップは無制限ですが、Professionalパッケージを使用するCloud Volumes ONTAP システムのみが対象です
 * ネットアップのクラウドデータサービスを追加コストで利用できます
 
 
