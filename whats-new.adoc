@@ -26,6 +26,14 @@ BlueXP（旧称Cloud Manager）でのCloud Volumes ONTAP 管理の新機能に�
 
 
 
+=== Cloud Volumes ONTAP 9.13.0
+
+BlueXPで、AWS、Azure、Google CloudにCloud Volumes ONTAP 9.13.0を導入、管理できるようになりました。
+
+https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes["このリリースのに含まれる新機能について説明します Cloud Volumes ONTAP"^]。
+
+
+
 === Azureで16TiBと32TiBをサポート
 
 Cloud Volumes ONTAP では、Azureのマネージドディスクで実行される高可用性環境向けに、16TiBと32TiBのディスクサイズがサポートされるようになりました。

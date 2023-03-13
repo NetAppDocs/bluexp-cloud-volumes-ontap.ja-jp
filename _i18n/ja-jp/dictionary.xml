@@ -4757,4 +4757,7 @@
   <block id="aa036f3aad369ff5710a7a7d5043dcbc" category="list-text">Azure の階層化データのデフォルトのストレージアクセス階層は、 _hot_tier です。ホット階層は、大容量階層でアクセス頻度が高いデータに最適です。</block>
   <block id="07524ae3949ffd6bf3d8864e62191d5c" category="paragraph">大容量階層のアクセス頻度の低いデータにアクセスする予定がない場合は、_cool_storage階層に変更することでストレージコストを削減できます。ストレージ階層をクールに変更すると、アクセス頻度の低い大容量階層のデータがクールなストレージ階層に直接移動します。</block>
   <block id="3e06c5fbfb4be981b82d7b6b33bb900f" category="list-text">階層化データのデフォルトのストレージクラスは、 _Standard Storage_class です。データへのアクセス頻度が低い場合は、 _Nearline Storage_or_Coldline Storage_ に変更することでストレージコストを削減できます。ストレージクラスを変更すると、アクセス頻度の低いデータは選択したクラスに直接移動します。</block>
+  <block id="5b420079bca1c870914caa221b31442e" category="section-title">Cloud Volumes ONTAP 9.13.0</block>
+  <block id="ad598f033e541927e862b0c5e17319ec" category="paragraph">BlueXPで、AWS、Azure、Google CloudにCloud Volumes ONTAP 9.13.0を導入、管理できるようになりました。</block>
+  <block id="066405d152aeaf5c017e93048679ce43" category="paragraph"><block ref="0d69949c9de36f8752d49be7f0ec9aed" category="inline-link-rx"></block>。</block>
 </blocks>
