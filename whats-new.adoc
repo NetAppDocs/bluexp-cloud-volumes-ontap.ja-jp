@@ -63,6 +63,14 @@ https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-encrypting-
 
 
 
+=== Google CloudでのFlash Cacheと高速書き込み
+
+Cloud Volumes ONTAP 9.13.0リリースでは、Flash Cache、高速な書き込み速度、最大転送単位（MTU）8、896バイトがサポートされるようになりました。
+
+の詳細を確認してください link:https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-configs-gcp.html["Google Cloudのライセンスごとにサポートされる構成"^]。
+
+
+
 == 2023年2月5日
 
 コネクタの3.9.26リリースでは、次の変更が加えられました。

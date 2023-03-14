@@ -392,7 +392,7 @@ link:concept-write-speed.html["書き込み速度の詳細については、こ�
 
 +
 
-NOTE: Flash Cache_、高速の書き込み速度、およびより高いMaximum Transmission Unit（MTU；最大伝送ユニット）8、896は、インスタンスタイプn2-standard-16、n2-standard-32、n2-standard-48、n2-standard-64で* High * write speedオプションを使用して使用できます。さらに、MTUが8、896の場合は、導入用にVCP-1、VPC-2、またはVCP-3を選択する必要があります。Flash Cache_、高速の書き込み速度、MTU 8、896は機能に依存し、設定したインスタンス内で個別に無効にすることはできません。
+NOTE: Flash Cache_、高速の書き込み速度、8、896バイトの高いMaximum Transmission Unit（MTU；最大転送単位）は、インスタンスタイプn2-standard-16、n2-standard-32、n2-standard-48、n2-standard-64で* High * write speedオプションを使用して使用できます。また、MTUが8、896の場合は、導入環境でVPC-1、VPC-2、およびVPC-3を選択する必要があります。Flash Cache_、高速の書き込み速度、MTU 8、896は機能に依存し、設定したインスタンス内で個別に無効にすることはできません。VPC-1、VPC-2、およびVPC-3の詳細については、を参照してください https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/reference-networking-gcp.html#requirements-for-the-connector["VPC -1、VPC -2、およびVPC -3のルール"]。
 
 .. 必要に応じて、Write Once、Read Many（WORM）ストレージをアクティブにします。
 +

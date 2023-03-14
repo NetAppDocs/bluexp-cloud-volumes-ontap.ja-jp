@@ -4674,7 +4674,6 @@
   <block id="f791bc685c526af8296381acff10f6a0" category="list-text">*ケースをクローズ*：ケースをクローズする理由の詳細を入力し、*ケースをクローズ*をクリックします。</block>
   <block id="e93217b2f709a398ce3c0fb753beb05f" category="inline-image-macro">テーブルの最後の列でメニューを選択した後に実行できる操作を示すスクリーンショット。</block>
   <block id="e9a5c374fb47ed2ae5cc6108fb36d829" category="paragraph"><block ref="e9a5c374fb47ed2ae5cc6108fb36d829" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="3c6506a0407767fa4ee430c24f3b89e2" category="admonition">Flash Cache_、高速の書き込み速度、およびより高いMaximum Transmission Unit（MTU；最大伝送ユニット）8、896は、インスタンスタイプn2-standard-16、n2-standard-32、n2-standard-48、n2-standard-64で* High * write speedオプションを使用して使用できます。さらに、MTUが8、896の場合は、導入用にVCP-1、VPC-2、またはVCP-3を選択する必要があります。Flash Cache_、高速の書き込み速度、MTU 8、896は機能に依存し、設定したインスタンス内で個別に無効にすることはできません。</block>
   <block id="c616f204302ed58d4618e3ded77f1858" category="paragraph">HAペアを使用する場合、Cloud Volumes ONTAP 9.13.0リリース以降では、いくつかのタイプのVMで高速の書き込み速度がサポートされます。にアクセスします<block ref="44033d1307c0997839bd6a3cb420c3fd" category="inline-link-rx"></block> をクリックして、高速の書き込み速度をサポートする VM タイプを確認します。</block>
   <block id="436ea77bab9d72d8fe71dbccf1dd6613" category="list-text">Cloud Volumes ONTAP 9.12.1 GA以降、マルチテナント暗号化キー管理（MTEKM）ライセンスがインストールされています。</block>
   <block id="51f24173f2f6195b17c8e22458037f6c" category="summary">Cloud Volumes ONTAP イメージダイジェストファイルツールを使用して、エクスポートされたGoogle Cloudイメージファイルの署名を確認します。</block>
@@ -4760,4 +4759,12 @@
   <block id="5b420079bca1c870914caa221b31442e" category="section-title">Cloud Volumes ONTAP 9.13.0</block>
   <block id="ad598f033e541927e862b0c5e17319ec" category="paragraph">BlueXPで、AWS、Azure、Google CloudにCloud Volumes ONTAP 9.13.0を導入、管理できるようになりました。</block>
   <block id="066405d152aeaf5c017e93048679ce43" category="paragraph"><block ref="0d69949c9de36f8752d49be7f0ec9aed" category="inline-link-rx"></block>。</block>
+  <block id="12169a51b108f73888655f2a089d493a" category="list-text">中国のリージョンでは、BYOLを使用するシングルノードシステムのみがサポートされます。</block>
+  <block id="80dcfd22a2b6d14e887c1030b67098dd" category="admonition">Flash Cache_、高速の書き込み速度、8、896バイトの高いMaximum Transmission Unit（MTU；最大転送単位）は、インスタンスタイプn2-standard-16、n2-standard-32、n2-standard-48、n2-standard-64で* High * write speedオプションを使用して使用できます。また、MTUが8、896の場合は、導入環境でVPC-1、VPC-2、およびVPC-3を選択する必要があります。Flash Cache_、高速の書き込み速度、MTU 8、896は機能に依存し、設定したインスタンス内で個別に無効にすることはできません。VPC-1、VPC-2、およびVPC-3の詳細については、を参照してください<block ref="4cee9c1f75c8867521472d51adc68a19" category="inline-link-rx"></block>。</block>
+  <block id="ac1c722990c18687e956d9488b59bd3d" category="admonition">Google Cloudの新しいHAペア環境で高速な書き込み速度を有効にするには、VPC-1、VPC-2、およびVPC-3のMaximum Transmission Unit（MTU；最大伝送ユニット）が8、896バイト以上必要です。既存のVPC-1、VPC-2、およびVPC-3を8、896バイトのMTUにアップグレードする場合は、設定プロセス中にこれらのVPCを使用している既存のHAシステムをすべてシャットダウンする必要があります。</block>
+  <block id="8ffbbcac612c8285be31d80ec1c1454d" category="admonition">高速*書き込み速度オプションは、Google Cloudバージョン9.13.0以降のCloud Volumes ONTAP HAペアでサポートされます。</block>
+  <block id="98f6dc87e7c206ec16da559a2af45beb" category="section-title">Google CloudでのFlash Cacheと高速書き込み</block>
+  <block id="77e5d57bae938bc31208cded57756dc8" category="paragraph">Cloud Volumes ONTAP 9.13.0リリースでは、Flash Cache、高速な書き込み速度、最大転送単位（MTU）8、896バイトがサポートされるようになりました。</block>
+  <block id="80d41628bf38145af2326ce3d52d8e91" category="inline-link-macro">Google Cloudのライセンスごとにサポートされる構成</block>
+  <block id="0a623de488b37ca75333d521fccaa559" category="paragraph">の詳細を確認してください <block ref="cdeafd55498169f22d9d7a55ffee4ff4" category="inline-link-macro-rx"></block>。</block>
 </blocks>
