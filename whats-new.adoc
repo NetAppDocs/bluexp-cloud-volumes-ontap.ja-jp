@@ -20,6 +20,23 @@ BlueXP（旧称Cloud Manager）でのCloud Volumes ONTAP 管理の新機能に�
 
 
 
+== 2023年3月13日
+
+
+
+=== 中国地域のサポート
+
+Cloud Volumes ONTAP 9.12.1 GA以降では、次のように中国リージョンのサポートがAzureでサポートされるようになりました。
+
+* Cloud Volumes ONTAP は中国北部3でサポートされています。
+* シングルノードシステムがサポートされます。
+* ネットアップから直接購入したライセンスはサポートされます。
+
+
+地域ごとの可用性については、を参照してください link:https://bluexp.netapp.com/cloud-volumes-global-regions["Cloud Volumes ONTAP のグローバルリージョンマップ"^]。
+
+
+
 == 2023年3月5日
 
 コネクタの3.9.27リリースでは、次の変更が加えられました。
