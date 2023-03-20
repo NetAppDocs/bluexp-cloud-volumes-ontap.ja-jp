@@ -2726,10 +2726,8 @@
   <block id="aba6d4795536d5c4e61cf75ce0ddd22c" category="list-text">ノード 2 からの NAS データ LIF アクセス用に 1 つの IP アドレス</block>
   <block id="7a5be31086b3ad69d1c6b2c5abafcc64" category="list-text">データ LIF へのアクセスに使用するフロントエンド IP 設定をノード 1 から、データ LIF へのアクセスに使用するフロントエンド IP をノード 2 から、 Storage VM （ SVM ）管理 LIF のもう 1 つのオプションのフロントエンド IP に作成します。</block>
   <block id="c09d6988bf61135b41e7b195d446e2b9" category="paragraph">SMB データに使用する IP アドレスはロードバランサに割り当てられます。これにより、フェイルオーバー時に IP アドレスを別のノードに移行できるようになります。</block>
-  <block id="da253cd0d6c8d87b61a60f7e67560913" category="list-text">ノード 1 の iSCSI LIF の IP アドレス × 1</block>
   <block id="5aa1fc4c5c5e3c602f89524b94fcaf47" category="list-text">ノード 2 の iSCSI LIF の IP アドレス × 1</block>
   <block id="d31b2ca2df7d7ec89a597cf3ff166e6d" category="paragraph">iSCSI LIF は、 DNS 通信と SMB 通信に必要です。iSCSI LIF はフェイルオーバー時に移行されないため、この目的に使用されます。</block>
-  <block id="ccc2da4a96a5d07ea0b03ab18f4ed608" category="list-text">必要な数のフロントエンド IP 設定を作成します。</block>
   <block id="3ad6e3f460248126da5c801e403088c1" category="paragraph">Azure で IP アドレスを割り当てると、単一のノードシステムまたは HA ペアに新しい Storage VM を作成できます。</block>
   <block id="5683cfda0c67cd1651e904160b0a5460" category="paragraph">シングルノードシステムで Storage VM と LIF を作成する方法は、使用しているストレージプロトコルによって異なります。</block>
   <block id="2d376cf045c4838856b9429d7fecf7a5" category="paragraph">新しい Storage VM と必要な LIF を作成するには、次の手順を実行します。</block>
@@ -2738,7 +2736,6 @@
   <block id="83871791a7611e5a981ec0b38a662078" category="list-text">次のコマンドを使用して、ノード 2 に iSCSI LIF を作成します。</block>
   <block id="0cffe85429bb79552ce3607190d9dbad" category="list-text">次のコマンドを使用して、ノード 2 に NAS LIF を作成します。</block>
   <block id="6c6c472de3f0cea0f21c8e31be81490c" category="list-text">NAS データ LIF を作成します。</block>
-  <block id="477dc9bfd99f5e3ed09c8dbdc76a2c7c" category="list-text">DNS 通信と SMB 通信を提供する iSCSI LIF を作成します。</block>
   <block id="1d690a933c240dda520f6527f56da475" category="paragraph">9.7 以降のリリースでは、特定の Cloud Volumes ONTAP 構成で複数の Storage VM を使用できます。にアクセスします<block ref="7a96f232274f5a7cebcb1f6a52cc095f" category="inline-link-rx"></block> 使用している Cloud Volumes ONTAP のバージョンでサポートされる Storage VM 数を確認してください。</block>
   <block id="62978cf670cdcd284392400fa0cb70a9" category="list-text">*選択したVPCのみ*：インバウンドトラフィックのソースフィルタは、Cloud Volumes ONTAP システムのVPCのサブネット範囲、およびコネクタが存在するVPCのサブネット範囲です。これが推奨されるオプションです。</block>
   <block id="ba2e1bf50371835f50d77c05a977d80c" category="list-text">*すべてのVPC *：インバウンドトラフィックのソースフィルタは0.0.0.0/0のIP範囲です。</block>
@@ -4775,4 +4772,19 @@
   <block id="80a79e3e92d4834ae8746d205e83c105" category="list-text">ネットアップから直接購入したライセンスはサポートされます。</block>
   <block id="13615a82d1149a992b363c411914d3b8" category="inline-link-macro">Cloud Volumes ONTAP のグローバルリージョンマップ</block>
   <block id="39aeb3e37839611b14bfa6c7390065c1" category="paragraph">地域ごとの可用性については、を参照してください <block ref="69e22a6a63d14aa651819a20b96c9cc5" category="inline-link-macro-rx"></block>。</block>
+  <block id="8a83d5aff252fbe923fc5b8ce4cab9f9" category="paragraph">iSCSI LIFはDNS通信に必要です。iSCSI LIF はフェイルオーバー時に移行されないため、この目的に使用されます。</block>
+  <block id="c87f63c179c59eda8579e373c6a25976" category="paragraph">ロードバランサでは、次のIPアドレスを作成する必要があります。</block>
+  <block id="9b31eba9539b4b373752a1f9efafb8ac" category="list-text">各VMのそれぞれのNIC0のノード1のiSCSI LIFのIPアドレス</block>
+  <block id="6f2174023153761cdb987311021eaf2b" category="list-text">データLIFとSVM LIFのみに、必要な数のフロントエンドIP構成を作成します。</block>
+  <block id="37dd90c0b5c3c64f5ce58ece1a549527" category="admonition">フロントエンドIPは、対応する各SVMのNIC0の下にのみ作成する必要があります。SVM NIC0にIPアドレスを追加する方法の詳細については、「手順7 [ハイパーリンク]」を参照してください。</block>
+  <block id="b31c05988fa937699345307f0d088b5e" category="list-text">iSCSI LIFの場合は、NIC0のIPアドレスを追加します。</block>
+  <block id="d8268f30cad7ca754b650b30d5a9fb20" category="list-text">[Settings]で、*[IP configurations]*をクリックします。</block>
+  <block id="f14404f1eb77db8c34dfa687da4e9969" category="inline-image-macro">AzureポータルのIP構成ページのスクリーンショット</block>
+  <block id="d3f503b2101b1859a2272746e61a2bca" category="paragraph"><block ref="d3f503b2101b1859a2272746e61a2bca" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="d8292c375cfd1e8785887fa2307c216e" category="list-text">IP設定の名前を入力し、[Dynamic]を選択して*[OK]*をクリックします。</block>
+  <block id="d139a8131606839195ad605bafe04b07" category="inline-image-macro">[Add IP configuration]ウィンドウのスクリーンショット</block>
+  <block id="d78a1a202c691ad37ba63488112cab29" category="paragraph"><block ref="d78a1a202c691ad37ba63488112cab29" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="5007d33dbe3f9e50ed8c96fc08a7443a" category="list-text">作成したIP設定の名前をクリックし、AssignmentをStaticに変更して* Save *をクリックします。</block>
+  <block id="aa700fba04d3b674bf01f1887210edfe" category="list-text">次のコマンドを入力して、アドバンストモードにアクセスします。</block>
+  <block id="87f1ece84a21ef92f0776380600117e6" category="list-text">DNS通信を提供するiSCSI LIFを作成します。</block>
 </blocks>
