@@ -2002,12 +2002,9 @@
   <block id="74082482ea0cad59170e3d4dce025b4e" category="cell">syslog サーバ</block>
   <block id="a21848ca8e1b04c74552ca38f4284f2b" category="cell">syslog 転送メッセージ</block>
   <block id="a476a8c72bef590ea37867c7275919b7" category="section-title">HA Mediator 外部セキュリティグループのルール</block>
-  <block id="1975a8843b2153f2d02f2a63ead63c6d" category="paragraph">インバウンドルールの送信元は 0.0.0.0/0 です。</block>
   <block id="decc3cc349f3757e43ecd0c47a092341" category="paragraph">HA メディエータの定義済みセキュリティグループは、すべての発信トラフィックを開きます。これが可能な場合は、基本的なアウトバウンドルールに従います。より厳格なルールが必要な場合は、高度なアウトバウンドルールを使用します。</block>
   <block id="9528bcb068299f44f7850e2e930d3f00" category="paragraph">発信トラフィックに厳格なルールが必要な場合は、次の情報を使用して、 HA メディエータによる発信通信に必要なポートだけを開くことができます。</block>
-  <block id="6c8a72bb428eef0fb772b736267a33ca" category="cell">コネクタの IP アドレス</block>
   <block id="2b14ebecd08152e1467e0863951e038a" category="cell">メディエーターのアップグレードをダウンロードします</block>
-  <block id="4fa494f1ae1d15d791b8daf53f3d2a55" category="cell">AWS API サービス</block>
   <block id="fa1cddc8ac392ea41880d5f31e86fbf3" category="cell">ストレージのフェイルオーバーを支援します</block>
   <block id="1e56718e9810cd52e22fd292a9b32245" category="admonition">ポート 443 および 53 を開く代わりに、ターゲットサブネットから AWS EC2 サービスへのインターフェイス VPC エンドポイントを作成できます。</block>
   <block id="75fb76c71939b7f9f3ee363c4aec2044" category="section-title">コネクタのルール</block>
@@ -4787,4 +4784,8 @@
   <block id="5007d33dbe3f9e50ed8c96fc08a7443a" category="list-text">作成したIP設定の名前をクリックし、AssignmentをStaticに変更して* Save *をクリックします。</block>
   <block id="aa700fba04d3b674bf01f1887210edfe" category="list-text">次のコマンドを入力して、アドバンストモードにアクセスします。</block>
   <block id="87f1ece84a21ef92f0776380600117e6" category="list-text">DNS通信を提供するiSCSI LIFを作成します。</block>
+  <block id="b85a0d4dea04769a8ce6e0860eb4c90f" category="paragraph">HAメディエーターの事前定義されたセキュリティグループには、次のインバウンドルールが含まれています。</block>
+  <block id="52554fb81854d42f02280f83a1067574" category="cell">コネクタのCIDR</block>
+  <block id="cdbb82146d412877f64f943229bd9533" category="cell">AWS EC2インスタンスのコネクタのIPアドレス</block>
+  <block id="2e7f33375cb03e7deb01286344bbca46" category="cell">ec2.amazonaws.com</block>
 </blocks>
