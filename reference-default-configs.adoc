@@ -95,7 +95,7 @@ NOTE: クラウドプロバイダの要件により、Cloud Volumes ONTAP のLIF
 +
 ** Cloud Volumes ONTAP は、HTTPを使用して構成バックアップをコネクタに送信します。
 +
-バックアップにはからアクセスできます http://ipaddress/occm/offboxconfig/[] ここで、 _ipaddress_ はコネクタホストの IP アドレスです。
+バックアップには\ http://ipaddress/occm/offboxconfig/からアクセスできます。_ipaddress_はコネクタホストのIPアドレスです。
 
 ** BlueXPでは、他の管理ツール（System ManagerやCLIなど）とは異なる方法でいくつかのボリューム属性を設定します。
 +
