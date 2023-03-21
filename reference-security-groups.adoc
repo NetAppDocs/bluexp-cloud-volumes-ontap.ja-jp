@@ -222,6 +222,9 @@ NOTE: source は、 Cloud Volumes ONTAP システムのインターフェイス�
 | ICMP | 1. | ノード管理 LIF | HA メディエータ | キープアライブ（ Cloud Volumes ONTAP HA のみ） 
 
 
+| 構成のバックアップ | HTTP | 80 | ノード管理 LIF | \http://<connector-IP-address> /occm/offboxconfig | 構成バックアップをコネクタに送信します。 link:https://docs.netapp.com/us-en/ontap/system-admin/node-cluster-config-backed-up-automatically-concept.html["構成バックアップファイルについて説明します"^]。 
+
+
 | DHCP | UDP | 68 | ノード管理 LIF | DHCP | 初回セットアップ用の DHCP クライアント 
 
 

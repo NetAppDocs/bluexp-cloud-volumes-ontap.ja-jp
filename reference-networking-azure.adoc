@@ -391,6 +391,9 @@ NOTE: source は、 Cloud Volumes ONTAP システムのインターフェイス�
 | TCP | 3128 | ノード管理 LIF | コネクタ | アウトバウンドのインターネット接続が使用できない場合に、コネクタのプロキシサーバを介してAutoSupport メッセージを送信する 
 
 
+| 構成のバックアップ | HTTP | 80 | ノード管理 LIF | \http://<connector-IP-address> /occm/offboxconfig | 構成バックアップをコネクタに送信します。 link:https://docs.netapp.com/us-en/ontap/system-admin/node-cluster-config-backed-up-automatically-concept.html["構成バックアップファイルについて説明します"^]。 
+
+
 | DHCP | 68 | UDP | ノード管理 LIF | DHCP | 初回セットアップ用の DHCP クライアント 
 
 

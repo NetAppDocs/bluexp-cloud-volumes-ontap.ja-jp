@@ -93,9 +93,9 @@ endif::gcp[]
 NOTE: クラウドプロバイダの要件により、Cloud Volumes ONTAP のLIFフェイルオーバーはデフォルトで無効になっています。LIF を別のポートに移行すると、インスタンス上の IP アドレスとネットワークインターフェイス間の外部マッピングが解除され、 LIF にアクセスできなくなります。
 
 +
-** Cloud Volumes ONTAP は、 HTTPS を使用してコネクタに構成バックアップを送信します。
+** Cloud Volumes ONTAP は、HTTPを使用して構成バックアップをコネクタに送信します。
 +
-バックアップにはからアクセスできます https://ipaddress/occm/offboxconfig/[] ここで、 _ipaddress_ はコネクタホストの IP アドレスです。
+バックアップにはからアクセスできます http://ipaddress/occm/offboxconfig/[] ここで、 _ipaddress_ はコネクタホストの IP アドレスです。
 
 ** BlueXPでは、他の管理ツール（System ManagerやCLIなど）とは異なる方法でいくつかのボリューム属性を設定します。
 +
