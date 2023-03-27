@@ -102,18 +102,49 @@ VPC ごとにプライベートサブネットが必要です。
 
 ==== プライベート IP アドレス
 
-BlueXPは、Google CloudのHAペアに14または15個のプライベートIPアドレスを割り当てます。
+必要な数のプライベートIPアドレスがGCP内のCloud Volumes ONTAP に自動的に割り当てられます。ネットワークに十分なプライベートアドレスがあることを確認する必要があります。
 
-* VPC -0 の 7 つまたは 8 つのプライベート IP アドレス
++ Cloud Volumes ONTAP に割り当てられるLIFの数は、シングルノードシステムとHAペアのどちらを導入するかによって異なります。LIF は、物理ポートに関連付けられた IP アドレスです。SnapCenter などの管理ツールには、 SVM 管理 LIF が必要です。
+
+* *シングルノード* BlueXPでは、1つのノードシステムに4つのIPアドレスが割り当てられます。
++
+** ノード管理 LIF
+** クラスタ管理 LIF
+** iSCSI データ LIF
++
+
+NOTE: iSCSI LIFは、iSCSIプロトコルを介したクライアントアクセスを提供し、システムがその他の重要なネットワークワークフローに使用します。これらのLIFは必須であり、削除しないでください。
+
+** NAS LIF
 +
 Cloud Volumes ONTAP を API を使用して導入する場合、 Storage VM （ SVM ）管理 LIF の作成をスキップし、次のフラグを指定できます。
 
 +
 'kipsvmManagementLIF ： true
 
-* VPC 1 用のプライベート IP アドレスが 2 つあります
-* VPC 2 のプライベート IP アドレス × 2
-* VPC 3 つのプライベート IP アドレス
+
+
+* * HAペア* BlueXPは、14個のIPアドレスをHAペアに割り当てます。
++
+** ノード管理LIF×2（e0a）
+** iSCSI LIF×2（e0a）
++
+
+NOTE: iSCSI LIFは、iSCSIプロトコルを介したクライアントアクセスを提供し、システムがその他の重要なネットワークワークフローに使用します。これらのLIFは必須であり、削除しないでください。
+
+** NAS LIF×2（e0a）
+** 2つのクラスタ間LIF（e0a）
+** クラスタLIF×2（e0b）
+** HAインターコネクトIPアドレス×2（e0c）
+** RSM iSCSI IPアドレス×2（e0d）
++
+Cloud Volumes ONTAP を API を使用して導入する場合、 Storage VM （ SVM ）管理 LIF の作成をスキップし、次のフラグを指定できます。
+
++
+'kipsvmManagementLIF ： true
+
+
+
 
 
 
@@ -184,9 +215,17 @@ TIP: HA ペアを使用している場合、 HA メディエーターではア�
 
 AutoSupport メッセージを送信できないことがBlueXPから通知された場合は、 link:task-verify-autosupport.html#troubleshoot-your-autosupport-configuration["AutoSupport 構成のトラブルシューティングを行います"]。
 
+ファイアウォールルール:: ファイアウォールルールを作成する必要はありません。BlueXPはファイアウォールルールを作成します。独自のファイアウォールを使用する必要がある場合は、以下のファイアウォールルールを参照してください。
++
+--
+HA 構成には、次の 2 組のファイアウォールルールが必要です。
+
+* VPC -0 の HA コンポーネントのルールセット。これらのルールにより、 Cloud Volumes ONTAP へのデータアクセスが可能になります。 <<Firewall rules for Cloud Volumes ONTAP,詳細はこちら。>>。
+* VPC -1 、 VPC -2 、および VPC -3 の HA コンポーネントに関するもう 1 つのルールセット。これらのルールは、 HA コンポーネント間のインバウンド通信とアウトバウンド通信に対してオープンです。 <<Firewall rules for Cloud Volumes ONTAP,詳細はこちら。>>。
 
 
-=== Google Cloud Storageに接続してデータを階層化
+--
+
 
 コールドデータを Google Cloud Storage バケットに階層化する場合は、 Cloud Volumes ONTAP が配置されているサブネットをプライベート Google Access 用に設定する必要があります（ HA ペアを使用している場合、これは VPC 0 のサブネットです）。手順については、を参照してください https://cloud.google.com/vpc/docs/configure-private-google-access["Google Cloud のドキュメント：「 Configuring Private Google Access"^]。
 
