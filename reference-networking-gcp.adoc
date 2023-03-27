@@ -124,16 +124,16 @@ Cloud Volumes ONTAP を API を使用して導入する場合、 Storage VM （ 
 
 
 
-* * HAペア* BlueXPは、14個のIPアドレスをHAペアに割り当てます。
+* * HAペア* BlueXPは、12~13個のIPアドレスをHAペアに割り当てます。
 +
 ** ノード管理LIF×2（e0a）
+** クラスタ管理LIF（e0a）×1
 ** iSCSI LIF×2（e0a）
 +
 
 NOTE: iSCSI LIFは、iSCSIプロトコルを介したクライアントアクセスを提供し、システムがその他の重要なネットワークワークフローに使用します。これらのLIFは必須であり、削除しないでください。
 
-** NAS LIF×2（e0a）
-** 2つのクラスタ間LIF（e0a）
+** NAS LIF（e0a）×1または2
 ** クラスタLIF×2（e0b）
 ** HAインターコネクトIPアドレス×2（e0c）
 ** RSM iSCSI IPアドレス×2（e0d）
