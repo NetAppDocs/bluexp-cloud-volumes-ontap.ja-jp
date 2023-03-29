@@ -4801,4 +4801,5 @@
   <block id="7f09653ec569404a6d78270f050d7c18" category="list-text">* HAペア* BlueXPは、12~13個のIPアドレスをHAペアに割り当てます。</block>
   <block id="99388f0fdeac933c80f2d52c95fe6eac" category="list-text">クラスタ管理LIF（e0a）×1</block>
   <block id="07ddec46aac81bd14d6fc7f0d22ee78d" category="list-text">NAS LIF（e0a）×1または2</block>
+  <block id="fa7b604cc90feece6d71e8400213710f" category="list-text">次のパラメータと値を追加してapp.confを編集します。</block>
 </blocks>

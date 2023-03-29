@@ -136,11 +136,14 @@ BlueXPが特定のアクションの一部としてAzure Private Linkを作成�
 
 * app.confを更新してロールバックを有効にします*
 
-.ステップ
-. 次の要求本文で 'put/occm/config'API 呼び出しを使用します
+.手順
+. コネクタホストに SSH 接続してログインします。
+. 次のディレクトリに移動します。 /opt/application/NetApp/cloudmanager/docx_occm/data
+. 次のパラメータと値を追加してapp.confを編集します。
 +
-[source, json]
-----
-{ "rollbackOnAzurePrivateLinkFailure": false }
-----
+ "rollback-on-private-link-failure": true
+. ファイルを保存し、コネクタからログオフします。
++
+再起動は必要ありません。
+
 
