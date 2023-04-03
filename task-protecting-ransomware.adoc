@@ -17,9 +17,10 @@ summary: ランサムウェア攻撃は、ビジネス時間、リソース、�
 ランサムウェア攻撃は、ビジネス時間、リソース、評判を低下させる可能性があります。BlueXPを使用すると、NetApp解決策 for Ransomwareを実装できます。これにより、可視化、検出、修復のための効果的なツールが提供されます。
 
 .手順
-. 作業環境で、「 * ランサムウェア * 」アイコンをクリックします。
+. [Canvas]ページで、ランサムウェア対策に設定したシステムの名前をダブルクリックします。
+. [Overview]タブで、[Features]パネルをクリックし、*[Ransomware Protection]*の横にある鉛筆アイコンをクリックします。
 +
-image:screenshot_ransomware_icon.gif["作業環境を表示しているときにページの右上に表示されるランサムウェアのアイコンを示すスクリーンショット。"]
+image:screenshot_features_ransomware.png["作業環境を表示しているときに[Overview]ページの右上にある[Features]パネルに表示される[Ransomware Protection]設定のスクリーンショット。"]
 
 . ネットアップのランサムウェア向けソリューションを導入する：
 +

@@ -169,10 +169,10 @@ link:task-create-aggregates.html["アグリゲートの作成方法を確認で�
 
 * Elastic Volumesが有効になっているアグリゲートを特定します
 +
-Advanced Allocationページに移動すると、アグリゲートでElastic Volumes機能が有効になっているかどうかを確認できます。次の例では、aggr2でElasticボリュームが有効になっていますが、aggr1では有効になっていません。
+Advanced Allocationページに移動すると、アグリゲートでElastic Volumes機能が有効になっているかどうかを確認できます。次の例では、aggr1でElastic Volumesが有効になっています。
 
 +
-image:screenshot-elastic-volumes-enabled.png["2つのアグリゲートを示すスクリーンショット。1つのアグリゲートで「Elastic Volumes」というテキストのフィールドが有効になっています。"]
+image:screenshot_elastic_volume_enabled.png["2つのアグリゲートのスクリーンショット。一方のアグリゲートのフィールドに「Elastic Volumes Enabled」というテキストが表示されています。"]
 
 * アグリゲートに容量を追加します
 +

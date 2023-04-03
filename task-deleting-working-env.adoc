@@ -35,11 +35,11 @@ https://docs.netapp.com/us-en/cloud-manager-data-sense/concept-cloud-compliance.
 . Cloud Volumes ONTAP 作業環境を削除します。
 +
 .. キャンバスページで、削除する Cloud Volumes ONTAP 作業環境の名前をダブルクリックします。
-.. メニューアイコンをクリックし、 * 削除 * をクリックします。
+.. BlueXPコンソールの右上にある楕円アイコンをクリックし、*[削除]*を選択します。
 +
-image:screenshot_delete_cloud_volumes_ontap.png["削除アクションを含む作業環境で使用可能なメニューを示すスクリーンショット。"]
+image:screenshot_settings_delete.png["削除アクションを含む作業環境で使用可能なメニューを示すスクリーンショット。"]
 
-.. 作業環境の名前を入力し、 * 削除 * をクリックします。
+.. [Delete Working Environment]ウィンドウで、作業環境の名前を入力し、*[Delete]*をクリックします。
 +
 作業環境を削除するには、最大 5 分かかります。
 

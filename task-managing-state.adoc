@@ -35,9 +35,10 @@ Cloud Volumes ONTAP を停止してBlueXPから起動することで、クラウ
 
 
 .手順
-. 作業環境で、時計アイコンをクリックします。
+. [Canvas]ページで、目的の作業環境をダブルクリックします。
+. [Overview]タブで、[Features]パネルをクリックし、* Scheduled downtime *の横にある鉛筆アイコンをクリックします。
 +
-image:screenshot_shutdown_icon.gif["スクリーンショット：自動シャットダウンページをロードするアイコンが表示されます。"]
+image:screenshot_schedule_downtime.png["スクリーンショット：自動シャットダウンページをロードするアイコンが表示されます。"]
 
 . シャットダウンスケジュールを指定します。
 +
@@ -47,10 +48,10 @@ image:screenshot_shutdown_icon.gif["スクリーンショット：自動シャ�
 * 例 *
 
 +
-次の図は、毎週土曜日の午前0時にシステムをシャットダウンするようにBlueXPに指示するスケジュールを示しています48 時間。BlueXPは毎週月曜日の午前0時にシステムを再起動します
+次の図は、毎週土曜日の午後20時にシステムをシャットダウンするように設定したスケジュールを示しています（午後8時）12時間。BlueXPは毎週月曜日の午前0時にシステムを再起動します
 
 +
-image:screenshot_shutdown.gif["スクリーンショット：毎週週末の午前 12 時に 48 時間、 Cloud Volumes ONTAP をシャットダウンするシャットダウンスケジュールを示しています。"]
+image:screenshot_schedule_downtime_window.png["スクリーンショット：[Schedule downtime]画面を示しています。"]
 
 
 
@@ -58,7 +59,7 @@ image:screenshot_shutdown.gif["スクリーンショット：毎週週末の午�
 
 
 .結果
-スケジュールが保存されます。時計アイコンが変化して、スケジュールが設定されたことを示します。 image:screenshot_shutdown_icon_scheduled.gif["スクリーンショット：スケジュールの定義後に自動シャットダウンアイコンが表示されます。"]
+スケジュールが保存されます。Features（機能）パネルの下の対応するScheduled downtime（スケジュールされたダウンタイム）行項目に「On（オン）」
 
 
 
@@ -75,7 +76,7 @@ HAペアを停止すると、BlueXPは両方のノードをシャットダウン
 .手順
 . 作業環境で、 * 電源オフ * アイコンをクリックします。
 +
-image:screenshot_otc_turn_off.gif["スクリーンショット： Cloud Volumes ONTAP システムをオフにするアイコンが表示されます。"]
+image:screenshot_turn_off_redesign.png["スクリーンショット： Cloud Volumes ONTAP システムをオフにするアイコンが表示されます。"]
 
 . Snapshot を作成するオプションを有効にしておくと、システムのリカバリが可能になります。
 . [ オフにする *] をクリックします。

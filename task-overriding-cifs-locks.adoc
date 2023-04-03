@@ -30,7 +30,7 @@ BlueXP設定を変更する前にコネクタを作成する必要がありま�
 .手順
 . BlueXPコンソールの右上にある[設定]アイコンをクリックし、[*コネクタの設定*]を選択します。
 +
-image:screenshot_settings_icon.gif["BlueXPコンソールの右上にある設定アイコンを示すスクリーンショット。"]
+image:screenshot_settings_icon.png["BlueXPコンソールの右上にある設定アイコンを示すスクリーンショット。"]
 
 . [* Azure* ] で、 [* Azure CIFS locks for Azure HA working environments * ] をクリックします。
 . チェックボックスをクリックして機能を有効にし、 * 保存 * をクリックします。

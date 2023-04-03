@@ -26,11 +26,10 @@ TIP: サポートに登録されていないシステムでも、新しいバー
 +
 https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-adding-nss-accounts.html["ネットアップサポートサイトのアカウントを追加する方法について説明します"^]。
 
-. 左側のナビゲーションメニューから、* Storage > Canvas *を選択します
-. カンバスページで、登録するシステムの名前をダブルクリックします。
-. メニューアイコンをクリックし、 * Support registration registration * （サポート登録 * ）をクリックします。
+. Canvasページで、登録するシステムの名前をダブルクリックします。
+. [概要]タブで、[機能]パネルをクリックし、*[サポート登録]*の横にある鉛筆アイコンをクリックします。
 +
-image:screenshot_menu_registration.gif["スクリーンショット： Cloud Volumes ONTAP システムのメニューアイコンで選択したサポート登録オプションを表示します。"]
+image:screenshot_features_support_registration_2.png["スクリーンショット：Cloud Volumes ONTAP システムの[機能]パネルにある[サポート登録]オプションを示しています。"]
 
 . ネットアップサポートサイトのアカウントを選択し、 * 登録 * をクリックします。
 

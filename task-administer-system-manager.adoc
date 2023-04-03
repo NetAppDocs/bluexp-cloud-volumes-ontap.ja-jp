@@ -87,14 +87,11 @@ Cloud Volumes ONTAP 作業環境を開き、詳細ビューオプションをク
 . キャンバスページで、Cloud Volumes ONTAP システムの名前をダブルクリックします。
 . 右上の*[拡張表示に切り替える]をクリックします。
 +
-image:screenshot-cvo-advanced-view.png["詳細ビューに切り替えオプションを示すCloud Volumes ONTAP 作業環境のスクリーンショット。"]
+image:screenshot_advanced_view.png["詳細ビューに切り替えオプションを示すCloud Volumes ONTAP 作業環境のスクリーンショット。"]
 
 . 確認メッセージが表示されたら、そのメッセージを読み、*閉じる*をクリックします。
 . System Managerを使用してCloud Volumes ONTAP を管理する。
 . 必要に応じて、[標準表示に切り替える]をクリックして、BlueXPを使用した標準管理に戻ります。
-+
-image:screenshot-cvo-standard-view.png["標準ビューに切り替えオプションを示すCloud Volumes ONTAP 作業環境のスクリーンショット。"]
-
 
 
 

@@ -29,7 +29,7 @@ Cloud Volumes ONTAP 管理者ユーザアカウントのパスワードを知っ
 
 ifdef::aws[]
 
-[+]image:screenshot_discover.gif["既存の Cloud Volumes ONTAP システムを検出するためのリンクを示すスクリーンショット。"]
+[+]image:screenshot_discover_redesign.png["既存の Cloud Volumes ONTAP システムを検出するためのリンクを示すスクリーンショット。"]
 
 endif::aws[]
 
