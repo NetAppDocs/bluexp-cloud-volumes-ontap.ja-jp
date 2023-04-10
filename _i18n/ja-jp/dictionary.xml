@@ -3610,7 +3610,6 @@
   <block id="bd143c2af617c5743abf3efb9b36b10a" category="paragraph">Cloud Volumes ONTAP 作業環境を作成すると、Google Cloud Marketplaceで提供されている契約を購読するように求めるメッセージが表示されます。このサブスクリプションは、充電のための作業環境に関連付けられます。同じサブスクリプションを追加の作業環境に使用できます。</block>
   <block id="f03e86cc66eb1161cd11073bf0ca84cb" category="list-text">mailto：ng-keystone-success@netapp.com [ネットアップにお問い合わせください] 1つ以上のKeystone Flex SubscriptionsでBlueXPユーザアカウントを承認してください。</block>
   <block id="970e80f52bfaf06fb0516cbd1132f19b" category="paragraph">これらの制限は、BlueXP（旧Cloud Manager）のCloud Volumes ONTAP 管理に固有のものです。Cloud Volumes ONTAP ソフトウェア自体の制限を確認するには、次の手順を実行します。<block ref="70a3d165b5204ef94ef3f2d7b3d098d2" category="inline-link-rx"></block></block>
-  <block id="cc536ef595b8b8d98efa4ac1fce2305e" category="paragraph">Cloud Volumes ONTAP はFlexGroup ボリュームをサポートしていますが、BlueXPはサポートしていません。System ManagerまたはCLIからFlexGroup ボリュームを作成する場合は、BlueXPの容量管理モードを手動に設定する必要があります。FlexGroup ボリュームで自動モードが適切に機能しない可能性があります。</block>
   <block id="a719d497acfd7c92ff4bf9224e1de3d0" category="paragraph">一部のクラウドプロバイダでは、Cloud Volumes ONTAP がS3をスケールアウトストレージのオプションとしてサポートしていますが、BlueXPにはこの機能の管理機能はありません。CLI を使用することが、 Cloud Volumes ONTAP からの S3 クライアントアクセスを設定するためのベストプラクティスです。詳細については、を参照してください<block ref="49e8fee748cd4c8d6f01bdb03113fc2a" category="inline-link-rx"></block>。</block>
   <block id="397f1667d1f282be3b879b4e92a63aad" category="paragraph">BlueXPでは、Storage VMディザスタリカバリのセットアップやオーケストレーションはサポートされていません。System Manager または CLI を使用する必要があります。</block>
   <block id="66abe501678500958b330ea34f7f3794" category="admonition">テイクオーバーを開始してギブバックを待機することで、BlueXPは一度に1つのノードを正常に変更します。ネットアップの QA チームは、このプロセスでファイルの書き込みと読み取りの両方をテストしたため、クライアント側で問題は発生しませんでした。接続が変更されると、 I/O レベルでの再試行が表示されますが、アプリケーションレイヤはこれらの NFS / CIFS 接続の「再配線」の省略形を使用しています。</block>
@@ -4084,7 +4083,6 @@
   <block id="58eaebf972358f1cf03d386a4ade1a0f" category="paragraph-title">次の手順</block>
   <block id="f3d9abb903127694db460aa9c7f4d7be" category="paragraph-title">制限事項</block>
   <block id="6b2eadbbc64d8760da4136e28da230c2" category="list-text">*場所を選択*：「* Amazon Web Services *」と「* Cloud Volumes ONTAP HA *」を選択します。</block>
-  <block id="7945e794f4dd8b21c15eebff5d67a416" category="section-title">BlueXPではFlexGroup ボリュームはサポートされていません</block>
   <block id="56fe439ee061f5bc2e940368c1d73fa3" category="section-title">BlueXPは、Cloud Volumes ONTAP でS3をサポートしていません</block>
   <block id="9832e39264a34e4e40dca8449efd019e" category="section-title">BlueXPでは、Storage VMのディザスタリカバリはサポートされていません</block>
   <block id="d59db7846bd10b6d60d21543df9faa9e" category="list-title">必要なもの</block>
@@ -4865,4 +4863,7 @@
   <block id="942c9249796cf6b78c981ebf15195809" category="list-text"><block ref="942c9249796cf6b78c981ebf15195809" category="inline-link-rx"></block></block>
   <block id="38d4d167f6dd9174c3535fc5c7ba4b76" category="section-title">2023年4月4日</block>
   <block id="ebef32c1ba0aec7a39eb2ce8370a97d5" category="paragraph">Cloud Volumes ONTAP 9.12.1 GA以降では、次のように中国リージョンがAWSでサポートされるようになりました。</block>
+  <block id="88e0131339701d1e970c1ab7a5495d25" category="section-title">BlueXPでは、FlexGroup ボリュームの作成はサポートされていません</block>
+  <block id="fff40ddae0362c17ba575430d4cdd727" category="paragraph">Cloud Volumes ONTAP ではFlexGroup ボリュームがサポートされますが、現時点ではFlexGroup ボリュームの作成はサポートされていません。System ManagerまたはCLIからFlexGroup ボリュームを作成する場合は、BlueXPの容量管理モードを手動に設定する必要があります。FlexGroup ボリュームで自動モードが適切に機能しない可能性があります。</block>
+  <block id="be5e56e337ebbc7d99062048ba94693e" category="admonition">今後のリリースでは、BlueXPでFlexGroup ボリュームを作成できるようになる予定です。</block>
 </blocks>
