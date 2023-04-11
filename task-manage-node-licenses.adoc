@@ -24,7 +24,7 @@ summary: 各 Cloud Volumes ONTAP システムに必要な容量の有効なラ�
 
 _Digital Wallet では、 Cloud Volumes ONTAP のライセンスを 1 箇所から管理できます。新しいライセンスを追加したり、既存のライセンスを更新したりできます。
 
-link:concept-licensing.html["Cloud Volumes ONTAP ライセンスの詳細については、こちらをご覧ください"]。
+https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/concept-licensing.html["Cloud Volumes ONTAP ライセンスの詳細については、こちらをご覧ください"]。
 
 
 
@@ -228,6 +228,6 @@ https://docs.netapp.com/us-en/cloud-manager-replication/task-replicating-data.ht
 
 . 元の作業環境を削除して、不要になった Cloud Volumes ONTAP システムを終了します。
 +
-link:task-deleting-working-env.html["Cloud Volumes ONTAP 作業環境を削除する方法について説明します"]。
+https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-deleting-working-env.html["Cloud Volumes ONTAP 作業環境を削除する方法について説明します"]。
 
 

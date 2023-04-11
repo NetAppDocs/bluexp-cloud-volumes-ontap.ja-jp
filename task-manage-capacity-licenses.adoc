@@ -20,7 +20,7 @@ _ 容量ベースのライセンス _ 容量単位の Cloud Volumes ONTAP に対
 
 _Digital Wallet では、 Cloud Volumes ONTAP のライセンスを 1 箇所から管理できます。新しいライセンスを追加したり、既存のライセンスを更新したりできます。
 
-link:concept-licensing.html["Cloud Volumes ONTAP ライセンスの詳細については、こちらをご覧ください"]。
+https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/concept-licensing.html["Cloud Volumes ONTAP ライセンスの詳細については、こちらをご覧ください"]。
 
 
 
@@ -57,7 +57,7 @@ image:screenshot_capacity-based-licenses.png["Cloud Volumes ONTAP パッケー�
 +
 ** 消費容量_パッケージのボリュームの容量を表示します。特定のパッケージの詳細を表示するには、ツールチップの上にマウスポインタを置きます。
 +
-Essentialsパッケージに表示される容量を理解するには、充電の仕組みを理解しておく必要があります。 link:concept-licensing.html#notes-about-charging["Essentialsパッケージの充電について説明します"]。
+Essentialsパッケージに表示される容量を理解するには、充電の仕組みを理解しておく必要があります。 https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/concept-licensing.html#notes-about-charging["Essentialsパッケージの充電について説明します"]。
 
 ** _推奨容量_は、ネットアップから購入したライセンス容量（BYOLまたはマーケットプレイス契約）です。
 +
