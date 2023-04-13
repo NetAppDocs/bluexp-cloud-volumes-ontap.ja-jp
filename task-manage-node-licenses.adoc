@@ -33,7 +33,7 @@ https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/concept-licensin
 デジタルウォレットページでは、シリアル番号と PAYGO ライセンスタイプを含む、 PAYGO Cloud Volumes ONTAP の各システムに関する詳細を表示できます。
 
 .手順
-. 左側のナビゲーションメニューから、* Digital Wallet *を選択します。
+. BlueXPナビゲーションメニューから、* Governance > Digital Wallet *を選択します。
 . [*Node] Cloud Volumes ONTAP タブで、ドロップダウンから[*Node Based Licenses]を選択します。
 . [PAYGO] をクリックします。
 . PAYGO ライセンスごとに詳細を表に示します。
@@ -56,7 +56,7 @@ image:screenshot_paygo_licenses.png["3 つのペイゴライセンスを含む�
 ノードベースのライセンスをデジタルウォレットに追加して、新しい Cloud Volumes ONTAP システムの作成時にライセンスを選択できるようにします。デジタルウォレットは、これらのライセンスを _unassigned _ として識別します。
 
 .手順
-. 左側のナビゲーションメニューから、* Digital Wallet *を選択します。
+. BlueXPナビゲーションメニューから、* Governance > Digital Wallet *を選択します。
 . [*Node] Cloud Volumes ONTAP タブで、ドロップダウンから[*Node Based Licenses]を選択します。
 . [ * 未割り当て * （ Unassigned * ） ]
 . [ 未割り当てライセンスの追加 ] をクリックします。
@@ -85,7 +85,7 @@ Cloud Volumes ONTAP 用の未割り当てのノードベースライセンスが
 変換されたライセンスの有効期限は、 Cloud Volumes ONTAP ライセンスと同じです。
 
 .手順
-. 左側のナビゲーションメニューから、* Digital Wallet *を選択します。
+. BlueXPナビゲーションメニューから、* Governance > Digital Wallet *を選択します。
 . [*Node] Cloud Volumes ONTAP タブで、ドロップダウンから[*Node Based Licenses]を選択します。
 . [ * 未割り当て * （ Unassigned * ） ]
 . [*Exchange ライセンス *] をクリックします。
@@ -127,7 +127,7 @@ image:screenshot-license-generator.png["スクリーンショット：NetApp Lic
 BlueXPがセキュリティ保護されたインターネット接続経由でライセンスファイルにアクセスできない場合は、自分でファイルを取得し、BlueXPに手動でアップロードできます。
 
 .手順
-. 左側のナビゲーションメニューから、* Digital Wallet *を選択します。
+. BlueXPナビゲーションメニューから、* Governance > Digital Wallet *を選択します。
 . [*Node] Cloud Volumes ONTAP タブで、ドロップダウンから[*Node Based Licenses]を選択します。
 . BYOL * タブで、 Cloud Volumes ONTAP システムの詳細を展開します。
 . システムライセンスの横にあるアクションメニューをクリックし、 * ライセンスの更新 * を選択します。
@@ -153,7 +153,7 @@ Cloud Volumes ONTAP BYOL システムの追加容量ライセンスを購入す�
 BlueXPの右下にあるチャットアイコンを使って、容量ライセンスを追加購入してください。購入したライセンスは、 Cloud Volumes ONTAP システムに適用できます。
 
 .手順
-. 左側のナビゲーションメニューから、* Digital Wallet *を選択します。
+. BlueXPナビゲーションメニューから、* Governance > Digital Wallet *を選択します。
 . [*Node] Cloud Volumes ONTAP タブで、ドロップダウンから[*Node Based Licenses]を選択します。
 . BYOL * タブで、 Cloud Volumes ONTAP システムの詳細を展開します。
 . [Add Capacity License*] をクリックします。
@@ -168,7 +168,7 @@ BlueXPの右下にあるチャットアイコンを使って、容量ライセ�
 容量ライセンスの期間を延長した場合は、BlueXPでライセンスを更新する必要があります。
 
 .手順
-. 左側のナビゲーションメニューから、* Digital Wallet *を選択します。
+. BlueXPナビゲーションメニューから、* Governance > Digital Wallet *を選択します。
 . [*Node] Cloud Volumes ONTAP タブで、ドロップダウンから[*Node Based Licenses]を選択します。
 . BYOL * タブで、 Cloud Volumes ONTAP システムの詳細を展開します。
 . 容量ライセンスの横にあるアクションメニューをクリックし、 * ライセンスの更新 * を選択します。
@@ -183,7 +183,7 @@ BlueXPの右下にあるチャットアイコンを使って、容量ライセ�
 使用されなくなったために期限切れになった容量ライセンスは、いつでも削除できます。
 
 .手順
-. 左側のナビゲーションメニューから、* Digital Wallet *を選択します。
+. BlueXPナビゲーションメニューから、* Governance > Digital Wallet *を選択します。
 . [*Node] Cloud Volumes ONTAP タブで、ドロップダウンから[*Node Based Licenses]を選択します。
 . BYOL * タブで、 Cloud Volumes ONTAP システムの詳細を展開します。
 . 容量ライセンスの横にあるアクションメニューをクリックし、 * ライセンスの削除 * を選択します。
@@ -203,7 +203,7 @@ EvalライセンスをBYOLに変換すると、BlueXPはCloud Volumes ONTAP シ�
 
 
 .手順
-. 左側のナビゲーションメニューから、* Digital Wallet *を選択します。
+. BlueXPナビゲーションメニューから、* Governance > Digital Wallet *を選択します。
 . [*Node] Cloud Volumes ONTAP タブで、ドロップダウンから[*Node Based Licenses]を選択します。
 . 「 * 評価 * 」をクリックします。
 . 表で、 Cloud Volumes ONTAP システムの *Convert to BYOL License* をクリックします。

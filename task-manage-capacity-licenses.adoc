@@ -39,8 +39,9 @@ BlueXPでライセンスを追加できない場合は、手動でDigital Wallet
 Digital Walletには、アカウントで消費された合計容量と、ライセンスパッケージで消費された容量が表示されます。この情報は、料金の支払い方法や、容量の追加購入が必要かどうかを把握するのに役立ちます。
 
 .手順
-. 左側のナビゲーションメニューから、* Digital Wallet *を選択します。
-. [Capacity Based Licenses]*を選択した状態でパッケージの概要を確認し、消費容量、事前コミット済み容量の合計、PAYGOの合計容量を確認します。
+. BlueXPナビゲーションメニューから、* Governance > Digital Wallet *を選択します。
+. Cloud Volumes ONTAP *タブで、* Capacity Based Licenses *を選択したままにします。
+. パッケージの概要を確認します。この概要には、消費容量、事前コミット済み容量の合計、従量課金制の合計容量が表示されます。
 +
 ** Total Consumed capacity_は、ネットアップアカウントのすべてのCloud Volumes ONTAP システムのプロビジョニング済み総容量です。充電は、ボリューム内のローカルスペース、使用済みスペース、格納済みスペース、または有効なスペースに関係なく、各ボリュームにプロビジョニングされたサイズに基づいて行われます。
 ** _Total precommitted capacity_は、ネットアップから購入したライセンスで許可された容量（BYOLまたはマーケットプレイス契約）の合計です。
@@ -88,7 +89,7 @@ image:screenshot-digital-wallet-packages.png["スクリーンショット：Esse
 
 
 .手順
-. 左側のナビゲーションメニューから、* Digital Wallet *を選択します。
+. BlueXPナビゲーションメニューから、* Governance > Digital Wallet *を選択します。
 . [* Cloud Volumes ONTAP *（ライセンスの追加）]タブで、[*容量ベースのライセンス*]を選択したまま、[*ライセンスの追加]をクリックします。
 . 容量ベースのライセンスのシリアル番号を入力するか、ライセンスファイルをアップロードしてください。
 +
@@ -109,7 +110,7 @@ image:screenshot-digital-wallet-packages.png["スクリーンショット：Esse
 ライセンスファイル（ HA ペアがある場合は _files_ ）。
 
 .手順
-. 左側のナビゲーションメニューから、* Digital Wallet *を選択します。
+. BlueXPナビゲーションメニューから、* Governance > Digital Wallet *を選択します。
 . [ライセンスの更新*（Cloud Volumes ONTAP *）]タブで、ライセンスの横にあるアクションメニューをクリックし、[ライセンスの更新*（Update License *）]を選択します。
 . ライセンスファイルをアップロードします。
 . [ ライセンスのアップロード ] をクリックします。
@@ -132,7 +133,7 @@ endif::azure[]
 クラウドプロバイダの市場からプライベートオファーまたは契約を結んでいる場合、契約に含まれていない課金方式に変更すると、BYOL（ネットアップからライセンスを購入した場合）またはPAYGOに対して課金されます。
 
 .手順
-. 左側のナビゲーションメニューから、* Digital Wallet *を選択します。
+. BlueXPナビゲーションメニューから、* Governance > Digital Wallet *を選択します。
 . [*充電方法*（Cloud Volumes ONTAP *）]タブで、[*充電方法の変更*（* Change Charging method *）]
 +
 image:screenshot-digital-wallet-charging-method-button.png["[課金方法の変更]ボタンが表のすぐ上にある、デジタルウォレットのCloud Volumes ONTAP ページのスクリーンショット。"]
@@ -156,7 +157,7 @@ BlueXPは、Cloud Volumes ONTAP システムの充電方法を変更します。
 容量ベースのライセンスの期限が切れて使用できなくなった場合は、いつでも削除できます。
 
 .手順
-. 左側のナビゲーションメニューから、* Digital Wallet *を選択します。
+. BlueXPナビゲーションメニューから、* Governance > Digital Wallet *を選択します。
 . [ライセンスの削除（Cloud Volumes ONTAP ）]タブで、ライセンスの横にあるアクションメニューをクリックし、[ライセンスの削除（Remove License）]を選択します。
 . [ 削除（ Remove ） ] をクリックして確定します。
 
