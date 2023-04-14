@@ -22,7 +22,7 @@ BlueXPでCloud Volumes ONTAP 作業環境を作成することで、Azureで単�
 [[licensing]]
 * 稼働中のコネクタ。
 +
-** を用意しておく必要があります https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-creating-connectors-azure.html["ワークスペースに関連付けられているコネクタ"^]。
+** を用意しておく必要があります https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-quick-start-connector-azure.html["ワークスペースに関連付けられているコネクタ"^]。
 ** https://docs.netapp.com/us-en/cloud-manager-setup-admin/concept-connectors.html["コネクタをで実行したままにする準備をしておく必要があります 常時"^]。
 
 
@@ -57,7 +57,7 @@ AzureでシングルノードのCloud Volumes ONTAP システムを起動する�
 . 左側のナビゲーションメニューから、* Storage > Canvas *を選択します。
 . [[subscribe] キャンバスページで、 * 作業環境の追加 * をクリックし、プロンプトに従います。
 . *場所を選択*：「* Microsoft Azure *」および「* Cloud Volumes ONTAP シングルノード*」を選択します。
-. プロンプトが表示されたら、 https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-creating-connectors-azure.html["コネクタを作成します"^]。
+. プロンプトが表示されたら、 https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-quick-start-connector-azure.html["コネクタを作成します"^]。
 . * 詳細とクレデンシャル * ：必要に応じて Azure のクレデンシャルとサブスクリプションを変更し、クラスタ名を指定し、タグを追加し、クレデンシャルを指定することもできます。
 +
 次の表では、ガイダンスが必要なフィールドについて説明します。
@@ -280,7 +280,7 @@ AzureでCloud Volumes ONTAP HAペアを起動するには、BlueXPでHA作業環
 .手順
 . 左側のナビゲーションメニューから、* Storage > Canvas *を選択します。
 . [[subscribe] キャンバスページで、 * 作業環境の追加 * をクリックし、プロンプトに従います。
-. プロンプトが表示されたら、 https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-creating-connectors-azure.html["コネクタを作成します"^]。
+. プロンプトが表示されたら、 https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-quick-start-connector-azure.html["コネクタを作成します"^]。
 . * 詳細とクレデンシャル * ：必要に応じて Azure のクレデンシャルとサブスクリプションを変更し、クラスタ名を指定し、タグを追加し、クレデンシャルを指定することもできます。
 +
 次の表では、ガイダンスが必要なフィールドについて説明します。

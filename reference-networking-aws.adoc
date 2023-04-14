@@ -281,6 +281,6 @@ image:diagram_ha_networking.png["この概念図は、 Cloud Volumes ONTAP HA �
 
 コネクタをまだ作成していない場合は、コネクタのネットワーク要件も確認してください。
 
-* https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-creating-connectors-aws.html["コネクタのネットワーク要件を確認します"^]
+* https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-quick-start-connector-aws.html["コネクタのネットワーク要件を確認します"^]
 * https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-ports-aws.html["AWSのセキュリティグループのルール"^]
 

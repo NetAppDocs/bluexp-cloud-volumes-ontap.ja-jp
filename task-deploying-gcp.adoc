@@ -25,7 +25,7 @@ Cloud Volumes ONTAP は、シングルノード構成またはGoogle CloudのHA�
 [[licensing]]
 * 稼働中のコネクタ。
 +
-** を用意しておく必要があります https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-creating-connectors-gcp.html["ワークスペースに関連付けられているコネクタ"^]。
+** を用意しておく必要があります https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-quick-start-connector-google.html["ワークスペースに関連付けられているコネクタ"^]。
 ** https://docs.netapp.com/us-en/cloud-manager-setup-admin/concept-connectors.html["コネクタをで実行したままにする準備をしておく必要があります 常時"^]。
 ** コネクタに関連付けられているサービスアカウント https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-permissions-gcp.html["必要な権限がある必要があります"^]
 
@@ -59,7 +59,7 @@ BlueXPで作業環境を作成し、Cloud Volumes ONTAP をGoogle Cloudで起動
 . 左側のナビゲーションメニューから、* Storage > Canvas *を選択します。
 . [[subscribe] キャンバスページで、 * 作業環境の追加 * をクリックし、プロンプトに従います。
 . * 場所を選択 * ：「 * Google Cloud * 」と「 * Cloud Volumes ONTAP * 」を選択します。
-. プロンプトが表示されたら、 https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-creating-connectors-gcp.html["コネクタを作成します"^]。
+. プロンプトが表示されたら、 https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-quick-start-connector-google.html["コネクタを作成します"^]。
 . *詳細と認証情報*：プロジェクトを選択し、クラスタ名を指定します。必要に応じてサービスアカウントを選択し、ラベルを追加し、クレデンシャルを指定することもできます。
 +
 次の表では、ガイダンスが必要なフィールドについて説明します。
@@ -88,7 +88,7 @@ Cloud Volumes ONTAP を配置するプロジェクトを選択します。既定
 ドロップダウンリストに他のプロジェクトが表示されない場合は、まだBlueXPサービスアカウントを他のプロジェクトに関連付けていません。Google Cloud コンソールに移動し、 IAM サービスを開き、プロジェクトを選択します。BlueXPロールを持つサービスアカウントをそのプロジェクトに追加しますプロジェクトごとにこの手順を繰り返す必要があります。
 
 
-NOTE: これは、BlueXP用に設定したサービスアカウントです。 link:https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-creating-connectors-gcp.html#set-up-a-service-account-for-the-connector["このページで説明されているように"^]。
+NOTE: これは、BlueXP用に設定したサービスアカウントです。 link:https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-quick-start-connector-google.html#set-up-a-service-account-for-the-connector["このページで説明されているように"^]。
 
 [ サブスクリプションの追加 ] をクリックして、選択した資格情報をサブスクリプションに関連付けます。
 
@@ -314,7 +314,7 @@ Cloud Volumes ONTAP を配置するプロジェクトを選択します。既定
 ドロップダウンリストに他のプロジェクトが表示されない場合は、まだBlueXPサービスアカウントを他のプロジェクトに関連付けていません。Google Cloud コンソールに移動し、 IAM サービスを開き、プロジェクトを選択します。BlueXPロールを持つサービスアカウントをそのプロジェクトに追加しますプロジェクトごとにこの手順を繰り返す必要があります。
 
 
-NOTE: これは、BlueXP用に設定したサービスアカウントです。 link:https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-creating-connectors-gcp.html#set-up-a-service-account-for-the-connector["このページで説明されているように"^]。
+NOTE: これは、BlueXP用に設定したサービスアカウントです。 link:https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-quick-start-connector-google.html#set-up-a-service-account-for-the-connector["このページで説明されているように"^]。
 
 [ サブスクリプションの追加 ] をクリックして、選択した資格情報をサブスクリプションに関連付けます。
 
