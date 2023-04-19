@@ -13,7 +13,7 @@ summary: サードパーティのキー管理サービスにAzure Key Vaultを�
 
 を使用できます link:https://docs.microsoft.com/en-us/azure/key-vault/general/basic-concepts["Azure キーボールト（ AKV ）"^] Azureで導入されたアプリケーションでONTAP 暗号化キーを保護するため。
 
-AKVは保護に使用できます link:https://docs.netapp.com/us-en/ontap/configure-netapp-volume-encryption-concept.html["NetApp Volume Encryption （ NVE ）キー"^] データSVMの場合のみ。
+AKVは保護に使用できます link:https://docs.netapp.com/us-en/ontap/encryption-at-rest/configure-netapp-volume-encryption-concept.html["NetApp Volume Encryption （ NVE ）キー"^] データSVMの場合のみ。
 
 AKVを使用したキー管理は、CLIまたはONTAP REST APIを使用して有効にできます。
 
