@@ -178,8 +178,6 @@
   <block id="f9402b876a835ea0ecd00da4d201433a" category="paragraph">ノードベースのライセンスは、単一のノードまたは HA ペアに対して最大 368 TiB の容量を提供します。</block>
   <block id="7bf9d9c18215351b0d16f4f9343c9700" category="paragraph">Cloud Volumes ONTAP BYOL システムでは、複数のライセンスを購入して、 368 TiB を超える容量を割り当てることができます。たとえば、 2 つのライセンスを購入して、 Cloud Volumes ONTAP に最大 736TiB の容量を割り当てることができます。また、 4 つのライセンスを購入して、最大 1.4 PiB までライセンスを取得することもできます。</block>
   <block id="5e26587c8f074cc4f0455ff005cb744c" category="paragraph">シングルノードシステムまたは HA ペアに対して購入できるライセンスの数に制限はありません。</block>
-  <block id="c695cd123d8c1b69b12f443c42ad98f9" category="inline-link">使用できるライセンスがあるかどうかを確認します</block>
-  <block id="d5777fa0c0510a8e0af55b024f765d10" category="admonition">購入した一部のオンプレミス ONTAP ストレージシステムには、 Cloud Volumes ONTAP のライセンスが無償で付属している場合があります。ライセンスを使用して新しい Cloud Volumes ONTAP システムを作成するか、または既存の Cloud Volumes ONTAP システムにライセンスを適用して容量を拡張できます。<block ref="e219f91c05893e1e7e9c773a8103d487" category="inline-link-rx"></block>。</block>
   <block id="ba23388576c937a1743b84554bd13c72" category="inline-link-macro">使用頻度の低いデータをオブジェクトストレージに階層化します</block>
   <block id="255a885478279e7778252b0fbb8e555b" category="inline-link">ストレージの制限については、『 Cloud Volumes ONTAP リリースノート』を参照してください</block>
   <block id="2b1ca4265fcc8a110e4539b4d9a23ffe" category="section-title">新しいシステムのライセンス管理</block>
@@ -2796,7 +2794,6 @@
   <block id="77d680745644d1c19a022cc0a306f88b" category="list-text">データの暗号化：Googleで管理されるキー</block>
   <block id="b33b7497784a31fa197bca9debbfddea" category="list-text">Cloud Volumes ONTAP のライセンスを設定するために必要な事項を理解する。</block>
   <block id="b2084f1d9eba331a28867d15c742284e" category="inline-link-macro">ライセンスの設定方法について説明します</block>
-  <block id="1093810fe4a9e55d156722b8332da3cd" category="paragraph"><block ref="9b79239dba046d18af2dfc2ca929db17" category="inline-link-macro-rx"></block>。</block>
   <block id="5719f300587dfbbd55551379f9ab4915" category="list-text"><block ref="69100fd89c8fc892aa253073563db45d" category="inline-link-macro-rx"></block>。</block>
   <block id="17b559ceaadd6decdd6c9a579de016a2" category="summary">Cloud Volumes ONTAP で使用するライセンスオプションを決定したら、新しいシステムを導入する際にそのライセンスオプションを選択する前に、いくつかの手順を実行する必要があります。</block>
   <block id="0cce9e09385c0d8e677ff5d9518dc514" category="doc">AzureでCloud Volumes ONTAP のライセンスをセットアップする</block>
@@ -4871,4 +4868,5 @@
   <block id="c6a56bb8eca094c529c75a2c22c92bcc" category="inline-link-macro">ノードベースライセンスの管理方法については、こちらをご覧ください</block>
   <block id="6dbf080f75126585a20cc8d6d87df22f" category="paragraph"><block ref="6b55a043b67b958778673f44bc8845b9" category="inline-link-macro-rx"></block>。</block>
   <block id="5a91158751eaabe4d195cd633fa37db6" category="paragraph">デジタルウォレットでノードベースライセンスを管理し、各Cloud Volumes ONTAP システムに必要な容量を含む有効なライセンスがあることを確認します。</block>
+  <block id="0c1a89022d40f1a10025e9f9354168a0" category="paragraph"><block ref="f1e89d709c35aed2650bbf12a55f1ba1" category="inline-link-macro-rx"></block>。</block>
 </blocks>
