@@ -1773,7 +1773,6 @@
   <block id="0a2292629d42074cb011142b9cd8f433" category="list-text">_private_IP_は 、 CVO-node2 の eth0 （ e0a ）上の未使用のセカンダリプライベート IP アドレスです。</block>
   <block id="7e3a4c0ec1aee45acf094839bb9c449f" category="summary">各 Cloud Volumes ONTAP システムに必要な容量の有効なライセンスがあることを確認するために、 Digital Wallet でノードベースのライセンスを管理します。</block>
   <block id="de94398a333e3b7bdafad2ddf3232331" category="doc">ノードベースのライセンスを管理します</block>
-  <block id="15d021d83ccb68dbaf63683ce6741fee" category="paragraph">デジタルウォレットでノードベースのライセンスを管理して、各 Cloud Volumes ONTAP システムに必要な容量の有効なライセンスがあることを確認します。</block>
   <block id="4627bd080634e9380c75a1cc04a09486" category="paragraph">ノードベースライセンス _ は旧世代のライセンスモデルです（新規のお客様は使用できません）。</block>
   <block id="81f9d97336a30fb7be6f8d770fee25eb" category="list-text">ネットアップから購入した BYOL ライセンス</block>
   <block id="17ac9e85cf5b6f7b77acf61fb7721242" category="list-text">クラウドプロバイダの市場から従量課金制（ PAYGO ）で 1 時間単位のサブスクリプションが提供されます</block>
@@ -4869,4 +4868,7 @@
   <block id="bda3783d2bc581168e75face42b077fc" category="admonition">これは、BlueXP用に設定したサービスアカウントです。 <block ref="217ece91c776cfab87e2daa3df8115e9" category="inline-link-macro-rx"></block>。</block>
   <block id="00da77f8fd6be3d642021bca988d9b5e" category="paragraph"><block ref="00da77f8fd6be3d642021bca988d9b5e" category="inline-link-rx"></block></block>
   <block id="ece137c555d8c53c8378fee53f6273c4" category="paragraph">AKVは保護に使用できます <block ref="defc94716dcceab396c0509ed7db9366" category="inline-link-macro-rx"></block> データSVMの場合のみ。</block>
+  <block id="c6a56bb8eca094c529c75a2c22c92bcc" category="inline-link-macro">ノードベースライセンスの管理方法については、こちらをご覧ください</block>
+  <block id="6dbf080f75126585a20cc8d6d87df22f" category="paragraph"><block ref="6b55a043b67b958778673f44bc8845b9" category="inline-link-macro-rx"></block>。</block>
+  <block id="5a91158751eaabe4d195cd633fa37db6" category="paragraph">デジタルウォレットでノードベースライセンスを管理し、各Cloud Volumes ONTAP システムに必要な容量を含む有効なライセンスがあることを確認します。</block>
 </blocks>
