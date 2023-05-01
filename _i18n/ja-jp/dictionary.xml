@@ -1068,7 +1068,6 @@
   <block id="cd5ddfb19671526301ef6b32141e2e79" category="section-title">RPO と RTO</block>
   <block id="723596a60ea78fba91bcc7acb47cb786" category="paragraph">HA 構成では、次のようにデータの高可用性が維持されます。</block>
   <block id="f04b83c6c15bc920bde6b3bda82d692e" category="list-text">RPO （ Recovery Point Objective ：目標復旧時点）は 0 秒です。データはトランザクション的に整合性が保たれ、データ損失は発生しません。</block>
-  <block id="9a761447afd0b14671defde47da1673b" category="list-text">RTO （目標復旧時間）は 60 秒です。システム停止が発生した場合は、 60 秒以内にデータを利用できるようにする必要があります。</block>
   <block id="218815dee60a5e42cd50732e4ad90420" category="section-title">HA の導入モデル</block>
   <block id="a2efc5fc54fd68c09324deea01c6bc06" category="paragraph">複数の可用性ゾーン（ AZS ）または単一の AZ に HA 構成を導入することで、データの高可用性を確保できます。各構成の詳細を確認して、ニーズに最適な構成を選択してください。</block>
   <block id="bc2a46f921494df9fc5f911909c03874" category="section-title">複数のアベイラビリティゾーン</block>
@@ -1453,8 +1452,6 @@
   <block id="48c4b347a69acc97f71ef6775bf6260d" category="list-text">Debian の場合、デフォルトのクラウドユーザは「 admin 」です。Google Cloud は、 Google Cloud コンソールまたは gcloud コマンドラインから SSH アクセスが要求された場合に、「 admin 」ユーザの証明書を作成して追加します。root 権限を取得するには 'sudo を指定します</block>
   <block id="b9c7a6d43bec359b40ab04efb944c7c4" category="list-text">RPO （ Recovery Point Objective ：目標復旧時点）は 0 秒です。</block>
   <block id="bf7c76034279e30c18d14dc7990ee330" category="paragraph">データはトランザクション的に整合性が保たれ、データ損失は発生しません。</block>
-  <block id="856d7ffe64733ea6b89924ff6410d489" category="list-text">RTO （目標復旧時間）は 60 秒です。</block>
-  <block id="a440b74cbaeb3025f8a909b3dd0782ed" category="paragraph">システム停止が発生した場合は、 60 秒以内にデータを利用できるようにする必要があります。</block>
   <block id="8bf571523805ed82609d8283f739355b" category="paragraph">複数のゾーンまたは単一のゾーンに HA 構成を導入することで、データの高可用性を確保できます。</block>
   <block id="b998798af53f2f105151ceda08e634dd" category="list-text">複数のゾーン（推奨）</block>
   <block id="b7cc244050d3d3e8c009b5b563e1d7df" category="list-text">3 つのゾーンに HA 構成を導入することで、ゾーン内で障害が発生した場合の継続的なデータ可用性を確保できます。書き込みパフォーマンスは、単一のゾーンを使用する場合に比べてわずかに低くなりますが、最小のパフォーマンスです。</block>
@@ -4869,4 +4866,7 @@
   <block id="6dbf080f75126585a20cc8d6d87df22f" category="paragraph"><block ref="6b55a043b67b958778673f44bc8845b9" category="inline-link-macro-rx"></block>。</block>
   <block id="5a91158751eaabe4d195cd633fa37db6" category="paragraph">デジタルウォレットでノードベースライセンスを管理し、各Cloud Volumes ONTAP システムに必要な容量を含む有効なライセンスがあることを確認します。</block>
   <block id="0c1a89022d40f1a10025e9f9354168a0" category="paragraph"><block ref="f1e89d709c35aed2650bbf12a55f1ba1" category="inline-link-macro-rx"></block>。</block>
+  <block id="ed40352f9ed490b733344d4ac872054a" category="list-text">Recovery Time Objective（RTO；目標復旧時間）は120秒です。システム停止が発生した場合、120秒以内にデータを利用できるようにする必要があります。</block>
+  <block id="1b4ae0cf922638f65d049bc6332ca497" category="list-text">Recovery Time Objective（RTO；目標復旧時間）は120秒です。</block>
+  <block id="dbbdb92d530311690266ca56ba26d998" category="paragraph">システム停止が発生した場合、120秒以内にデータを利用できるようにする必要があります。</block>
 </blocks>
