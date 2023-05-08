@@ -4870,4 +4870,55 @@
   <block id="1b4ae0cf922638f65d049bc6332ca497" category="list-text">Recovery Time Objective（RTO；目標復旧時間）は120秒です。</block>
   <block id="dbbdb92d530311690266ca56ba26d998" category="paragraph">システム停止が発生した場合、120秒以内にデータを利用できるようにする必要があります。</block>
   <block id="51f3f3385ba782f2b8752155e908cf60" category="admonition">スナップショットは、リブート時に自動的に作成されます。</block>
+  <block id="71bff2737bdd059023a4784358e71a64" category="section-title">2023年5月7日</block>
+  <block id="3b9e0ca0be1cb4ee263fc0a386a705bc" category="paragraph">コネクタの3.9.29リリースでは、次の変更が加えられました。</block>
+  <block id="ef33a11b5d2090c4cf0e98ca1b79cc2d" category="section-title">カタール地域がGoogle Cloudでサポートされるようになりました</block>
+  <block id="357b47742b71d8fe5b5936de05c522ec" category="paragraph">カタール地域は、Google Cloud for Cloud Volumes ONTAP およびConnector for Cloud Volumes ONTAP 9.12.1 GA以降でサポートされるようになりました。</block>
+  <block id="c8dc4f54d280ddaf5974f6c903e2152f" category="section-title">Sweden CentralリージョンがAzureでサポートされるようになりました</block>
+  <block id="787bf3f02b45f65c827e46d88d4e7b24" category="paragraph">Sweden Centralリージョンは、Azure for Cloud Volumes ONTAP およびConnector for Cloud Volumes ONTAP 9.12.1 GA以降でサポートされるようになりました。</block>
+  <block id="d38001cc976e394cf57ce77223bee1a1" category="section-title">Azure Australia EastでのHAマルチアベイラビリティゾーン導入のサポート</block>
+  <block id="bef0df4f898713881ef2098a621a3745" category="paragraph">Azureのオーストラリア東部リージョンでは、Cloud Volumes ONTAP 9.12.1 GA以降でHAマルチアベイラビリティゾーンの導入がサポートされるようになりました。</block>
+  <block id="2cd5985150a2728c0c6295c5162b2b1d" category="section-title">充電使用量の内訳</block>
+  <block id="300bba824d9f2e68a0c89aef6da5fb8a" category="paragraph">容量ベースのライセンスにサブスクライブしたときに課金される料金を確認できるようになりました。次のタイプの使用状況レポートは、BlueXPのデジタルウォレットからダウンロードできます。使用状況レポートには、サブスクリプションの容量の詳細と、Cloud Volumes ONTAP サブスクリプションのリソースに対する課金状況が表示されます。ダウンロード可能なレポートは、他のユーザーと簡単に共有できます。</block>
+  <block id="ed54fb55b53f11e61f612ff99520f4bc" category="list-text">Cloud Volumes ONTAP パッケージの使用状況</block>
+  <block id="160ba974abba347f5e939a1a0acd5982" category="list-text">使用状況の概要</block>
+  <block id="bf951096cc9eea5fae867ec94f06dfa3" category="list-text">Storage VMの使用状況</block>
+  <block id="3c5979c173a0a4fe3ff27e0e6185a693" category="list-text">ボリュームの使用状況</block>
+  <block id="6ddb4c081e1822f2c34768a65c03eb8b" category="paragraph">詳細については、を参照してください <block ref="ebcf101f07f46d44ff28084ad0f8bce3" category="inline-link-macro-rx"></block>。</block>
+  <block id="eaf72ee058835b38b417b55e2fb1c0af" category="section-title">MarketplaceのサブスクリプションなしでBlueXPにアクセスすると通知が表示されるようになりました</block>
+  <block id="5cc1493ad28334fdb28f7ed57f0e1d41" category="paragraph">Marketplaceのサブスクリプションを購入せずにBlueXPでCloud Volumes ONTAP にアクセスすると、必ず通知が表示されるようになりました。通知には、「この作業環境のマーケットプレイスサブスクリプションは、Cloud Volumes ONTAP の利用規約に準拠する必要があります」と記載されています。</block>
+  <block id="d845f71cd5cacb5fdb671f6530007953" category="paragraph"><block ref="b614243ef1614b3040beb4428349cfdf" category="inline-link-rx"></block>。</block>
+  <block id="37532cd27e3c53471b1caed0ba1f90ed" category="section-title">使用状況レポートをダウンロードします</block>
+  <block id="819d4e1e06bcd4bb3249b60d928ccacc" category="paragraph">アカウント管理者は、BlueXPのデジタルウォレットから4つの使用状況レポートをダウンロードできます。これらの使用状況レポートには、サブスクリプションの容量の詳細と、Cloud Volumes ONTAP サブスクリプションのリソースに対する課金方法が表示されます。ダウンロード可能なレポートは、特定の時点のデータをキャプチャし、他のユーザーと簡単に共有できます。</block>
+  <block id="c2b73e18a5b530a547ba48a8177d13c3" category="inline-image-macro">スクリーンショットは、デジタルウォレットのCloud Volumes ONTAP 容量ベースライセンスページを示し、使用状況レポートボタンが強調表示されています。</block>
+  <block id="a1a4a48254cf8eb8962fbd995f5e7ea8" category="paragraph"><block ref="a1a4a48254cf8eb8962fbd995f5e7ea8" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="d11dcbec58d47bd13de1dcccfbd640ff" category="paragraph">以下のレポートをダウンロードできます。容量の値はTiB単位です。</block>
+  <block id="ad73e4897304c80496a4f15e033cefa7" category="list-text">*使用状況の概要*：このレポートには、デジタルウォレットの「Cloud Volumes ONTAP Packages Summary」カードの内容が正確に表示されます。次の情報が含まれています。</block>
+  <block id="c596c9291f76a11af1aefc235c262de6" category="list-text">合計消費容量</block>
+  <block id="8dd7541d6c4e83402d88448119068a02" category="list-text">事前コミット済み容量の合計</block>
+  <block id="b01a146aed01aa8af61e034befc116ce" category="list-text">BYOLの合計容量</block>
+  <block id="109323142d354af9ccc7eb636b1dcbce" category="list-text">マーケットプレイス契約の合計容量</block>
+  <block id="baf09c6c43fd26effd8f15e252649384" category="list-text">PAYGOの合計容量</block>
+  <block id="76101a2de96d735db21249323914bc6c" category="list-text">* Cloud Volumes ONTAP パッケージの使用状況*：このレポートには、デジタルウォレット内のパッケージカードに記載されている内容が正確に表示されます。最適化されたI/Oパッケージを除く各パッケージについて、次の情報が含まれています。</block>
+  <block id="c01bbdbe6721d80a74779e943243486b" category="list-text">* Storage VMの使用量*：このレポートは、Cloud Volumes ONTAP システムとStorage Virtual Machine（SVM）全体で、課金された容量の内訳を表示します。この情報は、デジタルウォレットのどの画面にも表示されません。次の情報が含まれています。</block>
+  <block id="b16bfcaa9b0651f05b8e8894a2aebb31" category="list-text">作業環境ID（UUIDとして表示）</block>
+  <block id="c8e2277ecfb1427838c488c217f99466" category="list-text">クラウド</block>
+  <block id="4736cd35bf5b3fe63e1b1785fb2aa664" category="list-text">ネットアップアカウントID</block>
+  <block id="bbfa34e8af02138b821f784c8962669b" category="list-text">作業環境の設定</block>
+  <block id="203c4205822c007d08ecafe163b02ea2" category="list-text">SVM 名</block>
+  <block id="b567847dd629376ac84ed4958fd61687" category="list-text">プロビジョニングされた容量</block>
+  <block id="a09b8df9fd0007770b0a8c10f9a17d81" category="list-text">充電容量のまとめ</block>
+  <block id="671095c17b0e9e0deda06cff2fa103e6" category="list-text">マーケットプレイスの請求期間</block>
+  <block id="d38764d5edf26bd9b744840cd2ea3c17" category="list-text">Cloud Volumes ONTAP パッケージまたは機能</block>
+  <block id="a016fcdfd1d7159ffd537d78d4b68f74" category="list-text">課金SaaS Marketplaceサブスクリプション名</block>
+  <block id="fe6ac599d13d94a0ee0800482bec7e41" category="list-text">課金SaaS MarketplaceサブスクリプションID</block>
+  <block id="33e97335db88f16611400cab965f95af" category="list-text">*ボリュームの使用量*：このレポートは、使用済み容量が作業環境内のボリューム別に内訳で表示されます。この情報は、デジタルウォレットのどの画面にも表示されません。次の情報が含まれています。</block>
+  <block id="3edb9123c69629ec86469d96d3feb0aa" category="list-text">SVN名</block>
+  <block id="cccc95b62282240886ee975a3f122adb" category="list-text">ボリューム ID</block>
+  <block id="fc18634852d4299cd5f8c7ad55ddefbe" category="list-text">ボリュームタイプ</block>
+  <block id="3756f66a273f440893f16ee968ce3450" category="list-text">ボリュームのプロビジョニング済み容量</block>
+  <block id="8b3da2ed858ee5c956acde26c9ef7dd0" category="admonition">FlexCloneボリュームは料金が発生しないため、このレポートには含まれていません。</block>
+  <block id="a4bad4f350632a2078a6d795984ee60f" category="list-text">Cloud Volumes ONTAP *タブで、* Capacity Based Licenses *を選択したまま* Usage report *をクリックします。</block>
+  <block id="23e918e9f1c9f1bb5769dcc236489de2" category="paragraph">使用状況レポートがダウンロードされます。</block>
+  <block id="05655bb3cbd3604d6c71a1db823ad94f" category="list-text">ダウンロードしたファイルを開き、レポートにアクセスします。</block>
 </blocks>
