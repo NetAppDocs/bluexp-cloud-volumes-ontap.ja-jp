@@ -236,6 +236,7 @@ Cloud Volumes ONTAP システムでクラウドバックアップを使用する
 ====
 ** HA メディエータ
 +
+--
 [source, json]
 ----
 {
@@ -251,12 +252,15 @@ Cloud Volumes ONTAP システムでクラウドバックアップを使用する
 				"ec2:DescribeVpcs",
 				"ec2:ReplaceRoute",
 				"ec2:UnassignPrivateIpAddresses"
+                "sts:AssumeRole"
+                "ec2:DescribeSubnets"
 			],
 			"Resource": "*"
 		}
 	]
 }
 ----
+--
 
 
 . IAMロールを作成し、作成したポリシーを関連付けます。
