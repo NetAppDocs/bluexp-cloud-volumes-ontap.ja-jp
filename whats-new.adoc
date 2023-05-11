@@ -822,7 +822,7 @@ Keystoneサブスクリプションは、CAPEX（設備投資）やリースよ�
 Keystoneサブスクリプションは、BlueXPから導入できるすべての新しいバージョンのCloud Volumes ONTAP でサポートされます。
 
 * https://["NetApp Keystone サブスクリプションの詳細については、こちらをご覧ください"^]。
-* link:task-manage-keystone.html["BlueXPでKeystoneサブスクリプションの利用を開始する方法をご紹介します"^]。
+* link:task-manage-keystone.html["BlueXPでKeystoneサブスクリプションの利用を開始する方法をご紹介します"]。
 
 
 

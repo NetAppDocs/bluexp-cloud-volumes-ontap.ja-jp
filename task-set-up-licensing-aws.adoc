@@ -152,7 +152,7 @@ link:task-deploying-otc-aws.html["ステップバイステップの手順を確�
 
 == Keystoneサブスクリプション
 
-Keystoneサブスクリプションは、ビジネスの成長に応じたサブスクリプションベースのサービスです。 link:concept-licensing.html#keystone-subscription["NetApp Keystone サブスクリプションの詳細については、こちらをご覧ください"^]。
+Keystoneサブスクリプションは、ビジネスの成長に応じたサブスクリプションベースのサービスです。 link:concept-licensing.html#keystone-subscription["NetApp Keystone サブスクリプションの詳細については、こちらをご覧ください"]。
 
 .手順
 . まだサブスクリプションをお持ちでない場合は、 https://["ネットアップにお問い合わせください"^]
