@@ -30,7 +30,7 @@ Cloud Volumes ONTAP には、いくつかのライセンスオプションがあ
 
 == サポートされているリージョンを選択します
 
-Cloud Volumes ONTAP は、ほとんどの Microsoft Azure リージョンでサポートされています。 https://cloud.netapp.com/cloud-volumes-global-regions["サポートされているリージョンの完全なリストを表示します"^]。
+Cloud Volumes ONTAP は、ほとんどの Microsoft Azure リージョンでサポートされています。 https://["サポートされているリージョンの完全なリストを表示します"^]。
 
 
 
@@ -38,7 +38,7 @@ Cloud Volumes ONTAP は、ほとんどの Microsoft Azure リージョンでサ�
 
 Cloud Volumes ONTAP では、選択したライセンスタイプに応じて、複数の VM タイプがサポートされます。
 
-https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-configs-azure.html["Azure で Cloud Volumes ONTAP がサポートされている構成"^]
+https://["Azure で Cloud Volumes ONTAP がサポートされている構成"^]
 
 
 
@@ -46,7 +46,7 @@ https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-configs-azu
 
 Cloud Volumes ONTAP システムの未フォーマット時の容量制限は、ライセンスに関連付けられています。追加の制限は、アグリゲートとボリュームのサイズに影響します。設定を計画する際には、これらの制限に注意する必要があります。
 
-https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-limits-azure.html["Azure での Cloud Volumes ONTAP のストレージの制限"^]
+https://["Azure での Cloud Volumes ONTAP のストレージの制限"^]
 
 
 
@@ -54,11 +54,11 @@ https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-limits-azur
 
 Cloud Volumes ONTAP システムのサイジングを行うことで、パフォーマンスと容量の要件を満たすのに役立ちます。VM タイプ、ディスクタイプ、およびディスクサイズを選択する際には、次の点に注意してください。
 
-仮想マシンのタイプ:: でサポートされている仮想マシンタイプを確認します http://docs.netapp.com/cloud-volumes-ontap/us-en/index.html["Cloud Volumes ONTAP リリースノート"^] サポートされている各 VM タイプの詳細を確認します。各 VM タイプがサポートするデータディスクの数には制限があることに注意してください。
+仮想マシンのタイプ:: でサポートされている仮想マシンタイプを確認します http://["Cloud Volumes ONTAP リリースノート"^] サポートされている各 VM タイプの詳細を確認します。各 VM タイプがサポートするデータディスクの数には制限があることに注意してください。
 +
 --
-* https://docs.microsoft.com/en-us/azure/virtual-machines/linux/sizes-general#dsv2-series["Azure のドキュメント：「汎用仮想マシンのサイズ"^]
-* https://docs.microsoft.com/en-us/azure/virtual-machines/linux/sizes-memory#dsv2-series-11-15["Azure のドキュメント：「 Memory optimized virtual machine sizes"^]
+* https://["Azure のドキュメント：「汎用仮想マシンのサイズ"^]
+* https://["Azure のドキュメント：「 Memory optimized virtual machine sizes"^]
 
 
 --
@@ -72,7 +72,7 @@ Cloud Volumes ONTAP システムのサイジングを行うことで、パフォ
 * _Standard HDD Managed Disks_are a good choice if you need high iops and want to Reduce your costs （高 IOPS が必要なく、コストを削減したい場合に最適です。）
 
 
-これらのディスクのユースケースの詳細については、を参照してください https://docs.microsoft.com/en-us/azure/virtual-machines/disks-types["Microsoft Azure のドキュメント：「 What disk types are available in Azure ？」"^]。
+これらのディスクのユースケースの詳細については、を参照してください https://["Microsoft Azure のドキュメント：「 What disk types are available in Azure ？」"^]。
 
 --
 AzureのHAペア構成のディスクタイプ:: HAシステムでは、Premium SSD Shared Managed Disksを使用して、I/O負荷の高いワークロードのパフォーマンスを高コストで実現します。9.12.1リリースより前に作成されたHA配置では、Premiumページブロブが使用されます。
@@ -90,8 +90,8 @@ Azure Premium ストレージのパフォーマンスは、ディスクサイズ
 
 ディスクサイズ別の IOPS とスループットについては、 Azure を参照してください。
 
-* https://azure.microsoft.com/en-us/pricing/details/managed-disks/["Microsoft Azure ： Managed Disks の価格"^]
-* https://azure.microsoft.com/en-us/pricing/details/storage/page-blobs/["Microsoft Azure ： Page Blob の価格設定"^]
+* https://["Microsoft Azure ： Managed Disks の価格"^]
+* https://["Microsoft Azure ： Page Blob の価格設定"^]
 
 
 --
@@ -106,7 +106,7 @@ Azure Premium ストレージのパフォーマンスは、ディスクサイズ
 link:reference-default-configs.html#azure-single-node["Azure で、 Cloud Volumes ONTAP システムデータのデフォルトディスクを表示します"]。
 
 
-TIP: コネクタにはシステムディスクも必要です。 https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-connector-default-config.html["コネクタのデフォルト設定に関する詳細を表示します"^]。
+TIP: コネクタにはシステムディスクも必要です。 https://["コネクタのデフォルト設定に関する詳細を表示します"^]。
 
 
 

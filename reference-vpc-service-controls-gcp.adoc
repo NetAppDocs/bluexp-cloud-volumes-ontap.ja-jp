@@ -16,7 +16,7 @@ summary: Google環境をVPC Service Controlsでロックダウンする場合は
 [role="lead"]
 Google Cloud環境をVPC Service Controlsでロックダウンする場合は、BlueXPとCloud Volumes ONTAP がGoogle Cloud APIとどのように連携するか、またBlueXPとCloud Volumes ONTAP を展開するためのサービス境界を構成する方法について理解しておく必要があります。
 
-vPC サービスコントロールを使用すると、信頼できる境界外の Google 管理サービスへのアクセスを制御し、信頼できない場所からのデータアクセスをブロックし、不正なデータ転送のリスクを軽減できます。 https://cloud.google.com/vpc-service-controls/docs["Google Cloud VPC Service Controls の詳細をご覧ください"^]。
+vPC サービスコントロールを使用すると、信頼できる境界外の Google 管理サービスへのアクセスを制御し、信頼できない場所からのデータアクセスをブロックし、不正なデータ転送のリスクを軽減できます。 https://["Google Cloud VPC Service Controls の詳細をご覧ください"^]。
 
 
 
@@ -54,7 +54,7 @@ VPC サービスコントロールを使用してこれらのイメージをプ�
 
 == vPC サービスは境界ポリシーを制御します
 
-ポリシーでは、 VPC Service Controls ルールセットの例外が許可されます。ポリシーの詳細については、を参照してください https://cloud.google.com/vpc-service-controls/docs/ingress-egress-rules#policy-model["GCP VPC Service Controls Policy Documentation を参照してください"^]。
+ポリシーでは、 VPC Service Controls ルールセットの例外が許可されます。ポリシーの詳細については、を参照してください https://["GCP VPC Service Controls Policy Documentation を参照してください"^]。
 
 BlueXPで必要なポリシーを設定するには、組織内のVPC Service Controls Perimeterに移動し、次のポリシーを追加します。各フィールドは、 VPC の [Service Controls Policy] ページで指定されたオプションと一致する必要があります。また、 * すべての * ルールが必要であり、 * または * パラメーターをルールセットで使用する必要があります。
 

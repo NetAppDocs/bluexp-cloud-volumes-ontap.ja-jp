@@ -141,11 +141,11 @@ ifdef::aws[]
 
 === コールドデータを AWS S3 に階層化するための要件
 
-Cloud Volumes ONTAP が S3 に接続されていることを確認します。この接続を提供する最善の方法は、 S3 サービスへの vPC エンドポイントを作成することです。手順については、を参照してください https://docs.aws.amazon.com/AmazonVPC/latest/UserGuide/vpce-gateway.html#create-gateway-endpoint["AWS のドキュメント：「 Creating a Gateway Endpoint"^]。
+Cloud Volumes ONTAP が S3 に接続されていることを確認します。この接続を提供する最善の方法は、 S3 サービスへの vPC エンドポイントを作成することです。手順については、を参照してください https://["AWS のドキュメント：「 Creating a Gateway Endpoint"^]。
 
 vPC エンドポイントを作成するときは、 Cloud Volumes ONTAP インスタンスに対応するリージョン、 vPC 、およびルートテーブルを必ず選択してください。S3 エンドポイントへのトラフィックを有効にする発信 HTTPS ルールを追加するには、セキュリティグループも変更する必要があります。そうしないと、 Cloud Volumes ONTAP は S3 サービスに接続できません。
 
-問題が発生した場合は、を参照してください https://aws.amazon.com/premiumsupport/knowledge-center/connect-s3-vpc-endpoint/["AWS のサポートナレッジセンター：ゲートウェイ VPC エンドポイントを使用して S3 バケットに接続できないのはなぜですか。"^]。
+問題が発生した場合は、を参照してください https://["AWS のサポートナレッジセンター：ゲートウェイ VPC エンドポイントを使用して S3 バケットに接続できないのはなぜですか。"^]。
 
 endif::aws[]
 
@@ -162,7 +162,7 @@ BlueXPに必要な権限があれば、高パフォーマンス階層と大容�
 "Microsoft.Network/virtualNetworks/subnets/write",
 "Microsoft.Network/routeTables/join/action",
 ----
-権限はデフォルトでカスタムロールに含まれています。 https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-permissions-azure.html["ConnectorのAzure権限を表示します"^]
+権限はデフォルトでカスタムロールに含まれています。 https://["ConnectorのAzure権限を表示します"^]
 
 endif::azure[]
 
@@ -172,7 +172,7 @@ ifdef::gcp[]
 
 === コールドデータを Google Cloud Storage に階層化するための要件 バケット
 
-* Cloud Volumes ONTAP が存在するサブネットは、プライベート Google アクセス用に設定する必要があります。手順については、を参照してください https://cloud.google.com/vpc/docs/configure-private-google-access["Google Cloud のドキュメント：「 Configuring Private Google Access"^]。
+* Cloud Volumes ONTAP が存在するサブネットは、プライベート Google アクセス用に設定する必要があります。手順については、を参照してください https://["Google Cloud のドキュメント：「 Configuring Private Google Access"^]。
 * サービスアカウントがCloud Volumes ONTAP に接続されている必要があります。
 +
 link:task-creating-gcp-service-account.html["このサービスアカウントの設定方法について説明します"]。
@@ -297,7 +297,7 @@ Cloud Volumes ONTAP では、データ保護ボリュームから容量階層に
 image:screenshot_replication_tiering.gif["ボリュームのレプリケーション時の S3 階層化オプションを示すスクリーンショット。"]
 
 +
-データの複製については、を参照してください https://docs.netapp.com/us-en/cloud-manager-replication/task-replicating-data.html["クラウドとの間でデータをレプリケートする"^]。
+データの複製については、を参照してください https://["クラウドとの間でデータをレプリケートする"^]。
 
 
 

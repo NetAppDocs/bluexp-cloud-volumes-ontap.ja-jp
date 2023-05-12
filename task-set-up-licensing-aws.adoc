@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: task-set-up-licensing-aws.html 
-keywords: freemium, professional, essentials, licensing, licenses, cloud volumes ontap charging, cloud volumes ontap licenses, cloud volumes ontap licensing, cvo licenses, cvo licensing, byol, bring your own license, paygo, pay as you go 
+keywords: freemium, professional, essentials, licensing, licenses, cloud volumes ontap charging, cloud volumes ontap licenses, cloud volumes ontap licensing, cvo licenses, cvo licensing, byol, bring your own license, paygo, pay as you go, keystone flex, keystone, digital wallet 
 summary: Cloud Volumes ONTAP で使用するライセンスオプションを決定したら、新しいシステムを導入する際にそのライセンスオプションを選択する前に、いくつかの手順を実行する必要があります。 
 ---
 = AWSでCloud Volumes ONTAP のライセンスを設定
@@ -67,13 +67,13 @@ link:concept-licensing.html["容量単位のライセンスに関する詳細は
 ネットアップからライセンスを購入（BYOL）して前払いし、任意のクラウドプロバイダにCloud Volumes ONTAP システムを導入できます。
 
 .手順
-. https://cloud.netapp.com/contact-cds["ライセンスの取得については、ネットアップの営業部門にお問い合わせください"^]
-. https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-adding-nss-accounts.html#add-an-nss-account["NetApp Support Site アカウントをBlueXPに追加します"^]
+. https://["ライセンスの取得については、ネットアップの営業部門にお問い合わせください"^]
+. https://["NetApp Support Site アカウントをBlueXPに追加します"^]
 +
-BlueXPは、ネットアップのライセンスサービスを自動的に照会し、NetApp Support Site アカウントに関連付けられているライセンスの詳細を取得します。エラーがなければ、BlueXPは自動的にデジタルウォレットにライセンスを追加します。
+BlueXPは、ネットアップのライセンスサービスを自動的に照会し、NetApp Support Site アカウントに関連付けられているライセンスの詳細を取得します。エラーがなければ、BlueXPは自動的にライセンスをデジタルウォレットに追加します。
 
 +
-Cloud Volumes ONTAP で使用するには、ライセンスがデジタルウォレットから入手できる必要があります。必要に応じて、を実行できます link:task-manage-capacity-licenses.html#add-purchased-licenses-to-your-account["手動でライセンスをDigital Walletに追加します"]。
+Cloud Volumes ONTAP でライセンスを使用するには、事前にBlueXPデジタルウォレットからライセンスを入手しておく必要があります。必要に応じて、を実行できます link:task-manage-capacity-licenses.html#add-purchased-licenses-to-your-account["ライセンスをBlueXPデジタルウォレットに手動で追加します"]。
 
 . キャンバスページで、*Add Working Environment*をクリックし、BlueXPの手順に従います。
 +
@@ -121,7 +121,7 @@ image:screenshot-professional.png["Cloud Volumes ONTAP 作業環境を作成す�
 link:task-deploying-otc-aws.html["ステップバイステップの手順を確認して、AWSでCloud Volumes ONTAP を起動してください"]。
 
 
-TIP: AWSアカウントに関連付けられたAWS Marketplaceのサブスクリプションを管理するには、[設定]>[クレデンシャル]ページを使用します。 https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-adding-aws-accounts.html["AWSのアカウントとサブスクリプションの管理方法について説明します"^]
+TIP: AWSアカウントに関連付けられたAWS Marketplaceのサブスクリプションを管理するには、[設定]>[クレデンシャル]ページを使用します。 https://["AWSのアカウントとサブスクリプションの管理方法について説明します"^]
 
 
 
@@ -150,19 +150,19 @@ link:task-deploying-otc-aws.html["ステップバイステップの手順を確�
 
 
 
-== Keystone Flex サブスクリプション
+== Keystoneサブスクリプション
 
-Keystone Flexサブスクリプションは、ビジネスの成長に合わせて拡張できるサブスクリプションベースのサービスです。 link:concept-licensing.html#keystone-flex-subscription["Keystone Flex Subscriptions の詳細をご覧ください"]。
+Keystoneサブスクリプションは、ビジネスの成長に応じたサブスクリプションベースのサービスです。 link:concept-licensing.html#keystone-subscription["NetApp Keystone サブスクリプションの詳細については、こちらをご覧ください"^]。
 
 .手順
-. まだサブスクリプションをお持ちでない場合は、 https://www.netapp.com/forms/keystone-sales-contact/["ネットアップにお問い合わせください"^]
-. mailto：ng-keystone-success@netapp.com [ネットアップにお問い合わせください] 1つ以上のKeystone Flex SubscriptionsでBlueXPユーザアカウントを承認してください。
+. まだサブスクリプションをお持ちでない場合は、 https://["ネットアップにお問い合わせください"^]
+. mailto：ng-keystone-success@netapp.com [ネットアップにお問い合わせください]。1つ以上のKeystoneサブスクリプションでBlueXPユーザアカウントを承認する場合。
 . ネットアップがお客様のアカウントを許可したあと、 link:task-manage-keystone.html#link-a-subscription["Cloud Volumes ONTAP で使用するサブスクリプションをリンクします"]。
 . キャンバスページで、*Add Working Environment*をクリックし、BlueXPの手順に従います。
 +
-.. 充電方法を選択するように求められたら、Keystone Flexサブスクリプションの課金方法を選択します。
+.. 課金方法を選択するよう求められたら、Keystoneサブスクリプションの課金方法を選択します。
 +
-image:screenshot-keystone.png["Cloud Volumes ONTAP 作業環境を作成する際のKeystone Flexサブスクリプションオプションのスクリーンショット。"]
+image:screenshot-keystone.png["Cloud Volumes ONTAP 作業環境を作成する際の[Keystone Subscription]オプションのスクリーンショット。"]
 
 
 

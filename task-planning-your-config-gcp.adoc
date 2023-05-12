@@ -30,7 +30,7 @@ Cloud Volumes ONTAP には、いくつかのライセンスオプションがあ
 
 == サポートされているリージョンを選択します
 
-Cloud Volumes ONTAP は、ほとんどの Google Cloud リージョンでサポートされています。 https://cloud.netapp.com/cloud-volumes-global-regions["サポートされているリージョンの完全なリストを表示します"^]。
+Cloud Volumes ONTAP は、ほとんどの Google Cloud リージョンでサポートされています。 https://["サポートされているリージョンの完全なリストを表示します"^]。
 
 
 
@@ -38,7 +38,7 @@ Cloud Volumes ONTAP は、ほとんどの Google Cloud リージョンでサポ�
 
 Cloud Volumes ONTAP では、選択したライセンスタイプに応じて、複数のマシンタイプがサポートされます。
 
-https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-configs-gcp.html["GCP の Cloud Volumes ONTAP でサポートされている構成"^]
+https://["GCP の Cloud Volumes ONTAP でサポートされている構成"^]
 
 
 
@@ -46,7 +46,7 @@ https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-configs-gcp
 
 Cloud Volumes ONTAP システムの未フォーマット時の容量制限は、ライセンスに関連付けられています。追加の制限は、アグリゲートとボリュームのサイズに影響します。設定を計画する際には、これらの制限に注意する必要があります。
 
-https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-limits-gcp.html["GCP の Cloud Volumes ONTAP でのストレージの制限"^]
+https://["GCP の Cloud Volumes ONTAP でのストレージの制限"^]
 
 
 
@@ -54,13 +54,13 @@ https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-limits-gcp.
 
 Cloud Volumes ONTAP システムのサイジングを行うことで、パフォーマンスと容量の要件を満たすのに役立ちます。マシンタイプ、ディスクタイプ、およびディスクサイズを選択する際には、次の点に注意してください。
 
-マシンのタイプ:: でサポートされているマシンタイプを確認します http://docs.netapp.com/cloud-volumes-ontap/us-en/index.html["Cloud Volumes ONTAP リリースノート"^] 次に、サポートされている各マシンタイプについて Google の詳細を確認します。ワークロードの要件を、マシンタイプの vCPU とメモリの数と一致させます。各 CPU コアは、ネットワークパフォーマンスを向上させることに注意してください。
+マシンのタイプ:: でサポートされているマシンタイプを確認します http://["Cloud Volumes ONTAP リリースノート"^] 次に、サポートされている各マシンタイプについて Google の詳細を確認します。ワークロードの要件を、マシンタイプの vCPU とメモリの数と一致させます。各 CPU コアは、ネットワークパフォーマンスを向上させることに注意してください。
 +
 --
 詳細については、以下を参照してください。
 
-* https://cloud.google.com/compute/docs/machine-types#n1_machine_types["Google Cloud ドキュメント： N1 標準マシンタイプ"^]
-* https://cloud.google.com/docs/compare/data-centers/networking#performance["Google Cloud のドキュメント：「 Performance"^]
+* https://["Google Cloud ドキュメント： N1 標準マシンタイプ"^]
+* https://["Google Cloud のドキュメント：「 Performance"^]
 
 
 --
@@ -71,7 +71,7 @@ GCP ディスクタイプ:: Cloud Volumes ONTAP 用のボリュームを作成�
 * _ゾーン バランシング永続ディスク _ ：これらの SSD は、 GB あたりの IOPS を下げて、パフォーマンスとコストのバランスを取ります。
 * _Zonal 標準パーシステントディスク _ ：標準パーシステントディスクは経済的で、シーケンシャルな読み取り / 書き込み処理に対応できます。
 +
-詳細については、を参照してください https://cloud.google.com/compute/docs/disks/#pdspecs["Google Cloud のドキュメント：「ゾーン永続ディスク（標準および SSD ）」"^]。
+詳細については、を参照してください https://["Google Cloud のドキュメント：「ゾーン永続ディスク（標準および SSD ）」"^]。
 
 
 
@@ -86,8 +86,8 @@ GCP ディスクサイズ:: Cloud Volumes ONTAP システムを導入する際�
 詳細については、以下を参照してください。
 
 +
-** https://cloud.google.com/compute/docs/disks/#pdspecs["Google Cloud のドキュメント：「ゾーン永続ディスク（標準および SSD ）」"^]
-** https://cloud.google.com/compute/docs/disks/performance["Google Cloud のドキュメント：「 Optimizing Persistent Disk and Local SSD Performance"^]
+** https://["Google Cloud のドキュメント：「ゾーン永続ディスク（標準および SSD ）」"^]
+** https://["Google Cloud のドキュメント：「 Optimizing Persistent Disk and Local SSD Performance"^]
 
 
 
@@ -102,14 +102,14 @@ GCP ディスクサイズ:: Cloud Volumes ONTAP システムを導入する際�
 ユーザデータ用のストレージに加えて、BlueXPはCloud Volumes ONTAP システムデータ（ブートデータ、ルートデータ、コアデータ、NVRAM）用のクラウドストレージも購入します。計画を立てる場合は、 Cloud Volumes ONTAP を導入する前にこれらの詳細を確認すると役立つ場合があります。
 
 * link:reference-default-configs.html#google-cloud-single-node["Cloud Volumes ONTAP システムデータ用のデフォルトディスクを Google Cloud で表示します"]。
-* https://cloud.google.com/compute/quotas["Google Cloud のドキュメント：リソースクォータ"^]
+* https://["Google Cloud のドキュメント：リソースクォータ"^]
 +
 Google Cloud Compute Engine では、リソース使用量にクォータが適用されるため、 Cloud Volumes ONTAP を導入する前に制限に達していないことを確認する必要があります。
 
 
 
 
-TIP: コネクタにはシステムディスクも必要です。 https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-connector-default-config.html["コネクタのデフォルト設定に関する詳細を表示します"^]。
+TIP: コネクタにはシステムディスクも必要です。 https://["コネクタのデフォルト設定に関する詳細を表示します"^]。
 
 
 

@@ -72,7 +72,7 @@ ifdef::aws[]
 
 9.8 リリース以降では、 Cloud Volumes ONTAP でサポートされているほぼすべての EC2 インスタンスタイプを使用する場合、 HA ペアでの高速書き込みがサポートされます。ただし、 m5.xlarge と r5.xlarge は除きます。
 
-https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-configs-aws.html["Cloud Volume が提供する Amazon EC2 インスタンスの詳細については、こちらをご覧ください ONTAP はをサポートします"^]。
+https://["Cloud Volume が提供する Amazon EC2 インスタンスの詳細については、こちらをご覧ください ONTAP はをサポートします"^]。
 
 endif::aws[]
 
@@ -84,7 +84,7 @@ ifdef::azure[]
 
 シングルノードシステムを使用する場合、 Cloud Volumes ONTAP では、すべての種類の VM で高速な書き込み速度がサポートされます。
 
-HA ペアを使用する場合、 Cloud Volumes ONTAP では 9.8 リリース以降、複数の種類の VM で高速の書き込み速度がサポートされます。にアクセスします https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-configs-azure.html["Cloud Volumes ONTAP リリースノート"^] をクリックして、高速の書き込み速度をサポートする VM タイプを確認します。
+HA ペアを使用する場合、 Cloud Volumes ONTAP では 9.8 リリース以降、複数の種類の VM で高速の書き込み速度がサポートされます。にアクセスします https://["Cloud Volumes ONTAP リリースノート"^] をクリックして、高速の書き込み速度をサポートする VM タイプを確認します。
 
 endif::azure[]
 
@@ -96,9 +96,9 @@ ifdef::gcp[]
 
 シングルノードシステムを使用する場合、 Cloud Volumes ONTAP では、すべての種類のマシンで高速な書き込み速度がサポートされます。
 
-HAペアを使用する場合、Cloud Volumes ONTAP 9.13.0リリース以降では、いくつかのタイプのVMで高速の書き込み速度がサポートされます。にアクセスします https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-configs-gcp.html#supported-configurations-by-license["Cloud Volumes ONTAP リリースノート"^] をクリックして、高速の書き込み速度をサポートする VM タイプを確認します。
+HAペアを使用する場合、Cloud Volumes ONTAP 9.13.0リリース以降では、いくつかのタイプのVMで高速の書き込み速度がサポートされます。にアクセスします https://["Cloud Volumes ONTAP リリースノート"^] をクリックして、高速の書き込み速度をサポートする VM タイプを確認します。
 
-https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-configs-gcp.html["Cloud の Google Cloud マシンタイプの詳細をご覧ください Volume ONTAP はをサポートします"^]。
+https://["Cloud の Google Cloud マシンタイプの詳細をご覧ください Volume ONTAP はをサポートします"^]。
 
 endif::gcp[]
 
@@ -142,7 +142,7 @@ endif::gcp[]
 NVFAIL オプションを無効にする場合:: vol modify -volume <vol-name> -nvfail off `
 
 
-データ損失が発生した場合、 NVFAIL が有効になっている NFS または iSCSI ボリュームは、データ処理を停止する必要があります（ステートレスプロトコルである CIFS への影響はありません）。詳細については、を参照してください https://docs.netapp.com/ontap-9/topic/com.netapp.doc.dot-mcc-mgmt-dr/GUID-40D04B8A-01F7-4E87-8161-E30BD80F5B7F.html["NFS ボリュームまたは LUN へのアクセスに対する NVFAIL の影響"^]。
+データ損失が発生した場合、 NVFAIL が有効になっている NFS または iSCSI ボリュームは、データ処理を停止する必要があります（ステートレスプロトコルである CIFS への影響はありません）。詳細については、を参照してください https://["NFS ボリュームまたは LUN へのアクセスに対する NVFAIL の影響"^]。
 
 をクリックして NVFAIL 状態を確認します:: vol show -fields in in-nvfailed-state 」を参照してください
 

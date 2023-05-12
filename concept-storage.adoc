@@ -56,10 +56,10 @@ NOTE: スループット最適化 HDD （ st1 ）を使用している場合、�
 
 * 関連リンク *
 
-* http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/EBSVolumeTypes.html["AWS のドキュメント： EBS ボリュームのタイプ"^]
+* http://["AWS のドキュメント： EBS ボリュームのタイプ"^]
 * link:task-planning-your-config.html["でディスクタイプとディスクサイズを選択する方法について説明します AWS のシステムを管理できます"]
-* https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-limits-aws.html["AWS での Cloud Volumes ONTAP のストレージの制限を確認します"^]
-* http://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-configs-aws.html["AWS で Cloud Volumes ONTAP がサポートされている構成を確認します"^]
+* https://["AWS での Cloud Volumes ONTAP のストレージの制限を確認します"^]
+* http://["AWS で Cloud Volumes ONTAP がサポートされている構成を確認します"^]
 
 
 endif::aws[]
@@ -99,10 +99,10 @@ HA ペア:: HAペアは、I/O負荷の高いワークロードに高パフォー
 
 * 関連リンク *
 
-* https://docs.microsoft.com/en-us/azure/virtual-machines/disks-types["Microsoft Azure のドキュメント：「 Azure managed disk types"^]
-* https://docs.microsoft.com/en-us/azure/storage/blobs/storage-blob-pageblob-overview["Microsoft Azure のドキュメント：「 Overview of Azure page blob"^]
+* https://["Microsoft Azure のドキュメント：「 Azure managed disk types"^]
+* https://["Microsoft Azure のドキュメント：「 Overview of Azure page blob"^]
 * link:task-planning-your-config-azure.html["でディスクタイプとディスクサイズを選択する方法について説明します Azure の既存のシステムを"]
-* https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-limits-azure.html["Azure での Cloud Volumes ONTAP のストレージの制限を確認します"^]
+* https://["Azure での Cloud Volumes ONTAP のストレージの制限を確認します"^]
 
 
 endif::azure[]
@@ -119,8 +119,8 @@ Google Cloudでは、アグリゲートに同じサイズのディスクを6本�
 
 * 関連リンク *
 
-* https://cloud.google.com/compute/docs/disks/["Google Cloudのドキュメント：「Storage Options"^]
-* https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-limits-gcp.html["Google CloudでのCloud Volumes ONTAP のストレージ制限を確認します"^]
+* https://["Google Cloudのドキュメント：「Storage Options"^]
+* https://["Google CloudでのCloud Volumes ONTAP のストレージ制限を確認します"^]
 
 
 endif::gcp[]

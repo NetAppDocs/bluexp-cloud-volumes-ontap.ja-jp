@@ -24,9 +24,9 @@ BlueXPを使用すると、AWSでのCloud Volumes ONTAP の実行に関連する
 +
 .. BlueXPに権限を提供するIAMポリシーに、必要な権限が含まれていることを確認します。
 +
-https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-permissions-aws.html["必要な権限を確認します"^]
+https://["必要な権限を確認します"^]
 
-.. https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/activating-tags.html["* WorkingEnvironmentId* タグをアクティブにします"^]。
+.. https://["* WorkingEnvironmentId* タグをアクティブにします"^]。
 +
 AWSのコストを追跡するために、BlueXPはコスト割り当てタグをCloud Volumes ONTAP インスタンスに割り当てます。最初の作業環境を作成したら、 * WorkingEnvironmentId * タグをアクティブ化します。ユーザ定義のタグは、請求とコスト管理のコンソールでアクティブ化するまでは AWS 請求レポートに表示されません。
 

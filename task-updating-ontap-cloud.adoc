@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: task-updating-ontap-cloud.html 
-keywords: update, updating, upgrading, upgrade, software, downgrade, downgrading, FTP, HTTP, mediator, local image, revert, reverting, downgrading 
+keywords: update, updating, upgrading, upgrade, software, downgrade, downgrading, FTP, HTTP, mediator, local image, revert, reverting, downgrading, cloud backup 
 summary: Cloud Volumes ONTAP をBlueXPからアップグレードすると、最新の新機能と拡張機能にアクセスできます。ソフトウェアをアップグレードする前に、 Cloud Volumes ONTAP システムを準備する必要があります。 
 ---
 = Cloud Volumes ONTAP ソフトウェアをアップグレードします
@@ -172,7 +172,7 @@ HA ペアのアップグレードは無停止で、 I/O が中断されません
 
 Cloud Volumes ONTAP HA ペア（デフォルト設定）で自動ギブバックを有効にする必要があります。サポートされていない場合、処理は失敗します。
 
-http://docs.netapp.com/ontap-9/topic/com.netapp.doc.dot-cm-hacg/GUID-3F50DE15-0D01-49A5-BEFD-D529713EC1FA.html["ONTAP 9 ドキュメント：「 Commands for configuring automatic giveback"^]
+http://["ONTAP 9 ドキュメント：「 Commands for configuring automatic giveback"^]
 
 
 
@@ -181,7 +181,7 @@ http://docs.netapp.com/ontap-9/topic/com.netapp.doc.dot-cm-hacg/GUID-3F50DE15-0D
 Cloud Volumes ONTAP システムにアクティブな SnapMirror 関係がある場合は、 Cloud Volumes ONTAP ソフトウェアを更新する前に転送を一時停止することを推奨します。転送を一時停止すると、 SnapMirror の障害を防ぐことができます。デスティネーションシステムからの転送を一時停止する必要があります。
 
 
-NOTE: Cloud Backup は SnapMirror を使用してバックアップファイル（ SnapMirror Cloud ）を作成しますが、システムのアップグレード時にバックアップを一時停止する必要はありません。
+NOTE: BlueXPのバックアップとリカバリではSnapMirrorを実装してバックアップファイル（SnapMirror Cloud）を作成しますが、システムのアップグレード時にバックアップを一時停止する必要はありません。
 
 .このタスクについて
 ここでは、 System Manager for Version 9.3 以降の使用方法について説明します。
@@ -279,7 +279,7 @@ Cloud Volumes ONTAP ソフトウェアイメージをコネクタまたはHTTP�
 手順を追った操作手順については、ネットアップのナレッジベースを参照してください。
 
 +
-https://kb.netapp.com/Advice_and_Troubleshooting/Cloud_Services/Cloud_Manager/How_to_configure_Cloud_Manager_as_an_HTTPS_server_to_host_upgrade_images["ネットアップの技術情報アーティクル：「How to configure BlueXP as an HTTPS server to host upgrade images"^]
+https://["ネットアップの技術情報アーティクル：「How to configure BlueXP as an HTTPS server to host upgrade images"^]
 
 
 
@@ -293,7 +293,7 @@ https://kb.netapp.com/Advice_and_Troubleshooting/Cloud_Services/Cloud_Manager/Ho
 
 NOTE: 事前定義された Cloud Volumes ONTAP セキュリティグループは、デフォルトでアウトバウンド HTTP 接続を許可します。
 
-. からソフトウェアイメージを取得します https://mysupport.netapp.com/site/products/all/details/cloud-volumes-ontap/downloads-tab["ネットアップサポートサイト"^]。
+. からソフトウェアイメージを取得します https://["ネットアップサポートサイト"^]。
 . ソフトウェアイメージを、ファイルの提供元となるコネクタまたは HTTP サーバ上のディレクトリにコピーします。
 +
 2つのパスを使用できます。正しいパスはコネクタのバージョンによって異なります。
@@ -342,6 +342,6 @@ _maxDownloadSessions_ の値は 1 または 1 より大きい任意の整数で�
 
 32 は値の例です。使用する値は、 NAT の設定と同時に使用できるセッションの数によって異なります。
 
-https://docs.netapp.com/us-en/cloud-manager-automation/cm/api_ref_resources.html#occmconfig["/occm/config API 呼び出しの詳細を確認してください"^]。
+https://["/occm/config API 呼び出しの詳細を確認してください"^]。
 
 endif::gcp[]

@@ -23,7 +23,7 @@ Storage VM は ONTAP 内で実行される仮想マシンであり、クライ�
 
 == サポートされている Storage VM 数
 
-一部の構成では複数のStorage VMがサポートされます。にアクセスします https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/index.html["Cloud Volumes ONTAP リリースノート"^] 使用している Cloud Volumes ONTAP のバージョンでサポートされる Storage VM 数を確認してください。
+一部の構成では複数のStorage VMがサポートされます。にアクセスします https://["Cloud Volumes ONTAP リリースノート"^] 使用している Cloud Volumes ONTAP のバージョンでサポートされる Storage VM 数を確認してください。
 
 
 
@@ -62,6 +62,6 @@ image:screenshot_svm.gif["スクリーンショット： SVM 名フィールド�
 
 BlueXPでは、Storage VMディザスタリカバリのセットアップやオーケストレーションはサポートされていません。System Manager または CLI を使用する必要があります。
 
-* https://library.netapp.com/ecm/ecm_get_file/ECMLP2839856["SVM ディザスタリカバリ設定エクスプレスガイド"^]
-* https://library.netapp.com/ecm/ecm_get_file/ECMLP2839857["『 SVM ディザスタリカバリエクスプレスガイド』"^]
+* https://["SVM ディザスタリカバリ設定エクスプレスガイド"^]
+* https://["『 SVM ディザスタリカバリエクスプレスガイド』"^]
 

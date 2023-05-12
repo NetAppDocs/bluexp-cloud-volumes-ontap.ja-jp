@@ -53,7 +53,7 @@ image:screenshot_manage_vol_button.png["[Volumes]タブの[Manage Volume]ボタ�
 
 このプロセスにより、 FlexClone ボリュームが作成されます。FlexClone ボリュームは、書き込み可能なポイントインタイムコピーであり、メタデータ用に少量のスペースを使用するため、スペース効率に優れています。また、データの変更や追加に応じて追加のスペースを消費するだけです。
 
-FlexClone ボリュームの詳細については、を参照してください http://docs.netapp.com/ontap-9/topic/com.netapp.doc.dot-cm-vsmg/home.html["ONTAP 9 論理ストレージ管理ガイド"^]。
+FlexClone ボリュームの詳細については、を参照してください http://["ONTAP 9 論理ストレージ管理ガイド"^]。
 
 
 
@@ -133,7 +133,7 @@ NOTE: BlueXPは、選択されたディスクタイプを階層化して使用�
 
 デフォルトでは、スペースが不足したときにボリュームが最大サイズに自動的に拡張されます。デフォルト値は 1 、 000 で、ボリュームはサイズの 11 倍まで拡張できます。この値はコネクタの設定で設定できます。
 
-ボリュームのサイズを変更する必要がある場合は、を使用して変更できます link:https://docs.netapp.com/ontap-9/topic/com.netapp.doc.onc-sm-help-960/GUID-C04C2C72-FF1F-4240-A22D-BE20BB74A116.html["ONTAP システムマネージャ"^]。ボリュームのサイズを変更する際は、システムの容量制限を考慮してください。にアクセスします https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/index.html["Cloud Volumes ONTAP リリースノート"^] 詳細：
+ボリュームのサイズを変更する必要がある場合は、を使用して変更できます link:https://docs.netapp.com/ontap-9/topic/com.netapp.doc.onc-sm-help-960/GUID-C04C2C72-FF1F-4240-A22D-BE20BB74A116.html["ONTAP システムマネージャ"^]。ボリュームのサイズを変更する際は、システムの容量制限を考慮してください。にアクセスします https://["Cloud Volumes ONTAP リリースノート"^] 詳細：
 
 
 

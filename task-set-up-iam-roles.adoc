@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: task-set-up-iam-roles.html 
-keywords: iam role, mediator role, cloud volumes ontap role, policy, iam policy, permissions 
+keywords: iam role, mediator role, cloud volumes ontap role, policy, iam policy, permissions, cloud backup 
 summary: 必要な権限を持つIAMロールを各Cloud Volumes ONTAP ノードに関連付ける必要があります。HAメディエーターについても同様です。BlueXPでIAMロールを作成するのが最も簡単ですが、自分の役割を使用することもできます。 
 ---
 = Cloud Volumes ONTAP 用のIAMロールを設定します
@@ -120,7 +120,7 @@ NOTE: AWS Commercialクラウド サービス 環境でIAMロールを独自に�
 ====
 ** Cloud Volumes ONTAP ノードのバックアップポリシー
 +
-Cloud Volumes ONTAP システムでクラウドバックアップを使用する場合は、ノードのIAMロールに次の2つ目のポリシーを含める必要があります。
+Cloud Volumes ONTAP システムでBlueXPのバックアップとリカバリを使用する場合は、ノードのIAMロールに次の2つ目のポリシーを含める必要があります。
 
 +
 [role="tabbed-block"]
@@ -270,6 +270,6 @@ Cloud Volumes ONTAP システムでクラウドバックアップを使用する
 新しいCloud Volumes ONTAP 作業環境を作成するときに選択できるIAMロールを設定できました。
 
 .詳細情報
-* https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_create.html["AWSのドキュメント：「IAMポリシーの作成"^]
-* https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_create.html["AWSのドキュメント：「IAMロールの作成"^]
+* https://["AWSのドキュメント：「IAMポリシーの作成"^]
+* https://["AWSのドキュメント：「IAMロールの作成"^]
 

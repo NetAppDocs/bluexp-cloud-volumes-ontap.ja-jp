@@ -30,9 +30,9 @@ Cloud Volumes ONTAP には、いくつかのライセンスオプションがあ
 
 == サポートされているリージョンを選択します
 
-Cloud Volumes ONTAP はほとんどの AWS リージョンでサポートされています。 https://cloud.netapp.com/cloud-volumes-global-regions["サポートされているリージョンの完全なリストを表示します"^]。
+Cloud Volumes ONTAP はほとんどの AWS リージョンでサポートされています。 https://["サポートされているリージョンの完全なリストを表示します"^]。
 
-新しい AWS リージョンは、それらのリージョンでリソースを作成および管理する前に有効にする必要があります。 https://docs.aws.amazon.com/general/latest/gr/rande-manage.html["リージョンを有効にする方法について説明します"^]。
+新しい AWS リージョンは、それらのリージョンでリソースを作成および管理する前に有効にする必要があります。 https://["リージョンを有効にする方法について説明します"^]。
 
 
 
@@ -40,7 +40,7 @@ Cloud Volumes ONTAP はほとんどの AWS リージョンでサポートされ�
 
 Cloud Volumes ONTAP では、選択したライセンスタイプに応じて、複数のインスタンスタイプがサポートされます。
 
-https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-configs-aws.html["AWS で Cloud Volumes ONTAP がサポートされる構成"^]
+https://["AWS で Cloud Volumes ONTAP がサポートされる構成"^]
 
 
 
@@ -48,7 +48,7 @@ https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-configs-aws
 
 Cloud Volumes ONTAP システムの未フォーマット時の容量制限は、ライセンスに関連付けられています。追加の制限は、アグリゲートとボリュームのサイズに影響します。設定を計画する際には、これらの制限に注意する必要があります。
 
-https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-limits-aws.html["AWS での Cloud Volumes ONTAP のストレージの制限"^]
+https://["AWS での Cloud Volumes ONTAP のストレージの制限"^]
 
 
 
@@ -63,19 +63,19 @@ Cloud Volumes ONTAP システムのサイジングを行うことで、パフォ
 * 複数のユーザが同時にシステムに書き込む場合は、要求を管理するのに十分な CPU を備えたインスタンスタイプを選択します。
 * 読み取りが多いアプリケーションがある場合は、十分な RAM が搭載されたシステムを選択します。
 +
-** https://aws.amazon.com/ec2/instance-types/["AWS ドキュメント：「 Amazon EC2 Instance Types"^]
-** https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/EBSOptimized.html["AWS のドキュメント：「 Amazon EBS – Optimized instances"^]
+** https://["AWS ドキュメント：「 Amazon EC2 Instance Types"^]
+** https://["AWS のドキュメント：「 Amazon EBS – Optimized instances"^]
 
 
 
 
 --
-EBS ディスクタイプ:: EBS ディスクタイプの違いは次のとおりです。EBS ディスクのユースケースの詳細については、を参照してください http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/EBSVolumeTypes.html["AWS ドキュメント：「 EBS Volume Types"^]。
+EBS ディスクタイプ:: EBS ディスクタイプの違いは次のとおりです。EBS ディスクのユースケースの詳細については、を参照してください http://["AWS ドキュメント：「 EBS Volume Types"^]。
 +
 --
 * _General Purpose SSD （ GP3 ） _ ディスクは、幅広いワークロードに対してコストとパフォーマンスのバランスを取る最も低コストの SSD です。パフォーマンスは、 IOPS とスループットを基準に定義されます。GP3 ディスクは Cloud Volumes ONTAP 9.7 以降でサポートされています。
 +
-GP3ディスクを選択すると、選択したディスクサイズに基づいて、gp2ディスクに相当するパフォーマンスを提供するデフォルトのIOPSとスループットの値がBlueXPによって設定されます。この値を増やすと、コストを高くしてもパフォーマンスを向上させることができますが、パフォーマンスが低下する可能性があるため、値を小さくすることはできません。つまり、デフォルト値をそのまま使用するか、値を大きくします。低くしないでください。 https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ebs-volume-types.html#gp3-ebs-volume-type["GP3 ディスクとそのパフォーマンスについては、こちらをご覧ください"^]。
+GP3ディスクを選択すると、選択したディスクサイズに基づいて、gp2ディスクに相当するパフォーマンスを提供するデフォルトのIOPSとスループットの値がBlueXPによって設定されます。この値を増やすと、コストを高くしてもパフォーマンスを向上させることができますが、パフォーマンスが低下する可能性があるため、値を小さくすることはできません。つまり、デフォルト値をそのまま使用するか、値を大きくします。低くしないでください。 https://["GP3 ディスクとそのパフォーマンスについては、こちらをご覧ください"^]。
 
 +
 Cloud Volumes ONTAP は、GP3ディスクを使用したAmazon EBS Elastic Volumes機能をサポートしています。 link:concept-aws-elastic-volumes.html["Elastic Volumesのサポートに関する詳細情報"]。
@@ -101,7 +101,7 @@ EBS ディスクサイズ:: をサポートしない構成を選択した場合 
 * 最終的には、必要なパフォーマンスを継続的に提供するディスクサイズを選択する必要があります。
 * 4 TiB のディスクを 6 台使用するなど、大容量のディスクを選択した場合でも、 EC2 インスタンスの帯域幅が制限に達する可能性があるため、すべての IOPS が得られないことがあります。
 +
-EBS ディスクのパフォーマンスの詳細については、を参照してください http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/EBSVolumeTypes.html["AWS ドキュメント：「 EBS Volume Types"^]。
+EBS ディスクのパフォーマンスの詳細については、を参照してください http://["AWS ドキュメント：「 EBS Volume Types"^]。
 
 +
 前述したように、ディスクサイズの選択は、Amazon EBS Elastic Volumes機能をサポートするCloud Volumes ONTAP 構成ではサポートされていません。 link:concept-aws-elastic-volumes.html["Elastic Volumesのサポートに関する詳細情報"]。
@@ -120,7 +120,7 @@ EBS ディスクのパフォーマンスの詳細については、を参照し�
 link:reference-default-configs.html#aws["AWS で Cloud Volumes ONTAP システムデータのデフォルトディスクを表示する"]。
 
 
-TIP: コネクタにはシステムディスクも必要です。 https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-connector-default-config.html["コネクタのデフォルト設定に関する詳細を表示します"^]。
+TIP: コネクタにはシステムディスクも必要です。 https://["コネクタのデフォルト設定に関する詳細を表示します"^]。
 
 
 

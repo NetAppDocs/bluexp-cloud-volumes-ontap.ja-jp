@@ -34,7 +34,7 @@ AutoSupport メッセージの送信にアウトバウンドのインターネ�
 
 Cloud Volumes ONTAP に厳密なアウトバウンドルールを定義した場合は、Cloud Volumes ONTAP セキュリティグループがポート3128で_OUTBOUND接続を許可する必要もあります。
 
-アウトバウンドのインターネットアクセスが使用可能であることを確認したら、 AutoSupport をテストしてメッセージを送信できることを確認します。手順については、を参照してください https://docs.netapp.com/us-en/ontap/system-admin/setup-autosupport-task.html["ONTAP のドキュメント：「 AutoSupport のセットアップ"^]。
+アウトバウンドのインターネットアクセスが使用可能であることを確認したら、 AutoSupport をテストしてメッセージを送信できることを確認します。手順については、を参照してください https://["ONTAP のドキュメント：「 AutoSupport のセットアップ"^]。
 
 
 
@@ -109,7 +109,7 @@ AutoSupport modify-proxy-url\http://<connector private ip>:3128`
 . このステータスがFAILEDの場合は、Cloud Volumes ONTAP とポート3128のコネクタの間に接続が確立されていることを確認します。
 . 接続が確立されていることを確認したあともステータスIDに障害が発生している場合は、コネクタにSSHで接続します。
 +
-https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-managing-connectors.html#connect-to-the-linux-vm["ConnectorのLinux VMへの接続の詳細については、を参照してください"^]
+https://["ConnectorのLinux VMへの接続の詳細については、を参照してください"^]
 
 . 「/opt/application/netapp/cloudmanager/docker _occm/data/`」に移動します
 . プロキシ構成ファイルsquid.confを開きます

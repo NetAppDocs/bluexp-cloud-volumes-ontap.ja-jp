@@ -52,7 +52,7 @@ endif::gcp[]
 
 === ネットアップの暗号化ソリューション（ NVE および NAE ）
 
-Cloud Volumes ONTAP はをサポートします https://www.netapp.com/us/media/ds-3899.pdf["NetApp Volume Encryption （ NVE ）および NetApp Aggregate Encryption （ NAE ）"^]。NVE と NAE は、（ FIPS ） 140-2 に準拠したボリュームの保管データ暗号化を可能にするソフトウェアベースのソリューションです。NVE と NAE はいずれも AES 256 ビット暗号化を使用します。
+Cloud Volumes ONTAP はをサポートします https://["NetApp Volume Encryption （ NVE ）および NetApp Aggregate Encryption （ NAE ）"^]。NVE と NAE は、（ FIPS ） 140-2 に準拠したボリュームの保管データ暗号化を可能にするソフトウェアベースのソリューションです。NVE と NAE はいずれも AES 256 ビット暗号化を使用します。
 
 * NVE は、一度に 1 ボリュームずつ保管データを暗号化する。各データボリュームには、一意の暗号化キーがあります。
 * NAE は NVE の拡張機能です。 NVE は各ボリュームのデータを暗号化し、ボリュームはアグリゲート全体でキーを共有します。NAE では、アグリゲート内のすべてのボリュームの共通ブロックも重複排除できます。
@@ -78,7 +78,7 @@ ifdef::aws[]
 
 === AWS Key Management Service の略
 
-AWS で Cloud Volumes ONTAP システムを起動する場合、を使用してデータ暗号化を有効にできます http://docs.aws.amazon.com/kms/latest/developerguide/overview.html["AWS Key Management Service （ KMS ；キー管理サービス）"^]。BlueXPは、Customer Master Key（CMK）を使用してデータキーを要求します。
+AWS で Cloud Volumes ONTAP システムを起動する場合、を使用してデータ暗号化を有効にできます http://["AWS Key Management Service （ KMS ；キー管理サービス）"^]。BlueXPは、Customer Master Key（CMK）を使用してデータキーを要求します。
 
 
 TIP: Cloud Volumes ONTAP システムの作成後に AWS のデータ暗号化方式を変更することはできません。
@@ -93,7 +93,7 @@ ifdef::azure[]
 
 === Azure Storage Service Encryption の略
 
-データは、を使用して Azure の Cloud Volumes ONTAP で自動的に暗号化されます https://azure.microsoft.com/en-us/documentation/articles/storage-service-encryption/["Azure Storage Service Encryption の略"^] Microsoft が管理するキーを使用する場合：
+データは、を使用して Azure の Cloud Volumes ONTAP で自動的に暗号化されます https://["Azure Storage Service Encryption の略"^] Microsoft が管理するキーを使用する場合：
 
 必要に応じて、独自の暗号化キーを使用できます。 link:task-set-up-azure-encryption.html["Azure でお客様が管理するキーを使用するように Cloud Volumes ONTAP を設定する方法について説明します"]。
 
@@ -105,7 +105,7 @@ ifdef::gcp[]
 
 === Google Cloud Platform のデフォルトの暗号化
 
-https://cloud.google.com/security/encryption-at-rest/["Google Cloud Platform の保存データ暗号化機能"^] Cloud Volumes ONTAP ではデフォルトで有効になっています。セットアップは必要ありません。
+https://["Google Cloud Platform の保存データ暗号化機能"^] Cloud Volumes ONTAP ではデフォルトで有効になっています。セットアップは必要ありません。
 
 Google Cloud Storageでは、データがディスクに書き込まれる前に常に暗号化されますが、BlueXP APIを使用して、_お客様が管理する暗号化キー_を使用するCloud Volumes ONTAP システムを作成できます。これらは、 Cloud Key Management Service を使用して GCP で生成および管理するキーです。 link:task-setting-up-gcp-encryption.html["詳細はこちら。"]。
 
@@ -119,9 +119,9 @@ ONTAP システムの統合アンチウイルス機能を使用すると、デ�
 
 ONTAP ウィルススキャン（ _vscan ）は、クラス最高のサードパーティ製ウィルス対策ソフトウェアと ONTAP 機能を組み合わせたもので、どのファイルをスキャンするか、いつスキャンするかを柔軟に制御できます。
 
-Vscan でサポートされるベンダー、ソフトウェア、およびバージョンについては、を参照してください http://mysupport.netapp.com/matrix["NetApp Interoperability Matrix を参照してください"^]。
+Vscan でサポートされるベンダー、ソフトウェア、およびバージョンについては、を参照してください http://["NetApp Interoperability Matrix を参照してください"^]。
 
-ONTAP システムでウィルス対策機能を設定および管理する方法については、を参照してください http://docs.netapp.com/ontap-9/topic/com.netapp.doc.dot-cm-acg/home.html["ONTAP 9 ウィルス対策構成ガイド"^]。
+ONTAP システムでウィルス対策機能を設定および管理する方法については、を参照してください http://["ONTAP 9 ウィルス対策構成ガイド"^]。
 
 
 

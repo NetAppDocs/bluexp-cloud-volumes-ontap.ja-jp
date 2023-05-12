@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: task-deploying-otc-azure.html 
-keywords: Cloud Volumes ONTAP, deploying, launching, creating, deploy, launch, create, azure, BYOL, license key, serial number, tags, azure tags, location, license, preconfigured packages, programmatic deployments, disk size, write speed, access control, volume protection, usage profile, register, CIFS share, quota, qtree, HA, HA pair, associate subscription, azure marketplace, marketplace subscription 
+keywords: Cloud Volumes ONTAP, deploying, launching, creating, deploy, launch, create, azure, BYOL, license key, serial number, tags, azure tags, location, license, preconfigured packages, programmatic deployments, disk size, write speed, access control, volume protection, usage profile, register, CIFS share, quota, qtree, HA, HA pair, associate subscription, azure marketplace, marketplace subscription, cloud data sense, cloud backup 
 summary: BlueXPでCloud Volumes ONTAP 作業環境を作成することで、Azureで単一のCloud Volumes ONTAP システムを起動できます。 
 ---
 = Azure で Cloud Volumes ONTAP を起動します
@@ -22,8 +22,8 @@ BlueXPでCloud Volumes ONTAP 作業環境を作成することで、Azureで単�
 [[licensing]]
 * 稼働中のコネクタ。
 +
-** を用意しておく必要があります https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-quick-start-connector-azure.html["ワークスペースに関連付けられているコネクタ"^]。
-** https://docs.netapp.com/us-en/cloud-manager-setup-admin/concept-connectors.html["コネクタをで実行したままにする準備をしておく必要があります 常時"^]。
+** を用意しておく必要があります https://["ワークスペースに関連付けられているコネクタ"^]。
+** https://["コネクタをで実行したままにする準備をしておく必要があります 常時"^]。
 
 
 * 使用する構成についての理解。
@@ -57,7 +57,7 @@ AzureでシングルノードのCloud Volumes ONTAP システムを起動する�
 . 左側のナビゲーションメニューから、* Storage > Canvas *を選択します。
 . [[subscribe] キャンバスページで、 * 作業環境の追加 * をクリックし、プロンプトに従います。
 . *場所を選択*：「* Microsoft Azure *」および「* Cloud Volumes ONTAP シングルノード*」を選択します。
-. プロンプトが表示されたら、 https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-quick-start-connector-azure.html["コネクタを作成します"^]。
+. プロンプトが表示されたら、 https://["コネクタを作成します"^]。
 . * 詳細とクレデンシャル * ：必要に応じて Azure のクレデンシャルとサブスクリプションを変更し、クラスタ名を指定し、タグを追加し、クレデンシャルを指定することもできます。
 +
 次の表では、ガイダンスが必要なフィールドについて説明します。
@@ -71,13 +71,13 @@ AzureでシングルノードのCloud Volumes ONTAP システムを起動する�
 | 作業環境名 | BlueXPでは、作業環境名を使用して、Cloud Volumes ONTAP システムとAzure仮想マシンの両方に名前が付けられます。また、このオプションを選択した場合は、事前定義されたセキュリティグループのプレフィックスとして名前が使用されます。 
 
 
-| リソースグループタグ | タグは、 Azure リソースのメタデータです。このフィールドにタグを入力すると、Cloud Volumes ONTAP システムに関連付けられているリソースグループにタグが追加されます。作業環境を作成するときに、ユーザインターフェイスから最大 4 つのタグを追加し、作成後にさらに追加できます。API では、作業環境の作成時にタグを 4 つに制限することはありません。タグの詳細については、を参照してください https://azure.microsoft.com/documentation/articles/resource-group-using-tags/["Microsoft Azure のドキュメント：「 Using tags to organize your Azure resources"^]。 
+| リソースグループタグ | タグは、 Azure リソースのメタデータです。このフィールドにタグを入力すると、Cloud Volumes ONTAP システムに関連付けられているリソースグループにタグが追加されます。作業環境を作成するときに、ユーザインターフェイスから最大 4 つのタグを追加し、作成後にさらに追加できます。API では、作業環境の作成時にタグを 4 つに制限することはありません。タグの詳細については、を参照してください https://["Microsoft Azure のドキュメント：「 Using tags to organize your Azure resources"^]。 
 
 
 | ユーザ名とパスワード | Cloud Volumes ONTAP クラスタ管理者アカウントのクレデンシャルです。このクレデンシャルを使用して、 System Manager またはその CLI から Cloud Volumes ONTAP に接続できます。default_admin_user の名前をそのまま使用するか ' カスタム・ユーザー名に変更します 
 
 
-| [[video]] 資格情報を編集します | この Cloud Volumes ONTAP システムで使用する別の Azure クレデンシャルと別の Azure サブスクリプションを選択できます。従量課金制 Cloud Volumes ONTAP システムを導入するには、選択した Azure サブスクリプションに Azure Marketplace サブスクリプションを関連付ける必要があります。 https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-adding-azure-accounts.html["クレデンシャルを追加する方法について説明します"^]。 
+| [[video]] 資格情報を編集します | この Cloud Volumes ONTAP システムで使用する別の Azure クレデンシャルと別の Azure サブスクリプションを選択できます。従量課金制 Cloud Volumes ONTAP システムを導入するには、選択した Azure サブスクリプションに Azure Marketplace サブスクリプションを関連付ける必要があります。 https://["クレデンシャルを追加する方法について説明します"^]。 
 |===
 +
 次のビデオでは、 Marketplace サブスクリプションを Azure サブスクリプションに関連付ける方法を紹介します。
@@ -86,11 +86,11 @@ AzureでシングルノードのCloud Volumes ONTAP システムを起動する�
 video::video_subscribing_azure.mp4[width=848,height=480]
 . * サービス *: サービスを有効にしておくか、 Cloud Volumes ONTAP で使用しない個々のサービスを無効にします。
 +
-** https://docs.netapp.com/us-en/cloud-manager-data-sense/concept-cloud-compliance.html["クラウドデータセンスの詳細をご確認ください"^]
-** https://docs.netapp.com/us-en/cloud-manager-backup-restore/concept-backup-to-cloud.html["Cloud Backup の詳細については、こちらをご覧ください"^]
+** https://["BlueXPの分類の詳細については、こちらをご覧ください"^]
+** https://["BlueXPのバックアップとリカバリの詳細については、こちらをご覧ください"^]
 +
 
-TIP: WORMとデータの階層化を利用する場合は、クラウドバックアップを無効にし、バージョン9.8以降のCloud Volumes ONTAP 作業環境を導入する必要があります。
+TIP: WORMとデータ階層化を活用する場合は、BlueXPのバックアップとリカバリを無効にし、バージョン9.8以降のCloud Volumes ONTAP 作業環境を導入する必要があります。
 
 
 
@@ -112,7 +112,7 @@ TIP: WORMとデータの階層化を利用する場合は、クラウドバッ�
 Cloud Volumes ONTAP の新しいリソースグループを作成するか、既存のリソースグループを使用します。Cloud Volumes ONTAP には、新しい専用のリソースグループを使用することを推奨します。既存の共有リソースグループに Cloud Volumes ONTAP を導入することは可能ですが、データ損失のリスクがあるため推奨されません。詳細については、上記の警告を参照してください。
 
 
-TIP: 使用している Azure アカウントにが割り当てられている場合 https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-permissions-azure.html["必要な権限"^]では、展開に失敗したり削除されたりした場合、Cloud Volumes ONTAP リソースがリソースグループから削除されます。
+TIP: 使用している Azure アカウントにが割り当てられている場合 https://["必要な権限"^]では、展開に失敗したり削除されたりした場合、Cloud Volumes ONTAP リソースがリソースグループから削除されます。
 
 
 
@@ -234,13 +234,13 @@ image:screenshot_cot_vol.gif["スクリーンショット： Cloud Volumes ONTAP
 | CIFS サーバの NetBIOS 名 | AD ドメイン内で一意の CIFS サーバ名。 
 
 
-| 組織単位 | CIFS サーバに関連付ける AD ドメイン内の組織単位。デフォルトは CN=Computers です。Azure AD ドメインサービスを Cloud Volumes ONTAP の AD サーバとして設定するには、このフィールドに「 * OU=AADDC computers* 」または「 * OU=AADDC Users* 」と入力します。https://docs.microsoft.com/en-us/azure/active-directory-domain-services/create-ou["Azure のドキュメント：「 Create an Organizational Unit （ OU ；組織単位） in an Azure AD Domain Services managed domain"^] 
+| 組織単位 | CIFS サーバに関連付ける AD ドメイン内の組織単位。デフォルトは CN=Computers です。Azure AD ドメインサービスを Cloud Volumes ONTAP の AD サーバとして設定するには、このフィールドに「 * OU=AADDC computers* 」または「 * OU=AADDC Users* 」と入力します。https://["Azure のドキュメント：「 Create an Organizational Unit （ OU ；組織単位） in an Azure AD Domain Services managed domain"^] 
 
 
 | DNS ドメイン | Cloud Volumes ONTAP Storage Virtual Machine （ SVM ）の DNS ドメイン。ほとんどの場合、ドメインは AD ドメインと同じです。 
 
 
-| NTP サーバ | Active Directory DNS を使用して NTP サーバを設定するには、「 Active Directory ドメインを使用」を選択します。別のアドレスを使用して NTP サーバを設定する必要がある場合は、 API を使用してください。を参照してください https://docs.netapp.com/us-en/cloud-manager-automation/index.html["BlueXP自動化ドキュメント"^] を参照してください。NTP サーバは、 CIFS サーバを作成するときにのみ設定できます。CIFS サーバを作成したあとで設定することはできません。 
+| NTP サーバ | Active Directory DNS を使用して NTP サーバを設定するには、「 Active Directory ドメインを使用」を選択します。別のアドレスを使用して NTP サーバを設定する必要がある場合は、 API を使用してください。を参照してください https://["BlueXP自動化ドキュメント"^] を参照してください。NTP サーバは、 CIFS サーバを作成するときにのみ設定できます。CIFS サーバを作成したあとで設定することはできません。 
 |===
 . * 使用状況プロファイル、ディスクタイプ、階層化ポリシー * ： Storage Efficiency 機能を有効にするかどうかを選択し、必要に応じてボリューム階層化ポリシーを変更します。
 +
@@ -261,7 +261,7 @@ BlueXPがCloud Volumes ONTAP システムを導入しましたタイムライン
 
 Cloud Volumes ONTAP システムの導入で問題が発生した場合は、障害メッセージを確認してください。作業環境を選択し、 * 環境の再作成 * をクリックすることもできます。
 
-詳細については、を参照してください https://mysupport.netapp.com/site/products/all/details/cloud-volumes-ontap/guideme-tab["NetApp Cloud Volumes ONTAP のサポート"^]。
+詳細については、を参照してください https://["NetApp Cloud Volumes ONTAP のサポート"^]。
 
 .完了後
 * CIFS 共有をプロビジョニングした場合は、ファイルとフォルダに対する権限をユーザまたはグループに付与し、それらのユーザが共有にアクセスしてファイルを作成できることを確認します。
@@ -280,7 +280,7 @@ AzureでCloud Volumes ONTAP HAペアを起動するには、BlueXPでHA作業環
 .手順
 . 左側のナビゲーションメニューから、* Storage > Canvas *を選択します。
 . [[subscribe] キャンバスページで、 * 作業環境の追加 * をクリックし、プロンプトに従います。
-. プロンプトが表示されたら、 https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-quick-start-connector-azure.html["コネクタを作成します"^]。
+. プロンプトが表示されたら、 https://["コネクタを作成します"^]。
 . * 詳細とクレデンシャル * ：必要に応じて Azure のクレデンシャルとサブスクリプションを変更し、クラスタ名を指定し、タグを追加し、クレデンシャルを指定することもできます。
 +
 次の表では、ガイダンスが必要なフィールドについて説明します。
@@ -294,13 +294,13 @@ AzureでCloud Volumes ONTAP HAペアを起動するには、BlueXPでHA作業環
 | 作業環境名 | BlueXPでは、作業環境名を使用して、Cloud Volumes ONTAP システムとAzure仮想マシンの両方に名前が付けられます。また、このオプションを選択した場合は、事前定義されたセキュリティグループのプレフィックスとして名前が使用されます。 
 
 
-| リソースグループタグ | タグは、 Azure リソースのメタデータです。このフィールドにタグを入力すると、Cloud Volumes ONTAP システムに関連付けられているリソースグループにタグが追加されます。作業環境を作成するときに、ユーザインターフェイスから最大 4 つのタグを追加し、作成後にさらに追加できます。API では、作業環境の作成時にタグを 4 つに制限することはありません。タグの詳細については、を参照してください https://azure.microsoft.com/documentation/articles/resource-group-using-tags/["Microsoft Azure のドキュメント：「 Using tags to organize your Azure resources"^]。 
+| リソースグループタグ | タグは、 Azure リソースのメタデータです。このフィールドにタグを入力すると、Cloud Volumes ONTAP システムに関連付けられているリソースグループにタグが追加されます。作業環境を作成するときに、ユーザインターフェイスから最大 4 つのタグを追加し、作成後にさらに追加できます。API では、作業環境の作成時にタグを 4 つに制限することはありません。タグの詳細については、を参照してください https://["Microsoft Azure のドキュメント：「 Using tags to organize your Azure resources"^]。 
 
 
 | ユーザ名とパスワード | Cloud Volumes ONTAP クラスタ管理者アカウントのクレデンシャルです。このクレデンシャルを使用して、 System Manager またはその CLI から Cloud Volumes ONTAP に接続できます。default_admin_user の名前をそのまま使用するか ' カスタム・ユーザー名に変更します 
 
 
-| [[video]] 資格情報を編集します | この Cloud Volumes ONTAP システムで使用する別の Azure クレデンシャルと別の Azure サブスクリプションを選択できます。従量課金制 Cloud Volumes ONTAP システムを導入するには、選択した Azure サブスクリプションに Azure Marketplace サブスクリプションを関連付ける必要があります。 https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-adding-azure-accounts.html["クレデンシャルを追加する方法について説明します"^]。 
+| [[video]] 資格情報を編集します | この Cloud Volumes ONTAP システムで使用する別の Azure クレデンシャルと別の Azure サブスクリプションを選択できます。従量課金制 Cloud Volumes ONTAP システムを導入するには、選択した Azure サブスクリプションに Azure Marketplace サブスクリプションを関連付ける必要があります。 https://["クレデンシャルを追加する方法について説明します"^]。 
 |===
 +
 次のビデオでは、 Marketplace サブスクリプションを Azure サブスクリプションに関連付ける方法を紹介します。
@@ -309,11 +309,11 @@ AzureでCloud Volumes ONTAP HAペアを起動するには、BlueXPでHA作業環
 video::video_subscribing_azure.mp4[width=848,height=480]
 . * サービス *: サービスを有効にしておくか、 Cloud Volumes ONTAP で使用しない個々のサービスを無効にします。
 +
-** https://docs.netapp.com/us-en/cloud-manager-data-sense/concept-cloud-compliance.html["クラウドデータセンスの詳細をご確認ください"^]
-** https://docs.netapp.com/us-en/cloud-manager-backup-restore/concept-backup-to-cloud.html["Cloud Backup の詳細については、こちらをご覧ください"^]
+** https://["BlueXPの分類の詳細については、こちらをご覧ください"^]
+** https://["BlueXPのバックアップとリカバリの詳細については、こちらをご覧ください"^]
 +
 
-TIP: WORMとデータの階層化を利用する場合は、クラウドバックアップを無効にし、バージョン9.8以降のCloud Volumes ONTAP 作業環境を導入する必要があります。
+TIP: WORMとデータ階層化を活用する場合は、BlueXPのバックアップとリカバリを無効にし、バージョン9.8以降のCloud Volumes ONTAP 作業環境を導入する必要があります。
 
 
 
@@ -345,7 +345,7 @@ Cloud Volumes ONTAP の新しいリソースグループを作成するか、既
 Azure に導入する Cloud Volumes ONTAP HA ペアごとに専用のリソースグループを使用する必要があります。リソースグループでサポートされる HA ペアは 1 つだけです。Azureリソースグループに2つ目のCloud Volumes ONTAP HAペアを導入しようとすると、接続の問題が発生します。
 
 
-TIP: 使用している Azure アカウントにが割り当てられている場合 https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-permissions-azure.html["必要な権限"^]では、展開に失敗したり削除されたりした場合、Cloud Volumes ONTAP リソースがリソースグループから削除されます。
+TIP: 使用している Azure アカウントにが割り当てられている場合 https://["必要な権限"^]では、展開に失敗したり削除されたりした場合、Cloud Volumes ONTAP リソースがリソースグループから削除されます。
 
 
 
@@ -479,13 +479,13 @@ image:screenshot_cot_vol.gif["スクリーンショット： Cloud Volumes ONTAP
 | CIFS サーバの NetBIOS 名 | AD ドメイン内で一意の CIFS サーバ名。 
 
 
-| 組織単位 | CIFS サーバに関連付ける AD ドメイン内の組織単位。デフォルトは CN=Computers です。Azure AD ドメインサービスを Cloud Volumes ONTAP の AD サーバとして設定するには、このフィールドに「 * OU=AADDC computers* 」または「 * OU=AADDC Users* 」と入力します。https://docs.microsoft.com/en-us/azure/active-directory-domain-services/create-ou["Azure のドキュメント：「 Create an Organizational Unit （ OU ；組織単位） in an Azure AD Domain Services managed domain"^] 
+| 組織単位 | CIFS サーバに関連付ける AD ドメイン内の組織単位。デフォルトは CN=Computers です。Azure AD ドメインサービスを Cloud Volumes ONTAP の AD サーバとして設定するには、このフィールドに「 * OU=AADDC computers* 」または「 * OU=AADDC Users* 」と入力します。https://["Azure のドキュメント：「 Create an Organizational Unit （ OU ；組織単位） in an Azure AD Domain Services managed domain"^] 
 
 
 | DNS ドメイン | Cloud Volumes ONTAP Storage Virtual Machine （ SVM ）の DNS ドメイン。ほとんどの場合、ドメインは AD ドメインと同じです。 
 
 
-| NTP サーバ | Active Directory DNS を使用して NTP サーバを設定するには、「 Active Directory ドメインを使用」を選択します。別のアドレスを使用して NTP サーバを設定する必要がある場合は、 API を使用してください。を参照してください https://docs.netapp.com/us-en/cloud-manager-automation/index.html["BlueXP自動化ドキュメント"^] を参照してください。NTP サーバは、 CIFS サーバを作成するときにのみ設定できます。CIFS サーバを作成したあとで設定することはできません。 
+| NTP サーバ | Active Directory DNS を使用して NTP サーバを設定するには、「 Active Directory ドメインを使用」を選択します。別のアドレスを使用して NTP サーバを設定する必要がある場合は、 API を使用してください。を参照してください https://["BlueXP自動化ドキュメント"^] を参照してください。NTP サーバは、 CIFS サーバを作成するときにのみ設定できます。CIFS サーバを作成したあとで設定することはできません。 
 |===
 . * 使用状況プロファイル、ディスクタイプ、階層化ポリシー * ： Storage Efficiency 機能を有効にするかどうかを選択し、必要に応じてボリューム階層化ポリシーを変更します。
 +
@@ -506,7 +506,7 @@ BlueXPがCloud Volumes ONTAP システムを導入しましたタイムライン
 
 Cloud Volumes ONTAP システムの導入で問題が発生した場合は、障害メッセージを確認してください。作業環境を選択し、 * 環境の再作成 * をクリックすることもできます。
 
-詳細については、を参照してください https://mysupport.netapp.com/site/products/all/details/cloud-volumes-ontap/guideme-tab["NetApp Cloud Volumes ONTAP のサポート"^]。
+詳細については、を参照してください https://["NetApp Cloud Volumes ONTAP のサポート"^]。
 
 .完了後
 * CIFS 共有をプロビジョニングした場合は、ファイルとフォルダに対する権限をユーザまたはグループに付与し、それらのユーザが共有にアクセスしてファイルを作成できることを確認します。

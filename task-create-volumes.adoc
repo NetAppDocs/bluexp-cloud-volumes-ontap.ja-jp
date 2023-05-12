@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: task-create-volumes.html 
-keywords: storage, provisioning, iscsi, nfs, cifs, volumes, create a volume, add a volume, create volumes, add volumes, creating a volume, adding a volume, provision volume, provision a volume, provisioning volumes, add volume to second node, add volume to node 2, templates 
+keywords: storage, provisioning, iscsi, nfs, cifs, volumes, create a volume, add a volume, create volumes, add volumes, creating a volume, adding a volume, provision volume, provision a volume, provisioning volumes, add volume to second node, add volume to node 2, templates, cloud backup 
 summary: 初期のCloud Volumes ONTAP システムの起動後にストレージの追加が必要になった場合は、BlueXPからNFS、CIFS、またはiSCSI用の新しいFlexVol ボリュームを作成できます。 
 ---
 = FlexVol ボリュームを作成します
@@ -87,7 +87,7 @@ endif::aws[]
 | ボリュームサイズ | 入力できる最大サイズは、シンプロビジョニングを有効にするかどうかによって大きく異なります。シンプロビジョニングを有効にすると、現在使用可能な物理ストレージよりも大きいボリュームを作成できます。 
 
 
-| タグ | ボリュームに追加するタグはに関連付けられます https://docs.netapp.com/us-en/cloud-manager-app-template/task-using-tags.html["Application Templates サービス"^]を使用すると、リソースの管理を整理して簡単に行うことができます。 
+| タグ | ボリュームに追加するタグはに関連付けられます https://["Application Templates サービス"^]を使用すると、リソースの管理を整理して簡単に行うことができます。 
 
 
 | Storage VM（SVM） | Storage VM は ONTAP 内で実行される仮想マシンであり、クライアントにストレージサービスとデータサービスを提供します。これは SVM または SVM として認識されていることがあります。Cloud Volumes ONTAP にはデフォルトで 1 つの Storage VM が設定されますが、一部の設定では追加の Storage VM がサポートされます。新しいボリュームのStorage VMを指定できます。 
@@ -145,20 +145,20 @@ endif::aws[]
 
 ifdef::azure[]
 
-*** Azure AD ドメインサービスを Cloud Volumes ONTAP の AD サーバとして設定するには、このフィールドに「 * OU=AADDC computers * 」または「 * OU=AADDC Users * 」と入力します。https://docs.microsoft.com/en-us/azure/active-directory-domain-services/create-ou["Azure のドキュメント：「 Create an Organizational Unit （ OU ；組織単位） in an Azure AD Domain Services managed domain"^]
+*** Azure AD ドメインサービスを Cloud Volumes ONTAP の AD サーバとして設定するには、このフィールドに「 * OU=AADDC computers * 」または「 * OU=AADDC Users * 」と入力します。https://["Azure のドキュメント：「 Create an Organizational Unit （ OU ；組織単位） in an Azure AD Domain Services managed domain"^]
 
 
 endif::azure[]
 
 ifdef::gcp[]
 
-*** Google Managed Microsoft AD を Cloud Volumes ONTAP の AD サーバとして設定するには、このフィールドに「 * OU=computers 、 OU=Cloud 」と入力します。https://cloud.google.com/managed-microsoft-ad/docs/manage-active-directory-objects#organizational_units["Google Cloud ドキュメント：「 Organizational Units in Google Managed Microsoft AD"^]
+*** Google Managed Microsoft AD を Cloud Volumes ONTAP の AD サーバとして設定するには、このフィールドに「 * OU=computers 、 OU=Cloud 」と入力します。https://["Google Cloud ドキュメント：「 Organizational Units in Google Managed Microsoft AD"^]
 
 
 endif::gcp[]
 
 DNS ドメイン:: Cloud Volumes ONTAP Storage Virtual Machine （ SVM ）の DNS ドメイン。ほとんどの場合、ドメインは AD ドメインと同じです。
-NTP サーバ:: Active Directory DNS を使用して NTP サーバを設定するには、「 Active Directory ドメインを使用」を選択します。別のアドレスを使用して NTP サーバを設定する必要がある場合は、 API を使用してください。を参照してください https://docs.netapp.com/us-en/cloud-manager-automation/index.html["BlueXP自動化ドキュメント"^] を参照してください。
+NTP サーバ:: Active Directory DNS を使用して NTP サーバを設定するには、「 Active Directory ドメインを使用」を選択します。別のアドレスを使用して NTP サーバを設定する必要がある場合は、 API を使用してください。を参照してください https://["BlueXP自動化ドキュメント"^] を参照してください。
 +
 --
 NTP サーバは、 CIFS サーバを作成するときにのみ設定できます。CIFS サーバを作成したあとで設定することはできません。
@@ -252,7 +252,7 @@ image:screenshot_define_cvo_vol_from_template.png["ボリュームを作成す�
 . _Context_の下に、を起動した作業環境の名前が作業環境に入力されます。ボリュームを作成する* Storage VM *を選択します。
 . テンプレートからハードコーディングされていないすべてのパラメータに値を追加します。を参照してください <<create a volume,ボリュームを作成します>> Cloud Volumes ONTAP ボリュームの導入を完了するために必要なすべてのパラメータの詳細については、を参照してください。
 . [適用（Apply）]*をクリックして、設定したパラメータを選択したアクションに保存します。
-. 他に定義する必要のある操作がない場合（Cloud Backupの設定など）は、*[テンプレートを保存]*をクリックします。
+. 定義する必要のある他の操作（BlueXPのバックアップとリカバリの設定など）がない場合は、*[テンプレートの保存]*をクリックします。
 +
 他のアクションがある場合は、左ペインのアクションをクリックして、完了する必要のあるパラメータを表示します。
 
@@ -270,7 +270,7 @@ Cloud Volumes ONTAP によってボリュームがプロビジョニングされ
 
 image:screenshot_template_creating_resource_cvo.png["テンプレートから新しいボリュームを作成する進行状況を示すスクリーンショット。"]
 
-また、テンプレートにセカンダリ操作が実装されている場合は、たとえばボリュームで Cloud Backup を有効にすると、その操作も実行されます。
+また、ボリュームでBlueXPのバックアップとリカバリを有効にするなど、テンプレートにセカンダリアクションが実装されている場合は、そのアクションも実行されます。
 
 
 

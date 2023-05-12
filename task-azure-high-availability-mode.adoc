@@ -30,7 +30,7 @@ Azureサブスクリプションでこの機能を有効にする必要がある
 「Owner」権限があるAzureユーザは、Azure CLIからこの機能を有効にできます。
 
 .手順
-. https://docs.microsoft.com/en-us/azure/cloud-shell/quickstart["Azure PortalからAzure Cloud Shellにアクセスします"^]
+. https://["Azure PortalからAzure Cloud Shellにアクセスします"^]
 . ハイアベイラビリティモード機能を登録します。
 +
 [source, azurecli]

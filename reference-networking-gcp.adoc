@@ -182,15 +182,15 @@ Cloud Volumes ONTAP とコネクタは、 Google Cloud の共有 VPC とスタ�
 
 HA ペアの場合は、 4 つの VPC が必要です。これらの各 VPC は、共有またはスタンドアロンのどちらかにすることができます。たとえば、 VPC は VPC を共有化し、 VPC は VPC 1 、 VPC は 2 、 VPC は 3 で構成されることになります。
 
-共有 VPC を使用すると、複数のプロジェクトの仮想ネットワークを設定し、一元管理できます。ホストプロジェクト _ で共有 VPC ネットワークをセットアップし、 Connector および Cloud Volumes ONTAP 仮想マシンインスタンスをサービスプロジェクト _ で導入できます。 https://cloud.google.com/vpc/docs/shared-vpc["Google Cloud のドキュメント：「 Shared VPC Overview"^]。
+共有 VPC を使用すると、複数のプロジェクトの仮想ネットワークを設定し、一元管理できます。ホストプロジェクト _ で共有 VPC ネットワークをセットアップし、 Connector および Cloud Volumes ONTAP 仮想マシンインスタンスをサービスプロジェクト _ で導入できます。 https://["Google Cloud のドキュメント：「 Shared VPC Overview"^]。
 
-https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-quick-start-connector-google.html["Connector の導入でカバーされている必要な共有 VPC の権限を確認します"^]
+https://["Connector の導入でカバーされている必要な共有 VPC の権限を確認します"^]
 
 
 
 === VPC でのパケットミラーリング
 
-https://cloud.google.com/vpc/docs/packet-mirroring["パケットミラーリング"^] Cloud Volumes ONTAP を導入する Google Cloud VPC で無効にする必要があります。パケットミラーリングがイネーブルの場合、 Cloud Volumes ONTAP は正常に動作しません。
+https://["パケットミラーリング"^] Cloud Volumes ONTAP を導入する Google Cloud VPC で無効にする必要があります。パケットミラーリングがイネーブルの場合、 Cloud Volumes ONTAP は正常に動作しません。
 
 
 
@@ -208,7 +208,7 @@ AutoSupport メッセージの送信にアウトバウンドのインターネ�
 
 Cloud Volumes ONTAP に厳密なアウトバウンドルールを定義した場合は、Cloud Volumes ONTAP ファイアウォールがポート3128で_OUTBOUND接続を許可することも必要です。
 
-アウトバウンドのインターネットアクセスが使用可能であることを確認したら、 AutoSupport をテストしてメッセージを送信できることを確認します。手順については、を参照してください https://docs.netapp.com/us-en/ontap/system-admin/setup-autosupport-task.html["ONTAP のドキュメント：「 AutoSupport のセットアップ"^]。
+アウトバウンドのインターネットアクセスが使用可能であることを確認したら、 AutoSupport をテストしてメッセージを送信できることを確認します。手順については、を参照してください https://["ONTAP のドキュメント：「 AutoSupport のセットアップ"^]。
 
 
 TIP: HA ペアを使用している場合、 HA メディエーターではアウトバウンドのインターネットアクセスは必要ありません。
@@ -227,7 +227,7 @@ HA 構成には、次の 2 組のファイアウォールルールが必要で�
 --
 
 
-コールドデータを Google Cloud Storage バケットに階層化する場合は、 Cloud Volumes ONTAP が配置されているサブネットをプライベート Google Access 用に設定する必要があります（ HA ペアを使用している場合、これは VPC 0 のサブネットです）。手順については、を参照してください https://cloud.google.com/vpc/docs/configure-private-google-access["Google Cloud のドキュメント：「 Configuring Private Google Access"^]。
+コールドデータを Google Cloud Storage バケットに階層化する場合は、 Cloud Volumes ONTAP が配置されているサブネットをプライベート Google Access 用に設定する必要があります（ HA ペアを使用している場合、これは VPC 0 のサブネットです）。手順については、を参照してください https://["Google Cloud のドキュメント：「 Configuring Private Google Access"^]。
 
 BlueXPでデータの階層化を設定するために必要な追加手順については'を参照してください link:task-tiering.html["コールドデータを低コストのオブジェクトストレージに階層化する"]。
 
@@ -237,7 +237,7 @@ BlueXPでデータの階層化を設定するために必要な追加手順に�
 
 Google Cloud内のCloud Volumes ONTAP システムと他のネットワーク内のONTAP システムの間でデータをレプリケートするには、VPCと他のネットワーク（たとえば、社内ネットワーク）の間にVPN接続が必要です。
 
-手順については、を参照してください https://cloud.google.com/vpn/docs/concepts/overview["Google Cloud のドキュメント：「 Cloud VPN Overview"^]。
+手順については、を参照してください https://["Google Cloud のドキュメント：「 Cloud VPN Overview"^]。
 
 
 
@@ -254,7 +254,7 @@ HA 構成には、次の 2 組のファイアウォールルールが必要で�
 
 
 
-TIP: コネクタに関する情報をお探しですか？ https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-ports-gcp.html["コネクタのファイアウォールルールを表示します"^]
+TIP: コネクタに関する情報をお探しですか？ https://["コネクタのファイアウォールルールを表示します"^]
 
 
 
@@ -266,7 +266,7 @@ TIP: コネクタに関する情報をお探しですか？ https://docs.netapp.
 * *すべてのVPC *：インバウンドトラフィックのソースフィルタは0.0.0.0/0のIP範囲です。
 
 
-独自のファイアウォールポリシーを使用する場合は、Cloud Volumes ONTAP と通信する必要のあるすべてのネットワークを追加し、内部のGoogleロードバランサが正常に機能するように両方のアドレス範囲を追加してください。これらのアドレスは 130.211.0.0/22 および 35.191.0.0/16 です。詳細については、を参照してください https://cloud.google.com/load-balancing/docs/tcp#firewall_rules["Google Cloud ドキュメント：ロードバランサファイアウォールルール"^]。
+独自のファイアウォールポリシーを使用する場合は、Cloud Volumes ONTAP と通信する必要のあるすべてのネットワークを追加し、内部のGoogleロードバランサが正常に機能するように両方のアドレス範囲を追加してください。これらのアドレスは 130.211.0.0/22 および 35.191.0.0/16 です。詳細については、を参照してください https://["Google Cloud ドキュメント：ロードバランサファイアウォールルール"^]。
 
 [cols="10,10,80"]
 |===
@@ -509,6 +509,6 @@ NOTE: Google Cloudの新しいHAペア環境で高速な書き込み速度を有
 
 コネクタをまだ作成していない場合は、コネクタのネットワーク要件も確認してください。
 
-* https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-quick-start-connector-google.html["コネクタのネットワーク要件を確認します"^]
-* https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-ports-gcp.html["Google Cloudのファイアウォールルール"^]
+* https://["コネクタのネットワーク要件を確認します"^]
+* https://["Google Cloudのファイアウォールルール"^]
 

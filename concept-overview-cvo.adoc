@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: concept-overview-cvo.html 
-keywords: what is cloud volumes ontap, cloud volumes ontap features, features, cloud volumes ontap overview, overview of cloud volumes ontap 
+keywords: what is cloud volumes ontap, cloud volumes ontap features, features, cloud volumes ontap overview, overview of cloud volumes ontap, cloud backup, cloud data sense 
 summary: Cloud Volumes ONTAP を使用すると、データ保護、セキュリティ、コンプライアンスを強化しながら、クラウドストレージのコストとパフォーマンスを最適化できます。 
 ---
 = Cloud Volumes ONTAP の詳細をご覧ください
@@ -31,10 +31,10 @@ Cloud Volumes ONTAP は、クラウドで ONTAP データ管理ソフトウェ�
 Cloud Volumes ONTAP は、業界をリードするネットアップのレプリケーションテクノロジである SnapMirror を利用してオンプレミスのデータをクラウドにレプリケートするため、セカンダリコピーを複数のユースケースに簡単に利用できます。
 
 +
-また、 Cloud Volumes ONTAP はクラウドバックアップと統合されているため、保護のためのバックアップとリストア機能を提供し、クラウドデータの長期アーカイブを実現できます。
+また、Cloud Volumes ONTAP はBlueXPのバックアップとリカバリと統合することで、クラウドデータの保護と長期アーカイブのためのバックアップとリストアの機能を提供します。
 
 +
-https://docs.netapp.com/us-en/cloud-manager-backup-restore/concept-backup-to-cloud.html["Cloud Backup の詳細については、こちらをご覧ください"^]
+https://["BlueXPのバックアップとリカバリの詳細については、こちらをご覧ください"^]
 
 * データの階層化
 +
@@ -45,7 +45,7 @@ https://docs.netapp.com/us-en/cloud-manager-backup-restore/concept-backup-to-clo
 NetApp SnapCenter を使用して、 NetApp Snapshot コピーの整合性を確保します。
 
 +
-https://docs.netapp.com/us-en/snapcenter/concept/concept_snapcenter_overview.html["SnapCenter の詳細については、こちらをご覧ください"^]
+https://["SnapCenter の詳細については、こちらをご覧ください"^]
 
 * データセキュリティ
 +
@@ -53,16 +53,16 @@ Cloud Volumes ONTAP は、データ暗号化をサポートし、ウィルスや
 
 * プライバシーコンプライアンスの管理
 +
-クラウドデータセンスとの統合により、データコンテキストを把握し、機密データを識別できます。
+BlueXPの分類機能と統合することで、データのコンテキストを把握し、機密データを特定できます。
 
 +
-https://docs.netapp.com/us-en/cloud-manager-data-sense/concept-cloud-compliance.html["クラウドデータセンスの詳細をご確認ください"^]
+https://["BlueXPの分類の詳細については、こちらをご覧ください"^]
 
 
 
 
 NOTE: ONTAP 機能のライセンスは、 Cloud Volumes ONTAP に含まれています。
 
-https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/index.html["サポートされている Cloud Volumes ONTAP 構成を表示します"^]
+https://["サポートされている Cloud Volumes ONTAP 構成を表示します"^]
 
-https://cloud.netapp.com/ontap-cloud["Cloud Volumes ONTAP の詳細については、こちらを参照してください"^]
+https://["Cloud Volumes ONTAP の詳細については、こちらを参照してください"^]

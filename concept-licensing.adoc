@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: concept-licensing.html 
-keywords: freemium, professional, essentials, licensing, licenses, cloud volumes ontap charging, cloud volumes ontap licenses, cloud volumes ontap licensing, cvo licenses, cvo licensing, byol, bring your own license, paygo, pay as you go 
+keywords: freemium, professional, essentials, licensing, licenses, cloud volumes ontap charging, cloud volumes ontap licenses, cloud volumes ontap licensing, cvo licenses, cvo licensing, byol, bring your own license, paygo, pay as you go, keystone flex, keystone, cloud backup, digital wallet 
 summary: Cloud Volumes ONTAP には、いくつかのライセンスオプションがあります。それぞれのオプションを使用することで、ニーズに合わせた構成を選択できます。 
 ---
 = Cloud Volumes ONTAP ライセンス
@@ -23,7 +23,7 @@ Cloud Volumes ONTAP には、いくつかのライセンスオプションがあ
 新規のお客様は、次のライセンスオプションを利用できます。
 
 容量単位のライセンス:: ネットアップアカウントで複数のCloud Volumes ONTAP システムをプロビジョニングした容量分だけ料金が発生追加のクラウドデータサービスを購入できます。
-Keystone Flex サブスクリプション:: ニーズに合わせて拡張できるサブスクリプションベースのサービス。 HA ペア向けのシームレスなハイブリッドクラウドエクスペリエンスを提供します。
+Keystoneサブスクリプション:: ニーズに合わせて拡張できるサブスクリプションベースのサービス。 HA ペア向けのシームレスなハイブリッドクラウドエクスペリエンスを提供します。
 
 
 以前のノード単位のライセンスモデルは、ライセンスを購入済みの既存のお客様や、アクティブな Marketplace サブスクリプションを所有しているお客様には引き続き提供されます。
@@ -137,7 +137,7 @@ endif::gcp[]
 +
 プライマリボリュームとセカンダリボリュームの容量を同じ速度で課金する、シングルノードまたはHA
 
-* Cloud Backupを使用したボリュームバックアップは無制限ですが、Professionalパッケージを使用するCloud Volumes ONTAP システムのみが対象です
+* BlueXPのバックアップとリカバリを使用したボリュームバックアップは無制限ですが、Professionalパッケージを使用するCloud Volumes ONTAP システムのみが対象です
 * ネットアップのクラウドデータサービスを追加コストで利用できます
 
 
@@ -166,7 +166,7 @@ ifdef::gcp[]
 
 endif::gcp[]
 
-https://cloud.netapp.com/cloud-volumes-edge-cache["Cloud Volume Edgeキャッシュがビジネスにどのように役立つかをご確認ください"^]
+https://["Cloud Volume Edgeキャッシュがビジネスにどのように役立つかをご確認ください"^]
 
 
 
@@ -214,13 +214,13 @@ link:task-manage-capacity-licenses.html["充電方法を変更する方法につ
 
 === 価格設定
 
-価格設定の詳細については、を参照してください https://cloud.netapp.com/pricing?hsCtaTracking=4f8b7b77-8f63-4b73-b5af-ee09eab4fbd6%7C5fefbc99-396c-4084-99e6-f1e22dc8ffe7["NetApp BlueXPのWebサイト"^]。
+価格設定の詳細については、を参照してください https://["NetApp BlueXPのWebサイト"^]。
 
 
 
 === 無償トライアルを利用できます
 
-30 日間の無償トライアルをクラウドプロバイダのマーケットプレイスで従量課金制サブスクリプションで利用できます。無償トライアルには、Cloud Volumes ONTAP とクラウドバックアップが含まれています。トライアルは、市場で提供サービスに登録すると開始されます。
+30 日間の無償トライアルをクラウドプロバイダのマーケットプレイスで従量課金制サブスクリプションで利用できます。この無償トライアルには、Cloud Volumes ONTAP とBlueXPのバックアップとリカバリ機能が含まれています。トライアルは、市場で提供サービスに登録すると開始されます。
 
 インスタンスや容量の制限はありません。Cloud Volumes ONTAP システムは必要な数だけ導入でき、必要な容量を30日間無償で割り当てることができます。無料トライアルは、30日後に1時間ごとの有料サブスクリプションに自動的に変換されます。
 
@@ -269,7 +269,7 @@ TIP: 無料トライアルが開始されたとき、7日間残っていると�
 
 20台以上のシステムを必要とする大規模な導入環境の場合は、アカウント担当者または営業チームにお問い合わせください。
 
-https://docs.netapp.com/us-en/cloud-manager-setup-admin/concept-netapp-accounts.html["ネットアップアカウントの詳細については、こちらをご覧ください"^]。
+https://["ネットアップアカウントの詳細については、こちらをご覧ください"^]。
 
 
 
@@ -299,7 +299,7 @@ BYOL の容量を超えた場合やライセンスの有効期限が切れた場
 
 Essentialsパッケージでは、導入タイプ（HAまたはシングルノード）とボリュームタイプ（プライマリまたはセカンダリ）ごとに課金されます。たとえば、_Essentials HA_に は、_Essentials Secondary HA_と は異なる価格が設定されています。
 
-NetApp（BYOL）からEssentialsライセンスを購入し、その導入環境およびボリュームタイプのライセンス容量を超えると、Digital Walletは高額なEssentialsライセンスを購入した場合に料金を支払います（ライセンスがある場合）。これは、市場に課金する前に、前払い済みの容量として購入済みの使用可能容量を最初に使用するためです。市場に課金することで、月額料金が加算されます。
+Essentialsライセンスをネットアップから購入した場合（BYOL）、その導入環境およびボリュームタイプでライセンスされている容量を超えた場合、BlueXPデジタルウォレットは、より高い価格のEssentialsライセンス（お持ちの場合）に対して追加料金を請求します。これは、市場に課金する前に、前払い済みの容量として購入済みの使用可能容量を最初に使用するためです。市場に課金することで、月額料金が加算されます。
 
 次に例を示します。Essentialsパッケージには、次のライセンスがあるとします。
 
@@ -307,9 +307,9 @@ NetApp（BYOL）からEssentialsライセンスを購入し、その導入環境
 * 100TiBのコミット済み容量のみを含む500TiB _ Essentialsシングルノードライセンス
 
 
-セカンダリボリュームを含むHAペアにはもう1つの50TiBがプロビジョニングされます。デジタルウォレットでは、50TiBをPAYGOに課金する代わりに、_Essentials Single Node_licenseに対して50TiBの超過分を課金します。このライセンスは_Essentials Secondary HA_より も価格が高くなりますが、PAYGOの価格よりも安いです。
+セカンダリボリュームを含むHAペアにはもう1つの50TiBがプロビジョニングされます。BlueXPデジタルウォレットは、その50TiBをPAYGOに課金する代わりに、_Essentials Single Node_licenseに対して50TiBの超過料金を請求します。このライセンスは_Essentials Secondary HA_より も価格が高くなりますが、PAYGOの価格よりも安いです。
 
-デジタルウォレットでは、50TiBが_Essentialsシングルノードライセンスに対して課金されたものとして表示されます。
+BlueXPデジタルウォレットでは、_Essentials Single Node_licenseに対して請求される50TiBが表示されます。
 
 
 
@@ -362,21 +362,21 @@ endif::gcp[]
 
 
 
-== Keystone Flex サブスクリプション
+== Keystoneサブスクリプション
 
 成長に合わせて拡張できるサブスクリプションベースのサービス。運用コストの消費モデルを希望するお客様に、設備投資やリースを先行するお客様にシームレスなハイブリッドクラウドエクスペリエンスを提供します。
 
-課金は、 Keystone Flex サブスクリプションでの 1 つ以上の Cloud Volumes ONTAP HA ペアのコミット済み容量に基づいています。
+課金は、Keystoneサブスクリプションに含まれる1つ以上のCloud Volumes ONTAP HAペアのコミット済み容量に基づいて行われます。
 
-各ボリュームのプロビジョニング済み容量は、 Keystone Flex サブスクリプションのコミット済み容量と定期的に集計されて比較され、超過した場合は Keystone Flex サブスクリプションのバーストとして課金されます。
+各ボリュームのプロビジョニング済み容量は集計され、Keystoneサブスクリプションのコミット済み容量と定期的に比較されます。超過した容量はKeystoneサブスクリプションのバーストとして課金されます。
 
-https://www.netapp.com/services/subscriptions/keystone/flex-subscription/["Keystone Flex Subscriptions の詳細をご覧ください"^]。
+https://["NetApp Keystone サブスクリプションの詳細については、こちらをご覧ください"^]。
 
 
 
 === サポートされている構成
 
-Keystone Flex Subscriptions は、 HA ペアでサポートされます。現時点では、このライセンスオプションはシングルノードシステムではサポートされていません。
+KeystoneサブスクリプションはHAペアでサポートされます。現時点では、このライセンスオプションはシングルノードシステムではサポートされていません。
 
 
 
@@ -388,7 +388,7 @@ Keystone Flex Subscriptions は、 HA ペアでサポートされます。現時
 
 === 開始方法
 
-Keystone Flexサブスクリプションの概要については、以下をご覧ください。
+Keystoneサブスクリプションの利用を開始する方法をご確認ください。
 
 ifdef::aws[]
 
@@ -427,7 +427,7 @@ endif::gcp[]
 
 == ライセンスの変換
 
-既存の Cloud Volumes ONTAP システムを別のライセンス方式に変換することはできません。現在提供されている 3 つのライセンス方式は、容量ベースのライセンス、 Keystone Flex Subscriptions 、ノードベースのライセンスです。たとえば、システムをノードベースのライセンスから容量ベースのライセンスに変換することはできません（逆の場合も同様）。
+既存の Cloud Volumes ONTAP システムを別のライセンス方式に変換することはできません。現在のライセンス方式は、容量単位のライセンス、Keystoneサブスクリプション、ノード単位のライセンスの3つです。たとえば、システムをノードベースのライセンスから容量ベースのライセンスに変換することはできません（逆の場合も同様）。
 
 別のライセンス方式に移行する場合は、ライセンスを購入し、そのライセンスを使用して新しい Cloud Volumes ONTAP システムを導入してから、その新しいシステムにデータをレプリケートできます。
 
