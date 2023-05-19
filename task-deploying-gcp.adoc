@@ -73,7 +73,7 @@ BlueXPで作業環境を作成し、Cloud Volumes ONTAP をGoogle Cloudで起動
 | 作業環境名 | BlueXPは、作業環境名を使用して、Cloud Volumes ONTAP システムとGoogle Cloud VMインスタンスの両方に名前を付けます。また、このオプションを選択した場合は、事前定義されたセキュリティグループのプレフィックスとして名前が使用されます。 
 
 
-| サービスアカウント名 | を使用する場合は link:concept-data-tiering.html["データの階層化"] または https://["BlueXPのバックアップとリカバリ"^] Cloud Volumes ONTAP では、 * サービスアカウント * を有効にして、事前定義されたストレージ管理者ロールが割り当てられたサービスアカウントを選択する必要があります。 link:task-creating-gcp-service-account.html["サービスアカウントの作成方法について説明します"]。 
+| サービスアカウント名 | を使用する場合は link:concept-data-tiering.html["データの階層化"] または https://["バックアップとリカバリ"^] Cloud Volumes ONTAP では、 * サービスアカウント * を有効にして、事前定義されたストレージ管理者ロールが割り当てられたサービスアカウントを選択する必要があります。 link:task-creating-gcp-service-account.html["サービスアカウントの作成方法について説明します"]。 
 
 
 | ラベルを追加します | ラベルは、Google Cloudリソースのメタデータです。BlueXPは、システムに関連付けられているCloud Volumes ONTAP システムとGoogle Cloudリソースにラベルを追加します。作業環境の作成時にユーザインターフェイスからラベルを 4 つまで追加し、その後追加することができます。API では、作業環境の作成時にラベルを 4 つに制限することはありません。ラベルの詳細については、を参照してください https://["Google Cloud のドキュメント：「 Labeling Resources"^]。 
@@ -299,7 +299,7 @@ BlueXPで作業環境を作成し、Cloud Volumes ONTAP をGoogle Cloudで起動
 | 作業環境名 | BlueXPは、作業環境名を使用して、Cloud Volumes ONTAP システムとGoogle Cloud VMインスタンスの両方に名前を付けます。また、このオプションを選択した場合は、事前定義されたセキュリティグループのプレフィックスとして名前が使用されます。 
 
 
-| サービスアカウント名 | を使用する場合は link:concept-data-tiering.html["BlueXPの階層化"] または https://["BlueXPのバックアップとリカバリ"^] サービスを利用するには、 * Service Account * スイッチを有効にし、事前定義された Storage Admin ロールが割り当てられたサービスアカウントを選択する必要があります。 
+| サービスアカウント名 | を使用する場合は link:concept-data-tiering.html["データの階層化"] または https://["バックアップとリカバリ"^] サービスを利用するには、 * Service Account * スイッチを有効にし、事前定義された Storage Admin ロールが割り当てられたサービスアカウントを選択する必要があります。 
 
 
 | ラベルを追加します | ラベルは、Google Cloudリソースのメタデータです。BlueXPは、システムに関連付けられているCloud Volumes ONTAP システムとGoogle Cloudリソースにラベルを追加します。作業環境の作成時にユーザインターフェイスからラベルを 4 つまで追加し、その後追加することができます。API では、作業環境の作成時にラベルを 4 つに制限することはありません。ラベルの詳細については、を参照してください https://["Google Cloud のドキュメント：「 Labeling Resources"^]。 

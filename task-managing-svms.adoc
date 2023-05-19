@@ -43,25 +43,4 @@ image:screenshot_replicate_volume_svm.gif["ボリュームをレプリケート�
 
 == デフォルトの Storage VM の名前を変更します
 
-Cloud Volumes ONTAP 用に作成した1つのStorage VMには、BlueXPによって自動的に名前が付けられます。厳密な命名基準がある場合は、 Storage VM の名前を変更できます。たとえば、 ONTAP クラスタの Storage VM の命名規則に沿った名前に変更できます。
-
-Cloud Volumes ONTAP 用にStorage VMを追加で作成した場合、Storage VMの名前をBlueXPから変更できません。Cloud Volumes ONTAP から直接実行する必要があります。そのためには、 System Manager または CLI を使用します。
-
-.手順
-. 作業環境で、メニューアイコンをクリックし、 * 情報 * をクリックします。
-. Storage VM 名の右にある編集アイコンをクリックします。
-+
-image:screenshot_svm.gif["スクリーンショット： SVM 名フィールドと、 SVM 名を変更するためにクリックする必要がある編集アイコンが表示されます。"]
-
-. SVM 名の変更ダイアログボックスで名前を変更し、 * 保存 * をクリックします。
-
-
-
-
-== ディザスタリカバリ用に Storage VM を管理する
-
-BlueXPでは、Storage VMディザスタリカバリのセットアップやオーケストレーションはサポートされていません。System Manager または CLI を使用する必要があります。
-
-* https://["SVM ディザスタリカバリ設定エクスプレスガイド"^]
-* https://["『 SVM ディザスタリカバリエクスプレスガイド』"^]
-
+Cloud Volumes ONTAP 用に作成した1つのStorage VMには、BlueXPによって自動的に名前が付けられます。厳密な命名基準がある場合は、System Manager、CLI、またはAPIを使用してStorage VMの名前を変更できます。たとえば、 ONTAP クラスタの Storage VM の命名規則に沿った名前に変更できます。
