@@ -308,6 +308,10 @@ NOTE: 事前定義された Cloud Volumes ONTAP セキュリティグループ�
 +
 \ http://<Connector-private-IP-address>/ontap/images/<image-file-name>
 
++
+
+NOTE: URLでは、* image-file-name *は「cot.image.9.13.1P2.tgz」の形式に従う必要があります。
+
 
 
 .結果
