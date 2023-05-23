@@ -37,7 +37,7 @@ Elastic Volumesで有効になっているアグリゲートには、最大8本�
 
 
 
-https://["Elastic Volumesの詳細については、AWSでご確認ください"^]
+https://aws.amazon.com/ebs/features/["Elastic Volumesの詳細については、AWSでご確認ください"^]
 
 
 
@@ -69,7 +69,7 @@ Elastic Volumes機能は、汎用SSD（GP3）またはプロビジョニング�
 * EC2：ModifyVolume
 
 
-これらの権限はに含まれています https://["ネットアップが提供するポリシー"^]
+これらの権限はに含まれています https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-permissions-aws.html["ネットアップが提供するポリシー"^]
 
 
 
@@ -186,6 +186,6 @@ link:task-manage-aggregates.html["アグリゲートの容量を増やす方法�
 移行先のCloud Volumes ONTAP システムがElastic Volumesをサポートしている場合、Elastic Volumeが有効になっているアグリゲートに移行先ボリュームが配置されます（GP3ディスクまたはio1ディスクを選択している場合）。
 
 +
-https://["データレプリケーションの設定方法について説明します"^]
+https://docs.netapp.com/us-en/cloud-manager-replication/task-replicating-data.html["データレプリケーションの設定方法について説明します"^]
 
 

@@ -25,9 +25,9 @@ Cloud Volumes ONTAP は、シングルノード構成またはGoogle CloudのHA�
 [[licensing]]
 * 稼働中のコネクタ。
 +
-** を用意しておく必要があります https://["ワークスペースに関連付けられているコネクタ"^]。
-** https://["コネクタをで実行したままにする準備をしておく必要があります 常時"^]。
-** コネクタに関連付けられているサービスアカウント https://["必要な権限がある必要があります"^]
+** を用意しておく必要があります https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-quick-start-connector-google.html["ワークスペースに関連付けられているコネクタ"^]。
+** https://docs.netapp.com/us-en/cloud-manager-setup-admin/concept-connectors.html["コネクタをで実行したままにする準備をしておく必要があります 常時"^]。
+** コネクタに関連付けられているサービスアカウント https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-permissions-gcp.html["必要な権限がある必要があります"^]
 
 
 * 使用する構成についての理解。
@@ -38,7 +38,7 @@ Cloud Volumes ONTAP は、シングルノード構成またはGoogle CloudのHA�
 +
 link:task-set-up-licensing-google.html["ライセンスの設定方法について説明します"]。
 
-* Google Cloud API はとする必要があります https://["プロジェクトで有効にします"^]：
+* Google Cloud API はとする必要があります https://cloud.google.com/apis/docs/getting-started#enabling_apis["プロジェクトで有効にします"^]：
 +
 ** Cloud Deployment Manager V2 API
 ** クラウドロギング API
@@ -59,7 +59,7 @@ BlueXPで作業環境を作成し、Cloud Volumes ONTAP をGoogle Cloudで起動
 . 左側のナビゲーションメニューから、* Storage > Canvas *を選択します。
 . [[subscribe] キャンバスページで、 * 作業環境の追加 * をクリックし、プロンプトに従います。
 . * 場所を選択 * ：「 * Google Cloud * 」と「 * Cloud Volumes ONTAP * 」を選択します。
-. プロンプトが表示されたら、 https://["コネクタを作成します"^]。
+. プロンプトが表示されたら、 https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-quick-start-connector-google.html["コネクタを作成します"^]。
 . *詳細と認証情報*：プロジェクトを選択し、クラスタ名を指定します。必要に応じてサービスアカウントを選択し、ラベルを追加し、クレデンシャルを指定することもできます。
 +
 次の表では、ガイダンスが必要なフィールドについて説明します。
@@ -73,10 +73,10 @@ BlueXPで作業環境を作成し、Cloud Volumes ONTAP をGoogle Cloudで起動
 | 作業環境名 | BlueXPは、作業環境名を使用して、Cloud Volumes ONTAP システムとGoogle Cloud VMインスタンスの両方に名前を付けます。また、このオプションを選択した場合は、事前定義されたセキュリティグループのプレフィックスとして名前が使用されます。 
 
 
-| サービスアカウント名 | を使用する場合は link:concept-data-tiering.html["データの階層化"] または https://["バックアップとリカバリ"^] Cloud Volumes ONTAP では、 * サービスアカウント * を有効にして、事前定義されたストレージ管理者ロールが割り当てられたサービスアカウントを選択する必要があります。 link:task-creating-gcp-service-account.html["サービスアカウントの作成方法について説明します"]。 
+| サービスアカウント名 | を使用する場合は link:concept-data-tiering.html["データの階層化"] または https://docs.netapp.com/us-en/cloud-manager-backup-restore/concept-backup-to-cloud.html["バックアップとリカバリ"^] Cloud Volumes ONTAP では、 * サービスアカウント * を有効にして、事前定義されたストレージ管理者ロールが割り当てられたサービスアカウントを選択する必要があります。 link:task-creating-gcp-service-account.html["サービスアカウントの作成方法について説明します"]。 
 
 
-| ラベルを追加します | ラベルは、Google Cloudリソースのメタデータです。BlueXPは、システムに関連付けられているCloud Volumes ONTAP システムとGoogle Cloudリソースにラベルを追加します。作業環境の作成時にユーザインターフェイスからラベルを 4 つまで追加し、その後追加することができます。API では、作業環境の作成時にラベルを 4 つに制限することはありません。ラベルの詳細については、を参照してください https://["Google Cloud のドキュメント：「 Labeling Resources"^]。 
+| ラベルを追加します | ラベルは、Google Cloudリソースのメタデータです。BlueXPは、システムに関連付けられているCloud Volumes ONTAP システムとGoogle Cloudリソースにラベルを追加します。作業環境の作成時にユーザインターフェイスからラベルを 4 つまで追加し、その後追加することができます。API では、作業環境の作成時にラベルを 4 つに制限することはありません。ラベルの詳細については、を参照してください https://cloud.google.com/compute/docs/labeling-resources["Google Cloud のドキュメント：「 Labeling Resources"^]。 
 
 
 | ユーザ名とパスワード | Cloud Volumes ONTAP クラスタ管理者アカウントのクレデンシャルです。このクレデンシャルを使用して、 System Manager またはその CLI から Cloud Volumes ONTAP に接続できます。default_admin_user の名前をそのまま使用するか ' カスタム・ユーザー名に変更します 
@@ -96,7 +96,7 @@ NOTE: これは、BlueXP用に設定したサービスアカウントです。 l
 
 |===
 +
-次のビデオでは、従量課金制のMarketplaceサブスクリプションをGoogle Cloudプロジェクトに関連付ける方法を紹介します。または、の手順に従って、に登録します https://["MarketplaceサブスクリプションとGoogle Cloudクレデンシャルの関連付け"^] セクション。
+次のビデオでは、従量課金制のMarketplaceサブスクリプションをGoogle Cloudプロジェクトに関連付ける方法を紹介します。または、の手順に従って、に登録します https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-adding-gcp-accounts.html["MarketplaceサブスクリプションとGoogle Cloudクレデンシャルの関連付け"^] セクション。
 
 +
 video::video_subscribing_gcp.mp4[width=848,height=480]
@@ -115,7 +115,7 @@ TIP: WORMとデータ階層化を活用する場合は、BlueXPのバックア�
 | フィールド | 説明 
 
 
-| 接続の検証 | コールドデータをGoogle Cloud Storageバケットに階層化するには、Cloud Volumes ONTAP が配置されているサブネットをプライベートGoogleアクセス用に構成する必要があります。手順については、を参照してください https://["Google Cloud のドキュメント：「 Configuring Private Google Access"^]。 
+| 接続の検証 | コールドデータをGoogle Cloud Storageバケットに階層化するには、Cloud Volumes ONTAP が配置されているサブネットをプライベートGoogleアクセス用に構成する必要があります。手順については、を参照してください https://cloud.google.com/vpc/docs/configure-private-google-access["Google Cloud のドキュメント：「 Configuring Private Google Access"^]。 
 
 
 | ファイアウォールポリシーが生成されました  a| 
@@ -176,7 +176,7 @@ link:concept-worm.html["WORM ストレージの詳細については、こちら
 
 +
 ** Cloud Volumes ONTAP インスタンスでサービスアカウントを設定します。このサービスアカウントは、 Google Cloud Storage バケットへのデータ階層化の権限を提供します。Connectorサービスアカウントを階層化サービスアカウントのユーザーとして追加してください。追加しないと、BlueXPから選択できません
-** Google Cloudアカウントの追加については、を参照してください https://["9.6でのデータ階層化用にGoogle Cloudアカウントを設定および追加します"^]。
+** Google Cloudアカウントの追加については、を参照してください https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-adding-gcp-accounts.html["9.6でのデータ階層化用にGoogle Cloudアカウントを設定および追加します"^]。
 ** ボリュームを作成または編集するときに、特定のボリューム階層化ポリシーを選択できます。
 ** データの階層化を無効にすると、以降のアグリゲートで有効にすることができますが、システムの電源をオフにして、Google Cloudコンソールからサービスアカウントを追加する必要があります。
 +
@@ -239,13 +239,13 @@ image:screenshot_cot_vol.gif["スクリーンショット： Cloud Volumes ONTAP
 | CIFS サーバの NetBIOS 名 | AD ドメイン内で一意の CIFS サーバ名。 
 
 
-| 組織単位 | CIFS サーバに関連付ける AD ドメイン内の組織単位。デフォルトは CN=Computers です。Google Managed Microsoft AD を Cloud Volumes ONTAP の AD サーバとして設定するには、このフィールドに「 * OU=computers 、 OU=Cloud 」と入力します。https://["Google Cloud ドキュメント：「 Organizational Units in Google Managed Microsoft AD"^] 
+| 組織単位 | CIFS サーバに関連付ける AD ドメイン内の組織単位。デフォルトは CN=Computers です。Google Managed Microsoft AD を Cloud Volumes ONTAP の AD サーバとして設定するには、このフィールドに「 * OU=computers 、 OU=Cloud 」と入力します。https://cloud.google.com/managed-microsoft-ad/docs/manage-active-directory-objects#organizational_units["Google Cloud ドキュメント：「 Organizational Units in Google Managed Microsoft AD"^] 
 
 
 | DNS ドメイン | Cloud Volumes ONTAP Storage Virtual Machine （ SVM ）の DNS ドメイン。ほとんどの場合、ドメインは AD ドメインと同じです。 
 
 
-| NTP サーバ | Active Directory DNS を使用して NTP サーバを設定するには、「 Active Directory ドメインを使用」を選択します。別のアドレスを使用して NTP サーバを設定する必要がある場合は、 API を使用してください。を参照してください https://["BlueXP自動化ドキュメント"^] を参照してください。NTP サーバは、 CIFS サーバを作成するときにのみ設定できます。CIFS サーバを作成したあとで設定することはできません。 
+| NTP サーバ | Active Directory DNS を使用して NTP サーバを設定するには、「 Active Directory ドメインを使用」を選択します。別のアドレスを使用して NTP サーバを設定する必要がある場合は、 API を使用してください。を参照してください https://docs.netapp.com/us-en/cloud-manager-automation/index.html["BlueXP自動化ドキュメント"^] を参照してください。NTP サーバは、 CIFS サーバを作成するときにのみ設定できます。CIFS サーバを作成したあとで設定することはできません。 
 |===
 . * 使用状況プロファイル、ディスクタイプ、階層化ポリシー * ： Storage Efficiency 機能を有効にするかどうかを選択し、必要に応じてボリューム階層化ポリシーを変更します。
 +
@@ -266,7 +266,7 @@ BlueXPがCloud Volumes ONTAP システムを導入しましたタイムライン
 
 Cloud Volumes ONTAP システムの導入で問題が発生した場合は、障害メッセージを確認してください。作業環境を選択し、 * 環境の再作成 * をクリックすることもできます。
 
-詳細については、を参照してください https://["NetApp Cloud Volumes ONTAP のサポート"^]。
+詳細については、を参照してください https://mysupport.netapp.com/site/products/all/details/cloud-volumes-ontap/guideme-tab["NetApp Cloud Volumes ONTAP のサポート"^]。
 
 .完了後
 * CIFS 共有をプロビジョニングした場合は、ファイルとフォルダに対する権限をユーザまたはグループに付与し、それらのユーザが共有にアクセスしてファイルを作成できることを確認します。
@@ -299,10 +299,10 @@ BlueXPで作業環境を作成し、Cloud Volumes ONTAP をGoogle Cloudで起動
 | 作業環境名 | BlueXPは、作業環境名を使用して、Cloud Volumes ONTAP システムとGoogle Cloud VMインスタンスの両方に名前を付けます。また、このオプションを選択した場合は、事前定義されたセキュリティグループのプレフィックスとして名前が使用されます。 
 
 
-| サービスアカウント名 | を使用する場合は link:concept-data-tiering.html["データの階層化"] または https://["バックアップとリカバリ"^] サービスを利用するには、 * Service Account * スイッチを有効にし、事前定義された Storage Admin ロールが割り当てられたサービスアカウントを選択する必要があります。 
+| サービスアカウント名 | を使用する場合は link:concept-data-tiering.html["データの階層化"] または https://docs.netapp.com/us-en/cloud-manager-backup-restore/concept-backup-to-cloud.html["バックアップとリカバリ"^] サービスを利用するには、 * Service Account * スイッチを有効にし、事前定義された Storage Admin ロールが割り当てられたサービスアカウントを選択する必要があります。 
 
 
-| ラベルを追加します | ラベルは、Google Cloudリソースのメタデータです。BlueXPは、システムに関連付けられているCloud Volumes ONTAP システムとGoogle Cloudリソースにラベルを追加します。作業環境の作成時にユーザインターフェイスからラベルを 4 つまで追加し、その後追加することができます。API では、作業環境の作成時にラベルを 4 つに制限することはありません。ラベルの詳細については、を参照してください https://["Google Cloud のドキュメント：「 Labeling Resources"^]。 
+| ラベルを追加します | ラベルは、Google Cloudリソースのメタデータです。BlueXPは、システムに関連付けられているCloud Volumes ONTAP システムとGoogle Cloudリソースにラベルを追加します。作業環境の作成時にユーザインターフェイスからラベルを 4 つまで追加し、その後追加することができます。API では、作業環境の作成時にラベルを 4 つに制限することはありません。ラベルの詳細については、を参照してください https://cloud.google.com/compute/docs/labeling-resources["Google Cloud のドキュメント：「 Labeling Resources"^]。 
 
 
 | ユーザ名とパスワード | Cloud Volumes ONTAP クラスタ管理者アカウントのクレデンシャルです。このクレデンシャルを使用して、 System Manager またはその CLI から Cloud Volumes ONTAP に接続できます。default_admin_user の名前をそのまま使用するか ' カスタム・ユーザー名に変更します 
@@ -322,7 +322,7 @@ NOTE: これは、BlueXP用に設定したサービスアカウントです。 l
 
 |===
 +
-次のビデオでは、従量課金制のMarketplaceサブスクリプションをGoogle Cloudプロジェクトに関連付ける方法を紹介します。または、の手順に従って、に登録します https://["MarketplaceサブスクリプションとGoogle Cloudクレデンシャルの関連付け"^] セクション。
+次のビデオでは、従量課金制のMarketplaceサブスクリプションをGoogle Cloudプロジェクトに関連付ける方法を紹介します。または、の手順に従って、に登録します https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-adding-gcp-accounts.html["MarketplaceサブスクリプションとGoogle Cloudクレデンシャルの関連付け"^] セクション。
 
 +
 video::video_subscribing_gcp.mp4[width=848,height=480]
@@ -392,7 +392,7 @@ link:concept-write-speed.html["書き込み速度の詳細については、こ�
 
 +
 
-NOTE: Flash Cache_、高速の書き込み速度、8、896バイトの高いMaximum Transmission Unit（MTU；最大転送単位）は、インスタンスタイプn2-standard-16、n2-standard-32、n2-standard-48、n2-standard-64で* High * write speedオプションを使用して使用できます。また、MTUが8、896の場合は、導入環境でVPC-1、VPC-2、およびVPC-3を選択する必要があります。Flash Cache_、高速の書き込み速度、MTU 8、896は機能に依存し、設定したインスタンス内で個別に無効にすることはできません。VPC-1、VPC-2、およびVPC-3の詳細については、を参照してください https://["VPC -1、VPC -2、およびVPC -3のルール"]。
+NOTE: Flash Cache_、高速の書き込み速度、8、896バイトの高いMaximum Transmission Unit（MTU；最大転送単位）は、インスタンスタイプn2-standard-16、n2-standard-32、n2-standard-48、n2-standard-64で* High * write speedオプションを使用して使用できます。また、MTUが8、896の場合は、導入環境でVPC-1、VPC-2、およびVPC-3を選択する必要があります。Flash Cache_、高速の書き込み速度、MTU 8、896は機能に依存し、設定したインスタンス内で個別に無効にすることはできません。VPC-1、VPC-2、およびVPC-3の詳細については、を参照してください https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/reference-networking-gcp.html#requirements-for-the-connector["VPC -1、VPC -2、およびVPC -3のルール"]。
 
 .. 必要に応じて、Write Once、Read Many（WORM）ストレージをアクティブにします。
 +
@@ -472,13 +472,13 @@ image:screenshot_cot_vol.gif["スクリーンショット： Cloud Volumes ONTAP
 | CIFS サーバの NetBIOS 名 | AD ドメイン内で一意の CIFS サーバ名。 
 
 
-| 組織単位 | CIFS サーバに関連付ける AD ドメイン内の組織単位。デフォルトは CN=Computers です。Google Managed Microsoft AD を Cloud Volumes ONTAP の AD サーバとして設定するには、このフィールドに「 * OU=computers 、 OU=Cloud 」と入力します。https://["Google Cloud ドキュメント：「 Organizational Units in Google Managed Microsoft AD"^] 
+| 組織単位 | CIFS サーバに関連付ける AD ドメイン内の組織単位。デフォルトは CN=Computers です。Google Managed Microsoft AD を Cloud Volumes ONTAP の AD サーバとして設定するには、このフィールドに「 * OU=computers 、 OU=Cloud 」と入力します。https://cloud.google.com/managed-microsoft-ad/docs/manage-active-directory-objects#organizational_units["Google Cloud ドキュメント：「 Organizational Units in Google Managed Microsoft AD"^] 
 
 
 | DNS ドメイン | Cloud Volumes ONTAP Storage Virtual Machine （ SVM ）の DNS ドメイン。ほとんどの場合、ドメインは AD ドメインと同じです。 
 
 
-| NTP サーバ | Active Directory DNS を使用して NTP サーバを設定するには、「 Active Directory ドメインを使用」を選択します。別のアドレスを使用して NTP サーバを設定する必要がある場合は、 API を使用してください。を参照してください https://["BlueXP自動化ドキュメント"^] を参照してください。NTP サーバは、 CIFS サーバを作成するときにのみ設定できます。CIFS サーバを作成したあとで設定することはできません。 
+| NTP サーバ | Active Directory DNS を使用して NTP サーバを設定するには、「 Active Directory ドメインを使用」を選択します。別のアドレスを使用して NTP サーバを設定する必要がある場合は、 API を使用してください。を参照してください https://docs.netapp.com/us-en/cloud-manager-automation/index.html["BlueXP自動化ドキュメント"^] を参照してください。NTP サーバは、 CIFS サーバを作成するときにのみ設定できます。CIFS サーバを作成したあとで設定することはできません。 
 |===
 . * 使用状況プロファイル、ディスクタイプ、階層化ポリシー * ： Storage Efficiency 機能を有効にするかどうかを選択し、必要に応じてボリューム階層化ポリシーを変更します。
 +
@@ -499,7 +499,7 @@ BlueXPがCloud Volumes ONTAP システムを導入しましたタイムライン
 
 Cloud Volumes ONTAP システムの導入で問題が発生した場合は、障害メッセージを確認してください。作業環境を選択し、 * 環境の再作成 * をクリックすることもできます。
 
-詳細については、を参照してください https://["NetApp Cloud Volumes ONTAP のサポート"^]。
+詳細については、を参照してください https://mysupport.netapp.com/site/products/all/details/cloud-volumes-ontap/guideme-tab["NetApp Cloud Volumes ONTAP のサポート"^]。
 
 .完了後
 * CIFS 共有をプロビジョニングした場合は、ファイルとフォルダに対する権限をユーザまたはグループに付与し、それらのユーザが共有にアクセスしてファイルを作成できることを確認します。

@@ -18,10 +18,10 @@ Cloud Volumes ONTAP for Google Cloudの使用を開始するには、いくつ�
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png["1つ"] コネクタを作成します
 [role="quick-margin-para"]
-を持っていなければ https://["コネクタ"^] ただし、アカウント管理者がアカウントを作成する必要があります。 https://["Google Cloud でコネクタを作成する方法について説明します"^]
+を持っていなければ https://docs.netapp.com/us-en/cloud-manager-setup-admin/concept-connectors.html["コネクタ"^] ただし、アカウント管理者がアカウントを作成する必要があります。 https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-quick-start-connector-google.html["Google Cloud でコネクタを作成する方法について説明します"^]
 
 [role="quick-margin-para"]
-インターネットアクセスを使用できないサブネットにCloud Volumes ONTAP を導入する場合は、コネクタを手動でインストールし、そのコネクタで実行されているBlueXPユーザインターフェイスにアクセスする必要があります。 https://["インターネットにアクセスできない場所にコネクタを手動でインストールする方法について説明します"^]
+インターネットアクセスを使用できないサブネットにCloud Volumes ONTAP を導入する場合は、コネクタを手動でインストールし、そのコネクタで実行されているBlueXPユーザインターフェイスにアクセスする必要があります。 https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-quick-start-private-mode.html["インターネットにアクセスできない場所にコネクタを手動でインストールする方法について説明します"^]
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["2 つ"] 構成を計画
 [role="quick-margin-para"]
@@ -33,7 +33,7 @@ link:task-planning-your-config-gcp.html["構成の計画の詳細については
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png["3つ"] ネットワークをセットアップします
 [role="quick-margin-list"]
 . VPC とサブネットがコネクタと Cloud Volumes ONTAP 間の接続をサポートしていることを確認します。
-. データの階層化を有効にする場合は、 https://["プライベート Google アクセス用の Cloud Volumes ONTAP サブネットを設定します"^]。
+. データの階層化を有効にする場合は、 https://cloud.google.com/vpc/docs/configure-private-google-access["プライベート Google アクセス用の Cloud Volumes ONTAP サブネットを設定します"^]。
 . HA ペアを導入する場合は、それぞれ独自のサブネットを持つ 4 つの VPC があることを確認します。
 . 共有 VPC を使用する場合は、コネクタサービスアカウントに _Compute Network User_role を指定します。
 . ターゲットVPCからのアウトバウンドのインターネットアクセスをNetApp AutoSupport で有効にします。
@@ -47,7 +47,7 @@ link:reference-networking-gcp.html["ネットワーク要件の詳細につい�
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-4.png["4."] サービスアカウントを設定します
 [role="quick-margin-para"]
-Cloud Volumes ONTAP には、 2 つの目的で Google Cloud サービスアカウントが必要です。1 つ目は、を有効にする場合です link:concept-data-tiering.html["データの階層化"] Google Cloud でコールドデータを低コストのオブジェクトストレージに階層化すること。2つ目は、を有効にする場合です https://["BlueXPのバックアップとリカバリ"^] ボリュームを低コストのオブジェクトストレージにバックアップできます。
+Cloud Volumes ONTAP には、 2 つの目的で Google Cloud サービスアカウントが必要です。1 つ目は、を有効にする場合です link:concept-data-tiering.html["データの階層化"] Google Cloud でコールドデータを低コストのオブジェクトストレージに階層化すること。2つ目は、を有効にする場合です https://docs.netapp.com/us-en/cloud-manager-backup-restore/concept-backup-to-cloud.html["BlueXPのバックアップとリカバリ"^] ボリュームを低コストのオブジェクトストレージにバックアップできます。
 
 [role="quick-margin-para"]
 1 つのサービスアカウントを設定して、両方の目的に使用できます。サービスアカウントには * Storage Admin * ロールが必要です。
@@ -57,7 +57,7 @@ link:task-creating-gcp-service-account.html["詳細な手順を参照してく�
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-5.png["5 つ"] Google Cloud API を有効にします
 [role="quick-margin-para"]
-https://["プロジェクトで次の Google Cloud API を有効にします"^]。これらの API は、コネクタと Cloud Volumes ONTAP を導入するために必要です。
+https://cloud.google.com/apis/docs/getting-started#enabling_apis["プロジェクトで次の Google Cloud API を有効にします"^]。これらの API は、コネクタと Cloud Volumes ONTAP を導入するために必要です。
 
 [role="quick-margin-list"]
 * Cloud Deployment Manager V2 API
@@ -72,7 +72,7 @@ https://["プロジェクトで次の Google Cloud API を有効にします"^]�
 [ 作業環境の追加 ] をクリックし、展開するシステムのタイプを選択して、ウィザードの手順を実行します。 link:task-deploying-gcp.html["詳細な手順を参照してください"]。
 
 .関連リンク
-* https://["BlueXPからコネクタを作成しています"^]
-* https://["Linux ホストへの Connector ソフトウェアのインストール"^]
-* https://["BlueXPがGoogle Cloud権限で実行する機能"^]
+* https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-quick-start-connector-google.html["BlueXPからコネクタを作成しています"^]
+* https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-install-connector-on-prem.html["Linux ホストへの Connector ソフトウェアのインストール"^]
+* https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-permissions-gcp.html["BlueXPがGoogle Cloud権限で実行する機能"^]
 

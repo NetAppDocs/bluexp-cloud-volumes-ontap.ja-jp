@@ -38,7 +38,7 @@ AutoSupport メッセージの送信にアウトバウンドのインターネ�
 
 Cloud Volumes ONTAP に厳密なアウトバウンドルールを定義した場合は、Cloud Volumes ONTAP セキュリティグループがポート3128で_OUTBOUND接続を許可する必要もあります。
 
-アウトバウンドのインターネットアクセスが使用可能であることを確認したら、 AutoSupport をテストしてメッセージを送信できることを確認します。手順については、を参照してください https://["ONTAP のドキュメント：「 AutoSupport のセットアップ"^]。
+アウトバウンドのインターネットアクセスが使用可能であることを確認したら、 AutoSupport をテストしてメッセージを送信できることを確認します。手順については、を参照してください https://docs.netapp.com/us-en/ontap/system-admin/setup-autosupport-task.html["ONTAP のドキュメント：「 AutoSupport のセットアップ"^]。
 
 AutoSupport メッセージを送信できないことがBlueXPから通知された場合は、 link:task-verify-autosupport.html#troubleshoot-your-autosupport-configuration["AutoSupport 構成のトラブルシューティングを行います"]。
 
@@ -136,7 +136,7 @@ link:task-enabling-private-link.html["Azureプライベートリンクまたは�
 
 Azure内のCloud Volumes ONTAP システムと他のネットワーク内のONTAP システム間でデータをレプリケートするには、企業ネットワークなど、Azure VNetとその他のネットワーク間にVPN接続が必要です。
 
-手順については、を参照してください https://["Microsoft Azure のドキュメント：「 Create a Site-to-Site connection in the Azure portal"^]。
+手順については、を参照してください https://docs.microsoft.com/en-us/azure/vpn-gateway/vpn-gateway-howto-site-to-site-resource-manager-portal["Microsoft Azure のドキュメント：「 Create a Site-to-Site connection in the Azure portal"^]。
 
 
 
@@ -163,7 +163,7 @@ BlueXPでは、Cloud Volumes ONTAP が正常に動作するために必要なイ
 Cloud Volumes ONTAP のセキュリティグループには、インバウンドルールとアウトバウンドルールの両方が必要です。
 
 
-TIP: コネクタに関する情報をお探しですか？ https://["コネクタのセキュリティグループルールを表示します"^]
+TIP: コネクタに関する情報をお探しですか？ https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-ports-azure.html["コネクタのセキュリティグループルールを表示します"^]
 
 
 
@@ -435,6 +435,6 @@ NOTE: source は、 Cloud Volumes ONTAP システムのインターフェイス�
 
 コネクタをまだ作成していない場合は、コネクタのネットワーク要件も確認してください。
 
-* https://["コネクタのネットワーク要件を確認します"^]
-* https://["Azureのセキュリティグループルール"^]
+* https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-quick-start-connector-azure.html["コネクタのネットワーク要件を確認します"^]
+* https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-ports-azure.html["Azureのセキュリティグループルール"^]
 

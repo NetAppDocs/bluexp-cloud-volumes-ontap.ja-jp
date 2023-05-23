@@ -14,7 +14,7 @@ summary: 標準のAWSリージョンと同様に、AWS Commercial Cloud Services
 
 
 [role="lead"]
-標準の AWS リージョンと同様に、で Cloud Manager を使用できます https://["AWS Commercial クラウドサービス（ C2S ）"] Cloud Volumes ONTAP を導入する環境。クラウドストレージにエンタープライズクラスの機能を提供します。AWS C2S は米国に固有の閉じたリージョンですIntelligence Community 。このページの手順は、 AWS C2S リージョンユーザにのみ該当します。
+標準の AWS リージョンと同様に、で Cloud Manager を使用できます https://aws.amazon.com/federal/us-intelligence-community/["AWS Commercial クラウドサービス（ C2S ）"] Cloud Volumes ONTAP を導入する環境。クラウドストレージにエンタープライズクラスの機能を提供します。AWS C2S は米国に固有の閉じたリージョンですIntelligence Community 。このページの手順は、 AWS C2S リージョンユーザにのみ該当します。
 
 
 
@@ -366,7 +366,7 @@ AWS で Cloud Volumes ONTAP システムを起動するには、まず AWS Marke
 
 . コネクタインスタンスに接続されているホストから Cloud Manager をセットアップします。
 +
-.. Web ブラウザを開き、次の URL を入力します。 http://[]
+.. Web ブラウザを開き、次の URL を入力します。 http://ipaddress[]
 .. AWS サービスに接続するためのプロキシサーバを指定します。
 .. 手順 1 で取得した証明書をアップロードします。
 .. セットアップウィザードの手順に従って、 Cloud Manager をセットアップします。

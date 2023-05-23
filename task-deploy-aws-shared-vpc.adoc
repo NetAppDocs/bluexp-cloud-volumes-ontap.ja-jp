@@ -16,7 +16,7 @@ summary: 9.11.1リリース以降では、VPCを共有するAWSでCloud Volumes 
 [role="lead"]
 9.11.1リリース以降では、VPCを共有するAWSでCloud Volumes ONTAP HAペアがサポートされます。VPC共有を使用すると、他のAWSアカウントとサブネットを共有できます。この構成を使用するには、AWS環境をセットアップし、APIを使用してHAペアを導入する必要があります。
 
-を使用 https://["vPC共有"^]Cloud Volumes ONTAP HA構成は、次の2つのアカウントに分散されます。
+を使用 https://aws.amazon.com/blogs/networking-and-content-delivery/vpc-sharing-a-new-approach-to-multiple-accounts-and-vpc-management/["vPC共有"^]Cloud Volumes ONTAP HA構成は、次の2つのアカウントに分散されます。
 
 * ネットワークを所有するVPC所有者アカウント（VPC、サブネット、ルーティングテーブル、Cloud Volumes ONTAP セキュリティグループ）
 * EC2インスタンスが共有サブネット（2つのHAノードとメディエーターを含む）に導入されている参加者アカウント
@@ -38,7 +38,7 @@ Cloud Volumes ONTAP 作業環境を作成すると、自動的にIAMロールが
 この手順は、HAペアを共有サブネットに導入するために必要です。
 
 +
-https://["AWSドキュメント：サブネットを共有"^]
+https://docs.aws.amazon.com/vpc/latest/userguide/vpc-sharing.html#vpc-sharing-share-subnet["AWSドキュメント：サブネットを共有"^]
 
 . VPC所有者アカウントで、Cloud Volumes ONTAP のセキュリティグループを作成します。
 +
@@ -82,7 +82,7 @@ Action": [
 }
 ----
 +
-https://["Cloud Volumes ONTAP APIについて説明します"^]
+https://docs.netapp.com/us-en/cloud-manager-automation/cm/overview.html["Cloud Volumes ONTAP APIについて説明します"^]
 
 
 

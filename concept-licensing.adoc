@@ -166,7 +166,7 @@ ifdef::gcp[]
 
 endif::gcp[]
 
-https://["Cloud Volume Edgeキャッシュがビジネスにどのように役立つかをご確認ください"^]
+https://cloud.netapp.com/cloud-volumes-edge-cache["Cloud Volume Edgeキャッシュがビジネスにどのように役立つかをご確認ください"^]
 
 
 
@@ -214,7 +214,7 @@ link:task-manage-capacity-licenses.html["充電方法を変更する方法につ
 
 === 価格設定
 
-価格設定の詳細については、を参照してください https://["NetApp BlueXPのWebサイト"^]。
+価格設定の詳細については、を参照してください https://cloud.netapp.com/pricing?hsCtaTracking=4f8b7b77-8f63-4b73-b5af-ee09eab4fbd6%7C5fefbc99-396c-4084-99e6-f1e22dc8ffe7["NetApp BlueXPのWebサイト"^]。
 
 
 
@@ -269,7 +269,7 @@ TIP: 無料トライアルが開始されたとき、7日間残っていると�
 
 20台以上のシステムを必要とする大規模な導入環境の場合は、アカウント担当者または営業チームにお問い合わせください。
 
-https://["ネットアップアカウントの詳細については、こちらをご覧ください"^]。
+https://docs.netapp.com/us-en/cloud-manager-setup-admin/concept-netapp-accounts.html["ネットアップアカウントの詳細については、こちらをご覧ください"^]。
 
 
 
@@ -370,7 +370,7 @@ endif::gcp[]
 
 各ボリュームのプロビジョニング済み容量は集計され、Keystoneサブスクリプションのコミット済み容量と定期的に比較されます。超過した容量はKeystoneサブスクリプションのバーストとして課金されます。
 
-https://["NetApp Keystone サブスクリプションの詳細については、こちらをご覧ください"^]。
+https://www.netapp.com/services/keystone/["NetApp Keystone サブスクリプションの詳細については、こちらをご覧ください"^]。
 
 
 

@@ -14,7 +14,7 @@ summary: 'Active IQ デジタルアドバイザは"BlueXP UIに統合されて�
 
 
 [role="lead"]
-https://["Active IQ デジタルアドバイザ"] はBlueXP UIに統合されているため、Cloud Volumes ONTAP システムの運用、セキュリティ、パフォーマンスを単一のコンソールで最適化できます。
+https://www.netapp.com/services/support/active-iq/["Active IQ デジタルアドバイザ"] はBlueXP UIに統合されているため、Cloud Volumes ONTAP システムの運用、セキュリティ、パフォーマンスを単一のコンソールで最適化できます。
 
 
 
@@ -48,18 +48,18 @@ Active IQ デジタルアドバイザのユーザインターフェイスは、B
 
 BlueXPで、Active IQ サービスをクリックします。
 
-* BlueXPに既存のNSSアカウントを登録済みの場合は、Active IQ Digital AdvisorのUIがスタンドアロン実装の場合と同じように表示されます https://[]。
+* BlueXPに既存のNSSアカウントを登録済みの場合は、Active IQ Digital AdvisorのUIがスタンドアロン実装の場合と同じように表示されます https://activeiq.netapp.com/[]。
 +
 image:screenshot_aiq_digital_advisor.png["BlueXPのActive IQ Digital Advisorユーザーインタフェースのスクリーンショット"]
 
-* BlueXPでNSSアカウントを登録していない場合は、 https://["NSS アカウントを今すぐ登録してください"^] 次に、 Active IQ デジタルアドバイザ UI が表示されます。
+* BlueXPでNSSアカウントを登録していない場合は、 https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-adding-nss-accounts.html["NSS アカウントを今すぐ登録してください"^] 次に、 Active IQ デジタルアドバイザ UI が表示されます。
 
 
 
-NOTE: 2021 年 12 月 3 日時点で、ネットアップは NSS アカウントのクレデンシャルの登録方法を新たに変更しました。 https://["詳細については、この FAQ を参照してください"]。NSS アカウントで古いクレデンシャルのセットを使用している場合は、新しいクレデンシャルに更新する必要があります。
+NOTE: 2021 年 12 月 3 日時点で、ネットアップは NSS アカウントのクレデンシャルの登録方法を新たに変更しました。 https://kb.netapp.com/Advice_and_Troubleshooting/Miscellaneous/FAQs_for_NetApp_adoption_of_MS_Azure_AD_B2C_for_login["詳細については、この FAQ を参照してください"]。NSS アカウントで古いクレデンシャルのセットを使用している場合は、新しいクレデンシャルに更新する必要があります。
 
 
 
 == 次のステップ
 
-を参照してください https://["Active IQ デジタルアドバイザのドキュメント"] を参照してください。
+を参照してください https://docs.netapp.com/us-en/active-iq/index.html["Active IQ デジタルアドバイザのドキュメント"] を参照してください。

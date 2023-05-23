@@ -34,7 +34,7 @@ Cloud Volumes ONTAP は、業界をリードするネットアップのレプリ
 また、Cloud Volumes ONTAP はBlueXPのバックアップとリカバリと統合することで、クラウドデータの保護と長期アーカイブのためのバックアップとリストアの機能を提供します。
 
 +
-https://["BlueXPのバックアップとリカバリの詳細については、こちらをご覧ください"^]
+https://docs.netapp.com/us-en/cloud-manager-backup-restore/concept-backup-to-cloud.html["BlueXPのバックアップとリカバリの詳細については、こちらをご覧ください"^]
 
 * データの階層化
 +
@@ -45,7 +45,7 @@ https://["BlueXPのバックアップとリカバリの詳細については、�
 NetApp SnapCenter を使用して、 NetApp Snapshot コピーの整合性を確保します。
 
 +
-https://["SnapCenter の詳細については、こちらをご覧ください"^]
+https://docs.netapp.com/us-en/snapcenter/concept/concept_snapcenter_overview.html["SnapCenter の詳細については、こちらをご覧ください"^]
 
 * データセキュリティ
 +
@@ -56,13 +56,13 @@ Cloud Volumes ONTAP は、データ暗号化をサポートし、ウィルスや
 BlueXPの分類機能と統合することで、データのコンテキストを把握し、機密データを特定できます。
 
 +
-https://["BlueXPの分類の詳細については、こちらをご覧ください"^]
+https://docs.netapp.com/us-en/cloud-manager-data-sense/concept-cloud-compliance.html["BlueXPの分類の詳細については、こちらをご覧ください"^]
 
 
 
 
 NOTE: ONTAP 機能のライセンスは、 Cloud Volumes ONTAP に含まれています。
 
-https://["サポートされている Cloud Volumes ONTAP 構成を表示します"^]
+https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/index.html["サポートされている Cloud Volumes ONTAP 構成を表示します"^]
 
-https://["Cloud Volumes ONTAP の詳細については、こちらを参照してください"^]
+https://cloud.netapp.com/ontap-cloud["Cloud Volumes ONTAP の詳細については、こちらを参照してください"^]

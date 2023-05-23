@@ -67,8 +67,8 @@ link:concept-licensing.html["容量単位のライセンスに関する詳細は
 ネットアップからライセンスを購入（BYOL）して前払いし、任意のクラウドプロバイダにCloud Volumes ONTAP システムを導入できます。
 
 .手順
-. https://["ライセンスの取得については、ネットアップの営業部門にお問い合わせください"^]
-. https://["NetApp Support Site アカウントをBlueXPに追加します"^]
+. https://cloud.netapp.com/contact-cds["ライセンスの取得については、ネットアップの営業部門にお問い合わせください"^]
+. https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-adding-nss-accounts.html#add-an-nss-account["NetApp Support Site アカウントをBlueXPに追加します"^]
 +
 BlueXPは、ネットアップのライセンスサービスを自動的に照会し、NetApp Support Site アカウントに関連付けられているライセンスの詳細を取得します。エラーがなければ、BlueXPは自動的にライセンスをデジタルウォレットに追加します。
 
@@ -121,7 +121,7 @@ image:screenshot-professional.png["Cloud Volumes ONTAP 作業環境を作成す�
 link:task-deploying-otc-azure.html["ステップバイステップの手順を参照して、AzureでCloud Volumes ONTAP を起動してください"]。
 
 
-TIP: Azureアカウントに関連付けられたAzure Marketplaceのサブスクリプションを管理するには、[設定]>[クレデンシャル]ページを使用します。 https://["Azureのアカウントとサブスクリプションの管理方法について説明します"^]
+TIP: Azureアカウントに関連付けられたAzure Marketplaceのサブスクリプションを管理するには、[設定]>[クレデンシャル]ページを使用します。 https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-adding-azure-accounts.html["Azureのアカウントとサブスクリプションの管理方法について説明します"^]
 
 
 
@@ -158,7 +158,7 @@ link:task-deploying-otc-azure.html["ステップバイステップの手順を�
 Keystoneサブスクリプションは、ビジネスの成長に応じたサブスクリプションベースのサービスです。 link:concept-licensing.html#keystone-subscription["NetApp Keystone サブスクリプションの詳細については、こちらをご覧ください"]。
 
 .手順
-. まだサブスクリプションをお持ちでない場合は、 https://["ネットアップにお問い合わせください"^]
+. まだサブスクリプションをお持ちでない場合は、 https://www.netapp.com/forms/keystone-sales-contact/["ネットアップにお問い合わせください"^]
 . mailto：ng-keystone-success@netapp.com [ネットアップにお問い合わせください]。1つ以上のKeystoneサブスクリプションでBlueXPユーザアカウントを承認する場合。
 . ネットアップがお客様のアカウントを許可したあと、 link:task-manage-keystone.html#link-a-subscription["Cloud Volumes ONTAP で使用するサブスクリプションをリンクします"]。
 . キャンバスページで、*Add Working Environment*をクリックし、BlueXPの手順に従います。

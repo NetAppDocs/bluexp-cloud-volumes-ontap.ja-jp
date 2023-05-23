@@ -169,7 +169,7 @@ HA ペアのアップグレードは無停止で、 I/O が中断されません
 
 Cloud Volumes ONTAP HA ペア（デフォルト設定）で自動ギブバックを有効にする必要があります。サポートされていない場合、処理は失敗します。
 
-http://["ONTAP 9 ドキュメント：「 Commands for configuring automatic giveback"^]
+http://docs.netapp.com/ontap-9/topic/com.netapp.doc.dot-cm-hacg/GUID-3F50DE15-0D01-49A5-BEFD-D529713EC1FA.html["ONTAP 9 ドキュメント：「 Commands for configuring automatic giveback"^]
 
 
 
@@ -276,7 +276,7 @@ Cloud Volumes ONTAP ソフトウェアイメージをコネクタまたはHTTP�
 手順を追った操作手順については、ネットアップのナレッジベースを参照してください。
 
 +
-https://["ネットアップの技術情報アーティクル：「How to configure BlueXP as an HTTPS server to host upgrade images"^]
+https://kb.netapp.com/Advice_and_Troubleshooting/Cloud_Services/Cloud_Manager/How_to_configure_Cloud_Manager_as_an_HTTPS_server_to_host_upgrade_images["ネットアップの技術情報アーティクル：「How to configure BlueXP as an HTTPS server to host upgrade images"^]
 
 
 
@@ -290,7 +290,7 @@ https://["ネットアップの技術情報アーティクル：「How to config
 
 NOTE: 事前定義された Cloud Volumes ONTAP セキュリティグループは、デフォルトでアウトバウンド HTTP 接続を許可します。
 
-. からソフトウェアイメージを取得します https://["ネットアップサポートサイト"^]。
+. からソフトウェアイメージを取得します https://mysupport.netapp.com/site/products/all/details/cloud-volumes-ontap/downloads-tab["ネットアップサポートサイト"^]。
 . ソフトウェアイメージを、ファイルの提供元となるコネクタまたは HTTP サーバ上のディレクトリにコピーします。
 +
 2つのパスを使用できます。正しいパスはコネクタのバージョンによって異なります。
@@ -338,6 +338,6 @@ _maxDownloadSessions_ の値は 1 または 1 より大きい任意の整数で�
 
 32 は値の例です。使用する値は、 NAT の設定と同時に使用できるセッションの数によって異なります。
 
-https://["/occm/config API 呼び出しの詳細を確認してください"^]。
+https://docs.netapp.com/us-en/cloud-manager-automation/cm/api_ref_resources.html#occmconfig["/occm/config API 呼び出しの詳細を確認してください"^]。
 
 endif::gcp[]

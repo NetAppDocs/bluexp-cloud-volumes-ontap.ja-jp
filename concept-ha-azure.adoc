@@ -31,7 +31,7 @@ image:diagram_ha_azure.png["ロードバランサがBlueXPおよびクライア�
 BlueXPによって導入されるAzureコンポーネントについては、次の点に注意してください。
 
 Azure Standard Load Balancer の略:: ロードバランサは、 Cloud Volumes ONTAP HA ペアへの着信トラフィックを管理します。
-可用性セット:: Azure 可用性セットは、 Cloud Volumes ONTAP ノードを論理的にグループ化したものです。可用性セットを使用すると、ノードが異なる障害になっていることを確認し、ドメインを更新して冗長性と可用性を確保できます。 https://["可用性セットの詳細については、 Azure のドキュメントを参照してください"^]。
+可用性セット:: Azure 可用性セットは、 Cloud Volumes ONTAP ノードを論理的にグループ化したものです。可用性セットを使用すると、ノードが異なる障害になっていることを確認し、ドメインを更新して冗長性と可用性を確保できます。 https://docs.microsoft.com/en-us/azure/virtual-machines/availability-set-overview["可用性セットの詳細については、 Azure のドキュメントを参照してください"^]。
 ディスク:: お客様のデータは Premium Storage ページの BLOB にあります。各ノードがもう一方のノードのストレージにアクセスできます。には追加のストレージも必要です link:reference-default-configs.html#boot-and-root-data-for-cloud-volumes-ontap["ブート、ルート、およびコアのデータ"]。
 ストレージアカウント::
 +
@@ -39,7 +39,7 @@ Azure Standard Load Balancer の略:: ロードバランサは、 Cloud Volumes 
 * 管理対象ディスクにはストレージアカウントが 1 つ必要です。
 * ストレージ・アカウントあたりのディスク容量の上限に達しているため ' プレミアム・ストレージ・ページ・ブロブには 1 つ以上のストレージ・アカウントが必要です
 +
-https://["Azure のドキュメント：「 Azure Storage スケーラビリティー and performance targets for storage accounts"^]。
+https://docs.microsoft.com/en-us/azure/storage/common/storage-scalability-targets["Azure のドキュメント：「 Azure Storage スケーラビリティー and performance targets for storage accounts"^]。
 
 * Azure BLOB ストレージへのデータ階層化には 1 つのストレージアカウントが必要です。
 * Cloud Volumes ONTAP 9.7以降では、HAペア用にBlueXPで作成されるストレージアカウントは汎用v2のストレージアカウントです。
@@ -60,7 +60,7 @@ image:diagram_ha_azure_saz_lrs.png["ロードバランサがBlueXPおよびク�
 BlueXPによって導入されるAzureコンポーネントについては、次の点に注意してください。
 
 Azure Standard Load Balancer の略:: ロードバランサは、 Cloud Volumes ONTAP HA ペアへの着信トラフィックを管理します。
-可用性セット:: Azure 可用性セットは、 Cloud Volumes ONTAP ノードを論理的にグループ化したものです。可用性セットを使用すると、ノードが異なる障害になっていることを確認し、ドメインを更新して冗長性と可用性を確保できます。 https://["可用性セットの詳細については、 Azure のドキュメントを参照してください"^]。
+可用性セット:: Azure 可用性セットは、 Cloud Volumes ONTAP ノードを論理的にグループ化したものです。可用性セットを使用すると、ノードが異なる障害になっていることを確認し、ドメインを更新して冗長性と可用性を確保できます。 https://docs.microsoft.com/en-us/azure/virtual-machines/availability-set-overview["可用性セットの詳細については、 Azure のドキュメントを参照してください"^]。
 ディスク:: お客様のデータは、ローカル冗長ストレージ（LRS）管理対象ディスクに格納されています。各ノードがもう一方のノードのストレージにアクセスできます。には追加のストレージも必要です link:reference-default-configs.html#boot-and-root-data-for-cloud-volumes-ontap["ブート、ルート、パートナーのルート、コア、NVRAMの各データ"]。
 ストレージアカウント:: ストレージアカウントは、診断ログの処理とBLOBストレージへの階層化を行うディスクベースの管理環境で使用されます。
 
@@ -76,7 +76,7 @@ image:diagram_ha_azure_maz.png["ロードバランサがBlueXPとクライアン
 BlueXPによって導入されるAzureコンポーネントについては、次の点に注意してください。
 
 Azure Standard Load Balancer の略:: ロードバランサは、 Cloud Volumes ONTAP HA ペアへの着信トラフィックを管理します。
-可用性ゾーン:: 2つのCloud Volumes ONTAP ノードが異なるアベイラビリティゾーンに導入されています。アベイラビリティゾーンを使用すると、各ノードが異なる障害ドメインに配置されます。 https://["Azureゾーン冗長ストレージの詳細については、Azureのドキュメントを参照してください"^]。
+可用性ゾーン:: 2つのCloud Volumes ONTAP ノードが異なるアベイラビリティゾーンに導入されています。アベイラビリティゾーンを使用すると、各ノードが異なる障害ドメインに配置されます。 https://learn.microsoft.com/en-us/azure/virtual-machines/disks-redundancy#zone-redundant-storage-for-managed-disks["Azureゾーン冗長ストレージの詳細については、Azureのドキュメントを参照してください"^]。
 ディスク:: お客様のデータは、ゾーン冗長ストレージ（ZRS）管理ディスクに格納されています。各ノードがもう一方のノードのストレージにアクセスできます。には追加のストレージも必要です link:reference-default-configs.html#boot-and-root-data-for-cloud-volumes-ontap["ブート、ルート、パートナールート、コアの各データ"]。
 ストレージアカウント:: ストレージアカウントは、診断ログの処理とBLOBストレージへの階層化を行うディスクベースの管理環境で使用されます。
 
@@ -102,7 +102,7 @@ NAS 構成の場合は、障害の発生時にデータ IP アドレスが HA �
 iSCSI の場合、 ONTAP はマルチパス I/O （ MPIO ）と非対称論理ユニットアクセス（ ALUA ）を使用して、アクティブ最適化パスと非最適化パス間のパスフェイルオーバーを管理します。
 
 
-NOTE: ALUA をサポートする具体的なホスト構成については、を参照してください http://["NetApp Interoperability Matrix Tool で確認できます"^] およびお使いのホストオペレーティングシステムに対応した Host Utilities の『 Installation and Setup Guide 』を参照してください。
+NOTE: ALUA をサポートする具体的なホスト構成については、を参照してください http://mysupport.netapp.com/matrix["NetApp Interoperability Matrix Tool で確認できます"^] およびお使いのホストオペレーティングシステムに対応した Host Utilities の『 Installation and Setup Guide 』を参照してください。
 
 ストレージのテイクオーバー、再同期、ギブバックは、すべてデフォルトで自動的に実行されます。ユーザによる操作は必要ありません。
 

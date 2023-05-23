@@ -14,7 +14,7 @@ summary: Google Cloudコマンドラインを使用して、エクスポート�
 
 
 [role="lead"]
-新しいインスタンスの導入、アップグレード、または既存のイメージで使用されているイメージは、を通じてクライアントと共有されます https://["NetApp Support Site （NSS）"^]。署名済みダイジェストと証明書は、NSSポータルからダウンロードできます。ネットアップサポートが共有しているイメージに対応する、適切なリリースのダイジェストと証明書をダウンロードしていることを確認してください。たとえば、9.13.0イメージには、9.13.0署名付きダイジェストとNSSで使用できる証明書があります。
+新しいインスタンスの導入、アップグレード、または既存のイメージで使用されているイメージは、を通じてクライアントと共有されます https://mysupport.netapp.com/site/products/all/details/cloud-volumes-ontap/downloads-tab["NetApp Support Site （NSS）"^]。署名済みダイジェストと証明書は、NSSポータルからダウンロードできます。ネットアップサポートが共有しているイメージに対応する、適切なリリースのダイジェストと証明書をダウンロードしていることを確認してください。たとえば、9.13.0イメージには、9.13.0署名付きダイジェストとNSSで使用できる証明書があります。
 
 
 
@@ -37,7 +37,7 @@ Google Cloudからの画像は直接ダウンロードできません。署名�
 
 == Google Cloudのコマンドラインを使用して、Google Cloudイメージをエクスポートします
 
-Cloud Storageにイメージをエクスポートする場合は、を使用することを推奨します https://["gcloud compute images exportコマンド"^]。このコマンドは、提供されたイメージを取得し、tarredおよびgzipされるdisk.rawファイルに変換します。生成されたファイルは保存先URLに保存され、ダウンロードして検証することができます。
+Cloud Storageにイメージをエクスポートする場合は、を使用することを推奨します https://cloud.google.com/sdk/gcloud/reference/compute/images/export["gcloud compute images exportコマンド"^]。このコマンドは、提供されたイメージを取得し、tarredおよびgzipされるdisk.rawファイルに変換します。生成されたファイルは保存先URLに保存され、ダウンロードして検証することができます。
 
 この処理を実行するには、ユーザ/アカウントに目的のバケットへのアクセスと書き込み、イメージのエクスポート、およびクラウドビルド（Googleがイメージのエクスポートに使用）の権限が必要です。
 
@@ -146,4 +146,4 @@ total 1565036
 $ tar -xf CVO_GCP_Signed_Digest.tar.gz
 ----
 
-NOTE: を参照してください https://["画像のエクスポートに関するGoogle Cloudドキュメント"^] Google Cloudを使用して画像をエクスポートする方法の詳細については、を参照してください。
+NOTE: を参照してください https://cloud.google.com/compute/docs/images/export-image#console["画像のエクスポートに関するGoogle Cloudドキュメント"^] Google Cloudを使用して画像をエクスポートする方法の詳細については、を参照してください。

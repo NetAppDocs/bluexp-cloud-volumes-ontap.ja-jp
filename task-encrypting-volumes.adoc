@@ -36,7 +36,7 @@ Cloud Volumes ONTAP はオンボードキー管理をサポートしていませ
 .必要なもの
 Cloud Volumes ONTAP システムがネットアップサポートに登録されている必要があります。ネットアップサポートに登録されている各 Cloud Volumes ONTAP システムには、 NetApp Volume Encryption ライセンスが自動的にインストールされます。
 
-* https://["NetApp Support Site アカウントをBlueXPに追加する"^]
+* https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-adding-nss-accounts.html["NetApp Support Site アカウントをBlueXPに追加する"^]
 * link:task-registering.html["従量課金制システムの登録"]
 
 
@@ -44,7 +44,7 @@ Cloud Volumes ONTAP システムがネットアップサポートに登録され
 NOTE: BlueXPでは、中国にあるシステムにNVEライセンスはインストールされません。
 
 .手順
-. でサポートされているキー管理ツールのリストを確認します http://["NetApp Interoperability Matrix Tool で確認できます"^]。
+. でサポートされているキー管理ツールのリストを確認します http://mysupport.netapp.com/matrix["NetApp Interoperability Matrix Tool で確認できます"^]。
 +
 
 TIP: Key Managers * ソリューションを検索します。
@@ -55,7 +55,7 @@ TIP: Key Managers * ソリューションを検索します。
 ifdef::aws[]
 
 +
-** AWS https://["手順については、 ONTAP のドキュメントを参照してください"^]
+** AWS https://docs.netapp.com/us-en/ontap/encryption-at-rest/configure-external-key-management-overview-concept.html["手順については、 ONTAP のドキュメントを参照してください"^]
 
 
 

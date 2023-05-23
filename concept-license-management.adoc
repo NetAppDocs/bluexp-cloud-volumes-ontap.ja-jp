@@ -33,7 +33,7 @@ Cloud Volumes ONTAP BYOL システムでは、複数のライセンスを購入�
 
 シングルノードシステムまたは HA ペアに対して購入できるライセンスの数に制限はありません。
 
-ディスク制限によって、ディスクだけを使用することで容量制限に達することがないことに注意してください。を使用すると、ディスク制限を超えることができます link:concept-data-tiering.html["使用頻度の低いデータをオブジェクトストレージに階層化します"]。ディスクの制限については、を参照してください https://["ストレージの制限については、『 Cloud Volumes ONTAP リリースノート』を参照してください"^]。
+ディスク制限によって、ディスクだけを使用することで容量制限に達することがないことに注意してください。を使用すると、ディスク制限を超えることができます link:concept-data-tiering.html["使用頻度の低いデータをオブジェクトストレージに階層化します"]。ディスクの制限については、を参照してください https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/["ストレージの制限については、『 Cloud Volumes ONTAP リリースノート』を参照してください"^]。
 
 
 
@@ -41,7 +41,7 @@ Cloud Volumes ONTAP BYOL システムでは、複数のライセンスを購入�
 
 ノードベースのBYOLシステムを作成すると、ライセンスのシリアル番号とNetApp Support Site アカウントを入力するように求められます。BlueXPでは、アカウントを使用してネットアップからライセンスファイルをダウンロードし、Cloud Volumes ONTAP システムにインストールします。
 
-https://["NetApp Support Site アカウントをBlueXPに追加する方法について説明します"^]。
+https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-adding-nss-accounts.html["NetApp Support Site アカウントをBlueXPに追加する方法について説明します"^]。
 
 BlueXPが安全なインターネット接続経由でライセンスファイルにアクセスできない場合は、次の操作を実行できます link:task-manage-node-licenses.html["自分でファイルを取得し、ファイルをBlueXPに手動でアップロードします"]。
 

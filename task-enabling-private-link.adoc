@@ -32,7 +32,7 @@ BlueXPでは、Cloud Volumes ONTAP とそれに関連付けられたストレー
 
 ビジネスで必要な場合は、BlueXPの設定を変更して、Azureプライベートリンクの代わりにサービスエンドポイントを使用するようにCloud Volumes ONTAP を設定できます。この設定を変更すると、新しく作成した環境 Cloud Volumes ONTAP システムに変更が適用されます。サービスエンドポイントは、でのみサポートされます link:https://docs.microsoft.com/en-us/azure/availability-zones/cross-region-replication-azure#azure-cross-region-replication-pairings-for-all-geographies["Azureリージョンペア"^] コネクタとCloud Volumes ONTAP VNetの間。
 
-コネクタは、管理対象の Cloud Volumes ONTAP システムまたはにある Azure リージョンと同じ Azure リージョンに導入する必要があります https://["Azure リージョンペア"^] Cloud Volumes ONTAP システム用。
+コネクタは、管理対象の Cloud Volumes ONTAP システムまたはにある Azure リージョンと同じ Azure リージョンに導入する必要があります https://docs.microsoft.com/en-us/azure/availability-zones/cross-region-replication-azure#azure-cross-region-replication-pairings-for-all-geographies["Azure リージョンペア"^] Cloud Volumes ONTAP システム用。
 
 .手順
 . BlueXPコンソールの右上にある[設定]アイコンをクリックし、[*コネクタの設定*]を選択します。
@@ -47,7 +47,7 @@ image:screenshot_settings_icon.png["BlueXPコンソールの右上にある設�
 .完了後
 Azure Private Linksを無効にし、コネクタがプロキシサーバーを使用している場合は、ダイレクトAPIトラフィックを有効にする必要があります。
 
-https://["コネクタで直接APIトラフィックを有効にする方法について説明します"^]
+https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-configuring-proxy.html#enable-a-proxy-on-a-connector["コネクタで直接APIトラフィックを有効にする方法について説明します"^]
 
 
 
@@ -80,9 +80,9 @@ NOTE: コネクタシステムとCloud Volumes ONTAP システムが異なるVNe
 
 === AzureプライベートDNSの詳細をBlueXPに提供します
 
-を使用する場合 https://["Azure プライベート DNS"^]では、各コネクタの構成ファイルを変更する必要があります。それ以外の場合、Cloud Volumes ONTAP とそれに関連付けられたストレージアカウント間のAzure Private Link接続を有効にすることはできません。
+を使用する場合 https://docs.microsoft.com/en-us/azure/dns/private-dns-overview["Azure プライベート DNS"^]では、各コネクタの構成ファイルを変更する必要があります。それ以外の場合、Cloud Volumes ONTAP とそれに関連付けられたストレージアカウント間のAzure Private Link接続を有効にすることはできません。
 
-DNS 名は Azure DNS の命名規則と一致している必要があります 要件 https://["Azure のドキュメントを参照"^]。
+DNS 名は Azure DNS の命名規則と一致している必要があります 要件 https://docs.microsoft.com/en-us/azure/storage/common/storage-private-endpoints#dns-changes-for-private-endpoints["Azure のドキュメントを参照"^]。
 
 .手順
 . コネクタホストに SSH 接続してログインします。

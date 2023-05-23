@@ -24,7 +24,7 @@ ifdef::aws[]
 
 * Cloud Volumes ONTAP for AWS
 +
-https://["NetApp テクニカルレポート 4383 ：アプリケーションワークロードを使用した Amazon Web Services における Cloud Volumes ONTAP のパフォーマンス特性"^]
+https://www.netapp.com/us/media/tr-4383.pdf["NetApp テクニカルレポート 4383 ：アプリケーションワークロードを使用した Amazon Web Services における Cloud Volumes ONTAP のパフォーマンス特性"^]
 
 
 
@@ -34,7 +34,7 @@ ifdef::azure[]
 
 * Cloud Volumes ONTAP for Microsoft Azure
 +
-https://["NetApp テクニカルレポート 4671 ：アプリケーションワークロードを使用した Azure における Cloud Volumes ONTAP のパフォーマンス特性評価"^]
+https://www.netapp.com/us/media/tr-4671.pdf["NetApp テクニカルレポート 4671 ：アプリケーションワークロードを使用した Azure における Cloud Volumes ONTAP のパフォーマンス特性評価"^]
 
 
 
@@ -44,7 +44,7 @@ ifdef::gcp[]
 
 * Cloud Volumes ONTAP for Google Cloud の略
 +
-https://["ネットアップテクニカルレポート 4816 ：『 Performance Characterization of Cloud Volumes ONTAP for Google Cloud 』"^]
+https://www.netapp.com/us/media/tr-4816.pdf["ネットアップテクニカルレポート 4816 ：『 Performance Characterization of Cloud Volumes ONTAP for Google Cloud 』"^]
 
 
 
@@ -56,4 +56,4 @@ endif::gcp[]
 
 Cloud Volumes ONTAP ノードは、クラウドプロバイダの監視ツールから高い利用率（ 90% 超）を示します。これは、 ONTAP が仮想マシンに提供されているすべての vCPU を、必要に応じて使用できるようにリザーブするためです。
 
-詳細については、を参照してください https://["CLI を使用して ONTAP CPU 利用率を監視する方法に関するネットアップの技術情報アーティクルを参照してください"^]
+詳細については、を参照してください https://kb.netapp.com/Advice_and_Troubleshooting/Data_Storage_Software/ONTAP_OS/Monitoring_CPU_utilization_before_an_ONTAP_upgrade["CLI を使用して ONTAP CPU 利用率を監視する方法に関するネットアップの技術情報アーティクルを参照してください"^]

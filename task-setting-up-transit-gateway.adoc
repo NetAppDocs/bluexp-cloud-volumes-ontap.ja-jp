@@ -29,7 +29,7 @@ image:diagram_transit_gateway.png["1 つの VPC における HA 構成を示し�
 以下に、同様の構成を設定する手順を示します。
 
 .手順
-. https://["トランジットゲートウェイを作成し、 VPC をに接続します ゲートウェイ"^]。
+. https://docs.aws.amazon.com/vpc/latest/tgw/tgw-getting-started.html["トランジットゲートウェイを作成し、 VPC をに接続します ゲートウェイ"^]。
 . VPC とトランジットゲートウェイルートテーブルを関連付ける。
 +
 .. *VPC サービスで、 *Transit Gateway Route Tables * をクリックします。

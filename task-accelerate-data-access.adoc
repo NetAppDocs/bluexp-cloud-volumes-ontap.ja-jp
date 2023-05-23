@@ -20,8 +20,8 @@ FlexCache を使用すると、データアクセスを高速化したり、ア�
 
 現時点ではFlexCache ボリュームの管理は提供されていませんが、ONTAP CLIまたはONTAP System Managerを使用してFlexCache ボリュームを作成および管理できます。
 
-* http://["『 FlexCache Volumes for Faster Data Access Power Guide 』を参照してください"^]
-* http://["System Manager での FlexCache ボリュームの作成"^]
+* http://docs.netapp.com/ontap-9/topic/com.netapp.doc.pow-fc-mgmt/home.html["『 FlexCache Volumes for Faster Data Access Power Guide 』を参照してください"^]
+* http://docs.netapp.com/ontap-9/topic/com.netapp.doc.onc-sm-help-960/GUID-07F4C213-076D-4FE8-A8E3-410F49498D49.html["System Manager での FlexCache ボリュームの作成"^]
 
 
 3.7.2リリース以降、すべての新しいCloud Volumes ONTAP システム用のFlexCache ライセンスがBlueXPによって生成されます。ライセンスの使用量は 500GiB に制限されています。
