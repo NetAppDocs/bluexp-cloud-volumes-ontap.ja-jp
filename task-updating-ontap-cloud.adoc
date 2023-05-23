@@ -32,7 +32,7 @@ Cloud Volumes ONTAP のアップグレードは、BlueXPから完了している
 
 === アップグレード方法
 
-BlueXPでは、次の3つの方法でCloud Volumes ONTAP をアップグレードできます。
+BlueXPには、Cloud Volumes ONTAP をアップグレードする2つの方法があります。
 
 * アップグレード通知が作業環境に表示されます
 * アップグレードイメージをHTTPSの場所に配置し、BlueXPにURLを提供する
