@@ -21,6 +21,10 @@ Cloud Volumes ONTAP は、 NetApp Volume Encryption （ NVE ）および NetApp 
 
 NVE と NAE はどちらも外部キー管理機能でサポートされています。
 
+ifdef::aws[]
+
+endif::aws[]
+
 ifdef::azure[]
 
 endif::azure[]
@@ -29,49 +33,14 @@ ifdef::gcp[]
 
 endif::gcp[]
 
-外部キー管理ツールを設定すると、新しいアグリゲートで NAE がデフォルトで有効になります。NAE アグリゲートに含まれない新しいボリュームでは、 NVE がデフォルトで有効になります（たとえば、外部キー管理ツールを設定する前に作成された既存のアグリゲートがある場合）。
-
-Cloud Volumes ONTAP はオンボードキー管理をサポートしていません。
-
-.必要なもの
-Cloud Volumes ONTAP システムがネットアップサポートに登録されている必要があります。ネットアップサポートに登録されている各 Cloud Volumes ONTAP システムには、 NetApp Volume Encryption ライセンスが自動的にインストールされます。
-
-* https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-adding-nss-accounts.html["NetApp Support Site アカウントをBlueXPに追加する"^]
-* link:task-registering.html["従量課金制システムの登録"]
-
-
-
-NOTE: BlueXPでは、中国にあるシステムにNVEライセンスはインストールされません。
-
-.手順
-. でサポートされているキー管理ツールのリストを確認します http://mysupport.netapp.com/matrix["NetApp Interoperability Matrix Tool で確認できます"^]。
-+
-
-TIP: Key Managers * ソリューションを検索します。
-
-. link:task-connecting-to-otc.html["Cloud Volumes ONTAP CLI に接続します"^]。
-. 外部キー管理を設定
-+
 ifdef::aws[]
-
-+
-** AWS https://docs.netapp.com/us-en/ontap/encryption-at-rest/configure-external-key-management-overview-concept.html["手順については、 ONTAP のドキュメントを参照してください"^]
-
-
-
 
 endif::aws[]
 
 ifdef::azure[]
 
-* Azure link:task-azure-key-vault.html["Azure キーボールト（ AKV ）"]
-
-
 endif::azure[]
 
 ifdef::gcp[]
-
-* Google Cloud link:task-google-key-manager.html["Google Cloud Key Management Serviceの略"]
-
 
 endif::gcp[]

@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: task-google-key-manager.html 
 keywords: google cloud, encryption, NVE, NetApp volume encryption, KMIP, GCP, GCP KMS, key manager service, encryption 
-summary: サードパーティのキー管理サービスにAzure Key Vaultを利用 
+summary: サードパーティのキー管理サービスにGoogleのキー管理サービスを利用します。 
 ---
 = GoogleのCloud Key Management Serviceを使用してキーを管理します
 :hardbreaks:
@@ -15,9 +15,9 @@ summary: サードパーティのキー管理サービスにAzure Key Vaultを�
 
 Cloud KMSを使用したキー管理は、CLIまたはONTAP REST APIを使用して有効にすることができます。
 
-Cloud KMSを使用する際は、デフォルトでデータSVM LIFがクラウドキー管理エンドポイントとの通信に使用されることに注意してください。ノード管理ネットワークは、クラウドプロバイダの認証サービス（oauth2.googleapis.com）との通信に使用されます。クラスタネットワークが正しく設定されていないと、クラスタでキー管理サービスが適切に利用されません。
+Cloud KMSを使用する場合は、デフォルトではデータSVMのLIFがクラウドキー管理エンドポイントとの通信に使用されることに注意してください。ノード管理ネットワークは、クラウドプロバイダの認証サービス（oauth2.googleapis.com）との通信に使用されます。クラスタネットワークが正しく設定されていないと、クラスタでキー管理サービスが適切に利用されません。
 
-.前提条件
+.作業を開始する前に
 * Cloud Volumes ONTAP でバージョン9.10.1以降が実行されている必要があります
 * Volume Encryption （ VE ）ライセンスがインストールされている
 * Cloud Volumes ONTAP 9.12.1 GA以降、マルチテナント暗号化キー管理（MTEKM）ライセンスがインストールされています。
