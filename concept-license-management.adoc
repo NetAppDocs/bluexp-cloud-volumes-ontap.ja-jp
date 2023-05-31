@@ -21,7 +21,7 @@ TIP: ノードベースのライセンスは、 Cloud Volumes ONTAP を使用す
 
 link:concept-licensing.html["Cloud Volumes ONTAP のライセンスオプションの詳細については、こちらをご覧ください"]。
 
-link:https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-manage-node-licenses.html["ノードベースライセンスの管理方法については、こちらをご覧ください"^]。
+link:https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-manage-node-licenses.html["ノードベースライセンスの管理方法については、こちらをご覧ください"^]。
 
 
 
@@ -41,7 +41,7 @@ Cloud Volumes ONTAP BYOL システムでは、複数のライセンスを購入�
 
 ノードベースのBYOLシステムを作成すると、ライセンスのシリアル番号とNetApp Support Site アカウントを入力するように求められます。BlueXPでは、アカウントを使用してネットアップからライセンスファイルをダウンロードし、Cloud Volumes ONTAP システムにインストールします。
 
-https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-adding-nss-accounts.html["NetApp Support Site アカウントをBlueXPに追加する方法について説明します"^]。
+https://docs.netapp.com/us-en/bluexp-setup-admin/task-adding-nss-accounts.html["NetApp Support Site アカウントをBlueXPに追加する方法について説明します"^]。
 
 BlueXPが安全なインターネット接続経由でライセンスファイルにアクセスできない場合は、次の操作を実行できます link:task-manage-node-licenses.html["自分でファイルを取得し、ファイルをBlueXPに手動でアップロードします"]。
 

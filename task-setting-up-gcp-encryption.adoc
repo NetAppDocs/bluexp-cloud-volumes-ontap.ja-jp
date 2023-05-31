@@ -19,7 +19,7 @@ Google Cloud Storageでは、データがディスクに書き込まれる前に
 .手順
 . キーが格納されているプロジェクトで、BlueXP Connectorサービスアカウントがプロジェクトレベルで正しいアクセス許可を持っていることを確認します。
 +
-権限は、で提供されています https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-permissions-gcp.html["デフォルトでは、Connectorサービスアカウントの権限です"^]、ただし、Cloud Key Management Serviceに別のプロジェクトを使用する場合は適用できません。
+権限は、で提供されています https://docs.netapp.com/us-en/bluexp-setup-admin/reference-permissions-gcp.html["デフォルトでは、Connectorサービスアカウントの権限です"^]、ただし、Cloud Key Management Serviceに別のプロジェクトを使用する場合は適用できません。
 
 +
 権限は次のとおりです。
@@ -62,4 +62,4 @@ https://cloud.google.com/kms/docs/iam#granting_roles_on_a_resource["Google Cloud
 ----
 
 
-を参照してください https://docs.netapp.com/us-en/cloud-manager-automation/index.html["BlueXP自動化ドキュメント"^] "GcpEncryption" パラメータの使用方法の詳細については、を参照してください。
+を参照してください https://docs.netapp.com/us-en/bluexp-automation/index.html["BlueXP自動化ドキュメント"^] "GcpEncryption" パラメータの使用方法の詳細については、を参照してください。

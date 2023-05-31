@@ -162,7 +162,7 @@ BlueXPに必要な権限があれば、高パフォーマンス階層と大容�
 "Microsoft.Network/virtualNetworks/subnets/write",
 "Microsoft.Network/routeTables/join/action",
 ----
-権限はデフォルトでカスタムロールに含まれています。 https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-permissions-azure.html["ConnectorのAzure権限を表示します"^]
+権限はデフォルトでカスタムロールに含まれています。 https://docs.netapp.com/us-en/bluexp-setup-admin/reference-permissions-azure.html["ConnectorのAzure権限を表示します"^]
 
 endif::azure[]
 
@@ -297,7 +297,7 @@ Cloud Volumes ONTAP では、データ保護ボリュームから容量階層に
 image:screenshot_replication_tiering.gif["ボリュームのレプリケーション時の S3 階層化オプションを示すスクリーンショット。"]
 
 +
-データの複製については、を参照してください https://docs.netapp.com/us-en/cloud-manager-replication/task-replicating-data.html["クラウドとの間でデータをレプリケートする"^]。
+データの複製については、を参照してください https://docs.netapp.com/us-en/bluexp-replication/task-replicating-data.html["クラウドとの間でデータをレプリケートする"^]。
 
 
 

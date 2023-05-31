@@ -126,7 +126,7 @@ Azure HAシングルアベイラビリティゾーン::
 "Microsoft.KeyVault/vaults/accessPolicies/write"
 "Microsoft.ManagedIdentity/userAssignedIdentities/assign/action"
 ----
-https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-permissions-azure.html["権限の最新のリストを表示します"^]
+https://docs.netapp.com/us-en/bluexp-setup-admin/reference-permissions-azure.html["権限の最新のリストを表示します"^]
 
 
 NOTE: 権限は、単一ゾーンのHAペアには必要ありません。
@@ -143,7 +143,7 @@ HA ペアの場合：「 GET /azure-ha/ma/metadata/vaults 」
 * name * および * resourcegroup * をメモします。次の手順でこれらの値を指定する必要があります。
 
 +
-https://docs.netapp.com/us-en/cloud-manager-automation/cm/api_ref_resources.html#azure-hametadata["この API 呼び出しの詳細を確認してください"^]。
+https://docs.netapp.com/us-en/bluexp-automation/cm/api_ref_resources.html#azure-hametadata["この API 呼び出しの詳細を確認してください"^]。
 
 . 次のBlueXP API呼び出しを使用して、ボルト内のキーのリストを取得します。
 +
@@ -156,7 +156,7 @@ HA ペアの場合：「 GET /azure-ha/ma/metadata/keys - vault 」
 * keyName * をメモします。次のステップで、その値（ボルト名とともに）を指定する必要があります。
 
 +
-https://docs.netapp.com/us-en/cloud-manager-automation/cm/api_ref_resources.html#azure-hametadata["この API 呼び出しの詳細を確認してください"^]。
+https://docs.netapp.com/us-en/bluexp-automation/cm/api_ref_resources.html#azure-hametadata["この API 呼び出しの詳細を確認してください"^]。
 
 . 次のBlueXP API呼び出しを使用してCloud Volumes ONTAP システムを作成します
 +
@@ -177,7 +177,7 @@ https://docs.netapp.com/us-en/cloud-manager-automation/cm/api_ref_resources.html
 }
 ----
 +
-https://docs.netapp.com/us-en/cloud-manager-automation/cm/api_ref_resources.html#azure-haworking-environments["この API 呼び出しの詳細を確認してください"^]。
+https://docs.netapp.com/us-en/bluexp-automation/cm/api_ref_resources.html#azure-haworking-environments["この API 呼び出しの詳細を確認してください"^]。
 
 .. シングルノードシステムの場合：
 +
@@ -196,7 +196,7 @@ https://docs.netapp.com/us-en/cloud-manager-automation/cm/api_ref_resources.html
 }
 ----
 +
-https://docs.netapp.com/us-en/cloud-manager-automation/cm/api_ref_resources.html#azure-vsaworking-environments["この API 呼び出しの詳細を確認してください"^]。
+https://docs.netapp.com/us-en/bluexp-automation/cm/api_ref_resources.html#azure-vsaworking-environments["この API 呼び出しの詳細を確認してください"^]。
 
 
 

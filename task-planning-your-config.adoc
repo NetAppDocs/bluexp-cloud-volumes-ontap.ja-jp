@@ -120,7 +120,7 @@ EBS ディスクのパフォーマンスの詳細については、を参照し�
 link:reference-default-configs.html#aws["AWS で Cloud Volumes ONTAP システムデータのデフォルトディスクを表示する"]。
 
 
-TIP: コネクタにはシステムディスクも必要です。 https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-connector-default-config.html["コネクタのデフォルト設定に関する詳細を表示します"^]。
+TIP: コネクタにはシステムディスクも必要です。 https://docs.netapp.com/us-en/bluexp-setup-admin/reference-connector-default-config.html["コネクタのデフォルト設定に関する詳細を表示します"^]。
 
 
 

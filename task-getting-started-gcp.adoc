@@ -18,10 +18,10 @@ Cloud Volumes ONTAP for Google Cloudの使用を開始するには、いくつ�
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png["1つ"] コネクタを作成します
 [role="quick-margin-para"]
-を持っていなければ https://docs.netapp.com/us-en/cloud-manager-setup-admin/concept-connectors.html["コネクタ"^] ただし、アカウント管理者がアカウントを作成する必要があります。 https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-quick-start-connector-google.html["Google Cloud でコネクタを作成する方法について説明します"^]
+を持っていなければ https://docs.netapp.com/us-en/bluexp-setup-admin/concept-connectors.html["コネクタ"^] ただし、アカウント管理者がアカウントを作成する必要があります。 https://docs.netapp.com/us-en/bluexp-setup-admin/task-quick-start-connector-google.html["Google Cloud でコネクタを作成する方法について説明します"^]
 
 [role="quick-margin-para"]
-インターネットアクセスを使用できないサブネットにCloud Volumes ONTAP を導入する場合は、コネクタを手動でインストールし、そのコネクタで実行されているBlueXPユーザインターフェイスにアクセスする必要があります。 https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-quick-start-private-mode.html["インターネットにアクセスできない場所にコネクタを手動でインストールする方法について説明します"^]
+インターネットアクセスを使用できないサブネットにCloud Volumes ONTAP を導入する場合は、コネクタを手動でインストールし、そのコネクタで実行されているBlueXPユーザインターフェイスにアクセスする必要があります。 https://docs.netapp.com/us-en/bluexp-setup-admin/task-quick-start-private-mode.html["インターネットにアクセスできない場所にコネクタを手動でインストールする方法について説明します"^]
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["2 つ"] 構成を計画
 [role="quick-margin-para"]
@@ -47,7 +47,7 @@ link:reference-networking-gcp.html["ネットワーク要件の詳細につい�
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-4.png["4."] サービスアカウントを設定します
 [role="quick-margin-para"]
-Cloud Volumes ONTAP には、 2 つの目的で Google Cloud サービスアカウントが必要です。1 つ目は、を有効にする場合です link:concept-data-tiering.html["データの階層化"] Google Cloud でコールドデータを低コストのオブジェクトストレージに階層化すること。2つ目は、を有効にする場合です https://docs.netapp.com/us-en/cloud-manager-backup-restore/concept-backup-to-cloud.html["BlueXPのバックアップとリカバリ"^] ボリュームを低コストのオブジェクトストレージにバックアップできます。
+Cloud Volumes ONTAP には、 2 つの目的で Google Cloud サービスアカウントが必要です。1 つ目は、を有効にする場合です link:concept-data-tiering.html["データの階層化"] Google Cloud でコールドデータを低コストのオブジェクトストレージに階層化すること。2 つ目は、を有効にした場合です https://docs.netapp.com/us-en/bluexp-backup-recovery/concept-backup-to-cloud.html["BlueXPのバックアップとリカバリ"^] ボリュームを低コストのオブジェクトストレージにバックアップできます。
 
 [role="quick-margin-para"]
 1 つのサービスアカウントを設定して、両方の目的に使用できます。サービスアカウントには * Storage Admin * ロールが必要です。
@@ -72,7 +72,7 @@ https://cloud.google.com/apis/docs/getting-started#enabling_apis["プロジェ�
 [ 作業環境の追加 ] をクリックし、展開するシステムのタイプを選択して、ウィザードの手順を実行します。 link:task-deploying-gcp.html["詳細な手順を参照してください"]。
 
 .関連リンク
-* https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-quick-start-connector-google.html["BlueXPからコネクタを作成しています"^]
-* https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-install-connector-on-prem.html["Linux ホストへの Connector ソフトウェアのインストール"^]
-* https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-permissions-gcp.html["BlueXPがGoogle Cloud権限で実行する機能"^]
+* https://docs.netapp.com/us-en/bluexp-setup-admin/task-quick-start-connector-google.html["BlueXPからコネクタを作成しています"^]
+* https://docs.netapp.com/us-en/bluexp-setup-admin/task-install-connector-on-prem.html["Linux ホストへの Connector ソフトウェアのインストール"^]
+* https://docs.netapp.com/us-en/bluexp-setup-admin/reference-permissions-gcp.html["BlueXPがGoogle Cloud権限で実行する機能"^]
 

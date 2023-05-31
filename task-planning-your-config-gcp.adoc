@@ -109,7 +109,7 @@ Google Cloud Compute Engine では、リソース使用量にクォータが適�
 
 
 
-TIP: コネクタにはシステムディスクも必要です。 https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-connector-default-config.html["コネクタのデフォルト設定に関する詳細を表示します"^]。
+TIP: コネクタにはシステムディスクも必要です。 https://docs.netapp.com/us-en/bluexp-setup-admin/reference-connector-default-config.html["コネクタのデフォルト設定に関する詳細を表示します"^]。
 
 
 

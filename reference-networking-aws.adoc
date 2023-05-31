@@ -176,7 +176,7 @@ TIP: 複数のアベイラビリティゾーンに導入すると、いくつか
 セキュリティグループを作成する必要はありません。BlueXPではセキュリティグループが自動的に作成されます。自分で使用する必要がある場合は、を参照してください link:reference-security-groups.html["セキュリティグループのルール"]。
 
 
-TIP: コネクタに関する情報をお探しですか？ https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-ports-aws.html["コネクタのセキュリティグループルールを表示します"^]
+TIP: コネクタに関する情報をお探しですか？ https://docs.netapp.com/us-en/bluexp-setup-admin/reference-ports-aws.html["コネクタのセキュリティグループルールを表示します"^]
 
 
 
@@ -281,6 +281,6 @@ image:diagram_ha_networking.png["この概念図は、 Cloud Volumes ONTAP HA �
 
 コネクタをまだ作成していない場合は、コネクタのネットワーク要件も確認してください。
 
-* https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-quick-start-connector-aws.html["コネクタのネットワーク要件を確認します"^]
-* https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-ports-aws.html["AWSのセキュリティグループのルール"^]
+* https://docs.netapp.com/us-en/bluexp-setup-admin/task-quick-start-connector-aws.html["コネクタのネットワーク要件を確認します"^]
+* https://docs.netapp.com/us-en/bluexp-setup-admin/reference-ports-aws.html["AWSのセキュリティグループのルール"^]
 

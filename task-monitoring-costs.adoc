@@ -24,7 +24,7 @@ BlueXPを使用すると、AWSでのCloud Volumes ONTAP の実行に関連する
 +
 .. BlueXPに権限を提供するIAMポリシーに、必要な権限が含まれていることを確認します。
 +
-https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-permissions-aws.html["必要な権限を確認します"^]
+https://docs.netapp.com/us-en/bluexp-setup-admin/reference-permissions-aws.html["必要な権限を確認します"^]
 
 .. https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/activating-tags.html["* WorkingEnvironmentId* タグをアクティブにします"^]。
 +

@@ -47,7 +47,7 @@ image:screenshot_settings_icon.png["BlueXPコンソールの右上にある設�
 .完了後
 Azure Private Linksを無効にし、コネクタがプロキシサーバーを使用している場合は、ダイレクトAPIトラフィックを有効にする必要があります。
 
-https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-configuring-proxy.html#enable-a-proxy-on-a-connector["コネクタで直接APIトラフィックを有効にする方法について説明します"^]
+https://docs.netapp.com/us-en/bluexp-setup-admin/task-configuring-proxy.html#enable-a-proxy-on-a-connector["コネクタで直接APIトラフィックを有効にする方法について説明します"^]
 
 
 

@@ -65,7 +65,7 @@ link:concept-licensing.html#freemium-offering["容量単位のライセンスに
 
 .手順
 . https://cloud.netapp.com/contact-cds["ライセンスの取得については、ネットアップの営業部門にお問い合わせください"^]
-. https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-adding-nss-accounts.html#add-an-nss-account["NetApp Support Site アカウントをBlueXPに追加します"^]
+. https://docs.netapp.com/us-en/bluexp-setup-admin/task-adding-nss-accounts.html#add-an-nss-account["NetApp Support Site アカウントをBlueXPに追加します"^]
 +
 BlueXPは、ネットアップのライセンスサービスを自動的に照会し、NetApp Support Site アカウントに関連付けられているライセンスの詳細を取得します。エラーがなければ、BlueXPは自動的にライセンスをデジタルウォレットに追加します。
 
@@ -112,7 +112,7 @@ image:screenshot-professional.png["Cloud Volumes ONTAP 作業環境を作成す�
 link:task-deploying-gcp.html["Google CloudでCloud Volumes ONTAP を起動するための詳細な手順を表示します"]。
 
 
-TIP: アカウントに関連付けられたGoogle Cloud Marketplaceのサブスクリプションは、[設定]>[クレデンシャル]ページで管理できます。 https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-adding-gcp-accounts.html["Google Cloudのクレデンシャルとサブスクリプションを管理する方法について説明します"^]
+TIP: アカウントに関連付けられたGoogle Cloud Marketplaceのサブスクリプションは、[設定]>[クレデンシャル]ページで管理できます。 https://docs.netapp.com/us-en/bluexp-setup-admin/task-adding-gcp-accounts.html["Google Cloudのクレデンシャルとサブスクリプションを管理する方法について説明します"^]
 
 
 

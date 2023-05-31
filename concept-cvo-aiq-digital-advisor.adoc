@@ -52,7 +52,7 @@ BlueXPで、Active IQ サービスをクリックします。
 +
 image:screenshot_aiq_digital_advisor.png["BlueXPのActive IQ Digital Advisorユーザーインタフェースのスクリーンショット"]
 
-* BlueXPでNSSアカウントを登録していない場合は、 https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-adding-nss-accounts.html["NSS アカウントを今すぐ登録してください"^] 次に、 Active IQ デジタルアドバイザ UI が表示されます。
+* BlueXPでNSSアカウントを登録していない場合は、 https://docs.netapp.com/us-en/bluexp-setup-admin/task-adding-nss-accounts.html["NSS アカウントを今すぐ登録してください"^] 次に、 Active IQ デジタルアドバイザ UI が表示されます。
 
 
 

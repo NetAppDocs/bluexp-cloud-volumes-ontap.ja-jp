@@ -25,8 +25,8 @@ Cloud Volumes ONTAP は単一システム構成で起動することも、 AWS �
 [[licensing]]
 * 稼働中のコネクタ。
 +
-** を用意しておく必要があります https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-quick-start-connector-aws.html["ワークスペースに関連付けられているコネクタ"^]。
-** https://docs.netapp.com/us-en/cloud-manager-setup-admin/concept-connectors.html["コネクタをで実行したままにする準備をしておく必要があります 常時"^]。
+** を用意しておく必要があります https://docs.netapp.com/us-en/bluexp-setup-admin/task-quick-start-connector-aws.html["ワークスペースに関連付けられているコネクタ"^]。
+** https://docs.netapp.com/us-en/bluexp-setup-admin/concept-connectors.html["コネクタをで実行したままにする準備をしておく必要があります 常時"^]。
 
 
 * 使用する構成についての理解。
@@ -56,7 +56,7 @@ AWSでCloud Volumes ONTAP を起動する場合は、BlueXPで新しい作業環
 . 左側のナビゲーションメニューから、* Storage > Canvas *を選択します。
 . [[subscribe] キャンバスページで、 * 作業環境の追加 * をクリックし、プロンプトに従います。
 . * 場所を選択 * ：「 * Amazon Web Services * 」と「 * Cloud Volumes ONTAP シングルノード * 」を選択します。
-. プロンプトが表示されたら、 https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-quick-start-connector-aws.html["コネクタを作成します"^]。
+. プロンプトが表示されたら、 https://docs.netapp.com/us-en/bluexp-setup-admin/task-quick-start-connector-aws.html["コネクタを作成します"^]。
 . * 詳細とクレデンシャル * ：必要に応じて、 AWS のクレデンシャルとサブスクリプションを変更し、作業環境名を入力してタグを追加し、パスワードを入力します。
 +
 このページの一部のフィールドは、説明のために用意されています。次の表では、ガイダンスが必要なフィールドについて説明します。
@@ -76,7 +76,11 @@ AWSでCloud Volumes ONTAP を起動する場合は、BlueXPで新しい作業環
 | ユーザ名とパスワード | Cloud Volumes ONTAP クラスタ管理者アカウントのクレデンシャルです。このクレデンシャルを使用して、 System Manager またはその CLI から Cloud Volumes ONTAP に接続できます。default_admin_user の名前をそのまま使用するか ' カスタム・ユーザー名に変更します 
 
 
-| 資格情報を編集します | このシステムを導入するアカウントに関連付けられている AWS クレデンシャルを選択します。この Cloud Volumes ONTAP システムで使用する AWS Marketplace サブスクリプションを関連付けることもできます。Add Subscription * をクリックして、選択したクレデンシャルを新しい AWS Marketplace サブスクリプションに関連付けます。サブスクリプションは、年間契約の場合と、 Cloud Volumes ONTAP の料金を 1 時間ごとに支払う場合があります。https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-adding-aws-accounts.html["BlueXPにAWSクレデンシャルを追加する方法について説明します"^]。 
+| 資格情報を編集します | このシステムを導入するアカウントに関連付けられている AWS クレデンシャルを選択します。この Cloud Volumes ONTAP システムで使用する AWS Marketplace サブスクリプションを関連付けることもできます。
+
+Add Subscription * をクリックして、選択したクレデンシャルを新しい AWS Marketplace サブスクリプションに関連付けます。サブスクリプションは、年間契約の場合と、 Cloud Volumes ONTAP の料金を 1 時間ごとに支払う場合があります。
+
+https://docs.netapp.com/us-en/bluexp-setup-admin/task-adding-aws-accounts.html["BlueXPにAWSクレデンシャルを追加する方法について説明します"^]。 
 |===
 +
 次のビデオでは、従量課金制の Marketplace サブスクリプションを AWS クレデンシャルに関連付ける方法を紹介します。
@@ -89,8 +93,8 @@ TIP: 複数の IAM ユーザが同じ AWS アカウントで作業する場合�
 
 . * サービス *: サービスを有効にしておくか、 Cloud Volumes ONTAP で使用しない個々のサービスを無効にします。
 +
-** https://docs.netapp.com/us-en/cloud-manager-data-sense/concept-cloud-compliance.html["BlueXPの分類の詳細については、こちらをご覧ください"^]
-** https://docs.netapp.com/us-en/cloud-manager-backup-restore/concept-backup-to-cloud.html["BlueXPのバックアップとリカバリの詳細については、こちらをご覧ください"^]
+** https://docs.netapp.com/us-en/bluexp-classification/concept-cloud-compliance.html["BlueXPの分類の詳細については、こちらをご覧ください"^]
+** https://docs.netapp.com/us-en/bluexp-backup-recovery/concept-backup-to-cloud.html["BlueXPのバックアップとリカバリの詳細については、こちらをご覧ください"^]
 +
 
 TIP: WORMとデータ階層化を活用する場合は、BlueXPのバックアップとリカバリを無効にし、バージョン9.8以降のCloud Volumes ONTAP 作業環境を導入する必要があります。
@@ -250,7 +254,9 @@ image:screenshot_cot_vol.gif["スクリーンショット： Cloud Volumes ONTAP
 | DNS ドメイン | Cloud Volumes ONTAP Storage Virtual Machine （ SVM ）の DNS ドメイン。ほとんどの場合、ドメインは AD ドメインと同じです。 
 
 
-| NTP サーバ | Active Directory DNS を使用して NTP サーバを設定するには、「 Active Directory ドメインを使用」を選択します。別のアドレスを使用して NTP サーバを設定する必要がある場合は、 API を使用してください。を参照してください https://docs.netapp.com/us-en/cloud-manager-automation/index.html["BlueXP自動化ドキュメント"^] を参照してください。NTP サーバは、 CIFS サーバを作成するときにのみ設定できます。CIFS サーバを作成したあとで設定することはできません。 
+| NTP サーバ | Active Directory DNS を使用して NTP サーバを設定するには、「 Active Directory ドメインを使用」を選択します。別のアドレスを使用して NTP サーバを設定する必要がある場合は、 API を使用してください。を参照してください https://docs.netapp.com/us-en/bluexp-automation/index.html["BlueXP自動化ドキュメント"^] を参照してください。
+
+NTP サーバは、 CIFS サーバを作成するときにのみ設定できます。CIFS サーバを作成したあとで設定することはできません。 
 |===
 . * 使用状況プロファイル、ディスクタイプ、階層化ポリシー * ：必要に応じて、 Storage Efficiency 機能を有効にするかどうかを選択し、ボリューム階層化ポリシーを編集します。
 +
@@ -316,7 +322,13 @@ AWSでCloud Volumes ONTAP HAペアを起動するには、BlueXPでHA作業環�
 | ユーザ名とパスワード | Cloud Volumes ONTAP クラスタ管理者アカウントのクレデンシャルです。このクレデンシャルを使用して、 System Manager またはその CLI から Cloud Volumes ONTAP に接続できます。default_admin_user の名前をそのまま使用するか ' カスタム・ユーザー名に変更します 
 
 
-| 資格情報を編集します | この Cloud Volumes ONTAP システムで使用する AWS クレデンシャルと Marketplace サブスクリプションを選択します。Add Subscription * をクリックして、選択したクレデンシャルを新しい AWS Marketplace サブスクリプションに関連付けます。サブスクリプションは、年間契約の場合と、 Cloud Volumes ONTAP の料金を 1 時間ごとに支払う場合があります。NetApp （ BYOL ）からライセンスを直接購入した場合、 AWS サブスクリプションは必要ありません。https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-adding-aws-accounts.html["BlueXPにAWSクレデンシャルを追加する方法について説明します"^]。 
+| 資格情報を編集します | この Cloud Volumes ONTAP システムで使用する AWS クレデンシャルと Marketplace サブスクリプションを選択します。
+
+Add Subscription * をクリックして、選択したクレデンシャルを新しい AWS Marketplace サブスクリプションに関連付けます。サブスクリプションは、年間契約の場合と、 Cloud Volumes ONTAP の料金を 1 時間ごとに支払う場合があります。
+
+NetApp （ BYOL ）からライセンスを直接購入した場合、 AWS サブスクリプションは必要ありません。
+
+https://docs.netapp.com/us-en/bluexp-setup-admin/task-adding-aws-accounts.html["BlueXPにAWSクレデンシャルを追加する方法について説明します"^]。 
 |===
 +
 次のビデオでは、従量課金制の Marketplace サブスクリプションを AWS クレデンシャルに関連付ける方法を紹介します。
@@ -329,8 +341,8 @@ TIP: 複数の IAM ユーザが同じ AWS アカウントで作業する場合�
 
 . * サービス *: この Cloud Volumes ONTAP システムで使用しない個々のサービスを有効または無効にしておきます。
 +
-** https://docs.netapp.com/us-en/cloud-manager-data-sense/concept-cloud-compliance.html["BlueXPの分類の詳細については、こちらをご覧ください"^]
-** https://docs.netapp.com/us-en/cloud-manager-backup-restore/concept-backup-to-cloud.html["BlueXPのバックアップとリカバリの詳細については、こちらをご覧ください"^]
+** https://docs.netapp.com/us-en/bluexp-classification/concept-cloud-compliance.html["BlueXPの分類の詳細については、こちらをご覧ください"^]
+** https://docs.netapp.com/us-en/bluexp-backup-recovery/task-backup-to-s3.html["BlueXPのバックアップとリカバリの詳細については、こちらをご覧ください"^]
 +
 
 TIP: WORMとデータ階層化を活用する場合は、BlueXPのバックアップとリカバリを無効にし、バージョン9.8以降のCloud Volumes ONTAP 作業環境を導入する必要があります。
@@ -500,7 +512,9 @@ image:screenshot_cot_vol.gif["スクリーンショット： Cloud Volumes ONTAP
 | DNS ドメイン | Cloud Volumes ONTAP Storage Virtual Machine （ SVM ）の DNS ドメイン。ほとんどの場合、ドメインは AD ドメインと同じです。 
 
 
-| NTP サーバ | Active Directory DNS を使用して NTP サーバを設定するには、「 Active Directory ドメインを使用」を選択します。別のアドレスを使用して NTP サーバを設定する必要がある場合は、 API を使用してください。を参照してください https://docs.netapp.com/us-en/cloud-manager-automation/index.html["BlueXP自動化ドキュメント"^] を参照してください。NTP サーバは、 CIFS サーバを作成するときにのみ設定できます。CIFS サーバを作成したあとで設定することはできません。 
+| NTP サーバ | Active Directory DNS を使用して NTP サーバを設定するには、「 Active Directory ドメインを使用」を選択します。別のアドレスを使用して NTP サーバを設定する必要がある場合は、 API を使用してください。を参照してください https://docs.netapp.com/us-en/bluexp-automation/index.html["BlueXP自動化ドキュメント"^] を参照してください。
+
+NTP サーバは、 CIFS サーバを作成するときにのみ設定できます。CIFS サーバを作成したあとで設定することはできません。 
 |===
 . * 使用状況プロファイル、ディスクタイプ、階層化ポリシー * ：必要に応じて、 Storage Efficiency 機能を有効にするかどうかを選択し、ボリューム階層化ポリシーを編集します。
 +

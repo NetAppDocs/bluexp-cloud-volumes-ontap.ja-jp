@@ -106,7 +106,7 @@ Azure Premium ストレージのパフォーマンスは、ディスクサイズ
 link:reference-default-configs.html#azure-single-node["Azure で、 Cloud Volumes ONTAP システムデータのデフォルトディスクを表示します"]。
 
 
-TIP: コネクタにはシステムディスクも必要です。 https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-connector-default-config.html["コネクタのデフォルト設定に関する詳細を表示します"^]。
+TIP: コネクタにはシステムディスクも必要です。 https://docs.netapp.com/us-en/bluexp-setup-admin/reference-connector-default-config.html["コネクタのデフォルト設定に関する詳細を表示します"^]。
 
 
 
