@@ -35,6 +35,9 @@ TIP: テイクオーバーを開始してギブバックを待機することで
 
 
 
+.参照
+AWSでサポートされるインスタンスタイプの一覧については、を参照してください link:https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-configs-aws.html#supported-ec2-compute["サポートされているEC2インスタンス"^]。
+
 .手順
 . [Canvas]ページで、作業環境を選択します。
 . [Overview]タブで、[Features]パネルをクリックし、*[Instance type]*の横にある鉛筆アイコンをクリックします。
