@@ -3845,7 +3845,6 @@
   <block id="86f463a1f0f0879749d1274dc94305d9" category="paragraph-title">重要事項</block>
   <block id="fdee261787c8d28a1d5af5c07b8580d6" category="list-text">ONTAP 9.9.2.1P7から、NVRAMおよびコアディスクに対して、BlueXPはディスク暗号化セットを使用します。これにより、管理対象ディスクで暗号化キーを管理できるようになります。下位バージョンでは、顧客管理キーの代わりにMicrosoft管理キーが使用されます。</block>
   <block id="d01b00b7df0dd6620e8ab49fb88f67b9" category="list-text">* Azure Disk Encryption for Volume Encryption *（シングルノードシステムの場合、または複数のゾーンのHAペアの場合）</block>
-  <block id="6337ff9e523cd4d0c21d00ce582cb8ca" category="admonition">権限は、単一ゾーンのHAペアには必要ありません。</block>
   <block id="d1432d772b2382ef2395e1eed551d5bb" category="paragraph-title">必要なGoogle Cloud権限</block>
   <block id="675d38d552c49bbf67606b2c5f1d5bed" category="section-title">Flash Cacheとは</block>
   <block id="78d0efd6b2c71cba47286de0ff16747c" category="paragraph-title"><block ref="58f667aaf05f87159670e12bd9bc076b" category="inline-image-macro-rx" type="image"></block> コネクタを作成します</block>
@@ -4942,4 +4941,32 @@ NetApp （ BYOL ）からライセンスを直接購入した場合、 AWS サ�
   <block id="9eecbfaf12c4b441b4b80b15e69b1763" category="paragraph"><block ref="861512b606f6337e516b8d3562c115c3" category="inline-link-macro-rx"></block>。</block>
   <block id="ce8df63e83de2ff4c9315aacad840c85" category="inline-link-macro">サポートされているEC2インスタンス</block>
   <block id="eb8249aa4fe7f904487ee8ca24dce280" category="paragraph">AWSでサポートされるインスタンスタイプの一覧については、を参照してください <block ref="ab5d2be79e0f4831293646ade5590437" category="inline-link-macro-rx"></block>。</block>
+  <block id="21d684c5497d7c44f38249fb9317e2ff" category="section-title">ユーザーが割り当てた管理IDを作成します</block>
+  <block id="c1d9d82ae4f42fc1db168e7b745f9697" category="paragraph">ユーザーが割り当てた管理IDと呼ばれるリソースを作成することもできます。これにより、Cloud Volumes ONTAP作業環境の作成時にストレージアカウントを暗号化できます。キーボールトを作成してキーを生成する前に、このリソースを作成することをお勧めします。</block>
+  <block id="2da2bdad0a1c89d70cb7a7586bf14758" category="paragraph">リソースのIDは次のとおりです。<block ref="0169e4e7c078e2230c21c551eaf35e56" prefix=" " category="inline-code"></block>。</block>
+  <block id="2f37b99340ba454bd7f13c34ebaf9799" category="list-text">Azureで、Azureサービスに移動し、* Managed Identities *を選択します。</block>
+  <block id="f2a42a68e067e481d094b018459ef895" category="list-text">[ 作成（ Create ） ] をクリックします。</block>
+  <block id="0de11488ec479f7728a12eaa20900087" category="list-text">次の詳細を入力します。</block>
+  <block id="eb6b5e1059f0c14240e0b29450c64244" category="list-text">*サブスクリプション*:サブスクリプションを選択します。コネクタサブスクリプションと同じサブスクリプションを選択することをお勧めします。</block>
+  <block id="10a805425ce15433762da2005f065657" category="list-text">*リソースグループ*：既存のリソースグループを使用するか、新しいリソースグループを作成します。</block>
+  <block id="da2433e2c4da1ae4d4ccf813bec559d8" category="list-text">*リージョン*：必要に応じて、コネクタと同じリージョンを選択します。</block>
+  <block id="5b75c82ea3a972e4af28cf4cebb17b30" category="list-text">*名前*:リソースの名前を入力します。</block>
+  <block id="a5224fbb5f2e884564b316411dcf1c8b" category="list-text">必要に応じて、タグを追加します。</block>
+  <block id="8a719e3e1b73b371d427de036115d5ca" category="inline-xref">ユーザーが割り当てた管理IDを作成しました</block>
+  <block id="6290500d5abf30b274cc1c7ddf30e546" category="paragraph">あなたの場合 <block ref="33573eb5764d0fad6438d3a347eee31f" category="inline-xref-macro-rx"></block>、キーヴォールトの作成時に、キーヴォールトのアクセスポリシーも作成する必要があります。</block>
+  <block id="4fe37dc4f545dffb56459397b5344d4c" category="list-text">ユーザが割り当てた管理IDを作成した場合は、次のオプションを有効にする必要があります。</block>
+  <block id="7761893631ec0e57ca5b1847392a89d1" category="list-text">*バックアップアクセスポリシー*</block>
+  <block id="6b549cac54fb4417d571d2ff5fe2226a" category="list-text">バックアップアクセスポリシーを選択した場合は、[作成]をクリックしてキーバックアップのアクセスポリシーを作成します。そうでない場合は、手順3に進みます。</block>
+  <block id="05d7a493e761863b43bc21c5b24707a8" category="list-text">次の権限を選択します。</block>
+  <block id="b5eda0a74558a342cf659187f06f746f" category="list-text">取得</block>
+  <block id="10ae9fc7d453b0dd525d0edf2ede7961" category="list-text">リスト</block>
+  <block id="9a2d8ce3ffdcdf2123bddd94d79ef200" category="list-text">復号化します</block>
+  <block id="53c82eba31f6d416f331de9162ebe997" category="list-text">暗号化</block>
+  <block id="64d6d5cd6bec2e7026a301304363a0f2" category="list-text">キーのラップを解除します</block>
+  <block id="2733a028e38aa84f7ea84735ac7988a6" category="list-text">ラップキー</block>
+  <block id="e8418d1d706cd73548f9f16f1d55ad6e" category="list-text">検証</block>
+  <block id="04b29480233f4def5c875875b6bdc3b1" category="list-text">サインだ</block>
+  <block id="dfbbb3ca890c5e816afc33a0f5d49ec2" category="list-text">ユーザーが割り当てた管理ID（リソース）をプリンシパルとして選択します。</block>
+  <block id="0882685275009e45f6167bce4081e668" category="list-text">アクセスポリシーを確認して作成します。</block>
+  <block id="1f8370f663ec71e8fac7dc386794543c" category="admonition">を含めます<block ref="d740baa07e4af19d0de1f45650cf4bc0" prefix=" " category="inline-code"></block> フィールド：ストレージアカウントの暗号化に使用するリソースを作成した場合。</block>
 </blocks>

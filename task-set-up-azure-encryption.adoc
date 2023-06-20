@@ -76,9 +76,34 @@ Azure HAシングルアベイラビリティゾーン::
 
 
 
+== ユーザーが割り当てた管理IDを作成します
+
+ユーザーが割り当てた管理IDと呼ばれるリソースを作成することもできます。これにより、Cloud Volumes ONTAP作業環境の作成時にストレージアカウントを暗号化できます。キーボールトを作成してキーを生成する前に、このリソースを作成することをお勧めします。
+
+リソースのIDは次のとおりです。 `userassignedidentity`。
+
+.手順
+. Azureで、Azureサービスに移動し、* Managed Identities *を選択します。
+. [ 作成（ Create ） ] をクリックします。
+. 次の詳細を入力します。
++
+** *サブスクリプション*:サブスクリプションを選択します。コネクタサブスクリプションと同じサブスクリプションを選択することをお勧めします。
+** *リソースグループ*：既存のリソースグループを使用するか、新しいリソースグループを作成します。
+** *リージョン*：必要に応じて、コネクタと同じリージョンを選択します。
+** *名前*:リソースの名前を入力します。
+
+
+. 必要に応じて、タグを追加します。
+. [ 作成（ Create ） ] をクリックします。
+
+
+
+
 == キーボールトを作成し、キーを生成します
 
 キーヴォールトは、 Cloud Volumes ONTAP システムを作成するときと同じ Azure サブスクリプションとリージョンに配置する必要があります。
+
+あなたの場合 <<ユーザーが割り当てた管理IDを作成します,ユーザーが割り当てた管理IDを作成しました>>、キーヴォールトの作成時に、キーヴォールトのアクセスポリシーも作成する必要があります。
 
 .手順
 . https://docs.microsoft.com/en-us/azure/key-vault/general/quick-create-portal["Azure サブスクリプションでキーヴォールトを作成します"^]。
@@ -94,6 +119,29 @@ Azure HAシングルアベイラビリティゾーン::
 *** * Azure Disk Encryption for Volume Encryption *（シングルノードシステムの場合、または複数のゾーンのHAペアの場合）
 
 
+** ユーザが割り当てた管理IDを作成した場合は、次のオプションを有効にする必要があります。
++
+*** *バックアップアクセスポリシー*
+
+
+
+
+. バックアップアクセスポリシーを選択した場合は、[作成]をクリックしてキーバックアップのアクセスポリシーを作成します。そうでない場合は、手順3に進みます。
++
+.. 次の権限を選択します。
++
+*** 取得
+*** リスト
+*** 復号化します
+*** 暗号化
+*** キーのラップを解除します
+*** ラップキー
+*** 検証
+*** サインだ
+
+
+.. ユーザーが割り当てた管理ID（リソース）をプリンシパルとして選択します。
+.. アクセスポリシーを確認して作成します。
 
 
 . https://docs.microsoft.com/en-us/azure/key-vault/keys/quick-create-portal#add-a-key-to-key-vault["キーボールトでキーを生成します"^]。
@@ -118,18 +166,15 @@ Azure HAシングルアベイラビリティゾーン::
 
 [source, json]
 ----
-"Microsoft.Compute/diskEncryptionSets/read"
+"Microsoft.Compute/diskEncryptionSets/read",
 "Microsoft.Compute/diskEncryptionSets/write",
 "Microsoft.Compute/diskEncryptionSets/delete"
 "Microsoft.KeyVault/vaults/deploy/action",
 "Microsoft.KeyVault/vaults/read",
-"Microsoft.KeyVault/vaults/accessPolicies/write"
+"Microsoft.KeyVault/vaults/accessPolicies/write",
 "Microsoft.ManagedIdentity/userAssignedIdentities/assign/action"
 ----
 https://docs.netapp.com/us-en/bluexp-setup-admin/reference-permissions-azure.html["権限の最新のリストを表示します"^]
-
-
-NOTE: 権限は、単一ゾーンのHAペアには必要ありません。
 
 .手順
 . 次のBlueXP API呼び出しを使用して、Azureサブスクリプション内の主要なボルトのリストを取得します。
@@ -172,10 +217,13 @@ https://docs.netapp.com/us-en/bluexp-automation/cm/api_ref_resources.html#azure-
 ----
 "azureEncryptionParameters": {
               "key": "keyName",
-              "vaultName": "vaultName",
-              "userAssignedIdentity": " userAssignedIdentityId", [Optional]***
+              "vaultName": "vaultName"
 }
 ----
++
+
+NOTE: を含めます `"userAssignedIdentity": " userAssignedIdentityId"` フィールド：ストレージアカウントの暗号化に使用するリソースを作成した場合。
+
 +
 https://docs.netapp.com/us-en/bluexp-automation/cm/api_ref_resources.html#azure-haworking-environments["この API 呼び出しの詳細を確認してください"^]。
 
@@ -191,10 +239,13 @@ https://docs.netapp.com/us-en/bluexp-automation/cm/api_ref_resources.html#azure-
 ----
 "azureEncryptionParameters": {
               "key": "keyName",
-              "vaultName": "vaultName",
-              "userAssignedIdentity": " userAssignedIdentityId", [Optional]***
+              "vaultName": "vaultName"
 }
 ----
++
+
+NOTE: を含めます `"userAssignedIdentity": " userAssignedIdentityId"` フィールド：ストレージアカウントの暗号化に使用するリソースを作成した場合。
+
 +
 https://docs.netapp.com/us-en/bluexp-automation/cm/api_ref_resources.html#azure-vsaworking-environments["この API 呼び出しの詳細を確認してください"^]。
 
