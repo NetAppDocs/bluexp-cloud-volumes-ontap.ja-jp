@@ -20,6 +20,28 @@ BlueXPのCloud Volumes ONTAP Managementの新機能をご紹介します。
 
 
 
+== 2023年7月2日
+
+コネクタの3.9.31リリースでは、次の変更が導入されました。
+
+
+
+=== AzureでのHAマルチアベイラビリティゾーン環境のサポート
+
+Azureの東日本および韓国中部では、Cloud Volumes ONTAP 9.12.1 GA以降でHAマルチアベイラビリティゾーンの導入がサポートされるようになりました。
+
+複数のアベイラビリティゾーンをサポートするすべてのリージョンのリストについては、を参照してください https://bluexp.netapp.com/cloud-volumes-global-regions["Azureのグローバルリージョンマップ"^]。
+
+
+
+=== 自律型ランサムウェア対策のサポート
+
+Cloud Volumes ONTAPでAutonomous Ransomware Protection（ARP）がサポートされるようになりました。ARPサポートは、Cloud Volumes ONTAPバージョン9.12.1以降で使用できます。
+
+Cloud Volumes ONTAPを使用したARPの詳細については、を参照してください https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-protecting-ransomware.html#autonomous-ransomware-protection["自律的なランサムウェア防御"]。
+
+
+
 == 2023年6月26日
 
 コネクタの3.9.30リリースでは、次の変更が加えられました。

@@ -285,7 +285,7 @@ https://docs.netapp.com/us-en/bluexp-setup-admin/concept-netapp-accounts.html["�
 
 まだボリュームをプロビジョニングしていない場合は、最小料金は適用されません。
 
-4TiBの最小容量チャージは、セカンダリ（データ保護）ボリュームのみを含むStorage VMには適用されません。たとえば、1TiBのセカンダリデータが格納されたStorage VMがある場合、その1TiBのデータに対してのみ課金されます。
+Essentialsパッケージの場合、4TiBの最小容量料金は、セカンダリ（データ保護）ボリュームのみを含むStorage VMには適用されません。たとえば、1TiBのセカンダリデータが格納されたStorage VMがある場合、その1TiBのデータに対してのみ課金されます。Essentials以外のパッケージタイプ（Optimized、Professional、Edge Cache）では、ボリュームタイプに関係なく、最小容量4TiBが適用されます。
 
 
 
