@@ -1486,7 +1486,6 @@
   <block id="68c43e2b96fbdbfa40796f17526ce49b" category="list-text"><block ref="6cb773c19d321df01c24599ee993e239" category="inline-xref-macro-rx"></block></block>
   <block id="f509056e5113d375c99bca630ad36b66" category="section-title">ダウンタイムを計画</block>
   <block id="13ab03e6ad3ee2215bec95a4c0f024e2" category="paragraph">シングルノードシステムをアップグレードする場合は、アップグレードプロセスによって、 I/O が中断される最長 25 分間システムがオフラインになります。</block>
-  <block id="00795e3f043d0bab791590ffc0257204" category="paragraph">HA ペアのアップグレードは無停止で、 I/O が中断されません。無停止アップグレードでは、各ノードが連携してアップグレードされ、クライアントへの I/O の提供が継続されます。</block>
   <block id="534c7f5fb857a948ecc7186949e8487b" category="section-title">自動ギブバックが有効になっていることを確認します</block>
   <block id="9119de3f1b6e3cbe55216fa59da529bf" category="section-title">SnapMirror 転送を一時停止</block>
   <block id="a502184baec20af3276eaf812b0bc5e9" category="paragraph">Cloud Volumes ONTAP システムにアクティブな SnapMirror 関係がある場合は、 Cloud Volumes ONTAP ソフトウェアを更新する前に転送を一時停止することを推奨します。転送を一時停止すると、 SnapMirror の障害を防ぐことができます。デスティネーションシステムからの転送を一時停止する必要があります。</block>
@@ -5000,4 +4999,7 @@ NetApp （ BYOL ）からライセンスを直接購入した場合、 AWS サ�
   <block id="fa0127eadcc515624ef23babde9aead2" category="paragraph">アドオンライセンスを購入してデジタルウォレットに追加すると、Cloud Volumes ONTAPを使用してボリューム単位でARPを有効にできます。ボリュームのARPの設定は、ONTAP System ManagerとONTAP CLIを使用して実行します。ONTAP System ManagerおよびCLIでARPを有効にする方法の詳細については、を参照してください<block ref="4379b61ba712146f3962583303024b3d" category="inline-link-rx"></block>。</block>
   <block id="a35eb7b32c61adf984cdcc0cc1594b1c" category="inline-image-macro">スクリーンショットは、Autonomous Ransomware Protectionのアドオンライセンスを示しています。</block>
   <block id="97a79a643f303c97f7df9ccd26c34e5e" category="paragraph"><block ref="97a79a643f303c97f7df9ccd26c34e5e" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="59e727e0c151e53fa5beabd59871cb88" category="paragraph">多くの場合、HAペアのアップグレードは無停止で実行され、I/Oが中断されることはありません。無停止アップグレードでは、各ノードが連携してアップグレードされ、クライアントへの I/O の提供が継続されます。</block>
+  <block id="67e0d115b5c2df9254836fd8f762d3dc" category="inline-link">ONTAPのドキュメントを参照</block>
+  <block id="ff0dae83f1884b2852a33110d07283d1" category="paragraph">セッション指向プロトコルは、アップグレードの実行中に特定領域のクライアントとアプリケーションに原因が悪影響を及ぼす可能性があります。詳細については、<block ref="69d6ddda693aaf09f72544089a10fab3" category="inline-link-rx"></block></block>
 </blocks>
