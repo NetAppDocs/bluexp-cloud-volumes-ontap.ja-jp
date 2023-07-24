@@ -54,6 +54,8 @@ image:screenshot_ransomware_protection.gif["作業環境内から利用できる
 
 Cloud Volumes ONTAPは、Autonomous Ransomware Protection（ARP）機能をサポートしています。この機能は、ワークロードを分析し、ランサムウェア攻撃の可能性がある異常なアクティビティをプロアクティブに検出して警告します。
 
-ARP機能は、ノードベースと容量ベースの両方のライセンスモデルで、BYOLライセンス（1年、2年、3年契約）でのみ使用できます。Cloud Volumes ONTAPのARP機能で使用する新しいライセンスを購入するには、NetAppの営業担当者にお問い合わせください。
+ARP機能は、ノードベースと容量ベースの両方のライセンスモデルで、BYOLライセンス（1年、2年、3年契約）でのみ使用できます。Cloud Volumes ONTAPのARP機能で使用する新しいアドオンライセンスを別途購入するには、NetAppの営業担当者にお問い合わせください。
 
-ライセンスを購入してデジタルウォレットに追加すると、Cloud Volumes ONTAPを使用してボリューム単位でARPを有効にできます。ボリュームのARPの設定は、ONTAP System ManagerとONTAP CLIを使用して実行します。ONTAP System ManagerおよびCLIでARPを有効にする方法の詳細については、を参照してください https://docs.netapp.com/us-en/ontap/anti-ransomware/enable-task.html["自動ランサムウェア対策を有効化"^]。
+アドオンライセンスを購入してデジタルウォレットに追加すると、Cloud Volumes ONTAPを使用してボリューム単位でARPを有効にできます。ボリュームのARPの設定は、ONTAP System ManagerとONTAP CLIを使用して実行します。ONTAP System ManagerおよびCLIでARPを有効にする方法の詳細については、を参照してください https://docs.netapp.com/us-en/ontap/anti-ransomware/enable-task.html["自動ランサムウェア対策を有効化"^]。
+
+image:screenshot_arp.png["スクリーンショットは、Autonomous Ransomware Protectionのアドオンライセンスを示しています。"]

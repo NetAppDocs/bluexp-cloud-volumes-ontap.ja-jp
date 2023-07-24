@@ -4990,12 +4990,14 @@ NetApp （ BYOL ）からライセンスを直接購入した場合、 AWS サ�
   <block id="533c17bbfdfb297420db9af0908070d6" category="inline-link">自律的なランサムウェア防御</block>
   <block id="ca401b5672c0ad2688c93bc7bc20d2f4" category="paragraph">Cloud Volumes ONTAPを使用したARPの詳細については、を参照してください<block ref="9a5c0a514fb4b4b0c5abdde049600542" category="inline-link-rx"></block>。</block>
   <block id="6f7a609c476697f17ecdfbfe367e39ad" category="paragraph">Cloud Volumes ONTAPは、Autonomous Ransomware Protection（ARP）機能をサポートしています。この機能は、ワークロードを分析し、ランサムウェア攻撃の可能性がある異常なアクティビティをプロアクティブに検出して警告します。</block>
-  <block id="75ece8e655ff469f6f78ae805a30c6ad" category="paragraph">ARP機能は、ノードベースと容量ベースの両方のライセンスモデルで、BYOLライセンス（1年、2年、3年契約）でのみ使用できます。Cloud Volumes ONTAPのARP機能で使用する新しいライセンスを購入するには、NetAppの営業担当者にお問い合わせください。</block>
   <block id="e22c3a8f0786d359fea7cca144bbee1b" category="inline-link">自動ランサムウェア対策を有効化</block>
-  <block id="f4f1116cfaa769b8eb002623deca5f2e" category="paragraph">ライセンスを購入してデジタルウォレットに追加すると、Cloud Volumes ONTAPを使用してボリューム単位でARPを有効にできます。ボリュームのARPの設定は、ONTAP System ManagerとONTAP CLIを使用して実行します。ONTAP System ManagerおよびCLIでARPを有効にする方法の詳細については、を参照してください<block ref="4379b61ba712146f3962583303024b3d" category="inline-link-rx"></block>。</block>
   <block id="46d7a6dd7db3af97caa5603b84f76cc1" category="paragraph">WORMのライセンスは、従量課金制または年間契約の条件でのみ利用できます。クラウドプロバイダのマーケットプレイスから購入できます。WORMは、ノードベースと容量ベースの両方のライセンスモデルをサポートしています。</block>
   <block id="66ab7e49c11a830935ab2c9b0bf49e5e" category="admonition">Cloud Volumes ONTAPのWORMストレージにはBYOLライセンスは使用できません。</block>
   <block id="9216a2741f7e54826d99a0fcfc0c7c58" category="section-title">WORMファイルを削除しています</block>
   <block id="728c208823318f76bc30851f92119221" category="paragraph">privileged delete機能を使用して、保持期間中にWORMファイルを削除できます。</block>
   <block id="44c48c2759b23de55aafe43a43856a08" category="paragraph">手順については、を参照してください<block ref="03bc56e40fb58df28e53112c02ca2ae1" category="inline-link-rx"></block></block>
+  <block id="e220f1ef839bc3256ee110a9a5be5c61" category="paragraph">ARP機能は、ノードベースと容量ベースの両方のライセンスモデルで、BYOLライセンス（1年、2年、3年契約）でのみ使用できます。Cloud Volumes ONTAPのARP機能で使用する新しいアドオンライセンスを別途購入するには、NetAppの営業担当者にお問い合わせください。</block>
+  <block id="fa0127eadcc515624ef23babde9aead2" category="paragraph">アドオンライセンスを購入してデジタルウォレットに追加すると、Cloud Volumes ONTAPを使用してボリューム単位でARPを有効にできます。ボリュームのARPの設定は、ONTAP System ManagerとONTAP CLIを使用して実行します。ONTAP System ManagerおよびCLIでARPを有効にする方法の詳細については、を参照してください<block ref="4379b61ba712146f3962583303024b3d" category="inline-link-rx"></block>。</block>
+  <block id="a35eb7b32c61adf984cdcc0cc1594b1c" category="inline-image-macro">スクリーンショットは、Autonomous Ransomware Protectionのアドオンライセンスを示しています。</block>
+  <block id="97a79a643f303c97f7df9ccd26c34e5e" category="paragraph"><block ref="97a79a643f303c97f7df9ccd26c34e5e" category="inline-image-macro-rx" type="image"></block></block>
 </blocks>
