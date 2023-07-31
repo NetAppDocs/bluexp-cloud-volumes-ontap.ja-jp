@@ -154,11 +154,20 @@ NOTE: 選択したバージョンで新しいリリース候補、一般提供�
 +
 ディスクの種類とサイズの選択については、を参照してください link:task-planning-your-config-gcp.html#sizing-your-system-in-gcp["Google Cloudでのシステムのサイジング"]。
 
-. *書き込み速度とWORM *：
+. * Flash Cache、書き込み速度、WORM *：
 +
+.. 必要に応じて、「Flash Cache」*を有効にします。
++
+
+NOTE: Cloud Volumes ONTAP 9.13.1以降では、n2-standard-16、n2-standard-32、n2-standard-48、およびn2-standard-64インスタンスタイプで_Flash Cache_が サポートされます。導入後にFlash Cacheを無効にすることはできません。
+
 .. 必要に応じて、「標準」または「高速」の書き込み速度を選択します。
 +
 link:concept-write-speed.html["書き込み速度の詳細については、こちらをご覧ください。"]。
+
++
+
+NOTE: 「* High * write speed」オプションを使用すると、高速な書き込み速度と最大伝送ユニット（MTU）8、896バイトを使用できます。また、MTUが8、896の場合は、導入環境でVPC-1、VPC-2、およびVPC-3を選択する必要があります。VPC-1、VPC-2、およびVPC-3の詳細については、を参照してください https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/reference-networking-gcp.html#requirements-for-the-connector["VPC -1、VPC -2、およびVPC -3のルール"]。
 
 .. 必要に応じて、Write Once、Read Many（WORM）ストレージをアクティブにします。
 +
@@ -386,15 +395,20 @@ NOTE: 選択したバージョンで新しいリリース候補、一般提供�
 +
 ディスクの種類とサイズの選択については、を参照してください link:task-planning-your-config-gcp.html#sizing-your-system-in-gcp["Google Cloudでのシステムのサイジング"]。
 
-. *書き込み速度とWORM *：
+. * Flash Cache、書き込み速度、WORM *：
 +
+.. 必要に応じて、「Flash Cache」*を有効にします。
++
+
+NOTE: Cloud Volumes ONTAP 9.13.1以降では、n2-standard-16、n2-standard-32、n2-standard-48、およびn2-standard-64インスタンスタイプで_Flash Cache_が サポートされます。導入後にFlash Cacheを無効にすることはできません。
+
 .. 必要に応じて、「標準」または「高速」の書き込み速度を選択します。
 +
 link:concept-write-speed.html["書き込み速度の詳細については、こちらをご覧ください。"]。
 
 +
 
-NOTE: Flash Cache_、高速の書き込み速度、8、896バイトの高いMaximum Transmission Unit（MTU；最大転送単位）は、インスタンスタイプn2-standard-16、n2-standard-32、n2-standard-48、n2-standard-64で* High * write speedオプションを使用して使用できます。また、MTUが8、896の場合は、導入環境でVPC-1、VPC-2、およびVPC-3を選択する必要があります。Flash Cache_、高速の書き込み速度、MTU 8、896は機能に依存し、設定したインスタンス内で個別に無効にすることはできません。VPC-1、VPC-2、およびVPC-3の詳細については、を参照してください https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/reference-networking-gcp.html#requirements-for-the-connector["VPC -1、VPC -2、およびVPC -3のルール"]。
+NOTE: インスタンスタイプn2-standard-16、n2-standard-32、n2-standard-48、およびn2-standard-64では、* High * write speedオプションを使用して、高速の書き込み速度とより高いMaximum Transmission Unit（MTU；最大伝送ユニット）8、896バイトを使用できます。また、MTUが8、896の場合は、導入環境でVPC-1、VPC-2、およびVPC-3を選択する必要があります。高速の書き込み速度とMTU 8、896は機能に依存し、設定されたインスタンス内で個別に無効にすることはできません。VPC-1、VPC-2、およびVPC-3の詳細については、を参照してください https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/reference-networking-gcp.html#requirements-for-the-connector["VPC -1、VPC -2、およびVPC -3のルール"]。
 
 .. 必要に応じて、Write Once、Read Many（WORM）ストレージをアクティブにします。
 +

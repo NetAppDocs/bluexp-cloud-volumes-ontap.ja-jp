@@ -730,7 +730,6 @@
   <block id="d9bdad4a2680b0998135ed5fd46e50e3" category="section-title">Azure Private Link for Cloud Volumes ONTAP の略</block>
   <block id="8f7830ddfb4c3be4f076516f4856d257" category="inline-link">Azure プライベートリンクの詳細については、こちらをご覧ください</block>
   <block id="b159a32bd5237dec9c6c28e81628f28a" category="list-text"><block ref="b159a32bd5237dec9c6c28e81628f28a" category="inline-link-rx"></block></block>
-  <block id="a2f09fc910f91b45be16b1d3da056377" category="list-text"><block ref="a2f09fc910f91b45be16b1d3da056377" category="inline-link-macro-rx"></block></block>
   <block id="a194c96a36b587eade03d569bf173238" category="summary">Cloud Volumes ONTAP システム上で Write Once Read Many （ WORM ）ストレージをアクティブにして、指定した保存期間内にファイルを変更せずに保持できます。クラウド WORM ストレージには SnapLock テクノロジが採用されており、 WORM ファイルはファイルレベルで保護されます。</block>
   <block id="8aca368ccd90320c96e8a69a43545003" category="doc">WORM ストレージ</block>
   <block id="1ee261e062b77615a21251aa4b6da907" category="section-title">WORM ストレージの仕組み</block>
@@ -4585,7 +4584,6 @@
   <block id="baf09c6c43fd26effd8f15e252649384" category="list-text">PAYGOの合計容量</block>
   <block id="76101a2de96d735db21249323914bc6c" category="list-text">* Cloud Volumes ONTAP パッケージの使用状況*：このレポートには、デジタルウォレット内のパッケージカードに記載されている内容が正確に表示されます。最適化されたI/Oパッケージを除く各パッケージについて、次の情報が含まれています。</block>
   <block id="c01bbdbe6721d80a74779e943243486b" category="list-text">* Storage VMの使用量*：このレポートは、Cloud Volumes ONTAP システムとStorage Virtual Machine（SVM）全体で、課金された容量の内訳を表示します。この情報は、デジタルウォレットのどの画面にも表示されません。次の情報が含まれています。</block>
-  <block id="b16bfcaa9b0651f05b8e8894a2aebb31" category="list-text">作業環境ID（UUIDとして表示）</block>
   <block id="c8e2277ecfb1427838c488c217f99466" category="list-text">クラウド</block>
   <block id="4736cd35bf5b3fe63e1b1785fb2aa664" category="list-text">ネットアップアカウントID</block>
   <block id="bbfa34e8af02138b821f784c8962669b" category="list-text">作業環境の設定</block>
@@ -4740,7 +4738,6 @@
 NTP サーバは、 CIFS サーバを作成するときにのみ設定できます。CIFS サーバを作成したあとで設定することはできません。</block>
   <block id="dabcd93c47c69ecf7688c43957686bb7" category="cell">を使用する場合は <block ref="b0493934baf26f9529eb4214b9de6c71" category="inline-link-macro-rx"></block> または<block ref="9a17952183455df523c977039b4fb285" category="inline-link-rx"></block> サービスを利用するには、 * Service Account * スイッチを有効にし、事前定義された Storage Admin ロールが割り当てられたサービスアカウントを選択する必要があります。</block>
   <block id="5355322e972163adefa502954b34d25c" category="paragraph">次のビデオでは、従量課金制のMarketplaceサブスクリプションをGoogle Cloudプロジェクトに関連付ける方法を紹介します。  または、の手順に従って、に登録します<block ref="d9f7e6ae4bc0528c4df5fe3f1a811c3e" category="inline-link-rx"></block> セクション。</block>
-  <block id="5f3d5b090fa9d570cead4124db6f3d69" category="admonition">Flash Cache_、高速の書き込み速度、8、896バイトの高いMaximum Transmission Unit（MTU；最大転送単位）は、インスタンスタイプn2-standard-16、n2-standard-32、n2-standard-48、n2-standard-64で* High * write speedオプションを使用して使用できます。また、MTUが8、896の場合は、導入環境でVPC-1、VPC-2、およびVPC-3を選択する必要があります。Flash Cache_、高速の書き込み速度、MTU 8、896は機能に依存し、設定したインスタンス内で個別に無効にすることはできません。VPC-1、VPC-2、およびVPC-3の詳細については、を参照してください<block ref="3af5ff5ce5ff5a68a4b6fb78e7e7794a" category="inline-link-rx"></block>。</block>
   <block id="200bfa431a059f9cb12bdce777845a7e" category="admonition">コネクタにはシステムディスクも必要です。<block ref="d20acabc118cd0226229fe484509d871" category="inline-link-rx"></block>。</block>
   <block id="f4e04685569a1b4c66fdec145eb96e7a" category="paragraph">を持っていなければ<block ref="2ed11e6bceb8b4ceeff62b64fdec4694" category="inline-link-rx"></block> ただし、アカウント管理者がアカウントを作成する必要があります。<block ref="5b9d2e73755e0f28771296de88f8a39a" category="inline-link-rx"></block></block>
   <block id="3e15a93b8abafd714d90153ac66e4e82" category="paragraph">インターネットアクセスを使用できないサブネットにCloud Volumes ONTAP を導入する場合は、コネクタを手動でインストールし、そのコネクタで実行されているBlueXPユーザインターフェイスにアクセスする必要があります。<block ref="dfc982bbe2dfabd644ac809e4b468ae7" category="inline-link-rx"></block></block>
@@ -5005,4 +5002,32 @@ NetApp （ BYOL ）からライセンスを直接購入した場合、 AWS サ�
   <block id="cdf14d2156528231a5dbd12ad5c95d3f" category="list-text">テーブルに表示される列を変更するには、 <block ref="b574dd55d604ddb721d869a0fc302007" category="inline-image-macro-rx" type="image"></block> 次に、表示する列を選択します。</block>
   <block id="348552521b849746260fe8d296d34c15" category="list-text">既存のケースを管理するには、 <block ref="566c029d89e7d5421080767a37bf443e" category="inline-image-macro-rx" type="image"></block> 使用可能なオプションのいずれかを選択します。</block>
   <block id="bb6d5d351525342dd6b3cf4d15b6f298" category="list-text">*ケースをクローズ*：ケースをクローズする理由の詳細を入力し、*ケースをクローズ*を選択します。</block>
+  <block id="80f98bfa8cbe0d66021e6448047c1b5c" category="list-text">* Flash Cache、書き込み速度、WORM *：</block>
+  <block id="b67eda3e3db596eb1c104f55326e3754" category="list-text">必要に応じて、「Flash Cache」*を有効にします。</block>
+  <block id="5f33cf47c262adc4871d3556fcd8c00f" category="admonition">Cloud Volumes ONTAP 9.13.1以降では、n2-standard-16、n2-standard-32、n2-standard-48、およびn2-standard-64インスタンスタイプで_Flash Cache_が サポートされます。導入後にFlash Cacheを無効にすることはできません。</block>
+  <block id="504ca6d1f97a8949483d99d521a7a500" category="admonition">「* High * write speed」オプションを使用すると、高速な書き込み速度と最大伝送ユニット（MTU）8、896バイトを使用できます。また、MTUが8、896の場合は、導入環境でVPC-1、VPC-2、およびVPC-3を選択する必要があります。VPC-1、VPC-2、およびVPC-3の詳細については、を参照してください<block ref="3af5ff5ce5ff5a68a4b6fb78e7e7794a" category="inline-link-rx"></block>。</block>
+  <block id="e4cfc04d9c35d908faed204900862e80" category="admonition">インスタンスタイプn2-standard-16、n2-standard-32、n2-standard-48、およびn2-standard-64では、* High * write speedオプションを使用して、高速の書き込み速度とより高いMaximum Transmission Unit（MTU；最大伝送ユニット）8、896バイトを使用できます。また、MTUが8、896の場合は、導入環境でVPC-1、VPC-2、およびVPC-3を選択する必要があります。高速の書き込み速度とMTU 8、896は機能に依存し、設定されたインスタンス内で個別に無効にすることはできません。VPC-1、VPC-2、およびVPC-3の詳細については、を参照してください<block ref="3af5ff5ce5ff5a68a4b6fb78e7e7794a" category="inline-link-rx"></block>。</block>
+  <block id="c94e28d852ce517312825c9ed339fc1d" category="section-title">2023年7月30日</block>
+  <block id="4325a8ea9cec7ffa18f3ee74d15997fe" category="paragraph">コネクタの3.9.32リリースでは、次の変更が導入されました。</block>
+  <block id="7741410e87d6144c42e8ca73837c3707" category="section-title">Google CloudでFlash Cacheと高速書き込み速度をサポート</block>
+  <block id="4f90c73c3d52d1bd4329e9961707db5c" category="paragraph">Google Cloud for Cloud Volumes ONTAP 9.13.1以降では、Flash Cacheと高速書き込み速度を個別に有効にすることができます。高速の書き込み速度は、サポートされているすべてのインスタンスタイプで使用できます。Flash Cacheは、次のインスタンスタイプでサポートされています。</block>
+  <block id="79561dd1a4e00a3e05c0d892a01e77bf" category="list-text">N2-STANDARD-16</block>
+  <block id="8f66358785ed8f4d9a356630a4ee515c" category="list-text">N2-STANDARD-32</block>
+  <block id="33031b274bf5d81fbfbd69c1f2ea39a2" category="list-text">N2-STANDARD-48</block>
+  <block id="7c347fcea29ffaea485ee6128a9d7a06" category="list-text">N2-STANDARD-64</block>
+  <block id="0891ba6a1f7a37c01cb3698c692751bc" category="paragraph">これらの機能は、シングルノード環境とハイアベイラビリティペア環境の両方で個別に使用することも、一緒に使用することもできます。</block>
+  <block id="1e69916eaa563a1da0ccff3715e2342d" category="paragraph"><block ref="1e69916eaa563a1da0ccff3715e2342d" category="inline-link-macro-rx"></block></block>
+  <block id="ee4272223579f1299444d14f2d185eb5" category="section-title">使用状況レポートの機能拡張</block>
+  <block id="ec123c8f161f9dfe4383b8db1d8883c4" category="paragraph">使用状況レポートに表示される情報に対するさまざまな改善が利用可能になりました。使用状況レポートの機能拡張は次のとおりです。</block>
+  <block id="4c63050f1e33aa32db50cc80b682e805" category="list-text">TiB単位が列名に追加されました。</block>
+  <block id="fc7fa4a44c2c9442201bf8725e6237b7" category="list-text">シリアル番号の新しい「ノード」フィールドが追加されました。</block>
+  <block id="68d761e353cd9d529997fa49bfe51f92" category="list-text">[Storage VMs]使用状況レポートに新しい[Workload Type]列が追加されました。</block>
+  <block id="26f51c309f5237522421f24bf4df04e0" category="list-text">作業環境の名前がStorage VMとボリュームの使用状況レポートに表示されるようになりました。</block>
+  <block id="fa3abcbc43662c93139af3f3f6421a6f" category="list-text">ボリュームタイプ「file」のラベルが「Primary（Read/Write）」に変更されました。</block>
+  <block id="b259e22e76e27ad956b503941804b4c6" category="list-text">ボリュームタイプ「secondary」のラベルが「Secondary（DP）」に変更されました。</block>
+  <block id="a8c4bf4701c4d99d778be1176c8c8616" category="paragraph">使用状況レポートの詳細については、を参照してください。 <block ref="b9c4007084372a89d5df93919658aa73" category="inline-link-macro-rx"></block>。</block>
+  <block id="c2282365523aa8fbb305c5432e90d5d7" category="paragraph"><block ref="6f9b2ccd962907ef2c43f6fa9517a053" category="inline-link-macro-rx"></block>。</block>
+  <block id="5e167ef814cd8fe02fd01be002ffa235" category="list-text"><block ref="5e167ef814cd8fe02fd01be002ffa235" category="inline-link-macro-rx"></block></block>
+  <block id="4a9ebfe4f0e3302083955176f47a9519" category="list-text">作業環境のIDと名前（UUIDとして表示）</block>
+  <block id="427af860f9733f0c5427a1408195bb2b" category="list-text">ワークロードの種類</block>
 </blocks>
