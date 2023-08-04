@@ -963,13 +963,6 @@
   <block id="2336f58a2a46308c188101459c63fb8b" category="admonition">Cloud Volumes ONTAP をオフにすると、システムを再起動するまで各ブロックの温度が維持されます。たとえば、システムの電源をオフにしたときにブロックの温度が 5 であっても、システムの電源をオンにしたときの温度は 5 のままです。</block>
   <block id="3f0a47d5e00d1740ceca3815cf7bf9b4" category="section-title">データ階層化の設定</block>
   <block id="ac50ed5a6f154224bf044f6797accc8c" category="paragraph">手順およびサポートされている構成の一覧については、を参照してください <block ref="4fbc08218411ffa53189962e6368b39b" category="inline-link-macro-rx"></block>。</block>
-  <block id="0131f05be010a429416bcb6f853b54f6" category="doc">AWS のリソースコストを監視する</block>
-  <block id="de4e4bb6bc85c14c6a8601fd20afdca3" category="inline-link">* WorkingEnvironmentId* タグをアクティブにします</block>
-  <block id="ee0050b628db7de40e04e661d528d91f" category="list-text"><block ref="541edff71c56eae6d36d5f7a463cfcca" category="inline-link-rx"></block>。</block>
-  <block id="9dfa1bfa6d369f6aee8b4ba09ac15642" category="paragraph">ボリュームでコスト削減機能を有効にしている場合、過去数カ月のコストと、ネットアップによる年間削減量が表示されます。</block>
-  <block id="c58c67877e90861ec92c90c10b7ad7f4" category="paragraph">次の図は、コストページの例を示しています。</block>
-  <block id="37423695a33e814084966c17d451584a" category="inline-image-macro">スクリーンショット： Cloud Volumes ONTAP インスタンスのコストを月単位で表示します。</block>
-  <block id="c3d678c4df92877db53bd1f6e44ec524" category="paragraph"><block ref="c3d678c4df92877db53bd1f6e44ec524" category="inline-image-macro-rx" type="image"></block></block>
   <block id="8caaaa4afae93c31b741be21eed669cc" category="inline-link-macro">Cloud Volumes ONTAP ライセンスの詳細については、こちらをご覧ください</block>
   <block id="4edb70089cdbc18de22fa9ead5189bc8" category="section-title">アカウントを承認します</block>
   <block id="daf4ae396784c74ec2cbf002eaaa25f4" category="list-text">「 NetApp Keystone へようこそ」ページが表示された場合は、ページに記載されているアドレスにメールを送信してください。</block>
@@ -2470,15 +2463,11 @@
   <block id="465ec6d5eafa3524c948c99d8bfcd306" category="list-text">ログインページで、ネットアップサポートサイトの登録 E メールアドレスとパスワードを入力して認証プロセスを実行します。</block>
   <block id="e9c44bbfd795a5d63d74c6a77afee70d" category="paragraph">著作権に関する声明、商標、特許などにアクセスできます。</block>
   <block id="6016a2b341113bf496b719905398ecd2" category="section-title">著作権</block>
-  <block id="09e95b77ffe81fe465a83ba99efad5c8" category="paragraph"><block ref="09e95b77ffe81fe465a83ba99efad5c8" category="inline-link-rx"></block></block>
   <block id="126a02652da6de02962cf1b654fd6376" category="section-title">商標</block>
   <block id="c4ce4761e466527d26b3e3d5ed1006fd" category="paragraph">NetApp 、 NetApp のロゴ、および NetApp の商標ページに記載されているマークは、 NetApp, Inc. の商標です。その他の会社名および製品名は、それぞれの所有者の商標である場合があります。</block>
-  <block id="7aa531e9acfe2b98e34d2c92fe9846ff" category="paragraph"><block ref="7aa531e9acfe2b98e34d2c92fe9846ff" category="inline-link-rx"></block></block>
   <block id="be89498d2f8a22ce47c02ba9795fe2af" category="section-title">特許</block>
   <block id="d0b19d36be2c5f16e9aef46c8a452d3d" category="paragraph">ネットアップが所有する特許の最新リストは、次のサイトで入手できます。</block>
-  <block id="d7f1fbcf9ce4e42f705add574d262b2c" category="paragraph"><block ref="d7f1fbcf9ce4e42f705add574d262b2c" category="inline-link-rx"></block></block>
   <block id="56c34c6410dd45c5cec44149ad0ce037" category="section-title">プライバシーポリシー</block>
-  <block id="fc248f74f5e36542f7f5627b8610e9a3" category="paragraph"><block ref="fc248f74f5e36542f7f5627b8610e9a3" category="inline-link-rx"></block></block>
   <block id="c0227cef6f07a8cd2ac72f2945b031aa" category="section-title">オープンソース</block>
   <block id="9b73989307c1975dfa4d5e1581e4afe8" category="paragraph">通知ファイルには、ネットアップソフトウェアで使用されるサードパーティの著作権およびライセンスに関する情報が記載されています。</block>
   <block id="5e4b821a1a82558dead1ef6961e90666" category="paragraph">次のオプションは、 1 日 24 時間、週 7 日間無料でご利用いただけます。</block>
@@ -3199,7 +3188,6 @@
   <block id="3bc8827b2b8b4b47a25fb21994526d52" category="paragraph">高速の書き込み速度が原因でデータ損失が発生した場合、Event Management System（EMS；イベント管理システム）で次の2つのイベントが報告されます。</block>
   <block id="7cd42532925d5e610a9d3694b57652da" category="list-text">Cloud Volumes ONTAP 9.8～9.10.1</block>
   <block id="deae9d093dee266b166a3693474231a9" category="paragraph">この場合、Cloud Volumes ONTAP をブートして、ユーザの手を煩わせることなくデータを提供できるようにする必要があります。</block>
-  <block id="d0cc9b5d406e02bdbb6a1a9848e6af5f" category="inline-link">必要な権限を確認します</block>
   <block id="63e4eec15ba75260d01771611989182b" category="inline-link">AWSの最新のコネクタポリシーを確認します</block>
   <block id="ea03ff7045a27cd5d2c4f32dcc1e5c1a" category="inline-link">Azureの最新のコネクタポリシーを表示します</block>
   <block id="0f0088348e85cdf82b3a00d88879bc4d" category="inline-link">ConnectorのAzure権限を表示します</block>
@@ -3399,12 +3387,6 @@
   <block id="8bb4bde51e0ea674bc0393c5923c7145" category="summary">アグリゲートは、手動で作成することも、ボリュームの作成時にBlueXPに自動で作成させることもできます。アグリゲートを手動で作成することのメリットは、基盤となるディスクサイズを選択して、必要な容量またはパフォーマンスに合わせてアグリゲートをサイジングできることです。</block>
   <block id="0dca6333e3e343d1b25adfe474ce6b88" category="admonition">すべてのディスクとアグリゲートは、BlueXPから直接作成および削除する必要があります。これらのアクションは、別の管理ツールから実行しないでください。これにより、システムの安定性が低下し、将来ディスクを追加できなくなる可能性があります。また、クラウドプロバイダの冗長料金が発生する可能性もあります。</block>
   <block id="5d8d2c55116ea837270739e0c1ee4fb7" category="list-text">左側のナビゲーションメニューから、* Storage &gt; Canvas *を選択します。</block>
-  <block id="421ebcf45d96fab9a6689c09c19a1270" category="summary">BlueXPを使用すると、AWSでのCloud Volumes ONTAP の実行に関連するコストを確認できます。また、ネットアップの機能を使用してストレージコストを削減し、どれだけのコストを節約したかを確認することもできます。</block>
-  <block id="5ff00bdddc3139a1154c3432ef4a3e73" category="paragraph">BlueXPを使用すると、AWSでのCloud Volumes ONTAP の実行に関連するリソースコストを確認できます。また、ネットアップの機能を使用してストレージコストを削減し、どれだけのコストを節約したかを確認することもできます。</block>
-  <block id="947d50be7096c3e69f02ed24b2251b02" category="paragraph">ページを更新すると、BlueXPによってコストが更新されます。最終的なコストの詳細については、 AWS を参照してください。</block>
-  <block id="cd5e8c25d1aad520d5f38aad580ccac4" category="list-text">BlueXPがAWSからコスト情報を取得できることを確認します。</block>
-  <block id="fa1a1d63af1876462d8a89bb1c81da2a" category="list-text">BlueXPに権限を提供するIAMポリシーに、必要な権限が含まれていることを確認します。</block>
-  <block id="5137e20086fbd2e10511433ace3ac154" category="paragraph">AWSのコストを追跡するために、BlueXPはコスト割り当てタグをCloud Volumes ONTAP インスタンスに割り当てます。最初の作業環境を作成したら、 * WorkingEnvironmentId * タグをアクティブ化します。ユーザ定義のタグは、請求とコスト管理のコンソールでアクティブ化するまでは AWS 請求レポートに表示されません。</block>
   <block id="0c29cb137ebcfb10c1b30edf702322ea" category="paragraph">BlueXPでは、ワークロード要件に合わせて事前設定されたパッケージを提供しています。また、独自の構成を作成することもできます。独自の設定を選択する場合は、使用可能なオプションを理解しておく必要があります。 <block ref="786d547ede2f0e723e26aaa12a2cb737" category="inline-link-macro-rx"></block>。</block>
   <block id="9c51d38f64e8c1335e2502c05f118401" category="inline-link">BlueXPからコネクタを作成しています</block>
   <block id="68de98d1358d2928dcaffc946aeaa266" category="inline-link">BlueXPがAWS権限で実行できる機能</block>
@@ -4403,10 +4385,6 @@
   <block id="055fb099b650eb50b3be2ee6aaa5edaa" category="inline-image-macro">スクリーンショット：Cloud Volumes ONTAP システムの[機能]パネルにある[サポート登録]オプションを示しています。</block>
   <block id="683ad9be450b1e4aaffcdcab8b33b0c4" category="paragraph"><block ref="683ad9be450b1e4aaffcdcab8b33b0c4" category="inline-image-macro-rx" type="image"></block></block>
   <block id="4da26c1efc91c7136517504959cc0687" category="paragraph"><block ref="4da26c1efc91c7136517504959cc0687" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="fc2c97abb2fb8e3c019de4850d91d264" category="list-text">[Canvas]ページで、Cloud Volumes ONTAP 作業環境を選択します。</block>
-  <block id="6ba9fc3c166e3d53b824216485ae89ee" category="list-text">メニューアイコンをクリックし、*コストレポートの表示*をクリックします。</block>
-  <block id="e657448bf5ab3960e8e1fc068d83deee" category="inline-image-macro">スクリーンショット：[View Cost Report]メニューオプションを示しています。</block>
-  <block id="4881300462ed76e4f5ebaf3070d5e7d9" category="paragraph"><block ref="4881300462ed76e4f5ebaf3070d5e7d9" category="inline-image-macro-rx" type="image"></block></block>
   <block id="6200e275553fcb2d81141061804129aa" category="list-text">[Canvas]ページで、ランサムウェア対策に設定したシステムの名前をダブルクリックします。</block>
   <block id="68e277e7409c8587f5447ff6e1d07bac" category="list-text">[Overview]タブで、[Features]パネルをクリックし、*[Ransomware Protection]*の横にある鉛筆アイコンをクリックします。</block>
   <block id="e44870bfe38bf3731499fca3154b9528" category="inline-image-macro">作業環境を表示しているときに[Overview]ページの右上にある[Features]パネルに表示される[Ransomware Protection]設定のスクリーンショット。</block>
@@ -4772,7 +4750,6 @@ NTP サーバは、 CIFS サーバを作成するときにのみ設定できま�
   <block id="a83ee83b3849362150d7c85a1be1dc34" category="paragraph"><block ref="4cff09ac69609cc9da2148aed42c5230" category="inline-link-rx"></block>。</block>
   <block id="2ffa17dd74caa90edaf33636b3e374b1" category="paragraph"><block ref="792ba555e1629fb9b0b5e00711256a74" category="inline-link-rx"></block>。</block>
   <block id="7881621c3d4c91216ebe58ee1cdc87e0" category="paragraph"><block ref="52c47b6a301b0fb242044f1b14c5f663" category="inline-link-rx"></block>。</block>
-  <block id="feb88be5e52ce4e986f7ef4bfbaf1288" category="paragraph"><block ref="feb88be5e52ce4e986f7ef4bfbaf1288" category="inline-link-rx"></block></block>
   <block id="3965802fcf5e10ce9592a0a18652be93" category="paragraph">BlueXP設定を変更する前にコネクタを作成する必要があります。<block ref="844cb231ba4a790d05c855a31c806f9e" category="inline-link-rx"></block>。</block>
   <block id="0da43a7e3c6cfdde29516fa9349ef93a" category="paragraph">を持っていなければ<block ref="2ed11e6bceb8b4ceeff62b64fdec4694" category="inline-link-rx"></block> ただし、アカウント管理者がアカウントを作成する必要があります。<block ref="f726618e636b13d16a9541b596528791" category="inline-link-rx"></block></block>
   <block id="170e894372aa99f8bb588bbbfc2f83a2" category="paragraph">Cloud Volumes ONTAP には、 2 つの目的で Google Cloud サービスアカウントが必要です。1 つ目は、を有効にする場合です <block ref="0afefdfec765b284960d752caf97004c" category="inline-link-macro-rx"></block> Google Cloud でコールドデータを低コストのオブジェクトストレージに階層化すること。2 つ目は、を有効にした場合です<block ref="9a17952183455df523c977039b4fb285" category="inline-link-rx"></block> ボリュームを低コストのオブジェクトストレージにバックアップできます。</block>
@@ -5030,4 +5007,12 @@ NetApp （ BYOL ）からライセンスを直接購入した場合、 AWS サ�
   <block id="5e167ef814cd8fe02fd01be002ffa235" category="list-text"><block ref="5e167ef814cd8fe02fd01be002ffa235" category="inline-link-macro-rx"></block></block>
   <block id="4a9ebfe4f0e3302083955176f47a9519" category="list-text">作業環境のIDと名前（UUIDとして表示）</block>
   <block id="427af860f9733f0c5427a1408195bb2b" category="list-text">ワークロードの種類</block>
+  <block id="52009bb7ee17227f566cd26a02caee56" category="inline-link-macro"><block ref="52009bb7ee17227f566cd26a02caee56" category="inline-link-rx"></block></block>
+  <block id="a1a9afcf552a769c282769271829889a" category="paragraph"><block ref="a1a9afcf552a769c282769271829889a" category="inline-link-macro-rx"></block></block>
+  <block id="f99aa604031e5049799e73b5c3748a98" category="inline-link-macro"><block ref="f99aa604031e5049799e73b5c3748a98" category="inline-link-rx"></block></block>
+  <block id="5d545fe5152641e2ebe654e336e520e5" category="paragraph"><block ref="5d545fe5152641e2ebe654e336e520e5" category="inline-link-macro-rx"></block></block>
+  <block id="88e5eabd3917048b6927c42496b98f86" category="inline-link-macro"><block ref="88e5eabd3917048b6927c42496b98f86" category="inline-link-rx"></block></block>
+  <block id="dd38f906b37d412de7d1c1dcf4cbf31c" category="paragraph"><block ref="dd38f906b37d412de7d1c1dcf4cbf31c" category="inline-link-macro-rx"></block></block>
+  <block id="8acb58cbd50ef1b468a020ee0bd351d3" category="inline-link-macro"><block ref="8acb58cbd50ef1b468a020ee0bd351d3" category="inline-link-rx"></block></block>
+  <block id="2352c4e1f4d0024ade0869e00e6243f4" category="paragraph"><block ref="2352c4e1f4d0024ade0869e00e6243f4" category="inline-link-macro-rx"></block></block>
 </blocks>
