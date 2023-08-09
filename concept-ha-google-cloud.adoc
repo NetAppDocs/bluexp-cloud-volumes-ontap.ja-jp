@@ -143,7 +143,7 @@ TIP: HA ペアのノード間でボリュームを移動する場合は、もう
 
 BlueXPの[Manage Volumes]パネルにある_Mount Command_Optionを使用すると、正しいIPアドレスを簡単に特定できます。
 
-image:screenshot_mount_option.png["スクリーンショット：ボリュームを選択したときに使用可能なマウントコマンドを表示します。"]
+image::screenshot_mount_option.png[400だ]
 
 
 

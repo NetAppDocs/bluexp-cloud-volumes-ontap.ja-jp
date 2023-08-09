@@ -90,7 +90,7 @@ Azureの東日本および韓国中部では、Cloud Volumes ONTAP 9.12.1 GA以�
 
 Cloud Volumes ONTAPでAutonomous Ransomware Protection（ARP）がサポートされるようになりました。ARPサポートは、Cloud Volumes ONTAPバージョン9.12.1以降で使用できます。
 
-Cloud Volumes ONTAPを使用したARPの詳細については、を参照してください https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-protecting-ransomware.html#autonomous-ransomware-protection["自律的なランサムウェア防御"]。
+Cloud Volumes ONTAPを使用したARPの詳細については、を参照してください https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-protecting-ransomware.html#autonomous-ransomware-protection["自律的なランサムウェア防御"^]。
 
 
 

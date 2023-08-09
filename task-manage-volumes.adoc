@@ -257,7 +257,7 @@ TIP: アグリゲートの使用容量が90%に達すると、「Action Required
 将来的に容量の問題が発生しないように、アグリゲート内の空きスペースに十分な大きさのボリュームを選択する必要があります。
 
 +
-image:screenshot_aggr_volume_overview.png["スクリーンショット：アグリゲート内のボリュームのリストがアグリゲート情報ダイアログボックスに表示されます。"]
+image::screenshot_aggr_volume_overview.png[aggrボリュームの概要のスクリーンショット]
 
 
 
@@ -335,7 +335,7 @@ image:screenshot_aggr_volume_overview.png["スクリーンショット：アグ�
 .. 目的のアグリゲートタイルに移動し、 （楕円アイコン）>アグリゲートの詳細を表示*。
 .. アグリゲートタイルで、使用可能容量（プロビジョニング済みサイズから使用済みアグリゲート容量を引いた値）を確認します。
 +
-image:screenshot_aggr_capacity.png["スクリーンショット：アグリゲート情報ダイアログボックスで使用可能な合計アグリゲート容量と使用済みアグリゲート容量を表示します。"]
+image::screenshot_aggr_capacity.png[アグリゲートの容量のスクリーンショット]
 
 
 
@@ -380,7 +380,7 @@ Cloud Volumes ONTAP で次のいずれかの条件に該当する場合、ボリ
 
 CLIまたはSystem Managerで作成されたFlexGroup ボリュームは、BlueXPの[Volumes]タブで直接表示できます。作成されたFleGroupボリュームの詳細情報は、FlexVol ボリュームの場合と同じです。BlueXPでは、作成されたFleGroupボリュームの詳細情報を専用の[Volumes]タイルで確認できます。[Volumes]タイルでは、アイコンにカーソルを合わせると各FlexGroup ボリュームグループを特定できます。また、ボリュームリストビューの[Volume Style]列で、FlexGroup ボリュームを特定してソートすることもできます。
 
-image:screenshot_show_flexgroup_vol.png["[Volumes]タイルの下にFlexGroup ボリュームアイコンが配置されたテキストを示すスクリーンショット。"]
+image::screenshot_show_flexgroup_vol.png[FlexGroup volのスクリーンショット]
 
 
 NOTE: 現時点では、BlueXPでは既存のFlexGroup ボリュームのみを表示できます。BlueXPでFlexGroup ボリュームを作成することはできませんが、今後のリリースでサポートする予定です。

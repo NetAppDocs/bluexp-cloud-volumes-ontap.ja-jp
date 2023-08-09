@@ -42,7 +42,7 @@ AWSでサポートされるインスタンスタイプの一覧については�
 . [Canvas]ページで、作業環境を選択します。
 . [Overview]タブで、[Features]パネルをクリックし、*[Instance type]*の横にある鉛筆アイコンをクリックします。
 +
-image:screenshot_features_instance_type.png["作業環境を表示しているときに[Overview]ページの右上にある[Features]パネルに表示される[Instance type]設定を示すスクリーンショット。"]
+image::screenshot_features_instance_type.png[400だ]
 
 +
 .. ノードベースのPAYGOライセンスを使用している場合は、*[ライセンスタイプ]*の横にある鉛筆のアイコンをクリックして、別のライセンスとインスタンスタイプを選択することもできます。

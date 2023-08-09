@@ -29,7 +29,7 @@ https://docs.netapp.com/us-en/bluexp-setup-admin/task-adding-nss-accounts.html["
 . Canvasページで、登録するシステムの名前をダブルクリックします。
 . [概要]タブで、[機能]パネルをクリックし、*[サポート登録]*の横にある鉛筆アイコンをクリックします。
 +
-image:screenshot_features_support_registration_2.png["スクリーンショット：Cloud Volumes ONTAP システムの[機能]パネルにある[サポート登録]オプションを示しています。"]
+image::screenshot_features_support_registration_2.png[400だ]
 
 . ネットアップサポートサイトのアカウントを選択し、 * 登録 * をクリックします。
 

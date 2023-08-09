@@ -152,7 +152,6 @@
   <block id="4df66712f957d539001edc73bbb48742" category="list-text">このタスクでは、 HA ペアの両方のノードの自動シャットダウンをスケジューリングします。</block>
   <block id="a38060fa2aae177f0fbef99ef2923324" category="list-text">スケジュールされたシャットダウンによって Cloud Volumes ONTAP をオフにすると、ブートディスクとルートディスクのスナップショットは作成されません。</block>
   <block id="1f9d590b21cddc0cc992effc141a9be2" category="paragraph">スナップショットは、次のセクションで説明するように、手動シャットダウンを実行した場合にのみ自動的に作成されます。</block>
-  <block id="34e70391062bd14a2cecba6e39595285" category="inline-image-macro">スクリーンショット：自動シャットダウンページをロードするアイコンが表示されます。</block>
   <block id="5f95206b8c2df1268bd8a4454e57f5df" category="list-text">シャットダウンスケジュールを指定します。</block>
   <block id="3a3fb4513da1ae453de12bb3293a3aa1" category="list-text">システムを毎日、平日、週末、またはこれら 3 つのオプションの組み合わせでシャットダウンするかどうかを選択します。</block>
   <block id="063dc598b5df43ce8c2ce8aebd705d40" category="list-text">システムをオフにするタイミングと、オフにする期間を指定します。</block>
@@ -461,7 +460,6 @@
   <block id="5a31c45fe6b6d37f4ceeb5b86c4346da" category="list-text">Action Required メッセージの詳細情報を表示して、容量制限に達したアグリゲートを特定します。</block>
   <block id="34b14acb1a2ab9863c3c5dad4fd43a16" category="paragraph">たとえば、アグリゲート aggr1 の容量が上限に達したとします。</block>
   <block id="d741de259d45adde48602bde8af2fa1e" category="list-text">アグリゲートから移動する 1 つ以上のボリュームを指定します。</block>
-  <block id="44996e2a556779f9e9d262677dc18a32" category="inline-image-macro">スクリーンショット：アグリゲート内のボリュームのリストがアグリゲート情報ダイアログボックスに表示されます。</block>
   <block id="1ac63b40afca7dec0b6be58237e990c5" category="paragraph">将来的に容量の問題が発生しないように、アグリゲート内の空きスペースに十分な大きさのボリュームを選択する必要があります。</block>
   <block id="a64d88ebebbadd18db492923a6de8f40" category="list-text">システムがディスク制限に達していない場合は、ボリュームを同じシステム上の既存のアグリゲートまたは新しいアグリゲートに移動する必要があります。</block>
   <block id="b665b3a7d068d10da4bb1ff6a9eebc76" category="inline-link-macro">ボリュームを別のアグリゲートに移動して、容量の問題を回避します</block>
@@ -487,7 +485,6 @@
   <block id="9b75835d1597be290e865df9d9c03011" category="section-title">容量の問題を回避するためにボリュームを別のアグリゲートに移動します</block>
   <block id="46532ea93f05a647dcfb9dbb7724acf3" category="paragraph">1 つ以上のボリュームを別のアグリゲートに移動して、容量の問題を回避できます。</block>
   <block id="b9caee734c459ea1d440e0f169eb1723" category="list-text">既存のアグリゲートに、移動する必要があるボリュームの使用可能な容量があるかどうかを確認します。</block>
-  <block id="82cf261b628d223daf02ae88b056b424" category="inline-image-macro">スクリーンショット：アグリゲート情報ダイアログボックスで使用可能な合計アグリゲート容量と使用済みアグリゲート容量を表示します。</block>
   <block id="b8bd018e0e8deb966bda4a09610591ac" category="list-text">必要に応じて、既存のアグリゲートにディスクを追加します。</block>
   <block id="3425dbe0168b60aed62d54b2290baad1" category="list-text">追加するディスクの数を選択し、 * 追加 * をクリックします。</block>
   <block id="e272fdd11a7aa99158a093a41c65fdd9" category="list-text">使用可能な容量を持つアグリゲートがない場合は、新しいアグリゲートを作成します。</block>
@@ -1062,7 +1059,6 @@
   <block id="d8072809ae78c7f725f816f0bd8b9543" category="section-title">ストレージへのクライアントアクセス</block>
   <block id="21d971c1fd1bf90d09fc9c3acbf89eef" category="paragraph">クライアントは、ボリュームが存在するノードのデータ IP アドレスを使用して、 NFS ボリュームと CIFS ボリュームにアクセスする必要があります。NAS クライアントがパートナーノードの IP アドレスを使用してボリュームにアクセスする場合、トラフィックは両方のノード間を通過するため、パフォーマンスが低下します。</block>
   <block id="7dc27ef59812147ac25a6539ca8487d1" category="admonition">HA ペアのノード間でボリュームを移動する場合は、もう一方のノードの IP アドレスを使用してボリュームを再マウントする必要があります。そうしないと、パフォーマンスが低下する可能性があります。クライアントが CIFS の NFSv4 リファールまたはフォルダリダイレクションをサポートしている場合は、ボリュームの再マウントを回避するために、 Cloud Volumes ONTAP システムでこれらの機能を有効にできます。詳細については、 ONTAP のマニュアルを参照してください。</block>
-  <block id="d0eb9723d8f743b568ca7af03af706b0" category="inline-image-macro">スクリーンショット：ボリュームを選択したときに使用可能なマウントコマンドを表示します。</block>
   <block id="987e6a12f4054c7d2b4fb12b670fd3e2" category="summary">Cloud Volumes ONTAP がデフォルトでどのように設定されているかを理解すると、システムのセットアップと管理に役立ちます。特に、 ONTAP に精通している場合は、 Cloud Volumes ONTAP のデフォルト設定は ONTAP とは異なるためです。</block>
   <block id="f280b5a5c0eeaf41d31a8a2661b341cb" category="doc">Cloud Volumes ONTAP のデフォルト設定</block>
   <block id="bd87106622bcf823ab94ad8e03ed23db" category="inline-link-macro">Storage VM の管理に関する詳細情報</block>
@@ -4339,8 +4335,6 @@
   <block id="07ddec46aac81bd14d6fc7f0d22ee78d" category="list-text">NAS LIF（e0a）×1または2</block>
   <block id="fa7b604cc90feece6d71e8400213710f" category="list-text">次のパラメータと値を追加してapp.confを編集します。</block>
   <block id="e8c25ea78d67a6ef891f303353422dbd" category="paragraph">[+]<block ref="45bd8c026c5ef22179001445b3bd636a" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="2c75d71bcadfabfa7cf8757cbfdd3d85" category="inline-image-macro">[設定]アイコンの下の[コネクタの設定]オプションのスクリーンショット。</block>
-  <block id="473c33023a339a6b370b4ddd3b34813e" category="paragraph"><block ref="473c33023a339a6b370b4ddd3b34813e" category="inline-image-macro-rx" type="image"></block></block>
   <block id="2e11b0ec6ed47b1e8f7051aaab70da38" category="list-text">アグリゲート容量のしきい値-空きスペース率</block>
   <block id="c707daf76e9202bb2278e4872c7db485" category="list-text">アグリゲート容量のしきい値-データ階層化の空きスペース率</block>
   <block id="93538ad94a332061adf2239e8ac21a4d" category="list-text">[Canvas]ページで、作業環境を選択します。</block>
@@ -4360,8 +4354,6 @@
   <block id="f20c2435bfa2bf017b0a33455e4d252c" category="list-text">ボリュームが含まれていないアグリゲートタイルを選択する[*... （楕円アイコン）&gt;削除*。</block>
   <block id="44f505566cfb44ab274d6dd37da6a48b" category="list-text">Canvasページで、書き込み速度に設定するシステムの名前をダブルクリックします。</block>
   <block id="b9c48f0b7a355bd9b39b3ae2c666ec43" category="list-text">[概要]タブで、[機能]パネルをクリックし、*[書き込み速度]*の横にある鉛筆アイコンをクリックします。</block>
-  <block id="bc3c9695426ff48d40dce0286c7e05f4" category="inline-image-macro">作業環境を表示しているときに[Overview]ページの右上にある[Features]パネルの[Write Speed]設定を示すスクリーンショット。</block>
-  <block id="98dbfe06324c35bb25c949f4b21d581a" category="paragraph"><block ref="98dbfe06324c35bb25c949f4b21d581a" category="inline-image-macro-rx" type="image"></block></block>
   <block id="8e1d6d29fa6bbc00ab6896ec1e677037" category="list-text">[保存]*をクリックし、確認メッセージを確認して*[承認]*をクリックします。</block>
   <block id="38124763ec69515302fcd6a655b0cb92" category="list-text">[Canvas]ページで、Cloud Volumes ONTAP 作業環境の名前をダブルクリックします。</block>
   <block id="67f0f7bdc0b6b3c961c645e5a644b531" category="list-text">BlueXPコンソールの右上にある楕円アイコンをクリックし、*[パスワードの設定]*を選択します。</block>
@@ -4382,15 +4374,10 @@
   <block id="71b669d4d19df676d975ef4911ded7af" category="paragraph"><block ref="71b669d4d19df676d975ef4911ded7af" category="inline-image-macro-rx" type="image"></block></block>
   <block id="a98606dee1787dfd2471d2ef8adeb680" category="list-text">Canvasページで、登録するシステムの名前をダブルクリックします。</block>
   <block id="24901c53838efd4b9981ed8ffd510413" category="list-text">[概要]タブで、[機能]パネルをクリックし、*[サポート登録]*の横にある鉛筆アイコンをクリックします。</block>
-  <block id="055fb099b650eb50b3be2ee6aaa5edaa" category="inline-image-macro">スクリーンショット：Cloud Volumes ONTAP システムの[機能]パネルにある[サポート登録]オプションを示しています。</block>
-  <block id="683ad9be450b1e4aaffcdcab8b33b0c4" category="paragraph"><block ref="683ad9be450b1e4aaffcdcab8b33b0c4" category="inline-image-macro-rx" type="image"></block></block>
   <block id="4da26c1efc91c7136517504959cc0687" category="paragraph"><block ref="4da26c1efc91c7136517504959cc0687" category="inline-image-macro-rx" type="image"></block></block>
   <block id="6200e275553fcb2d81141061804129aa" category="list-text">[Canvas]ページで、ランサムウェア対策に設定したシステムの名前をダブルクリックします。</block>
   <block id="68e277e7409c8587f5447ff6e1d07bac" category="list-text">[Overview]タブで、[Features]パネルをクリックし、*[Ransomware Protection]*の横にある鉛筆アイコンをクリックします。</block>
-  <block id="e44870bfe38bf3731499fca3154b9528" category="inline-image-macro">作業環境を表示しているときに[Overview]ページの右上にある[Features]パネルに表示される[Ransomware Protection]設定のスクリーンショット。</block>
-  <block id="2a39771bd60186d9d0eea3e49bb0d221" category="paragraph"><block ref="2a39771bd60186d9d0eea3e49bb0d221" category="inline-image-macro-rx" type="image"></block></block>
   <block id="d0b1fe5e5e43d6e24cc20f730b8d1742" category="paragraph">BlueXPの[Manage Volumes]パネルにある_Mount Command_Optionを使用すると、正しいIPアドレスを簡単に特定できます。</block>
-  <block id="b717cb7368a7773e8663a0b7444325ad" category="paragraph"><block ref="b717cb7368a7773e8663a0b7444325ad" category="inline-image-macro-rx" type="image"></block></block>
   <block id="36466e75ef3251345a1fc3b957275568" category="list-text">[アグリゲート]タブで、*[アグリゲートの追加]*をクリックし、アグリゲートの詳細を指定します。</block>
   <block id="3c27c0be3b51a96fbeaf21988a5d0da7" category="paragraph">Advanced Allocationページに移動すると、アグリゲートでElastic Volumes機能が有効になっているかどうかを確認できます。次の例では、aggr1でElastic Volumesが有効になっています。</block>
   <block id="da881591358a049c4652b06b1054ccb1" category="inline-image-macro">2つのアグリゲートのスクリーンショット。一方のアグリゲートのフィールドに「Elastic Volumes Enabled」というテキストが表示されています。</block>
@@ -4440,7 +4427,6 @@
   <block id="2142690a2d1ae8bd820983b7911914d5" category="list-text">[Target IQN]*をクリックします。</block>
   <block id="a56a5ae6f53f5f4ccfd018cd42004ea1" category="list-text">[Canvas]ページで、目的の作業環境をダブルクリックします。</block>
   <block id="1db430d5f476ccb7c5abbdfc3d4402d2" category="list-text">[Overview]タブで、[Features]パネルをクリックし、* Scheduled downtime *の横にある鉛筆アイコンをクリックします。</block>
-  <block id="16fe8db807301272754ce201908a4d01" category="paragraph"><block ref="16fe8db807301272754ce201908a4d01" category="inline-image-macro-rx" type="image"></block></block>
   <block id="0e1d67ee86981cf82fb4f5195e170da1" category="paragraph">次の図は、毎週土曜日の午後20時にシステムをシャットダウンするように設定したスケジュールを示しています（午後8時）12時間。BlueXPは毎週月曜日の午前0時にシステムを再起動します</block>
   <block id="3d33a0e91197625fe5c19262b8588a5e" category="inline-image-macro">スクリーンショット：[Schedule downtime]画面を示しています。</block>
   <block id="b7964eed3054006e2dc32e71addc9330" category="paragraph"><block ref="b7964eed3054006e2dc32e71addc9330" category="inline-image-macro-rx" type="image"></block></block>
@@ -4504,16 +4490,11 @@
   <block id="4145a13d965a05b20f37aec1922ef7dd" category="list-text">作業環境で、*[アグリゲート]タブ*をクリックします。</block>
   <block id="7d3d9db5a4178e569561d635871c26ed" category="list-text">目的のアグリゲートタイルに移動し、 （楕円アイコン）&gt;アグリゲートの詳細を表示*。</block>
   <block id="920937d0401827a767850d6598f69cf9" category="list-text">[Aggregate Details]画面の[Overview]タブで、各ボリュームのサイズを確認し、アグリゲートから移動するボリュームを1つ以上選択します。</block>
-  <block id="e992ef205a43832966f09572f1eb3492" category="paragraph"><block ref="e992ef205a43832966f09572f1eb3492" category="inline-image-macro-rx" type="image"></block></block>
   <block id="c6d494ac63d05f0797b17cc4e9b671a5" category="list-text">アグリゲートタイルで、使用可能容量（プロビジョニング済みサイズから使用済みアグリゲート容量を引いた値）を確認します。</block>
-  <block id="448b7e585e92285ee5349bcda1a7acd0" category="paragraph"><block ref="448b7e585e92285ee5349bcda1a7acd0" category="inline-image-macro-rx" type="image"></block></block>
   <block id="8fcffd0e2a621979482d32af8df3fa54" category="list-text">アグリゲートを選択し、*をクリックします。 （楕円アイコン）&gt;[ディスクの追加]*をクリックします。</block>
   <block id="85cbc8c9d17142818868d0deb987b7d4" category="section-title">FlexGroup ボリュームを表示します</block>
   <block id="bfc66c582a5f0744b4549abc59217c8b" category="paragraph">CLIまたはSystem Managerで作成されたFlexGroup ボリュームは、BlueXPの[Volumes]タブで直接表示できます。作成されたFleGroupボリュームの詳細情報は、FlexVol ボリュームの場合と同じです。BlueXPでは、作成されたFleGroupボリュームの詳細情報を専用の[Volumes]タイルで確認できます。[Volumes]タイルでは、アイコンにカーソルを合わせると各FlexGroup ボリュームグループを特定できます。また、ボリュームリストビューの[Volume Style]列で、FlexGroup ボリュームを特定してソートすることもできます。</block>
-  <block id="b732fd66a88d23ecd20ddd54d252bde0" category="paragraph"><block ref="b732fd66a88d23ecd20ddd54d252bde0" category="inline-image-macro-rx" type="image"></block></block>
   <block id="18f38afc08c122a02d1cef0b8f55b13c" category="list-text">[Overview]タブで、[Features]パネルをクリックし、*[Instance type]*の横にある鉛筆アイコンをクリックします。</block>
-  <block id="246617af3cc2b3a4751f4377e63c90d9" category="inline-image-macro">作業環境を表示しているときに[Overview]ページの右上にある[Features]パネルに表示される[Instance type]設定を示すスクリーンショット。</block>
-  <block id="22d199cf6285224598c87a4bf598fec7" category="paragraph"><block ref="22d199cf6285224598c87a4bf598fec7" category="inline-image-macro-rx" type="image"></block></block>
   <block id="e977a40ba12e4cbe82ec5ad1eeca10d3" category="list-text">ノードベースのPAYGOライセンスを使用している場合は、*[ライセンスタイプ]*の横にある鉛筆のアイコンをクリックして、別のライセンスとインスタンスタイプを選択することもできます。</block>
   <block id="dcee8dbc1dce5317d8cfa6588f8f050e" category="list-text">インスタンスタイプを選択し、変更の影響を理解していることを確認するチェックボックスを選択して、*[変更]*をクリックします。</block>
   <block id="942c9249796cf6b78c981ebf15195809" category="list-text"><block ref="942c9249796cf6b78c981ebf15195809" category="inline-link-rx"></block></block>
@@ -4943,7 +4924,6 @@ NetApp （ BYOL ）からライセンスを直接購入した場合、 AWS サ�
   <block id="bdecbec2a6c25b03595e885ec64c0ea0" category="section-title">自律型ランサムウェア対策のサポート</block>
   <block id="ede53fbba4985444af96fca9c3cc6371" category="paragraph">Cloud Volumes ONTAPでAutonomous Ransomware Protection（ARP）がサポートされるようになりました。ARPサポートは、Cloud Volumes ONTAPバージョン9.12.1以降で使用できます。</block>
   <block id="533c17bbfdfb297420db9af0908070d6" category="inline-link">自律的なランサムウェア防御</block>
-  <block id="ca401b5672c0ad2688c93bc7bc20d2f4" category="paragraph">Cloud Volumes ONTAPを使用したARPの詳細については、を参照してください<block ref="9a5c0a514fb4b4b0c5abdde049600542" category="inline-link-rx"></block>。</block>
   <block id="6f7a609c476697f17ecdfbfe367e39ad" category="paragraph">Cloud Volumes ONTAPは、Autonomous Ransomware Protection（ARP）機能をサポートしています。この機能は、ワークロードを分析し、ランサムウェア攻撃の可能性がある異常なアクティビティをプロアクティブに検出して警告します。</block>
   <block id="e22c3a8f0786d359fea7cca144bbee1b" category="inline-link">自動ランサムウェア対策を有効化</block>
   <block id="46d7a6dd7db3af97caa5603b84f76cc1" category="paragraph">WORMのライセンスは、従量課金制または年間契約の条件でのみ利用できます。クラウドプロバイダのマーケットプレイスから購入できます。WORMは、ノードベースと容量ベースの両方のライセンスモデルをサポートしています。</block>
@@ -4952,9 +4932,6 @@ NetApp （ BYOL ）からライセンスを直接購入した場合、 AWS サ�
   <block id="728c208823318f76bc30851f92119221" category="paragraph">privileged delete機能を使用して、保持期間中にWORMファイルを削除できます。</block>
   <block id="44c48c2759b23de55aafe43a43856a08" category="paragraph">手順については、を参照してください<block ref="03bc56e40fb58df28e53112c02ca2ae1" category="inline-link-rx"></block></block>
   <block id="e220f1ef839bc3256ee110a9a5be5c61" category="paragraph">ARP機能は、ノードベースと容量ベースの両方のライセンスモデルで、BYOLライセンス（1年、2年、3年契約）でのみ使用できます。Cloud Volumes ONTAPのARP機能で使用する新しいアドオンライセンスを別途購入するには、NetAppの営業担当者にお問い合わせください。</block>
-  <block id="fa0127eadcc515624ef23babde9aead2" category="paragraph">アドオンライセンスを購入してデジタルウォレットに追加すると、Cloud Volumes ONTAPを使用してボリューム単位でARPを有効にできます。ボリュームのARPの設定は、ONTAP System ManagerとONTAP CLIを使用して実行します。ONTAP System ManagerおよびCLIでARPを有効にする方法の詳細については、を参照してください<block ref="4379b61ba712146f3962583303024b3d" category="inline-link-rx"></block>。</block>
-  <block id="a35eb7b32c61adf984cdcc0cc1594b1c" category="inline-image-macro">スクリーンショットは、Autonomous Ransomware Protectionのアドオンライセンスを示しています。</block>
-  <block id="97a79a643f303c97f7df9ccd26c34e5e" category="paragraph"><block ref="97a79a643f303c97f7df9ccd26c34e5e" category="inline-image-macro-rx" type="image"></block></block>
   <block id="59e727e0c151e53fa5beabd59871cb88" category="paragraph">多くの場合、HAペアのアップグレードは無停止で実行され、I/Oが中断されることはありません。無停止アップグレードでは、各ノードが連携してアップグレードされ、クライアントへの I/O の提供が継続されます。</block>
   <block id="67e0d115b5c2df9254836fd8f762d3dc" category="inline-link">ONTAPのドキュメントを参照</block>
   <block id="ff0dae83f1884b2852a33110d07283d1" category="paragraph">セッション指向プロトコルは、アップグレードの実行中に特定領域のクライアントとアプリケーションに原因が悪影響を及ぼす可能性があります。詳細については、<block ref="69d6ddda693aaf09f72544089a10fab3" category="inline-link-rx"></block></block>
@@ -5015,4 +4992,19 @@ NetApp （ BYOL ）からライセンスを直接購入した場合、 AWS サ�
   <block id="dd38f906b37d412de7d1c1dcf4cbf31c" category="paragraph"><block ref="dd38f906b37d412de7d1c1dcf4cbf31c" category="inline-link-macro-rx"></block></block>
   <block id="8acb58cbd50ef1b468a020ee0bd351d3" category="inline-link-macro"><block ref="8acb58cbd50ef1b468a020ee0bd351d3" category="inline-link-rx"></block></block>
   <block id="2352c4e1f4d0024ade0869e00e6243f4" category="paragraph"><block ref="2352c4e1f4d0024ade0869e00e6243f4" category="inline-link-macro-rx"></block></block>
+  <block id="a996d75e91b5144977f6dd124cd75572" category="image-alt">aggrボリュームの概要のスクリーンショット</block>
+  <block id="e40eb63a3506950ad93ba909dcf25c90" category="image-alt">アグリゲートの容量のスクリーンショット</block>
+  <block id="ca7b4e21c879a84e19f4057cd971879d" category="image-alt">FlexGroup volのスクリーンショット</block>
+  <block id="18d8042386b79e2c279fd162df0205c8" category="image-alt">400だ</block>
+  <block id="b26d26fe2543d5473bc9e47f43ccf1a0" category="image-alt">スクリーンショット設定コネクタボタン</block>
+  <block id="84ad21dcd6ff9e0e4d117b5b3950020e" category="admonition">ライセンスがないと、ライセンスされた機能の使用はサポートされません。</block>
+  <block id="3799dfe1ae4f409b181ad79e377574c6" category="paragraph">ランサムウェア攻撃は、ビジネス時間、リソース、評判を低下させる可能性があります。BlueXPでは、ランサムウェア向けの2つのNetAppソリューションを実装できます。一般的なランサムウェアファイル拡張子からの保護と、自律型ランサムウェア対策（ARP）です。これらのソリューションは、可視化、検出、修復のための効果的なツールを提供します。</block>
+  <block id="78cc5cdbd5abab66548d6b3a595b1c6c" category="section-title">一般的なランサムウェアのファイル拡張子から保護</block>
+  <block id="3e5f671180bf2c0f088f815be54e2cdf" category="paragraph">BlueXPで利用可能なランサムウェア対策設定を使用すると、ONTAP FPolicy機能を利用して、一般的なランサムウェアファイル拡張子タイプから保護できます。</block>
+  <block id="d83738f5ec82db660abbb443f4d3eb21" category="inline-link">ランサムウェア対策設定</block>
+  <block id="6c32dae7ba2780f8dc42d1813f66ea24" category="paragraph">で提供されるファイル拡張子保護とは別に、<block ref="1f479b2258cad80f990e85fbf571e95d" category="inline-link-rx"></block>ARP機能は、ワークロード分析を使用して、検出された「異常なアクティビティ」に基づいて潜在的な攻撃についてユーザに警告します。ランサムウェア対策設定とARP機能の両方を組み合わせて、包括的なランサムウェア対策を行うことができます。</block>
+  <block id="8ba032b0bcbcde63a6545318072ff32b" category="paragraph">アドオンライセンスを購入してデジタルウォレットに追加すると、Cloud Volumes ONTAPを使用してボリューム単位でARPを有効にできます。ボリュームのARPの設定は、ONTAP System ManagerとONTAP CLIを使用して実行します。</block>
+  <block id="dfa314101a62671bea85bd2701b00194" category="paragraph">ONTAP System ManagerおよびCLIでARPを有効にする方法の詳細については、を参照してください<block ref="4379b61ba712146f3962583303024b3d" category="inline-link-rx"></block>。</block>
+  <block id="65b6e49abdf1ec103e12f3c1d363d3d8" category="image-alt">arpのスクリーンショット</block>
+  <block id="4f87e49be20cab28b98c082c672f9032" category="paragraph">Cloud Volumes ONTAPを使用したARPの詳細については、を参照してください<block ref="3ad484b0b391dd26474b87b6bc7f70b6" category="inline-link-rx"></block>。</block>
 </blocks>

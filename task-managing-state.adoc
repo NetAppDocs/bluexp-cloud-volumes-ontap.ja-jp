@@ -38,7 +38,7 @@ Cloud Volumes ONTAP を停止してBlueXPから起動することで、クラウ
 . [Canvas]ページで、目的の作業環境をダブルクリックします。
 . [Overview]タブで、[Features]パネルをクリックし、* Scheduled downtime *の横にある鉛筆アイコンをクリックします。
 +
-image:screenshot_schedule_downtime.png["スクリーンショット：自動シャットダウンページをロードするアイコンが表示されます。"]
+image::screenshot_schedule_downtime.png[400だ]
 
 . シャットダウンスケジュールを指定します。
 +

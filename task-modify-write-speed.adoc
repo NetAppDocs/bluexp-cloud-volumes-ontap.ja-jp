@@ -29,7 +29,7 @@ BlueXPを使用すると、Cloud Volumes ONTAP で通常の書き込み速度ま
 . Canvasページで、書き込み速度に設定するシステムの名前をダブルクリックします。
 . [概要]タブで、[機能]パネルをクリックし、*[書き込み速度]*の横にある鉛筆アイコンをクリックします。
 +
-image:screenshot_features_write_speed.png["作業環境を表示しているときに[Overview]ページの右上にある[Features]パネルの[Write Speed]設定を示すスクリーンショット。"]
+image::screenshot_features_write_speed.png[400だ]
 
 . 「 * Normal * 」または「 * High * 」を選択します。
 +
