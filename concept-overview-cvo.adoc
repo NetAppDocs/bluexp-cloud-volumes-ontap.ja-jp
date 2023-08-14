@@ -34,7 +34,7 @@ Cloud Volumes ONTAP は、業界をリードするネットアップのレプリ
 また、Cloud Volumes ONTAP はBlueXPのバックアップとリカバリと統合することで、クラウドデータの保護と長期アーカイブのためのバックアップとリストアの機能を提供します。
 
 +
-https://docs.netapp.com/us-en/bluexp-backup-restore/concept-backup-to-cloud.html["BlueXPのバックアップとリカバリの詳細については、こちらをご覧ください"^]
+link:https://docs.netapp.com/us-en/bluexp-backup-recovery/concept-backup-to-cloud.html["BlueXPのバックアップとリカバリの詳細については、こちらをご覧ください"^]
 
 * データの階層化
 +

@@ -11,6 +11,7 @@ summary: AWSのキー管理サービスをサードパーティのキー管理�
 :imagesdir: ../media/
 
 
+[role="lead"]
 を使用できます link:https://docs.aws.amazon.com/kms/latest/developerguide/overview.html["AWS Key Management Service（KMS）"^] Google Cloud Platform導入アプリケーションでONTAP 暗号化キーを保護します。
 
 AWS KMSを使用したキー管理は、CLIまたはONTAP REST APIを使用して有効にできます。

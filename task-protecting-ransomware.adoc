@@ -20,14 +20,13 @@ summary: ランサムウェア攻撃は、ビジネス時間、リソース、�
 
 == 一般的なランサムウェアのファイル拡張子から保護
 
-[role="lead"]
 BlueXPで利用可能なランサムウェア対策設定を使用すると、ONTAP FPolicy機能を利用して、一般的なランサムウェアファイル拡張子タイプから保護できます。
 
 .手順
 . [Canvas]ページで、ランサムウェア対策に設定したシステムの名前をダブルクリックします。
 . [Overview]タブで、[Features]パネルをクリックし、*[Ransomware Protection]*の横にある鉛筆アイコンをクリックします。
 +
-image::screenshot_features_ransomware.png[400だ]
+image::screenshot_features_ransomware.png[作業環境を表示しているときに[Overview]ページの右上にある[Features]パネルに表示される[Ransomware Protection]設定のスクリーンショット。]
 
 . ネットアップのランサムウェア向けソリューションを導入する：
 +
@@ -60,7 +59,6 @@ image:screenshot_ransomware_protection.gif["作業環境内から利用できる
 
 == 自律的なランサムウェア防御
 
-[role="lead"]
 Cloud Volumes ONTAPは、Autonomous Ransomware Protection（ARP）機能をサポートしています。この機能は、ワークロードを分析し、ランサムウェア攻撃の可能性がある異常なアクティビティをプロアクティブに検出して警告します。
 
 で提供されるファイル拡張子保護とは別に、 https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-protecting-ransomware.html#protection-from-common-ransomware-file-extensions["ランサムウェア対策設定"]ARP機能は、ワークロード分析を使用して、検出された「異常なアクティビティ」に基づいて潜在的な攻撃についてユーザに警告します。ランサムウェア対策設定とARP機能の両方を組み合わせて、包括的なランサムウェア対策を行うことができます。
@@ -74,4 +72,4 @@ ONTAP System ManagerおよびCLIでARPを有効にする方法の詳細につい
 
 NOTE: ライセンスがないと、ライセンスされた機能の使用はサポートされません。
 
-image::screenshot_arp.png[arpのスクリーンショット]
+image::screenshot_arp.png[スクリーンショットは、Autonomous Ransomware Protectionのアドオンライセンスを示しています。]
