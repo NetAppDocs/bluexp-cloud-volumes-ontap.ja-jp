@@ -88,7 +88,7 @@ HA 構成が複数のアベイラビリティゾーンに分散されている�
 
 HA 設定を複数の可用性ゾーンに展開する前に、フローティング IP アドレスとルートテーブルの要件を確認する必要があります。設定を展開するときは、フローティング IP アドレスを指定する必要があります。プライベートIPアドレスは、BlueXPによって自動的に作成されます。
 
-詳細については、を参照してください link:reference-networking-aws.html#aws-networking-requirements-for-cloud-volumes-ontap-ha-in-multiple-azs["複数の AZS での Cloud Volumes ONTAP HA の AWS ネットワーク要件"]。
+詳細については、を参照してください link:https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/reference-networking-aws.html#requirements-for-ha-pairs-in-multiple-azs["複数の AZS での Cloud Volumes ONTAP HA の AWS ネットワーク要件"^]。
 
 
 

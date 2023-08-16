@@ -125,7 +125,7 @@ BlueXPがセキュリティグループを生成するようにした場合は�
 
 
 
-| 既存のを使用します | 既存のセキュリティグループを選択する場合は、 Cloud Volumes ONTAP の要件を満たす必要があります。 link:reference-networking-azure.html#security-group-rules-for-cloud-volumes-ontap["デフォルトのセキュリティグループを表示します"]。 
+| 既存のを使用します | 既存のセキュリティグループを選択する場合は、 Cloud Volumes ONTAP の要件を満たす必要があります。 link:https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/reference-networking-azure.html#security-group-rules["デフォルトのセキュリティグループを表示します"^]。 
 |===
 . * 充電方法と NSS アカウント * ：このシステムで使用する充電オプションを指定し、ネットアップサポートサイトのアカウントを指定します。
 +
@@ -151,7 +151,7 @@ NOTE: 選択したバージョンで新しいリリース候補、一般提供�
 ** ディスクタイプは初期ボリューム用です。以降のボリュームでは、別のディスクタイプを選択できます。
 ** シンプルなプロビジョニングオプションを使用した場合、ディスクサイズは、初期アグリゲートのすべてのディスクと、BlueXPで作成される追加のアグリゲートのサイズです。Advanced Allocation オプションを使用すると、異なるディスクサイズを使用するアグリゲートを作成できます。
 +
-ディスクの種類とサイズの選択については、を参照してください link:task-planning-your-config-azure.html#sizing-your-system-in-azure["Azure でのシステムのサイジング"]。
+ディスクの種類とサイズの選択については、を参照してください link:https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-planning-your-config-azure.html#size-your-system-in-azure["Azure でのシステムのサイジング"^]。
 
 ** ボリュームを作成または編集するときに、特定のボリューム階層化ポリシーを選択できます。
 ** データの階層化を無効にすると、以降のアグリゲートで有効にすることができます。
@@ -246,7 +246,7 @@ NTP サーバは、 CIFS サーバを作成するときにのみ設定できま�
 |===
 . * 使用状況プロファイル、ディスクタイプ、階層化ポリシー * ： Storage Efficiency 機能を有効にするかどうかを選択し、必要に応じてボリューム階層化ポリシーを変更します。
 +
-詳細については、を参照してください link:task-planning-your-config-azure.html#choosing-a-volume-usage-profile["ボリューム使用率プロファイルについて"] および link:concept-data-tiering.html["データ階層化の概要"]。
+詳細については、を参照してください link:https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-planning-your-config-azure.html#choose-a-volume-usage-profile["ボリューム使用率プロファイルについて"^] および link:concept-data-tiering.html["データ階層化の概要"^]。
 
 . * レビューと承認 *: 選択内容を確認して確認します。
 +
@@ -360,7 +360,7 @@ BlueXPがセキュリティグループを生成するようにした場合は�
 
 
 
-| 既存のを使用します | 既存のセキュリティグループを選択する場合は、 Cloud Volumes ONTAP の要件を満たす必要があります。 link:reference-networking-azure.html#security-group-rules-for-cloud-volumes-ontap["デフォルトのセキュリティグループを表示します"]。 
+| 既存のを使用します | 既存のセキュリティグループを選択する場合は、 Cloud Volumes ONTAP の要件を満たす必要があります。 link:https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/reference-networking-azure.html#security-group-rules["デフォルトのセキュリティグループを表示します"^]。 
 |===
 . * 充電方法と NSS アカウント * ：このシステムで使用する充電オプションを指定し、ネットアップサポートサイトのアカウントを指定します。
 +
@@ -385,7 +385,7 @@ NOTE: 選択したバージョンで新しいリリース候補、一般提供�
 +
 ** シンプルなプロビジョニングオプションを使用した場合、ディスクサイズは、初期アグリゲートのすべてのディスクと、BlueXPで作成される追加のアグリゲートのサイズです。Advanced Allocation オプションを使用すると、異なるディスクサイズを使用するアグリゲートを作成できます。
 +
-ディスク・サイズの選択については、を参照してください link:task-planning-your-config-azure.html#sizing-your-system-in-azure["Azure でのシステムのサイジング"]。
+ディスク・サイズの選択については、を参照してください link:https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-planning-your-config-azure.html#size-your-system-in-azure["Azure でのシステムのサイジング"^]。
 
 ** ボリュームを作成または編集するときに、特定のボリューム階層化ポリシーを選択できます。
 ** データの階層化を無効にすると、以降のアグリゲートで有効にすることができます。
@@ -493,7 +493,7 @@ NTP サーバは、 CIFS サーバを作成するときにのみ設定できま�
 |===
 . * 使用状況プロファイル、ディスクタイプ、階層化ポリシー * ： Storage Efficiency 機能を有効にするかどうかを選択し、必要に応じてボリューム階層化ポリシーを変更します。
 +
-詳細については、を参照してください link:task-planning-your-config-azure.html#choosing-a-volume-usage-profile["ボリューム使用率プロファイルについて"] および link:concept-data-tiering.html["データ階層化の概要"]。
+詳細については、を参照してください link:https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-planning-your-config-azure.html#choose-a-volume-usage-profile["ボリューム使用率プロファイルについて"^] および link:concept-data-tiering.html["データ階層化の概要"^]。
 
 . * レビューと承認 *: 選択内容を確認して確認します。
 +

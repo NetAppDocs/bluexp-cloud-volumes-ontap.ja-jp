@@ -127,7 +127,7 @@ BlueXPがファイアウォールポリシーを生成するようにした場�
 
 
 
-| 既存のファイアウォールポリシーを使用する | 既存のファイアウォールポリシーを使用する場合は、必要なルールが含まれていることを確認してください。 link:reference-networking-gcp.html#firewall-rules-for-cloud-volumes-ontap["Cloud Volumes ONTAP のファイアウォールルールについて説明します"]。 
+| 既存のファイアウォールポリシーを使用する | 既存のファイアウォールポリシーを使用する場合は、必要なルールが含まれていることを確認してください。リンク：https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/reference-networking-gcp.html#firewall-rules[Learn Cloud Volumes ONTAPのファイアウォールルールについて^]。 
 |===
 . * 充電方法と NSS アカウント * ：このシステムで使用する充電オプションを指定し、ネットアップサポートサイトのアカウントを指定します。
 +
@@ -152,7 +152,7 @@ NOTE: 選択したバージョンで新しいリリース候補、一般提供�
 シンプルなプロビジョニングオプションを使用した場合、ディスクサイズは、初期アグリゲートのすべてのディスクと、BlueXPで作成される追加のアグリゲートのサイズです。Advanced Allocation オプションを使用すると、異なるディスクサイズを使用するアグリゲートを作成できます。
 
 +
-ディスクの種類とサイズの選択については、を参照してください link:task-planning-your-config-gcp.html#sizing-your-system-in-gcp["Google Cloudでのシステムのサイジング"]。
+ディスクの種類とサイズの選択については、を参照してください link:task-planning-your-config-gcp.html#size-your-system-in-gcp["Google Cloudでシステムをサイジングする"]。
 
 . * Flash Cache、書き込み速度、WORM *：
 +
@@ -260,7 +260,7 @@ NTP サーバは、 CIFS サーバを作成するときにのみ設定できま�
 |===
 . * 使用状況プロファイル、ディスクタイプ、階層化ポリシー * ： Storage Efficiency 機能を有効にするかどうかを選択し、必要に応じてボリューム階層化ポリシーを変更します。
 +
-詳細については、を参照してください link:task-planning-your-config-gcp.html#choosing-a-volume-usage-profile["ボリューム使用率プロファイルについて"] および link:concept-data-tiering.html["データ階層化の概要"]。
+詳細については、を参照してください link:task-planning-your-config-gcp.html#choose-a-volume-usage-profile["ボリュームの使用プロファイルを選択してください"] および link:concept-data-tiering.html["データ階層化の概要"]。
 
 . * レビューと承認 *: 選択内容を確認して確認します。
 +
@@ -368,7 +368,7 @@ BlueXPがファイアウォールポリシーを生成するようにした場�
 
 
 
-| 既存のを使用します | 既存のファイアウォールポリシーを使用する場合は、必要なルールが含まれていることを確認してください。 link:reference-networking-gcp.html#firewall-rules-for-cloud-volumes-ontap["Cloud Volumes ONTAP のファイアウォールルールについて説明します"]。 
+| 既存のを使用します | 既存のファイアウォールポリシーを使用する場合は、必要なルールが含まれていることを確認してください。 link:reference-networking-gcp.html#firewall-rules["Cloud Volumes ONTAP のファイアウォールルールについて説明します"]。 
 |===
 . * 充電方法と NSS アカウント * ：このシステムで使用する充電オプションを指定し、ネットアップサポートサイトのアカウントを指定します。
 +
@@ -393,7 +393,7 @@ NOTE: 選択したバージョンで新しいリリース候補、一般提供�
 シンプルなプロビジョニングオプションを使用した場合、ディスクサイズは、初期アグリゲートのすべてのディスクと、BlueXPで作成される追加のアグリゲートのサイズです。Advanced Allocation オプションを使用すると、異なるディスクサイズを使用するアグリゲートを作成できます。
 
 +
-ディスクの種類とサイズの選択については、を参照してください link:task-planning-your-config-gcp.html#sizing-your-system-in-gcp["Google Cloudでのシステムのサイジング"]。
+ディスクの種類とサイズの選択については、を参照してください link:task-planning-your-config-gcp.html#size-your-system-in-gcp["Google Cloudでシステムをサイジングする"]。
 
 . * Flash Cache、書き込み速度、WORM *：
 +
@@ -500,7 +500,7 @@ NTP サーバは、 CIFS サーバを作成するときにのみ設定できま�
 |===
 . * 使用状況プロファイル、ディスクタイプ、階層化ポリシー * ： Storage Efficiency 機能を有効にするかどうかを選択し、必要に応じてボリューム階層化ポリシーを変更します。
 +
-詳細については、を参照してください link:task-planning-your-config-gcp.html#choosing-a-volume-usage-profile["ボリューム使用率プロファイルについて"] および link:concept-data-tiering.html["データ階層化の概要"]。
+詳細については、を参照してください link:task-planning-your-config-gcp.html#choose-a-volume-usage-profile["ボリュームの使用プロファイルを選択してください"] および link:concept-data-tiering.html["データ階層化の概要"]。
 
 . * レビューと承認 *: 選択内容を確認して確認します。
 +

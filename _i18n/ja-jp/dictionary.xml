@@ -94,7 +94,6 @@
   <block id="2d6e88c43d1b87d3d042cce1773371b7" category="paragraph">Cloud Volumes ONTAP の新しいリソースグループを作成するか、既存のリソースグループを使用します。Cloud Volumes ONTAP には、新しい専用のリソースグループを使用することを推奨します。既存の共有リソースグループに Cloud Volumes ONTAP を導入することは可能ですが、データ損失のリスクがあるため推奨されません。詳細については、上記の警告を参照してください。</block>
   <block id="21c199e82e474a9a5607a2b9ccb8e66f" category="inline-link">必要な権限</block>
   <block id="aeba611d332bf85ad8d5a14dd92fa935" category="inline-link-macro">デフォルトのセキュリティグループを表示します</block>
-  <block id="44651ffc55fe78607ad39789f43eab9b" category="cell">既存のセキュリティグループを選択する場合は、 Cloud Volumes ONTAP の要件を満たす必要があります。 <block ref="f88b68abd6e0fcb97b26739e6dccf3c6" category="inline-link-macro-rx"></block>。</block>
   <block id="045ab321baf13520d6d643ff584cda4b" category="list-text">* 充電方法と NSS アカウント * ：このシステムで使用する充電オプションを指定し、ネットアップサポートサイトのアカウントを指定します。</block>
   <block id="7fb89373a84cc62fc3eab535be59da09" category="list-text">* 構成済みパッケージ * ： Cloud Volumes ONTAP システムを迅速に導入するパッケージを 1 つ選択するか、 * 独自の構成を作成 * をクリックします。</block>
   <block id="07745782b2f663acabec45bb85011c26" category="paragraph">いずれかのパッケージを選択した場合は、ボリュームを指定してから、設定を確認して承認するだけで済みます。</block>
@@ -102,7 +101,6 @@
   <block id="cf3a2d2c139bf5c9cc87fe714bfff3b1" category="paragraph">次の点に注意してください。</block>
   <block id="72237219ad18cb1a3809b9d39764a310" category="list-text">ディスクタイプは初期ボリューム用です。以降のボリュームでは、別のディスクタイプを選択できます。</block>
   <block id="9113e1288a38b047165dc10153c90a7b" category="inline-link-macro">Azure でのシステムのサイジング</block>
-  <block id="6b9b0b9b0fbf1c39f0c680c8ded3808f" category="paragraph">ディスクの種類とサイズの選択については、を参照してください <block ref="e1b3c31cb34daed9344cfbb51e1e4263" category="inline-link-macro-rx"></block>。</block>
   <block id="10f24cbf4f99f2a58468f5eddcb58a10" category="list-text">ボリュームを作成または編集するときに、特定のボリューム階層化ポリシーを選択できます。</block>
   <block id="e5a51dfb561fcfc9b976680f966d8796" category="list-text">データの階層化を無効にすると、以降のアグリゲートで有効にすることができます。</block>
   <block id="40be323df7265fed128da31c2235f802" category="inline-link-macro">データ階層化の詳細については、こちらをご覧ください。</block>
@@ -134,7 +132,6 @@
   <block id="4f0c004ff91459d8fcbf987907179455" category="list-text">* 使用状況プロファイル、ディスクタイプ、階層化ポリシー * ： Storage Efficiency 機能を有効にするかどうかを選択し、必要に応じてボリューム階層化ポリシーを変更します。</block>
   <block id="3cc61e79063003b448152a1372369ad1" category="inline-link-macro">ボリューム使用率プロファイルについて</block>
   <block id="38a9b05676fb89e391483759bf502908" category="inline-link-macro">データ階層化の概要</block>
-  <block id="49edc4cfe2f7391aa90a7e4f41a36160" category="paragraph">詳細については、を参照してください <block ref="3e1158237d05747ac1b9e7d8bc980554" category="inline-link-macro-rx"></block> および <block ref="69d3706831f999336fb27703356dae22" category="inline-link-macro-rx"></block>。</block>
   <block id="d2389e2e081900e1a47f57138a980a3d" category="list-text">* レビューと承認 *: 選択内容を確認して確認します。</block>
   <block id="52a7232348e2296301a5272f1857ce4b" category="list-text">設定の詳細を確認します。</block>
   <block id="207b2cfe437e6810de25b5193c067bb7" category="list-text">[* I understand ... * （理解しています ... * ） ] チェックボックスを選択</block>
@@ -310,7 +307,6 @@
   <block id="2e5f3aa65f18453c5c51b5ffcf2214d5" category="inline-link">Google Cloud のドキュメント：「 Configuring Private Google Access</block>
   <block id="f72d7e736d5c07e6650c7c59c1d4beae" category="list-text">* 基盤となるストレージリソース * ：初期アグリゲートの設定、つまりディスクタイプと各ディスクのサイズを選択します。</block>
   <block id="03cb85499f4837ea1e2f43864e39d856" category="cell">CIFS サーバに関連付ける AD ドメイン内の組織単位。デフォルトは CN=Computers です。</block>
-  <block id="547635b81ffb0f5ff05913c2836c7d9a" category="paragraph">詳細については、を参照してください <block ref="3385123430547e9830342b8fdb19e3d3" category="inline-link-macro-rx"></block> および <block ref="69d3706831f999336fb27703356dae22" category="inline-link-macro-rx"></block>。</block>
   <block id="7289ff9561bd8f3124de5e821bd3e8e0" category="list-text">Canvas ページで、 * Add Working Environment * をクリックし、画面の指示に従います。</block>
   <block id="b5a7d19f6788ad4a9fa68128eabe2be1" category="list-text">* 場所を選択 * ：「 * Google Cloud * 」と「 * Cloud Volumes ONTAP HA * 」を選択します。</block>
   <block id="166a4b640ff9a34dd7447ebf0e16518b" category="list-text">*HA 配置モデル *: HA 構成用に複数のゾーン ( 推奨 ) または単一ゾーンを選択します。次に、リージョンとゾーンを選択します。</block>
@@ -462,14 +458,10 @@
   <block id="d741de259d45adde48602bde8af2fa1e" category="list-text">アグリゲートから移動する 1 つ以上のボリュームを指定します。</block>
   <block id="1ac63b40afca7dec0b6be58237e990c5" category="paragraph">将来的に容量の問題が発生しないように、アグリゲート内の空きスペースに十分な大きさのボリュームを選択する必要があります。</block>
   <block id="a64d88ebebbadd18db492923a6de8f40" category="list-text">システムがディスク制限に達していない場合は、ボリュームを同じシステム上の既存のアグリゲートまたは新しいアグリゲートに移動する必要があります。</block>
-  <block id="b665b3a7d068d10da4bb1ff6a9eebc76" category="inline-link-macro">ボリュームを別のアグリゲートに移動して、容量の問題を回避します</block>
-  <block id="68e476abe68c7b0ace9cba18f462be5b" category="paragraph">詳細については、を参照してください <block ref="1b206295ef443d416e7baac2de143282" category="inline-link-macro-rx"></block>。</block>
   <block id="c63ab46e1d68c4bfffef9ba06eddf083" category="list-text">システムがディスクの上限に達した場合は、次のいずれかを実行します。</block>
   <block id="67ef57170a00797215f1770e27a5c7fe" category="list-text">未使用のボリュームを削除します。</block>
   <block id="34dd29895d214f719e7253c4f74ceb3b" category="list-text">ボリュームを再配置して、アグリゲートの空きスペースを確保します。</block>
   <block id="3fd9cc7b254b1b1e5d84a0971e92cde3" category="list-text">スペースがある別のシステムに 2 つ以上のボリュームを移動します。</block>
-  <block id="b5d138f10d1a58925f27c5cee0b6c56f" category="inline-link-macro">容量の問題を回避するためにボリュームを別のシステムに移動する</block>
-  <block id="02b0209209ad2cb1b2d7a228ecc8fb8b" category="paragraph">詳細については、を参照してください <block ref="46de3a6018eeba598a07d1ff744be5c3" category="inline-link-macro-rx"></block>。</block>
   <block id="8286397639d6b0de39ee02dae7c36ad3" category="section-title">容量の問題を回避するためにボリュームを別のシステムに移動します</block>
   <block id="66e44839dda4461ab234139deeed79fe" category="paragraph">1 つ以上のボリュームを別の Cloud Volumes ONTAP システムに移動して、容量の問題を回避できます。システムがディスクの上限に達した場合は、この操作が必要になることがあります。</block>
   <block id="de35387360ed7d5e8aef6ad8957e77f5" category="paragraph">このタスクの手順に従って、次のアクションが必要なメッセージを修正できます。</block>
@@ -742,9 +734,6 @@
   <block id="e2d4a517cbcae1c0966d5e478d743531" category="list-text">Cloud Volumes ONTAP の WORM ストレージは、「信頼されたストレージ管理者」モデルで機能します。WORM ファイルは書き換えから保護されますが、期限切れ前の WORM データがボリュームに含まれていた場合でも、クラスタ管理者はボリュームを削除できます。</block>
   <block id="6d0cc0f6b100bdce8cb06276811faff9" category="list-text">信頼できるストレージ管理者モデルに加えて、 Cloud Volumes ONTAP の WORM ストレージも「信頼できるクラウド管理者」モデルで暗黙的に動作します。クラウド管理者は、クラウドプロバイダからクラウドストレージを直接削除するか、編集することで、有効期限が切れる前に WORM データを削除できました。</block>
   <block id="c65544a3678422a2d15f8bc1a12dec12" category="doc">FlexVol ボリュームを作成します</block>
-  <block id="6a6295e49dd6d445ae2c708b064bab15" category="list-text">任意のデータアグリゲート上にボリュームを作成します。 <block ref="f87b905002e05e67a79602c0e20e2e8c" category="inline-xref-macro-rx"></block>。</block>
-  <block id="e016f8b4ca56502e28a613178565fc27" category="list-text">テンプレートからボリュームを作成し、データベースやストリーミングサービスなど特定のアプリケーションのワークロード要件に合わせてボリュームを最適化します。 <block ref="924dba442370e336c9e9ec48f12c601d" category="inline-xref-macro-rx"></block>。</block>
-  <block id="e4e09dba346ea29aae42e96d57eb2a7a" category="list-text">HA 構成の第 2 ノードにボリュームを作成する。 <block ref="ce780f44a6a94c26f0ac5d228fdb0a40" category="inline-xref-macro-rx"></block>。</block>
   <block id="9a78a69978c460378acf553a1b850e91" category="paragraph">ボリュームのプロビジョニングに関する注意事項は次のとおりです。</block>
   <block id="f6624758e1ac18d59af363d92430c58d" category="inline-xref">IQN を使用して、から LUN に接続します ホスト</block>
   <block id="d83c309b20d472b0bf78b20e2b89dbf8" category="list-text">LUN は、 System Manager または CLI を使用して追加で作成できます。</block>
@@ -781,8 +770,6 @@
   <block id="447db495c7fa6264a53a6bbaaade8007" category="list-text">iSCSI ターゲットは、標準のイーサネットネットワークアダプタ（ NIC ）、ソフトウェアイニシエータを搭載した TOE カード、 CNA 、または専用の HBA を使用してネットワークに接続され、 iSCSI Qualified Name （ IQN ）で識別されます。</block>
   <block id="45a0ec20f3ffd41406f800d29cf4c97f" category="list-text">* ディスクタイプ * ：パフォーマンスのニーズとコストの要件に基づいて、ボリュームの基盤となるディスクタイプを選択します。</block>
   <block id="28d2f8881980acfa41f5165ad6aa423c" category="inline-link-macro">AWS でのシステムのサイジング</block>
-  <block id="f64204a2336539d9a8e0dc0a2e1a572b" category="list-text"><block ref="f64204a2336539d9a8e0dc0a2e1a572b" category="inline-link-macro-rx"></block></block>
-  <block id="e1b3c31cb34daed9344cfbb51e1e4263" category="list-text"><block ref="e1b3c31cb34daed9344cfbb51e1e4263" category="inline-link-macro-rx"></block></block>
   <block id="e86e31922d4442d8a8d924c40e14eef7" category="inline-link-macro">ボリューム階層化ポリシー</block>
   <block id="13aa0c9cafb05f7d1436239215621d90" category="list-text">* 使用状況プロファイルと階層化ポリシー * ：ボリュームで Storage Efficiency 機能を有効にするか無効にするかを選択し、を選択します <block ref="45393a767ab360c2ba9e7110c6cbc830" category="inline-link-macro-rx"></block>。</block>
   <block id="1fd2dba2020c106a2c49da0e6ad7e868" category="paragraph">ONTAP には、必要なストレージの合計容量を削減できるストレージ効率化機能がいくつか搭載されています。NetApp Storage Efficiency 機能には、次のようなメリットがあります。</block>
@@ -1023,7 +1010,6 @@
   <block id="34df161a9c0315272455a0dcc8b35711" category="paragraph">HA 構成が複数のアベイラビリティゾーンに分散されている場合は、 _floating IP addresss_enable NAS client access 。障害が発生した場合に、ドメイン内のすべての VPC の CIDR ブロックの外側にあるフローティング IP アドレスをノード間で移行できます。VPC の外部にあるクライアントには、自分以外からネイティブにアクセスすることはできません <block ref="f196b90949d1249f4f3797eb7257a21d" category="inline-link-macro-rx"></block>。</block>
   <block id="a3414a2e636e6d83d5c99532da30e296" category="paragraph">転送ゲートウェイを設定できない場合は、 VPC の外部にある NAS クライアントにプライベート IP アドレスを使用できます。ただし、これらの IP アドレスは静的であり、ノード間でフェイルオーバーすることはできません。</block>
   <block id="105501f9e06615dbd24674715b14a137" category="inline-link-macro">複数の AZS での Cloud Volumes ONTAP HA の AWS ネットワーク要件</block>
-  <block id="7a3ee06ec6ef2948d6982a10a361d029" category="paragraph">詳細については、を参照してください <block ref="f5127e7e3006bcff7058d08df580da25" category="inline-link-macro-rx"></block>。</block>
   <block id="f526d0fa31a1cecc71259047c426e2f2" category="section-title">iSCSI データアクセス</block>
   <block id="eab11280467eeea00306f2c7d4c6a2d5" category="paragraph">iSCSI では浮動 IP アドレスが使用されないため、クロス VPC データ通信は問題になりません。</block>
   <block id="7d3a2be26496432732f28dda72727430" category="section-title">iSCSI のテイクオーバーとギブバック</block>
@@ -1840,7 +1826,6 @@
   <block id="59eb63660fb22ec7975e3b5d91120aa8" category="inline-link">可用性セットの詳細については、 Azure のドキュメントを参照してください</block>
   <block id="4569b5982e065c3250c0b770f86fcd98" category="list-text">Azure 可用性セットは、 Cloud Volumes ONTAP ノードを論理的にグループ化したものです。可用性セットを使用すると、ノードが異なる障害になっていることを確認し、ドメインを更新して冗長性と可用性を確保できます。<block ref="47425bda253a157cca00280d95e0b7de" category="inline-link-rx"></block>。</block>
   <block id="77babe22a4c39cb27395e1e8e1eb4957" category="inline-link-macro">ブート、ルート、およびコアのデータ</block>
-  <block id="14af8c48edc712e0d11f1c75df998085" category="list-text">お客様のデータは Premium Storage ページの BLOB にあります。各ノードがもう一方のノードのストレージにアクセスできます。には追加のストレージも必要です <block ref="2e2ba677e406fe0c9ac7a8a2fe5f3a96" category="inline-link-macro-rx"></block>。</block>
   <block id="3755452bf2b97226b25b52a4dbc076cc" category="list-text">ストレージアカウント</block>
   <block id="d8dfdaec2cdeb56369c8d0b1a0cf420f" category="list-text">管理対象ディスクにはストレージアカウントが 1 つ必要です。</block>
   <block id="4479e7a5f0b0e5ee27b45d20e8f385a3" category="list-text">ストレージ・アカウントあたりのディスク容量の上限に達しているため ' プレミアム・ストレージ・ページ・ブロブには 1 つ以上のストレージ・アカウントが必要です</block>
@@ -2249,7 +2234,6 @@
   <block id="6fc1b99ffd833c6c5570d86706e4dda3" category="cell">資格情報を編集します</block>
   <block id="966af22a27db9cf9c8aed1bfaa29bceb" category="paragraph">次のビデオでは、従量課金制の Marketplace サブスクリプションを AWS クレデンシャルに関連付ける方法を紹介します。</block>
   <block id="6101eef8fd3b11affed5baa0379eb7b5" category="inline-link-macro">AWS ワークシート</block>
-  <block id="c333af2368ba1204c1886470cc3a6275" category="list-text">* 場所と接続 * ：に記録したネットワーク情報を入力します <block ref="d659a2562f8cbd6b4b774d087092f457" category="inline-link-macro-rx"></block>。</block>
   <block id="6f27ddf091b10f1dfd4ab13be0759ec7" category="paragraph">AWS Outpost を使用している場合は、 Outpost VPC を選択して、その Outpost に単一のノードの Cloud Volumes ONTAP システムを導入できます。エクスペリエンスは、 AWS に存在する他の VPC と同じです。</block>
   <block id="94b720129da1fad395a78adb9dd8004f" category="list-text">* データ暗号化 * ：データ暗号化なし、または AWS で管理する暗号化を選択します。</block>
   <block id="8d4e0ae3c5be71d9c725659a6203fb6f" category="paragraph">AWS で管理する暗号化の場合は、アカウントまたは別の AWS アカウントから別の Customer Master Key （ CMK ；カスタマーマスターキー）を選択できます。</block>
@@ -2265,7 +2249,6 @@
   <block id="a6fcc094aa2aa8328784bade825b168a" category="inline-link-macro">データ階層化の仕組みをご確認ください</block>
   <block id="e3d16ce79bcead59781233b93cb58009" category="paragraph"><block ref="204d09224c7e7513a2d3fc955e6c2d5a" category="inline-link-macro-rx"></block>。</block>
   <block id="92a1203fc5511fdb287e0ca1b80062ce" category="list-text">* 使用状況プロファイル、ディスクタイプ、階層化ポリシー * ：必要に応じて、 Storage Efficiency 機能を有効にするかどうかを選択し、ボリューム階層化ポリシーを編集します。</block>
-  <block id="1f6465335a2368ecd8ca00b7d4b12299" category="paragraph">詳細については、を参照してください <block ref="d6fdbd844f3d68fb39cacde3bf57bd32" category="inline-link-macro-rx"></block> および <block ref="69d3706831f999336fb27703356dae22" category="inline-link-macro-rx"></block>。</block>
   <block id="84ead214aa73d1d099d69385289923df" category="paragraph">Cloud Volumes ONTAP インスタンスの起動時に問題が発生した場合は、障害メッセージを確認してください。また、作業環境を選択して、 [ 環境の再作成 ] をクリックすることもできます。</block>
   <block id="a32a5939a1bb08953d44c08ef33a7ad2" category="section-title">AWS での Cloud Volumes ONTAP HA ペアの起動</block>
   <block id="54092d74685a14050a9f2b1e926a5091" category="paragraph">現時点では、 AWS アウトポストで HA ペアがサポートされていません。</block>
@@ -2275,7 +2258,6 @@
   <block id="fdf00fa5f9f4609b595b4c51f6ee33e9" category="paragraph">導入モデルの概要については、を参照してください <block ref="ed2ce72ffe8bc52d52047e3f4134a246" category="inline-link-macro-rx"></block>。</block>
   <block id="f98a5304a879db170932a941d6782d7c" category="list-text">* 接続と SSH 認証 * ： HA ペアとメディエーターの接続方法を選択します。</block>
   <block id="7f09e4815f5de7673aaab2126613b950" category="list-text">* フローティング IP * ：複数の AZ を選択した場合は、フローティング IP アドレスを指定します。</block>
-  <block id="33b13cf0139beac8e5ee5b05deaa6127" category="paragraph">IP アドレスは、その地域のすべての VPC の CIDR ブロックの外側にある必要があります。詳細については、を参照してください <block ref="f5127e7e3006bcff7058d08df580da25" category="inline-link-macro-rx"></block>。</block>
   <block id="0d27f0f1131dc607258f48d5dc5dcf14" category="list-text">* ルートテーブル * ：複数の AZ を選択した場合は、フローティング IP アドレスへのルートを含むルーティングテーブルを選択します。</block>
   <block id="5e2b7cebb4bf10923692995c621e2e85" category="paragraph">複数のルートテーブルがある場合は、正しいルートテーブルを選択することが非常に重要です。そうしないと、一部のクライアントが Cloud Volumes ONTAP HA ペアにアクセスできない場合があります。ルーティングテーブルの詳細については、を参照してください<block ref="8ed06851f50fcdbded65cb78f986bfa5" category="inline-link-rx"></block>。</block>
   <block id="b2bb3f64fb5b828b17cb684f3c44b684" category="inline-link">Cloud Volumes ONTAP ノードと HA のポリシー要件 メディエーター</block>
@@ -2584,7 +2566,6 @@
   <block id="32a5902f8095b03e8e2060198dc00577" category="list-text">どのVPC *も選択した場合、インバウンドトラフィックのソースフィルタは0.0.0.0/0のIP範囲になります。</block>
   <block id="fc4876ca61d1c336e1f17141c7227b6e" category="cell">既存のファイアウォールポリシーを使用する</block>
   <block id="7f6be0499fe67271d3c198bd726fe0c0" category="inline-link-macro">Cloud Volumes ONTAP のファイアウォールルールについて説明します</block>
-  <block id="154e9c61180206ef2d8b605b639fb35f" category="cell">既存のファイアウォールポリシーを使用する場合は、必要なルールが含まれていることを確認してください。 <block ref="c3fbed15c1fb154b840fdb8b5504f098" category="inline-link-macro-rx"></block>。</block>
   <block id="ba6a8b64123c5bbe5d7d30c1bd941cc0" category="section-title">デフォルトのセットアップ</block>
   <block id="aa98b7df0a0a0f2af69cbff3dcbe620e" category="list-text">AzureのHAシステム上のSVM管理LIF</block>
   <block id="97c3d7abfc75b002edd7cf58c0502788" category="list-text">Google CloudのHAシステム上のSVM管理LIFです</block>
@@ -2642,7 +2623,6 @@
   <block id="2bae3f4058e112cc703c4dc74dc72501" category="paragraph">高速の書き込み速度は、すべてのタイプのシングルノードシステムと一部のHAペア構成でサポートされています。でサポートされている構成を表示します<block ref="d080347ff89205e9b3e508b1fee0c025" category="inline-link-rx"></block></block>
   <block id="b9e47318c64f441113d2cf3c3a5e232c" category="paragraph">一部の構成では複数のStorage VMがサポートされます。にアクセスします<block ref="7a96f232274f5a7cebcb1f6a52cc095f" category="inline-link-rx"></block> 使用している Cloud Volumes ONTAP のバージョンでサポートされる Storage VM 数を確認してください。</block>
   <block id="bd5b6b1e8df08d280868ec77d4700777" category="inline-link-macro">Google Cloudでのシステムのサイジング</block>
-  <block id="d149bf4b730fbae097705dc422facd68" category="list-text"><block ref="d149bf4b730fbae097705dc422facd68" category="inline-link-macro-rx"></block></block>
   <block id="e29d7c0b36af68edd13ebac84f15b44b" category="sidebar">クラウドプロバイダ</block>
   <block id="46aef2e5080a5347df1ce7546e1be1df" category="sidebar">すべてのクラウドプロバイダ</block>
   <block id="6beccc67ff905f7da0b29dece26b0485" category="sidebar">Amazon Web Services の</block>
@@ -2684,9 +2664,7 @@
   <block id="0cce9e09385c0d8e677ff5d9518dc514" category="doc">AzureでCloud Volumes ONTAP のライセンスをセットアップする</block>
   <block id="c700f608c8bdc9eb590953ff57224bad" category="paragraph">Cloud Volumes ONTAP で使用するライセンスオプションを決定したら、新しい作業環境を作成する際にそのライセンスオプションを選択する前に、いくつかの手順を実行する必要があります。</block>
   <block id="cb0226284bee9c96f70232a048c09d93" category="inline-link-macro">Freemium 製品の詳細をご覧ください</block>
-  <block id="ef91b93e0524270004cc6800a90a5f93" category="paragraph">プロビジョニングされた容量が最大500GiBのCloud Volumes ONTAP を無料で使用するには、Freemium製品を選択してください。 <block ref="4a1ec6d9cbc2633c90cec4c7aaaa9417" category="inline-link-macro-rx"></block>。</block>
   <block id="3c2d870c278a131e2dd404e52b99875f" category="list-text">[*詳細とクレデンシャル*]ページで、[クレデンシャルの編集]、[サブスクリプションの追加]の順にクリックし、プロンプトに従ってAzure Marketplaceで従量課金制サービスに登録します。</block>
-  <block id="3aa15a20d51e3c7db018d625762c1e4a" category="paragraph">プロビジョニング済み容量が500GiBを超えると、システムはに自動的に変換されないかぎり、マーケットプレイスのサブスクリプションを通じて料金が請求されることはありません <block ref="d2627439b57217190ca76c46e52d35cf" category="inline-link-macro-rx"></block>。</block>
   <block id="63c34af016d560eac2ed70f529ecee3a" category="inline-image-macro">Cloud Volumes ONTAP の作業環境を作成する場合のPAYGOサブスクリプションオプションのスクリーンショット。</block>
   <block id="e0f8df20ac9510e628512255f5b45d2d" category="paragraph"><block ref="e0f8df20ac9510e628512255f5b45d2d" category="inline-image-macro-rx" type="image"></block></block>
   <block id="79098ff4d83aceb44e576798d0c7e023" category="inline-image-macro">Cloud Volumes ONTAP 作業環境を作成する際のFreemiumオプションのスクリーンショット。</block>
@@ -2759,7 +2737,6 @@
   <block id="c89b1b25078cfacff0327e248f47742a" category="inline-link-macro">Google CloudでCloud Volumes ONTAP を起動するための詳細な手順を表示します</block>
   <block id="00580a35c1c8179a01e7d20dec13cade" category="paragraph"><block ref="b9472d81f8e78286e85bc5ec5ddf3b8a" category="inline-link-macro-rx"></block>。</block>
   <block id="297c0a5982d22edf63b2c4a69d5d4d7a" category="list-text">Google Cloud Marketplaceから1時間単位の従量課金制（PAYGO）サブスクリプション</block>
-  <block id="add24f74283ee9a5fef81272f8343622" category="paragraph"><block ref="87f769a4234c2e71d6b4e713b6cf855b" category="inline-link-macro-rx"></block>。</block>
   <block id="853e80261480b98b92311064bba18ec1" category="inline-link">Google Cloudのクレデンシャルとサブスクリプションを管理する方法について説明します</block>
   <block id="35d23de0f37782d307786bb80fa04ca3" category="paragraph">この契約は、Google Cloud Marketplaceで_private_offerとして提供されます。</block>
   <block id="a3a9f2a7322ebec6cf1fa9b43d425434" category="list-text">[*詳細と資格情報*]ページで、[資格情報の編集]、[サブスクリプションの追加]の順にクリックし、プロンプトに従ってGoogle Cloud Marketplaceで年間プランを購読します。</block>
@@ -3632,8 +3609,6 @@
   <block id="e377cef11f252d8c520d41695086c34d" category="inline-link">BlueXPが権限を持って実行できること</block>
   <block id="ff6bb7f0e5c448daaba5bf73047a6a3c" category="summary">初期のCloud Volumes ONTAP システムの起動後にストレージの追加が必要になった場合は、BlueXPからNFS、CIFS、またはiSCSI用の新しいFlexVol ボリュームを作成できます。</block>
   <block id="7562f2634f470a74290453441e1766ad" category="paragraph">BlueXPでは、いくつかの方法で新しいボリュームを作成できます。</block>
-  <block id="c56e6a2b5b094f81bfa4b6e3ea3d5fc3" category="list-text">新しいボリュームの詳細を指定し、基盤となるデータアグリゲートをBlueXPで処理できるようにします。 <block ref="f87b905002e05e67a79602c0e20e2e8c" category="inline-xref-macro-rx"></block>。</block>
-  <block id="c42322fe554ce2a0d0d37125390d4f93" category="list-text">iSCSIボリュームを作成すると、BlueXPによって自動的にLUNが作成されます。ボリュームごとに 1 つの LUN だけを作成することでシンプルになり、管理は不要になります。ボリュームを作成したら、 <block ref="e98405f29600cc9d7986e148edaf32a5" category="inline-xref-macro-rx"></block>。</block>
   <block id="6ba997dc27b453871447935ed38ed666" category="paragraph">ボリュームを作成する最も一般的な方法は、必要なボリュームのタイプを指定してから、BlueXPがディスク割り当てを処理することです。ボリュームを作成するアグリゲートを選択することもできます。</block>
   <block id="9b05479b15e861dbc906267a8986b841" category="list-text">BlueXPにディスク割り当ての処理を許可して新しいボリュームを作成するか、ボリュームの特定のアグリゲートを選択します。</block>
   <block id="d358fb5d50198914ec98e41f454def16" category="paragraph">[CIFS]を選択し、サーバが設定されていない場合は、[Next]をクリックすると、CIFS接続の設定を求めるメッセージが表示されます。</block>
@@ -3826,7 +3801,6 @@
   <block id="ad6e11a5573fe6579ae1e6dcdce60d8b" category="inline-image-macro">ロードバランサがBlueXPとクライアントからの着信トラフィックを管理する概念図、2つのアベイラビリティゾーンにある2つのCloud Volumes ONTAP ノード、ブートデータ用のSSDディスク、および顧客データ用の管理対象ディスクを示しています。</block>
   <block id="af874ecaf1a103d4d596315556c66e56" category="paragraph"><block ref="af874ecaf1a103d4d596315556c66e56" category="inline-image-macro-rx" type="image"></block></block>
   <block id="0297170537ff589d5fd67ec8db7c4ae4" category="inline-link-macro">ブート、ルート、パートナールート、コアの各データ</block>
-  <block id="419c5f0dee6c475074f478e8aca659fd" category="list-text">お客様のデータは、ゾーン冗長ストレージ（ZRS）管理ディスクに格納されています。各ノードがもう一方のノードのストレージにアクセスできます。には追加のストレージも必要です <block ref="21b5d37c4ebe0dabed7cc2a884c8db5a" category="inline-link-macro-rx"></block>。</block>
   <block id="b04fd67a98a3b32956894024aa6fcf4f" category="paragraph-title"><block ref="beadfa85a2fdca06b91edc1131c603e6" category="inline-image-macro-rx" type="image"></block> AWS KMS を設定します</block>
   <block id="3af67a9dfd37709bb6e502fd7f303262" category="paragraph-title"><block ref="99e8b2f00e172bfcff96afdce69907bc" category="inline-image-macro-rx" type="image"></block> BlueXPを使用してCloud Volumes ONTAP を起動します</block>
   <block id="96f4c574f3909d1105768df05940587b" category="paragraph">BlueXPは、必要な数のプライベートIPアドレスを自動的にAzureのCloud Volumes ONTAP に割り当てます。ネットワークに利用可能な十分な数のプライベートIPアドレスがあることを確認する必要があります。</block>
@@ -3867,7 +3841,6 @@
   <block id="9a0059ade43ab240a0f0e8b3f201237d" category="list-text">複数のAZについて、リージョン、VNet、サブネット、ノード1のゾーン、およびノード2のゾーンを選択します。</block>
   <block id="8a0f5ea3246704da60c7b1c7557519a1" category="list-text">[ネットワーク接続を検証しました...]*]チェックボックスを選択します。</block>
   <block id="b6416a070eae245c22afedda3deac1ef" category="list-text">*構成済みパッケージ*：Cloud Volumes ONTAP システムを迅速に導入するパッケージを1つ選択するか、*構成の変更*をクリックします。</block>
-  <block id="1e8446e8033270b9f2f812d81dfc0ddc" category="paragraph">ディスク・サイズの選択については、を参照してください <block ref="e1b3c31cb34daed9344cfbb51e1e4263" category="inline-link-macro-rx"></block>。</block>
   <block id="6ac4e08b1d7c56a9609b4b262b83b42c" category="summary">必要な権限を持つIAMロールを各Cloud Volumes ONTAP ノードに関連付ける必要があります。HAメディエーターについても同様です。BlueXPでIAMロールを作成するのが最も簡単ですが、自分の役割を使用することもできます。</block>
   <block id="f385f3aca90d403df78c03cbdf7eaa8c" category="paragraph">このタスクはオプションです。Cloud Volumes ONTAP 作業環境を作成する場合、デフォルトでは、BlueXPでIAMロールを作成することができます。ビジネスのセキュリティポリシーでIAMロールの作成が手動で求められる場合は、次の手順を実行します。</block>
   <block id="d71fbed442a9a9cb1c9e9907fd8563e0" category="list-text">次の権限を含むIAMポリシーを作成します。</block>
@@ -3896,7 +3869,6 @@
   <block id="2e110c7b4552098e0987a75a7014c130" category="inline-image-macro">ロードバランサがBlueXPおよびクライアントからの着信トラフィックを管理する概念図、可用性セット内の2つのCloud Volumes ONTAP ノード、ブートデータ用のSSDディスク、顧客データ用のLRS管理ディスクを示しています。</block>
   <block id="4b0787da3b25196e9ad45ff1da596770" category="paragraph"><block ref="4b0787da3b25196e9ad45ff1da596770" category="inline-image-macro-rx" type="image"></block></block>
   <block id="d44b7a63bb6db6c3f374ad578d957149" category="inline-link-macro">ブート、ルート、パートナーのルート、コア、NVRAMの各データ</block>
-  <block id="bdb764a539084c79daf35d5d881ae82c" category="list-text">お客様のデータは、ローカル冗長ストレージ（LRS）管理対象ディスクに格納されています。各ノードがもう一方のノードのストレージにアクセスできます。には追加のストレージも必要です <block ref="9f11431b4ce0e30551c89e37c48c22cd" category="inline-link-macro-rx"></block>。</block>
   <block id="c69ac98b36cf0e598f3cae6b175a8eec" category="list-text">ストレージアカウントは、診断ログの処理とBLOBストレージへの階層化を行うディスクベースの管理環境で使用されます。</block>
   <block id="dba89da91170934734e847dcfe4ad5d0" category="section-title">Cloud Volumes ONTAP 9.12.1</block>
   <block id="2dd09f45720a8f94b29c4d048b61ff4e" category="section-title">2022年11月15日</block>
@@ -4029,8 +4001,6 @@
   <block id="8bb6cd6de4a896f626b89e711d40aa4c" category="paragraph">BlueXPは、Cloud Volumes ONTAP が正常に動作するために必要なインバウンドとアウトバウンドのルールを含むGoogle Cloudファイアウォールルールを作成します。テスト目的または独自のファイアウォールルールを使用する場合は、ポートを参照してください。</block>
   <block id="30f3abb35963e0cd7d66dc08581087c9" category="paragraph">Cloud Volumes ONTAP のファイアウォールルールには、インバウンドとアウトバウンドの両方のルールが必要です。HA 構成を導入する場合は、 VPC 0 の Cloud Volumes ONTAP のファイアウォールルールを以下に示します。</block>
   <block id="cb97a2b297b246ea14d6c17e8e5ee28a" category="list-text">VPC -0 の HA コンポーネントのルールセット。これらのルールにより、 Cloud Volumes ONTAP へのデータアクセスが可能になります。</block>
-  <block id="853d5f8d41b181e1e73157826ecc4287" category="inline-xref">vPC-2、およびVPC-3について詳しくはこちらをご覧ください</block>
-  <block id="9cd85fea135b7ad7c981c3cc1f75a6ea" category="list-text">VPC -1 、 VPC -2 、および VPC -3 の HA コンポーネントに関するもう 1 つのルールセット。これらのルールは、 HA コンポーネント間のインバウンド通信とアウトバウンド通信に対してオープンです。 <block ref="8d9dee5ea3dbe6098c688583dd57c09d" category="inline-xref-macro-rx"></block>。</block>
   <block id="ae2d87942e6697528344ccace68364e3" category="section-title">VPC -1、VPC -2、およびVPC -3のルール</block>
   <block id="5fb73c1af98e831dcfe0ce66f4582d3b" category="paragraph">Google Cloudでは、4つのVPC間にHA構成が導入されます。VPC -0 の HA 構成に必要なファイアウォールルール はです <block ref="8216cabe940880477030118a8a765034" category="inline-xref-macro-rx"></block>。</block>
   <block id="4fad8964dcacb8a6d329f6e2e57a2af9" category="paragraph">コネクタをまだ作成していない場合は、コネクタのネットワーク要件も確認してください。</block>
@@ -4075,7 +4045,6 @@
   <block id="a4bf88119cf04fd8c616db4b8cc720b8" category="cell">ラベルは、Google Cloudリソースのメタデータです。BlueXPは、システムに関連付けられているCloud Volumes ONTAP システムとGoogle Cloudリソースにラベルを追加します。作業環境の作成時にユーザインターフェイスからラベルを 4 つまで追加し、その後追加することができます。API では、作業環境の作成時にラベルを 4 つに制限することはありません。ラベルの詳細については、を参照してください<block ref="fa397f5b6985fa16ac695ba7d4f7a5a5" category="inline-link-rx"></block>。</block>
   <block id="9825444762440cb7be1345336853f4a6" category="paragraph">従量課金制のCloud Volumes ONTAP システムを作成するには、Google Cloud MarketplaceからCloud Volumes ONTAP へのサブスクリプションに関連付けられているGoogle Cloudプロジェクトを選択する必要があります。</block>
   <block id="2dbb2a35f48f58340e040cb41a1d70b1" category="inline-link">MarketplaceサブスクリプションとGoogle Cloudクレデンシャルの関連付け</block>
-  <block id="c328f8a7342e88f617f6d5b5de3ddde7" category="paragraph">ディスクの種類とサイズの選択については、を参照してください <block ref="d149bf4b730fbae097705dc422facd68" category="inline-link-macro-rx"></block>。</block>
   <block id="06017a9b77812f0002c0c97398d0c75e" category="list-text">* Google Cloud Platformでのデータ階層化*：最初のアグリゲートでデータの階層化を有効にするかどうかを選択し、階層化されたデータのストレージクラスを選択してから、事前に定義されたストレージ管理者ロール（Cloud Volumes ONTAP 9.7以降で必要）を持つサービスアカウントを選択します。または、Google Cloudアカウントを選択します（Cloud Volumes ONTAP 9.6に必要）。</block>
   <block id="bb74d89743a44b4a44d7b815ee74a08e" category="inline-link">9.6でのデータ階層化用にGoogle Cloudアカウントを設定および追加します</block>
   <block id="cd6afa4ed61f071f47165012e4286043" category="list-text">データの階層化を無効にすると、以降のアグリゲートで有効にすることができますが、システムの電源をオフにして、Google Cloudコンソールからサービスアカウントを追加する必要があります。</block>
@@ -4317,8 +4286,6 @@
   <block id="bbe8dbabe5bfd1d32eaa2131b90c191a" category="list-text">HAインターコネクトIPアドレス×2（e0c）</block>
   <block id="0baf3fbe98870c6047f6b10e5370bff7" category="list-text">RSM iSCSI IPアドレス×2（e0d）</block>
   <block id="c3872c89a315822852621c448e41aac4" category="list-text">ファイアウォールルールを作成する必要はありません。BlueXPはファイアウォールルールを作成します。独自のファイアウォールを使用する必要がある場合は、以下のファイアウォールルールを参照してください。</block>
-  <block id="01e18e5463e6c1fc9c05a5b8a728f3ff" category="list-text">VPC -0 の HA コンポーネントのルールセット。これらのルールにより、 Cloud Volumes ONTAP へのデータアクセスが可能になります。 <block ref="889fb5c02a9d32a6457688ad005f7e96" category="inline-xref-macro-rx"></block>。</block>
-  <block id="204347da7430e0509c4b62949e49e5dc" category="list-text">VPC -1 、 VPC -2 、および VPC -3 の HA コンポーネントに関するもう 1 つのルールセット。これらのルールは、 HA コンポーネント間のインバウンド通信とアウトバウンド通信に対してオープンです。 <block ref="889fb5c02a9d32a6457688ad005f7e96" category="inline-xref-macro-rx"></block>。</block>
   <block id="e2f177a250a8772cd8ebbe4839390958" category="paragraph">BlueXPでは、1つのノードシステムに6つのIPアドレスが割り当てられます。</block>
   <block id="b4f6a6268e9ed79637c765266075ab8c" category="paragraph">次の表に、各プライベートIPアドレスに関連付けられているLIFの詳細を示します。</block>
   <block id="6d0c9e6ffd2de679838428abdea38009" category="cell">iSCSI プロトコルを使用したクライアントアクセス。システムでは、その他の重要なネットワークワークフローにも使用されます。このLIFは必須であり、削除することはできません。</block>
@@ -4441,7 +4408,6 @@
   <block id="ac2c13cd2f76af0753933c8630446e5f" category="paragraph">_Editor_pageが表示されます。</block>
   <block id="18a9b2315ac5b98381d542571ba28299" category="list-text">アクションパネルの上に、テンプレートの名前を入力します。</block>
   <block id="74f7c9266baa87f8e4aceef158811143" category="list-text">_Context_の下に、を起動した作業環境の名前が作業環境に入力されます。ボリュームを作成する* Storage VM *を選択します。</block>
-  <block id="02550edcd072d55bf0b10ab3bdd4bc07" category="list-text">テンプレートからハードコーディングされていないすべてのパラメータに値を追加します。を参照してください <block ref="c4711ce582f4a278fe266c32d7e1a70b" category="inline-xref-macro-rx"></block> Cloud Volumes ONTAP ボリュームの導入を完了するために必要なすべてのパラメータの詳細については、を参照してください。</block>
   <block id="746037c3b6a0eec6bb1e41959d51e07e" category="list-text">[適用（Apply）]*をクリックして、設定したパラメータを選択したアクションに保存します。</block>
   <block id="be2645489c0ae0149fc30f6dc8d80bbb" category="paragraph">たとえば、[Enable Cloud Backup on Volume]アクションでバックアップポリシーを選択する必要がある場合は、ここで選択できます。</block>
   <block id="f0131c80c45b00e70cb9a1d8c9e3448a" category="list-text">テンプレートアクションの設定が完了したら、*テンプレートの保存*をクリックします。</block>
@@ -5008,4 +4974,40 @@ NetApp （ BYOL ）からライセンスを直接購入した場合、 AWS サ�
   <block id="de98023f98ece91547c73d7585576ce2" category="paragraph"><block ref="de98023f98ece91547c73d7585576ce2" category="inline-link-macro-rx"></block></block>
   <block id="e44870bfe38bf3731499fca3154b9528" category="image-alt">作業環境を表示しているときに[Overview]ページの右上にある[Features]パネルに表示される[Ransomware Protection]設定のスクリーンショット。</block>
   <block id="a35eb7b32c61adf984cdcc0cc1594b1c" category="image-alt">スクリーンショットは、Autonomous Ransomware Protectionのアドオンライセンスを示しています。</block>
+  <block id="3610c64d06ee703eeedd1aa8259e7a0a" category="paragraph">詳細については、を参照してください <block ref="cb348e275d7cba4c55db598a08ff583c" category="inline-xref-macro-rx"></block>。</block>
+  <block id="f0807aa8da48d7e90c9a74a5489c2e26" category="list-text">* 場所と接続 * ：に記録したネットワーク情報を入力します<block ref="fd0086af96971a0360fa581d84484686" category="inline-link-rx"></block>。</block>
+  <block id="7fe2adc6be7a82cab7283f015a74b9f2" category="paragraph">詳細については、を参照してください <block ref="24fc9da0f00ff5ec38c6b3fffe9cc77c" category="inline-link-macro-rx"></block> および <block ref="1e62300500e1ad0802bb2b24113c7036" category="inline-link-macro-rx"></block>。</block>
+  <block id="d16dab85da651b5a904fab64f734cab2" category="paragraph">IP アドレスは、その地域のすべての VPC の CIDR ブロックの外側にある必要があります。詳細については、を参照してください <block ref="e677af9e7ca6c446fefd39f21658da89" category="inline-link-macro-rx"></block>。</block>
+  <block id="16a517c82785b713c36b332e45717c61" category="paragraph">プロビジョニングされた容量が最大500GiBのCloud Volumes ONTAP を無料で使用するには、Freemium製品を選択してください。 <block ref="775c6ad26b7b2d421d3611d3f7f81936" category="inline-link-macro-rx"></block>。</block>
+  <block id="c2ed88d34f31cf3b23cdc3919ef56b24" category="paragraph">プロビジョニング済み容量が500GiBを超えると、システムはに自動的に変換されないかぎり、マーケットプレイスのサブスクリプションを通じて料金が請求されることはありません <block ref="399bac8d27c4886a3f9c83c2b09e6c23" category="inline-link-macro-rx"></block>。</block>
+  <block id="cdb3213ddee28a482827efa588662a4a" category="paragraph"><block ref="84651cf007e3f6350ead04922b484776" category="inline-link-macro-rx"></block>。</block>
+  <block id="78a6b7dd9d1fcece4ad8396a1d9b3f08" category="paragraph">プロビジョニングされた容量が最大500GiBのCloud Volumes ONTAP を無料で使用するには、Freemium製品を選択してください。 <block ref="1a10032c571c8bd3c7705b5a599fed7e" category="inline-link-macro-rx"></block>。</block>
+  <block id="c865f6da9bcfc07ba082737620200b41" category="paragraph">プロビジョニング済み容量が500GiBを超えると、システムはに自動的に変換されないかぎり、マーケットプレイスのサブスクリプションを通じて料金が請求されることはありません <block ref="ec72849d6ddd1aa67c619efd7a434388" category="inline-link-macro-rx"></block>。</block>
+  <block id="a8f0efbc9639c258065d01ea6552a320" category="list-text">新しいボリュームの詳細を指定し、基盤となるデータアグリゲートをBlueXPで処理できるようにします。 <block ref="7d09ed3a2e8adfd1ea66dd5eff6c8d13" category="inline-xref-macro-rx"></block></block>
+  <block id="f2354151259450918b28c0dd2ce20606" category="list-text">任意のデータアグリゲート上にボリュームを作成します。 <block ref="7d09ed3a2e8adfd1ea66dd5eff6c8d13" category="inline-xref-macro-rx"></block></block>
+  <block id="b9269bf669334245761162ed1b5f67fc" category="list-text">テンプレートからボリュームを作成し、データベースやストリーミングサービスなど特定のアプリケーションのワークロード要件に合わせてボリュームを最適化します。 <block ref="2e0c3dc13b95af01c6b2fc43579657db" category="inline-xref-macro-rx"></block></block>
+  <block id="6acfe5d47cf8e7d4ce1ddef9604984d8" category="list-text">HA 構成の第 2 ノードにボリュームを作成する。 <block ref="8d20c8ec5d13d4f8ec83a1bb8e2e1e5d" category="inline-xref-macro-rx"></block></block>
+  <block id="765aadd821cf82bcd286359e2eb25476" category="list-text">iSCSIボリュームを作成すると、BlueXPによって自動的にLUNが作成されます。ボリュームごとに 1 つの LUN だけを作成することでシンプルになり、管理は不要になります。ボリュームを作成したら、 <block ref="9b65fd4fba31c27fb58a4653a54defad" category="inline-link-macro-rx"></block>。</block>
+  <block id="34b51cb01d3605c2b908600c2b516152" category="list-text"><block ref="34b51cb01d3605c2b908600c2b516152" category="inline-link-macro-rx"></block></block>
+  <block id="2a79e18dae8df0be0a0d70d12cf4bfec" category="list-text"><block ref="2a79e18dae8df0be0a0d70d12cf4bfec" category="inline-link-macro-rx"></block></block>
+  <block id="14c10e4dfdbfa7bb1944c39086904d79" category="list-text"><block ref="14c10e4dfdbfa7bb1944c39086904d79" category="inline-link-macro-rx"></block></block>
+  <block id="ff89f21886369313040dff71f31e89db" category="list-text">テンプレートからハードコーディングされていないすべてのパラメータに値を追加します。を参照してください <block ref="8a193d900c598af224bec0dcf7cbba7e" category="inline-xref-macro-rx"></block> Cloud Volumes ONTAP ボリュームの導入を完了するために必要なすべてのパラメータの詳細については、を参照してください。</block>
+  <block id="f784e2eca8423af6d4b6e02cd9dc17b6" category="list-text">VPC -0 の HA コンポーネントのルールセット。これらのルールにより、 Cloud Volumes ONTAP へのデータアクセスが可能になります。 <block ref="1a421f2e5e3047ae3801063040dbe3fb" category="inline-xref-macro-rx"></block>。</block>
+  <block id="29642aeaa8aff442388842cc2c36f19d" category="list-text">VPC -1 、 VPC -2 、および VPC -3 の HA コンポーネントに関するもう 1 つのルールセット。これらのルールは、 HA コンポーネント間のインバウンド通信とアウトバウンド通信に対してオープンです。 <block ref="1a421f2e5e3047ae3801063040dbe3fb" category="inline-xref-macro-rx"></block>。</block>
+  <block id="b0082432bdd8f260c6c2bf11437fb1b7" category="list-text">VPC -1 、 VPC -2 、および VPC -3 の HA コンポーネントに関するもう 1 つのルールセット。これらのルールは、 HA コンポーネント間のインバウンド通信とアウトバウンド通信に対してオープンです。 <block ref="07ead3ac53ea1b122b25bf61bd233110" category="inline-xref-macro-rx"></block>。</block>
+  <block id="d2d30bf70c79bbb95b5e7ce630b66c21" category="cell">既存のセキュリティグループを選択する場合は、 Cloud Volumes ONTAP の要件を満たす必要があります。 <block ref="c840f14212255ea9808d6d3aa32adaf9" category="inline-link-macro-rx"></block>。</block>
+  <block id="4956de48e08bd2176b53bb70ae88a9ea" category="paragraph">ディスクの種類とサイズの選択については、を参照してください <block ref="2a79e18dae8df0be0a0d70d12cf4bfec" category="inline-link-macro-rx"></block>。</block>
+  <block id="2961924447b862b8c08430804068c015" category="paragraph">詳細については、を参照してください <block ref="f7e49e28b2875e2913382dd3096ff790" category="inline-link-macro-rx"></block> および <block ref="1e62300500e1ad0802bb2b24113c7036" category="inline-link-macro-rx"></block>。</block>
+  <block id="f5a5a06a4d8eaa817e47a272a932b9a0" category="paragraph">ディスク・サイズの選択については、を参照してください <block ref="2a79e18dae8df0be0a0d70d12cf4bfec" category="inline-link-macro-rx"></block>。</block>
+  <block id="1b0a5fc9df36c3cc3f61cb97e9631bbb" category="paragraph">詳細については、を参照してください <block ref="e677af9e7ca6c446fefd39f21658da89" category="inline-link-macro-rx"></block>。</block>
+  <block id="97f1424ad7142b7e2d30d9f789a2be74" category="list-text">お客様のデータは Premium Storage ページの BLOB にあります。各ノードがもう一方のノードのストレージにアクセスできます。には追加のストレージも必要です <block ref="6674daf770d6e900d67b1c4ef55eae3d" category="inline-link-macro-rx"></block>。</block>
+  <block id="669a47d0ae98ea0a97a7435870bc7159" category="list-text">お客様のデータは、ローカル冗長ストレージ（LRS）管理対象ディスクに格納されています。各ノードがもう一方のノードのストレージにアクセスできます。には追加のストレージも必要です <block ref="e045f042b95c3970b6fbc1453cc4de4f" category="inline-link-macro-rx"></block>。</block>
+  <block id="4b9f6d975fecefec84052b5f7b4faf50" category="list-text">お客様のデータは、ゾーン冗長ストレージ（ZRS）管理ディスクに格納されています。各ノードがもう一方のノードのストレージにアクセスできます。には追加のストレージも必要です <block ref="884d6df1e2c98c96602f673583d3ca41" category="inline-link-macro-rx"></block>。</block>
+  <block id="b8233d9769584c2572b277b2e1e676f3" category="paragraph">プロビジョニングされた容量が最大500GiBのCloud Volumes ONTAP を無料で使用するには、Freemium製品を選択してください。 <block ref="c357f84ffc0f3a34ce59e7cfa50f2c2e" category="inline-link-macro-rx"></block>。</block>
+  <block id="c9687dde572193ba74d9e74a3c45d034" category="paragraph">プロビジョニング済み容量が500GiBを超えると、システムはに自動的に変換されないかぎり、マーケットプレイスのサブスクリプションを通じて料金が請求されることはありません <block ref="2152ece811fe715f61775babe26548aa" category="inline-link-macro-rx"></block>。</block>
+  <block id="6b3e3d3fe4e7f265b8cbf3430816ede6" category="cell">既存のファイアウォールポリシーを使用する場合は、必要なルールが含まれていることを確認してください。リンク：https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/reference-networking-gcp.html#firewall-rules[Learn Cloud Volumes ONTAPのファイアウォールルールについて^]。</block>
+  <block id="29868f2b604fe0144f8b5619cde525cf" category="inline-link-macro">Google Cloudでシステムをサイジングする</block>
+  <block id="f3e5244708437be7ab2becec4aafd25d" category="paragraph">ディスクの種類とサイズの選択については、を参照してください <block ref="674c7afffa941aa0d627117a6589402e" category="inline-link-macro-rx"></block>。</block>
+  <block id="f3602532fa23ad89eed856305605200f" category="paragraph">詳細については、を参照してください <block ref="4d14a404483b4ba1e9755b2ba8cd9a51" category="inline-link-macro-rx"></block> および <block ref="69d3706831f999336fb27703356dae22" category="inline-link-macro-rx"></block>。</block>
+  <block id="a2ff91e180d9feb69d295f51f7431cd5" category="cell">既存のファイアウォールポリシーを使用する場合は、必要なルールが含まれていることを確認してください。 <block ref="e0f5249f2d7145acb8502413a8b18c3d" category="inline-link-macro-rx"></block>。</block>
 </blocks>

@@ -20,7 +20,7 @@ Cloud Volumes ONTAP で使用するライセンスオプションを決定した
 
 == フリーミアム
 
-プロビジョニングされた容量が最大500GiBのCloud Volumes ONTAP を無料で使用するには、Freemium製品を選択してください。 link:concept-licensing.html#freemium-offering["Freemium 製品の詳細をご覧ください"]。
+プロビジョニングされた容量が最大500GiBのCloud Volumes ONTAP を無料で使用するには、Freemium製品を選択してください。 link:https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-licensing.html#packages["Freemium 製品の詳細をご覧ください"^]。
 
 .手順
 . 左側のナビゲーションメニューから、* Storage > Canvas *を選択します。
@@ -28,7 +28,7 @@ Cloud Volumes ONTAP で使用するライセンスオプションを決定した
 +
 .. [*詳細とクレデンシャル*]ページで、[クレデンシャルの編集]、[サブスクリプションの追加]の順にクリックし、プロンプトに従ってAzure Marketplaceで従量課金制サービスに登録します。
 +
-プロビジョニング済み容量が500GiBを超えると、システムはに自動的に変換されないかぎり、マーケットプレイスのサブスクリプションを通じて料金が請求されることはありません link:concept-licensing.html#capacity-based-licensing-packages["Essentials パッケージ"]。
+プロビジョニング済み容量が500GiBを超えると、システムはに自動的に変換されないかぎり、マーケットプレイスのサブスクリプションを通じて料金が請求されることはありません link:https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-licensing.html#capacity-based-licensing["Essentials パッケージ"^]。
 
 +
 image:screenshot-azure-paygo-subscription.png["Cloud Volumes ONTAP の作業環境を作成する場合のPAYGOサブスクリプションオプションのスクリーンショット。"]

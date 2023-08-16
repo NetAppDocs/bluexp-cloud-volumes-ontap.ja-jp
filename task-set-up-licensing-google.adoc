@@ -20,7 +20,7 @@ Cloud Volumes ONTAP で使用するライセンスオプションを決定した
 
 == フリーミアム
 
-プロビジョニングされた容量が最大500GiBのCloud Volumes ONTAP を無料で使用するには、Freemium製品を選択してください。 link:concept-licensing.html#freemium-offering["Freemium 製品の詳細をご覧ください"]。
+プロビジョニングされた容量が最大500GiBのCloud Volumes ONTAP を無料で使用するには、Freemium製品を選択してください。 link:concept-licensing.html#packages["Freemium 製品の詳細をご覧ください"]。
 
 .手順
 . 左側のナビゲーションメニューから、* Storage > Canvas *を選択します。
@@ -28,7 +28,7 @@ Cloud Volumes ONTAP で使用するライセンスオプションを決定した
 +
 .. [*詳細と資格情報*]ページで、[資格情報の編集]、[サブスクリプションの追加]の順にクリックし、プロンプトに従ってGoogle Cloud Marketplaceでの従量課金制サービスに登録します。
 +
-プロビジョニング済み容量が500GiBを超えると、システムはに自動的に変換されないかぎり、マーケットプレイスのサブスクリプションを通じて料金が請求されることはありません link:concept-licensing.html#capacity-based-licensing-packages["Essentials パッケージ"]。
+プロビジョニング済み容量が500GiBを超えると、システムはに自動的に変換されないかぎり、マーケットプレイスのサブスクリプションを通じて料金が請求されることはありません link:concept-licensing.html#packages["Essentials パッケージ"]。
 
 .. BlueXPに戻ったら、充電方法のページにアクセスして「* Freemium *」を選択します。
 +
@@ -53,7 +53,7 @@ Essentials パッケージと Professional パッケージには、次の消費�
 * 年間契約
 
 
-link:concept-licensing.html#freemium-offering["容量単位のライセンスに関する詳細は、こちらをご覧ください"]。
+link:concept-licensing.html#capacity-based-licensing["容量単位のライセンスに関する詳細は、こちらをご覧ください"]。
 
 以降のセクションでは、これらの各消費モデルの使用方法について説明します。
 

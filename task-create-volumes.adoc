@@ -18,10 +18,10 @@ summary: 初期のCloud Volumes ONTAP システムの起動後にストレージ
 
 BlueXPでは、いくつかの方法で新しいボリュームを作成できます。
 
-* 新しいボリュームの詳細を指定し、基盤となるデータアグリゲートをBlueXPで処理できるようにします。 <<ボリュームを作成します,詳細はこちら。>>。
-* 任意のデータアグリゲート上にボリュームを作成します。 <<ボリュームを作成します,詳細はこちら。>>。
-* テンプレートからボリュームを作成し、データベースやストリーミングサービスなど特定のアプリケーションのワークロード要件に合わせてボリュームを最適化します。 <<テンプレートからボリュームを作成します,詳細はこちら。>>。
-* HA 構成の第 2 ノードにボリュームを作成する。 <<HA 構成の第 2 ノードにボリュームを作成する,詳細はこちら。>>。
+* 新しいボリュームの詳細を指定し、基盤となるデータアグリゲートをBlueXPで処理できるようにします。 <<create-a-volume,詳細はこちら。>>
+* 任意のデータアグリゲート上にボリュームを作成します。 <<create-a-volume,詳細はこちら。>>
+* テンプレートからボリュームを作成し、データベースやストリーミングサービスなど特定のアプリケーションのワークロード要件に合わせてボリュームを最適化します。 <<create-a-volume-from-a-template,詳細はこちら。>>
+* HA 構成の第 2 ノードにボリュームを作成する。 <<create-volume-second-node,詳細はこちら。>>
 
 
 
@@ -30,7 +30,7 @@ BlueXPでは、いくつかの方法で新しいボリュームを作成でき�
 
 ボリュームのプロビジョニングに関する注意事項は次のとおりです。
 
-* iSCSIボリュームを作成すると、BlueXPによって自動的にLUNが作成されます。ボリュームごとに 1 つの LUN だけを作成することでシンプルになり、管理は不要になります。ボリュームを作成したら、 <<LUN をホストに接続します,IQN を使用して、から LUN に接続します ホスト>>。
+* iSCSIボリュームを作成すると、BlueXPによって自動的にLUNが作成されます。ボリュームごとに 1 つの LUN だけを作成することでシンプルになり、管理は不要になります。ボリュームを作成したら、 link:https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-connect-lun.html["IQN を使用して、から LUN に接続します ホスト"^]。
 * LUN は、 System Manager または CLI を使用して追加で作成できます。
 
 
@@ -181,7 +181,7 @@ LUN:: iSCSI ストレージターゲットは LUN （論理ユニット）と呼
 ifdef::aws[]
 
 +
-*** link:task-planning-your-config.html#sizing-your-system-in-aws["AWS でのシステムのサイジング"]
+*** link:https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-planning-your-config.html#size-your-system-in-aws["AWS でのシステムのサイジング"^]
 
 
 
@@ -192,14 +192,14 @@ endif::aws[]
 
 ifdef::azure[]
 
-* link:task-planning-your-config-azure.html#sizing-your-system-in-azure["Azure でのシステムのサイジング"]
+* link:https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-planning-your-config-azure.html#size-your-system-in-azure["Azure でのシステムのサイジング"^]
 
 
 endif::azure[]
 
 ifdef::gcp[]
 
-* link:task-planning-your-config-gcp.html#sizing-your-system-in-gcp["Google Cloudでのシステムのサイジング"]
+* link:https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-planning-your-config-gcp.html#size-your-system-in-gcp["Google Cloudでのシステムのサイジング"^]
 
 
 endif::gcp[]
@@ -250,7 +250,7 @@ image:screenshot_define_cvo_vol_from_template.png["ボリュームを作成す�
 
 . アクションパネルの上に、テンプレートの名前を入力します。
 . _Context_の下に、を起動した作業環境の名前が作業環境に入力されます。ボリュームを作成する* Storage VM *を選択します。
-. テンプレートからハードコーディングされていないすべてのパラメータに値を追加します。を参照してください <<create a volume,ボリュームを作成します>> Cloud Volumes ONTAP ボリュームの導入を完了するために必要なすべてのパラメータの詳細については、を参照してください。
+. テンプレートからハードコーディングされていないすべてのパラメータに値を追加します。を参照してください <<create-a-volume,ボリュームを作成します>> Cloud Volumes ONTAP ボリュームの導入を完了するために必要なすべてのパラメータの詳細については、を参照してください。
 . [適用（Apply）]*をクリックして、設定したパラメータを選択したアクションに保存します。
 . 定義する必要のある他の操作（BlueXPのバックアップとリカバリの設定など）がない場合は、*[テンプレートの保存]*をクリックします。
 +

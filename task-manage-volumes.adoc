@@ -263,18 +263,18 @@ image::screenshot_aggr_volume_overview.png[aggrボリュームの概要のスク
 
 . システムがディスク制限に達していない場合は、ボリュームを同じシステム上の既存のアグリゲートまたは新しいアグリゲートに移動する必要があります。
 +
-詳細については、を参照してください link:task-manage-volumes.html#moving-volumes-to-another-aggregate-to-avoid-capacity-issues["ボリュームを別のアグリゲートに移動して、容量の問題を回避します"]。
+詳細については、を参照してください <<move-volumes-aggregate-capacity,容量の問題を回避するためにボリュームを別のアグリゲートに移動します>>。
 
 . システムがディスクの上限に達した場合は、次のいずれかを実行します。
 +
 .. 未使用のボリュームを削除します。
 .. ボリュームを再配置して、アグリゲートの空きスペースを確保します。
 +
-詳細については、を参照してください link:task-manage-volumes.html#moving-volumes-to-another-aggregate-to-avoid-capacity-issues["ボリュームを別のアグリゲートに移動して、容量の問題を回避します"]。
+詳細については、を参照してください <<move-volumes-aggregate-capacity,容量の問題を回避するためにボリュームを別のアグリゲートに移動します>>。
 
 .. スペースがある別のシステムに 2 つ以上のボリュームを移動します。
 +
-詳細については、を参照してください link:task-manage-volumes.html#moving-volumes-to-another-system-to-avoid-capacity-issues["容量の問題を回避するためにボリュームを別のシステムに移動する"]。
+詳細については、を参照してください <<move-volumes-aggregate-capacity,容量の問題を回避するためにボリュームを別のアグリゲートに移動します>>。
 
 
 

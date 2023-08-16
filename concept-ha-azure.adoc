@@ -32,7 +32,7 @@ BlueXPによって導入されるAzureコンポーネントについては、次
 
 Azure Standard Load Balancer の略:: ロードバランサは、 Cloud Volumes ONTAP HA ペアへの着信トラフィックを管理します。
 可用性セット:: Azure 可用性セットは、 Cloud Volumes ONTAP ノードを論理的にグループ化したものです。可用性セットを使用すると、ノードが異なる障害になっていることを確認し、ドメインを更新して冗長性と可用性を確保できます。 https://docs.microsoft.com/en-us/azure/virtual-machines/availability-set-overview["可用性セットの詳細については、 Azure のドキュメントを参照してください"^]。
-ディスク:: お客様のデータは Premium Storage ページの BLOB にあります。各ノードがもう一方のノードのストレージにアクセスできます。には追加のストレージも必要です link:reference-default-configs.html#boot-and-root-data-for-cloud-volumes-ontap["ブート、ルート、およびコアのデータ"]。
+ディスク:: お客様のデータは Premium Storage ページの BLOB にあります。各ノードがもう一方のノードのストレージにアクセスできます。には追加のストレージも必要です link:https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/reference-default-configs.html#azure-ha-pair["ブート、ルート、およびコアのデータ"^]。
 ストレージアカウント::
 +
 --
@@ -61,7 +61,7 @@ BlueXPによって導入されるAzureコンポーネントについては、次
 
 Azure Standard Load Balancer の略:: ロードバランサは、 Cloud Volumes ONTAP HA ペアへの着信トラフィックを管理します。
 可用性セット:: Azure 可用性セットは、 Cloud Volumes ONTAP ノードを論理的にグループ化したものです。可用性セットを使用すると、ノードが異なる障害になっていることを確認し、ドメインを更新して冗長性と可用性を確保できます。 https://docs.microsoft.com/en-us/azure/virtual-machines/availability-set-overview["可用性セットの詳細については、 Azure のドキュメントを参照してください"^]。
-ディスク:: お客様のデータは、ローカル冗長ストレージ（LRS）管理対象ディスクに格納されています。各ノードがもう一方のノードのストレージにアクセスできます。には追加のストレージも必要です link:reference-default-configs.html#boot-and-root-data-for-cloud-volumes-ontap["ブート、ルート、パートナーのルート、コア、NVRAMの各データ"]。
+ディスク:: お客様のデータは、ローカル冗長ストレージ（LRS）管理対象ディスクに格納されています。各ノードがもう一方のノードのストレージにアクセスできます。には追加のストレージも必要です link:https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/reference-default-configs.html#azure-ha-pair["ブート、ルート、パートナーのルート、コア、NVRAMの各データ"^]。
 ストレージアカウント:: ストレージアカウントは、診断ログの処理とBLOBストレージへの階層化を行うディスクベースの管理環境で使用されます。
 
 
@@ -77,7 +77,7 @@ BlueXPによって導入されるAzureコンポーネントについては、次
 
 Azure Standard Load Balancer の略:: ロードバランサは、 Cloud Volumes ONTAP HA ペアへの着信トラフィックを管理します。
 可用性ゾーン:: 2つのCloud Volumes ONTAP ノードが異なるアベイラビリティゾーンに導入されています。アベイラビリティゾーンを使用すると、各ノードが異なる障害ドメインに配置されます。 https://learn.microsoft.com/en-us/azure/virtual-machines/disks-redundancy#zone-redundant-storage-for-managed-disks["Azureゾーン冗長ストレージの詳細については、Azureのドキュメントを参照してください"^]。
-ディスク:: お客様のデータは、ゾーン冗長ストレージ（ZRS）管理ディスクに格納されています。各ノードがもう一方のノードのストレージにアクセスできます。には追加のストレージも必要です link:reference-default-configs.html#boot-and-root-data-for-cloud-volumes-ontap["ブート、ルート、パートナールート、コアの各データ"]。
+ディスク:: お客様のデータは、ゾーン冗長ストレージ（ZRS）管理ディスクに格納されています。各ノードがもう一方のノードのストレージにアクセスできます。には追加のストレージも必要です link:https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/reference-default-configs.html#azure-ha-pair["ブート、ルート、パートナールート、コアの各データ"^]。
 ストレージアカウント:: ストレージアカウントは、診断ログの処理とBLOBストレージへの階層化を行うディスクベースの管理環境で使用されます。
 
 
