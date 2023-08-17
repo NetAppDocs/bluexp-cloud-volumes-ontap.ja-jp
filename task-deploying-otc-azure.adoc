@@ -28,11 +28,11 @@ BlueXPでCloud Volumes ONTAP 作業環境を作成することで、Azureで単�
 
 * 使用する構成についての理解。
 +
-設定を選択し、ネットワーク管理者から Azure ネットワーク情報を入手しておく必要があります。詳細については、を参照してください link:task-planning-your-config-azure.html["Cloud Volumes ONTAP 構成を計画"]。
+設定を選択し、ネットワーク管理者から Azure ネットワーク情報を入手しておく必要があります。詳細については、を参照してください link:task-planning-your-config-azure.html["Cloud Volumes ONTAP 構成を計画"^]。
 
 * Cloud Volumes ONTAP のライセンスを設定するために必要な事項を理解する。
 +
-link:task-set-up-licensing-azure.html["ライセンスの設定方法について説明します"]。
+link:task-set-up-licensing-azure.html["ライセンスの設定方法について説明します"^]。
 
 
 
@@ -129,8 +129,8 @@ BlueXPがセキュリティグループを生成するようにした場合は�
 |===
 . * 充電方法と NSS アカウント * ：このシステムで使用する充電オプションを指定し、ネットアップサポートサイトのアカウントを指定します。
 +
-** link:concept-licensing.html["Cloud Volumes ONTAP のライセンスオプションについて説明します"]。
-** link:task-set-up-licensing-azure.html["ライセンスの設定方法について説明します"]。
+** link:concept-licensing.html["Cloud Volumes ONTAP のライセンスオプションについて説明します"^]。
+** link:task-set-up-licensing-azure.html["ライセンスの設定方法について説明します"^]。
 
 
 . * 構成済みパッケージ * ： Cloud Volumes ONTAP システムを迅速に導入するパッケージを 1 つ選択するか、 * 独自の構成を作成 * をクリックします。
@@ -156,7 +156,7 @@ NOTE: 選択したバージョンで新しいリリース候補、一般提供�
 ** ボリュームを作成または編集するときに、特定のボリューム階層化ポリシーを選択できます。
 ** データの階層化を無効にすると、以降のアグリゲートで有効にすることができます。
 +
-link:concept-data-tiering.html["データ階層化の詳細については、こちらをご覧ください。"]。
+link:concept-data-tiering.html["データ階層化の詳細については、こちらをご覧ください。"^]。
 
 
 
@@ -164,24 +164,24 @@ link:concept-data-tiering.html["データ階層化の詳細については、こ
 +
 .. 必要に応じて、「標準」または「高速」の書き込み速度を選択します。
 +
-link:concept-write-speed.html["書き込み速度の詳細については、こちらをご覧ください。"]。
+link:concept-write-speed.html["書き込み速度の詳細については、こちらをご覧ください。"^]。
 
 .. 必要に応じて、Write Once、Read Many（WORM）ストレージをアクティブにします。
 +
-このオプションは、特定のVMタイプに対してのみ使用できます。サポートされるVMタイプについては、を参照してください link:https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-configs-azure.html#ha-pairs["HAペアのライセンスでサポートされる構成"]。
+このオプションは、特定のVMタイプに対してのみ使用できます。サポートされるVMタイプについては、を参照してください link:https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-configs-azure.html#ha-pairs["HAペアのライセンスでサポートされる構成"^]。
 
 +
 Cloud Volumes ONTAP 9.7以前のバージョンでデータ階層化が有効になっている場合は、WORMを有効にすることはできません。Cloud Volumes ONTAP 9.8へのリバートまたはダウングレードは、WORMと階層化を有効にしたあとはブロックされます。
 
 +
-link:concept-worm.html["WORM ストレージの詳細については、こちらをご覧ください。"]。
+link:concept-worm.html["WORM ストレージの詳細については、こちらをご覧ください。"^]。
 
 .. WORMストレージをアクティブ化する場合は、保持期間を選択します。
 
 
 . * ボリュームの作成 * ：新しいボリュームの詳細を入力するか、 * スキップ * をクリックします。
 +
-link:concept-client-protocols.html["サポートされるクライアントプロトコルおよびバージョンについて説明します"]。
+link:concept-client-protocols.html["サポートされるクライアントプロトコルおよびバージョンについて説明します"^]。
 
 +
 このページの一部のフィールドは、説明のために用意されています。次の表では、ガイダンスが必要なフィールドについて説明します。
@@ -364,8 +364,8 @@ BlueXPがセキュリティグループを生成するようにした場合は�
 |===
 . * 充電方法と NSS アカウント * ：このシステムで使用する充電オプションを指定し、ネットアップサポートサイトのアカウントを指定します。
 +
-** link:concept-licensing.html["Cloud Volumes ONTAP のライセンスオプションについて説明します"]。
-** link:task-set-up-licensing-azure.html["ライセンスの設定方法について説明します"]。
+** link:concept-licensing.html["Cloud Volumes ONTAP のライセンスオプションについて説明します"^]。
+** link:task-set-up-licensing-azure.html["ライセンスの設定方法について説明します"^]。
 
 
 . *構成済みパッケージ*：Cloud Volumes ONTAP システムを迅速に導入するパッケージを1つ選択するか、*構成の変更*をクリックします。
@@ -385,12 +385,12 @@ NOTE: 選択したバージョンで新しいリリース候補、一般提供�
 +
 ** シンプルなプロビジョニングオプションを使用した場合、ディスクサイズは、初期アグリゲートのすべてのディスクと、BlueXPで作成される追加のアグリゲートのサイズです。Advanced Allocation オプションを使用すると、異なるディスクサイズを使用するアグリゲートを作成できます。
 +
-ディスク・サイズの選択については、を参照してください link:https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-planning-your-config-azure.html#size-your-system-in-azure["Azure でのシステムのサイジング"^]。
+ディスク・サイズの選択については、を参照してください link:https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-planning-your-config-azure.html#size-your-system-in-azure["Azureでシステムのサイズを設定します"^]。
 
 ** ボリュームを作成または編集するときに、特定のボリューム階層化ポリシーを選択できます。
 ** データの階層化を無効にすると、以降のアグリゲートで有効にすることができます。
 +
-link:concept-data-tiering.html["データ階層化の詳細については、こちらをご覧ください。"]。
+link:concept-data-tiering.html["データ階層化の詳細については、こちらをご覧ください。"^]。
 
 
 
@@ -398,17 +398,17 @@ link:concept-data-tiering.html["データ階層化の詳細については、こ
 +
 .. 必要に応じて、「標準」または「高速」の書き込み速度を選択します。
 +
-link:concept-write-speed.html["書き込み速度の詳細については、こちらをご覧ください。"]。
+link:concept-write-speed.html["書き込み速度の詳細については、こちらをご覧ください。"^]。
 
 .. 必要に応じて、Write Once、Read Many（WORM）ストレージをアクティブにします。
 +
-このオプションは、特定のVMタイプに対してのみ使用できます。サポートされるVMタイプについては、を参照してください link:https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-configs-azure.html#ha-pairs["HAペアのライセンスでサポートされる構成"]。
+このオプションは、特定のVMタイプに対してのみ使用できます。サポートされるVMタイプについては、を参照してください link:https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-configs-azure.html#ha-pairs["HAペアのライセンスでサポートされる構成"^]。
 
 +
 Cloud Volumes ONTAP 9.7以前のバージョンでデータ階層化が有効になっている場合は、WORMを有効にすることはできません。Cloud Volumes ONTAP 9.8へのリバートまたはダウングレードは、WORMと階層化を有効にしたあとはブロックされます。
 
 +
-link:concept-worm.html["WORM ストレージの詳細については、こちらをご覧ください。"]。
+link:concept-worm.html["WORM ストレージの詳細については、こちらをご覧ください。"^]。
 
 .. WORMストレージをアクティブ化する場合は、保持期間を選択します。
 
@@ -418,17 +418,17 @@ link:concept-worm.html["WORM ストレージの詳細については、こちら
 HTTPS接続は、Cloud Volumes ONTAP 9.7のHAペアからAzureページBLOBストレージアカウントに確立されます。このオプションを有効にすると、書き込みパフォーマンスに影響する可能性があります。作業環境の作成後に設定を変更することはできません。
 
 +
-link:concept-worm.html["WORM ストレージの詳細については、こちらをご覧ください。"]。
+link:concept-worm.html["WORM ストレージの詳細については、こちらをご覧ください。"^]。
 
 +
 データの階層化が有効になっていると、 WORM を有効にできません。
 
 +
-link:concept-worm.html["WORM ストレージの詳細については、こちらをご覧ください。"]。
+link:concept-worm.html["WORM ストレージの詳細については、こちらをご覧ください。"^]。
 
 . * ボリュームの作成 * ：新しいボリュームの詳細を入力するか、 * スキップ * をクリックします。
 +
-link:concept-client-protocols.html["サポートされるクライアントプロトコルおよびバージョンについて説明します"]。
+link:concept-client-protocols.html["サポートされるクライアントプロトコルおよびバージョンについて説明します"^]。
 
 +
 このページの一部のフィールドは、説明のために用意されています。次の表では、ガイダンスが必要なフィールドについて説明します。
@@ -493,7 +493,7 @@ NTP サーバは、 CIFS サーバを作成するときにのみ設定できま�
 |===
 . * 使用状況プロファイル、ディスクタイプ、階層化ポリシー * ： Storage Efficiency 機能を有効にするかどうかを選択し、必要に応じてボリューム階層化ポリシーを変更します。
 +
-詳細については、を参照してください link:https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-planning-your-config-azure.html#choose-a-volume-usage-profile["ボリューム使用率プロファイルについて"^] および link:concept-data-tiering.html["データ階層化の概要"^]。
+詳細については、を参照してください link:https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-planning-your-config-azure.html#choose-a-volume-usage-profile["ボリュームの使用プロファイルを選択してください"^] および link:concept-data-tiering.html["データ階層化の概要"^]。
 
 . * レビューと承認 *: 選択内容を確認して確認します。
 +

@@ -31,15 +31,15 @@ Cloud Volumes ONTAP は単一システム構成で起動することも、 AWS �
 
 * 使用する構成についての理解。
 +
-設定を選択し、管理者から AWS ネットワーク情報を取得して準備を完了しておく必要があります。詳細については、を参照してください link:task-planning-your-config.html["Cloud Volumes ONTAP 構成を計画"]。
+設定を選択し、管理者から AWS ネットワーク情報を取得して準備を完了しておく必要があります。詳細については、を参照してください link:task-planning-your-config.html["Cloud Volumes ONTAP 構成を計画"^]。
 
 * Cloud Volumes ONTAP のライセンスを設定するために必要な事項を理解する。
 +
-link:task-set-up-licensing-aws.html["ライセンスの設定方法について説明します"]。
+link:task-set-up-licensing-aws.html["ライセンスの設定方法について説明します"^]。
 
 * CIFS 構成用の DNS と Active Directory
 +
-詳細については、を参照してください link:reference-networking-aws.html["Cloud Volumes ONTAP in AWS のネットワーク要件"]。
+詳細については、を参照してください link:reference-networking-aws.html["Cloud Volumes ONTAP in AWS のネットワーク要件"^]。
 
 
 
@@ -123,7 +123,7 @@ BlueXPがセキュリティグループを生成するようにした場合は�
 
 
 
-| 既存のセキュリティグループを使用する | 既存のファイアウォールポリシーを使用する場合は、必要なルールが含まれていることを確認してください。 link:reference-security-groups.html["Cloud Volumes ONTAP のファイアウォールルールについて説明します"]。 
+| 既存のセキュリティグループを使用する | 既存のファイアウォールポリシーを使用する場合は、必要なルールが含まれていることを確認してください。 link:reference-security-groups.html["Cloud Volumes ONTAP のファイアウォールルールについて説明します"^]。 
 |===
 . * データ暗号化 * ：データ暗号化なし、または AWS で管理する暗号化を選択します。
 +
@@ -134,15 +134,15 @@ AWS で管理する暗号化の場合は、アカウントまたは別の AWS �
 TIP: Cloud Volumes ONTAP システムの作成後に AWS のデータ暗号化方式を変更することはできません。
 
 +
-link:task-setting-up-kms.html["Cloud 用の AWS KMS の設定方法については、こちらをご覧ください Volume ONTAP の略"]。
+link:task-setting-up-kms.html["Cloud 用の AWS KMS の設定方法については、こちらをご覧ください Volume ONTAP の略"^]。
 
 +
-link:concept-security.html#encryption-of-data-at-rest["サポートされている暗号化テクノロジの詳細を確認してください"]。
+link:concept-security.html#encryption-of-data-at-rest["サポートされている暗号化テクノロジの詳細を確認してください"^]。
 
 . * 充電方法と NSS アカウント * ：このシステムで使用する充電オプションを指定し、ネットアップサポートサイトのアカウントを指定します。
 +
-** link:concept-licensing.html["Cloud Volumes ONTAP のライセンスオプションについて説明します"]。
-** link:task-set-up-licensing-aws.html["ライセンスの設定方法について説明します"]。
+** link:concept-licensing.html["Cloud Volumes ONTAP のライセンスオプションについて説明します"^]。
+** link:task-set-up-licensing-aws.html["ライセンスの設定方法について説明します"^]。
 
 
 . * Cloud Volumes ONTAP 構成 * （ AWS Marketplace の年間契約のみ）：デフォルトの構成を確認して「 * Continue * 」をクリックするか、「 * 構成の変更 * 」をクリックして独自の構成を選択します。
@@ -155,7 +155,7 @@ link:concept-security.html#encryption-of-data-at-rest["サポートされてい�
 
 . *IAMの役割*: BlueXPが役割を作成できるようにするには、既定のオプションをそのまま使用することをお勧めします。
 +
-独自のポリシーを使用する場合は、それが満たされている必要があります link:task-set-up-iam-roles.html["Cloud Volumes ONTAP ノードのポリシーの要件"]。
+独自のポリシーを使用する場合は、それが満たされている必要があります link:task-set-up-iam-roles.html["Cloud Volumes ONTAP ノードのポリシーの要件"^]。
 
 . *ライセンス*：必要に応じてCloud Volumes ONTAP のバージョンを変更し、インスタンスタイプとインスタンステナンシーを選択します。
 +
@@ -168,12 +168,12 @@ NOTE: 選択したバージョンで新しいリリース候補、一般提供�
 
 +
 ** ディスクタイプは最初のボリューム（およびアグリゲート）用です。以降のボリューム（およびアグリゲート）には別のディスクタイプを選択できます。
-** GP3またはio1ディスクを選択した場合、BlueXPはAWSのElastic Volumes機能を使用して、必要に応じて、基盤となるストレージディスク容量を自動的に増やします。初期容量はストレージのニーズに基づいて選択し、Cloud Volumes ONTAP の導入後に変更することができます。 link:concept-aws-elastic-volumes.html["Elastic VolumesのAWSサポートの詳細については、こちらをご覧ください"]。
+** GP3またはio1ディスクを選択した場合、BlueXPはAWSのElastic Volumes機能を使用して、必要に応じて、基盤となるストレージディスク容量を自動的に増やします。初期容量はストレージのニーズに基づいて選択し、Cloud Volumes ONTAP の導入後に変更することができます。 link:concept-aws-elastic-volumes.html["Elastic VolumesのAWSサポートの詳細については、こちらをご覧ください"^]。
 ** gp2ディスクまたはst1ディスクを選択する場合、シンプルなプロビジョニングオプションを使用する場合、初期アグリゲートおよびBlueXPで作成される追加のアグリゲートのすべてのディスクサイズを選択できます。Advanced Allocation オプションを使用すると、異なるディスクサイズを使用するアグリゲートを作成できます。
 ** ボリュームを作成または編集するときに、特定のボリューム階層化ポリシーを選択できます。
 ** データの階層化を無効にすると、以降のアグリゲートで有効にすることができます。
 +
-link:concept-data-tiering.html["データ階層化の仕組みをご確認ください"]。
+link:concept-data-tiering.html["データ階層化の仕組みをご確認ください"^]。
 
 
 
@@ -181,21 +181,21 @@ link:concept-data-tiering.html["データ階層化の仕組みをご確認くだ
 +
 .. 必要に応じて、「標準」または「高速」の書き込み速度を選択します。
 +
-link:concept-write-speed.html["書き込み速度の詳細については、こちらをご覧ください。"]。
+link:concept-write-speed.html["書き込み速度の詳細については、こちらをご覧ください。"^]。
 
 .. 必要に応じて、Write Once、Read Many（WORM）ストレージをアクティブにします。
 +
 Cloud Volumes ONTAP 9.7以前のバージョンでデータ階層化が有効になっている場合は、WORMを有効にすることはできません。Cloud Volumes ONTAP 9.8へのリバートまたはダウングレードは、WORMと階層化を有効にしたあとはブロックされます。
 
 +
-link:concept-worm.html["WORM ストレージの詳細については、こちらをご覧ください。"]。
+link:concept-worm.html["WORM ストレージの詳細については、こちらをご覧ください。"^]。
 
 .. WORMストレージをアクティブ化する場合は、保持期間を選択します。
 
 
 . * ボリュームの作成 * ：新しいボリュームの詳細を入力するか、 * スキップ * をクリックします。
 +
-link:concept-client-protocols.html["サポートされるクライアントプロトコルおよびバージョンについて説明します"]。
+link:concept-client-protocols.html["サポートされるクライアントプロトコルおよびバージョンについて説明します"^]。
 
 +
 このページの一部のフィールドは、説明のために用意されています。次の表では、ガイダンスが必要なフィールドについて説明します。
@@ -351,7 +351,7 @@ TIP: WORMとデータ階層化を活用する場合は、BlueXPのバックア�
 
 . *HA 導入モデル *: HA 構成を選択します。
 +
-導入モデルの概要については、を参照してください link:concept-ha.html["AWS での Cloud Volumes ONTAP HA"]。
+導入モデルの概要については、を参照してください link:concept-ha.html["AWS での Cloud Volumes ONTAP HA"^]。
 
 . *場所と接続*（単一AZ）または*リージョンとVPC *（複数のAZ）：AWSワークシートに記録したネットワーク情報を入力します。
 +
@@ -372,7 +372,7 @@ BlueXPがセキュリティグループを生成するようにした場合は�
 
 
 
-| 既存のセキュリティグループを使用する | 既存のファイアウォールポリシーを使用する場合は、必要なルールが含まれていることを確認してください。 link:reference-security-groups.html["Cloud Volumes ONTAP のファイアウォールルールについて説明します"]。 
+| 既存のセキュリティグループを使用する | 既存のファイアウォールポリシーを使用する場合は、必要なルールが含まれていることを確認してください。 link:reference-security-groups.html["Cloud Volumes ONTAP のファイアウォールルールについて説明します"^]。 
 |===
 . * 接続と SSH 認証 * ： HA ペアとメディエーターの接続方法を選択します。
 . * フローティング IP * ：複数の AZ を選択した場合は、フローティング IP アドレスを指定します。
@@ -392,15 +392,15 @@ AWS で管理する暗号化の場合は、アカウントまたは別の AWS �
 TIP: Cloud Volumes ONTAP システムの作成後に AWS のデータ暗号化方式を変更することはできません。
 
 +
-link:task-setting-up-kms.html["Cloud 用の AWS KMS の設定方法については、こちらをご覧ください Volume ONTAP の略"]。
+link:task-setting-up-kms.html["Cloud 用の AWS KMS の設定方法については、こちらをご覧ください Volume ONTAP の略"^]。
 
 +
-link:concept-security.html#encryption-of-data-at-rest["サポートされている暗号化テクノロジの詳細を確認してください"]。
+link:concept-security.html#encryption-of-data-at-rest["サポートされている暗号化テクノロジの詳細を確認してください"^]。
 
 . * 充電方法と NSS アカウント * ：このシステムで使用する充電オプションを指定し、ネットアップサポートサイトのアカウントを指定します。
 +
-** link:concept-licensing.html["Cloud Volumes ONTAP のライセンスオプションについて説明します"]。
-** link:task-set-up-licensing-aws.html["ライセンスの設定方法について説明します"]。
+** link:concept-licensing.html["Cloud Volumes ONTAP のライセンスオプションについて説明します"^]。
+** link:task-set-up-licensing-aws.html["ライセンスの設定方法について説明します"^]。
 
 
 . * Cloud Volumes ONTAP 構成 * （ AWS Marketplace の年間契約のみ）：デフォルトの構成を確認して「 * Continue * 」をクリックするか、「 * 構成の変更 * 」をクリックして独自の構成を選択します。
@@ -413,7 +413,7 @@ link:concept-security.html#encryption-of-data-at-rest["サポートされてい�
 
 . *IAMの役割*: BlueXPが役割を作成できるようにするには、既定のオプションをそのまま使用することをお勧めします。
 +
-独自のポリシーを使用する場合は、それが満たされている必要があります link:task-set-up-iam-roles.html["Cloud Volumes ONTAP ノードと HA のポリシー要件 メディエーター"]。
+独自のポリシーを使用する場合は、それが満たされている必要があります link:task-set-up-iam-roles.html["Cloud Volumes ONTAP ノードと HA のポリシー要件 メディエーター"^]。
 
 . *ライセンス*：必要に応じてCloud Volumes ONTAP のバージョンを変更し、インスタンスタイプとインスタンステナンシーを選択します。
 +
@@ -426,12 +426,12 @@ NOTE: 選択したバージョンで新しいリリース候補、一般提供�
 
 +
 ** ディスクタイプは最初のボリューム（およびアグリゲート）用です。以降のボリューム（およびアグリゲート）には別のディスクタイプを選択できます。
-** GP3またはio1ディスクを選択した場合、BlueXPはAWSのElastic Volumes機能を使用して、必要に応じて、基盤となるストレージディスク容量を自動的に増やします。初期容量はストレージのニーズに基づいて選択し、Cloud Volumes ONTAP の導入後に変更することができます。 link:concept-aws-elastic-volumes.html["Elastic VolumesのAWSサポートの詳細については、こちらをご覧ください"]。
+** GP3またはio1ディスクを選択した場合、BlueXPはAWSのElastic Volumes機能を使用して、必要に応じて、基盤となるストレージディスク容量を自動的に増やします。初期容量はストレージのニーズに基づいて選択し、Cloud Volumes ONTAP の導入後に変更することができます。 link:concept-aws-elastic-volumes.html["Elastic VolumesのAWSサポートの詳細については、こちらをご覧ください"^]。
 ** gp2ディスクまたはst1ディスクを選択する場合、シンプルなプロビジョニングオプションを使用する場合、初期アグリゲートおよびBlueXPで作成される追加のアグリゲートのすべてのディスクサイズを選択できます。Advanced Allocation オプションを使用すると、異なるディスクサイズを使用するアグリゲートを作成できます。
 ** ボリュームを作成または編集するときに、特定のボリューム階層化ポリシーを選択できます。
 ** データの階層化を無効にすると、以降のアグリゲートで有効にすることができます。
 +
-link:concept-data-tiering.html["データ階層化の仕組みをご確認ください"]。
+link:concept-data-tiering.html["データ階層化の仕組みをご確認ください"^]。
 
 
 
@@ -439,21 +439,21 @@ link:concept-data-tiering.html["データ階層化の仕組みをご確認くだ
 +
 .. 必要に応じて、「標準」または「高速」の書き込み速度を選択します。
 +
-link:concept-write-speed.html["書き込み速度の詳細については、こちらをご覧ください。"]。
+link:concept-write-speed.html["書き込み速度の詳細については、こちらをご覧ください。"^]。
 
 .. 必要に応じて、Write Once、Read Many（WORM）ストレージをアクティブにします。
 +
 Cloud Volumes ONTAP 9.7以前のバージョンでデータ階層化が有効になっている場合は、WORMを有効にすることはできません。Cloud Volumes ONTAP 9.8へのリバートまたはダウングレードは、WORMと階層化を有効にしたあとはブロックされます。
 
 +
-link:concept-worm.html["WORM ストレージの詳細については、こちらをご覧ください。"]。
+link:concept-worm.html["WORM ストレージの詳細については、こちらをご覧ください。"^]。
 
 .. WORMストレージをアクティブ化する場合は、保持期間を選択します。
 
 
 . * ボリュームの作成 * ：新しいボリュームの詳細を入力するか、 * スキップ * をクリックします。
 +
-link:concept-client-protocols.html["サポートされるクライアントプロトコルおよびバージョンについて説明します"]。
+link:concept-client-protocols.html["サポートされるクライアントプロトコルおよびバージョンについて説明します"^]。
 
 +
 このページの一部のフィールドは、説明のために用意されています。次の表では、ガイダンスが必要なフィールドについて説明します。
@@ -518,7 +518,7 @@ NTP サーバは、 CIFS サーバを作成するときにのみ設定できま�
 |===
 . * 使用状況プロファイル、ディスクタイプ、階層化ポリシー * ：必要に応じて、 Storage Efficiency 機能を有効にするかどうかを選択し、ボリューム階層化ポリシーを編集します。
 +
-詳細については、を参照してください link:https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-planning-your-config.html#choose-a-volume-usage-profile["ボリューム使用率プロファイルについて"^] および link:concept-data-tiering.html["データ階層化の概要"^]。
+詳細については、を参照してください link:https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-planning-your-config.html#choose-a-volume-usage-profile["ボリュームの使用プロファイルを選択してください"^] および link:concept-data-tiering.html["データ階層化の概要"^]。
 
 . * レビューと承認 *: 選択内容を確認して確認します。
 +

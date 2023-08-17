@@ -67,7 +67,6 @@
   <block id="c501058ef93efe907f1517f309ec8be3" category="inline-link">コネクタをで実行したままにする準備をしておく必要があります 常時</block>
   <block id="72fa1e29e831adb71ca0ce01f7356dc9" category="list-text">使用する構成についての理解。</block>
   <block id="754f5b76b77778c181ca6deb0a7427f4" category="inline-link-macro">Cloud Volumes ONTAP 構成を計画</block>
-  <block id="ca0eff3a522dccb4b8f4c30bbad3365e" category="paragraph">設定を選択し、ネットワーク管理者から Azure ネットワーク情報を入手しておく必要があります。詳細については、を参照してください <block ref="fab04a1941385806648057c8597be7c4" category="inline-link-macro-rx"></block>。</block>
   <block id="d8fe59d93325a956d9b5fd3e85bb96d8" category="cell">フリーミアム</block>
   <block id="d41d8cd98f00b204e9800998ecf8427e" category="doc"></block>
   <block id="72aa254218c757aad3e3703bdaf90694" category="inline-link-macro">Cloud Volumes ONTAP で使用するサブスクリプションをリンクします</block>
@@ -104,11 +103,9 @@
   <block id="10f24cbf4f99f2a58468f5eddcb58a10" category="list-text">ボリュームを作成または編集するときに、特定のボリューム階層化ポリシーを選択できます。</block>
   <block id="e5a51dfb561fcfc9b976680f966d8796" category="list-text">データの階層化を無効にすると、以降のアグリゲートで有効にすることができます。</block>
   <block id="40be323df7265fed128da31c2235f802" category="inline-link-macro">データ階層化の詳細については、こちらをご覧ください。</block>
-  <block id="963dc2ced33c135470b8d59948bed4db" category="paragraph"><block ref="9d2a2a02285bff8cac27941dbd566d2c" category="inline-link-macro-rx"></block>。</block>
   <block id="7e747f6f397a13c9ddfd3cf35ed0a063" category="inline-link-macro">書き込み速度の詳細については、こちらをご覧ください。</block>
   <block id="154182f595466ead49f0896392c37343" category="paragraph"><block ref="12222f10612c9f092ca31c9e99478649" category="inline-link-macro-rx"></block>。</block>
   <block id="750f81869269b4f604a849fb2104a6b3" category="inline-link-macro">WORM ストレージの詳細については、こちらをご覧ください。</block>
-  <block id="9fbcc7d5f14bd49b571c1a321923fd19" category="paragraph"><block ref="b8e9389aa16366d8b675fc0ac72edf2e" category="inline-link-macro-rx"></block>。</block>
   <block id="7fd530af1ffbe88c56d08b069efeba9e" category="list-text">* ボリュームの作成 * ：新しいボリュームの詳細を入力するか、 * スキップ * をクリックします。</block>
   <block id="09eb13e81cc007418ee8fa04feb8088f" category="paragraph">このページの一部のフィールドは、説明のために用意されています。次の表では、ガイダンスが必要なフィールドについて説明します。</block>
   <block id="2047d66d7f84aebbeede37060dd241ac" category="paragraph">次の図は、 CIFS プロトコルの [Volume] ページの設定を示しています。</block>
@@ -311,7 +308,6 @@
   <block id="b5a7d19f6788ad4a9fa68128eabe2be1" category="list-text">* 場所を選択 * ：「 * Google Cloud * 」と「 * Cloud Volumes ONTAP HA * 」を選択します。</block>
   <block id="166a4b640ff9a34dd7447ebf0e16518b" category="list-text">*HA 配置モデル *: HA 構成用に複数のゾーン ( 推奨 ) または単一ゾーンを選択します。次に、リージョンとゾーンを選択します。</block>
   <block id="96c883d1fa1e7ebdc724bb5cec521bbd" category="inline-link-macro">HA 導入モデルの詳細については、こちらをご覧ください</block>
-  <block id="c03cb5d06936cb14d5f6dff824cc7c90" category="paragraph"><block ref="978980a9148c052b6f4164e267b317c3" category="inline-link-macro-rx"></block>。</block>
   <block id="74c223c0ac10d19fc933bf44bdfae707" category="list-text">* 接続 * ： HA 構成の場合は 4 つの VPC 、各 VPC のサブネットを選択し、ファイアウォールポリシーを選択します。</block>
   <block id="a5ee79c4e6a740f92d76e4ae26f7efd9" category="inline-link-macro">ネットワーク要件の詳細については、こちらをご覧ください</block>
   <block id="7e1b099e8ddd48733a860e9dc84718f9" category="paragraph"><block ref="81d7ec58de725abfb78667b4f46a89ab" category="inline-link-macro-rx"></block>。</block>
@@ -481,7 +477,6 @@
   <block id="3425dbe0168b60aed62d54b2290baad1" category="list-text">追加するディスクの数を選択し、 * 追加 * をクリックします。</block>
   <block id="e272fdd11a7aa99158a093a41c65fdd9" category="list-text">使用可能な容量を持つアグリゲートがない場合は、新しいアグリゲートを作成します。</block>
   <block id="0e725e4f9ac82ce0408528d6e38105f1" category="inline-link-macro">アグリゲートの作成</block>
-  <block id="26b9ba37161cb24f3ca0ee9ef77e7866" category="paragraph">詳細については、を参照してください <block ref="cd2296da2096d50b97f16b5b2b951d91" category="inline-link-macro-rx"></block>。</block>
   <block id="1aef664bc05683f80fab3cd95bf587aa" category="section-title">ボリューム移動の実行に時間がかかる場合がある理由</block>
   <block id="1c6959fdd9141c1190229f12ecece23d" category="paragraph">Cloud Volumes ONTAP で次のいずれかの条件に該当する場合、ボリュームの移動に予想よりも時間がかかることがあります。</block>
   <block id="6bae86404dcdff12b92e86fb565c56ad" category="list-text">ボリュームがクローンである。</block>
@@ -2223,9 +2218,7 @@
   <block id="7d7ca8f39ddaf09ca365d0d1f9421649" category="cell">フローティング IP アドレスのルートテーブル</block>
   <block id="b5fc4208e494804d1484996e111220af" category="summary">Cloud Volumes ONTAP インスタンスは、単一システム構成または AWS での HA ペアとして起動できます。</block>
   <block id="45fa74d97bba23976f6236bb8a583eb3" category="paragraph">Cloud Volumes ONTAP は単一システム構成で起動することも、 AWS で HA ペアとして起動することもできます。</block>
-  <block id="62dbb34ae2dbba36fcd72e9009367d7f" category="paragraph">設定を選択し、管理者から AWS ネットワーク情報を取得して準備を完了しておく必要があります。詳細については、を参照してください <block ref="221e8f6e98d75a4db804bf88879345c0" category="inline-link-macro-rx"></block>。</block>
   <block id="70bc0792aaac2d1fe5c19e375b615c8f" category="list-text">CIFS 構成用の DNS と Active Directory</block>
-  <block id="6ff827eb8724bf30147eb7172866032d" category="paragraph">詳細については、を参照してください <block ref="5e41481253f1e5476c9db04d39b740c0" category="inline-link-macro-rx"></block>。</block>
   <block id="9ae9e2a95a93a162ede8aa13ce31e809" category="section-title">AWS でのシングルノード Cloud Volumes ONTAP システムの起動</block>
   <block id="5f9fae15ed0e9699a97ede914a14bdc5" category="list-text">* 場所を選択 * ：「 * Amazon Web Services * 」と「 * Cloud Volumes ONTAP シングルノード * 」を選択します。</block>
   <block id="2548b207aecb436cf10911e9afefdeb4" category="list-text">* 詳細とクレデンシャル * ：必要に応じて、 AWS のクレデンシャルとサブスクリプションを変更し、作業環境名を入力してタグを追加し、パスワードを入力します。</block>
@@ -2238,16 +2231,13 @@
   <block id="94b720129da1fad395a78adb9dd8004f" category="list-text">* データ暗号化 * ：データ暗号化なし、または AWS で管理する暗号化を選択します。</block>
   <block id="8d4e0ae3c5be71d9c725659a6203fb6f" category="paragraph">AWS で管理する暗号化の場合は、アカウントまたは別の AWS アカウントから別の Customer Master Key （ CMK ；カスタマーマスターキー）を選択できます。</block>
   <block id="7238e3ed6732433c6a3fc43c882f2749" category="inline-link-macro">Cloud 用の AWS KMS の設定方法については、こちらをご覧ください Volume ONTAP の略</block>
-  <block id="ca52f42dd3382f713546c1e0a47fdc5b" category="paragraph"><block ref="1897e5cb9197f6d16611dcdd2e455fbf" category="inline-link-macro-rx"></block>。</block>
   <block id="7b3f3945f44edcd71357c2f1c55fb2bd" category="inline-link-macro">サポートされている暗号化テクノロジの詳細を確認してください</block>
-  <block id="3580b85193db6b3c43ddd4b85983e198" category="paragraph"><block ref="abdb9df31479964cd3894d8bc519e3a4" category="inline-link-macro-rx"></block>。</block>
   <block id="b41b64534be19d5279eb056f9bad84a5" category="list-text">* Cloud Volumes ONTAP 構成 * （ AWS Marketplace の年間契約のみ）：デフォルトの構成を確認して「 * Continue * 」をクリックするか、「 * 構成の変更 * 」をクリックして独自の構成を選択します。</block>
   <block id="09234f1d126e4d3c4245bc84e7ada7b0" category="paragraph">デフォルトの設定を使用している場合、ボリュームを指定し、構成を確認および承認するだけで済みます。</block>
   <block id="f6f2e0892cb62bcd1822af8539848e03" category="list-text">* 構成済みパッケージ * （時間単位または BYOL のみ）： Cloud Volumes ONTAP をすばやく起動するパッケージを 1 つ選択するか、 * 構成の変更 * をクリックして独自の構成を選択します。</block>
   <block id="aa1a1dda4b1ade9ea7484b8f180091ba" category="paragraph">いずれかのパッケージを選択した場合、ボリュームを指定し、構成を確認および承認するだけで済みます。</block>
   <block id="bef2f3bc1b5f6b5fc3eaabff818b8b07" category="inline-link">Cloud Volumes ONTAP ノードのポリシーの要件</block>
   <block id="a6fcc094aa2aa8328784bade825b168a" category="inline-link-macro">データ階層化の仕組みをご確認ください</block>
-  <block id="e3d16ce79bcead59781233b93cb58009" category="paragraph"><block ref="204d09224c7e7513a2d3fc955e6c2d5a" category="inline-link-macro-rx"></block>。</block>
   <block id="92a1203fc5511fdb287e0ca1b80062ce" category="list-text">* 使用状況プロファイル、ディスクタイプ、階層化ポリシー * ：必要に応じて、 Storage Efficiency 機能を有効にするかどうかを選択し、ボリューム階層化ポリシーを編集します。</block>
   <block id="84ead214aa73d1d099d69385289923df" category="paragraph">Cloud Volumes ONTAP インスタンスの起動時に問題が発生した場合は、障害メッセージを確認してください。また、作業環境を選択して、 [ 環境の再作成 ] をクリックすることもできます。</block>
   <block id="a32a5939a1bb08953d44c08ef33a7ad2" category="section-title">AWS での Cloud Volumes ONTAP HA ペアの起動</block>
@@ -2255,7 +2245,6 @@
   <block id="f99d3ff891644fe10f4d30e423d81b2e" category="list-text">* サービス *: この Cloud Volumes ONTAP システムで使用しない個々のサービスを有効または無効にしておきます。</block>
   <block id="3dc0546ee23c197fd25bc3ef988c8a30" category="list-text">*HA 導入モデル *: HA 構成を選択します。</block>
   <block id="9e31e4f9e8f37fa86acefdb611c2e044" category="inline-link-macro">AWS での Cloud Volumes ONTAP HA</block>
-  <block id="fdf00fa5f9f4609b595b4c51f6ee33e9" category="paragraph">導入モデルの概要については、を参照してください <block ref="ed2ce72ffe8bc52d52047e3f4134a246" category="inline-link-macro-rx"></block>。</block>
   <block id="f98a5304a879db170932a941d6782d7c" category="list-text">* 接続と SSH 認証 * ： HA ペアとメディエーターの接続方法を選択します。</block>
   <block id="7f09e4815f5de7673aaab2126613b950" category="list-text">* フローティング IP * ：複数の AZ を選択した場合は、フローティング IP アドレスを指定します。</block>
   <block id="0d27f0f1131dc607258f48d5dc5dcf14" category="list-text">* ルートテーブル * ：複数の AZ を選択した場合は、フローティング IP アドレスへのルートを含むルーティングテーブルを選択します。</block>
@@ -2659,7 +2648,6 @@
   <block id="77d680745644d1c19a022cc0a306f88b" category="list-text">データの暗号化：Googleで管理されるキー</block>
   <block id="b33b7497784a31fa197bca9debbfddea" category="list-text">Cloud Volumes ONTAP のライセンスを設定するために必要な事項を理解する。</block>
   <block id="b2084f1d9eba331a28867d15c742284e" category="inline-link-macro">ライセンスの設定方法について説明します</block>
-  <block id="5719f300587dfbbd55551379f9ab4915" category="list-text"><block ref="69100fd89c8fc892aa253073563db45d" category="inline-link-macro-rx"></block>。</block>
   <block id="17b559ceaadd6decdd6c9a579de016a2" category="summary">Cloud Volumes ONTAP で使用するライセンスオプションを決定したら、新しいシステムを導入する際にそのライセンスオプションを選択する前に、いくつかの手順を実行する必要があります。</block>
   <block id="0cce9e09385c0d8e677ff5d9518dc514" category="doc">AzureでCloud Volumes ONTAP のライセンスをセットアップする</block>
   <block id="c700f608c8bdc9eb590953ff57224bad" category="paragraph">Cloud Volumes ONTAP で使用するライセンスオプションを決定したら、新しい作業環境を作成する際にそのライセンスオプションを選択する前に、いくつかの手順を実行する必要があります。</block>
@@ -2724,12 +2712,10 @@
   <block id="d0e9f6e752e409a4224686569c7ed7f7" category="list-text"><block ref="d0e9f6e752e409a4224686569c7ed7f7" category="inline-link-macro-rx"></block></block>
   <block id="8f0a98314b48214c48339998c2fc4f5a" category="inline-link-macro">Google CloudでCloud Volumes ONTAP のライセンスを設定します</block>
   <block id="451e7fc5df78c19113abdb3f6a0dc54e" category="paragraph">容量単位のライセンスの取得方法については、以下をご覧ください。</block>
-  <block id="a07503aa361f252fd9f1953e4472f28d" category="paragraph"><block ref="e7010d3e26fcd0c3b7c9d7059b1649f0" category="inline-link-macro-rx"></block>。</block>
   <block id="01c73f9779c79dd6bcc508ca2e08db80" category="doc">AzureでCloud Volumes ONTAP 構成を計画</block>
   <block id="e7010d3e26fcd0c3b7c9d7059b1649f0" category="list-text"><block ref="e7010d3e26fcd0c3b7c9d7059b1649f0" category="inline-link-macro-rx"></block></block>
   <block id="e3a47201ab0cc67c20d5aeacce3b8ced" category="section-title">サポートされているVMタイプを選択してください</block>
   <block id="8e3273e621dd5a9485259171b1b535e9" category="section-title">Azureでシステムのサイズを設定します</block>
-  <block id="e17d83fdb14af6aea9c5838dcc9ece55" category="paragraph"><block ref="b2908e7df27905e20924b93b3ff0b803" category="inline-link-macro-rx"></block>。</block>
   <block id="96440bf30cd20c7ed50d0d7a8279917e" category="doc">Google CloudでCloud Volumes ONTAP 構成を計画する</block>
   <block id="18ff4ec9e6259918d45028a5d6040d91" category="section-title">サポートされているマシンタイプを選択してください</block>
   <block id="0d705fad98d8ea6c4ffe75e2508e2f92" category="section-title">GCPでシステムのサイズを設定します</block>
@@ -3177,8 +3163,6 @@
   <block id="67e53d36a1474a1493554aa780f091dd" category="inline-link">デフォルトでは、Connectorサービスアカウントの権限です</block>
   <block id="791fab48bebea2a79a35d70b5cc07227" category="inline-link">権限の最新のリストを表示します</block>
   <block id="9e1dbaa97d16ff9bc20f90cb1663f522" category="inline-link">必要な権限がある必要があります</block>
-  <block id="ca28d9f44067f5a160cea063e474fc37" category="paragraph">独自のポリシーを使用する場合は、それが満たされている必要があります <block ref="a89eb99c31d3fd4d78e3bc9ddfb0dc20" category="inline-link-macro-rx"></block>。</block>
-  <block id="6459a9ada2e38351f8beba8f79c30a5f" category="paragraph">独自のポリシーを使用する場合は、それが満たされている必要があります <block ref="f5cab54abdefb42b27e2bac59f2262c2" category="inline-link-macro-rx"></block>。</block>
   <block id="e26c5d07fc30848902a99c95897441b4" category="sidebar">IAMロールを設定する</block>
   <block id="15cbb1f16ecbbcee7df3dcd252b9d2ef" category="paragraph">データの階層化が有効になっていると、 WORM を有効にできません。</block>
   <block id="1bbedbfdc08c3ed9498540dc734fa96a" category="doc">MTEKMライセンス</block>
@@ -3205,7 +3189,6 @@
   <block id="736117f693040571db69267153b2d26c" category="list-text">「* Selected VPC Only *」を選択した場合、インバウンドトラフィックのソースは、選択したVPCのサブネット範囲と、コネクタが存在するVPCのサブネット範囲です。これが推奨されるオプションです。</block>
   <block id="deb6808c65d1809351087abd4e05656f" category="list-text">どのVPC *も選択した場合、インバウンドトラフィックのソースは0.0.0.0/0のIP範囲になります。</block>
   <block id="078c55f3ef3238d9472d9b211da498b5" category="cell">既存のセキュリティグループを使用する</block>
-  <block id="d71f3f48867a1eec8f01c7982cfcf5b9" category="cell">既存のファイアウォールポリシーを使用する場合は、必要なルールが含まれていることを確認してください。 <block ref="52a4fffcb589b84d48cb7d2cc71fba3f" category="inline-link-macro-rx"></block>。</block>
   <block id="ceade9f8bf2ef85c7b37aed2340a9d2b" category="list-text">*場所と接続*（単一AZ）または*リージョンとVPC *（複数のAZ）：AWSワークシートに記録したネットワーク情報を入力します。</block>
   <block id="d9b6015407c2f35cf98a557256370e83" category="list-text">E2-micro（以前はF1-microインスタンスが使用されていました）</block>
   <block id="0982661f22694d2c8b62e37a8cbea7d6" category="list-text">それぞれ10GiBの標準的な永続ディスク2本</block>
@@ -3513,7 +3496,6 @@
   <block id="355c7a22767b9f2dd149515d08cc5490" category="inline-image-macro">AWSアカウントにサブスクリプションがすでに設定されているものの、特定のIAMユーザがサブスクリプションを設定していない場合に、BlueXP for Cloud Volumes ONTAP のサブスクリプションページを示すスクリーンショット。</block>
   <block id="074d1b398f4753f3d064cfd562af4ed8" category="admonition">複数の IAM ユーザが同じ AWS アカウントで作業する場合は、各ユーザにサブスクライブする必要があります。最初のユーザがサブスクライブすると、次の図に示すように、 AWS Marketplace から後続のユーザに登録済みであることが通知されます。AWS_account_ のサブスクリプションが設定されている間、各 IAM ユーザは、そのサブスクリプションに自分自身を関連付ける必要があります。次のメッセージが表示されたら、[Click here *（ここをクリック）]リンクをクリックしてBlueXP Webサイトにアクセスし、プロセスを完了します。<block ref="42077b282858282a6d1d166f9467abaf" category="inline-image-macro-rx" type="image"></block></block>
   <block id="87ef523f982611ded33c8785ffdd2634" category="list-text">*IAMの役割*: BlueXPが役割を作成できるようにするには、既定のオプションをそのまま使用することをお勧めします。</block>
-  <block id="0c8b3b320694fe539fbea5d0d82e564c" category="list-text">GP3またはio1ディスクを選択した場合、BlueXPはAWSのElastic Volumes機能を使用して、必要に応じて、基盤となるストレージディスク容量を自動的に増やします。初期容量はストレージのニーズに基づいて選択し、Cloud Volumes ONTAP の導入後に変更することができます。 <block ref="a2865c7bad4b206df6582ad55cba915e" category="inline-link-macro-rx"></block>。</block>
   <block id="9f2afa6e18a40ed2f547b1e2d13fee8e" category="list-text">gp2ディスクまたはst1ディスクを選択する場合、シンプルなプロビジョニングオプションを使用する場合、初期アグリゲートおよびBlueXPで作成される追加のアグリゲートのすべてのディスクサイズを選択できます。Advanced Allocation オプションを使用すると、異なるディスクサイズを使用するアグリゲートを作成できます。</block>
   <block id="de39a020e8e0c1962c8c0dfa6467fd71" category="list-text">[詳細情報*]をクリックして、BlueXPが購入するサポートとAWSリソースの詳細を確認します。</block>
   <block id="e1bc841e2651c6522307e17c20df7a4d" category="paragraph">AWSでCloud Volumes ONTAP HAペアを起動するには、BlueXPでHA作業環境を作成する必要があります。</block>
@@ -3883,7 +3865,6 @@
   <block id="c30ce062be1c5d4265f67a2654690b8f" category="list-title">複数のアベイラビリティゾーンに含まれるHAペア</block>
   <block id="ab3aec14eab62514bc5eb01d67673c8b" category="list-text">512 GiB Premium Storage 2ページのrootボリューム用blob（ノードごとに1つ）</block>
   <block id="5a07b5de49d43760a69fb7c4fea757e9" category="inline-link-macro">HAペアのライセンスでサポートされる構成</block>
-  <block id="cd583e1e771e181f6946426017c24214" category="paragraph">このオプションは、特定のVMタイプに対してのみ使用できます。サポートされるVMタイプについては、を参照してください <block ref="8fcfcceaae61c16d8227b3fc42274af0" category="inline-link-macro-rx"></block>。</block>
   <block id="de8cf25f68f35d1a6c91688973a7593e" category="list-text">*ストレージとWORMへのセキュアな通信*：AzureストレージアカウントへのHTTPS接続を有効にするかどうかを選択し、必要に応じてWrite Once Read Many（WORM）ストレージをアクティブ化します。</block>
   <block id="c5cd01a62bc8f55375ac755c2a6a5f47" category="paragraph">HTTPS接続は、Cloud Volumes ONTAP 9.7のHAペアからAzureページBLOBストレージアカウントに確立されます。このオプションを有効にすると、書き込みパフォーマンスに影響する可能性があります。作業環境の作成後に設定を変更することはできません。</block>
   <block id="ec2431c87ced0e5a9a4272c3f8829e8e" category="list-text">Cloud Volumes ONTAP 9.12.1以降</block>
@@ -4649,7 +4630,6 @@
   <block id="1845477dcbb7ef435ebb5a4583a0ca21" category="list-text"><block ref="4828fd92a1c9aba9084b9fdcf398bed8" category="inline-link-rx"></block>。</block>
   <block id="4d0d11f252798b1130fe9f60f2d2e318" category="list-text">コネクタに関連付けられているサービスアカウント<block ref="5646254c2ac34b48f56ed296d6fb66e7" category="inline-link-rx"></block></block>
   <block id="d84cee0d6767da802f9effadbbc51142" category="list-text">プロンプトが表示されたら、<block ref="1ca84fde12203c4cfd29d288d7a6cf61" category="inline-link-rx"></block>。</block>
-  <block id="89bbd054da1cedf98b74e364ba981080" category="cell">を使用する場合は <block ref="0afefdfec765b284960d752caf97004c" category="inline-link-macro-rx"></block> または<block ref="9a17952183455df523c977039b4fb285" category="inline-link-rx"></block> Cloud Volumes ONTAP では、 * サービスアカウント * を有効にして、事前定義されたストレージ管理者ロールが割り当てられたサービスアカウントを選択する必要があります。 <block ref="1e3ffbdede44246b454219bb91ade15a" category="inline-link-macro-rx"></block>。</block>
   <block id="422d2c91120cb9ddd1c3fd41a284e77a" category="admonition">これは、BlueXP用に設定したサービスアカウントです。 <block ref="d8e8dd577fee44652d34a1d1f4c2ce4b" category="inline-link-macro-rx"></block>。</block>
   <block id="703803ff5402f92147fbc2904ced4f23" category="paragraph">次のビデオでは、従量課金制のMarketplaceサブスクリプションをGoogle Cloudプロジェクトに関連付ける方法を紹介します。または、の手順に従って、に登録します<block ref="d9f7e6ae4bc0528c4df5fe3f1a811c3e" category="inline-link-rx"></block> セクション。</block>
   <block id="6661b37e3fd4d080a795cb76c4cea34d" category="list-text">Google Cloudアカウントの追加については、を参照してください<block ref="434f9c6247e5841006dab0119a511de9" category="inline-link-rx"></block>。</block>
@@ -4919,8 +4899,6 @@ NetApp （ BYOL ）からライセンスを直接購入した場合、 AWS サ�
   <block id="80f98bfa8cbe0d66021e6448047c1b5c" category="list-text">* Flash Cache、書き込み速度、WORM *：</block>
   <block id="b67eda3e3db596eb1c104f55326e3754" category="list-text">必要に応じて、「Flash Cache」*を有効にします。</block>
   <block id="5f33cf47c262adc4871d3556fcd8c00f" category="admonition">Cloud Volumes ONTAP 9.13.1以降では、n2-standard-16、n2-standard-32、n2-standard-48、およびn2-standard-64インスタンスタイプで_Flash Cache_が サポートされます。導入後にFlash Cacheを無効にすることはできません。</block>
-  <block id="504ca6d1f97a8949483d99d521a7a500" category="admonition">「* High * write speed」オプションを使用すると、高速な書き込み速度と最大伝送ユニット（MTU）8、896バイトを使用できます。また、MTUが8、896の場合は、導入環境でVPC-1、VPC-2、およびVPC-3を選択する必要があります。VPC-1、VPC-2、およびVPC-3の詳細については、を参照してください<block ref="3af5ff5ce5ff5a68a4b6fb78e7e7794a" category="inline-link-rx"></block>。</block>
-  <block id="e4cfc04d9c35d908faed204900862e80" category="admonition">インスタンスタイプn2-standard-16、n2-standard-32、n2-standard-48、およびn2-standard-64では、* High * write speedオプションを使用して、高速の書き込み速度とより高いMaximum Transmission Unit（MTU；最大伝送ユニット）8、896バイトを使用できます。また、MTUが8、896の場合は、導入環境でVPC-1、VPC-2、およびVPC-3を選択する必要があります。高速の書き込み速度とMTU 8、896は機能に依存し、設定されたインスタンス内で個別に無効にすることはできません。VPC-1、VPC-2、およびVPC-3の詳細については、を参照してください<block ref="3af5ff5ce5ff5a68a4b6fb78e7e7794a" category="inline-link-rx"></block>。</block>
   <block id="c94e28d852ce517312825c9ed339fc1d" category="section-title">2023年7月30日</block>
   <block id="4325a8ea9cec7ffa18f3ee74d15997fe" category="paragraph">コネクタの3.9.32リリースでは、次の変更が導入されました。</block>
   <block id="7741410e87d6144c42e8ca73837c3707" category="section-title">Google CloudでFlash Cacheと高速書き込み速度をサポート</block>
@@ -4998,7 +4976,6 @@ NetApp （ BYOL ）からライセンスを直接購入した場合、 AWS サ�
   <block id="d2d30bf70c79bbb95b5e7ce630b66c21" category="cell">既存のセキュリティグループを選択する場合は、 Cloud Volumes ONTAP の要件を満たす必要があります。 <block ref="c840f14212255ea9808d6d3aa32adaf9" category="inline-link-macro-rx"></block>。</block>
   <block id="4956de48e08bd2176b53bb70ae88a9ea" category="paragraph">ディスクの種類とサイズの選択については、を参照してください <block ref="2a79e18dae8df0be0a0d70d12cf4bfec" category="inline-link-macro-rx"></block>。</block>
   <block id="2961924447b862b8c08430804068c015" category="paragraph">詳細については、を参照してください <block ref="f7e49e28b2875e2913382dd3096ff790" category="inline-link-macro-rx"></block> および <block ref="1e62300500e1ad0802bb2b24113c7036" category="inline-link-macro-rx"></block>。</block>
-  <block id="f5a5a06a4d8eaa817e47a272a932b9a0" category="paragraph">ディスク・サイズの選択については、を参照してください <block ref="2a79e18dae8df0be0a0d70d12cf4bfec" category="inline-link-macro-rx"></block>。</block>
   <block id="1b0a5fc9df36c3cc3f61cb97e9631bbb" category="paragraph">詳細については、を参照してください <block ref="e677af9e7ca6c446fefd39f21658da89" category="inline-link-macro-rx"></block>。</block>
   <block id="97f1424ad7142b7e2d30d9f789a2be74" category="list-text">お客様のデータは Premium Storage ページの BLOB にあります。各ノードがもう一方のノードのストレージにアクセスできます。には追加のストレージも必要です <block ref="6674daf770d6e900d67b1c4ef55eae3d" category="inline-link-macro-rx"></block>。</block>
   <block id="669a47d0ae98ea0a97a7435870bc7159" category="list-text">お客様のデータは、ローカル冗長ストレージ（LRS）管理対象ディスクに格納されています。各ノードがもう一方のノードのストレージにアクセスできます。には追加のストレージも必要です <block ref="e045f042b95c3970b6fbc1453cc4de4f" category="inline-link-macro-rx"></block>。</block>
@@ -5007,7 +4984,36 @@ NetApp （ BYOL ）からライセンスを直接購入した場合、 AWS サ�
   <block id="c9687dde572193ba74d9e74a3c45d034" category="paragraph">プロビジョニング済み容量が500GiBを超えると、システムはに自動的に変換されないかぎり、マーケットプレイスのサブスクリプションを通じて料金が請求されることはありません <block ref="2152ece811fe715f61775babe26548aa" category="inline-link-macro-rx"></block>。</block>
   <block id="6b3e3d3fe4e7f265b8cbf3430816ede6" category="cell">既存のファイアウォールポリシーを使用する場合は、必要なルールが含まれていることを確認してください。リンク：https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/reference-networking-gcp.html#firewall-rules[Learn Cloud Volumes ONTAPのファイアウォールルールについて^]。</block>
   <block id="29868f2b604fe0144f8b5619cde525cf" category="inline-link-macro">Google Cloudでシステムをサイジングする</block>
-  <block id="f3e5244708437be7ab2becec4aafd25d" category="paragraph">ディスクの種類とサイズの選択については、を参照してください <block ref="674c7afffa941aa0d627117a6589402e" category="inline-link-macro-rx"></block>。</block>
-  <block id="f3602532fa23ad89eed856305605200f" category="paragraph">詳細については、を参照してください <block ref="4d14a404483b4ba1e9755b2ba8cd9a51" category="inline-link-macro-rx"></block> および <block ref="69d3706831f999336fb27703356dae22" category="inline-link-macro-rx"></block>。</block>
-  <block id="a2ff91e180d9feb69d295f51f7431cd5" category="cell">既存のファイアウォールポリシーを使用する場合は、必要なルールが含まれていることを確認してください。 <block ref="e0f5249f2d7145acb8502413a8b18c3d" category="inline-link-macro-rx"></block>。</block>
+  <block id="f6f026f8889048ec1affe9bec06d3753" category="paragraph">詳細については、を参照してください <block ref="7f365a8b545ccbb9e9433fd7ab85acf6" category="inline-link-macro-rx"></block>。</block>
+  <block id="23e2fb53ba60de84e8a63684bf05e1a9" category="paragraph">設定を選択し、管理者から AWS ネットワーク情報を取得して準備を完了しておく必要があります。詳細については、を参照してください <block ref="b2852d75c9a2b653b1ca3941854c33b3" category="inline-link-macro-rx"></block>。</block>
+  <block id="ccf2fba47b43599daaeca487c0ec63ee" category="paragraph"><block ref="5e8af43dea21db509ead1eda5136002c" category="inline-link-macro-rx"></block>。</block>
+  <block id="36e9fbaef7c701ecb0556f914069be72" category="paragraph">詳細については、を参照してください <block ref="517e0808f26a9b41dd03b24bae4c07de" category="inline-link-macro-rx"></block>。</block>
+  <block id="b461f4c80b1a114f6b157c533f020762" category="cell">既存のファイアウォールポリシーを使用する場合は、必要なルールが含まれていることを確認してください。 <block ref="62c62b91801215ab4d8627716bae9285" category="inline-link-macro-rx"></block>。</block>
+  <block id="00607d1f8879a9f55de71904a9c47735" category="paragraph"><block ref="815b2d76480655adfb792155e8d523df" category="inline-link-macro-rx"></block>。</block>
+  <block id="efd46d47c4e385b47988ccb455c40135" category="paragraph"><block ref="66a6ef3a31e2bdf9e6d8ba0701bc8801" category="inline-link-macro-rx"></block>。</block>
+  <block id="7316a5586f179a6a0979e83c796ea95b" category="list-text"><block ref="08d0665da3be44c6da8a872cdca1b012" category="inline-link-macro-rx"></block>。</block>
+  <block id="2b51f8c4c6c2bfe9eada57853fb89e4f" category="paragraph">独自のポリシーを使用する場合は、それが満たされている必要があります <block ref="0812b5badd20e986cc5c6923de4f824b" category="inline-link-macro-rx"></block>。</block>
+  <block id="7ab053d87e25d047a6f28577dc465bc4" category="list-text">GP3またはio1ディスクを選択した場合、BlueXPはAWSのElastic Volumes機能を使用して、必要に応じて、基盤となるストレージディスク容量を自動的に増やします。初期容量はストレージのニーズに基づいて選択し、Cloud Volumes ONTAP の導入後に変更することができます。 <block ref="7cd39d1a62682ee0957e0dbfc235b1a1" category="inline-link-macro-rx"></block>。</block>
+  <block id="df501414d9ccbd746605ce1e1aab3535" category="paragraph"><block ref="5852a06e585de78c29e271efaedec096" category="inline-link-macro-rx"></block>。</block>
+  <block id="4dcacab246fb7ed0a29c4691ecbbe12a" category="paragraph"><block ref="07cdccebbe7827f5fd94940c2866ed02" category="inline-link-macro-rx"></block>。</block>
+  <block id="f11d1a8fb908a4fd32f602c0b49e068c" category="paragraph"><block ref="12f56c904521eee91c69e7f3d92e0875" category="inline-link-macro-rx"></block>。</block>
+  <block id="b98de1e963b884a521ce7bd319e60a8e" category="paragraph"><block ref="8df9ed5593c9a185e9c633e9b36d6066" category="inline-link-macro-rx"></block>。</block>
+  <block id="c883e0de58dcdb1d468ddcfc66d90224" category="paragraph">導入モデルの概要については、を参照してください <block ref="ac890ff87988e1f4fe9ed78d7a128a29" category="inline-link-macro-rx"></block>。</block>
+  <block id="ed4924641651e53f53bb9c6cb8cb5169" category="paragraph">独自のポリシーを使用する場合は、それが満たされている必要があります <block ref="88a324b503542d79964006b86b0f561f" category="inline-link-macro-rx"></block>。</block>
+  <block id="65e44ea022eeca9b643463f605d679ba" category="paragraph">詳細については、を参照してください <block ref="3b2df8d2a10b210f4fd5274a94427dc3" category="inline-link-macro-rx"></block> および <block ref="1e62300500e1ad0802bb2b24113c7036" category="inline-link-macro-rx"></block>。</block>
+  <block id="b97b37b67da4a6b8d536b0e66da0ac4e" category="paragraph">設定を選択し、ネットワーク管理者から Azure ネットワーク情報を入手しておく必要があります。詳細については、を参照してください <block ref="342e106d00de7bc2efc5fca274754fe1" category="inline-link-macro-rx"></block>。</block>
+  <block id="4a990655560c303b19831e9bf63722cf" category="paragraph"><block ref="a19594f8ac35f50a09725bf53aa8cda6" category="inline-link-macro-rx"></block>。</block>
+  <block id="42e33ca80e00148658496cf0df242c83" category="paragraph"><block ref="c991217783edcd004ecaae62c8f53317" category="inline-link-macro-rx"></block>。</block>
+  <block id="483aa2bfe812b674406ece6931703b3b" category="paragraph">このオプションは、特定のVMタイプに対してのみ使用できます。サポートされるVMタイプについては、を参照してください <block ref="ef2833bf144903c614d4609663ff6050" category="inline-link-macro-rx"></block>。</block>
+  <block id="4ad60320f9be79eecb2daef7ddce54b5" category="paragraph">ディスク・サイズの選択については、を参照してください <block ref="693042947faf99c4ded2e1854ea1714d" category="inline-link-macro-rx"></block>。</block>
+  <block id="68370d359fa26fe05c4cb07d74255adc" category="paragraph">詳細については、を参照してください <block ref="b12f776b16b59fa8d20c1c83946e77ac" category="inline-link-macro-rx"></block> および <block ref="1e62300500e1ad0802bb2b24113c7036" category="inline-link-macro-rx"></block>。</block>
+  <block id="ec816bfc1b97e0dc9c63df584a92bde6" category="cell">を使用する場合は <block ref="0afefdfec765b284960d752caf97004c" category="inline-link-macro-rx"></block> または<block ref="9a17952183455df523c977039b4fb285" category="inline-link-rx"></block> Cloud Volumes ONTAP では、 * サービスアカウント * を有効にして、事前定義されたストレージ管理者ロールが割り当てられたサービスアカウントを選択する必要があります。 <block ref="2f1d7559264d14baafd4be6d853a5896" category="inline-link-macro-rx"></block>。</block>
+  <block id="3ae26537d730e608cc5df532135d9203" category="list-text"><block ref="6c4258ea3e08340f22f764913db23ef9" category="inline-link-macro-rx"></block>。</block>
+  <block id="db52741bdd8e7e8c26a7a3bfb23be14c" category="paragraph">ディスクの種類とサイズの選択については、を参照してください <block ref="0698168794a3d08b82649f1da0ecee6b" category="inline-link-macro-rx"></block>。</block>
+  <block id="0b79c7f48f32a49e4f2d8a0012ffaea9" category="admonition">「* High * write speed」オプションを使用すると、高速な書き込み速度と最大伝送ユニット（MTU）8、896バイトを使用できます。また、MTUが8、896の場合は、導入環境でVPC-1、VPC-2、およびVPC-3を選択する必要があります。VPC-1、VPC-2、およびVPC-3の詳細については、を参照してください<block ref="e0d6e9ceb3d5d27a7e0dc7b744a8cf4a" category="inline-link-rx"></block>。</block>
+  <block id="586ef46ba4fb5364e4b7115bcfd7b621" category="paragraph">詳細については、を参照してください <block ref="449d1f3dba62fd34c10497ac720687ce" category="inline-link-macro-rx"></block> および <block ref="1e62300500e1ad0802bb2b24113c7036" category="inline-link-macro-rx"></block>。</block>
+  <block id="65a1b420f9d8cf92d6a805f641764e75" category="paragraph"><block ref="810b7c24efd4e50a858cf2ac93f8cde8" category="inline-link-macro-rx"></block>。</block>
+  <block id="157452a4d26511160047acedc5ae5b81" category="paragraph"><block ref="2824c251ff24540ca0c877b5ced755b8" category="inline-link-macro-rx"></block>。</block>
+  <block id="cf523fc47469c34a8d903bacda7e81e5" category="cell">既存のファイアウォールポリシーを使用する場合は、必要なルールが含まれていることを確認してください。 <block ref="bee5d22e907894802468a917716c85b0" category="inline-link-macro-rx"></block>。</block>
+  <block id="07a5d71b593f96284694315beb6fe13d" category="admonition">インスタンスタイプn2-standard-16、n2-standard-32、n2-standard-48、およびn2-standard-64では、* High * write speedオプションを使用して、高速の書き込み速度とより高いMaximum Transmission Unit（MTU；最大伝送ユニット）8、896バイトを使用できます。また、MTUが8、896の場合は、導入環境でVPC-1、VPC-2、およびVPC-3を選択する必要があります。高速の書き込み速度とMTU 8、896は機能に依存し、設定されたインスタンス内で個別に無効にすることはできません。VPC-1、VPC-2、およびVPC-3の詳細については、を参照してください<block ref="e0d6e9ceb3d5d27a7e0dc7b744a8cf4a" category="inline-link-rx"></block>。</block>
 </blocks>
