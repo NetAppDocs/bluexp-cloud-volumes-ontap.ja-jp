@@ -39,8 +39,6 @@ link:concept-client-protocols.html["S3およびその他のクライアントプ
 
 == BlueXPでは、Storage VMのディザスタリカバリはサポートされていません
 
-BlueXPでは、Storage VMディザスタリカバリのセットアップやオーケストレーションはサポートされていません。System Manager または CLI を使用する必要があります。
+BlueXPは、Storage VM（SVM）ディザスタリカバリのセットアップやオーケストレーションのサポートは提供していません。System Manager または CLI を使用する必要があります。
 
-* https://library.netapp.com/ecm/ecm_get_file/ECMLP2839856["SVM ディザスタリカバリ設定エクスプレスガイド"^]
-* https://library.netapp.com/ecm/ecm_get_file/ECMLP2839857["『 SVM ディザスタリカバリエクスプレスガイド』"^]
-
+link:task-manage-svm-dr.html["SVMディザスタリカバリに関する詳細情報"]。

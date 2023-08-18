@@ -5016,4 +5016,10 @@ NetApp （ BYOL ）からライセンスを直接購入した場合、 AWS サ�
   <block id="157452a4d26511160047acedc5ae5b81" category="paragraph"><block ref="2824c251ff24540ca0c877b5ced755b8" category="inline-link-macro-rx"></block>。</block>
   <block id="cf523fc47469c34a8d903bacda7e81e5" category="cell">既存のファイアウォールポリシーを使用する場合は、必要なルールが含まれていることを確認してください。 <block ref="bee5d22e907894802468a917716c85b0" category="inline-link-macro-rx"></block>。</block>
   <block id="07a5d71b593f96284694315beb6fe13d" category="admonition">インスタンスタイプn2-standard-16、n2-standard-32、n2-standard-48、およびn2-standard-64では、* High * write speedオプションを使用して、高速の書き込み速度とより高いMaximum Transmission Unit（MTU；最大伝送ユニット）8、896バイトを使用できます。また、MTUが8、896の場合は、導入環境でVPC-1、VPC-2、およびVPC-3を選択する必要があります。高速の書き込み速度とMTU 8、896は機能に依存し、設定されたインスタンス内で個別に無効にすることはできません。VPC-1、VPC-2、およびVPC-3の詳細については、を参照してください<block ref="e0d6e9ceb3d5d27a7e0dc7b744a8cf4a" category="inline-link-rx"></block>。</block>
+  <block id="9f5be27589cc6b51b9720d024782dcb8" category="paragraph">BlueXPは、Storage VM（SVM）ディザスタリカバリのセットアップやオーケストレーションのサポートは提供していません。System Manager または CLI を使用する必要があります。</block>
+  <block id="9c6c0a63729c2c1bc8388b9ccd4e4155" category="inline-link-macro">SVMディザスタリカバリに関する詳細情報</block>
+  <block id="5dc0415d3b98038c9ac4667c27633958" category="paragraph"><block ref="9ef9838740c8c73e2e54c1615ffa6adb" category="inline-link-macro-rx"></block>。</block>
+  <block id="74ee0a2fe74e69a19051f0e09c04fc43" category="doc">SVMディザスタリカバリのセットアップ</block>
+  <block id="f01867033c75f2410ea82d8cbf4634d7" category="paragraph">2つのCloud Volumes ONTAPシステム間にSnapMirror SVMレプリケーションを設定する場合は、2つのHAペアシステム間または2つのシングルノードシステム間でレプリケーションを行う必要があります。HAペアとシングルノードシステムの間にSnapMirror SVMレプリケーションをセットアップすることはできません。</block>
+  <block id="64a88357645876cf49151eb26ffb0021" category="paragraph">CLIの手順については、次のドキュメントを参照してください。</block>
 </blocks>

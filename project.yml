@@ -159,6 +159,8 @@ sidebar:
       - title: Google CloudでStorage VMを作成します
         flavor: gcp
         url: "/task-managing-svms-gcp.html"
+      - title: SVMディザスタリカバリのセットアップ
+        url: "/task-manage-svm-dr.html"
     - title: セキュリティとデータ暗号化
       entries:
       - title: ネットアップの暗号化機能でボリュームを暗号化
