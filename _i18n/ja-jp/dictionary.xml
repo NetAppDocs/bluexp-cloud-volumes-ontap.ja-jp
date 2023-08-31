@@ -1489,7 +1489,6 @@
   <block id="4ae719205766e20198cc595136cbf10c" category="inline-link">/occm/config API 呼び出しの詳細を確認してください</block>
   <block id="5ac123f6eee32c0fe88eeab92338a1a4" category="summary">FlexCache ボリュームは、元のボリュームまたはソースボリュームから NFS 読み取りデータをキャッシュするストレージボリュームです。その後キャッシュされたデータを読み取ることで、そのデータへのアクセスが高速になります。</block>
   <block id="d5ce201ca4cc42ba6b38e9166bcef415" category="doc">FlexCache ボリュームでデータアクセスを高速化</block>
-  <block id="2ddb8d07e9f5af9d9a76333b9ef2a7cb" category="paragraph">FlexCache ボリュームは、元の（またはソース）ボリュームから NFS 読み取りデータをキャッシュするストレージボリュームです。その後キャッシュされたデータを読み取ることで、そのデータへのアクセスが高速になります。</block>
   <block id="90c624683582774042156c98858d14dc" category="paragraph">FlexCache を使用すると、データアクセスを高速化したり、アクセス頻度の高いボリュームのトラフィック負荷を軽減したりできます。FlexCache ボリュームを使用すると、元のボリュームにアクセスせずに直接データを使用できるため、特にクライアントが同じデータに繰り返しアクセスする場合に、パフォーマンスの向上に役立ちます。FlexCache ボリュームは、読み取り処理が大量に発生するシステムワークロードに適しています。</block>
   <block id="29e15f4a6477b08e72892d33f28001ce" category="inline-link">『 FlexCache Volumes for Faster Data Access Power Guide 』を参照してください</block>
   <block id="f2a7a46cc845b377d163ce816c723b41" category="list-text"><block ref="f2a7a46cc845b377d163ce816c723b41" category="inline-link-rx"></block></block>
@@ -3470,8 +3469,6 @@
   <block id="93f5e6c9fa12acc64acdb6b378a09bdd" category="doc">BlueXPでStorage VMを管理します</block>
   <block id="50660b7473b276b2ca6ffca877133e87" category="paragraph">BlueXPでは、System ManagerまたはCLIから作成した追加のStorage VMがサポートされます。</block>
   <block id="891665afb192ec7434051075c05e3e2f" category="list-text">BlueXPで、クラスタ管理インターフェイスのIPアドレスを特定します。</block>
-  <block id="08882f53f80237686337effbc79af710" category="paragraph">現時点ではFlexCache ボリュームの管理は提供されていませんが、ONTAP CLIまたはONTAP System Managerを使用してFlexCache ボリュームを作成および管理できます。</block>
-  <block id="84c7d68ceec07ae1479f5ffd5345fe69" category="paragraph">3.7.2リリース以降、すべての新しいCloud Volumes ONTAP システム用のFlexCache ライセンスがBlueXPによって生成されます。ライセンスの使用量は 500GiB に制限されています。</block>
   <block id="68e3d383b46bd2d1a96c2a6b2ddbc3f5" category="admonition">HAペアのノードが利用できない場合、BlueXPの作業環境の状態は_Degraded__です。</block>
   <block id="71279608104bfad0fd0c8e38e3fe117b" category="paragraph">BlueXPストレージのテイクオーバーでは、次の操作を実行できません。</block>
   <block id="83abd5ee8b7f73b0a1f8620e32618f71" category="paragraph">Azureサブスクリプションでこの機能を有効にする必要がある場合、「Action Required」メッセージにこれらの詳細が表示されます。</block>
@@ -5023,4 +5020,9 @@ NetApp （ BYOL ）からライセンスを直接購入した場合、 AWS サ�
   <block id="f01867033c75f2410ea82d8cbf4634d7" category="paragraph">2つのCloud Volumes ONTAPシステム間にSnapMirror SVMレプリケーションを設定する場合は、2つのHAペアシステム間または2つのシングルノードシステム間でレプリケーションを行う必要があります。HAペアとシングルノードシステムの間にSnapMirror SVMレプリケーションをセットアップすることはできません。</block>
   <block id="64a88357645876cf49151eb26ffb0021" category="paragraph">CLIの手順については、次のドキュメントを参照してください。</block>
   <block id="ead6e5569d8d8a0e0ef737aef13e13d9" category="list-text">アップグレードのステータスを確認するには、[設定]アイコンをクリックして*[タイムライン]*を選択します。</block>
+  <block id="4255b526fdaa2217071759cd5d05e981" category="paragraph">FlexCacheボリュームは、元の（ソース）ボリュームのSMBおよびNFS読み取りデータをキャッシュするストレージボリュームです。その後キャッシュされたデータを読み取ることで、そのデータへのアクセスが高速になります。</block>
+  <block id="5f63db6bf0512dc0612ee852c1faf373" category="inline-link-macro">BlueXPのボリュームキャッシュ</block>
+  <block id="28495b8712e93ec4d83d5af5db51d535" category="paragraph">BlueXPでは、FlexCacheボリュームを <block ref="06867f1eea47d22d6d5c52a51ce61294" category="inline-link-macro-rx"></block> サービス</block>
+  <block id="06156010b52bde259c58b15866491a02" category="paragraph">ONTAP CLIまたはONTAPシステムマネージャを使用して、FlexCacheボリュームを作成および管理することもできます。</block>
+  <block id="6712712f329188ca2226c3cf1d0f925e" category="paragraph">すべての新しいCloud Volumes ONTAPシステムに対してFlexCacheライセンスが生成されます。ライセンスの使用量は 500GiB に制限されています。</block>
 </blocks>
