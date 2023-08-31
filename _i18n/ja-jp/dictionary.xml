@@ -5022,4 +5022,5 @@ NetApp （ BYOL ）からライセンスを直接購入した場合、 AWS サ�
   <block id="74ee0a2fe74e69a19051f0e09c04fc43" category="doc">SVMディザスタリカバリのセットアップ</block>
   <block id="f01867033c75f2410ea82d8cbf4634d7" category="paragraph">2つのCloud Volumes ONTAPシステム間にSnapMirror SVMレプリケーションを設定する場合は、2つのHAペアシステム間または2つのシングルノードシステム間でレプリケーションを行う必要があります。HAペアとシングルノードシステムの間にSnapMirror SVMレプリケーションをセットアップすることはできません。</block>
   <block id="64a88357645876cf49151eb26ffb0021" category="paragraph">CLIの手順については、次のドキュメントを参照してください。</block>
+  <block id="ead6e5569d8d8a0e0ef737aef13e13d9" category="list-text">アップグレードのステータスを確認するには、[設定]アイコンをクリックして*[タイムライン]*を選択します。</block>
 </blocks>
