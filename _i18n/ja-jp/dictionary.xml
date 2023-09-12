@@ -5025,4 +5025,12 @@ NetApp （ BYOL ）からライセンスを直接購入した場合、 AWS サ�
   <block id="28495b8712e93ec4d83d5af5db51d535" category="paragraph">BlueXPでは、FlexCacheボリュームを <block ref="06867f1eea47d22d6d5c52a51ce61294" category="inline-link-macro-rx"></block> サービス</block>
   <block id="06156010b52bde259c58b15866491a02" category="paragraph">ONTAP CLIまたはONTAPシステムマネージャを使用して、FlexCacheボリュームを作成および管理することもできます。</block>
   <block id="6712712f329188ca2226c3cf1d0f925e" category="paragraph">すべての新しいCloud Volumes ONTAPシステムに対してFlexCacheライセンスが生成されます。ライセンスの使用量は 500GiB に制限されています。</block>
+  <block id="200c9dcd65b566ab41bf3c1946647dce" category="section-title">2023年9月10日</block>
+  <block id="3e34162a2379c48e3eaf3f3857b029c0" category="paragraph">コネクタの3.9.33リリースでは、次の変更が導入されました。</block>
+  <block id="e749c9d187d1531bb81af1a3c9eb73be" category="section-title">AzureでのLsv3シリーズVMのサポート</block>
+  <block id="cc2bfd53f6bcbc23893aaa8fab8b1eb2" category="paragraph">AzureのCloud Volumes ONTAPでは、9.13.1リリース以降で、単一のアベイラビリティゾーンと複数のアベイラビリティゾーンに管理対象ディスクを共有するシングルノード環境とハイアベイラビリティペア環境で、L48s_v3とL64s_v3のインスタンスタイプがサポートされるようになりました。これらのインスタンスタイプでは、Flash Cacheがサポートされます。</block>
+  <block id="c2af1dd6b400531e930c62dad5095f7d" category="inline-link-macro">AzureでサポートされるCloud Volumes ONTAP構成を確認する</block>
+  <block id="bc3a07be852924fbf8ece67dbd310169" category="inline-link-macro">AzureでのCloud Volumes ONTAPのストレージ制限を表示</block>
+  <block id="7dd77d10e6ae3bee2c34fcea19d9c1ab" category="paragraph"><block ref="2e2ea5a0499f86c06503605a768ce8a2" category="inline-link-macro-rx"></block>
+<block ref="c1f4bd6aa6a7def50b28a0bec13e0184" category="inline-link-macro-rx"></block></block>
 </blocks>
