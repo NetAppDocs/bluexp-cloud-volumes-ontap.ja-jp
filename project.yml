@@ -218,6 +218,8 @@ sidebar:
           url: "/task-enabling-private-link.html"
         - title: リソースグループを移動する
           url: "/task-moving-resource-groups-azure.html"
+        - title: AzureでSnapMirrorトラフィックを分離
+          url: "/task-segregate-snapmirror-azure.html"
       - title: Google Cloudの管理
         flavor: gcp
         entries:
