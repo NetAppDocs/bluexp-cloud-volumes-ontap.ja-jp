@@ -163,6 +163,31 @@ TIP: サポートに登録されていないシステムでも、新しいバー
 
 
 
+=== C4、M4、R4 EC2インスタンスタイプを使用したAWSでのアップグレード
+
+Cloud Volumes ONTAPでは、c4、m4、およびr4 EC2インスタンスタイプがサポートされなくなりました。これらのインスタンスタイプを使用して、既存の環境をCloud Volumes ONTAPバージョン9.8 ~ 9.12.1にアップグレードできます。アップグレードする前に、 <<インスタンスタイプの変更,インスタンスタイプの変更>>。インスタンスタイプを変更できない場合は、 <<ネットワークの強化を有効にする,ネットワークの強化を有効にする>> をクリックしてください。インスタンスタイプの変更とネットワークの拡張の有効化の詳細については、次のセクションを参照してください。
+
+バージョン9.13.0以降を実行しているCloud Volumes ONTAPでは、C4、M4、R4 EC2インスタンスタイプでアップグレードすることはできません。この場合は、ディスクの数を減らしてから <<インスタンスタイプの変更,インスタンスタイプの変更>> または、c5、m5、r5 EC2インスタンスタイプの新しいHAペア構成を導入し、データを移行します。
+
+
+
+==== インスタンスタイプの変更
+
+c4、m4、r4のEC2インスタンスタイプでは、c5、m5、r5のEC2インスタンスタイプよりも多くのディスクをノードあたりに配置できます。実行しているc4、m4、またはr4 EC2インスタンスのノードあたりのディスク数が、c5、m5、およびr5インスタンスのノードあたりの最大ディスク許容量を下回っている場合は、EC2インスタンスタイプをc5、m5、またはr5に変更できます。
+
+link:https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-limits-aws.html#disk-and-tiering-limits-by-ec2-instance["EC2インスタンスごとにディスクと階層化の制限を確認する"^]
+link:https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-change-ec2-instance.html["Cloud Volumes ONTAP の EC2 インスタンスタイプを変更します"^]
+
+インスタンスタイプを変更できない場合は、の手順に従います。 <<ネットワークの強化を有効にする>>。
+
+
+
+==== ネットワークの強化を有効にする
+
+Cloud Volumes ONTAPバージョン9.8以降にアップグレードするには、c4、m4、またはr4インスタンスタイプを実行しているクラスタでenable_enhanced networking_を有効にする必要があります。ENAを有効にするには、ナレッジベースの記事を参照してください。 link:https://kb.netapp.com/Cloud/Cloud_Volumes_ONTAP/How_to_enable_Enhanced_networking_like_SR-IOV_or_ENA_on_AWS_CVO_instances["AWS Cloud Volumes ONTAPインスタンスでSR-IOVやENAなどの拡張ネットワークを有効にする方法"^]。
+
+
+
 == アップグレードを準備
 
 アップグレードを実行する前に、システムの準備ができていることを確認し、必要な設定の変更を行ってください。

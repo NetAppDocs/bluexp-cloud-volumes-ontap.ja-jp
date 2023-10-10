@@ -38,6 +38,8 @@ TIP: テイクオーバーを開始してギブバックを待機することで
 .参照
 AWSでサポートされるインスタンスタイプの一覧については、を参照してください link:https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-configs-aws.html#supported-ec2-compute["サポートされているEC2インスタンス"^]。
 
+インスタンスタイプをC4、M4、またはR4インスタンスから変更できない場合は、技術情報アーティクルを参照してください。 link:https://kb.netapp.com/Cloud/Cloud_Volumes_ONTAP/Unable_to_change_the_instance_type_from_r4_to_r5_with_disk_count_error["ディスク数のエラーでインスタンスタイプをR4からr5に変更できない"^]。
+
 .手順
 . [Canvas]ページで、作業環境を選択します。
 . [Overview]タブで、[Features]パネルをクリックし、*[Instance type]*の横にある鉛筆アイコンをクリックします。
