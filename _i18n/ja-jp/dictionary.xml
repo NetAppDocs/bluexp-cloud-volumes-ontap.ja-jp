@@ -4547,7 +4547,6 @@
   <block id="fc0a70bcada485a87b25779f9232cd77" category="summary">Cloud Volumes ONTAP には、 2 つの目的で Google Cloud サービスアカウントが必要です。1 つ目は、 Google Cloud の低コストのオブジェクトストレージにコールドデータを階層化するデータ階層化を有効にする場合です。2つ目は、BlueXPのバックアップとリカバリを有効にして、低コストのオブジェクトストレージにボリュームをバックアップする場合です。</block>
   <block id="3051092d4bbc438c196cba870b70c79f" category="paragraph">この手順はデータ階層化にのみ必要です。BlueXPのバックアップとリカバリには必要ありません。</block>
   <block id="aaaac746aa3fb70f64bdaf1919aefe27" category="admonition">BlueXPのバックアップとリカバリではSnapMirrorを実装してバックアップファイル（SnapMirror Cloud）を作成しますが、システムのアップグレード時にバックアップを一時停止する必要はありません。</block>
-  <block id="448cadabb687a7ab81490776866364cf" category="list-text">BlueXPのバックアップとリカバリを使用したボリュームバックアップは無制限ですが、Professionalパッケージを使用するCloud Volumes ONTAP システムのみが対象です</block>
   <block id="35ae8932a2c6f1191cf21157a991b4dd" category="paragraph">30 日間の無償トライアルをクラウドプロバイダのマーケットプレイスで従量課金制サブスクリプションで利用できます。この無償トライアルには、Cloud Volumes ONTAP とBlueXPのバックアップとリカバリ機能が含まれています。トライアルは、市場で提供サービスに登録すると開始されます。</block>
   <block id="8b3631f5373c77f26bc2e8fe7f000bd3" category="paragraph">Essentialsライセンスをネットアップから購入した場合（BYOL）、その導入環境およびボリュームタイプでライセンスされている容量を超えた場合、BlueXPデジタルウォレットは、より高い価格のEssentialsライセンス（お持ちの場合）に対して追加料金を請求します。これは、市場に課金する前に、前払い済みの容量として購入済みの使用可能容量を最初に使用するためです。市場に課金することで、月額料金が加算されます。</block>
   <block id="ae0bff30a3baa225238bb8caae6abf20" category="paragraph">セカンダリボリュームを含むHAペアにはもう1つの50TiBがプロビジョニングされます。BlueXPデジタルウォレットは、その50TiBをPAYGOに課金する代わりに、_Essentials Single Node_licenseに対して50TiBの超過料金を請求します。このライセンスは_Essentials Secondary HA_より も価格が高くなりますが、PAYGOの価格よりも安いです。</block>
@@ -5121,4 +5120,7 @@ NetApp （ BYOL ）からライセンスを直接購入した場合、 AWS サ�
   <block id="58cbae1f4fc410ea043517dc0196bed4" category="paragraph">インスタンスタイプをC4、M4、またはR4インスタンスから変更できない場合は、技術情報アーティクルを参照してください。 <block ref="ddbe8a0e687a77b95fcbe5dc93c2e464" category="inline-link-macro-rx"></block>。</block>
   <block id="f9f7c1c9687f8f087477f0ae4cac6b45" category="inline-link">Microsoft Azureのドキュメント</block>
   <block id="75640f19259f0f28da8136565db5cc22" category="admonition">NIC関連の追加タスクを実行するには、Azureで適切な権限を持つネットワーク貢献者ロールまたはカスタムロールを割り当てることができます。これらのNIC関連の権限の詳細については、を参照してください。<block ref="66f156d6b7e425dd982efc44f4fabac6" category="inline-link-rx"></block>。</block>
+  <block id="2cf711540cadf3cbb4cac96dba2d9464" category="list-text">BlueXPのバックアップとリカバリを使用したボリュームバックアップは無制限ですが、Professionalパッケージを使用するCloud Volumes ONTAPシステムのみが対象です。</block>
+  <block id="f4b04af639ebf32754e26b928989f33f" category="inline-link">BlueXPのバックアップとリカバリのライセンスをセットアップ</block>
+  <block id="e8b3ed24563d59f059354b6c1674f982" category="admonition">BlueXPのバックアップとリカバリにはPAYGOのサブスクリプションが必要ですが、このサービスの使用には料金は発生しません。BlueXPのバックアップとリカバリのライセンス設定の詳細については、を参照してください。<block ref="c958f229a6c4d788e19159c7ba08a48b" category="inline-link-rx"></block>。</block>
 </blocks>
