@@ -20,6 +20,30 @@ BlueXPのCloud Volumes ONTAP Managementの新機能をご紹介します。
 
 
 
+== 2023年10月23日
+
+コネクタの3.9.34リリースでは、次の変更が導入されました。
+
+
+
+=== AzureでのHAマルチアベイラビリティゾーン環境でサポートされる新しいリージョン
+
+Azureの次のリージョンで、Cloud Volumes ONTAP 9.14.0以降の可用性の高い複数アベイラビリティゾーン環境がサポートされるようになりました。
+
+* オーストラリア東部
+* 東アジア
+* フランス中部
+* 北ヨーロッパ
+* カタール中部
+* スウェーデン中部
+* 西ヨーロッパ
+* 西アメリカ 2
+
+
+複数のアベイラビリティゾーンをサポートするすべてのリージョンのリストについては、を参照してください https://bluexp.netapp.com/cloud-volumes-global-regions["Azureのグローバルリージョンマップ"^]。
+
+
+
 == 2023年10月6日
 
 コネクタの3.9.34リリースでは、次の変更が導入されました。
@@ -44,8 +68,8 @@ link:https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/["このリリ�
 
 AzureのCloud Volumes ONTAPでは、9.13.1リリース以降で、単一のアベイラビリティゾーンと複数のアベイラビリティゾーンに管理対象ディスクを共有するシングルノード環境とハイアベイラビリティペア環境で、L48s_v3とL64s_v3のインスタンスタイプがサポートされるようになりました。これらのインスタンスタイプでは、Flash Cacheがサポートされます。
 
-link:https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-configs-azure.html["AzureでサポートされるCloud Volumes ONTAP構成を確認する"]
-link:https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-limits-azure.html["AzureでのCloud Volumes ONTAPのストレージ制限を表示"]
+link:https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-configs-azure.html["AzureでサポートされるCloud Volumes ONTAP構成を確認する"^]
+link:https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-limits-azure.html["AzureでのCloud Volumes ONTAPのストレージ制限を表示"^]
 
 
 
@@ -67,7 +91,7 @@ Google Cloud for Cloud Volumes ONTAP 9.13.1以降では、Flash Cacheと高速�
 
 これらの機能は、シングルノード環境とハイアベイラビリティペア環境の両方で個別に使用することも、一緒に使用することもできます。
 
-link:https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-deploying-gcp.html["Google CloudでCloud Volumes ONTAP を起動します"]
+link:https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-deploying-gcp.html["Google CloudでCloud Volumes ONTAP を起動します"^]
 
 
 
