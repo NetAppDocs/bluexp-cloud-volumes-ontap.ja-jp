@@ -5041,7 +5041,6 @@ NetApp （ BYOL ）からライセンスを直接購入した場合、 AWS サ�
   <block id="2d713c56af0861a0b0bed91ef8da2e18" category="paragraph">次の考慮事項を確認してください。</block>
   <block id="97d737a59c7e796eb8610dce5b0f817a" category="list-text">Cloud Volumes ONTAPのシングルノードまたはHAペア構成（VMインスタンス）には、SnapMirrorトラフィックを分離するためにNICを1つだけ追加できます。</block>
   <block id="933fe3c7f865ac41ceae93a6e0cb11be" category="list-text">新しいNICを追加するには、導入するVMインスタンスタイプに未使用のNICが必要です。</block>
-  <block id="e6f791d5fe8a01a86623cb53cef66120" category="list-text">ソースクラスタとデスティネーションクラスタは、同じ仮想ネットワーク（VNet）に属しているが、同じサブネットに属していない必要があります。</block>
   <block id="c61486c21b19c2bf3cf6e82a2a1a645b" category="section-title">手順1：追加のNICを作成してデスティネーションVMに接続する</block>
   <block id="d1348b7908ab7ffc3e987964d5d681f0" category="paragraph">このセクションでは、追加のNICを作成してデスティネーションVMに接続する方法について説明します。デスティネーションVMは、AzureのCloud Volumes ONTAP内のシングルノードまたはHAペアシステムで、追加のNICを設定します。</block>
   <block id="faa6897ed3f655c419813b3c65575b23" category="list-text">ONTAP CLIで、ノードを停止します。</block>
@@ -5142,4 +5141,6 @@ NetApp （ BYOL ）からライセンスを直接購入した場合、 AWS サ�
   <block id="0444b867f0aca3029a2b9ea7cd093316" category="list-text">[*ルールの追加*]をクリックします。</block>
   <block id="39eb101f969fe671b016bf47de2d6d12" category="list-text">[Type]で*[すべてのトラフィック]*を選択し、VPCのIPアドレスを選択します。</block>
   <block id="20d3f54acd662a128694ddf527ea22fb" category="list-text">[ルールの保存]*をクリックして変更を適用します。</block>
+  <block id="2fd1ee72a12db129de96b6606fbce188" category="list-text">ソースクラスタとデスティネーションクラスタが同じ仮想ネットワーク（VNet）にアクセスできる必要があります。デスティネーションクラスタはAzure内のCloud Volumes ONTAPシステムです。ソースクラスタには、AzureのCloud Volumes ONTAPシステムまたはONTAPシステムを使用できます。</block>
+  <block id="53dbdce3b901c59c8d3bbdae0e91364c" category="paragraph">既存のSnapMirrorレプリケーション関係を移動するには、新しいSnapMirrorレプリケーション関係を作成する前に、既存のSnapMirrorレプリケーション関係を解除する必要があります。</block>
 </blocks>

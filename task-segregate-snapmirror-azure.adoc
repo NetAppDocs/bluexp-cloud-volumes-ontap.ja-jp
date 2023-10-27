@@ -32,7 +32,7 @@ image:diagram-segregate-snapmirror-traffic.png["図は、シングルノード�
 
 * Cloud Volumes ONTAPのシングルノードまたはHAペア構成（VMインスタンス）には、SnapMirrorトラフィックを分離するためにNICを1つだけ追加できます。
 * 新しいNICを追加するには、導入するVMインスタンスタイプに未使用のNICが必要です。
-* ソースクラスタとデスティネーションクラスタは、同じ仮想ネットワーク（VNet）に属しているが、同じサブネットに属していない必要があります。
+* ソースクラスタとデスティネーションクラスタが同じ仮想ネットワーク（VNet）にアクセスできる必要があります。デスティネーションクラスタはAzure内のCloud Volumes ONTAPシステムです。ソースクラスタには、AzureのCloud Volumes ONTAPシステムまたはONTAPシステムを使用できます。
 
 
 
@@ -238,6 +238,8 @@ dest::> vserver peer show
 == 手順5：ソースシステムとデスティネーションシステム間にSnapMirrorレプリケーション関係を作成する
 
 このセクションでは、ソースシステムとデスティネーションシステム間にSnapMirrorレプリケーション関係を作成する手順について説明します。
+
+既存のSnapMirrorレプリケーション関係を移動するには、新しいSnapMirrorレプリケーション関係を作成する前に、既存のSnapMirrorレプリケーション関係を解除する必要があります。
 
 ONTAP CLIを使用して次の手順を実行します。
 
