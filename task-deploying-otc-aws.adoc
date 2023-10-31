@@ -86,7 +86,8 @@ https://docs.netapp.com/us-en/bluexp-setup-admin/task-adding-aws-accounts.html["
 次のビデオでは、従量課金制の Marketplace サブスクリプションを AWS クレデンシャルに関連付ける方法を紹介します。
 
 +
-video::video_subscribing_aws.mp4[width=848,height=480]
+.AWS MarketplaceでBlueXPにサブスクライブ
+video::096e1740-d115-44cf-8c27-b051011611eb[panopto]
 +
 
 TIP: 複数の IAM ユーザが同じ AWS アカウントで作業する場合は、各ユーザにサブスクライブする必要があります。最初のユーザがサブスクライブすると、次の図に示すように、 AWS Marketplace から後続のユーザに登録済みであることが通知されます。AWS_account_ のサブスクリプションが設定されている間、各 IAM ユーザは、そのサブスクリプションに自分自身を関連付ける必要があります。次のメッセージが表示されたら、[Click here *（ここをクリック）]リンクをクリックしてBlueXP Webサイトにアクセスし、プロセスを完了します。image:screenshot_aws_marketplace.gif["AWSアカウントにサブスクリプションがすでに設定されているものの、特定のIAMユーザがサブスクリプションを設定していない場合に、BlueXP for Cloud Volumes ONTAP のサブスクリプションページを示すスクリーンショット。"]
@@ -334,7 +335,8 @@ https://docs.netapp.com/us-en/bluexp-setup-admin/task-adding-aws-accounts.html["
 次のビデオでは、従量課金制の Marketplace サブスクリプションを AWS クレデンシャルに関連付ける方法を紹介します。
 
 +
-video::video_subscribing_aws.mp4[width=848,height=480]
+.AWS MarketplaceでBlueXPにサブスクライブ
+video::096e1740-d115-44cf-8c27-b051011611eb[panopto]
 +
 
 TIP: 複数の IAM ユーザが同じ AWS アカウントで作業する場合は、各ユーザにサブスクライブする必要があります。最初のユーザがサブスクライブすると、次の図に示すように、 AWS Marketplace から後続のユーザに登録済みであることが通知されます。AWS_account_ のサブスクリプションが設定されている間、各 IAM ユーザは、そのサブスクリプションに自分自身を関連付ける必要があります。次のメッセージが表示されたら、[Click here *（ここをクリック）]リンクをクリックしてBlueXP Webサイトにアクセスし、プロセスを完了します。image:screenshot_aws_marketplace.gif["AWSアカウントにサブスクリプションがすでに設定されているものの、特定のIAMユーザがサブスクリプションを設定していない場合に、BlueXP for Cloud Volumes ONTAP のサブスクリプションページを示すスクリーンショット。"]

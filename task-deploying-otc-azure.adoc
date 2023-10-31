@@ -83,7 +83,8 @@ AzureでシングルノードのCloud Volumes ONTAP システムを起動する�
 次のビデオでは、 Marketplace サブスクリプションを Azure サブスクリプションに関連付ける方法を紹介します。
 
 +
-video::video_subscribing_azure.mp4[width=848,height=480]
+.Azure MarketplaceでBlueXPにサブスクライブ
+video::b7e97509-2ecf-4fa0-b39b-b0510109a318[panopto]
 . * サービス *: サービスを有効にしておくか、 Cloud Volumes ONTAP で使用しない個々のサービスを無効にします。
 +
 ** https://docs.netapp.com/us-en/bluexp-classification/concept-cloud-compliance.html["BlueXPの分類の詳細については、こちらをご覧ください"^]
@@ -308,7 +309,8 @@ AzureでCloud Volumes ONTAP HAペアを起動するには、BlueXPでHA作業環
 次のビデオでは、 Marketplace サブスクリプションを Azure サブスクリプションに関連付ける方法を紹介します。
 
 +
-video::video_subscribing_azure.mp4[width=848,height=480]
+.Azure MarketplaceでBlueXPにサブスクライブ
+video::b7e97509-2ecf-4fa0-b39b-b0510109a318[panopto]
 . * サービス *: サービスを有効にしておくか、 Cloud Volumes ONTAP で使用しない個々のサービスを無効にします。
 +
 ** https://docs.netapp.com/us-en/bluexp-classification/concept-cloud-compliance.html["BlueXPの分類の詳細については、こちらをご覧ください"^]

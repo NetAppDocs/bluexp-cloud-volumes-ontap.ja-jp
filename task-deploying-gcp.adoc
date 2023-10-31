@@ -99,7 +99,8 @@ NOTE: これは、BlueXP用に設定したサービスアカウントです。 l
 次のビデオでは、従量課金制のMarketplaceサブスクリプションをGoogle Cloudプロジェクトに関連付ける方法を紹介します。または、の手順に従って、に登録します https://docs.netapp.com/us-en/bluexp-setup-admin/task-adding-gcp-accounts.html["MarketplaceサブスクリプションとGoogle Cloudクレデンシャルの関連付け"^] セクション。
 
 +
-video::video_subscribing_gcp.mp4[width=848,height=480]
+.Google Cloud MarketplaceからBlueXPにサブスクライブ
+video::373b96de-3691-4d84-b3f3-b05101161638[panopto]
 . * サービス * ：このシステムで使用するサービスを選択します。BlueXPのバックアップとリカバリを選択するか、BlueXPの階層化を使用するには、ステップ3でサービスアカウントを指定しておく必要があります。
 +
 
@@ -336,7 +337,8 @@ NOTE: これは、BlueXP用に設定したサービスアカウントです。 l
 次のビデオでは、従量課金制のMarketplaceサブスクリプションをGoogle Cloudプロジェクトに関連付ける方法を紹介します。  または、の手順に従って、に登録します https://docs.netapp.com/us-en/bluexp-setup-admin/task-adding-gcp-accounts.html["MarketplaceサブスクリプションとGoogle Cloudクレデンシャルの関連付け"^] セクション。
 
 +
-video::video_subscribing_gcp.mp4[width=848,height=480]
+.Google Cloud MarketplaceからBlueXPにサブスクライブ
+video::373b96de-3691-4d84-b3f3-b05101161638[panopto]
 . * サービス * ：このシステムで使用するサービスを選択します。BlueXPのバックアップとリカバリを選択するか、BlueXP階層化を使用するには、ステップ3でサービスアカウントを指定しておく必要があります。
 +
 
