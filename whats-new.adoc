@@ -20,6 +20,20 @@ BlueXPのCloud Volumes ONTAP Managementの新機能をご紹介します。
 
 
 
+== 2023年11月1日
+
+コネクタの3.9.34リリースでは、次の変更が導入されました。
+
+
+
+=== サウジアラビアリージョンでGoogle Cloudがサポートされるようになりました
+
+サウジアラビアリージョンは、Google Cloud for Cloud Volumes ONTAPおよびConnector for Cloud Volumes ONTAP 9.12.1 GA以降でサポートされるようになりました。
+
+すべての地域のリストについては、 https://bluexp.netapp.com/cloud-volumes-global-regions["Google Cloudのグローバルリージョンマップ"^]。
+
+
+
 == 2023年10月23日
 
 コネクタの3.9.34リリースでは、次の変更が導入されました。
@@ -28,7 +42,7 @@ BlueXPのCloud Volumes ONTAP Managementの新機能をご紹介します。
 
 === AzureでのHAマルチアベイラビリティゾーン環境でサポートされる新しいリージョン
 
-Azureの次のリージョンで、Cloud Volumes ONTAP 9.14.0以降の可用性の高い複数アベイラビリティゾーン環境がサポートされるようになりました。
+Azureの次のリージョンでは、Cloud Volumes ONTAP 9.12.1 GA以降で可用性の高い複数アベイラビリティゾーン環境がサポートされるようになりました。
 
 * オーストラリア東部
 * 東アジア

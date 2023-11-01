@@ -5113,7 +5113,6 @@ NetApp （ BYOL ）からライセンスを直接購入した場合、 AWS サ�
   <block id="e8b3ed24563d59f059354b6c1674f982" category="admonition">BlueXPのバックアップとリカバリにはPAYGOのサブスクリプションが必要ですが、このサービスの使用には料金は発生しません。BlueXPのバックアップとリカバリのライセンス設定の詳細については、を参照してください。<block ref="c958f229a6c4d788e19159c7ba08a48b" category="inline-link-rx"></block>。</block>
   <block id="fb2530f9293a4ba59cfd3ca6492bb972" category="section-title">2023年10月23日</block>
   <block id="2bc953fcced4addf338156cc4681b683" category="section-title">AzureでのHAマルチアベイラビリティゾーン環境でサポートされる新しいリージョン</block>
-  <block id="13ff77e69df5acabc2f0da9e5ebc94b8" category="paragraph">Azureの次のリージョンで、Cloud Volumes ONTAP 9.14.0以降の可用性の高い複数アベイラビリティゾーン環境がサポートされるようになりました。</block>
   <block id="cee3f0213dd8b7eb15d7b31824e01754" category="list-text">オーストラリア東部</block>
   <block id="f74e1c0c8ee8410fa5bfe03676347257" category="list-text">東アジア</block>
   <block id="bea1bd3d23555c539dab5f3f5426184c" category="list-text">フランス中部</block>
@@ -5151,4 +5150,10 @@ NetApp （ BYOL ）からライセンスを直接購入した場合、 AWS サ�
   <block id="20ea4c62f4c9e4254314fe7fbbef0319" category="inline-link">サブスクリプションの使用状況の監視の詳細</block>
   <block id="d7105dd212dc96a8b292b6b48f84916f" category="paragraph"><block ref="d7105dd212dc96a8b292b6b48f84916f" category="inline-link-rx"></block></block>
   <block id="28ca5cda5cdef790c457097830d81ca5" category="paragraph">BlueXPでKeystoneサブスクリプションを使用する必要がなくなった場合は、サブスクリプションのリンクを解除できます。既存の Cloud Volumes ONTAP サブスクリプションに関連付けられていないサブスクリプションはリンク解除のみ可能です。</block>
+  <block id="499efcb2be11e80e5bdfc003278352e3" category="section-title">2023年11月1日</block>
+  <block id="992f57af99811ae146ed6df67eccc26f" category="section-title">サウジアラビアリージョンでGoogle Cloudがサポートされるようになりました</block>
+  <block id="9e06c986efeeff600f0b04c67d5d6354" category="paragraph">サウジアラビアリージョンは、Google Cloud for Cloud Volumes ONTAPおよびConnector for Cloud Volumes ONTAP 9.12.1 GA以降でサポートされるようになりました。</block>
+  <block id="2bc724993144e8002899059117620062" category="inline-link">Google Cloudのグローバルリージョンマップ</block>
+  <block id="6a050b5b1c64124ef335bf9dbf64e03f" category="paragraph">すべての地域のリストについては、<block ref="5328f934c7a30e2b8b67732fc162a525" category="inline-link-rx"></block>。</block>
+  <block id="e8b16e899245eb584f98d48e087aa975" category="paragraph">Azureの次のリージョンでは、Cloud Volumes ONTAP 9.12.1 GA以降で可用性の高い複数アベイラビリティゾーン環境がサポートされるようになりました。</block>
 </blocks>
