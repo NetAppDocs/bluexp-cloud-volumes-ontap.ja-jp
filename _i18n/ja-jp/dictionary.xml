@@ -3195,7 +3195,6 @@
   <block id="6e539d2ea7d82ed0e31c450e64ff8c04" category="section-title">最適化</block>
   <block id="a131e5df30c445534883b2b08d3f9e4e" category="paragraph">プロビジョニングされた容量とI/O処理の料金は別途お支払いください。</block>
   <block id="258f58bf86a685fa4951f45a75224c86" category="list-text">Cloud Volumes ONTAP のシングルノードまたはHA</block>
-  <block id="ac8875b922d75fca71aa495c421855a6" category="list-text">充電は、ストレージと使用量（I/O）という2つのコストコンポーネントに基づいています。</block>
   <block id="98b2954d7b26ad04d4f74c70881d3ece" category="section-title">Edge Cache（エッジキャッシュ）</block>
   <block id="0e6fc7a8a0a2e83eed1877313299a807" category="paragraph">Cloud Volume Edge Cacheのライセンスを提供します。</block>
   <block id="cbea577daebf267793d8d7234ee50729" category="list-text">分散型企業向けのビジネス継続性とデータ保護を備えたプロフェッショナルパッケージと同じ機能を提供します</block>
@@ -3234,7 +3233,6 @@
   <block id="35b1e30bbf7722e3019259ffb8c9f0b7" category="list-text">*すべてのVNet *：インバウンドトラフィックの送信元は0.0.0.0/0のIP範囲です。</block>
   <block id="990da7f1ae0e8fb8294bff04c936ecaa" category="list-text">Edge Cacheライセンスとの間での変更はサポートされていません。</block>
   <block id="cfdb32f80009b1e5c5c0468dda9f013d" category="paragraph">クラウドプロバイダの市場からプライベートオファーまたは契約を結んでいる場合、契約に含まれていない課金方式に変更すると、BYOL（ネットアップからライセンスを購入した場合）またはPAYGOに対して課金されます。</block>
-  <block id="a2e5678d48654234a84ed14a48c17119" category="paragraph">データレプリケーション（SnapMirror）やNDMPに関連するI/Oは料金に含まれません。</block>
   <block id="240bee2f94d72e6a18a1263f971266c2" category="cell">コネクタへの接続と、クラスタ管理LIFのIPアドレスを使用したSystem Manager WebコンソールへのHTTPSアクセス</block>
   <block id="4f9ff6137bed641431cf4f88c0e37ba0" category="inline-image-macro">Cloud Volumes ONTAP HAペアとそのコンポーネントの概念図。</block>
   <block id="deec4375ad9dbb52932d049564b46c2c" category="paragraph"><block ref="deec4375ad9dbb52932d049564b46c2c" category="inline-image-macro-rx" type="image"></block></block>
@@ -5156,4 +5154,6 @@ NetApp （ BYOL ）からライセンスを直接購入した場合、 AWS サ�
   <block id="2bc724993144e8002899059117620062" category="inline-link">Google Cloudのグローバルリージョンマップ</block>
   <block id="6a050b5b1c64124ef335bf9dbf64e03f" category="paragraph">すべての地域のリストについては、<block ref="5328f934c7a30e2b8b67732fc162a525" category="inline-link-rx"></block>。</block>
   <block id="e8b16e899245eb584f98d48e087aa975" category="paragraph">Azureの次のリージョンでは、Cloud Volumes ONTAP 9.12.1 GA以降で可用性の高い複数アベイラビリティゾーン環境がサポートされるようになりました。</block>
+  <block id="0679d11689909adae41f54cfc8c6ef53" category="list-text">充電は、ストレージと使用量（I/O）の2つのコストコンポーネントに基づいて行われます。</block>
+  <block id="992a45bae33fb9769eb5bc8c6317149c" category="paragraph">データレプリケーション（SnapMirror）、バックアップ（SnapVault）、NDMPに関連するI/Oは課金されません。</block>
 </blocks>
