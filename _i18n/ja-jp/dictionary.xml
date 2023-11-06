@@ -3855,7 +3855,6 @@
   <block id="93859a51c20050a8828b46a6420dc7c9" category="paragraph">を参照してください <block ref="c8a7e79f678b1faddb103e58db2edb75" category="inline-link-macro-rx"></block> これらの属性については、を参照してください。</block>
   <block id="1bc2e57bef99a91ef2d8ab0cdb177768" category="list-text">Azureのデフォルトでは、すべてのディスクが保存データとして暗号化されます。</block>
   <block id="b80fdfea42d505d96700af73261164a3" category="list-title">ページBLOBを使用したHAペア</block>
-  <block id="c30ce062be1c5d4265f67a2654690b8f" category="list-title">複数のアベイラビリティゾーンに含まれるHAペア</block>
   <block id="ab3aec14eab62514bc5eb01d67673c8b" category="list-text">512 GiB Premium Storage 2ページのrootボリューム用blob（ノードごとに1つ）</block>
   <block id="5a07b5de49d43760a69fb7c4fea757e9" category="inline-link-macro">HAペアのライセンスでサポートされる構成</block>
   <block id="de8cf25f68f35d1a6c91688973a7593e" category="list-text">*ストレージとWORMへのセキュアな通信*：AzureストレージアカウントへのHTTPS接続を有効にするかどうかを選択し、必要に応じてWrite Once Read Many（WORM）ストレージをアクティブ化します。</block>
@@ -5156,4 +5155,5 @@ NetApp （ BYOL ）からライセンスを直接購入した場合、 AWS サ�
   <block id="e8b16e899245eb584f98d48e087aa975" category="paragraph">Azureの次のリージョンでは、Cloud Volumes ONTAP 9.12.1 GA以降で可用性の高い複数アベイラビリティゾーン環境がサポートされるようになりました。</block>
   <block id="0679d11689909adae41f54cfc8c6ef53" category="list-text">充電は、ストレージと使用量（I/O）の2つのコストコンポーネントに基づいて行われます。</block>
   <block id="992a45bae33fb9769eb5bc8c6317149c" category="paragraph">データレプリケーション（SnapMirror）、バックアップ（SnapVault）、NDMPに関連するI/Oは課金されません。</block>
+  <block id="0b8c1e660d75aa2bec12f002f097dcab" category="list-title">複数のアベイラビリティゾーンに共有管理対象ディスクを配置したHAペア</block>
 </blocks>
