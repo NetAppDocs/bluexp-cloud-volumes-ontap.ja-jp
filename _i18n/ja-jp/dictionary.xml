@@ -5156,4 +5156,8 @@ NetApp （ BYOL ）からライセンスを直接購入した場合、 AWS サ�
   <block id="0679d11689909adae41f54cfc8c6ef53" category="list-text">充電は、ストレージと使用量（I/O）の2つのコストコンポーネントに基づいて行われます。</block>
   <block id="992a45bae33fb9769eb5bc8c6317149c" category="paragraph">データレプリケーション（SnapMirror）、バックアップ（SnapVault）、NDMPに関連するI/Oは課金されません。</block>
   <block id="0b8c1e660d75aa2bec12f002f097dcab" category="list-title">複数のアベイラビリティゾーンに共有管理対象ディスクを配置したHAペア</block>
+  <block id="a710c8d7ee654ea3241f1b07f9f7de05" category="list-text"><block ref="de989a17a1629831650b134e00461edd" category="inline-xref-macro-rx"></block></block>
+  <block id="6d09b3b7b0c828e4faaa038218afc509" category="section-title">すべてのLIFがホームポートにあることを確認する</block>
+  <block id="4a0d5f4ccd3c4d2acc213b54daf63f9e" category="inline-link-macro">すべてのLIFがホームポートにあることを確認する</block>
+  <block id="0754aed90b1b7e3ecf810f88321b76f5" category="paragraph">アップグレード前に、すべてのLIFがホームポートにある必要があります。ONTAPのドキュメントを参照してください。 <block ref="e645c13326fab640068fe44ceb8154ff" category="inline-link-macro-rx"></block>。</block>
 </blocks>
