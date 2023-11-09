@@ -889,7 +889,6 @@
   <block id="c1b0fccfdff9ac3307a1dde73fefce36" category="paragraph">使用頻度の低いデータを低コストのオブジェクトストレージに自動的に階層化できるため、ストレージコストを削減できます。アクティブなデータはハイパフォーマンスの SSD または HDD に残り、非アクティブなデータは低コストのオブジェクトストレージに階層化されます。これにより、プライマリストレージのスペースを再利用し、セカンダリストレージを縮小できます。</block>
   <block id="4a399275f88e7ce2505e96b9b7f521b9" category="inline-image-macro">この概念図は、 EBS ストレージに移動中のホットデータと S3 ストレージに移動中の非アクティブデータを示しています。</block>
   <block id="3d3b4afad1ee8976c0e2861a36e95c05" category="paragraph"><block ref="3d3b4afad1ee8976c0e2861a36e95c05" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="79a1ac94d3a1278dbc40ff2a430fa52a" category="admonition">データの階層化（ FabricPool ）を有効にするために機能ライセンスをインストールする必要はありません。</block>
   <block id="e452e8c25e7bc8d94f88ce5a25cbbf4a" category="section-title">AWS でのデータ階層化</block>
   <block id="d6a11de1ddf26c52daac1219f9ab237d" category="paragraph">AWS でデータ階層化を有効にすると、 Cloud Volumes ONTAP はホットデータのパフォーマンス階層として EBS 、アクセス頻度の低いデータの大容量階層として AWS S3 を使用します。</block>
   <block id="9a817efc11f456e69cd659f0afd9447b" category="list-text">高パフォーマンス階層</block>
@@ -2604,7 +2603,6 @@
   <block id="d17c4281542937487475a76b3afea508" category="doc">Google Cloud のハイアベイラビリティペア</block>
   <block id="36b2e0baf475c546a7d804d50bd41be4" category="paragraph">Cloud Volumes ONTAP High Availability （ HA ）構成は、無停止の運用と耐障害性を提供します。Google Cloudでは、2つのノード間でデータが同期ミラーリングされます。</block>
   <block id="f406c9d6eeead7db4c0d7c4436e4365f" category="paragraph">Google CloudのCloud Volumes ONTAP HA構成には、次のコンポーネントが含まれています。</block>
-  <block id="89f3aa2399b6fb2684acf4e64a1b95ad" category="paragraph">データ階層化は、 FabricPool テクノロジによって実現されます。</block>
   <block id="3844834e9306a66948e49d6149c5a299" category="section-title">Google Cloudのデータ階層化</block>
   <block id="f6535844f45781691afa19e3fe67a627" category="paragraph">Google Cloudでデータ階層化を有効にすると、Cloud Volumes ONTAP はホットデータのパフォーマンス階層として永続的ディスクを使用し、アクセス頻度の低いデータの大容量階層としてGoogle Cloud Storageバケットを使用します。</block>
   <block id="2bae3f4058e112cc703c4dc74dc72501" category="paragraph">高速の書き込み速度は、すべてのタイプのシングルノードシステムと一部のHAペア構成でサポートされています。でサポートされている構成を表示します<block ref="d080347ff89205e9b3e508b1fee0c025" category="inline-link-rx"></block></block>
@@ -5166,4 +5164,5 @@ NetApp （ BYOL ）からライセンスを直接購入した場合、 AWS サ�
   <block id="96c6a6277896e4ed7c2cef558b5542c1" category="paragraph">すべての地域のリストについては、<block ref="24faa078890c2d8c97de1a6b5a5789e3" category="inline-link-rx"></block>。</block>
   <block id="8904b1f88c62ce8a8381c8474f2ccb42" category="paragraph">コネクタの3.9.34リリースでは、次の変更が加えられました。</block>
   <block id="f4e12e22adfef297cd0c891e4cd2e1a9" category="paragraph">コネクタの3.9.33リリースでは、次の変更が加えられました。</block>
+  <block id="bbb12e7857993612931dbc5c19c5f9dc" category="paragraph">データ階層化は、 FabricPool テクノロジによって実現されます。Cloud Volumes ONTAPは、すべてのCloud Volumes ONTAPクラスタにデータ階層化を提供します。データ階層化を有効にすると、オブジェクトストレージに階層化されたデータに料金が発生します。オブジェクトストレージのコストの詳細については、クラウドプロバイダのドキュメントを参照してください。</block>
 </blocks>
