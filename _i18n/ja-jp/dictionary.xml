@@ -5165,4 +5165,7 @@ NetApp （ BYOL ）からライセンスを直接購入した場合、 AWS サ�
   <block id="8904b1f88c62ce8a8381c8474f2ccb42" category="paragraph">コネクタの3.9.34リリースでは、次の変更が加えられました。</block>
   <block id="f4e12e22adfef297cd0c891e4cd2e1a9" category="paragraph">コネクタの3.9.33リリースでは、次の変更が加えられました。</block>
   <block id="bbb12e7857993612931dbc5c19c5f9dc" category="paragraph">データ階層化は、 FabricPool テクノロジによって実現されます。Cloud Volumes ONTAPは、すべてのCloud Volumes ONTAPクラスタにデータ階層化を提供します。データ階層化を有効にすると、オブジェクトストレージに階層化されたデータに料金が発生します。オブジェクトストレージのコストの詳細については、クラウドプロバイダのドキュメントを参照してください。</block>
+  <block id="e95c0c487a8aec79b7d3484dc5452526" category="section-title">2023年11月10日</block>
+  <block id="1e8bf13d2a6124785fff6ed75b8efe5d" category="section-title">ドイツ地域でGoogle Cloudがサポートされるようになりました</block>
+  <block id="1eb6caf052a1ca736597d3e01c5333f9" category="paragraph">ドイツ地域では、Google Cloud for Cloud Volumes ONTAPおよびConnector for Cloud Volumes ONTAP 9.12.1 GA以降でサポートされるようになりました。</block>
 </blocks>
