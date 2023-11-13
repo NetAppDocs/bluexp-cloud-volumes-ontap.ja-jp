@@ -26,9 +26,9 @@ BlueXPのCloud Volumes ONTAP Managementの新機能をご紹介します。
 
 
 
-=== ドイツ地域でGoogle Cloudがサポートされるようになりました
+=== ベルリンリージョンでGoogle Cloudがサポートされるようになりました
 
-ドイツ地域では、Google Cloud for Cloud Volumes ONTAPおよびConnector for Cloud Volumes ONTAP 9.12.1 GA以降でサポートされるようになりました。
+ベルリン地域は、Google Cloud for Cloud Volumes ONTAP 9.12.1 GA以降でサポートされるようになりました。
 
 すべての地域のリストについては、 https://bluexp.netapp.com/cloud-volumes-global-regions["Google Cloudのグローバルリージョンマップ"^]。
 
