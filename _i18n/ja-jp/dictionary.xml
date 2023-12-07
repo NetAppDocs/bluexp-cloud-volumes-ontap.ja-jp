@@ -2126,8 +2126,6 @@
   <block id="552690dff240721c335dffa2d29b8ef8" category="paragraph">キーの新しいバージョンを作成すると、 Cloud Volumes ONTAP では自動的に最新のキーバージョンが使用されます。</block>
   <block id="0ea67820edee1410e568b14bb70835d0" category="section-title">データの暗号化方法</block>
   <block id="145da5369fc47bfb6b1cd09c08d698b0" category="paragraph">お客様が管理するキーを使用するように設定された Cloud Volumes ONTAP 作業環境を作成すると、 Cloud Volumes ONTAP データは次のように暗号化されます。</block>
-  <block id="2301d2b9fcb3fe6f26482aff37ea2c54" category="inline-link">ディスク暗号化セット</block>
-  <block id="5dab396463f2f277886102bf78fe661b" category="list-text">新しいデータディスクでも同じディスク暗号化セットが使用されます。</block>
   <block id="8764c9ec9f17252b7df37e1710ec9e5a" category="section-title">キーボールトを作成し、キーを生成します</block>
   <block id="d01b7a4314685f64d972ad7a1fad92aa" category="paragraph">キーヴォールトは、 Cloud Volumes ONTAP システムを作成するときと同じ Azure サブスクリプションとリージョンに配置する必要があります。</block>
   <block id="0355ddb77a5b72eb0604153dc1393f12" category="inline-link">Azure サブスクリプションでキーヴォールトを作成します</block>
@@ -3387,7 +3385,6 @@
   <block id="9f3e8e28b8288d2d66ebc481e1f389d6" category="paragraph">ユーザデータ用のストレージに加えて、BlueXPはシステムデータ用のクラウドストレージも購入します。</block>
   <block id="9c70722de73077ea88b96befb7d1076b" category="paragraph">BlueXPでは'次のようにストレージが配置されます</block>
   <block id="ec0c586d512637babfaca236d1a1cc87" category="list-text">BlueXPから'APIを使用して'キーを使用するCloud Volumes ONTAP 作業環境を作成します</block>
-  <block id="648dd7242e5228e0d91d90eaf1e79ebd" category="list-text">ルートディスク、ブートディスク、データディスクの場合、BlueXPはを使用します<block ref="c7a6854bb19ab523fbe585f89a860944" category="inline-link-rx"></block>を使用して、管理対象ディスクで暗号化キーを管理できます。</block>
   <block id="cf7451c571bdcd94b5852c9167fbb885" category="paragraph">キーヴォールトを作成して暗号化キーを生成したら、そのキーを使用するように設定した新しい Cloud Volumes ONTAP システムを作成できます。これらの手順は、BlueXP APIを使用してサポートされています。</block>
   <block id="2a709f4373163ddbd1d13389c553a2eb" category="paragraph">シングルノードのCloud Volumes ONTAP システムで顧客管理キーを使用する場合は、BlueXP Connectorに次の権限があることを確認します。</block>
   <block id="8be0344d53e72ba6b33ee561546d42ef" category="list-text">次のBlueXP API呼び出しを使用して、Azureサブスクリプション内の主要なボルトのリストを取得します。</block>
@@ -3702,11 +3699,6 @@
   <block id="edeea5f1bc7f7fc7a2966961ec39210e" category="sidebar">BlueXPでStorage VMを操作します</block>
   <block id="ff93781ff90bf605d8b3070c1501b28f" category="sidebar">BlueXPのウェブサイトのblog</block>
   <block id="7a45e6298bb69116e2c6db653fb88884" category="sidebar">BlueXPのすべてのマニュアル</block>
-  <block id="1223a21ec0a7e82e77ac43bd74628f1e" category="list-text">Azure HAシングルアベイラビリティゾーン</block>
-  <block id="dcd61ff34229ba534213e8501446885a" category="list-text">Cloud Volumes ONTAP 用のすべてのAzureストレージアカウントは、お客様が管理するキーを使用して暗号化されます。^1</block>
-  <block id="08408518b6366a9a8bb69802d83d5e3c" category="list-text">新しいストレージアカウント（ディスクやアグリゲートを追加する場合など）も同じキーを使用します。^ 1^</block>
-  <block id="9dca67fbd1fac23e7aff5774ec0afa2a" category="list-text">Cloud Volumes ONTAP 用のすべての Azure ストレージアカウントは、お客様が管理するキーを使用して暗号化されます。^1 ^</block>
-  <block id="8b213ded385c637758f8c3705eb6386a" category="list-title">脚注</block>
   <block id="619dc876da25600cdf36ffbec25d908e" category="summary">Cloud Volumes ONTAP ではAzureリソースグループの移動がサポートされていますが、ワークフローはAzureコンソールでのみ実行されます。</block>
   <block id="6c2dc09b272a4aed6d56a3438a190129" category="doc">リソースグループを移動しています</block>
   <block id="26d9e2ceeedec062543b6a4a27db01a1" category="paragraph">同じAzureサブスクリプション内で、あるリソースグループからAzure内の別のリソースグループに作業環境を移動することができます。異なるAzureサブスクリプション間でのリソースグループの移動はサポートされていません。</block>
@@ -3755,7 +3747,6 @@
   <block id="9832e39264a34e4e40dca8449efd019e" category="section-title">BlueXPでは、Storage VMのディザスタリカバリはサポートされていません</block>
   <block id="d59db7846bd10b6d60d21543df9faa9e" category="list-title">必要なもの</block>
   <block id="86f463a1f0f0879749d1274dc94305d9" category="paragraph-title">重要事項</block>
-  <block id="fdee261787c8d28a1d5af5c07b8580d6" category="list-text">ONTAP 9.9.2.1P7から、NVRAMおよびコアディスクに対して、BlueXPはディスク暗号化セットを使用します。これにより、管理対象ディスクで暗号化キーを管理できるようになります。下位バージョンでは、顧客管理キーの代わりにMicrosoft管理キーが使用されます。</block>
   <block id="d01b00b7df0dd6620e8ab49fb88f67b9" category="list-text">* Azure Disk Encryption for Volume Encryption *（シングルノードシステムの場合、または複数のゾーンのHAペアの場合）</block>
   <block id="d1432d772b2382ef2395e1eed551d5bb" category="paragraph-title">必要なGoogle Cloud権限</block>
   <block id="675d38d552c49bbf67606b2c5f1d5bed" category="section-title">Flash Cacheとは</block>
@@ -3824,10 +3815,7 @@
   <block id="0514cef4c1e1a5949a3acc085ee50110" category="list-text">ONTAP 9.10.1以降では、WORMボリュームとWORM以外のボリュームを同じアグリゲートに配置できるようになりました。</block>
   <block id="7ec6925d846a27916198adf7334fcae3" category="list-text">Cloud Volumes ONTAP 作業環境の作成時にWORMを有効にすると、BlueXPで作成したすべてのボリュームでWORMが有効になります。ただし、ONTAP CLIまたはSystem Managerを使用して、WORMを無効にしたボリュームを作成できます。これらのボリュームはWORM状態のままです。</block>
   <block id="38aefad2ca205e663da97b7fdd932dcf" category="paragraph"><block ref="38aefad2ca205e663da97b7fdd932dcf" category="inline-link-rx"></block></block>
-  <block id="b9eeb00cda3e979e1efe9bef61f951fc" category="list-text">Azure HAの複数のアベイラビリティゾーン</block>
-  <block id="0f8e1302b6dedb536c0490b7602b0b32" category="list-text">ONTAP 9.10.1P3以降では、NVRAMおよびコアディスクの場合、BlueXPはを使用します<block ref="c7a6854bb19ab523fbe585f89a860944" category="inline-link-rx"></block>を使用して、管理対象ディスクで暗号化キーを管理できます。下位バージョンでは、顧客管理キーの代わりにMicrosoft管理キーが使用されます。</block>
   <block id="5aabc9069557be7e4aeff466605cbc75" category="list-text">シングルノード</block>
-  <block id="41668006fb357f569acf8441fc16a00c" category="list-text">作成時にストレージアカウントを暗号化する場合は、CVO作成要求でリソースのIDを作成して指定する必要があります。これは、すべてのタイプの導入に当てはまります。提供しない場合でもストレージアカウントは暗号化されますが、BlueXPはまずMicrosoftが管理するキー暗号化を使用してストレージアカウントを作成し、次にストレージアカウントを更新してお客様が管理するキーを使用するようにします。</block>
   <block id="d83f214fdb8074463fb047c3669d0f00" category="list-text">HAペアは、I/O負荷の高いワークロードに高パフォーマンスを提供する次の2種類のディスクを使用します。</block>
   <block id="de017bcc9ee62a910294463646126cd7" category="list-text">_Premiumページblobs_'最大ディスク・サイズ8TiB</block>
   <block id="2e40430d8621fa0117dad7bd5bd6ce3d" category="list-text">_管理対象ディスク_最大ディスクサイズは32TiBです</block>
@@ -3906,7 +3894,6 @@
   <block id="bf748f930fa11e46773ff6f7b815e480" category="section-title">Cloud Volumes ONTAP 9.12.0</block>
   <block id="80df4292f7c986dbd0920bb576487060" category="paragraph">BlueXPでは、AWSとGoogle CloudにCloud Volumes ONTAP 9.12.0を導入して管理できるようになりました。</block>
   <block id="abd10f7bee2f791a9e8f76bf98163c27" category="paragraph">BlueXPでは、Cloud Volumes ONTAP 9.12.1を導入および管理できるようになりました。新機能やその他のクラウドプロバイダリージョンのサポートが含まれます。</block>
-  <block id="fdfad4872e8eceed069f74f82808d36e" category="list-text">ルート、ブート、NVRAM、コア、データディスクの場合、BlueXPはディスク暗号化セットを使用します。これにより、管理対象ディスクで暗号化キーを管理できます。</block>
   <block id="3c757e219167079b631dfcb5b1d0c339" category="paragraph">コネクタの3.9.25リリースでは、次の変更が加えられました。</block>
   <block id="234213185a1ffd45429411672de5d3e7" category="section-title">Google Cloudで提供されているライセンスパッケージ</block>
   <block id="54aeb573897a8b2a0c9627ff7030c996" category="paragraph">最適化さCloud Volumes ONTAP れた容量ベースのライセンスパッケージとエッジキャッシュ容量ベースのライセンスパッケージは、Google Cloud Marketplaceで従量課金制サービスまたは年間契約として提供されます。</block>
@@ -5164,7 +5151,6 @@ NetApp （ BYOL ）からライセンスを直接購入した場合、 AWS サ�
   <block id="96c6a6277896e4ed7c2cef558b5542c1" category="paragraph">すべての地域のリストについては、<block ref="24faa078890c2d8c97de1a6b5a5789e3" category="inline-link-rx"></block>。</block>
   <block id="8904b1f88c62ce8a8381c8474f2ccb42" category="paragraph">コネクタの3.9.34リリースでは、次の変更が加えられました。</block>
   <block id="f4e12e22adfef297cd0c891e4cd2e1a9" category="paragraph">コネクタの3.9.33リリースでは、次の変更が加えられました。</block>
-  <block id="bbb12e7857993612931dbc5c19c5f9dc" category="paragraph">データ階層化は、 FabricPool テクノロジによって実現されます。Cloud Volumes ONTAPは、すべてのCloud Volumes ONTAPクラスタにデータ階層化を提供します。データ階層化を有効にすると、オブジェクトストレージに階層化されたデータに料金が発生します。オブジェクトストレージのコストの詳細については、クラウドプロバイダのドキュメントを参照してください。</block>
   <block id="e95c0c487a8aec79b7d3484dc5452526" category="section-title">2023年11月10日</block>
   <block id="1c13ec96dac1171608b6dbd65bb2245c" category="section-title">ベルリンリージョンでGoogle Cloudがサポートされるようになりました</block>
   <block id="56e0da46254ac9c6f784da40f466bda0" category="paragraph">ベルリン地域は、Google Cloud for Cloud Volumes ONTAP 9.12.1 GA以降でサポートされるようになりました。</block>
@@ -5189,4 +5175,17 @@ NetApp （ BYOL ）からライセンスを直接購入した場合、 AWS サ�
   <block id="4a76045b19fb3233070f77ae414d5810" category="section-title">Cloud Volumes ONTAP 9.14.1 RC1</block>
   <block id="efb4d9478ba663f514e18b3310c2de65" category="paragraph">BlueXPで、AWS、Azure、Google CloudにCloud Volumes ONTAP 9.14.1を導入、管理できるようになりました。</block>
   <block id="d544ab02530940d46c43ea00a73d59d3" category="cell">9.14.1</block>
+  <block id="ed6589af51fe478933944c16eab4377f" category="paragraph">データ階層化は、 FabricPool テクノロジによって実現されます。Cloud Volumes ONTAPは、追加ライセンスなしですべてのCloud Volumes ONTAPクラスタのデータ階層化を実現します。データ階層化を有効にすると、オブジェクトストレージに階層化されたデータに料金が発生します。オブジェクトストレージのコストの詳細については、クラウドプロバイダのドキュメントを参照してください。</block>
+  <block id="52325e36bf5c9eb022c54f20d2f9d58d" category="paragraph">BlueXPではディスク暗号化セットを使用します。これにより、ページブロブではなく管理対象ディスクを使用して暗号化キーを管理できます。新しいデータディスクでも同じディスク暗号化セットが使用されます。下位バージョンでは、顧客管理キーの代わりにMicrosoft管理キーが使用されます。</block>
+  <block id="8168565911ffa4b4f24fddac74a372bd" category="cell">キーの暗号化に使用されるシステムディスク</block>
+  <block id="d7819c407fe0bef64dea0f538ea5059d" category="cell">キーの暗号化に使用されるデータディスク</block>
+  <block id="d070b5d05592da755547896113c3e9ef" category="list-text">ブート</block>
+  <block id="83168e6cb289d732cc78427b51f93153" category="list-text">コア</block>
+  <block id="e3f3f58b597fba6fefb596c5ce76d468" category="list-text">NVRAM</block>
+  <block id="fa03eb688ad8aa1db593d33dabd89bad" category="list-text">root</block>
+  <block id="f6068daa29dbb05a7ead1e3b5a48bbee" category="list-text">データ</block>
+  <block id="9f9a7e011920aed7b91c7f5809cef3df" category="paragraph">ページBLOBを含むAzure HA単一アベイラビリティゾーン</block>
+  <block id="7df51deb241262b7a30e9f895e6b3b75" category="paragraph">共有管理対象ディスクを使用するAzure HA単一アベイラビリティゾーン</block>
+  <block id="75b5d41c945fb77a44a02275e5167f03" category="paragraph">Azure HA：共有管理対象ディスクを使用する複数のアベイラビリティゾーン</block>
+  <block id="735d36020b1ee0734f4e9ddbbea4948e" category="paragraph">Cloud Volumes ONTAP 用のすべての Azure ストレージアカウントは、お客様が管理するキーを使用して暗号化されます。作成時にストレージアカウントを暗号化する場合は、CVO作成要求でリソースのIDを作成して指定する必要があります。これは、すべてのタイプの導入に当てはまります。提供しない場合でもストレージアカウントは暗号化されますが、BlueXPはまずMicrosoftが管理するキー暗号化を使用してストレージアカウントを作成し、次にストレージアカウントを更新してお客様が管理するキーを使用するようにします。</block>
 </blocks>
