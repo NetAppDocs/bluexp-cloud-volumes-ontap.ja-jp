@@ -5188,4 +5188,6 @@ NetApp （ BYOL ）からライセンスを直接購入した場合、 AWS サ�
   <block id="7df51deb241262b7a30e9f895e6b3b75" category="paragraph">共有管理対象ディスクを使用するAzure HA単一アベイラビリティゾーン</block>
   <block id="75b5d41c945fb77a44a02275e5167f03" category="paragraph">Azure HA：共有管理対象ディスクを使用する複数のアベイラビリティゾーン</block>
   <block id="735d36020b1ee0734f4e9ddbbea4948e" category="paragraph">Cloud Volumes ONTAP 用のすべての Azure ストレージアカウントは、お客様が管理するキーを使用して暗号化されます。作成時にストレージアカウントを暗号化する場合は、CVO作成要求でリソースのIDを作成して指定する必要があります。これは、すべてのタイプの導入に当てはまります。提供しない場合でもストレージアカウントは暗号化されますが、BlueXPはまずMicrosoftが管理するキー暗号化を使用してストレージアカウントを作成し、次にストレージアカウントを更新してお客様が管理するキーを使用するようにします。</block>
+  <block id="3d398b97e4c42f1072862ca68a5330e0" category="inline-link-macro">技術情報アーティクル「Cloud Volumes ONTAPのアップグレードが失敗する」</block>
+  <block id="73f61210747fe91bea8a184200d3fcc5" category="paragraph">アップグレードエラーが発生した場合は、 <block ref="60b526b210a3d8d7f028168de61b0c4a" category="inline-link-macro-rx"></block>。</block>
 </blocks>

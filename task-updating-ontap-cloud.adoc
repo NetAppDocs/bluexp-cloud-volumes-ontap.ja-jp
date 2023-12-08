@@ -277,6 +277,8 @@ image:screenshots_aggregate_details_state.png["スクリーンショット：ア
 
 アップグレード前に、すべてのLIFがホームポートにある必要があります。ONTAPのドキュメントを参照してください。 link:https://docs.netapp.com/us-en/ontap/upgrade/task_enabling_and_reverting_lifs_to_home_ports_preparing_the_ontap_software_for_the_update.html["すべてのLIFがホームポートにあることを確認する"]。
 
+アップグレードエラーが発生した場合は、 link:https://kb.netapp.com/Cloud/Cloud_Volumes_ONTAP/CVO_upgrade_fails["技術情報アーティクル「Cloud Volumes ONTAPのアップグレードが失敗する」"]。
+
 
 
 == Cloud Volumes ONTAP をアップグレードします
