@@ -5,15 +5,12 @@ keywords: storage virtual machine, vserver, svm, storage vm, svm dr, disaster re
 summary: BlueXPでは、Storage VMディザスタリカバリのセットアップやオーケストレーションはサポートされていません。System Manager または CLI を使用する必要があります。 
 ---
 = SVMディザスタリカバリのセットアップ
-:toc: macro
 :hardbreaks:
 :allow-uri-read: 
-:toc: 
 :nofooter: 
 :icons: font
 :linkattrs: 
 :imagesdir: ./media/
-:toc-position: content
 
 
 [role="lead"]
