@@ -45,7 +45,7 @@ link:reference-networking-azure.html["ネットワーク要件の詳細につい
 
 .関連リンク
 * https://docs.netapp.com/us-en/bluexp-setup-admin/task-quick-start-connector-azure.html["BlueXPからコネクタを作成しています"^]
-* https://docs.netapp.com/us-en/bluexp-setup-admin/task-install-connector-azure.html["Azure Marketplace からコネクタを作成する"^]
+* https://docs.netapp.com/us-en/bluexp-setup-admin/task-install-connector-azure-marketplace.html["Azure Marketplace からコネクタを作成する"^]
 * https://docs.netapp.com/us-en/bluexp-setup-admin/task-install-connector-on-prem.html["Linux ホストへの Connector ソフトウェアのインストール"^]
 * https://docs.netapp.com/us-en/bluexp-setup-admin/reference-permissions-azure.html["BlueXPが権限を持って実行できること"^]
 

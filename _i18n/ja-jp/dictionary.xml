@@ -3698,7 +3698,6 @@
   <block id="6f08ec81b4927997ffedc134bef57095" category="admonition">クラウドプロバイダから購入したストレージの総容量は、 _raw 容量です。約 12~14% は Cloud Volumes ONTAP 用に予約されたオーバーヘッドであるため、使用可能な容量はこれより少なくなります。たとえば、BlueXPで500GiBのアグリゲートが作成された場合、使用可能な容量は442.94GiBです。</block>
   <block id="edeea5f1bc7f7fc7a2966961ec39210e" category="sidebar">BlueXPでStorage VMを操作します</block>
   <block id="ff93781ff90bf605d8b3070c1501b28f" category="sidebar">BlueXPのウェブサイトのblog</block>
-  <block id="7a45e6298bb69116e2c6db653fb88884" category="sidebar">BlueXPのすべてのマニュアル</block>
   <block id="619dc876da25600cdf36ffbec25d908e" category="summary">Cloud Volumes ONTAP ではAzureリソースグループの移動がサポートされていますが、ワークフローはAzureコンソールでのみ実行されます。</block>
   <block id="6c2dc09b272a4aed6d56a3438a190129" category="doc">リソースグループを移動しています</block>
   <block id="26d9e2ceeedec062543b6a4a27db01a1" category="paragraph">同じAzureサブスクリプション内で、あるリソースグループからAzure内の別のリソースグループに作業環境を移動することができます。異なるAzureサブスクリプション間でのリソースグループの移動はサポートされていません。</block>
@@ -4730,7 +4729,6 @@ NetApp （ BYOL ）からライセンスを直接購入した場合、 AWS サ�
   <block id="111605ffc2720ee271322511d8e418e9" category="list-text">BlueXPでNSSアカウントを登録していない場合は、<block ref="fa1dd20a91aad716fe7b27583a904c1e" category="inline-link-rx"></block> 次に、 Active IQ デジタルアドバイザ UI が表示されます。</block>
   <block id="f9a3a3f013c1705985786496412a0de0" category="paragraph">を持っていなければ<block ref="2ed11e6bceb8b4ceeff62b64fdec4694" category="inline-link-rx"></block> ただし、アカウント管理者がアカウントを作成する必要があります。<block ref="de51f8f797fd6bb6357ef338b87ca66d" category="inline-link-rx"></block></block>
   <block id="de6c35943505135e58a4af4389b1768d" category="list-text"><block ref="de6c35943505135e58a4af4389b1768d" category="inline-link-rx"></block></block>
-  <block id="8529c592033773e796216d83dbb6e52a" category="list-text"><block ref="8529c592033773e796216d83dbb6e52a" category="inline-link-rx"></block></block>
   <block id="9ae78035ef81aaff6187ef9a11cd1f03" category="list-text"><block ref="9ae78035ef81aaff6187ef9a11cd1f03" category="inline-link-rx"></block></block>
   <block id="08922f23ed9079ed0750935efad792c1" category="admonition">コネクタに関する情報をお探しですか？<block ref="a05739e7bce05bd7a830b46920675255" category="inline-link-rx"></block></block>
   <block id="081496cbc3abd2aa45670e7415b9b307" category="list-text"><block ref="081496cbc3abd2aa45670e7415b9b307" category="inline-link-rx"></block></block>
@@ -5190,4 +5188,5 @@ NetApp （ BYOL ）からライセンスを直接購入した場合、 AWS サ�
   <block id="735d36020b1ee0734f4e9ddbbea4948e" category="paragraph">Cloud Volumes ONTAP 用のすべての Azure ストレージアカウントは、お客様が管理するキーを使用して暗号化されます。作成時にストレージアカウントを暗号化する場合は、CVO作成要求でリソースのIDを作成して指定する必要があります。これは、すべてのタイプの導入に当てはまります。提供しない場合でもストレージアカウントは暗号化されますが、BlueXPはまずMicrosoftが管理するキー暗号化を使用してストレージアカウントを作成し、次にストレージアカウントを更新してお客様が管理するキーを使用するようにします。</block>
   <block id="3d398b97e4c42f1072862ca68a5330e0" category="inline-link-macro">技術情報アーティクル「Cloud Volumes ONTAPのアップグレードが失敗する」</block>
   <block id="73f61210747fe91bea8a184200d3fcc5" category="paragraph">アップグレードエラーが発生した場合は、 <block ref="60b526b210a3d8d7f028168de61b0c4a" category="inline-link-macro-rx"></block>。</block>
+  <block id="9239af3d88d2e7788330e1bb0d8cd044" category="list-text"><block ref="9239af3d88d2e7788330e1bb0d8cd044" category="inline-link-rx"></block></block>
 </blocks>
