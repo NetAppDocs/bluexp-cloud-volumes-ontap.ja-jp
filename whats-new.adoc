@@ -20,6 +20,24 @@ BlueXPのCloud Volumes ONTAP Managementの新機能をご紹介します。
 
 
 
+== 2024年1月8日
+
+
+
+=== Azureの複数のアベイラビリティゾーン用の新しいVM
+
+Cloud Volumes ONTAP 9.13.1以降では、次のVMタイプで、新規および既存のハイアベイラビリティペア環境でAzureの複数のアベイラビリティゾーンがサポートされます。
+
+* L16s_v3
+* L32s_v3
+* L48s_v3
+* L64s_v3
+
+
+link:https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-configs-azure.html["Azure でサポートされる構成"^]
+
+
+
 == 2023年12月6日
 
 
