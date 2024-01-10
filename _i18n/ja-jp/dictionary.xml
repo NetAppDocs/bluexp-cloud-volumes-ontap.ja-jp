@@ -3375,7 +3375,6 @@
   <block id="a972bcad179af301a93e1049da5fbbbb" category="paragraph">BlueXPでは、HAペアにSVM管理LIFが作成されますが、Azureのシングルノードシステムには作成されません。</block>
   <block id="6065260b6e2ca957f806162cf33800f6" category="paragraph">ビジネスニーズに応じて、プライベートリンク接続を無効にすることもできます。リンクを無効にすると、Cloud Volumes ONTAP はサービスエンドポイントを使用するように設定されます。</block>
   <block id="2a37f0bf23209f41128e5c28160ecd0b" category="paragraph">Azureリソースグループに2つ目のCloud Volumes ONTAP HAペアを導入しようとすると、接続の問題が発生します。</block>
-  <block id="196affcedcabdcd9243dfaab58327dae" category="paragraph">BlueXPでは、Cloud Volumes ONTAP が正常に動作するために必要なインバウンドとアウトバウンドのルールを含むAzureセキュリティグループが作成されます。テスト目的でポートを参照したり、独自のセキュリティグループを使用したりする場合に使用します。</block>
   <block id="4350eea5911affd7e2c237dd5705777c" category="list-text">BlueXPでは、Cloud Volumes ONTAP を導入するとデータ提供用のStorage VMが1つ作成されます。追加の Storage VM をサポートする構成もあります。 <block ref="a7cc00a0b341c53959a0ff9bb9ec925b" category="inline-link-macro-rx"></block>。</block>
   <block id="d3ba63f114f62f143d97434a92eb48a8" category="paragraph">BlueXP 3.9.5リリース以降では、最初のStorage VMで論理スペースのレポートが有効になります。スペースが論理的に報告されると、 ONTAP は、 Storage Efficiency 機能で削減されたすべての物理スペースが使用済みと報告するようにボリュームスペースを報告します。</block>
   <block id="0dbf08a19cabe7472c89a9c1e7157737" category="list-text">BlueXPでは、次のONTAP 機能ライセンスがCloud Volumes ONTAP に自動的にインストールされます。</block>
@@ -3954,7 +3953,6 @@
   <block id="0fc9a4a783a2856e3a35ee9b12a2f357" category="paragraph">HA 構成には、 4 つの Virtual Private Cloud （ VPC ；仮想プライベートクラウド）が必要です。Google Cloudでは各ネットワークインターフェイスを別 々 のVPCネットワークに配置する必要があるため、VPCは4つ必要です。</block>
   <block id="74cd215a46d2bd96fc35dad7ef313283" category="section-title">サブネット</block>
   <block id="53c6f0799470bd2e67e7902192e11c7c" category="paragraph">Google Cloud内のCloud Volumes ONTAP システムと他のネットワーク内のONTAP システムの間でデータをレプリケートするには、VPCと他のネットワーク（たとえば、社内ネットワーク）の間にVPN接続が必要です。</block>
-  <block id="8bb6cd6de4a896f626b89e711d40aa4c" category="paragraph">BlueXPは、Cloud Volumes ONTAP が正常に動作するために必要なインバウンドとアウトバウンドのルールを含むGoogle Cloudファイアウォールルールを作成します。テスト目的または独自のファイアウォールルールを使用する場合は、ポートを参照してください。</block>
   <block id="30f3abb35963e0cd7d66dc08581087c9" category="paragraph">Cloud Volumes ONTAP のファイアウォールルールには、インバウンドとアウトバウンドの両方のルールが必要です。HA 構成を導入する場合は、 VPC 0 の Cloud Volumes ONTAP のファイアウォールルールを以下に示します。</block>
   <block id="cb97a2b297b246ea14d6c17e8e5ee28a" category="list-text">VPC -0 の HA コンポーネントのルールセット。これらのルールにより、 Cloud Volumes ONTAP へのデータアクセスが可能になります。</block>
   <block id="ae2d87942e6697528344ccace68364e3" category="section-title">VPC -1、VPC -2、およびVPC -3のルール</block>
@@ -4009,7 +4007,6 @@
   <block id="3f73fdcd7eab5d7e67557205b890929e" category="list-text">* Google Cloudでのデータ階層化*：最初のアグリゲートでデータの階層化を有効にするかどうかを選択し、階層化データのストレージクラスを選択してから、定義済みのStorage Adminロールを持つサービスアカウントを選択します。</block>
   <block id="1aff466e3c0d499007e1d801be1c66d9" category="sidebar">配置グループの作成を設定する</block>
   <block id="f1e89d709c35aed2650bbf12a55f1ba1" category="list-text"><block ref="f1e89d709c35aed2650bbf12a55f1ba1" category="inline-link-macro-rx"></block></block>
-  <block id="2626748206273dbf0d13d2fffdb79c5b" category="summary">BlueXPでは、Cloud Volumes ONTAP が正常に動作するために必要なインバウンドとアウトバウンドのルールを含むAWSセキュリティグループが作成されます。テスト目的でポートを参照したり、独自のセキュリティグループを使用したりする場合に使用します。</block>
   <block id="eb19784d052e3e9a0aa941090082ebbe" category="inline-link">コネクタのセキュリティグループルールを表示します</block>
   <block id="a6c935eff93c3c2a81864fdabc1d1951" category="inline-link">コネクタのファイアウォールルールを表示します</block>
   <block id="e22a4abc98b47ca148e0dfda7e259162" category="inline-link">Google Cloudのファイアウォールルール</block>
@@ -5198,4 +5195,7 @@ NetApp （ BYOL ）からライセンスを直接購入した場合、 AWS サ�
   <block id="b9f4aa39433f5232d4ce50f2a9a3c403" category="list-text">L64s_v3</block>
   <block id="e4b60b51b40a0907e38b3293d36780e6" category="inline-link-macro">Azure でサポートされる構成</block>
   <block id="22342037237200e034fd29c9cfd5bfd4" category="paragraph"><block ref="22342037237200e034fd29c9cfd5bfd4" category="inline-link-macro-rx"></block></block>
+  <block id="eb4c08b87f805a62e5af64a0b7c6fb5a" category="paragraph">BlueXPでは、Cloud Volumes ONTAP が正常に動作するために必要なインバウンドとアウトバウンドのルールを含むAzureセキュリティグループが作成されます。テスト目的または独自のセキュリティグループを使用する場合は、ポートを参照してください。</block>
+  <block id="9864c286612d20c437e06d1612a86f2d" category="summary">BlueXPでは、Cloud Volumes ONTAP が正常に動作するために必要なインバウンドとアウトバウンドのルールを含むAWSセキュリティグループが作成されます。テスト目的または独自のセキュリティグループを使用する場合は、ポートを参照してください。</block>
+  <block id="87ade7583253b06f01182c970d65aacd" category="paragraph">BlueXPは、Cloud Volumes ONTAP が正常に動作するために必要なインバウンドとアウトバウンドのルールを含むGoogle Cloudファイアウォールルールを作成します。テスト目的や独自のファイアウォールルールを使用する場合は、ポートを参照してください。</block>
 </blocks>
