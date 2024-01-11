@@ -63,13 +63,22 @@ Cloud Volumes ONTAPは、Autonomous Ransomware Protection（ARP）機能をサ�
 
 で提供されるファイル拡張子保護とは別に、 https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-protecting-ransomware.html#protection-from-common-ransomware-file-extensions["ランサムウェア対策設定"]ARP機能は、ワークロード分析を使用して、検出された「異常なアクティビティ」に基づいて潜在的な攻撃についてユーザに警告します。ランサムウェア対策設定とARP機能の両方を組み合わせて、包括的なランサムウェア対策を行うことができます。
 
-ARP機能は、ノードベースと容量ベースの両方のライセンスモデルで、BYOLライセンス（1年、2年、3年契約）でのみ使用できます。Cloud Volumes ONTAPのARP機能で使用する新しいアドオンライセンスを別途購入するには、NetAppの営業担当者にお問い合わせください。
+ARP機能は、ノードベースと容量ベースの両方のライセンスモデルで、BYOLライセンスでのみ使用できます（1~36カ月）。Cloud Volumes ONTAPのARP機能で使用する新しいアドオンライセンスを別途購入するには、NetAppの営業担当者にお問い合わせください。
 
-アドオンライセンスを購入してデジタルウォレットに追加すると、Cloud Volumes ONTAPを使用してボリューム単位でARPを有効にできます。ボリュームのARPの設定は、ONTAP System ManagerとONTAP CLIを使用して実行します。
+ARPライセンスは「フローティング」ライセンスと見なされます。つまり、単一のCloud Volumes ONTAPインスタンスにバインドされず、複数のCloud Volumes ONTAP環境に適用できます。
+
+
+NOTE: ノードベースのCloud Volumes ONTAPライセンスでのARP機能の使用は、現在Digital Walletには反映されていません。ノードベースのARP使用状況を表示する機能は、今後のリリースでDigital Walletで利用できるようになる予定です。
+
+アドオンライセンスを購入してデジタルウォレットに追加すると、Cloud Volumes ONTAPを使用してボリューム単位でARPを有効にできます。ARPの課金は、ARP機能が有効になっているボリュームのプロビジョニング済み容量の合計に基づいて、ボリュームレベルで計測されます。最小ライセンス容量は1TBです。ただし、ARP機能の最小容量課金はありません。
+
+ARPが有効なボリュームの状態は「ラーニングモード」または「アクティブ」になります。ARP状態が「Disabled」のボリュームは課金対象から除外されます。たとえば、30TiBの容量がプロビジョニングされたCloud Volumes ONTAP環境では、15TiBのボリュームの一部だけでARPが有効になっていることを選択できます。
+
+ボリュームのARPの設定は、ONTAP System ManagerとONTAP CLIを使用して実行します。
 
 ONTAP System ManagerおよびCLIでARPを有効にする方法の詳細については、を参照してください https://docs.netapp.com/us-en/ontap/anti-ransomware/enable-task.html["自動ランサムウェア対策を有効化"^]。
 
+image::screenshot_arp.png[スクリーンショットは、Autonomous Ransomware Protectionのアドオンライセンスを示しています。]
+
 
 NOTE: ライセンスがないと、ライセンスされた機能の使用はサポートされません。
-
-image::screenshot_arp.png[スクリーンショットは、Autonomous Ransomware Protectionのアドオンライセンスを示しています。]

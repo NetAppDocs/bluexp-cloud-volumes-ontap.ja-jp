@@ -2437,7 +2437,6 @@
   <block id="14526abd8bda5af347775025cd5342cf" category="inline-link">コミュニティ</block>
   <block id="410fdb9caa9c64da2ff3f88f4836960d" category="list-text"><block ref="410fdb9caa9c64da2ff3f88f4836960d" category="inline-link-rx"></block></block>
   <block id="5b6cf869265c13af8566f192b4ab3d2a" category="list-text">ドキュメント</block>
-  <block id="80b1b0d2b1ebf2b3cba2d25759801afd" category="list-text">mailto ： ng-cloudmanager-feedback@netapp.com [ フィードバックメール ]</block>
   <block id="c2a34cad77f0451e7d0f58a7e0e6e450" category="inline-link">AWS のマニュアル：他のアカウントのユーザに KMS キーの使用を許可する</block>
   <block id="21adb1598ef7a554ecf87a6c0bffbd4c" category="paragraph">このプロセスの詳細については、を参照してください<block ref="9601f431d0df2b9877da4b65b53342b6" category="inline-link-rx"></block>。</block>
   <block id="21daef3fadb3dd64defa83d39be31db2" category="paragraph">Google Managed Active Directory を設定している場合は、デフォルトで 169.254.169.254.169.254.169.254.169.254.169.254.169.254.169.254.169.254.169.254.169.254.169.254.169.254.169.254.x.x の IP アドレスを使用して AD にアクセスできます。</block>
@@ -3360,7 +3359,6 @@
   <block id="9a3db1abe5491d0eb9bb5d125981356c" category="paragraph">BlueXPナレッジベースで問題のトラブルシューティングに役立つ記事を検索します。</block>
   <block id="00c5fef3bb9d593ae96bf5d2ee60354a" category="paragraph">BlueXPコミュニティに参加して、進行中のディスカッションをフォローしたり、新しいディスカッションを作成したりできます。</block>
   <block id="a4a6c2ea0078252eac2d74ef3e6c917c" category="paragraph">現在表示しているBlueXPのマニュアル。</block>
-  <block id="6702efec14563f45f1ee2f8c613b8ad8" category="paragraph">お客様のご意見をお考えください。フィードバックを送信して、BlueXPの改善に役立ててください。</block>
   <block id="d63bf50426f4c712554faec55b30c548" category="list-text">*Service*:問題 が関連付けられているサービスを選択します。たとえば、サービス内のワークフローまたは機能を備えたテクニカルサポート問題 に固有のBlueXPなどです。</block>
   <block id="aa996e20900197b0ea41485ada083d8c" category="paragraph">作業環境のリストは、サービスの上部バナーで選択したBlueXPアカウント、ワークスペース、コネクタの範囲内にあります。</block>
   <block id="0c726404ad0f4ebb2cb2a2d0bdc04192" category="summary">Active IQ デジタルアドバイザは'BlueXP UIに統合されているため'1つの画面でONTAP クラスタの操作'セキュリティ'パフォーマンスを最適化できます</block>
@@ -4832,7 +4830,6 @@ NetApp （ BYOL ）からライセンスを直接購入した場合、 AWS サ�
   <block id="9216a2741f7e54826d99a0fcfc0c7c58" category="section-title">WORMファイルを削除しています</block>
   <block id="728c208823318f76bc30851f92119221" category="paragraph">privileged delete機能を使用して、保持期間中にWORMファイルを削除できます。</block>
   <block id="44c48c2759b23de55aafe43a43856a08" category="paragraph">手順については、を参照してください<block ref="03bc56e40fb58df28e53112c02ca2ae1" category="inline-link-rx"></block></block>
-  <block id="e220f1ef839bc3256ee110a9a5be5c61" category="paragraph">ARP機能は、ノードベースと容量ベースの両方のライセンスモデルで、BYOLライセンス（1年、2年、3年契約）でのみ使用できます。Cloud Volumes ONTAPのARP機能で使用する新しいアドオンライセンスを別途購入するには、NetAppの営業担当者にお問い合わせください。</block>
   <block id="59e727e0c151e53fa5beabd59871cb88" category="paragraph">多くの場合、HAペアのアップグレードは無停止で実行され、I/Oが中断されることはありません。無停止アップグレードでは、各ノードが連携してアップグレードされ、クライアントへの I/O の提供が継続されます。</block>
   <block id="67e0d115b5c2df9254836fd8f762d3dc" category="inline-link">ONTAPのドキュメントを参照</block>
   <block id="ff0dae83f1884b2852a33110d07283d1" category="paragraph">セッション指向プロトコルは、アップグレードの実行中に特定領域のクライアントとアプリケーションに原因が悪影響を及ぼす可能性があります。詳細については、<block ref="69d6ddda693aaf09f72544089a10fab3" category="inline-link-rx"></block></block>
@@ -4901,7 +4898,6 @@ NetApp （ BYOL ）からライセンスを直接購入した場合、 AWS サ�
   <block id="3e5f671180bf2c0f088f815be54e2cdf" category="paragraph">BlueXPで利用可能なランサムウェア対策設定を使用すると、ONTAP FPolicy機能を利用して、一般的なランサムウェアファイル拡張子タイプから保護できます。</block>
   <block id="d83738f5ec82db660abbb443f4d3eb21" category="inline-link">ランサムウェア対策設定</block>
   <block id="6c32dae7ba2780f8dc42d1813f66ea24" category="paragraph">で提供されるファイル拡張子保護とは別に、<block ref="1f479b2258cad80f990e85fbf571e95d" category="inline-link-rx"></block>ARP機能は、ワークロード分析を使用して、検出された「異常なアクティビティ」に基づいて潜在的な攻撃についてユーザに警告します。ランサムウェア対策設定とARP機能の両方を組み合わせて、包括的なランサムウェア対策を行うことができます。</block>
-  <block id="8ba032b0bcbcde63a6545318072ff32b" category="paragraph">アドオンライセンスを購入してデジタルウォレットに追加すると、Cloud Volumes ONTAPを使用してボリューム単位でARPを有効にできます。ボリュームのARPの設定は、ONTAP System ManagerとONTAP CLIを使用して実行します。</block>
   <block id="dfa314101a62671bea85bd2701b00194" category="paragraph">ONTAP System ManagerおよびCLIでARPを有効にする方法の詳細については、を参照してください<block ref="4379b61ba712146f3962583303024b3d" category="inline-link-rx"></block>。</block>
   <block id="4f87e49be20cab28b98c082c672f9032" category="paragraph">Cloud Volumes ONTAPを使用したARPの詳細については、を参照してください<block ref="3ad484b0b391dd26474b87b6bc7f70b6" category="inline-link-rx"></block>。</block>
   <block id="d1c5c359fc2e3c8fe0af6fd09605d616" category="paragraph">標準の AWS リージョンと同様に、で Cloud Manager を使用できます <block ref="25b8ce564d4ee42e840c162aa63df82a" category="inline-link-macro-rx"></block> Cloud Volumes ONTAP を導入する環境。クラウドストレージにエンタープライズクラスの機能を提供します。AWS C2S は米国に固有の閉じたリージョンですIntelligence Community 。このページの手順は、 AWS C2S リージョンユーザにのみ該当します。</block>
@@ -5198,4 +5194,11 @@ NetApp （ BYOL ）からライセンスを直接購入した場合、 AWS サ�
   <block id="eb4c08b87f805a62e5af64a0b7c6fb5a" category="paragraph">BlueXPでは、Cloud Volumes ONTAP が正常に動作するために必要なインバウンドとアウトバウンドのルールを含むAzureセキュリティグループが作成されます。テスト目的または独自のセキュリティグループを使用する場合は、ポートを参照してください。</block>
   <block id="9864c286612d20c437e06d1612a86f2d" category="summary">BlueXPでは、Cloud Volumes ONTAP が正常に動作するために必要なインバウンドとアウトバウンドのルールを含むAWSセキュリティグループが作成されます。テスト目的または独自のセキュリティグループを使用する場合は、ポートを参照してください。</block>
   <block id="87ade7583253b06f01182c970d65aacd" category="paragraph">BlueXPは、Cloud Volumes ONTAP が正常に動作するために必要なインバウンドとアウトバウンドのルールを含むGoogle Cloudファイアウォールルールを作成します。テスト目的や独自のファイアウォールルールを使用する場合は、ポートを参照してください。</block>
+  <block id="f297f6161ef6c027c4e0cd622d4c9f53" category="paragraph">ARP機能は、ノードベースと容量ベースの両方のライセンスモデルで、BYOLライセンスでのみ使用できます（1~36カ月）。Cloud Volumes ONTAPのARP機能で使用する新しいアドオンライセンスを別途購入するには、NetAppの営業担当者にお問い合わせください。</block>
+  <block id="69f67d4caf75d0a80b925b65a04419a0" category="paragraph">ARPライセンスは「フローティング」ライセンスと見なされます。つまり、単一のCloud Volumes ONTAPインスタンスにバインドされず、複数のCloud Volumes ONTAP環境に適用できます。</block>
+  <block id="9edc62814e18ad5dad22ed4f08602be6" category="admonition">ノードベースのCloud Volumes ONTAPライセンスでのARP機能の使用は、現在Digital Walletには反映されていません。ノードベースのARP使用状況を表示する機能は、今後のリリースでDigital Walletで利用できるようになる予定です。</block>
+  <block id="36228eb2dbf48b5f5e080f1abf747714" category="paragraph">アドオンライセンスを購入してデジタルウォレットに追加すると、Cloud Volumes ONTAPを使用してボリューム単位でARPを有効にできます。ARPの課金は、ARP機能が有効になっているボリュームのプロビジョニング済み容量の合計に基づいて、ボリュームレベルで計測されます。最小ライセンス容量は1TBです。ただし、ARP機能の最小容量課金はありません。</block>
+  <block id="2a51dc407e4b9108dfb0e2caff776939" category="paragraph">ARPが有効なボリュームの状態は「ラーニングモード」または「アクティブ」になります。ARP状態が「Disabled」のボリュームは課金対象から除外されます。たとえば、30TiBの容量がプロビジョニングされたCloud Volumes ONTAP環境では、15TiBのボリュームの一部だけでARPが有効になっていることを選択できます。</block>
+  <block id="bab89553328d9045a17e6cd7ae426ebe" category="paragraph">ボリュームのARPの設定は、ONTAP System ManagerとONTAP CLIを使用して実行します。</block>
+  <block id="41040f9c93f65d2edb4f6b2d1dc680a4" category="admonition">ストレージとネットワークの使用量は、2進数のギガバイト（GB）で計算されます。1GBは2^30バイトです。この単位は、ギビバイト（GiB）とも呼ばれます。同様に、1TBは2^40バイト、つまり1024GBです。</block>
 </blocks>
