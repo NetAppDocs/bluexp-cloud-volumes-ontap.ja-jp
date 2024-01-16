@@ -4804,7 +4804,6 @@ NetApp （ BYOL ）からライセンスを直接購入した場合、 AWS サ�
   <block id="0882685275009e45f6167bce4081e668" category="list-text">アクセスポリシーを確認して作成します。</block>
   <block id="1f8370f663ec71e8fac7dc386794543c" category="admonition">を含めます<block ref="d740baa07e4af19d0de1f45650cf4bc0" prefix=" " category="inline-code"></block> フィールド：ストレージアカウントの暗号化に使用するリソースを作成した場合。</block>
   <block id="57a3061930625af99195891e9e561fb2" category="cell">9.13.1.</block>
-  <block id="24eacd330f66ba30cc845660c1efa967" category="list-text">パッチ（P）リリースの場合は、あるバージョンリリースから次のバージョンの任意のPリリースにアップグレードできます。</block>
   <block id="99430eacf0d5244d50939eea94bd5962" category="paragraph">以下にいくつかの例を示します。</block>
   <block id="1893a0478b381d08866888a1c7f8607a" category="list-text">9.13.0 &gt; 9.13.1P15</block>
   <block id="4ae2d614cc725ba442c80c740c08f75f" category="list-text">9.12.1 &gt; 9.13.1P2</block>
@@ -5195,10 +5194,18 @@ NetApp （ BYOL ）からライセンスを直接購入した場合、 AWS サ�
   <block id="9864c286612d20c437e06d1612a86f2d" category="summary">BlueXPでは、Cloud Volumes ONTAP が正常に動作するために必要なインバウンドとアウトバウンドのルールを含むAWSセキュリティグループが作成されます。テスト目的または独自のセキュリティグループを使用する場合は、ポートを参照してください。</block>
   <block id="87ade7583253b06f01182c970d65aacd" category="paragraph">BlueXPは、Cloud Volumes ONTAP が正常に動作するために必要なインバウンドとアウトバウンドのルールを含むGoogle Cloudファイアウォールルールを作成します。テスト目的や独自のファイアウォールルールを使用する場合は、ポートを参照してください。</block>
   <block id="f297f6161ef6c027c4e0cd622d4c9f53" category="paragraph">ARP機能は、ノードベースと容量ベースの両方のライセンスモデルで、BYOLライセンスでのみ使用できます（1~36カ月）。Cloud Volumes ONTAPのARP機能で使用する新しいアドオンライセンスを別途購入するには、NetAppの営業担当者にお問い合わせください。</block>
-  <block id="69f67d4caf75d0a80b925b65a04419a0" category="paragraph">ARPライセンスは「フローティング」ライセンスと見なされます。つまり、単一のCloud Volumes ONTAPインスタンスにバインドされず、複数のCloud Volumes ONTAP環境に適用できます。</block>
   <block id="9edc62814e18ad5dad22ed4f08602be6" category="admonition">ノードベースのCloud Volumes ONTAPライセンスでのARP機能の使用は、現在Digital Walletには反映されていません。ノードベースのARP使用状況を表示する機能は、今後のリリースでDigital Walletで利用できるようになる予定です。</block>
   <block id="36228eb2dbf48b5f5e080f1abf747714" category="paragraph">アドオンライセンスを購入してデジタルウォレットに追加すると、Cloud Volumes ONTAPを使用してボリューム単位でARPを有効にできます。ARPの課金は、ARP機能が有効になっているボリュームのプロビジョニング済み容量の合計に基づいて、ボリュームレベルで計測されます。最小ライセンス容量は1TBです。ただし、ARP機能の最小容量課金はありません。</block>
-  <block id="2a51dc407e4b9108dfb0e2caff776939" category="paragraph">ARPが有効なボリュームの状態は「ラーニングモード」または「アクティブ」になります。ARP状態が「Disabled」のボリュームは課金対象から除外されます。たとえば、30TiBの容量がプロビジョニングされたCloud Volumes ONTAP環境では、15TiBのボリュームの一部だけでARPが有効になっていることを選択できます。</block>
   <block id="bab89553328d9045a17e6cd7ae426ebe" category="paragraph">ボリュームのARPの設定は、ONTAP System ManagerとONTAP CLIを使用して実行します。</block>
   <block id="41040f9c93f65d2edb4f6b2d1dc680a4" category="admonition">ストレージとネットワークの使用量は、2進数のギガバイト（GB）で計算されます。1GBは2^30バイトです。この単位は、ギビバイト（GiB）とも呼ばれます。同様に、1TBは2^40バイト、つまり1024GBです。</block>
+  <block id="35588fa7f53bdbd040bfa9c96c87bf3d" category="section-title">2024年1月16日</block>
+  <block id="9ed7d4ae8d042664394e899e9c1f5e9a" category="section-title">BlueXPでのパッチリリース</block>
+  <block id="5c04c0351e9f1e168f13ca5689c21d92" category="paragraph">BlueXPでは、最新の3つのバージョンのCloud Volumes ONTAPに対してのみパッチリリースを提供しています。</block>
+  <block id="debc8fcbe9103b95d21857d1276dbb26" category="paragraph"><block ref="debc8fcbe9103b95d21857d1276dbb26" category="inline-link-macro-rx"></block></block>
+  <block id="fa8624c42ea6d2ce73d1dbb434c41dc8" category="paragraph">ARPライセンスは「フローティング」ライセンスと見なされます。つまり、単一のCloud Volumes ONTAPインスタンスにバインドされず、複数のCloud Volumes ONTAP環境に適用できます。</block>
+  <block id="a7453af7846f7db9aba5aa90fa8093e5" category="paragraph">ARPが有効なボリュームの状態は「ラーニングモード」または「アクティブ」になります。ARP状態が「Disabled」のボリュームは課金対象から除外されます。たとえば、30TiBの容量がプロビジョニングされたCloud Volumes ONTAP環境では、ARPが有効な15TiBのボリュームの一部のみを含めることができます。</block>
+  <block id="677ee5101eb2acd8a357643d03784fa7" category="section-title">パッチリリース</block>
+  <block id="25163e975710186a452c0f2fefe81448" category="inline-xref">ONTAPイメエシノタウンロオト</block>
+  <block id="17464ff13145a21ed61cc7a0b9513ce7" category="paragraph">2024年1月より、BlueXPでパッチをアップグレードできるのは、3つの最新バージョンのCloud Volumes ONTAPのパッチリリースのみです。BlueXPに表示する3つの最新バージョンは、最新のGAリリースを使用して決定されます。たとえば、現在のGAリリースが9.13.1の場合、BlueXPには9.11.1~9.13.1のパッチが表示されます。バージョン9.11.1以前のパッチリリースにアップグレードする場合は、手順を手動でアップグレードする必要があります。 <block ref="741f5e59386960528e5ac58506855727" category="inline-xref-macro-rx"></block>。</block>
+  <block id="b0b450f5a78908e6b78f5c13bf6b0da4" category="paragraph">パッチ（P）リリースの一般的なルールとして、あるバージョンリリースから現在実行しているバージョンまたは次のバージョンの任意のPリリースにアップグレードできます。</block>
 </blocks>
