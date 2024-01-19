@@ -3103,7 +3103,6 @@
   <block id="10297bdbea13a5f039ea0c228d352388" category="section-title">最低料金</block>
   <block id="2f3cbf00c1fc3c4ac211dcbe5883292c" category="paragraph">まだボリュームをプロビジョニングしていない場合は、最小料金は適用されません。</block>
   <block id="bec8a1d5f2dd848ffc437304b7f6557d" category="section-title">年齢が高すぎます</block>
-  <block id="1d47f9c9e82cf7214539548fd5c31bc6" category="paragraph">Essentialsパッケージでは、導入タイプ（HAまたはシングルノード）とボリュームタイプ（プライマリまたはセカンダリ）ごとに課金されます。たとえば、_Essentials HA_に は、_Essentials Secondary HA_と は異なる価格が設定されています。</block>
   <block id="ecc429e82f6e54d1b5ef6c8bb4a49308" category="paragraph">次に例を示します。Essentialsパッケージには、次のライセンスがあるとします。</block>
   <block id="afac41d47fd5a7a0fff54c7d4dcc9ac8" category="list-text">500TiBのコミット済み容量を含む500TiBのセカンダリHA_License</block>
   <block id="1ce6ab2d6dbcea26717506a031dde30c" category="list-text">100TiBのコミット済み容量のみを含む500TiB _ Essentialsシングルノードライセンス</block>
@@ -4521,8 +4520,6 @@
   <block id="3051092d4bbc438c196cba870b70c79f" category="paragraph">この手順はデータ階層化にのみ必要です。BlueXPのバックアップとリカバリには必要ありません。</block>
   <block id="aaaac746aa3fb70f64bdaf1919aefe27" category="admonition">BlueXPのバックアップとリカバリではSnapMirrorを実装してバックアップファイル（SnapMirror Cloud）を作成しますが、システムのアップグレード時にバックアップを一時停止する必要はありません。</block>
   <block id="35ae8932a2c6f1191cf21157a991b4dd" category="paragraph">30 日間の無償トライアルをクラウドプロバイダのマーケットプレイスで従量課金制サブスクリプションで利用できます。この無償トライアルには、Cloud Volumes ONTAP とBlueXPのバックアップとリカバリ機能が含まれています。トライアルは、市場で提供サービスに登録すると開始されます。</block>
-  <block id="8b3631f5373c77f26bc2e8fe7f000bd3" category="paragraph">Essentialsライセンスをネットアップから購入した場合（BYOL）、その導入環境およびボリュームタイプでライセンスされている容量を超えた場合、BlueXPデジタルウォレットは、より高い価格のEssentialsライセンス（お持ちの場合）に対して追加料金を請求します。これは、市場に課金する前に、前払い済みの容量として購入済みの使用可能容量を最初に使用するためです。市場に課金することで、月額料金が加算されます。</block>
-  <block id="ae0bff30a3baa225238bb8caae6abf20" category="paragraph">セカンダリボリュームを含むHAペアにはもう1つの50TiBがプロビジョニングされます。BlueXPデジタルウォレットは、その50TiBをPAYGOに課金する代わりに、_Essentials Single Node_licenseに対して50TiBの超過料金を請求します。このライセンスは_Essentials Secondary HA_より も価格が高くなりますが、PAYGOの価格よりも安いです。</block>
   <block id="26ee3f5587dc47d76226ef9b570828ff" category="paragraph">BlueXPデジタルウォレットでは、_Essentials Single Node_licenseに対して請求される50TiBが表示されます。</block>
   <block id="3ea1315566755c191cc8996f86a9af02" category="paragraph">課金は、Keystoneサブスクリプションに含まれる1つ以上のCloud Volumes ONTAP HAペアのコミット済み容量に基づいて行われます。</block>
   <block id="46b39bb522bc6ece1b6bf75e81db3cbf" category="paragraph">各ボリュームのプロビジョニング済み容量は集計され、Keystoneサブスクリプションのコミット済み容量と定期的に比較されます。超過した容量はKeystoneサブスクリプションのバーストとして課金されます。</block>
@@ -5219,4 +5216,13 @@ NetApp （ BYOL ）からライセンスを直接購入した場合、 AWS サ�
   <block id="37da66fa8b940c6b66bd42740840f9cd" category="list-text"><block ref="37da66fa8b940c6b66bd42740840f9cd" category="inline-link-macro-rx"></block></block>
   <block id="c73908091fadeb9dec16abab42821644" category="inline-link-macro">Google Cloud のストレージ制限</block>
   <block id="cf7df70a21568dc1f0d90f876bcb89a1" category="list-text"><block ref="cf7df70a21568dc1f0d90f876bcb89a1" category="inline-link-macro-rx"></block></block>
+  <block id="0453ee72b46bdca9dc63a814dd0c856a" category="paragraph">Essentialsパッケージでは、導入タイプ（HAまたはシングルノード）とボリュームタイプ（プライマリまたはセカンダリ）ごとに課金されます。高から低の価格は、_Essentials Primary HA_、_Essentials Primary Single Node_、_Essentials Secondary HA_、および_Essentials Secondary Single Node_の順になります。また、マーケットプレイス契約を購入した場合やプライベートオファーに同意した場合でも、どのような導入やボリュームタイプでも容量料金は同じです。</block>
+  <block id="ddc4342c7910879feb801db956e02a34" category="paragraph">EssentialsライセンスをNetApp（BYOL）から購入し、その環境およびボリュームタイプでライセンスされている容量を超えた場合、BlueXPデジタルウォレットは、より高い価格のEssentialsライセンス（使用可能な容量がある場合）に対して追加料金を請求します。これは、市場に課金する前に、前払い済みの容量として購入済みの使用可能容量を最初に使用するためです。BYOLライセンスで使用できる容量がない場合は、超過した容量に対して、マーケットプレイスでオンデマンドの時間単位料金（PAYGO）で課金され、月単位の請求書にコストが追加されます。</block>
+  <block id="dd29699bc2761d1ef57790f730780d55" category="paragraph">セカンダリボリュームを含むHAペアにはもう1つの50TiBがプロビジョニングされます。BlueXPデジタルウォレットは、その50TiBをPAYGOに課金する代わりに、_Essentials Single Node_licenseに対して50TiBの超過料金を請求します。このライセンスの価格は_Essentials Secondary HA_よりも高く設定されていますが、すでに購入したライセンスを使用しているため、毎月の請求書にコストが追加されることはありません。</block>
+  <block id="63ed6cabd3493279be97114b0d2d21f5" category="paragraph">別の例を見てみましょうEssentialsパッケージには、次のライセンスがあるとします。</block>
+  <block id="79e457d19dd228dcb61825c92ce8eb7f" category="paragraph">プライマリボリュームを含むHAペアにも100TiBがプロビジョニングされます。購入したライセンスには_EssentialsプライマリHA_committed容量がありません。_EssentialsプライマリHA_LICENSEは、_EssentialsプライマリSingle Node_and_EssentialsセカンダリHA_LICENSESよりも価格が高くなります。</block>
+  <block id="73c4f353b58571df329412c03faf62ed" category="paragraph">この例では、BlueXPのデジタルウォレットは、追加の100TiBに対してマーケットプレイスのレートで超過料金を請求しています。超過料金は毎月の請求書に表示されます。</block>
+  <block id="cb012953ce0037bbd6089c0cf714fef9" category="paragraph-title">マーケットプレイス契約またはプライベートオファー</block>
+  <block id="63e7dad437ffdf90e141f5642e1654d2" category="paragraph">マーケットプレイス契約またはプライベートオファーの一部としてEssentialsライセンスを購入した場合、BYOLロジックは適用されず、使用に応じた正確なライセンスタイプが必要です。ライセンスタイプには、ボリュームタイプ（プライマリまたはセカンダリ）と導入タイプ（HAまたはシングルノード）が含まれます。</block>
+  <block id="b5131f07b7cc2d9ac372dcfc0789c727" category="paragraph">たとえば、Essentialsライセンスを使用してCloud Volumes ONTAPインスタンスをデプロイするとします。次に、読み書き可能ボリューム（プライマリシングルノード）と読み取り専用ボリューム（セカンダリシングルノード）をプロビジョニングします。Marketplace契約またはプライベートオファーには、プロビジョニングされた容量をカバーするために、_Essentials Single Node_and_Essentials Secondary Single Node _の容量が含まれている必要があります。マーケットプレイス契約やプライベートオファーに含まれていないプロビジョニング済み容量には、オンデマンドの時間単位料金（PAYGO）が適用され、月 々 の請求書にコストが追加されます。</block>
 </blocks>
