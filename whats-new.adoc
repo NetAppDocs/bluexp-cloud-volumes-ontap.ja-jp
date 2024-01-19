@@ -60,6 +60,17 @@ BlueXPで、AWS、Azure、Google CloudにCloud Volumes ONTAP 9.14.1を導入、�
 
 
 
+=== 最大300TiBのFlexVolボリューム
+
+System ManagerとONTAP CLI（Cloud Volumes ONTAP 9.12.1 P2および9.13.0 P2以降）、およびCloud Volumes ONTAP 9.13.1以降のBlueXPでは、最大300TiBのFlexVolボリュームを作成できるようになりました。
+
+* link:https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-limits-aws.html#file-and-volume-limits["AWS のストレージの制限"]
+* link:https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-limits-azure.html#file-and-volume-limits["Azure のストレージ制限"]
+* link:https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-limits-gcp.html#logical-storage-limits["Google Cloud のストレージ制限"]
+
+
+
+
 == 2023年12月5日
 
 次の変更が導入されました。
