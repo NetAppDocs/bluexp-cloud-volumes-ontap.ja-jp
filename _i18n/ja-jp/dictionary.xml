@@ -2016,7 +2016,6 @@
   <block id="9bbb7f4f51c49edeb24f8a9b17a2d5f4" category="inline-link-macro">Connector の導入でカバーされている必要な共有 VPC の権限を確認します</block>
   <block id="0d8050524ef140aadb3a681481890b39" category="list-text">VPC でのパケットミラーリング</block>
   <block id="4d6aebef0af2c2c1118b467bdf0dadf0" category="inline-link">パケットミラーリング</block>
-  <block id="7c0126eb5fa57fb86ccb4cf44811856d" category="list-text"><block ref="581f54bac504640f66f842676676be03" category="inline-link-rx"></block> Cloud Volumes ONTAP を導入する Google Cloud VPC で無効にする必要があります。パケットミラーリングがイネーブルの場合、 Cloud Volumes ONTAP は正常に動作しません。</block>
   <block id="4c896c50345c5252f4b0e8fc4bf10723" category="admonition">HA ペアを使用している場合、 HA メディエーターではアウトバウンドのインターネットアクセスは必要ありません。</block>
   <block id="c0d1b864d00da3eb6415590dfa2621ab" category="paragraph">Cloud Volumes ONTAP を API を使用して導入する場合、 Storage VM （ SVM ）管理 LIF の作成をスキップし、次のフラグを指定できます。</block>
   <block id="9389c2cd70872a229cd788537557d183" category="paragraph">'kipsvmManagementLIF ： true</block>
@@ -2421,7 +2420,6 @@
   <block id="cad02caeb4ee636c87f28b0bb1263080" category="inline-link-macro">サポートされるクライアントプロトコルおよびバージョンについて説明します</block>
   <block id="f0ddee23dd0d83f105bbdaa15ff5d87a" category="paragraph"><block ref="43c09f3d08ec80b50648a2a905bca06c" category="inline-link-macro-rx"></block>。</block>
   <block id="b50f0a46135bcb7083b1f2f82032fc26" category="inline-image-macro">[ ヘルプ ] メニューのスクリーンショット。サポートは最初に表示されるオプションです</block>
-  <block id="19d089db572ee6a1e154a0c9c9e57bfd" category="paragraph">ネットアップは、サポートとライセンスに固有の認証サービスのアイデンティティプロバイダとして Microsoft Azure Active Directory を使用しています。</block>
   <block id="465ec6d5eafa3524c948c99d8bfcd306" category="list-text">ログインページで、ネットアップサポートサイトの登録 E メールアドレスとパスワードを入力して認証プロセスを実行します。</block>
   <block id="e9c44bbfd795a5d63d74c6a77afee70d" category="paragraph">著作権に関する声明、商標、特許などにアクセスできます。</block>
   <block id="6016a2b341113bf496b719905398ecd2" category="section-title">著作権</block>
@@ -5225,4 +5223,6 @@ NetApp （ BYOL ）からライセンスを直接購入した場合、 AWS サ�
   <block id="cb012953ce0037bbd6089c0cf714fef9" category="paragraph-title">マーケットプレイス契約またはプライベートオファー</block>
   <block id="63e7dad437ffdf90e141f5642e1654d2" category="paragraph">マーケットプレイス契約またはプライベートオファーの一部としてEssentialsライセンスを購入した場合、BYOLロジックは適用されず、使用に応じた正確なライセンスタイプが必要です。ライセンスタイプには、ボリュームタイプ（プライマリまたはセカンダリ）と導入タイプ（HAまたはシングルノード）が含まれます。</block>
   <block id="b5131f07b7cc2d9ac372dcfc0789c727" category="paragraph">たとえば、Essentialsライセンスを使用してCloud Volumes ONTAPインスタンスをデプロイするとします。次に、読み書き可能ボリューム（プライマリシングルノード）と読み取り専用ボリューム（セカンダリシングルノード）をプロビジョニングします。Marketplace契約またはプライベートオファーには、プロビジョニングされた容量をカバーするために、_Essentials Single Node_and_Essentials Secondary Single Node _の容量が含まれている必要があります。マーケットプレイス契約やプライベートオファーに含まれていないプロビジョニング済み容量には、オンデマンドの時間単位料金（PAYGO）が適用され、月 々 の請求書にコストが追加されます。</block>
+  <block id="d59e0b46782e48a01966e5c7ccc38d17" category="paragraph">NetAppでは、サポートとライセンスに固有の認証サービスのIDプロバイダとしてMicrosoftエントラIDを使用します。</block>
+  <block id="976b4993be588a7b52da07c4e96553c3" category="paragraph"><block ref="581f54bac504640f66f842676676be03" category="inline-link-rx"></block> Cloud Volumes ONTAPを導入するGoogle Cloudサブネットで無効にする必要があります。パケットミラーリングがイネーブルの場合、 Cloud Volumes ONTAP は正常に動作しません。</block>
 </blocks>
