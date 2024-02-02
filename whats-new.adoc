@@ -20,6 +20,26 @@ BlueXPのCloud Volumes ONTAP Managementの新機能をご紹介します。
 
 
 
+== 2024年2月2日
+
+
+
+=== AzureでのEdv5シリーズVMのサポート
+
+Cloud Volumes ONTAP 9.14.1リリース以降では、単一または複数のアベイラビリティゾーンで管理対象ディスクを共有する次のEdv5シリーズVMがサポートされるようになりました。
+
+* E4ds_V5
+* E8ds_V5
+* E20s_V5
+* E32ds_V5
+* E48ds_V5
+* E64ds_V5
+
+
+link:https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-configs-azure.html["Azure でサポートされる構成"^]
+
+
+
 == 2024年1月16日
 
 

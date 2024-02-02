@@ -5225,4 +5225,13 @@ NetApp （ BYOL ）からライセンスを直接購入した場合、 AWS サ�
   <block id="b5131f07b7cc2d9ac372dcfc0789c727" category="paragraph">たとえば、Essentialsライセンスを使用してCloud Volumes ONTAPインスタンスをデプロイするとします。次に、読み書き可能ボリューム（プライマリシングルノード）と読み取り専用ボリューム（セカンダリシングルノード）をプロビジョニングします。Marketplace契約またはプライベートオファーには、プロビジョニングされた容量をカバーするために、_Essentials Single Node_and_Essentials Secondary Single Node _の容量が含まれている必要があります。マーケットプレイス契約やプライベートオファーに含まれていないプロビジョニング済み容量には、オンデマンドの時間単位料金（PAYGO）が適用され、月 々 の請求書にコストが追加されます。</block>
   <block id="d59e0b46782e48a01966e5c7ccc38d17" category="paragraph">NetAppでは、サポートとライセンスに固有の認証サービスのIDプロバイダとしてMicrosoftエントラIDを使用します。</block>
   <block id="976b4993be588a7b52da07c4e96553c3" category="paragraph"><block ref="581f54bac504640f66f842676676be03" category="inline-link-rx"></block> Cloud Volumes ONTAPを導入するGoogle Cloudサブネットで無効にする必要があります。パケットミラーリングがイネーブルの場合、 Cloud Volumes ONTAP は正常に動作しません。</block>
+  <block id="d4eb5b4412a01c5991086dff8c51a89f" category="section-title">2024年2月2日</block>
+  <block id="4b2d018110adbf4819b09a7a28283445" category="section-title">AzureでのEdv5シリーズVMのサポート</block>
+  <block id="1ecd861cfd41cf61121b433fcb6f7fed" category="paragraph">Cloud Volumes ONTAP 9.14.1リリース以降では、単一または複数のアベイラビリティゾーンで管理対象ディスクを共有する次のEdv5シリーズVMがサポートされるようになりました。</block>
+  <block id="0ce1565dc58071deb098bde3e5a6a4b6" category="list-text">E4ds_V5</block>
+  <block id="625fbc51242c48d9e17a8b8b2fe6e5c7" category="list-text">E8ds_V5</block>
+  <block id="d6f19e3dc85d5a64809ab696a35a54ab" category="list-text">E20s_V5</block>
+  <block id="708880d509c52585ca0500cd17ef2166" category="list-text">E32ds_V5</block>
+  <block id="843cc0b63b36e79d0bdf4097a1b84b6a" category="list-text">E48ds_V5</block>
+  <block id="6ec5cb856eb24c85cf7368cdfd11627f" category="list-text">E64ds_V5</block>
 </blocks>
