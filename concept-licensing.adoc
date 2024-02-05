@@ -103,7 +103,7 @@ endif::gcp[]
 
 ifdef::azure[]
 
-* Azureの場合：E4s_v3、E4ds_v4、DS4_v2、DS13_v2、E8s_v3、およびE8ds_v4
+* Azureの場合：e4s_v3、e4ds_v4、ds4_v2、ds13_v2、e8s_v3、 E8ds_v4、E4ds_v5、およびE8ds_v5
 
 
 endif::azure[]
