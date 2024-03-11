@@ -28,7 +28,7 @@ CAUTION: このプロセスは、 CIFS クライアントの処理を中断す�
 BlueXP設定を変更する前にコネクタを作成する必要があります。 https://docs.netapp.com/us-en/bluexp-setup-admin/concept-connectors.html#how-to-create-a-connector["詳細をご確認ください"^]。
 
 .手順
-. BlueXPコンソールの右上にある[設定]アイコンをクリックし、[*コネクタの設定*]を選択します。
+. BlueXPコンソールの右上にある[設定]アイコンをクリックし、*[ Cloud Volumes ONTAP設定]*を選択します。
 +
 image:screenshot_settings_icon.png["BlueXPコンソールの右上にある設定アイコンを示すスクリーンショット。"]
 

@@ -3023,7 +3023,6 @@
   <block id="ae271afdca3c7d6785a9aefa74e6c80e" category="doc">コネクタの容量設定を管理します</block>
   <block id="b62aaf3fb48f9f8f103dc68c41211be5" category="paragraph">各コネクタには、Cloud Volumes ONTAP のアグリゲート容量の管理方法を決定する設定があります。</block>
   <block id="4edc935aeaaf3923beb2e4249e6c56f3" category="paragraph">これらの設定は、コネクタによって管理されるすべてのCloud Volumes ONTAP システムに適用されます。別のコネクタがある場合は、別の方法で設定できます。</block>
-  <block id="4f85ddd6337c9d7a3f7f9955945eece1" category="paragraph">コネクタ設定を変更するには、アカウント管理者権限が必要です。</block>
   <block id="03c93da41831d72dcea5fc724b2b4658" category="list-text">*容量*で、次のいずれかの設定を変更します。</block>
   <block id="af1f64d74440547a71a0dfdd077d8a15" category="inline-link-macro">容量管理モードの仕組みをご確認ください</block>
   <block id="46e6171a2e84c75269ac8bcb3c5004d8" category="paragraph"><block ref="f8a3c55f9fa8638c083e126aaf830b07" category="inline-link-macro-rx"></block>。</block>
@@ -3318,7 +3317,6 @@
   <block id="752a2c1ba3bb227b061216ee70132a08" category="paragraph">2つのパスを使用できます。正しいパスはコネクタのバージョンによって異なります。</block>
   <block id="93f9a2aa0331918bf3f1a44fb42f791e" category="list-text">/opt/application/netapp/cloudmanager/ontap/images/</block>
   <block id="9a34c8001fb2a94f36b91cd1711ee39f" category="paragraph">HA ペアに Storage VM を作成したら、その SVM でストレージをプロビジョニングする前に 12 時間待つことを推奨します。Cloud Volumes ONTAP 9.10.1リリース以降、12時間の間にHAペアのロードバランサの設定がスキャンされます。新しいSVMがある場合、計画外フェイルオーバーを短時間にする設定がBlueXPで有効になります。</block>
-  <block id="190d3f654701a58653384f20c47c8ecf" category="list-text">BlueXPコンソールの右上にある[設定]アイコンをクリックし、[*コネクタの設定*]を選択します。</block>
   <block id="270bb1237f850224c48374b974319501" category="list-text">ストレージ容量の決定についてBlueXPから通知するかどうか、またはBlueXPが容量要件を自動的に管理するかどうかを選択します。</block>
   <block id="852626f9cf83320fbc75df58841d66dc" category="paragraph">AutoSupport メッセージの送信にアウトバウンドのインターネット接続が使用できない場合、Cloud Volumes ONTAP システムは自動的にコネクタをプロキシサーバとして使用するように設定されます。唯一の要件は、コネクタのセキュリティグループがポート3128で_ inbound_connectionsを許可することです。コネクタを展開した後、このポートを開く必要があります。</block>
   <block id="91cd8e22887ec705f7a0b7a46d810004" category="paragraph">アウトバウンド接続が使用できず、BlueXPがコネクタをプロキシサーバとして使用するようにCloud Volumes ONTAP システムを設定できない場合は、「&lt;作業環境名&gt; is unable to send AutoSupport messages」というBlueXPから通知が届きます。</block>
@@ -3513,7 +3511,6 @@
   <block id="c42d7d1729e77b6aa2d88e357efbb241" category="inline-image-macro">階層化ステータスを含むBlueXPのアグリゲートに関する情報を示すスクリーンショット。</block>
   <block id="18f662e89926d99c2d0078857e1e0594" category="paragraph">データ階層化が有効なアグリゲートがない場合、ボリューム用の新しいアグリゲートがBlueXPで作成されます。</block>
   <block id="15772334d40a5e0ec433c7a427e96777" category="paragraph">たとえば、購入容量を確実に使用するために、空きスペースを 10% 未満にすることができます。追加の容量が必要になった場合（アグリゲートのディスクの上限に達するまで）、BlueXPで追加のディスクを購入できます。</block>
-  <block id="2b891711a30d74a376864ff361ead016" category="list-text">BlueXPコンソールの右上にある「*設定*」アイコンをクリックし、「*コネクタ設定*」を選択します。</block>
   <block id="be9d7b7687f0c55f7e65f14cd2b0f530" category="inline-image-macro">BlueXPコンソールの右上にある設定アイコンを示すスクリーンショット。</block>
   <block id="6b51126e31989dbd35d983caab04ff08" category="paragraph">Cloud Volumes ONTAP 作業環境を削除すると'BlueXPから削除されますCloud Volumes ONTAP システムは削除されません。作業環境は後で再検出できます。</block>
   <block id="c3d8bc113694ac5e1b1bc6903d5f4777" category="paragraph">BlueXPから作業環境を削除すると'次の操作を実行できます</block>
@@ -4881,7 +4878,6 @@ NetApp （ BYOL ）からライセンスを直接購入した場合、 AWS サ�
   <block id="e40eb63a3506950ad93ba909dcf25c90" category="image-alt">アグリゲートの容量のスクリーンショット</block>
   <block id="ca7b4e21c879a84e19f4057cd971879d" category="image-alt">FlexGroup volのスクリーンショット</block>
   <block id="18d8042386b79e2c279fd162df0205c8" category="image-alt">400だ</block>
-  <block id="b26d26fe2543d5473bc9e47f43ccf1a0" category="image-alt">スクリーンショット設定コネクタボタン</block>
   <block id="84ad21dcd6ff9e0e4d117b5b3950020e" category="admonition">ライセンスがないと、ライセンスされた機能の使用はサポートされません。</block>
   <block id="3799dfe1ae4f409b181ad79e377574c6" category="paragraph">ランサムウェア攻撃は、ビジネス時間、リソース、評判を低下させる可能性があります。BlueXPでは、ランサムウェア向けの2つのNetAppソリューションを実装できます。一般的なランサムウェアファイル拡張子からの保護と、自律型ランサムウェア対策（ARP）です。これらのソリューションは、可視化、検出、修復のための効果的なツールを提供します。</block>
   <block id="78cc5cdbd5abab66548d6b3a595b1c6c" category="section-title">一般的なランサムウェアのファイル拡張子から保護</block>
@@ -5243,4 +5239,8 @@ NetApp （ BYOL ）からライセンスを直接購入した場合、 AWS サ�
   <block id="4ac5b49185bd4b8f8b0ef6b8869d149f" category="paragraph">AWSでは、Cloud Volumes ONTAP、メディエーター、コネクタがすべての機能でAmazon Instant Metadata Service v2（IMDSv2）をサポートするようになりました。IMDSv2では、脆弱性に対する保護が強化されています。以前はIMDSv1のみがサポートされていました。</block>
   <block id="7fcd14ee7d62b2a6f712b7ed775cdbc3" category="inline-link-macro">既存のコネクタを管理するためのBlueXPのセットアップと管理に関するドキュメント</block>
   <block id="6aec236f70c9d11e5073fa187bf36fd1" category="paragraph">セキュリティポリシーで必要な場合は、IMDSv2を使用するようにEC2インスタンスを設定できます。手順については、を参照してください <block ref="437fb94a00c6c9b10a9ad9095b6680bc" category="inline-link-macro-rx"></block>。</block>
+  <block id="4954156ba208adf3ff1ee232d2f1d15f" category="list-text">BlueXPコンソールの右上にある[設定]アイコンをクリックし、*[ Cloud Volumes ONTAP設定]*を選択します。</block>
+  <block id="6f0bb9f0803011314813e6aad3d926bf" category="list-text">BlueXPコンソールの右上にある*[設定]*アイコンをクリックし、*[ Cloud Volumes ONTAP設定]*を選択します。</block>
+  <block id="d4b0cdcc1cd5c09a803de195e4f82296" category="paragraph">Cloud Volumes ONTAP設定を変更するには、アカウント管理者権限が必要です。</block>
+  <block id="13cdcbf94ff7381b25ca5784f874a9b6" category="image-alt">[Settings]アイコンの下にあるCloud Volumes ONTAP Settings]オプションのスクリーンショット。</block>
 </blocks>
