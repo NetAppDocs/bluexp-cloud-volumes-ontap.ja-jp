@@ -3168,7 +3168,6 @@
   <block id="68519dd54d9e3922e66ec5b7a67c39e0" category="paragraph">Cloud Volumes ONTAP 作業環境を作成するときに、ユーザインターフェイスを使用して、事前定義されたセキュリティグループで選択したネットワークのみ（推奨）またはすべてのネットワーク内のトラフィックを許可するかどうかを選択できるようになりました。</block>
   <block id="2261cc540df38326c53234c3d2d87794" category="inline-image-macro">セキュリティグループを選択したときに作業環境ウィザードで使用可能なAllow traffic withinオプションを示すスクリーンショット。</block>
   <block id="662442d32a5fd91298fcf8b6391fdf17" category="section-title">充電方法を変更します</block>
-  <block id="a117b4a94f6f90aef089573b1f002d26" category="paragraph">容量ベースのライセンスを使用するCloud Volumes ONTAP システムの充電方法を変更できます。たとえば、Essentialsパッケージを含むCloud Volumes ONTAP システムを導入した場合、ビジネスニーズの変化に応じて、そのシステムをProfessionalパッケージに変更できます。</block>
   <block id="3397777d22d2d5f746157ca31f0d8460" category="list-text">[*充電方法*（Cloud Volumes ONTAP *）]タブで、[*充電方法の変更*（* Change Charging method *）]</block>
   <block id="de4b4e176958ea7181911ce715504321" category="list-text">作業環境を選択して新しい充電方法を選択し、パッケージタイプを変更するとサービス料金に影響することを確認します。</block>
   <block id="b0d246ceb3cd290ace3abd509e982f73" category="inline-image-macro">Cloud Volumes ONTAP 作業環境の新しい充電方法を選択する[充電方法の変更]ダイアログボックスのスクリーンショット。</block>
@@ -3222,7 +3221,6 @@
   <block id="2d66a0b2e45838b2ebcec83efd6c765c" category="inline-link">これらのライセンスパッケージの詳細については、こちらをご覧ください</block>
   <block id="c3c41ceeecb96e561c7ec71ffc1c62fe" category="list-text">*選択したVNetのみ*：インバウンドトラフィックのソースは、Cloud Volumes ONTAP システムのVNetのサブネット範囲およびコネクタが存在するVNetのサブネット範囲です。これが推奨されるオプションです。</block>
   <block id="35b1e30bbf7722e3019259ffb8c9f0b7" category="list-text">*すべてのVNet *：インバウンドトラフィックの送信元は0.0.0.0/0のIP範囲です。</block>
-  <block id="990da7f1ae0e8fb8294bff04c936ecaa" category="list-text">Edge Cacheライセンスとの間での変更はサポートされていません。</block>
   <block id="cfdb32f80009b1e5c5c0468dda9f013d" category="paragraph">クラウドプロバイダの市場からプライベートオファーまたは契約を結んでいる場合、契約に含まれていない課金方式に変更すると、BYOL（ネットアップからライセンスを購入した場合）またはPAYGOに対して課金されます。</block>
   <block id="240bee2f94d72e6a18a1263f971266c2" category="cell">コネクタへの接続と、クラスタ管理LIFのIPアドレスを使用したSystem Manager WebコンソールへのHTTPSアクセス</block>
   <block id="4f9ff6137bed641431cf4f88c0e37ba0" category="inline-image-macro">Cloud Volumes ONTAP HAペアとそのコンポーネントの概念図。</block>
@@ -3736,7 +3734,6 @@
   <block id="56fe439ee061f5bc2e940368c1d73fa3" category="section-title">BlueXPは、Cloud Volumes ONTAP でS3をサポートしていません</block>
   <block id="9832e39264a34e4e40dca8449efd019e" category="section-title">BlueXPでは、Storage VMのディザスタリカバリはサポートされていません</block>
   <block id="d59db7846bd10b6d60d21543df9faa9e" category="list-title">必要なもの</block>
-  <block id="86f463a1f0f0879749d1274dc94305d9" category="paragraph-title">重要事項</block>
   <block id="d01b00b7df0dd6620e8ab49fb88f67b9" category="list-text">* Azure Disk Encryption for Volume Encryption *（シングルノードシステムの場合、または複数のゾーンのHAペアの場合）</block>
   <block id="d1432d772b2382ef2395e1eed551d5bb" category="paragraph-title">必要なGoogle Cloud権限</block>
   <block id="675d38d552c49bbf67606b2c5f1d5bed" category="section-title">Flash Cacheとは</block>
@@ -5243,4 +5240,9 @@ NetApp （ BYOL ）からライセンスを直接購入した場合、 AWS サ�
   <block id="6f0bb9f0803011314813e6aad3d926bf" category="list-text">BlueXPコンソールの右上にある*[設定]*アイコンをクリックし、*[ Cloud Volumes ONTAP設定]*を選択します。</block>
   <block id="d4b0cdcc1cd5c09a803de195e4f82296" category="paragraph">Cloud Volumes ONTAP設定を変更するには、アカウント管理者権限が必要です。</block>
   <block id="13cdcbf94ff7381b25ca5784f874a9b6" category="image-alt">[Settings]アイコンの下にあるCloud Volumes ONTAP Settings]オプションのスクリーンショット。</block>
+  <block id="970af11c442d109ac4d016f7c57f63fb" category="paragraph">容量ベースのライセンスは、 a_packag_ の形式で用意されています。Cloud Volumes ONTAP作業環境を作成するときは、ビジネスニーズに基づいて複数のライセンスパッケージから選択できます。作業環境の作成後にニーズが変わった場合は、パッケージをいつでも変更できます。たとえば、EssentialsパッケージからProfessionalパッケージに変更できます。</block>
+  <block id="58dcfad3183b701a8f1b8781a5644d09" category="inline-link">容量単位のライセンスパッケージの詳細</block>
+  <block id="8e8751cb9b796773a6b79b4d5c3dc7b2" category="paragraph"><block ref="0205926668933cbb2cb5f56900594078" category="inline-link-rx"></block>。</block>
+  <block id="3e4729f0b91cf008c10b8ab719ea9e99" category="list-text">課金方法を変更しても、NetApp（BYOL）から購入したライセンスを使用して課金されるか、クラウドプロバイダのマーケットプレイスから購入したライセンスを使用して課金されるか（従量課金制）には影響しません。</block>
+  <block id="07456d1e170e8be27eaff1e39e1ccdf6" category="paragraph">BlueXPは、常に最初にライセンスを請求しようとします。ライセンスが利用できない場合は、マーケットプレイスのサブスクリプションに対して課金されます。BYOLからMarketplaceへのサブスクリプション（またはその逆）では「変換」は必要ありません。</block>
 </blocks>
