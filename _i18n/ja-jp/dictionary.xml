@@ -4172,7 +4172,6 @@
   <block id="40e86593118ce089551b3691f6bba919" category="inline-link">コネクタで直接APIトラフィックを有効にする方法について説明します</block>
   <block id="aa036f3aad369ff5710a7a7d5043dcbc" category="list-text">Azure の階層化データのデフォルトのストレージアクセス階層は、 _hot_tier です。ホット階層は、大容量階層でアクセス頻度が高いデータに最適です。</block>
   <block id="07524ae3949ffd6bf3d8864e62191d5c" category="paragraph">大容量階層のアクセス頻度の低いデータにアクセスする予定がない場合は、_cool_storage階層に変更することでストレージコストを削減できます。ストレージ階層をクールに変更すると、アクセス頻度の低い大容量階層のデータがクールなストレージ階層に直接移動します。</block>
-  <block id="3e06c5fbfb4be981b82d7b6b33bb900f" category="list-text">階層化データのデフォルトのストレージクラスは、 _Standard Storage_class です。データへのアクセス頻度が低い場合は、 _Nearline Storage_or_Coldline Storage_ に変更することでストレージコストを削減できます。ストレージクラスを変更すると、アクセス頻度の低いデータは選択したクラスに直接移動します。</block>
   <block id="5b420079bca1c870914caa221b31442e" category="section-title">Cloud Volumes ONTAP 9.13.0</block>
   <block id="ad598f033e541927e862b0c5e17319ec" category="paragraph">BlueXPで、AWS、Azure、Google CloudにCloud Volumes ONTAP 9.13.0を導入、管理できるようになりました。</block>
   <block id="066405d152aeaf5c017e93048679ce43" category="paragraph"><block ref="0d69949c9de36f8752d49be7f0ec9aed" category="inline-link-rx"></block>。</block>
@@ -5181,7 +5180,6 @@ NetApp （ BYOL ）からライセンスを直接購入した場合、 AWS サ�
   <block id="9edc62814e18ad5dad22ed4f08602be6" category="admonition">ノードベースのCloud Volumes ONTAPライセンスでのARP機能の使用は、現在Digital Walletには反映されていません。ノードベースのARP使用状況を表示する機能は、今後のリリースでDigital Walletで利用できるようになる予定です。</block>
   <block id="36228eb2dbf48b5f5e080f1abf747714" category="paragraph">アドオンライセンスを購入してデジタルウォレットに追加すると、Cloud Volumes ONTAPを使用してボリューム単位でARPを有効にできます。ARPの課金は、ARP機能が有効になっているボリュームのプロビジョニング済み容量の合計に基づいて、ボリュームレベルで計測されます。最小ライセンス容量は1TBです。ただし、ARP機能の最小容量課金はありません。</block>
   <block id="bab89553328d9045a17e6cd7ae426ebe" category="paragraph">ボリュームのARPの設定は、ONTAP System ManagerとONTAP CLIを使用して実行します。</block>
-  <block id="41040f9c93f65d2edb4f6b2d1dc680a4" category="admonition">ストレージとネットワークの使用量は、2進数のギガバイト（GB）で計算されます。1GBは2^30バイトです。この単位は、ギビバイト（GiB）とも呼ばれます。同様に、1TBは2^40バイト、つまり1024GBです。</block>
   <block id="35588fa7f53bdbd040bfa9c96c87bf3d" category="section-title">2024年1月16日</block>
   <block id="9ed7d4ae8d042664394e899e9c1f5e9a" category="section-title">BlueXPでのパッチリリース</block>
   <block id="5c04c0351e9f1e168f13ca5689c21d92" category="paragraph">BlueXPでは、最新の3つのバージョンのCloud Volumes ONTAPに対してのみパッチリリースを提供しています。</block>
@@ -5245,4 +5243,8 @@ NetApp （ BYOL ）からライセンスを直接購入した場合、 AWS サ�
   <block id="8e8751cb9b796773a6b79b4d5c3dc7b2" category="paragraph"><block ref="0205926668933cbb2cb5f56900594078" category="inline-link-rx"></block>。</block>
   <block id="3e4729f0b91cf008c10b8ab719ea9e99" category="list-text">課金方法を変更しても、NetApp（BYOL）から購入したライセンスを使用して課金されるか、クラウドプロバイダのマーケットプレイスから購入したライセンスを使用して課金されるか（従量課金制）には影響しません。</block>
   <block id="07456d1e170e8be27eaff1e39e1ccdf6" category="paragraph">BlueXPは、常に最初にライセンスを請求しようとします。ライセンスが利用できない場合は、マーケットプレイスのサブスクリプションに対して課金されます。BYOLからMarketplaceへのサブスクリプション（またはその逆）では「変換」は必要ありません。</block>
+  <block id="d5f06dc5f98a38b5ccff1592c5d20e76" category="admonition">BlueXPで管理される製品とサービスの実際の使用量と計測値は常にGiBとTiBで計算されますが、GB / GiBとTB / TiBという用語は同じ意味で使用されます。これは、クラウドマーケットプレイスのリスト、価格見積もり、リストの説明、およびその他の関連ドキュメントに反映されます。</block>
+  <block id="2732cf17c6f3094ab514d104cf7ecca1" category="admonition">BlueXPで管理される製品とサービスの実際の使用量と計測値は常にGiBとTiBで計算されますが、GB / GiBとTB / TiBという用語は同じ意味で使用されます。これは、Cloud Marketplaceのリスト、価格見積もり、リストの説明、およびその他の関連ドキュメントに反映されます。</block>
+  <block id="1a09137ca087e36b72504f4276c7cd08" category="list-text">階層化データのデフォルトのストレージクラスは、 _Standard Storage_class です。データへのアクセス頻度が低い場合は、 _Nearline Storage_or_Coldline Storage_ に変更することでストレージコストを削減できます。ストレージクラスを変更すると、それ以降のアクセス頻度の低いデータは選択したクラスに直接移動されます。</block>
+  <block id="0d79695d01dd236a00fcb17dec14227f" category="admonition">ストレージクラスを変更すると、アクセス頻度の低い既存のデータがデフォルトのストレージクラスのままになります。既存のアクセス頻度の低いデータのストレージクラスを変更するには、指定を手動で実行する必要があります。</block>
 </blocks>
