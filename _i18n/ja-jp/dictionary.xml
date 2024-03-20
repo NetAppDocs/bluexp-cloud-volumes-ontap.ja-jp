@@ -4659,7 +4659,6 @@ NetApp （ BYOL ）からライセンスを直接購入した場合、 AWS サ�
   <block id="06765567af68358bde181ef7ae8a31b0" category="paragraph">詳細については、を参照してください <block ref="5aa81dcb1871cc4d565005ce5abe331d" category="inline-link-macro-rx"></block>。</block>
   <block id="d0922b1e87a764a73d3cfca142d88a3e" category="paragraph"><block ref="43cde999a8a50b7abff143c352cabd37" category="inline-link-rx"></block>。</block>
   <block id="15620bf0529e3d68b9f6b01095e269d3" category="paragraph"><block ref="15620bf0529e3d68b9f6b01095e269d3" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="c2f78492bd5f6bbe07383dadc5778fe8" category="paragraph"><block ref="c2f78492bd5f6bbe07383dadc5778fe8" category="inline-image-macro-rx" type="image"></block></block>
   <block id="078d5a2ce174d1db14eba9ab521ae2a0" category="paragraph"><block ref="078d5a2ce174d1db14eba9ab521ae2a0" category="inline-link-macro-rx"></block></block>
   <block id="cf796cb5656f4bf0200ec02ab1ee4385" category="paragraph"><block ref="cf97c7b4bc867e067ebd7fa85f6363db" category="inline-link-rx"></block>。</block>
   <block id="7ddfab2c1a83893ebd448c6696f616f4" category="list-text"><block ref="7ddfab2c1a83893ebd448c6696f616f4" category="inline-link-rx"></block></block>
@@ -5240,11 +5239,13 @@ NetApp （ BYOL ）からライセンスを直接購入した場合、 AWS サ�
   <block id="13cdcbf94ff7381b25ca5784f874a9b6" category="image-alt">[Settings]アイコンの下にあるCloud Volumes ONTAP Settings]オプションのスクリーンショット。</block>
   <block id="970af11c442d109ac4d016f7c57f63fb" category="paragraph">容量ベースのライセンスは、 a_packag_ の形式で用意されています。Cloud Volumes ONTAP作業環境を作成するときは、ビジネスニーズに基づいて複数のライセンスパッケージから選択できます。作業環境の作成後にニーズが変わった場合は、パッケージをいつでも変更できます。たとえば、EssentialsパッケージからProfessionalパッケージに変更できます。</block>
   <block id="58dcfad3183b701a8f1b8781a5644d09" category="inline-link">容量単位のライセンスパッケージの詳細</block>
-  <block id="8e8751cb9b796773a6b79b4d5c3dc7b2" category="paragraph"><block ref="0205926668933cbb2cb5f56900594078" category="inline-link-rx"></block>。</block>
   <block id="3e4729f0b91cf008c10b8ab719ea9e99" category="list-text">課金方法を変更しても、NetApp（BYOL）から購入したライセンスを使用して課金されるか、クラウドプロバイダのマーケットプレイスから購入したライセンスを使用して課金されるか（従量課金制）には影響しません。</block>
   <block id="07456d1e170e8be27eaff1e39e1ccdf6" category="paragraph">BlueXPは、常に最初にライセンスを請求しようとします。ライセンスが利用できない場合は、マーケットプレイスのサブスクリプションに対して課金されます。BYOLからMarketplaceへのサブスクリプション（またはその逆）では「変換」は必要ありません。</block>
   <block id="d5f06dc5f98a38b5ccff1592c5d20e76" category="admonition">BlueXPで管理される製品とサービスの実際の使用量と計測値は常にGiBとTiBで計算されますが、GB / GiBとTB / TiBという用語は同じ意味で使用されます。これは、クラウドマーケットプレイスのリスト、価格見積もり、リストの説明、およびその他の関連ドキュメントに反映されます。</block>
   <block id="2732cf17c6f3094ab514d104cf7ecca1" category="admonition">BlueXPで管理される製品とサービスの実際の使用量と計測値は常にGiBとTiBで計算されますが、GB / GiBとTB / TiBという用語は同じ意味で使用されます。これは、Cloud Marketplaceのリスト、価格見積もり、リストの説明、およびその他の関連ドキュメントに反映されます。</block>
   <block id="1a09137ca087e36b72504f4276c7cd08" category="list-text">階層化データのデフォルトのストレージクラスは、 _Standard Storage_class です。データへのアクセス頻度が低い場合は、 _Nearline Storage_or_Coldline Storage_ に変更することでストレージコストを削減できます。ストレージクラスを変更すると、それ以降のアクセス頻度の低いデータは選択したクラスに直接移動されます。</block>
   <block id="0d79695d01dd236a00fcb17dec14227f" category="admonition">ストレージクラスを変更すると、アクセス頻度の低い既存のデータがデフォルトのストレージクラスのままになります。既存のアクセス頻度の低いデータのストレージクラスを変更するには、指定を手動で実行する必要があります。</block>
+  <block id="ce46ac36501bd1de8616d715ef7ee1c2" category="paragraph"><block ref="ce46ac36501bd1de8616d715ef7ee1c2" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="3e509b6c896c67a8b8ec2afa8f3aa8eb" category="admonition">ライセンスファイルの取得方法の詳細については、を参照してください。<block ref="c65aa3342130b0295e06cd938a12ad5e" category="inline-link-rx"></block>。</block>
+  <block id="6b5c2460f150173d3723de8a857a4d33" category="paragraph"><block ref="179c8a3ed717f2c4de3149f0e9edf685" category="inline-link-rx"></block>。</block>
 </blocks>
