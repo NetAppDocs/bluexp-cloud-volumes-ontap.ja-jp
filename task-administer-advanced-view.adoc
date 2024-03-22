@@ -16,8 +16,6 @@ summary: Cloud Volumes ONTAP の高度な管理が必要な場合は、ONTAP シ
 [role="lead"]
 Cloud Volumes ONTAP の高度な管理が必要な場合は、ONTAP システムに付属の管理インターフェイスであるONTAP System Managerを使用して実行できます。BlueXPにはSystem Managerインターフェイスが搭載されているので、高度な管理のためにBlueXPを残す必要はありません。
 
-この拡張ビューはプレビューとして使用できます。今後のリリースでは、この点をさらに改良し、機能を強化する予定です。製品内のチャットでご意見をお寄せください。
-
 
 
 == の機能
