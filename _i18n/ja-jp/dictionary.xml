@@ -2581,7 +2581,6 @@
   <block id="2986f3edb85e34a7556b412028be57fb" category="paragraph">インスタンスや容量の制限はありません。Cloud Volumes ONTAP システムは必要な数だけ導入でき、必要な容量を30日間無償で割り当てることができます。無料トライアルは、30日後に1時間ごとの有料サブスクリプションに自動的に変換されます。</block>
   <block id="631556a144b10d5d5f19603b18176e32" category="paragraph">Cloud Volumes ONTAP のソフトウェアライセンス料金は1時間ごとに発生しませんが、クラウドプロバイダからインフラ料金が請求されます。</block>
   <block id="6c30ec25f9c157f6acd5cb63a6abee29" category="list-text">いずれかのアグリゲートでオブジェクトに古い命名規則が使用されています。両方のアグリゲートで同じ名前形式を使用する必要があります。</block>
-  <block id="ea17490349895c296964a806a4f6a8d1" category="paragraph">元のアグリゲートに空きスペースがあることに注意してください。既存のボリュームまたは新しいボリュームでは、そのスペースを使用できます。このシナリオでは、スペースをクラウドプロバンスに戻すことはできません。</block>
   <block id="181e3299a212253d089ee23c58a37a10" category="list-text">EssentialsパッケージとProfessionalパッケージは、すべてのクラウドプロバイダマーケットプレイスで利用できるようになりました。</block>
   <block id="e399fe858ae4c467e1c830b512b1718c" category="list-text">すべてのクラウドプロバイダマーケットプレイスからのノード単位のライセンスが廃止され、新しいユーザには提供されなくなりました。これには、年間契約と時間単位のサブスクリプション（ Explore 、 Standard 、 Premium ）が含まれます。</block>
   <block id="73af9e90d6d077cf277e49f829259963" category="section-title">追加のAzure VMタイプがサポートされます</block>
@@ -3022,9 +3021,6 @@
   <block id="03c93da41831d72dcea5fc724b2b4658" category="list-text">*容量*で、次のいずれかの設定を変更します。</block>
   <block id="af1f64d74440547a71a0dfdd077d8a15" category="inline-link-macro">容量管理モードの仕組みをご確認ください</block>
   <block id="46e6171a2e84c75269ac8bcb3c5004d8" category="paragraph"><block ref="f8a3c55f9fa8638c083e126aaf830b07" category="inline-link-macro-rx"></block>。</block>
-  <block id="314b05c3387324c9621b3b3cd58816d4" category="list-text">アグリゲートの空きスペース率が指定したしきい値を下回ったときに通知をトリガーします。</block>
-  <block id="a27b16792f86cfcc4c0f28d5d58e43f4" category="paragraph">空きスペース率は、次のように計算します。</block>
-  <block id="b9fbc310908f08e909d0f601f964b6d5" category="paragraph">（アグリゲート容量-アグリゲートで使用されている合計容量）/アグリゲートの容量</block>
   <block id="0bc3c683bdb3389ca9d8d2211fce0878" category="list-text">データを大容量階層（オブジェクトストレージ）に階層化するときに必要な高パフォーマンス階層（ディスク）の空きスペースの量を定義します。</block>
   <block id="3e230a58ba269a917d314abcc623818e" category="paragraph">この比率はディザスタリカバリのシナリオにとって重要です。大容量階層からデータが読み取られると、Cloud Volumes ONTAP はパフォーマンス階層にデータを移動してパフォーマンスを向上させます。十分なスペースがないと、 Cloud Volumes ONTAP はデータを移動できません。</block>
   <block id="99a583bf10de030bdac538c8b15f5b45" category="paragraph">この動作は、コネクタの_Capacity Management Mode_onによって決定されます。容量管理モードは、そのコネクタで管理されているすべてのCloud Volumes ONTAP システムに影響します。別のコネクタがある場合は、別の方法で設定できます。</block>
@@ -3423,11 +3419,7 @@
   <block id="0324104f71311abe508e504d778bc57c" category="paragraph">たとえば、BlueXPでは、次のようなディスクサイズが選択される場合があります。</block>
   <block id="d4a9c8ba8bf84d6db4571dbd344dcbaf" category="paragraph">BlueXPでは、アグリゲートを自分で管理する代わりに、自分で管理できます。 <block ref="2414ef63108c7ecff38292e17ac61802" category="inline-link-macro-rx"></block>では、特定の数のディスクを含む新しいアグリゲートの作成、既存のアグリゲートへのディスクの追加、および特定のアグリゲートでのボリュームの作成を行うことができます。</block>
   <block id="6c79cf02eee66f58213ada5570b62345" category="paragraph">アカウント管理者は、BlueXPがストレージ容量の決定を通知するかどうか、またはBlueXPが容量の要件を自動的に管理するかどうかを選択できます。</block>
-  <block id="31748071ef0ac7523fb5016c8403ccb1" category="paragraph">容量管理モードは、デフォルトで自動に設定されています。このモードでは、Cloud Volumes ONTAP インスタンスで追加の容量が必要になると、自動的に新しいディスクが購入されます。また、未使用のディスクセット（アグリゲート）の削除、必要に応じてアグリゲート間でのボリュームの移動、ディスクの障害状態の解除などを実行します。</block>
   <block id="285c2353d7e4311eda264e18d4088019" category="list-text">アグリゲートの容量がしきい値に達し、ディスクの容量が増えても、BlueXPはそのアグリゲート用の新しいディスクを自動的に購入するため、ボリュームを継続して拡張することができます。</block>
-  <block id="299ae1a44a6e0d4621ce06dd61d33997" category="paragraph">BlueXPは15分ごとに空き容量の比率をチェックし'追加のディスクを購入する必要があるかどうかを判断します</block>
-  <block id="8dae36b62c1431be15fd76d673a4c132" category="list-text">アグリゲートが容量のしきい値に達し、かつ他のディスクをサポートできない場合は、使用可能な容量を持つアグリゲートまたは新しいアグリゲートにボリュームが自動的に移動されます。</block>
-  <block id="2fe7b16790072005d08a88ee39c34588" category="paragraph">ボリュームに新しいアグリゲートを作成すると、そのボリュームのサイズに対応するディスクサイズが選択されます。</block>
   <block id="64705a9631169f2d9e4b9999578694d2" category="list-text">アグリゲートにボリュームが12時間以上格納されていない場合、BlueXPはそのアグリゲートを削除します。</block>
   <block id="972fa623b0e87f35c9ebd90cd251cc2c" category="paragraph">アカウント管理者が容量管理モードを手動に設定した場合、容量の決定が必要になったときに「Action Required」メッセージが表示されます。自動モードで説明されている例と同じ例が手動モードにも適用されますが、アクションを受け入れる必要があります。</block>
   <block id="19d775edcaac93a63ae82c037f339d34" category="paragraph">Cloud Volumes ONTAP 作業環境を作成すると、Azure Marketplaceで提供されている契約に登録するよう求められます。このサブスクリプションは、充電のための作業環境に関連付けられます。同じサブスクリプションを追加の作業環境に使用できます。</block>
@@ -5257,4 +5249,17 @@ NetApp （ BYOL ）からライセンスを直接購入した場合、 AWS サ�
   <block id="239d4539cd51c06a2b10a7f62d000f71" category="inline-image-macro">ボリュームのサイズ変更後に変更された容量が画面に表示される</block>
   <block id="b819ad9e0e6bb0675a6052fe63ec61dc" category="paragraph"><block ref="b819ad9e0e6bb0675a6052fe63ec61dc" category="inline-image-macro-rx" type="image"></block></block>
   <block id="bcbb72cb4f456c876a454b11cbf5cdaf" category="paragraph">ボリュームのサイズを変更する際は、システムの容量制限を考慮してください。にアクセスします<block ref="7a96f232274f5a7cebcb1f6a52cc095f" category="inline-link-rx"></block> 詳細：</block>
+  <block id="399201ba872f71746b096bfe0d58a764" category="list-text">この比率は、容量管理の決定において重要なパラメータであり、容量管理の自動モードと手動モードのどちらを使用しているかに関係なく、その影響を理解することが不可欠です。リソース利用率とコストのバランスを維持するために、特定のストレージニーズと予想される増加率を考慮してこのしきい値を設定することを推奨します。</block>
+  <block id="93f4bd32a6e537cd1ab17baa3d621ac4" category="paragraph">手動モードでは、アグリゲートの空きスペース率が指定したしきい値を下回ると、空きスペース率の低下に対処する必要があることを通知する通知がトリガーされます。これらの通知を監視し、アグリゲートの容量を手動で管理して、サービスの停止を回避し、最適なパフォーマンスを確保することが重要です。</block>
+  <block id="ac058d48498674f54471806ec9e42567" category="paragraph">空きスペース率は、次のように計算します。
+（アグリゲート容量-アグリゲートで使用されている合計容量）/アグリゲートの容量</block>
+  <block id="65d315c33e8fd2f0f7a6e3356d5f2d73" category="paragraph">を参照してください <block ref="23da02e053be6485f9a66477404bdb14" category="inline-link-macro-rx"></block> Cloud Volumes ONTAPで容量が自動的に管理されるようになりました。</block>
+  <block id="7bb6ec1cdb28bfc72a7c85c04e804190" category="paragraph">容量管理モードは、デフォルトで自動に設定されています。このモードでは、空きスペース率が15分ごとにチェックされ、空きスペース率が指定したしきい値を下回っていないかどうかが確認されます。より多くの容量が必要になると、BlueXPは自動的に新しいディスクの購入を開始し、未使用のディスク（アグリゲート）セットを削除し、必要に応じてアグリゲート間でボリュームを移動し、ディスク障害を回避します。</block>
+  <block id="8e2f854c2327eeb07b90d796ba7a111e" category="paragraph">Elastic VolumesをサポートするAWSのアグリゲートの場合は、BlueXPでRAIDグループ内のディスクのサイズも拡張されます。 <block ref="e64e49a1cded5f4109adae46b4faa045" category="inline-link-macro-rx"></block>。</block>
+  <block id="bbf4148ff0d0c2577fa92ce466c7bf7b" category="paragraph">[+]
+*アグリゲートが容量のしきい値に達し、追加のディスクをサポートできない場合、BlueXPは、アグリゲートのボリュームを、使用可能な容量を持つアグリゲートまたは新しいアグリゲートに自動的に移動します。</block>
+  <block id="aa30dc6b7b6afa43fc2df335e8f683b3" category="paragraph">[+]
+ボリュームに新しいアグリゲートを作成すると、そのボリュームのサイズに対応するディスクサイズが選択されます。</block>
+  <block id="7f1e9230df284aec888c734befc03867" category="paragraph">[+]
+元のアグリゲートに空きスペースがあることに注意してください。既存のボリュームまたは新しいボリュームでは、そのスペースを使用できます。このシナリオでは、スペースをクラウドプロバイダに戻すことはできません。</block>
 </blocks>
