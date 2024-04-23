@@ -20,6 +20,34 @@ BlueXPのCloud Volumes ONTAP Managementの新機能をご紹介します。
 
 
 
+== 2024年4月23日
+
+
+
+=== Azureの複数のアベイラビリティゾーン環境でサポートされる新しいリージョン
+
+Azure for Cloud Volumes ONTAP 9.12.1 GA以降では、次のリージョンでHA複数アベイラビリティゾーンの導入がサポートされるようになりました。
+
+* ドイツ・ウェスト・セントラル
+* ポーランド中部
+* 米国西部3
+* イスラエル中部
+* イタリア北部
+* カナダセントラル
+
+
+すべての地域のリストについては、 https://bluexp.netapp.com/cloud-volumes-global-regions["Azureのグローバルリージョンマップ"^]。
+
+
+
+=== ヨハネスブルグリージョンがGoogle Cloudでサポートされるようになりました
+
+ヨハネスブルグ地域 (`africa-south1` リージョン）は、Google Cloud for Cloud Volumes ONTAP 9.12.1 GA以降でサポートされるようになりました。
+
+すべての地域のリストについては、 https://bluexp.netapp.com/cloud-volumes-global-regions["Google Cloudのグローバルリージョンマップ"^]。
+
+
+
 == 2024年3月8日
 
 
