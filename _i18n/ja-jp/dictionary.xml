@@ -595,7 +595,6 @@
   <block id="f13e5738aeb376300b20ef726f2fe2e3" category="section-title">ボリューム作成の機能拡張</block>
   <block id="9f6be88742d739e1a17345387ce1fbb2" category="paragraph">ボリューム作成機能がいくつか強化されました。</block>
   <block id="c393c88c641a6c18da56fffa85b9c78c" category="list-text">使いやすいようにボリューム作成ウィザードの設計が変更されました。</block>
-  <block id="6b7e7cce69c13d91130e2e673b1da322" category="list-text">ボリュームに追加するタグがアプリケーションテンプレートサービスに関連付けられ、リソースの管理を整理して簡単にすることができます。</block>
   <block id="69582189d37c402edf59b0f133df7c09" category="list-text">これで、 NFS 用のカスタムエクスポートポリシーを選択できるようになりました。</block>
   <block id="7ab20d098d6605f542bfe595351b4d64" category="inline-image-macro">新しいボリュームの作成時にプロトコルページを示すスクリーンショット。</block>
   <block id="7aece74ebc88a7e88e14656ceaecf9cf" category="paragraph"><block ref="7aece74ebc88a7e88e14656ceaecf9cf" category="inline-image-macro-rx" type="image"></block></block>
@@ -740,8 +739,6 @@
   <block id="3b0e375a08fe94a129cba31916c9d2dc" category="paragraph">このページのフィールドの一部は分かりやすいもので、説明を必要としません。以下は、説明が必要なフィールドのリストです。</block>
   <block id="191fac23c2b2ea4e948178972521292f" category="cell">ボリュームサイズ</block>
   <block id="7b975bd58356ec64d88f70d7f167a299" category="cell">入力できる最大サイズは、シンプロビジョニングを有効にするかどうかによって大きく異なります。シンプロビジョニングを有効にすると、現在使用可能な物理ストレージよりも大きいボリュームを作成できます。</block>
-  <block id="189f63f277cd73395561651753563065" category="cell">タグ</block>
-  <block id="d7ab5fe4cd7b86ba1ce9a35dbe34ee4b" category="inline-link">Application Templates サービス</block>
   <block id="426fb47479d0477ed5dbc9388b9add76" category="cell">スナップショットポリシー</block>
   <block id="052c4d27b63fed6776d46336a295d801" category="cell">Snapshot コピーポリシーは、自動的に作成される NetApp Snapshot コピーの頻度と数を指定します。NetApp Snapshot コピーは、パフォーマンスに影響を与えず、ストレージを最小限に抑えるポイントインタイムファイルシステムイメージです。デフォルトポリシーを選択することも、なしを選択することもできます。一時データには、 Microsoft SQL Server の tempdb など、 none を選択することもできます。</block>
   <block id="8df799ab4a27609ef1087c249676bbc5" category="list-text">* プロトコル * ：ボリューム（ NFS 、 CIFS 、または iSCSI ）用のプロトコルを選択し、必要な情報を入力します。</block>
@@ -766,23 +763,6 @@
   <block id="13aa0c9cafb05f7d1436239215621d90" category="list-text">* 使用状況プロファイルと階層化ポリシー * ：ボリュームで Storage Efficiency 機能を有効にするか無効にするかを選択し、を選択します <block ref="45393a767ab360c2ba9e7110c6cbc830" category="inline-link-macro-rx"></block>。</block>
   <block id="1fd2dba2020c106a2c49da0e6ad7e868" category="paragraph">ONTAP には、必要なストレージの合計容量を削減できるストレージ効率化機能がいくつか搭載されています。NetApp Storage Efficiency 機能には、次のようなメリットがあります。</block>
   <block id="eb5c6869b3fc04254530622723507f79" category="list-text">* レビュー * ：ボリュームの詳細を確認して、 * 追加 * をクリックします。</block>
-  <block id="2fd8ed01b53ab930ba045f6316aa8fbf" category="section-title">テンプレートからボリュームを作成します</block>
-  <block id="027921a6306ed2c54f25607de975d377" category="paragraph">特定のアプリケーションのワークロード要件に最適化されたボリュームを導入できるように、組織で Cloud Volumes ONTAP ボリュームテンプレートを作成している場合は、このセクションの手順に従います。</block>
-  <block id="bc41c927b050313fabe4e7bfa9c82224" category="paragraph">テンプレートを使用すると、ディスクタイプ、サイズ、プロトコル、スナップショットポリシー、クラウドプロバイダ、 その他。パラメータがすでに事前定義されている場合は、次のボリュームパラメータに進みます。</block>
-  <block id="395f4870d887a81edabc6ad40f5a84f0" category="admonition">テンプレートを使用する場合にのみ、 NFS ボリュームまたは CIFS ボリュームを作成できます。</block>
-  <block id="3464a6536597fb17300e864f33f6b63d" category="list-text">キャンバスページで、ボリュームをプロビジョニングする Cloud Volumes ONTAP システムの名前をクリックします。</block>
-  <block id="74099e7b70c30e3a55db543cda9bfc1e" category="inline-image-macro">テンプレートから新しいボリュームを追加する方法を示すスクリーンショット。</block>
-  <block id="5b33742921c3a09b3c0916cff2d87632" category="list-text">_ テンプレートの選択 _ ページで、ボリュームの作成に使用するテンプレートを選択し、 * 次へ * をクリックします。</block>
-  <block id="41fdbb8293e553892079d0e7ad8a9ad9" category="inline-image-macro">使用可能なアプリケーションテンプレートのスクリーンショット。</block>
-  <block id="f2a6f7bb83d518b8832e241b44419c17" category="paragraph"><block ref="f2a6f7bb83d518b8832e241b44419c17" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="19f5b7f92268b2f8e63e4083819666c9" category="inline-image-macro">ボリュームを作成するために入力する必要がある空のテンプレートを示すスクリーンショット。</block>
-  <block id="f9fb39421cb5c84a9897e58b19c84510" category="paragraph"><block ref="f9fb39421cb5c84a9897e58b19c84510" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="db382d688e4cb3e09b6e7a743ce00edb" category="paragraph">他のアクションがある場合は、左ペインのアクションをクリックして、完了する必要のあるパラメータを表示します。</block>
-  <block id="a31e4f2aa7f454321015e4c5b02bae97" category="inline-image-macro">完了する必要のある追加の操作を選択する方法を示すスクリーンショット。</block>
-  <block id="0fdf861b8e72c9acd6caea0924545667" category="paragraph"><block ref="0fdf861b8e72c9acd6caea0924545667" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="f97c61e27cbf22f850ec5f0412358f0b" category="paragraph">Cloud Volumes ONTAP によってボリュームがプロビジョニングされ、進捗状況を確認するためのページが表示されます。</block>
-  <block id="40136e65ff57723941fc2af2bf21d54a" category="inline-image-macro">テンプレートから新しいボリュームを作成する進行状況を示すスクリーンショット。</block>
-  <block id="d1ad4ec8d83a0a6b7ef8ac4c5acc2d2f" category="paragraph"><block ref="d1ad4ec8d83a0a6b7ef8ac4c5acc2d2f" category="inline-image-macro-rx" type="image"></block></block>
   <block id="841221afb195f2b9f58a8b1dc6a57132" category="section-title">HA 構成の第 2 ノードにボリュームを作成する</block>
   <block id="60a2834a97bdfe49641e5ed1d42e4116" category="list-text">キャンバスページで、アグリゲートを管理する Cloud Volumes ONTAP 作業環境の名前をダブルクリックします。</block>
   <block id="c8f3514620e31924fc247388a82834fa" category="list-text">Home Node には、 HA ペアの 2 番目のノードを選択します。</block>
@@ -4322,19 +4302,10 @@
   <block id="d3c83108d2d70bd2eb22fbd1bb485f2f" category="paragraph">[概要]タブで、[ボリューム]タイルに移動し、*[ボリュームの追加]*をクリックします。<block ref="d66b0ca71189f0ddd53cd4b3e65bbf57" category="inline-image-macro-rx" type="image"></block></block>
   <block id="d67d87305db3f29260c81473dd44e3f1" category="inline-image-macro">[Aggregates]タブの[Add Volume]ボタンのスクリーンショット。</block>
   <block id="13f1658d880a29010b36402880b7742d" category="paragraph">[Aggregates]タブで、目的のアグリゲートタイルに移動します。メニューアイコンをクリックし、*[ボリュームの追加]*をクリックします。<block ref="90511a2a61b219fe659f6c6204d0e9f4" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="5359c0cc8b61614ec08d953783fef7e9" category="list-text">*[ボリューム、詳細、保護、およびタグ]*：ボリュームの基本的な詳細を入力し、Snapshotポリシーを選択します。</block>
   <block id="5a33fdd3ad048388d676b3cfe62a76b4" category="cell">ボリューム名</block>
   <block id="da791c0c870c83e87ff0b50e41446b5f" category="cell">新しいボリュームの識別可能な名前。</block>
   <block id="8bc5e99f50f67c6de120548d75821d83" category="cell">Storage VM（SVM）</block>
   <block id="360a6a454911fe3432462fbd11f3588c" category="cell">Storage VM は ONTAP 内で実行される仮想マシンであり、クライアントにストレージサービスとデータサービスを提供します。これは SVM または SVM として認識されていることがあります。Cloud Volumes ONTAP にはデフォルトで 1 つの Storage VM が設定されますが、一部の設定では追加の Storage VM がサポートされます。新しいボリュームのStorage VMを指定できます。</block>
-  <block id="83153603fdc3097c323cd6a9c354a74c" category="list-text">[Volumes]タブに移動し、*[Add Volume]*&gt;*[New Volume from Template]*をクリックします。</block>
-  <block id="d5b72c940ba2727afcbba5dd037893f5" category="paragraph"><block ref="d5b72c940ba2727afcbba5dd037893f5" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="ac2c13cd2f76af0753933c8630446e5f" category="paragraph">_Editor_pageが表示されます。</block>
-  <block id="18a9b2315ac5b98381d542571ba28299" category="list-text">アクションパネルの上に、テンプレートの名前を入力します。</block>
-  <block id="74f7c9266baa87f8e4aceef158811143" category="list-text">_Context_の下に、を起動した作業環境の名前が作業環境に入力されます。ボリュームを作成する* Storage VM *を選択します。</block>
-  <block id="746037c3b6a0eec6bb1e41959d51e07e" category="list-text">[適用（Apply）]*をクリックして、設定したパラメータを選択したアクションに保存します。</block>
-  <block id="be2645489c0ae0149fc30f6dc8d80bbb" category="paragraph">たとえば、[Enable Cloud Backup on Volume]アクションでバックアップポリシーを選択する必要がある場合は、ここで選択できます。</block>
-  <block id="f0131c80c45b00e70cb9a1d8c9e3448a" category="list-text">テンプレートアクションの設定が完了したら、*テンプレートの保存*をクリックします。</block>
   <block id="bc321d6d3a5b549e1c0961440ef815f4" category="list-text">[アグリゲート]タブで、*[アグリゲートの追加]*をクリックします。</block>
   <block id="d528ab86bd3d69a199b872eae76729c3" category="list-text">[Add Aggregate]画面で、アグリゲートを作成します。</block>
   <block id="6f3d3de9b8245394933ccb5a82580032" category="inline-image-macro">アグリゲートの追加の進捗状況を示すスクリーンショット。</block>
@@ -4354,10 +4325,6 @@
   <block id="8f56224592abe10774e5575500874b11" category="cell">[ボリュームの管理]パネルの[ボリューム操作]で、*[ボリュームの詳細を表示]*をクリックします。</block>
   <block id="d4c98b540182b809e992d8b4a580423e" category="list-text">[Manage volumes]パネルの[Volume Actions]で、*[Mount Command]*をクリックします。</block>
   <block id="98c56e9d0291f443f1ed942549039cc3" category="list-text">[Manage volumes]パネルの[Volume Actions]で、*[Clone the volume]*をクリックします。</block>
-  <block id="c36ae8709c4f5551dcd33c1fa09b1144" category="cell">ボリュームタグを編集（読み書き可能ボリュームのみ）</block>
-  <block id="0c76e6ded4e12f0dc0b2564def628aae" category="list-text">[ボリュームの管理]パネルの[ボリューム操作]で*[ボリュームタグの編集]*をクリックし、選択したボリュームに割り当てられているボリュームタグを変更します。</block>
-  <block id="186ac335ead3bdabcd70b18a0e6f40ed" category="list-text">該当するフィールドにボリュームタグキーと値を入力します。</block>
-  <block id="cf92c264f59ad57e63ae663106047d25" category="list-text">タグを追加するには、*[新しいタグの追加]*をクリックします。</block>
   <block id="29f680a1731a2250d73a33aede73a2eb" category="list-text">[ボリュームの管理]パネルの[ボリューム操作]で、*[ボリューム設定の編集]*をクリックします</block>
   <block id="ac11ccea860c1468f49807407e073557" category="list-text">ボリュームのSnapshotポリシー、NFSプロトコルバージョン、NFSアクセス制御リスト（エクスポートポリシー）、または共有権限を変更し、*[適用]*をクリックします。</block>
   <block id="6271604d64ad8f6bcdad901be64df292" category="list-text">[ボリュームの管理]パネルの[ボリューム操作]で、*[ボリュームの削除]*をクリックします。</block>
@@ -4487,8 +4454,6 @@
   <block id="b7553c7fbdeaddba3cf075caca1654ea" category="paragraph">新しいCloud Volumes ONTAP システムの作成時にライセンスを選択できるように、BlueXPデジタルウォレットにノードベースライセンスを追加します。デジタルウォレットは、これらのライセンスを_unassigned_として識別します。</block>
   <block id="5fd0d116f88accf7d18b80d146d87953" category="paragraph">BlueXPはデジタルウォレットにライセンスを追加します。ライセンスは、新しい Cloud Volumes ONTAP システムに関連付けるまでは未割り当てとみなされます。その後、ライセンスはデジタルウォレットの* BYOL *タブに移動します。</block>
   <block id="637413a6c4ca962adade95ae4bcc1109" category="paragraph">Cloud Volumes ONTAP の未割り当てのノードベースライセンスがある場合は、BlueXPバックアップおよびリカバリライセンス、BlueXP分類ライセンス、またはBlueXP階層化ライセンスに変換することでライセンスを交換できます。</block>
-  <block id="84494b1e674f56df077cb2b7eca2b569" category="list-text">定義する必要のある他の操作（BlueXPのバックアップとリカバリの設定など）がない場合は、*[テンプレートの保存]*をクリックします。</block>
-  <block id="3cb732600caeb6ed3e89ade08544187b" category="paragraph">また、ボリュームでBlueXPのバックアップとリカバリを有効にするなど、テンプレートにセカンダリアクションが実装されている場合は、そのアクションも実行されます。</block>
   <block id="726d1cad4d0527532460d1a853919ebc" category="inline-link">BlueXPの分類の詳細については、こちらをご覧ください</block>
   <block id="723a81a7ee0b42134a46c1aaa0d99371" category="inline-link">BlueXPのバックアップとリカバリの詳細については、こちらをご覧ください</block>
   <block id="fc0a70bcada485a87b25779f9232cd77" category="summary">Cloud Volumes ONTAP には、 2 つの目的で Google Cloud サービスアカウントが必要です。1 つ目は、 Google Cloud の低コストのオブジェクトストレージにコールドデータを階層化するデータ階層化を有効にする場合です。2つ目は、BlueXPのバックアップとリカバリを有効にして、低コストのオブジェクトストレージにボリュームをバックアップする場合です。</block>
@@ -4614,7 +4579,6 @@ NTP サーバは、 CIFS サーバを作成するときにのみ設定できま�
   <block id="f9f4082179938e25ee1e3141d4b4b61d" category="paragraph"><block ref="f9f4082179938e25ee1e3141d4b4b61d" category="inline-link-rx"></block></block>
   <block id="882d5f98206dd8157654127073c920f2" category="paragraph"><block ref="882d5f98206dd8157654127073c920f2" category="inline-link-rx"></block></block>
   <block id="f870932f389b07a18c35e61ebc668c91" category="paragraph"><block ref="161ab28684c427e4961f0c360c1dbce7" category="inline-link-rx"></block>。</block>
-  <block id="63c9832895bcd0b024988b034d19fa69" category="cell">ボリュームに追加するタグはに関連付けられます<block ref="b6951a270b848f0d80ace1368ae797fd" category="inline-link-rx"></block>を使用すると、リソースの管理を整理して簡単に行うことができます。</block>
   <block id="ccd8fe0f54baad6a01a1827625b8a699" category="list-text">Active Directory DNS を使用して NTP サーバを設定するには、「 Active Directory ドメインを使用」を選択します。別のアドレスを使用して NTP サーバを設定する必要がある場合は、 API を使用してください。を参照してください<block ref="7665d9260dd9d6a287f2bbc0560d523f" category="inline-link-rx"></block> を参照してください。</block>
   <block id="781a31b225d61ebbabe5dd84830d307a" category="list-text">を用意しておく必要があります<block ref="531433bd83668140eff1dc8bd40e140e" category="inline-link-rx"></block>。</block>
   <block id="0a878535ad1a6e2ef955aba255e762cd" category="list-text">プロンプトが表示されたら、<block ref="b03d5bfc016d24f5269c25486d5c5105" category="inline-link-rx"></block>。</block>
@@ -4887,13 +4851,11 @@ NetApp （ BYOL ）からライセンスを直接購入した場合、 AWS サ�
   <block id="c865f6da9bcfc07ba082737620200b41" category="paragraph">プロビジョニング済み容量が500GiBを超えると、システムはに自動的に変換されないかぎり、マーケットプレイスのサブスクリプションを通じて料金が請求されることはありません <block ref="ec72849d6ddd1aa67c619efd7a434388" category="inline-link-macro-rx"></block>。</block>
   <block id="a8f0efbc9639c258065d01ea6552a320" category="list-text">新しいボリュームの詳細を指定し、基盤となるデータアグリゲートをBlueXPで処理できるようにします。 <block ref="7d09ed3a2e8adfd1ea66dd5eff6c8d13" category="inline-xref-macro-rx"></block></block>
   <block id="f2354151259450918b28c0dd2ce20606" category="list-text">任意のデータアグリゲート上にボリュームを作成します。 <block ref="7d09ed3a2e8adfd1ea66dd5eff6c8d13" category="inline-xref-macro-rx"></block></block>
-  <block id="b9269bf669334245761162ed1b5f67fc" category="list-text">テンプレートからボリュームを作成し、データベースやストリーミングサービスなど特定のアプリケーションのワークロード要件に合わせてボリュームを最適化します。 <block ref="2e0c3dc13b95af01c6b2fc43579657db" category="inline-xref-macro-rx"></block></block>
   <block id="6acfe5d47cf8e7d4ce1ddef9604984d8" category="list-text">HA 構成の第 2 ノードにボリュームを作成する。 <block ref="8d20c8ec5d13d4f8ec83a1bb8e2e1e5d" category="inline-xref-macro-rx"></block></block>
   <block id="765aadd821cf82bcd286359e2eb25476" category="list-text">iSCSIボリュームを作成すると、BlueXPによって自動的にLUNが作成されます。ボリュームごとに 1 つの LUN だけを作成することでシンプルになり、管理は不要になります。ボリュームを作成したら、 <block ref="9b65fd4fba31c27fb58a4653a54defad" category="inline-link-macro-rx"></block>。</block>
   <block id="34b51cb01d3605c2b908600c2b516152" category="list-text"><block ref="34b51cb01d3605c2b908600c2b516152" category="inline-link-macro-rx"></block></block>
   <block id="2a79e18dae8df0be0a0d70d12cf4bfec" category="list-text"><block ref="2a79e18dae8df0be0a0d70d12cf4bfec" category="inline-link-macro-rx"></block></block>
   <block id="14c10e4dfdbfa7bb1944c39086904d79" category="list-text"><block ref="14c10e4dfdbfa7bb1944c39086904d79" category="inline-link-macro-rx"></block></block>
-  <block id="ff89f21886369313040dff71f31e89db" category="list-text">テンプレートからハードコーディングされていないすべてのパラメータに値を追加します。を参照してください <block ref="8a193d900c598af224bec0dcf7cbba7e" category="inline-xref-macro-rx"></block> Cloud Volumes ONTAP ボリュームの導入を完了するために必要なすべてのパラメータの詳細については、を参照してください。</block>
   <block id="f784e2eca8423af6d4b6e02cd9dc17b6" category="list-text">VPC -0 の HA コンポーネントのルールセット。これらのルールにより、 Cloud Volumes ONTAP へのデータアクセスが可能になります。 <block ref="1a421f2e5e3047ae3801063040dbe3fb" category="inline-xref-macro-rx"></block>。</block>
   <block id="29642aeaa8aff442388842cc2c36f19d" category="list-text">VPC -1 、 VPC -2 、および VPC -3 の HA コンポーネントに関するもう 1 つのルールセット。これらのルールは、 HA コンポーネント間のインバウンド通信とアウトバウンド通信に対してオープンです。 <block ref="1a421f2e5e3047ae3801063040dbe3fb" category="inline-xref-macro-rx"></block>。</block>
   <block id="b0082432bdd8f260c6c2bf11437fb1b7" category="list-text">VPC -1 、 VPC -2 、および VPC -3 の HA コンポーネントに関するもう 1 つのルールセット。これらのルールは、 HA コンポーネント間のインバウンド通信とアウトバウンド通信に対してオープンです。 <block ref="07ead3ac53ea1b122b25bf61bd233110" category="inline-xref-macro-rx"></block>。</block>
@@ -5273,4 +5235,7 @@ NetApp （ BYOL ）からライセンスを直接購入した場合、 AWS サ�
   <block id="1d0f99876d748759fce5e852f79fca96" category="list-text">カナダセントラル</block>
   <block id="0b745a8416b0a8e3b89e7e01ba13af65" category="section-title">ヨハネスブルグリージョンがGoogle Cloudでサポートされるようになりました</block>
   <block id="ec826289e3407edb59d3c5ed0aca5c74" category="paragraph">ヨハネスブルグ地域 <block ref="6d1d2d77b70fb38d060e5653977838a2" prefix="(" category="inline-code"></block> リージョン）は、Google Cloud for Cloud Volumes ONTAP 9.12.1 GA以降でサポートされるようになりました。</block>
+  <block id="ee94ea94211470599a81d49f8c4b586f" category="section-title">ボリュームテンプレートとタグのサポートの廃止</block>
+  <block id="96b0b2a19dd9deb6b94e53f2e29f4387" category="paragraph">これ以降、テンプレートからボリュームを作成したり、ボリュームのタグを編集したりすることはできません。これらの操作はBlueXP修正サービスに関連付けられていましたが、このサービスは廃止されました。</block>
+  <block id="9691bf3a7c5f05b620ab3b20437b6123" category="list-text">* 詳細、保護、タグ * ：ボリュームの基本的な詳細を入力し、 Snapshot ポリシーを選択します。</block>
 </blocks>
