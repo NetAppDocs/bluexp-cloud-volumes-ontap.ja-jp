@@ -1,10 +1,10 @@
 ---
 sidebar: sidebar 
 permalink: task-getting-started-aws-c2s.html 
-keywords: commercial cloud services, c2s, secret region, aws secret region, cloud manager, BlueXP 
-summary: 標準のAWSリージョンと同様に、AWS Commercial Cloud Services（C2S）環境でBlueXPを使用してCloud Volumes ONTAP を導入できます。これにより、クラウドストレージにエンタープライズクラスの機能が提供されます。AWS C2S は米国に固有の閉じたリージョンですIntelligence Community 。このページの手順は、 AWS C2S リージョンユーザにのみ該当します。 
+keywords: commercial cloud services, c2s, secret cloud, top secret cloud, aws secret region, BlueXP 
+summary: 標準のAWSリージョンと同様に、AWS Secret Cloud環境やTop Secret Cloud環境でBlueXPを使用してCloud Volumes ONTAPを導入できます。これにより、クラウドストレージにエンタープライズクラスの機能が提供されます。AWS Secret CloudリージョンとTop Secret Cloudリージョンは、米国Intelligence Community：このページの手順は、AWS Secret CloudおよびTop Secret Cloudリージョンのユーザにのみ適用されます。 
 ---
-= AWS C2S で Cloud Volumes ONTAP を使用する方法を確認します 環境
+= AWS Secret CloudリージョンとTop Secret CloudリージョンにCloud Volumes ONTAPを導入
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,83 +14,32 @@ summary: 標準のAWSリージョンと同様に、AWS Commercial Cloud Services
 
 
 [role="lead"]
-標準の AWS リージョンと同様に、で Cloud Manager を使用できます link:https://aws.amazon.com/federal/us-intelligence-community/["AWS Commercial クラウドサービス（ C2S ）"^] Cloud Volumes ONTAP を導入する環境。クラウドストレージにエンタープライズクラスの機能を提供します。AWS C2S は米国に固有の閉じたリージョンですIntelligence Community 。このページの手順は、 AWS C2S リージョンユーザにのみ該当します。
+標準のAWSリージョンと同様に、BlueXPは link:https://aws.amazon.com/federal/secret-cloud/["AWSシークレットクラウド"^] およびインチ link:https://aws.amazon.com/federal/top-secret-cloud/["AWSのトップシークレットクラウド"^] クラウドストレージにエンタープライズクラスの機能を提供するCloud Volumes ONTAPを導入するには、次の手順を実行します。AWS Secret CloudとTop Secret Cloudは、米国Intelligence Community：このページの手順は、AWS Secret CloudおよびTop Secret Cloudリージョンのユーザにのみ適用されます。
 
+.作業を開始する前に
+作業を開始する前に、AWS Secret CloudとTop Secret Cloudでサポートされているバージョンを確認し、BlueXPのプライベートモードについて学習してください。
 
-
-== C2Sでサポートされているバージョン
-
-* Cloud Volumes ONTAP 9.8がサポートされています
-* コネクタのバージョン3.9.4がサポートされています
+* AWS Secret CloudおよびTop Secret Cloudでサポートされている次のバージョンを確認してください。
 +
-Connectorは、AWSでCloud Volumes ONTAP を導入して管理するために必要なソフトウェアです。Connector インスタンスにインストールされているソフトウェアから Cloud Manager にログインします。Cloud ManagerのSaaS Webサイトは、C2S環境ではサポートされていません。
-
-
-
-
-NOTE: Cloud Managerの名前はBlueXPに変更されましたが、コネクタのバージョン3.9.4に含まれているユーザインターフェイスはまだCloud Managerと呼ばれるため、C2SではCloud Managerとして引き続き参照しています。
-
-
-
-== C2S でサポートされている機能
-
-C2S 環境の Cloud Manager から使用可能な機能は次のとおりです。
-
-* Cloud Volumes ONTAP
-* データレプリケーション
-* 監査のスケジュール
-
-
-Cloud Volumes ONTAP の場合は、シングルノードシステムまたは HA ペアを作成できます。どちらのライセンスオプションも使用できます。従量課金制とお客様所有のライセンス（ BYOL ）です。
-
-S3 へのデータ階層化は、 C2S の Cloud Volumes ONTAP でもサポートされています。
-
-
-
-== 制限
-
-* ネットアップのどのクラウドサービスも Cloud Manager からは使用できません。
-* C2S 環境ではインターネットにアクセスできないため、次の機能も使用できません。
+** Cloud Volumes ONTAP 9.12.1 P2
+** コネクタのバージョン3.9.32
 +
-** Cloud Manager からのソフトウェアの自動アップグレード
-** NetApp AutoSupport
-** AWS の Cloud Volumes ONTAP リソースのコスト情報
-
-
-* Freemiumライセンスは、C2S環境ではサポートされていません。
+Connectorは、AWSでCloud Volumes ONTAP を導入して管理するために必要なソフトウェアです。コネクタインスタンスにインストールされているソフトウェアからBlueXPにログインします。BlueXP向けのSaaS Webサイトは、AWS Secret CloudとTop Secret Cloudではサポートされていません。
 
 
 
-
-== 導入の概要
-
-C2S で Cloud Volumes ONTAP を使用するにはいくつかの手順を実行します。
-
-. <<AWS環境の準備>>
+* プライベートモードの詳細
 +
-これには、ネットワークの設定、 Cloud Volumes ONTAP への登録、権限の設定、および必要に応じて AWS KMS のセットアップが含まれます。
-
-. <<ConnectorのインストールとCloud Managerのセットアップ>>
-+
-Cloud Manager を使用して Cloud Volumes ONTAP を導入するには、コネクタを作成する必要があります。Connector を使用すると、 Cloud Manager でパブリッククラウド環境内のリソースとプロセス（ Cloud Volumes ONTAP を含む）を管理できます。
+AWS Secret CloudおよびTop Secret Cloudでは、BlueXPは_privateモード_で動作します。プライベートモードでは、BlueXP SaaSレイヤへの接続はありません。BlueXPには、SaaSレイヤではなくコネクタからアクセスできるWebベースのコンソールからローカルにアクセスします。
 
 +
-Connector インスタンスにインストールされているソフトウェアから Cloud Manager にログインします。
-
-. <<Cloud ManagerからCloud Volumes ONTAP を起動しています>>
-
-
-以下に、各手順について説明します。
+プライベートモードの動作の詳細については、を参照してください。 link:https://docs.netapp.com/us-en/bluexp-setup-admin/concept-modes.html#private-mode["BlueXPプライベート導入モード"^]。
 
 
 
-== AWS環境の準備
-
-AWS 環境はいくつかの要件を満たす必要があります。
 
 
-
-=== ネットワークをセットアップします
+== 手順1：ネットワークをセットアップする
 
 Cloud Volumes ONTAP が適切に動作するように AWS ネットワークをセットアップします。
 
@@ -105,37 +54,148 @@ Cloud Volumes ONTAP から低コストのオブジェクトストレージにコ
 
 
 
-=== Cloud Volumes ONTAP に登録します
+== 手順2：権限を設定する
 
-Cloud Manager から Cloud Volumes ONTAP を導入するには、 Marketplace サブスクリプションが必要です。
-
-.手順
-. AWS Intelligence Community Marketplace にアクセスして、 Cloud Volumes ONTAP を検索します。
-. 導入を計画しているサービスを選択します。
-. 条件を確認し、 [*Accept*]( 同意する ) をクリックします。
-. 導入を計画している場合は、他のサービスについても同じ手順を繰り返します。
-+
-Cloud Volumes ONTAP インスタンスを起動するには、 Cloud Manager を使用する必要があります。Cloud Volumes ONTAP インスタンスを EC2 コンソールから起動しないでください。
-
-
-
-
-
-=== 権限を設定します
-
-AWS Commercialクラウド サービス 環境でアクションを実行するために必要な権限をコネクタとCloud Volumes ONTAP に提供するIAMポリシーとロールを設定する。
+AWSシークレットクラウドまたはトップシークレットクラウドでアクションを実行するために必要な権限をコネクタとCloud Volumes ONTAPに提供するIAMポリシーとロールを設定します。
 
 次の項目について、 IAM ポリシーと IAM ロールを 1 つずつ用意する必要があります。
 
 * コネクタインスタンス
 * Cloud Volumes ONTAP インスタンス
-* Cloud Volumes ONTAP HA メディエーターインスタンス （ HA ペアを導入する場合）
+* HAペアの場合は、Cloud Volumes ONTAPのHAメディエーターインスタンス（HAペアを導入する場合）
 
 
 .手順
 . AWS IAM コンソールに移動し、 * Policies * をクリックします。
 . コネクタインスタンスのポリシーを作成します。
 +
+
+NOTE: AWS環境のS3バケットをサポートするために、これらのポリシーを作成します。あとでバケットを作成するときは、バケット名の先頭に「 `fabric-pool-`。この要件は、AWSシークレットクラウドリージョンとTop Secret Cloudリージョンの両方を環境にします。
+
++
+[role="tabbed-block"]
+====
+.シークレットリージョン
+--
+[source, json]
+----
+{
+    "Version": "2012-10-17",
+    "Statement": [{
+            "Effect": "Allow",
+            "Action": [
+                "ec2:DescribeInstances",
+                "ec2:DescribeInstanceStatus",
+                "ec2:RunInstances",
+                "ec2:ModifyInstanceAttribute",
+                "ec2:DescribeRouteTables",
+                "ec2:DescribeImages",
+                "ec2:CreateTags",
+                "ec2:CreateVolume",
+                "ec2:DescribeVolumes",
+                "ec2:ModifyVolumeAttribute",
+                "ec2:DeleteVolume",
+                "ec2:CreateSecurityGroup",
+                "ec2:DeleteSecurityGroup",
+                "ec2:DescribeSecurityGroups",
+                "ec2:RevokeSecurityGroupEgress",
+                "ec2:RevokeSecurityGroupIngress",
+                "ec2:AuthorizeSecurityGroupEgress",
+                "ec2:AuthorizeSecurityGroupIngress",
+                "ec2:CreateNetworkInterface",
+                "ec2:DescribeNetworkInterfaces",
+                "ec2:DeleteNetworkInterface",
+                "ec2:ModifyNetworkInterfaceAttribute",
+                "ec2:DescribeSubnets",
+                "ec2:DescribeVpcs",
+                "ec2:DescribeDhcpOptions",
+                "ec2:CreateSnapshot",
+                "ec2:DeleteSnapshot",
+                "ec2:DescribeSnapshots",
+                "ec2:GetConsoleOutput",
+                "ec2:DescribeKeyPairs",
+                "ec2:DescribeRegions",
+                "ec2:DeleteTags",
+                "ec2:DescribeTags",
+                "cloudformation:CreateStack",
+                "cloudformation:DeleteStack",
+                "cloudformation:DescribeStacks",
+                "cloudformation:DescribeStackEvents",
+                "cloudformation:ValidateTemplate",
+                "iam:PassRole",
+                "iam:CreateRole",
+                "iam:DeleteRole",
+                "iam:PutRolePolicy",
+                "iam:ListInstanceProfiles",
+                "iam:CreateInstanceProfile",
+                "iam:DeleteRolePolicy",
+                "iam:AddRoleToInstanceProfile",
+                "iam:RemoveRoleFromInstanceProfile",
+                "iam:DeleteInstanceProfile",
+                "s3:GetObject",
+                "s3:ListBucket",
+                "s3:GetBucketTagging",
+                "s3:GetBucketLocation",
+                "s3:ListAllMyBuckets",
+                "kms:List*",
+                "kms:Describe*",
+                "ec2:AssociateIamInstanceProfile",
+                "ec2:DescribeIamInstanceProfileAssociations",
+                "ec2:DisassociateIamInstanceProfile",
+                "ec2:DescribeInstanceAttribute",
+                "ec2:CreatePlacementGroup",
+                "ec2:DeletePlacementGroup"
+            ],
+            "Resource": "*"
+        },
+        {
+            "Sid": "fabricPoolPolicy",
+            "Effect": "Allow",
+            "Action": [
+                "s3:DeleteBucket",
+                "s3:GetLifecycleConfiguration",
+                "s3:PutLifecycleConfiguration",
+                "s3:PutBucketTagging",
+                "s3:ListBucketVersions"
+            ],
+            "Resource": [
+                "arn:aws-iso-b:s3:::fabric-pool*"
+            ]
+        },
+        {
+            "Effect": "Allow",
+            "Action": [
+                "ec2:StartInstances",
+                "ec2:StopInstances",
+                "ec2:TerminateInstances",
+                "ec2:AttachVolume",
+                "ec2:DetachVolume"
+            ],
+            "Condition": {
+                "StringLike": {
+                    "ec2:ResourceTag/WorkingEnvironment": "*"
+                }
+            },
+            "Resource": [
+                "arn:aws-iso-b:ec2:*:*:instance/*"
+            ]
+        },
+        {
+            "Effect": "Allow",
+            "Action": [
+                "ec2:AttachVolume",
+                "ec2:DetachVolume"
+            ],
+            "Resource": [
+                "arn:aws-iso-b:ec2:*:*:volume/*"
+            ]
+        }
+    ]
+}
+----
+--
+.Top Secret領域
+--
 [source, json]
 ----
 {
@@ -252,8 +312,43 @@ AWS Commercialクラウド サービス 環境でアクションを実行する�
     ]
 }
 ----
+--
+====
 . Cloud Volumes ONTAP のポリシーを作成します。
 +
+[role="tabbed-block"]
+====
+.シークレットリージョン
+--
+[source, json]
+----
+{
+    "Version": "2012-10-17",
+    "Statement": [{
+        "Action": "s3:ListAllMyBuckets",
+        "Resource": "arn:aws-iso-b:s3:::*",
+        "Effect": "Allow"
+    }, {
+        "Action": [
+            "s3:ListBucket",
+            "s3:GetBucketLocation"
+        ],
+        "Resource": "arn:aws-iso-b:s3:::fabric-pool-*",
+        "Effect": "Allow"
+    }, {
+        "Action": [
+            "s3:GetObject",
+            "s3:PutObject",
+            "s3:DeleteObject"
+        ],
+        "Resource": "arn:aws-iso-b:s3:::fabric-pool-*",
+        "Effect": "Allow"
+    }]
+}
+----
+--
+.Top Secret領域
+--
 [source, json]
 ----
 {
@@ -280,7 +375,11 @@ AWS Commercialクラウド サービス 環境でアクションを実行する�
     }]
 }
 ----
-. Cloud Volumes ONTAP HA ペアを導入する場合は、 HA メディエーターのポリシーを作成します。
+--
+====
++
+HAペアについて、Cloud Volumes ONTAP HAペアを導入する場合は、HAメディエーターのポリシーを作成します。
+
 +
 [source, json]
 ----
@@ -305,21 +404,22 @@ AWS Commercialクラウド サービス 環境でアクションを実行する�
 ----
 . タイプが Amazon EC2 の IAM ロールを作成し、前の手順で作成したポリシーを関連付けます。
 +
-ポリシーと同様に、コネクタ用の IAM ロールが 1 つ、 Cloud Volumes ONTAP ノード用の IAM ロールが 1 つ、 HA メディエーター用の IAM ロールが 1 つ（ HA ペアを導入する場合）必要です。
+.ロールを作成します。
+ポリシーと同様に、コネクタにはIAMロールが1つ、Cloud Volumes ONTAPノードにはIAMロールが1つ必要です。
+HAペアの場合：ポリシーと同様に、コネクタ用、Cloud Volumes ONTAPノード用、HAメディエーター用（HAペアを導入する場合）用にIAMロールが1つ必要です。
 
 +
-コネクタインスタンスを起動するときに、コネクタ IAM ロールを選択する必要があります。
-
-+
-Cloud Volumes ONTAP の IAM ロールと HA メディエーターは、 Cloud Manager から Cloud Volumes ONTAP の作業環境を作成するときに選択できます。
-
+.ロールを選択します。
+コネクタインスタンスを起動するときに、コネクタ IAM ロールを選択する必要があります。Cloud Volumes ONTAPのIAMロールは、BlueXPでCloud Volumes ONTAP作業環境を作成するときに選択できます。
+HAペアの場合、BlueXPでCloud Volumes ONTAP作業環境を作成するときに、Cloud Volumes ONTAPのIAMロールとHAメディエーターを選択できます。
 
 
 
 
-=== AWS KMS を設定します
 
-Cloud Volumes ONTAP で Amazon 暗号化を使用する場合は、 AWS Key Management Service の要件を満たしていることを確認します。
+== ステップ3：AWS KMSをセットアップする
+
+Cloud Volumes ONTAPでAmazon暗号化を使用する場合は、AWSキー管理サービス（KMS）の要件が満たされていることを確認してください。
 
 .手順
 . アクティブな Customer Master Key （ CMK ；カスタマーマスターキー）がアカウントまたは別の AWS アカウントに存在することを確認します。
@@ -328,28 +428,32 @@ CMK は、 AWS 管理の CMK または顧客管理の CMK にすることがで�
 
 . Cloud Volumes ONTAP を導入するアカウントとは別の AWS アカウントに CMK を配置する場合は、そのキーの ARN を取得する必要があります。
 +
-Cloud Volumes ONTAP システムの作成時には、 Cloud Manager の ARN の指定が必要になります。
+Cloud Volumes ONTAP システムを作成するときは、BlueXPにARNを提供する必要があります。
 
 . コネクタインスタンスのIAMロールをCMKのキーユーザのリストに追加します。
 +
-これにより、 Cloud Manager には、 Cloud Volumes ONTAP で CMK を使用する権限が与えられます。
+これにより、Cloud Volumes ONTAP でCMKを使用するためのBlueXP権限が与えられます。
 
 
 
 
 
-== ConnectorのインストールとCloud Managerのセットアップ
+== 手順4：コネクタをインストールしてBlueXPをセットアップする
 
-AWS で Cloud Volumes ONTAP システムを起動するには、まず AWS Marketplace から Connector インスタンスを起動してから、ログインして Cloud Manager をセットアップする必要があります。
+BlueXPを使用してAWSにCloud Volumes ONTAPを導入する前に、BlueXP Connectorをインストールしてセットアップする必要があります。Connectorを使用すると、BlueXPはパブリッククラウド環境内のリソースとプロセスを管理できます（Cloud Volumes ONTAP を含む）。
 
 .手順
 . Privacy Enhanced Mail （ PEM ） Base-64 でエンコードされた X.509 形式の認証局（ CA ）が署名したルート証明書を取得する証明書を入手するには、組織のポリシーと手順を参照してください。
 +
-セットアッププロセス中に証明書をアップロードする必要があります。Cloud Manager は、 HTTPS 経由で AWS に要求を送信する際に信頼された証明書を使用します。
+
+NOTE: AWS Secret Cloudリージョンの場合は、 `NSS Root CA 2` 証明書、およびTop Secret Cloudの場合は、 `Amazon Root CA 4` 証明書。チェーン全体ではなく、これらの証明書のみをアップロードしてください。証明書チェーンのファイルが大きいため、アップロードに失敗する可能性があります。追加の証明書がある場合は、次の手順で説明するように、後でアップロードできます。
+
++
+セットアッププロセス中に証明書をアップロードする必要があります。BlueXPでは、HTTPS経由でAWSに要求を送信するときに信頼された証明書が使用されます。
 
 . コネクタインスタンスを起動します。
 +
-.. AWS Intelligence Community Marketplace の Cloud Manager のページに移動します。
+.. AWS Intelligence Community MarketplaceのBlueXPのページにアクセスします。
 .. Custom Launch タブで、 EC2 コンソールからインスタンスを起動するオプションを選択します。
 .. プロンプトに従って、インスタンスを設定します。
 +
@@ -357,23 +461,26 @@ AWS で Cloud Volumes ONTAP システムを起動するには、まず AWS Marke
 
 +
 *** t3.xlarge をお勧めします。
-*** AWS 環境の準備の際に作成した IAM ロールを選択する必要があります。
+*** 権限の設定時に作成したIAMロールを選択する必要があります。
 *** デフォルトのストレージオプションはそのままにしておく必要があります。
 *** コネクタに必要な接続方法は、 SSH 、 HTTP 、 HTTPS です。
 
 
 
 
-. コネクタインスタンスに接続されているホストから Cloud Manager をセットアップします。
+. コネクタインスタンスに接続されているホストからBlueXPをセットアップします。
 +
 .. Web ブラウザを開き、と入力します https://_ipaddress_[] _ipaddress_は、コネクタをインストールしたLinuxホストのIPアドレスです。
 .. AWS サービスに接続するためのプロキシサーバを指定します。
 .. 手順 1 で取得した証明書をアップロードします。
-.. セットアップウィザードの手順に従って、 Cloud Manager をセットアップします。
+.. [新しいBlueXPのセットアップ]*を選択し、プロンプトに従ってシステムをセットアップします。
 +
-*** * System Details * ： Cloud Manager インスタンスの名前を入力し、会社名を入力します。
-*** * ユーザの作成 * ： Cloud Manager の管理に使用する管理者ユーザを作成します。
-*** * レビュー * ：詳細を確認し、エンドユーザーライセンス契約を承認します。
+*** *システムの詳細*：コネクタの名前と会社名を入力します。
+*** * 管理者ユーザーの作成 * ：システムの管理者ユーザーを作成します。
++
+このユーザアカウントはシステム上でローカルに実行されます。BlueXPからはAuth0サービスに接続できません。
+
+*** *確認*：詳細を確認し、使用許諾契約に同意して、*セットアップ*を選択します。
 
 
 .. CA 署名証明書のインストールを完了するには、 EC2 コンソールからコネクタインスタンスを再起動します。
@@ -384,279 +491,217 @@ AWS で Cloud Volumes ONTAP システムを起動するには、まず AWS Marke
 
 
 
-== Cloud ManagerからCloud Volumes ONTAP を起動しています
+== 手順5：（オプション）プライベートモード証明書をインストールする
 
-Cloud Manager で新しい作業環境を作成することで、 AWS Commercial クラウドサービス環境で Cloud Volumes ONTAP インスタンスを起動できます。
+この手順は、AWS Secret CloudリージョンとTop Secret Cloudリージョンではオプションであり、前の手順でインストールしたルート証明書以外の追加の証明書がある場合にのみ必要です。
 
-.必要なもの
-* ライセンスを購入した場合は、ネットアップから受け取ったライセンスファイルが必要です。ライセンスファイルは JSON 形式の .NLF ファイルです。
-* HA メディエーターへのキーベースの SSH 認証を有効にするには、キーペアが必要です。
+.手順
+. インストールされている既存の証明書を表示
++
+.. occmコンテナDocker ID（識別名「DS-occm-1」）を収集するには、次のコマンドを実行します。
++
+[source, CLI]
+----
+docker ps
+----
+.. occmコンテナ内に入るには、次のコマンドを実行します。
++
+[source, CLI]
+----
+docker exec -it <docker-id> /bin/sh
+----
+.. 「trust_store_password」環境変数からパスワードを収集するには、次のコマンドを実行します。
++
+[source, CLI]
+----
+env
+----
+.. 信頼ストアにインストールされているすべての証明書を一覧表示するには、次のコマンドを実行し、前の手順で収集したパスワードを使用します。
++
+[source, CLI]
+----
+keytool -list -v -keystore occm.truststore
+----
 
+
+. 証明書を追加します。
++
+.. occmコンテナDocker ID（識別名「ds-occm-1」）を収集するには、次のコマンドを実行します。
++
+[source, CLI]
+----
+docker ps
+----
+.. occmコンテナ内に入るには、次のコマンドを実行します。
++
+[source, CLI]
+----
+docker exec -it <docker-id> /bin/sh
+----
++
+新しい証明書ファイルをに保存します。
+
+.. 「trust_store_password」環境変数からパスワードを収集するには、次のコマンドを実行します。
++
+[source, CLI]
+----
+env
+----
+.. 証明書を信頼ストアに追加するには、次のコマンドを実行し、前の手順のパスワードを使用します。
++
+[source, CLI]
+----
+keytool -import -alias <alias-name> -file <certificate-file-name> -keystore occm.truststore
+----
+.. 証明書がインストールされていることを確認するには、次のコマンドを実行します。
++
+[source, CLI]
+----
+keytool -list -v -keystore occm.truststore -alias <alias-name>
+----
+.. occmコンテナを終了するには、次のコマンドを実行します。
++
+[source, CLI]
+----
+exit
+----
+.. occmコンテナをリセットするには、次のコマンドを実行します。
++
+[source, CLI]
+----
+docker restart <docker-id>
+----
+
+
+
+
+--
+
+--
+
+
+== 手順6：BlueXPデジタルウォレットにライセンスを追加する
+
+NetAppからライセンスを購入した場合は、新しいCloud Volumes ONTAPシステムを作成するときにライセンスを選択できるように、そのライセンスをBlueXPデジタルウォレットに追加する必要があります。デジタルウォレットは、これらのライセンスを未割り当てとして識別します。
+
+.手順
+. BlueXPナビゲーションメニューから、* Governance > Digital Wallet *を選択します。
+. [*Node] Cloud Volumes ONTAP タブで、ドロップダウンから[*Node Based Licenses]を選択します。
+. [ * 未割り当て * （ Unassigned * ） ]
+. [ 未割り当てライセンスの追加 ] をクリックします。
+. ライセンスのシリアル番号を入力するか、ライセンスファイルをアップロードしてください。
+. ライセンスファイルがまだない場合は、netapp.comからライセンスファイルを手動でアップロードする必要があります。
++
+.. にアクセスします link:https://register.netapp.com/site/vsnr/register/getlicensefile["ネットアップライセンスファイルジェネレータ"^] をクリックし、NetApp Support Siteのクレデンシャルでログインします。
+.. パスワードを入力し、製品を選択してシリアル番号を入力し、プライバシーポリシーを読み、同意したことを確認してから、 * Submit * をクリックします。
+.. 電子メールまたは直接ダウンロードで serialnumber.nlf JSON ファイルを受信するかどうかを選択します。
+
+
+. [ ライセンスの追加 ] をクリックします。
+
+
+.結果
+BlueXPはデジタルウォレットにライセンスを追加します。ライセンスは、新しい Cloud Volumes ONTAP システムに関連付けるまでは未割り当てとみなされます。その後、ライセンスはデジタルウォレットの[BYOL]タブに移動します。
+
+
+
+== ステップ7：BlueXPからCloud Volumes ONTAPを起動する
+
+BlueXPで新しい作業環境を作成することで、AWS Secret CloudおよびTop Secret CloudでCloud Volumes ONTAPインスタンスを起動できます。
+
+.作業を開始する前に
+HAペアの場合、HAメディエーターへのキーベースのSSH認証を有効にするには、キーペアが必要です。
 
 .手順
 . 作業環境ページで、 * 作業環境の追加 * をクリックします。
-. 作成（ Create ）で、 Cloud Volumes ONTAP または Cloud Volumes ONTAP HA を選択します。
+. [Create]*で、Cloud Volumes ONTAPを選択します。
++
+HAの場合：*[作成]*で、[ Cloud Volumes ONTAP ]または[ Cloud Volumes ONTAP HA]を選択します。
+
 . ウィザードの手順に従って、 Cloud Volumes ONTAP システムを起動します。
 +
+
+CAUTION: ウィザードで選択を行う場合は、*[サービス]*で*[Data Sense & Compliance]*と*[Backup to Cloud]*を選択しないでください。[Preconfigured Packages]*で[Change Configuration]* Only]を選択し、他のオプションが選択されていないことを確認します。事前設定されたパッケージはAWS Secret CloudリージョンとTop Secret Cloudリージョンではサポートされておらず、選択するとデプロイに失敗します。
+
+
+
+.複数のアベイラビリティゾーンにCloud Volumes ONTAP HAを導入する場合の注意事項
+HAペアのウィザードを実行する際は、次の点に注意してください。
+
+* 複数のアベイラビリティゾーン（AZ）にCloud Volumes ONTAP HAを導入する場合は、トランジットゲートウェイを設定する必要があります。を参照してください link:task-setting-up-transit-gateway.html["AWS 転送ゲートウェイを設定します"]。
+* 公開時点でAWS Top Secret Cloudで利用可能なAZは2つしかなかったため、次のように構成を導入します。
++
+** ノード 1 ：アベイラビリティゾーン A
+** ノード 2 ：アベイラビリティゾーン B
+** メディエーター：アベイラビリティゾーン A または B
+
+
+
+
+.シングルノードとHAノードの両方にCloud Volumes ONTAPを導入する場合の注意事項
 ウィザードを完了する際には、次の点に注意してください。
 
-+
-** 複数のアベイラビリティゾーンに Cloud Volumes ONTAP HA を導入する場合は、公開時点で AWS Commercial クラウドサービス環境で使用可能な AZ は 2 つだけだったため、次のように構成を導入します。
-+
-*** ノード 1 ：アベイラビリティゾーン A
-*** ノード 2 ：アベイラビリティゾーン B
-*** メディエーター：アベイラビリティゾーン A または B
-
-
-** 生成されたセキュリティグループを使用するには、デフォルトのオプションをそのままにしておく必要があります。
+* 生成されたセキュリティグループを使用するには、デフォルトのオプションをそのままにしておく必要があります。
 +
 事前定義されたセキュリティグループには、 Cloud Volumes ONTAP が正常に動作するために必要なルールが含まれています。独自の要件がある場合は、下のセキュリティグループのセクションを参照してください。
 
-** AWS 環境の準備の際に作成した IAM ロールを選択する必要があります。
-** 基盤となる AWS ディスクタイプは Cloud Volumes ONTAP の初期ボリューム用です。
+* AWS 環境の準備の際に作成した IAM ロールを選択する必要があります。
+* 基盤となる AWS ディスクタイプは Cloud Volumes ONTAP の初期ボリューム用です。
 +
 以降のボリュームでは、別のディスクタイプを選択できます。
 
-** AWS ディスクのパフォーマンスはディスクサイズに依存します。
+* AWS ディスクのパフォーマンスはディスクサイズに依存します。
 +
 必要なパフォーマンスを継続的に提供するディスクサイズを選択する必要があります。EBS のパフォーマンスの詳細については、 AWS のドキュメントを参照してください。
 
-** ディスクサイズは、システム上のすべてのディスクのデフォルトサイズです。
+* ディスクサイズは、システム上のすべてのディスクのデフォルトサイズです。
 +
 
 NOTE: あとでサイズを変更する必要がある場合は、 Advanced allocation オプションを使用して、特定のサイズのディスクを使用するアグリゲートを作成できます。
 
-** Storage Efficiency 機能を使用すると、ストレージ利用率を高めて、必要なストレージの総容量を減らすことができます。
-
-
 
 
 .結果
-Cloud Manager が Cloud Volumes ONTAP インスタンスを起動します。タイムラインで進行状況を追跡できます。
+Cloud Volumes ONTAP インスタンスが起動します。タイムラインで進行状況を追跡できます。
 
 
 
-== セキュリティグループのルール
+== 手順8：データ階層化用のセキュリティ証明書をインストールする
 
-Cloud Manager で作成されるセキュリティグループには、 Cloud Manager と Cloud Volumes ONTAP がクラウドで正常に動作するために必要なインバウンドとアウトバウンドのルールが含まれています。テスト目的または独自のセキュリティグループを使用する場合は、ポートを参照してください。
+AWS Secret CloudリージョンとTop Secret Cloudリージョンでデータの階層化を有効にするには、セキュリティ証明書を手動でインストールする必要があります。
 
+.作業を開始する前に
+. S3 バケットを作成する。
++
 
+NOTE: バケット名の先頭にが付いていることを確認します。 `fabric-pool-.` 例えば `fabric-pool-testbucket`。
 
-=== コネクタのセキュリティグループ
+. インストールしたルート証明書を保持します。 `step 4` 便利です。
 
-コネクタのセキュリティグループには、インバウンドとアウトバウンドの両方のルールが必要です。
 
+.手順
+. にインストールしたルート証明書からテキストをコピーします。 `step 4`。
+. CLIを使用してCloud Volumes ONTAPシステムにセキュアに接続します。
+. ルート証明書をインストールします。必要に応じて、 `ENTER` 複数回キーを押す：
++
+[listing]
+----
+security certificate install -type server-ca -cert-name <certificate-name>
+----
+. プロンプトが表示されたら、コピーしたテキスト全体を入力します。 `----- BEGIN CERTIFICATE -----` 終了： `----- END CERTIFICATE -----`。
+. あとで参照できるように、CA署名デジタル証明書のコピーを保管しておいてください。
+. CA名と証明書のシリアル番号は保持します。
+. AWS Secret CloudリージョンとTop Secret Cloudリージョン用のオブジェクトストアを設定します。 `set -privilege advanced -confirmations off`
+. オブジェクトストアを設定するには、このコマンドを実行します。
++
 
+NOTE: すべてのAmazonリソース名（ARN）にサフィックスを付加 `-iso-b`など `arn:aws-iso-b`。たとえば、リソースにリージョンを含むARNが必要な場合、Top Secret Cloudにはという命名規則を使用します。 `us-iso-b` をクリックします `-server` フラグ。AWS Secret Cloudの場合は `us-iso-b-1`。
 
-==== インバウンドルール
++
+[listing]
+----
+storage aggregate object-store config create -object-store-name <S3Bucket> -provider-type AWS_S3 -auth-type EC2-IAM -server <s3.us-iso-b-1.server_name> -container-name <fabric-pool-testbucket> -is-ssl-enabled true -port 443
+----
+. オブジェクトストアが作成されたことを確認します。 `storage aggregate object-store show -instance`
+. オブジェクトストアをアグリゲートに接続します。この処理は、新しいアグリゲートごとに繰り返す必要があります。 `storage aggregate object-store attach -aggregate <aggr1> -object-store-name <S3Bucket>`
 
-[cols="10,10,80"]
-|===
-| プロトコル | ポート | 目的 
-
-
-| SSH | 22 | コネクタホストへの SSH アクセスを提供します 
-
-
-| HTTP | 80 | クライアント Web ブラウザからローカルへの HTTP アクセスを提供します ユーザインターフェイス 
-
-
-| HTTPS | 443 | クライアント Web ブラウザからローカルへの HTTPS アクセスを提供します ユーザインターフェイス 
-|===
-
-
-==== アウトバウンドルール
-
-コネクタの事前定義されたセキュリティグループには、次のアウトバウンドルールが含まれています。
-
-[cols="20,20,60"]
-|===
-| プロトコル | ポート | 目的 
-
-
-| すべての TCP | すべて | すべての発信トラフィック 
-
-
-| すべての UDP | すべて | すべての発信トラフィック 
-|===
-
-
-=== Cloud Volumes ONTAP のセキュリティグループ
-
-Cloud Volumes ONTAP ノードのセキュリティグループには、インバウンドとアウトバウンドの両方のルールが必要です。
-
-
-
-==== インバウンドルール
-
-作業環境を作成し、事前定義されたセキュリティグループを選択する場合、次のいずれかの範囲内でトラフィックを許可するように選択できます。
-
-* *選択したVPCのみ*：インバウンドトラフィックのソースは、Cloud Volumes ONTAP システムのVPCのサブネット範囲、およびコネクタが存在するVPCのサブネット範囲です。これが推奨されるオプションです。
-* *すべてのVPC *：インバウンドトラフィックのソースは0.0.0.0/0のIP範囲です。
-
-
-[cols="10,10,80"]
-|===
-| プロトコル | ポート | 目的 
-
-
-| すべての ICMP | すべて | インスタンスの ping を実行します 
-
-
-| HTTP | 80 | クラスタ管理 LIF の IP アドレスを使用した System Manager Web コンソールへの HTTP アクセス 
-
-
-| HTTPS | 443 | クラスタ管理 LIF の IP アドレスを使用した System Manager Web コンソールへの HTTPS アクセス 
-
-
-| SSH | 22 | クラスタ管理 LIF またはノード管理 LIF の IP アドレスへの SSH アクセス 
-
-
-| TCP | 111 | NFS のリモートプロシージャコール 
-
-
-| TCP | 139 | CIFS の NetBIOS サービスセッション 
-
-
-| TCP | 161-162 | 簡易ネットワーク管理プロトコル 
-
-
-| TCP | 445 | NetBIOS フレーム同期を使用した Microsoft SMB over TCP 
-
-
-| TCP | 635 | NFS マウント 
-
-
-| TCP | 749 | Kerberos 
-
-
-| TCP | 2049 | NFS サーバデーモン 
-
-
-| TCP | 3260 | iSCSI データ LIF を介した iSCSI アクセス 
-
-
-| TCP | 4045 | NFS ロックデーモン 
-
-
-| TCP | 4046 | NFS のネットワークステータスモニタ 
-
-
-| TCP | 10000 | NDMP を使用したバックアップ 
-
-
-| TCP | 11104 | SnapMirror のクラスタ間通信セッションの管理 
-
-
-| TCP | 11105 | クラスタ間 LIF を使用した SnapMirror データ転送 
-
-
-| UDP | 111 | NFS のリモートプロシージャコール 
-
-
-| UDP | 161-162 | 簡易ネットワーク管理プロトコル 
-
-
-| UDP | 635 | NFS マウント 
-
-
-| UDP | 2049 | NFS サーバデーモン 
-
-
-| UDP | 4045 | NFS ロックデーモン 
-
-
-| UDP | 4046 | NFS のネットワークステータスモニタ 
-
-
-| UDP | 4049 | NFS rquotad プロトコル 
-|===
-
-
-==== アウトバウンドルール
-
-Cloud Volumes ONTAP 用の定義済みセキュリティグループには、次のアウトバウンドルールが含まれています。
-
-[cols="20,20,60"]
-|===
-| プロトコル | ポート | 目的 
-
-
-| すべての ICMP | すべて | すべての発信トラフィック 
-
-
-| すべての TCP | すべて | すべての発信トラフィック 
-
-
-| すべての UDP | すべて | すべての発信トラフィック 
-|===
-
-
-=== HA メディエーターの外部セキュリティグループ
-
-Cloud Volumes ONTAP HA Mediator 用に事前定義された外部セキュリティグループには、次のインバウンドルールとアウトバウンドルールが含まれています。
-
-
-
-==== インバウンドルール
-
-インバウンドルールのソースは、コネクタが存在する VPC からのトラフィックです。
-
-[cols="20,20,60"]
-|===
-| プロトコル | ポート | 目的 
-
-
-| SSH | 22 | HA メディエータへの SSH 接続 
-
-
-| TCP | 3000 | コネクタからの RESTful API アクセス 
-|===
-
-
-==== アウトバウンドルール
-
-HA Mediator 用の定義済みセキュリティグループには、次のアウトバウンドルールが含まれます。
-
-[cols="20,20,60"]
-|===
-| プロトコル | ポート | 目的 
-
-
-| すべての TCP | すべて | すべての発信トラフィック 
-
-
-| すべての UDP | すべて | すべての発信トラフィック 
-|===
-
-
-=== HA メディエーターの内部セキュリティグループ
-
-Cloud Volumes ONTAP HA Mediator 用に事前定義された内部セキュリティグループには、次のルールが含まれています。Cloud Manager は常にこのセキュリティグループを作成します。独自のオプションはありません。
-
-
-
-==== インバウンドルール
-
-事前定義されたセキュリティグループには、次の着信ルールが含まれています。
-
-[cols="20,20,60"]
-|===
-| プロトコル | ポート | 目的 
-
-
-| すべてのトラフィック | すべて | HA メディエータと HA ノード間の通信 
-|===
-
-
-==== アウトバウンドルール
-
-定義済みのセキュリティグループには、次の発信ルールが含まれます。
-
-[cols="20,20,60"]
-|===
-| プロトコル | ポート | 目的 
-
-
-| すべてのトラフィック | すべて | HA メディエータと HA ノード間の通信 
-|===

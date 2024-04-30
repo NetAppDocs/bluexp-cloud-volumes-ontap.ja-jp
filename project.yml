@@ -66,7 +66,7 @@ sidebar:
         url: "/task-set-up-licensing-aws.html"
       - title: AWS で Cloud Volumes ONTAP を起動します
         url: "/task-deploying-otc-aws.html"
-      - title: AWS C2S で作業を開始する
+      - title: AWSシークレットリージョンでのCloud Volumes ONTAPの導入
         url: "/task-getting-started-aws-c2s.html"
     - title: Microsoft Azure で利用を開始しましょう
       flavor: azure
