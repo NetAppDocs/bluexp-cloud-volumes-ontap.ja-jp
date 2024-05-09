@@ -8,6 +8,8 @@ indexpage:
       url: concept-overview-cvo.html
     - title: AWS でのクイックスタート
       url: task-getting-started-aws.html
+    - title: AWS Top Secret / Secret Cloudリージョンのクイックスタート
+      url: task-getting-started-aws-c2s.html
       flavor: aws
     - title: Azure のクイックスタート
       url: task-getting-started-azure.html

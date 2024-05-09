@@ -301,7 +301,7 @@ vserver create -vserver <svm-name> -subtype default -rootvolume <root-volume-nam
 +
 [source, cli]
 ----
-network route create -destination 0.0.0.0/0 -vserver <svm-name> -gateway <ip-of-gateway-server>
+network route create -vserver <svm-name> -destination 0.0.0.0/0 -gateway <ip-of-gateway-server>
 ----
 . データ LIF を作成します。
 +
@@ -341,7 +341,7 @@ vserver create -vserver <svm-name> -subtype default -rootvolume <root-volume-nam
 +
 [source, cli]
 ----
-network route create -destination 0.0.0.0/0 -vserver <svm-name> -gateway <ip-of-gateway-server>
+network route create -vserver <svm-name> -destination 0.0.0.0/0 -gateway <ip-of-gateway-server>
 ----
 . データ LIF を作成します。
 +
@@ -381,7 +381,7 @@ vserver create -vserver <svm-name> -subtype default -rootvolume <root-volume-nam
 +
 [source, cli]
 ----
-network route create -destination 0.0.0.0/0 -vserver <svm-name> -gateway <ip-of-gateway-server>
+network route create -vserver <svm-name> -destination 0.0.0.0/0 -gateway <ip-of-gateway-server>
 ----
 . データ LIF を作成します。
 +
@@ -430,7 +430,7 @@ vserver create -vserver <svm-name> -subtype default -rootvolume <root-volume-nam
 +
 [source, cli]
 ----
-network route create -destination 0.0.0.0/0 -vserver <svm-name> -gateway <ip-of-gateway-server>
+network route create -vserver <svm-name> -destination 0.0.0.0/0 -gateway <ip-of-gateway-server>
 ----
 . データ LIF を作成します。
 +
@@ -515,7 +515,7 @@ vserver create -vserver <svm-name> -subtype default -rootvolume <root-volume-nam
 +
 [source, cli]
 ----
-network route create -destination 0.0.0.0/0 -vserver <svm-name> -gateway <ip-of-gateway-server>
+network route create -vserver <svm-name> -destination 0.0.0.0/0 -gateway <ip-of-gateway-server>
 ----
 . データ LIF を作成します。
 +
@@ -625,7 +625,7 @@ vserver create -vserver <svm-name> -subtype default -rootvolume <root-volume-nam
 +
 [source, cli]
 ----
-network route create -destination 0.0.0.0/0 -vserver <svm-name> -gateway <ip-of-gateway-server>
+network route create -vserver <svm-name> -destination 0.0.0.0/0 -gateway <ip-of-gateway-server>
 ----
 . NAS データ LIF を作成します。
 +

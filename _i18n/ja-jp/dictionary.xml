@@ -1914,13 +1914,6 @@
   <block id="7a216ec4d6977719ed1b40a4322bfd8f" category="section-title">ライセンスの変換</block>
   <block id="7bd090ccc30738cd79592e7431dee17b" category="paragraph">別のライセンス方式に移行する場合は、ライセンスを購入し、そのライセンスを使用して新しい Cloud Volumes ONTAP システムを導入してから、その新しいシステムにデータをレプリケートできます。</block>
   <block id="170d227d215fb560bb4c8ad4e345183a" category="section-title">システムの最大数</block>
-  <block id="8e9d6d95264b6231f0a1d0ca22c087f7" category="summary">以下のガイドは、 Google Cloud で Cloud Volumes ONTAP を使用して具体的なユースケースに対応するためのガイドです。</block>
-  <block id="f22e86b63856df3737d333499d0d8642" category="inline-link-macro">Google Cloud で Cloud Volumes ONTAP を使用するには、セットアップのチュートリアルを参照してください</block>
-  <block id="a480525c508abef033c6011b6b8ae5db" category="list-text"><block ref="a480525c508abef033c6011b6b8ae5db" category="inline-link-macro-rx"></block></block>
-  <block id="85536ede959e4a62b6eeb8fa7da21b71" category="inline-link-macro">ディザスタリカバリのために、 ONTAP のオンプレミスデータを NetApp Cloud Volumes ONTAP にレプリケート</block>
-  <block id="8b26f0918bd84f8f658268af9e2d60ac" category="list-text"><block ref="8b26f0918bd84f8f658268af9e2d60ac" category="inline-link-macro-rx"></block></block>
-  <block id="ebd1806e62b51cb0c1b6db8082e0666d" category="inline-link-macro">Google Cloud に Cloud Volumes ONTAP を使用して NetApp FlexCache を導入する方法</block>
-  <block id="dd8a20d5a7875f2be225fbdc1a4c18bf" category="list-text"><block ref="dd8a20d5a7875f2be225fbdc1a4c18bf" category="inline-link-macro-rx"></block></block>
   <block id="0b92442656d83f3067193055685902c8" category="list-text">内部ロードバランサ</block>
   <block id="bed26a3b752abff1e6e50d64a46ef060" category="paragraph">クラスタ管理用のロードバランサで、 1 つは Storage VM （ SVM ）管理用、もう 1 つはノード 1 への NAS トラフィック用、もう 1 つはノード 2 への NAS トラフィック用です。</block>
   <block id="a3f8b70147487a4cbe0d1e707fb50ec9" category="paragraph">各ロードバランサの設定は次のとおりです。</block>
@@ -5248,4 +5241,5 @@ HAペアの場合、BlueXPでCloud Volumes ONTAP作業環境を作成すると�
   <block id="059ef6b8ce45a93c6445c0f41c224068" category="list-text"><block ref="059ef6b8ce45a93c6445c0f41c224068" category="inline-link-rx"></block></block>
   <block id="8d248e3b0efc80b62fc62ba57027d13f" category="admonition">AWS Secret Cloudでは、独自のIAMロールを指定する必要があります。 <block ref="af622e808f4363be4413c4e256d0f137" category="inline-link-macro-rx"></block>。</block>
   <block id="275e611a605380e34988066f6fa53eae" category="sidebar">AWSシークレットリージョンでのCloud Volumes ONTAPの導入</block>
+  <block id="3f0b36cd14ec7bfa0b4b01e076c44477" category="sidebar">AWS Top Secret / Secret Cloudリージョンのクイックスタート</block>
 </blocks>
