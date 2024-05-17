@@ -4909,8 +4909,6 @@ NetApp （ BYOL ）からライセンスを直接購入した場合、 AWS サ�
   <block id="44c305a704023f5d643a06ce08c03402" category="section-title">ネットワークの強化を有効にする</block>
   <block id="2aed0ca02213325feada0ee707489e81" category="inline-link-macro">AWS Cloud Volumes ONTAPインスタンスでSR-IOVやENAなどの拡張ネットワークを有効にする方法</block>
   <block id="489d7e740d2dd946585a03c48af8f4cf" category="paragraph">Cloud Volumes ONTAPバージョン9.8以降にアップグレードするには、c4、m4、またはr4インスタンスタイプを実行しているクラスタでenable_enhanced networking_を有効にする必要があります。ENAを有効にするには、ナレッジベースの記事を参照してください。 <block ref="a4ba9465250c8fbd5a9415056507370e" category="inline-link-macro-rx"></block>。</block>
-  <block id="4b9b39edb3e09fa20d9a66c33e754c00" category="inline-link-macro">ディスク数のエラーでインスタンスタイプをR4からr5に変更できない</block>
-  <block id="58cbae1f4fc410ea043517dc0196bed4" category="paragraph">インスタンスタイプをC4、M4、またはR4インスタンスから変更できない場合は、技術情報アーティクルを参照してください。 <block ref="ddbe8a0e687a77b95fcbe5dc93c2e464" category="inline-link-macro-rx"></block>。</block>
   <block id="f9f7c1c9687f8f087477f0ae4cac6b45" category="inline-link">Microsoft Azureのドキュメント</block>
   <block id="75640f19259f0f28da8136565db5cc22" category="admonition">NIC関連の追加タスクを実行するには、Azureで適切な権限を持つネットワーク貢献者ロールまたはカスタムロールを割り当てることができます。これらのNIC関連の権限の詳細については、を参照してください。<block ref="66f156d6b7e425dd982efc44f4fabac6" category="inline-link-rx"></block>。</block>
   <block id="2cf711540cadf3cbb4cac96dba2d9464" category="list-text">BlueXPのバックアップとリカバリを使用したボリュームバックアップは無制限ですが、Professionalパッケージを使用するCloud Volumes ONTAPシステムのみが対象です。</block>
@@ -5242,4 +5240,6 @@ HAペアの場合、BlueXPでCloud Volumes ONTAP作業環境を作成すると�
   <block id="8d248e3b0efc80b62fc62ba57027d13f" category="admonition">AWS Secret Cloudでは、独自のIAMロールを指定する必要があります。 <block ref="af622e808f4363be4413c4e256d0f137" category="inline-link-macro-rx"></block>。</block>
   <block id="275e611a605380e34988066f6fa53eae" category="sidebar">AWSシークレットリージョンでのCloud Volumes ONTAPの導入</block>
   <block id="3f0b36cd14ec7bfa0b4b01e076c44477" category="sidebar">AWS Top Secret / Secret Cloudリージョンのクイックスタート</block>
+  <block id="daa9928416a167d9b7399ff9cc7d8ca0" category="inline-link-macro">AWS Xen CVOインスタンスからNitro（KVM）への変換</block>
+  <block id="77c35fc79180e21cd19319ed21d08508" category="paragraph">インスタンスタイプをC4、M4、またはR4インスタンスから変更できない場合は、技術情報アーティクルを参照してください。 <block ref="609c7ea2ea8625480f6266b3b7e7b947" category="inline-link-macro-rx"></block>。</block>
 </blocks>
