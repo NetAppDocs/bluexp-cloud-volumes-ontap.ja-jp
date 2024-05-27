@@ -264,7 +264,7 @@ NOTE: BlueXPにアクセスしているコンピュータには、Cloud Volumes 
 
 .手順
 . 作業環境で、*[アグリゲート]*タブをクリックします。
-. アグリゲートのタイトルの下にある楕円ボタンをクリックし、*[アグリゲートの詳細の表示]*を選択します。
+. アグリゲートのタイトルの下にある省略記号ボタンをクリックし、*[アグリゲートの詳細を表示]*を選択します。
 +
 image:screenshots_aggregate_details_state.png["スクリーンショット：アグリゲートの情報を表示するときの State フィールドを表示します。"]
 
@@ -375,7 +375,7 @@ NOTE: 事前定義された Cloud Volumes ONTAP セキュリティグループ�
 ** /opt/application/netapp/cloudmanager/ontap/images/
 
 
-. BlueXPの作業環境で、*をクリックします。 （楕円アイコン）*をクリックし、* Update Cloud Volumes ONTAP *をクリックします。
+. BlueXPの作業環境で、*をクリックします。 （省略記号アイコン）*をクリックし、* Update Cloud Volumes ONTAP *をクリックします。
 . [Update Cloud Volumes ONTAP version]ページで、URLを入力し、*[Change Image]*をクリックします。
 +
 上の図のパスにあるコネクタにソフトウェアイメージをコピーした場合は、次の URL を入力します。
