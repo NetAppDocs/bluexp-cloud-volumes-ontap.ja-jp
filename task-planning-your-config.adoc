@@ -36,6 +36,20 @@ Cloud Volumes ONTAP はほとんどの AWS リージョンでサポートされ�
 
 
 
+=== サポートされるローカルゾーンの選択
+
+Cloud Volumes ONTAPは、シンガポールを含む一部のAWSローカルゾーンでサポートされています。ローカルゾーンの選択はオプションです。
+
+link:https://aws.amazon.com/about-aws/global-infrastructure/localzones/locations/?nc=sn&loc=3["ローカルゾーンの完全なリストを表示する"^]。
+ローカルゾーンでリソースを作成および管理するには、ローカルゾーンを有効にする必要があります。
+
+link:https://aws.amazon.com/tutorials/deploying-low-latency-applications-with-aws-local-zones/["ローカルゾーンを有効にする方法"^]。
+
+
+NOTE: Phoenixはサポートされているローカルゾーンではありません。
+
+
+
 == サポートされているインスタンスを選択します
 
 Cloud Volumes ONTAP では、選択したライセンスタイプに応じて、複数のインスタンスタイプがサポートされます。

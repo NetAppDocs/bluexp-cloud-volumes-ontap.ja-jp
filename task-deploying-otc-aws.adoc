@@ -304,6 +304,15 @@ AWSでCloud Volumes ONTAP HAペアを起動するには、BlueXPでHA作業環�
 . 左側のナビゲーションメニューから、* Storage > Canvas *を選択します。
 . Canvas ページで、 * Add Working Environment * をクリックし、画面の指示に従います。
 . *場所を選択*：「* Amazon Web Services *」と「* Cloud Volumes ONTAP HA *」を選択します。
++
+一部のAWSローカルゾーンを使用できます。
+
++
+AWSローカルゾーンを使用する前に、ローカルゾーンを有効にし、AWSアカウントのローカルゾーンでサブネットを作成する必要があります。の*[Opt in to an AWS Local Zone]*および*[Extend your Amazon VPC to the Local Zone]*の手順に従います。 link:https://aws.amazon.com/tutorials/deploying-low-latency-applications-with-aws-local-zones/["AWSチュートリアル「Get Started Deploying Low Latency Applications with AWS Local Zones」"^]。
+
++
+コネクタバージョン3.9.36以前を実行している場合は、AWS EC2コンソールのAWSコネクタロールにDescribeAvailabilityZones権限を追加する必要があります。
+
 . * 詳細とクレデンシャル * ：必要に応じて、 AWS のクレデンシャルとサブスクリプションを変更し、作業環境名を入力してタグを追加し、パスワードを入力します。
 +
 このページの一部のフィールドは、説明のために用意されています。次の表では、ガイダンスが必要なフィールドについて説明します。

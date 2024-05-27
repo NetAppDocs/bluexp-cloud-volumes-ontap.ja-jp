@@ -20,6 +20,18 @@ BlueXPのCloud Volumes ONTAP Managementの新機能をご紹介します。
 
 
 
+== 2024年5月17日
+
+
+
+=== Amazon Web Servicesのローカルゾーンのサポート
+
+Cloud Volumes ONTAP HA環境でAWSローカルゾーンがサポートされるようになりました。AWSローカルゾーンは、ストレージ、コンピューティング、データベース、その他の一部のAWSサービスが大都市や業界の近くに配置されているインフラ環境です。
+
+HA環境でのAWSローカルゾーンの詳細については、を参照してください。 link:https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-ha.html#aws-local-zones["AWSローカルゾーン"^]。
+
+
+
 == 2024年4月23日
 
 
