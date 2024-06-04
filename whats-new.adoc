@@ -28,6 +28,9 @@ BlueXPのCloud Volumes ONTAP Managementの新機能をご紹介します。
 
 Cloud Volumes ONTAP HA環境でAWSローカルゾーンがサポートされるようになりました。AWSローカルゾーンは、ストレージ、コンピューティング、データベース、その他の一部のAWSサービスが大都市や業界の近くに配置されているインフラ環境です。
 
+
+NOTE: AWSのローカルゾーンは、BlueXPを標準モードで使用している場合にサポートされます。現時点では、BlueXPを制限モードまたはプライベートモードで使用している場合、AWSローカルゾーンはサポートされていません。
+
 HA環境でのAWSローカルゾーンの詳細については、を参照してください。 link:https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-ha.html#aws-local-zones["AWSローカルゾーン"^]。
 
 

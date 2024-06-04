@@ -5273,7 +5273,6 @@ HAペアの場合、BlueXPでCloud Volumes ONTAP作業環境を作成すると�
   <block id="6d79fc3df77a055abb0043c41477add1" category="paragraph">一部のAWSローカルゾーンを使用できます。</block>
   <block id="b40c89ea76edb69b0a84d7a6a1be7455" category="inline-link-macro">AWSチュートリアル「Get Started Deploying Low Latency Applications with AWS Local Zones」</block>
   <block id="f8945f9c0b29d6212c5c9654ff1b7ed3" category="paragraph">AWSローカルゾーンを使用する前に、ローカルゾーンを有効にし、AWSアカウントのローカルゾーンでサブネットを作成する必要があります。の*[Opt in to an AWS Local Zone]*および*[Extend your Amazon VPC to the Local Zone]*の手順に従います。 <block ref="08374900627773b5f0e169d9824fde8a" category="inline-link-macro-rx"></block>。</block>
-  <block id="c0d8b980523f619bb9dff8ef93a968c9" category="paragraph">コネクタバージョン3.9.36以前を実行している場合は、AWS EC2コンソールのAWSコネクタロールにDescribeAvailabilityZones権限を追加する必要があります。</block>
   <block id="188fd7f75e50a8a882a75c15dcb630a1" category="section-title">2024年5月17日</block>
   <block id="b3e67e9d7f5be7902fd87917d0acb3e0" category="section-title">Amazon Web Servicesのローカルゾーンのサポート</block>
   <block id="6f9fa4d02a6081aa6d33b131d8532328" category="paragraph">Cloud Volumes ONTAP HA環境でAWSローカルゾーンがサポートされるようになりました。AWSローカルゾーンは、ストレージ、コンピューティング、データベース、その他の一部のAWSサービスが大都市や業界の近くに配置されているインフラ環境です。</block>
@@ -5283,4 +5282,6 @@ HAペアの場合、BlueXPでCloud Volumes ONTAP作業環境を作成すると�
   <block id="10e3d4119b538d4a3b1943da285229fc" category="admonition">一部のゾーンでは、使用可能なEBSディスクタイプはgp2のみです。</block>
   <block id="0c14d315376234aa666bf4213aa88aec" category="list-text">T3マイクロ</block>
   <block id="5dde3a7c362c6b03a35cf3c0b3374d14" category="list-text">8GiBと4GiBのst1ディスク×2</block>
+  <block id="d3f932730561572a0dc4f8911dc7b758" category="paragraph">コネクタバージョン3.9.36以前を実行している場合は、AWS EC2コンソールのAWSコネクタロールにDescribeAvailabilityZones権限を追加する必要があります。</block>
+  <block id="d4cffcdfb4fe4fc69dc234950d0f4151" category="admonition">AWSのローカルゾーンは、BlueXPを標準モードで使用している場合にサポートされます。現時点では、BlueXPを制限モードまたはプライベートモードで使用している場合、AWSローカルゾーンはサポートされていません。</block>
 </blocks>
