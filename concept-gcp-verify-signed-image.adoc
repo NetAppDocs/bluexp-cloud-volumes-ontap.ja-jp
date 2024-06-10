@@ -28,7 +28,7 @@ summary: Cloud Volumes ONTAP イメージダイジェストファイルツール
 ** 公開鍵（.pem）を含む証明書
 ** 証明書チェーン（.pem）
 +
-image:screenshot_cloud_volumes_ontap_tar.gz.png["ダイジェストファイルtar.gzがダウンロードされるNSSページを示すイメージ"]
+image::screenshot_cloud_volumes_ontap_tar.gz.png[Cloud Volumes ONTAPのスクリーンショットtar.gz]
 
 
 
@@ -40,7 +40,7 @@ image:screenshot_cloud_volumes_ontap_tar.gz.png["ダイジェストファイルt
 ** ダウンロードしたdisk.rawファイルのダイジェストを作成します
 ** 2つのダイジェストファイルを比較して検証します
 +
-image:graphic_azure_check_signature.png["画像署名検証プロセスを示す画像"]
+image::graphic_azure_check_signature.png[Azureチェックシグネチャのグラフィック]
 
 
 

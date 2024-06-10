@@ -1,0 +1,68 @@
+---
+sidebar: sidebar 
+permalink: task-file-verification-mac.html 
+keywords: Azure, image, VHD, file signature verification, encryption, sha256, ONTAP, Cloud Volumes, CLI, Mac OS 
+summary: Mac OSのCloud Volumes ONTAPイメージダイジェストファイルツールを使用して、エクスポートしたVHDファイルの署名を確認します。 
+---
+= Mac OSでのファイル署名の検証
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+エクスポートしたVHDファイルの署名をMac OSで確認するには、次の手順に従います。
+
+.手順
+. からAzure Image Digestファイルをダウンロードします。 https://mysupport.netapp.com/site/["NetApp Support Site"^] そして、ダイジェストファイル（.sig）、公開鍵証明書ファイル（.pem）、チェーン証明書ファイル（.pem）を展開します。
++
+を参照してください https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-azure-download-digest-file.html["Azureイメージダイジェストファイルをダウンロード"^] を参照してください。
+
+. 信頼チェーンを検証します。
++
+[listing]
+----
+% openssl verify -CAfile Certificate-Chain-9.15.0P1_azure.pem Certificate-9.15.0P1_azure.pem
+Certificate-9.15.0P1_azure.pem: OK
+----
+. 先頭の1MB（1048576バイト）と末尾の512バイトのVHDファイルを削除します。
++
+'taile'を使用した場合、オプション'-c + K'はKTHバイトから始まるバイトを出力します。
+をクリックします。したがって、1048577は'tail -c'に渡されます。所要時間は約13mです。
+Mac OSでtailコマンドを完了します。
+
++
+[listing]
+----
+% tail -c +1048577 ./9150.01000024.05090105.vhd > ./sign.tmp.tail
+% head -c -512 ./sign.tmp.tail > sign.tmp
+% rm ./sign.tmp.tail
+----
+. opensslを使用して証明書から公開鍵を抽出し、
+署名ファイルと公開鍵を含むファイル（sign.tmp）。
++
+入力ファイルが検証に合格すると、コマンドは「検証OK」と表示されます。
+それ以外の場合は、「Verification Failure」と表示されます。
+
++
+[listing]
+----
+% openssl x509 -pubkey -noout -in ./Certificate-9.15.0P1_azure.pem > ./Code-Sign-Cert-Public-key.pub
+
+% openssl dgst -verify Code-Sign-Cert-Public-key.pub -keyform PEM -sha256 -signature digest.sig -binary ./sign.tmp
+Verified OK
+
+% openssl dgst -verify Code-Sign-Cert-Public-key.pub -keyform PEM -sha256 -signature digest.sig -binary ./another_file_from_nowhere.tmp
+Verification Failure
+----
+. ワークスペースをクリーンアップします。
++
+[listing]
+----
+% rm ./9150.01000024.05090105.vhd ./sign.tmp
+% rm *.sig *.pub *.pem
+----
+

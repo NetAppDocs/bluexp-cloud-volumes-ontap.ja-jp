@@ -4,7 +4,7 @@ permalink: reference-versions.html
 keywords: versions, supported versions, new versions, cloud volumes ontap version 
 summary: 'BlueXPでは"新しいCloud Volumes ONTAP 作業環境を作成するときに"いくつかの異なるONTAP バージョンから選択できます' 
 ---
-= 新規導入でサポートされるバージョン
+= 新規導入でサポートされるONTAPのバージョン
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -16,7 +16,7 @@ summary: 'BlueXPでは"新しいCloud Volumes ONTAP 作業環境を作成する�
 [role="lead"]
 BlueXPでは'新しいCloud Volumes ONTAP 作業環境を作成するときに'いくつかの異なるONTAP バージョンから選択できます
 
-それ以外のCloud Volumes ONTAP バージョンは、新規導入ではサポートされません。
+ここに記載されている以外のCloud Volumes ONTAPバージョンは、新規導入では使用できません。アップグレードの詳細については、を参照してください。 link:task-updating-ontap-cloud.html#supported-upgrade-paths["サポートされているアップグレードパス"]。
 
 ifdef::aws[]
 
@@ -27,6 +27,7 @@ ifdef::aws[]
 シングルノード::
 +
 --
+* 9.15.0 P1
 * 9.14.1 GA
 * 9.14.1 RC1
 * 9.14.0 GA
@@ -46,6 +47,7 @@ ifdef::aws[]
 HA ペア::
 +
 --
+* 9.15.0 P1
 * 9.14.1 GA
 * 9.14.1 RC1
 * 9.14.0 GA
@@ -75,6 +77,7 @@ ifdef::azure[]
 シングルノード::
 +
 --
+* 9.15.0 P1
 * 9.14.1 GA
 * 9.14.1 RC1
 * 9.14.0 GA
@@ -94,6 +97,7 @@ ifdef::azure[]
 HA ペア::
 +
 --
+* 9.15.0 P1
 * 9.14.1 GA
 * 9.14.1 RC1
 * 9.14.0 GA
@@ -122,6 +126,7 @@ ifdef::gcp[]
 シングルノード::
 +
 --
+* 9.15.0 P1
 * 9.14.1 GA
 * 9.14.1 RC1
 * 9.14.0 GA
@@ -140,6 +145,7 @@ ifdef::gcp[]
 HA ペア::
 +
 --
+* 9.15.0 P1
 * 9.14.1 GA
 * 9.14.1 RC1
 * 9.14.0 GA

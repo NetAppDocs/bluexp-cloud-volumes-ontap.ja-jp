@@ -1,0 +1,30 @@
+---
+sidebar: sidebar 
+permalink: concept-azure-image-verification.html 
+keywords: Azure, image, VHD, image signature file, 
+summary: Azure VHDイメージファイルのシグネチャファイルを確認します。 
+---
+= Azureイメージの検証の概要
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Azureイメージ検証は、強化されたNetAppセキュリティ要件に準拠しています。イメージファイルの検証は簡単なプロセスですが、Azure Marketplaceによる変更のため、Azureイメージシグネチャの検証には既知のAzure VHDイメージファイルへの特別な処理が必要です。
+
+
+NOTE: Azureイメージの検証は、Cloud Volumes ONTAPソフトウェアバージョン9.15.0以降でサポートされます。
+
+
+
+== Azureによる公開VHDファイルの変更
+
+先頭の1MB（1、048576バイト）と末尾の512バイトのVHDファイルがAzureによって変更されます。NetAppイメージ署名では、先頭の1MBと末尾の512バイトがスキップされ、残りのVHDイメージ部分に署名されます。
+
+image:screenshot_azure_vhd_10gb.png["Azureで10GBのVHDファイルが切り替わる様子を示す図"]
+
+例として、上の図は10GBのVHDファイルを示しています。ただし、NetApp署名部分は緑色で表示され、サイズは10GB~1MB-512Bです。

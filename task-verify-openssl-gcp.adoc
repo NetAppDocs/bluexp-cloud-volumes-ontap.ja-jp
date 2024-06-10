@@ -22,7 +22,7 @@ NOTE: イメージがLinux、Mac OS、およびWindowsマシンと互換性が�
 .手順
 . OpenSSLを使用して証明書を確認します。
 +
-.をクリックしてスクリプトを表示します
+.クリックして表示
 [%collapsible]
 ====
 [listing]
@@ -133,7 +133,7 @@ Certificate-GCP-CVO-20230119-0XXXXX.pem: OK
 . OpenSSLを使用して証明書から公開鍵を抽出します。
 . 抽出した公開鍵を使用して署名を復号化し、ダウンロードしたdisk.rawファイルの内容を確認します。
 +
-.をクリックしてスクリプトを表示します
+.クリックして表示
 [%collapsible]
 ====
 [listing]

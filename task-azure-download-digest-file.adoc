@@ -1,0 +1,48 @@
+---
+sidebar: sidebar 
+permalink: task-azure-download-digest-file.html 
+keywords: Azure, image, image signature, download, digest file, decompress, Linux, Mac OS, md5, sha256 
+summary: AzureイメージダイジェストファイルはNetApp Support Siteからダウンロードできます。 
+---
+= Azureイメージダイジェストファイルをダウンロード
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Azureイメージダイジェストファイルは、 https://mysupport.netapp.com/site/["NetApp Support Site"^]。ダウンロードはtar.gz形式で、画像署名検証用のファイルが含まれています。
+
+.手順
+. にアクセスします https://mysupport.netapp.com/site/products/all/details/cloud-volumes-ontap/guideme-tab["NetApp Support SiteのCloud Volumes ONTAP製品ページ"^] ダウンロードセクションの下に目的のソフトウェアバージョンをダウンロードします。
+. Cloud Volumes ONTAPのダウンロードページで、Azureイメージダイジェストファイルの*ダウンロードボタン*をクリックしてTARをダウンロードします。 GZファイル。
++
+image::screenshot_cloud_volumes_ontap_tar.gz.png[Cloud Volumes ONTAPのスクリーンショットtar.gz]
+
+. LinuxおよびMacOSの場合、ダウンロードしたAzureイメージダイジェストファイルのmd5sumとsha256sumを取得するには、次の手順を実行する必要があります。
++
+.. md5sumの場合は、 `md5sum` コマンドを実行します
+.. sha256sumの場合は、 `sha256sum` コマンドを実行します
+
+
+. を確認します `md5sum` および `sha256sum` 値はAzureイメージダイジェストファイルのダウンロードと一致します。
+. LinuxおよびMac OSの場合は、 `tar -xzf` コマンドを使用してtar.gzファイルを展開します。
++
+抽出されたTAR。 GZファイルには、ダイジェストファイル（.sig）、公開鍵証明書ファイル（.pem）、チェーン証明書ファイル（.pem）が含まれます。
+
++
+* untar tar.gzファイルの結果をリストします*
+
++
+[listing]
+----
+$ ls cert/ -l
+-rw-r----- 1 netapp netapp  384 May  13 13:00 9.15.0P1_azure_digest.sig
+-rw-r----- 1 netapp netapp 2365 May  13 13:00 Certificate-9.15.0P1_azure.pem
+-rw-r----- 1 netapp netapp 8537 May  13 13:00 Certificate-Chain-9.15.0P1_azure.pem
+-rw-r----- 1 netapp netapp 8537 May  13 13:00 version_readme
+----
+

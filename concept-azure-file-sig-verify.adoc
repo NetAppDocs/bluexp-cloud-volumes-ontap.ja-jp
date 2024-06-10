@@ -1,0 +1,48 @@
+---
+sidebar: sidebar 
+permalink: concept-azure-file-sig-verify.html 
+keywords: Azure, image, VHD, file signature verification, encryption, sha256, ONTAP, Cloud Volumes, CLI, 
+summary: Cloud Volumes ONTAPイメージダイジェストファイルツールを使用して、エクスポートされたVHDファイルの署名を確認する方法について説明します。 
+---
+= ファイル署名の検証
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Azureイメージ検証プロセスでは、先頭に1MB、末尾に512Bのハッシュ関数を使用してストライプされたVHDファイルからダイジェストが生成されます。署名手順と照合するために、SHA256を使用してハッシュが作成されます。先頭の1MBと末尾の512BをVHDファイルから削除し、VHDファイルの残りの部分を確認する必要があります。
+
+
+
+== ファイル署名検証ワークフローの概要
+
+次に、ファイル署名検証のワークフロープロセスの概要を示します。
+
+image::graphic_azure_check_signature.png[Azureチェックシグネチャのグラフィック]
+
+* からAzure Image Digestファイルをダウンロードします。 https://mysupport.netapp.com/site/["NetApp Support Site"^] そして、ダイジェストファイル（.sig）、公開鍵証明書ファイル（.pem）、チェーン証明書ファイル（.pem）を展開します。
++
+を参照してください https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-azure-download-digest-file.html["Azureイメージダイジェストファイルをダウンロード"^] を参照してください。
+
+* 信頼チェーンを検証します。
+* 公開鍵証明書（.pem）から公開鍵（.pub）を抽出します。
+* 抽出された公開鍵は、ダイジェストファイルの復号化に使用されます。結果は、画像ファイルから作成された一時ファイルの新しい暗号化されていないダイジェストと比較され、先頭の1MBと末尾の512バイトが削除されます。
++
+この手順は、次のopensslコマンドを使用して実行します。
+
++
+** 一般的なCLI文は次のように表示されます。
++
+[listing]
+----
+openssl dgst -verify <public_key> -keyform <form> <hash_function>
+-signature <digest_file> -binary <temporary_file>
+----
+** OpenSSL CLIツールでは、両方のファイルが一致する場合は「Verified OK」メッセージが表示され、一致しない場合は「Verification Failure」というメッセージが表示されます。
+
+
+

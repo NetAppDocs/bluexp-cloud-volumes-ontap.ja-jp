@@ -43,7 +43,7 @@ Cloud Storageにイメージをエクスポートする場合は、を使用す�
 
 * gcloud *を使用してGoogle Cloudイメージをエクスポートします
 
-.をクリックしてスクリプトを表示します
+.クリックして表示
 [%collapsible]
 ====
 [source]

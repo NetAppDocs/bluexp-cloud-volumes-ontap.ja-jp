@@ -20,6 +20,18 @@ BlueXPのCloud Volumes ONTAP Managementの新機能をご紹介します。
 
 
 
+== 2024年6月10日
+
+
+
+=== Cloud Volumes ONTAP 9.15.0
+
+BlueXPで、AWS、Azure、Google CloudにCloud Volumes ONTAP 9.15.0を導入して管理できるようになりました。
+
+link:https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/["このリリースのに含まれる新機能について説明します Cloud Volumes ONTAP"^]。
+
+
+
 == 2024年5月17日
 
 
@@ -149,6 +161,8 @@ link:https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-config
 
 BlueXPで、AWS、Azure、Google CloudにCloud Volumes ONTAP 9.14.1を導入、管理できるようになりました。
 
+link:https://docs.netapp.com/us-en/cloud-volumes-ontap-9141-relnotes/["このリリースのに含まれる新機能について説明します Cloud Volumes ONTAP"^]。
+
 
 
 === 最大300TiBのFlexVolボリューム
@@ -274,7 +288,7 @@ Azureの次のリージョンでは、Cloud Volumes ONTAP 9.12.1 GA以降で可�
 
 BlueXPで、AWS、Azure、Google CloudにCloud Volumes ONTAP 9.14.0 General Availabilityリリースを導入、管理できるようになりました。
 
-link:https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/["このリリースのに含まれる新機能について説明します Cloud Volumes ONTAP"^]。
+link:https://docs.netapp.com/us-en/cloud-volumes-ontap-9140-relnotes/["このリリースのに含まれる新機能について説明します Cloud Volumes ONTAP"^]。
 
 
 
@@ -341,7 +355,7 @@ link:https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-deploying-gcp
 
 BlueXPで、AWS、Azure、Google CloudにCloud Volumes ONTAP 9.13.1 General Availabilityリリースを導入、管理できるようになりました。
 
-link:https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/["このリリースのに含まれる新機能について説明します Cloud Volumes ONTAP"^]。
+link:https://docs.netapp.com/us-en/cloud-volumes-ontap-9131-relnotes/["このリリースのに含まれる新機能について説明します Cloud Volumes ONTAP"^]。
 
 
 
@@ -377,7 +391,7 @@ Cloud Volumes ONTAPを使用したARPの詳細については、を参照して�
 
 BlueXPで、AWS、Azure、Google CloudにCloud Volumes ONTAP 9.13.1を導入、管理できるようになりました。
 
-https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes["このリリースのに含まれる新機能について説明します Cloud Volumes ONTAP"^]。
+https://docs.netapp.com/us-en/cloud-volumes-ontap-9131-relnotes["このリリースのに含まれる新機能について説明します Cloud Volumes ONTAP"^]。
 
 
 
@@ -525,7 +539,7 @@ Cloud Volumes ONTAP 9.12.1 GA以降では、次のように中国リージョン
 
 BlueXPで、AWS、Azure、Google CloudにCloud Volumes ONTAP 9.13.0を導入、管理できるようになりました。
 
-https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes["このリリースのに含まれる新機能について説明します Cloud Volumes ONTAP"^]。
+https://docs.netapp.com/us-en/cloud-volumes-ontap-9130-relnotes["このリリースのに含まれる新機能について説明します Cloud Volumes ONTAP"^]。
 
 
 
@@ -638,7 +652,7 @@ https://docs.netapp.com/us-en/cloud-volumes-ontap-9120-relnotes["このリリー
 
 BlueXPでは、Cloud Volumes ONTAP 9.12.1を導入および管理できるようになりました。新機能やその他のクラウドプロバイダリージョンのサポートが含まれます。
 
-https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes["このリリースのに含まれる新機能について説明します Cloud Volumes ONTAP"^]
+https://docs.netapp.com/us-en/cloud-volumes-ontap-9121-relnotes["このリリースのに含まれる新機能について説明します Cloud Volumes ONTAP"^]
 
 
 
