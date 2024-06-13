@@ -2035,7 +2035,6 @@
   <block id="56d8602584b412c6fa4268dd3cbf0ccb" category="section-title">データ暗号化の概要</block>
   <block id="a9048454eade4a62fb2113428b74129f" category="paragraph">Cloud Volumes ONTAP データは、を使用して Azure で自動的に暗号化されます<block ref="7c6c7ca9180a9433e704ac02b33a8ed3" category="inline-link-rx"></block>。デフォルトの実装では、 Microsoft が管理するキーが使用されます。セットアップは必要ありません。</block>
   <block id="15a37269c447b60002a307d0f82d2bd4" category="paragraph">Cloud Volumes ONTAP で顧客管理キーを使用する場合は、次の手順を実行する必要があります。</block>
-  <block id="82d5594584c34cedea52f390f69b9b89" category="list-text">Azure で、キーヴォールトを作成し、そのヴォールトでキーを生成します</block>
   <block id="7c198fa2e871a635fde91e3430fc340b" category="section-title">キーローテーション</block>
   <block id="552690dff240721c335dffa2d29b8ef8" category="paragraph">キーの新しいバージョンを作成すると、 Cloud Volumes ONTAP では自動的に最新のキーバージョンが使用されます。</block>
   <block id="0ea67820edee1410e568b14bb70835d0" category="section-title">データの暗号化方法</block>
@@ -3278,7 +3277,6 @@
   <block id="8e2921a1922b2a0ecfbeec5648e2a4ab" category="cell">BlueXPによって設定された値</block>
   <block id="9f3e8e28b8288d2d66ebc481e1f389d6" category="paragraph">ユーザデータ用のストレージに加えて、BlueXPはシステムデータ用のクラウドストレージも購入します。</block>
   <block id="9c70722de73077ea88b96befb7d1076b" category="paragraph">BlueXPでは'次のようにストレージが配置されます</block>
-  <block id="ec0c586d512637babfaca236d1a1cc87" category="list-text">BlueXPから'APIを使用して'キーを使用するCloud Volumes ONTAP 作業環境を作成します</block>
   <block id="cf7451c571bdcd94b5852c9167fbb885" category="paragraph">キーヴォールトを作成して暗号化キーを生成したら、そのキーを使用するように設定した新しい Cloud Volumes ONTAP システムを作成できます。これらの手順は、BlueXP APIを使用してサポートされています。</block>
   <block id="2a709f4373163ddbd1d13389c553a2eb" category="paragraph">シングルノードのCloud Volumes ONTAP システムで顧客管理キーを使用する場合は、BlueXP Connectorに次の権限があることを確認します。</block>
   <block id="8be0344d53e72ba6b33ee561546d42ef" category="list-text">次のBlueXP API呼び出しを使用して、Azureサブスクリプション内の主要なボルトのリストを取得します。</block>
@@ -3633,7 +3631,6 @@
   <block id="56fe439ee061f5bc2e940368c1d73fa3" category="section-title">BlueXPは、Cloud Volumes ONTAP でS3をサポートしていません</block>
   <block id="9832e39264a34e4e40dca8449efd019e" category="section-title">BlueXPでは、Storage VMのディザスタリカバリはサポートされていません</block>
   <block id="d59db7846bd10b6d60d21543df9faa9e" category="list-title">必要なもの</block>
-  <block id="d01b00b7df0dd6620e8ab49fb88f67b9" category="list-text">* Azure Disk Encryption for Volume Encryption *（シングルノードシステムの場合、または複数のゾーンのHAペアの場合）</block>
   <block id="d1432d772b2382ef2395e1eed551d5bb" category="paragraph-title">必要なGoogle Cloud権限</block>
   <block id="675d38d552c49bbf67606b2c5f1d5bed" category="section-title">Flash Cacheとは</block>
   <block id="78d0efd6b2c71cba47286de0ff16747c" category="paragraph-title"><block ref="58f667aaf05f87159670e12bd9bc076b" category="inline-image-macro-rx" type="image"></block> コネクタを作成します</block>
@@ -5399,4 +5396,6 @@ Mac OSでtailコマンドを完了します。</block>
   <block id="c803b37d9c2a34c73d0b86de8cae9ac8" category="paragraph"><block ref="c803b37d9c2a34c73d0b86de8cae9ac8" category="inline-link-rx"></block></block>
   <block id="bbe2b5062d2c900ca465f9eb12592a92" category="paragraph">セキュリティポリシーで必要な場合は、IMDSv2を使用するようにEC2インスタンスを設定できます。手順については、を参照してください<block ref="a1765820625d1912b35ab79a3305fdea" category="inline-link-rx"></block>。</block>
   <block id="59232a2e0b92b4018a48415d0d13c3b4" category="list-text"><block ref="59232a2e0b92b4018a48415d0d13c3b4" category="inline-link-rx"></block></block>
+  <block id="312fcba055a7ab6b8314cb541c1f1b4f" category="list-text">* Azure Disk Encryptionでボリュームを暗号化*（シングルノードシステム、複数ゾーンのHAペア、HA単一AZ環境）</block>
+  <block id="4b63d3239df3134d1faedabb0e8eb859" category="admonition">Azureのお客様が管理する暗号化キーを使用するには、キーヴォールトでAzure Diskの暗号化が有効になっている必要があります。</block>
 </blocks>

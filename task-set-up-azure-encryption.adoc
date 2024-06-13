@@ -24,7 +24,7 @@ Cloud Volumes ONTAP データは、を使用して Azure で自動的に暗号�
 
 Cloud Volumes ONTAP で顧客管理キーを使用する場合は、次の手順を実行する必要があります。
 
-. Azure で、キーヴォールトを作成し、そのヴォールトでキーを生成します
+. Azure で、キーヴォールトを作成し、そのヴォールトでキーを生成します。
 . BlueXPから'APIを使用して'キーを使用するCloud Volumes ONTAP 作業環境を作成します
 
 
@@ -144,7 +144,11 @@ Cloud Volumes ONTAP 用のすべての Azure ストレージアカウントは�
 +
 *** * Soft -delete * （このオプションはデフォルトで有効ですが、 DISABLE_NOT BE 無効にする必要があります）
 *** * パージ保護 *
-*** * Azure Disk Encryption for Volume Encryption *（シングルノードシステムの場合、または複数のゾーンのHAペアの場合）
+*** * Azure Disk Encryptionでボリュームを暗号化*（シングルノードシステム、複数ゾーンのHAペア、HA単一AZ環境）
++
+
+NOTE: Azureのお客様が管理する暗号化キーを使用するには、キーヴォールトでAzure Diskの暗号化が有効になっている必要があります。
+
 
 
 ** ユーザが割り当てた管理IDを作成した場合は、次のオプションを有効にする必要があります。
