@@ -54,7 +54,7 @@ https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-limits-azur
 
 Cloud Volumes ONTAP システムのサイジングを行うことで、パフォーマンスと容量の要件を満たすのに役立ちます。VM タイプ、ディスクタイプ、およびディスクサイズを選択する際には、次の点に注意してください。
 
-仮想マシンのタイプ:: でサポートされている仮想マシンタイプを確認します http://docs.netapp.com/cloud-volumes-ontap/us-en/index.html["Cloud Volumes ONTAP リリースノート"^] サポートされている各 VM タイプの詳細を確認します。各 VM タイプがサポートするデータディスクの数には制限があることに注意してください。
+仮想マシンのタイプ:: でサポートされている仮想マシンタイプを確認します https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/index.html["Cloud Volumes ONTAP リリースノート"^] サポートされている各 VM タイプの詳細を確認します。各 VM タイプがサポートするデータディスクの数には制限があることに注意してください。
 +
 --
 * https://docs.microsoft.com/en-us/azure/virtual-machines/linux/sizes-general#dsv2-series["Azure のドキュメント：「汎用仮想マシンのサイズ"^]

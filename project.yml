@@ -295,7 +295,7 @@ sidebar:
       url: "/concept-performance.html"
     - title: ノードベースの BYOL の管理
       url: "/concept-license-management.html"
-    - title: AutoSupport と Active IQ デジタルアドバイザ
+    - title: AutoSupportとデジタルアドバイザ
       url: "/concept-active-iq.html"
     - title: デフォルト設定
       url: "/reference-default-configs.html"

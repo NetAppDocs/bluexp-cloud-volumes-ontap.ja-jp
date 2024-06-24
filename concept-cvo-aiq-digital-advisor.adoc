@@ -1,10 +1,10 @@
 ---
 sidebar: sidebar 
 permalink: concept-cvo-aiq-digital-advisor.html 
-keywords: concepts, active iq digital advisor, cloud volumes ontap, cloud manager, BlueXP 
-summary: 'Active IQ デジタルアドバイザは"BlueXP UIに統合されているため"1つの画面でONTAP クラスタの操作"セキュリティ"パフォーマンスを最適化できます' 
+keywords: concepts, digital advisor, cloud volumes ontap, cloud manager, BlueXP 
+summary: Digital AdvisorはBlueXP UIに統合されているため、ONTAPクラスタの運用、セキュリティ、パフォーマンスを単一のコンソールで最適化できます。 
 ---
-= Active IQ デジタルアドバイザを使用して Cloud Volumes ONTAP システムを最適化します
+= デジタルアドバイザを使用してCloud Volumes ONTAPシステムを最適化
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,13 +14,13 @@ summary: 'Active IQ デジタルアドバイザは"BlueXP UIに統合されて�
 
 
 [role="lead"]
-https://www.netapp.com/services/support/active-iq/["Active IQ デジタルアドバイザ"] はBlueXP UIに統合されているため、Cloud Volumes ONTAP システムの運用、セキュリティ、パフォーマンスを単一のコンソールで最適化できます。
+https://www.netapp.com/services/support/active-iq/["Active IQ デジタルアドバイザ"] （デジタルアドバイザとも呼ばれます）はBlueXP UIに統合されているため、Cloud Volumes ONTAPシステムの運用、セキュリティ、パフォーマンスを単一のコンソールで最適化できます。
 
 
 
 == の機能
 
-Active IQ デジタルアドバイザを使用すると、ストレージシステムの全体的なステータス、システムの健全性に関する概要情報、インベントリ、計画、監視リストレベルの価値ある分析情報を確認できます。
+Digital Advisorを使用して、ストレージシステムの全体的なステータス、システムの健全性に関する概要情報、インベントリ、計画、および監視リストレベルの貴重な分析情報を表示できます。
 
 * ストレージシステムの健常性を分析し、最適化できます
 * ストレージシステムのすべてのリスクと、リスクを軽減するための対処方法に関する分析情報を取得できます
@@ -32,7 +32,7 @@ Active IQ デジタルアドバイザを使用すると、ストレージシス�
 
 == サポート対象の ONTAP システム
 
-Cloud Volumes ONTAP デジタルアドバイザは、 NSS アカウント内のすべてのオンプレミス ONTAP システムと Active IQ システムに関する情報を提供します。
+Digital Advisorは、NSSアカウント内のすべてのオンプレミスONTAP システムとCloud Volumes ONTAP システムに関する情報を提供します。
 
 
 
@@ -42,17 +42,17 @@ Cloud Volumes ONTAP デジタルアドバイザは、 NSS アカウント内の�
 
 
 
-== Active IQ Digital AdvisorがBlueXPとどのように連携するか
+== Digital AdvisorがBlueXPとどのように連携するか
 
-Active IQ デジタルアドバイザのユーザインターフェイスは、BlueXPに完全に統合されています。
+Digital AdvisorのユーザインターフェイスはBlueXPに完全に統合されています。
 
-BlueXPで、Active IQ サービスをクリックします。
+BlueXPで、* Digital Advisor *サービスをクリックします。
 
-* BlueXPに既存のNSSアカウントを登録済みの場合は、Active IQ Digital AdvisorのUIがスタンドアロン実装の場合と同じように表示されます https://activeiq.netapp.com/[]。
+* BlueXPで既存のNSSアカウントを登録済みの場合は、スタンドアロン環境の場合と同じようにDigital AdvisorのUIが表示されます。 https://activeiq.netapp.com/[]。
 +
-image:screenshot_aiq_digital_advisor.png["BlueXPのActive IQ Digital Advisorユーザーインタフェースのスクリーンショット"]
+image:screenshot_aiq_digital_advisor.png["BlueXPのDigital Advisorユーザインターフェイスのスクリーンショット。"]
 
-* BlueXPでNSSアカウントを登録していない場合は、 https://docs.netapp.com/us-en/bluexp-setup-admin/task-adding-nss-accounts.html["NSS アカウントを今すぐ登録してください"^] 次に、 Active IQ デジタルアドバイザ UI が表示されます。
+* BlueXPでNSSアカウントを登録していない場合は、 https://docs.netapp.com/us-en/bluexp-setup-admin/task-adding-nss-accounts.html["NSS アカウントを今すぐ登録してください"^] Digital AdvisorのUIが表示されます。
 
 
 
@@ -62,4 +62,4 @@ NOTE: 2021 年 12 月 3 日時点で、ネットアップは NSS アカウント
 
 == 次のステップ
 
-を参照してください https://docs.netapp.com/us-en/active-iq/index.html["Active IQ デジタルアドバイザのドキュメント"] を参照してください。
+を参照してください https://docs.netapp.com/us-en/active-iq/index.html["Digital Advisorのドキュメント"] を参照してください。
