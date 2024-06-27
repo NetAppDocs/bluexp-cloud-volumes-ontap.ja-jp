@@ -205,7 +205,6 @@ Azure for Cloud Volumes ONTAP 9.12.1 GA以降では、次のリージョンで�
 * スイス北部
 * 南アフリカ北部
 * アラブ首長国連邦北部
-* 中国北部3
 
 
 すべての地域のリストについては、 https://bluexp.netapp.com/cloud-volumes-global-regions["Azureのグローバルリージョンマップ"^]。
