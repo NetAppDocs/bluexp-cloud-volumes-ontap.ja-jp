@@ -4927,7 +4927,6 @@ NetApp （ BYOL ）からライセンスを直接購入した場合、 AWS サ�
   <block id="524a897e665c757be360f9ceaca6b0a5" category="list-text">スイス北部</block>
   <block id="d5daca31a462e138266141f6d01ca814" category="list-text">南アフリカ北部</block>
   <block id="92e19d728517dc371c0f37ee23fa9d03" category="list-text">アラブ首長国連邦北部</block>
-  <block id="343c78956fe2e30b58a341de94a8673a" category="list-text">中国北部3</block>
   <block id="ee39417afe0e7b7726a65f6235448846" category="paragraph">すべての地域のリストについては、<block ref="0f1c2d6a84741595f86a459e46c2a400" category="inline-link-rx"></block>。</block>
   <block id="cfa3976fbec6c6f7dfd434e6d66eb83a" category="list-text">9.14.1 RC1</block>
   <block id="a037be7aafc2f071c4517e8f2c6e58e9" category="section-title">2023年12月6日</block>
@@ -5400,4 +5399,29 @@ Mac OSでtailコマンドを完了します。</block>
   <block id="4ac58369201dcb717d1d1d37ee990c1c" category="list-text"><block ref="4ac58369201dcb717d1d1d37ee990c1c" category="inline-link-rx"></block></block>
   <block id="dc538d1e88cb00b045ab5c768441ff92" category="inline-link">Digital Advisorを起動</block>
   <block id="c0b168a4d72d74292c8b4f5299b9541e" category="list-text"><block ref="c0b168a4d72d74292c8b4f5299b9541e" category="inline-link-rx"></block></block>
+  <block id="df7f6d445a08bcc38d3870349fd9102e" category="inline-link-macro">WORMストレージ用の改ざん防止Snapshotコピーを作成</block>
+  <block id="94e8787c12810b52b1dafd18f754c4a3" category="list-text"><block ref="94e8787c12810b52b1dafd18f754c4a3" category="inline-link-macro-rx"></block></block>
+  <block id="e77931c1eab4b02e332e8adcfabae636" category="summary">Cloud Volumes ONTAPシステム上にWrite Once Read Many（WORM）ファイルの改ざんを防止し、Snapshotを変更せずに特定の保持期間にわたって保持できます。</block>
+  <block id="6e6590dbc5a26f05df18072791d9b8ef" category="paragraph">Cloud Volumes ONTAPシステム上にWrite Once Read Many（WORM）ファイルの改ざんを防止し、Snapshotを変更せずに特定の保持期間にわたって保持できます。この機能はSnapLockテクノロジを基盤としており、データ保護とコンプライアンスのレイヤを追加します。</block>
+  <block id="1cdc86424105b619c0cd794f3e3e1bb7" category="inline-link">SnapLockの設定</block>
+  <block id="d088e424d5a800a3cb54bc96fb0a9c73" category="paragraph">Snapshotコピーの作成に使用するボリュームがSnapLockボリュームであることを確認します。ボリュームでSnapLock保護を有効にする方法については、を参照してください<block ref="470bf72b50c89f315aab21d3052967c7" category="inline-link-rx"></block>。</block>
+  <block id="13fcde979e424d1a2afce52cb95b218a" category="inline-link">ローカルSnapshotコピーの管理の概要</block>
+  <block id="ee79fd5aa5578bbab6916cd20d44a9c9" category="list-text">SnapLockボリュームからSnapshotコピーを作成します。CLIまたはSystem Managerを使用したSnapshotコピーの作成については、を参照してください<block ref="ee5fb8999e3924754f251f2ee21d7022" category="inline-link-rx"></block>。</block>
+  <block id="0a5ed9372feb916f9a88f937e9589fd0" category="paragraph">SnapshotコピーはボリュームのWORMプロパティを継承し、改ざんを防止します。基盤となるSnapLockテクノロジにより、指定した保持期間が経過するまで、Snapshotの編集や削除が行われないように保護されます。</block>
+  <block id="72400cb7d5b84ae782642ca107c294fc" category="inline-link">保持期限を設定する</block>
+  <block id="36be19b900f54f5ac76441b806662cbc" category="list-text">これらのSnapshotを編集する必要がある場合は、保持期間を変更できます。詳細については、を参照して<block ref="d77f965b297f4a355ed017017c294a22" category="inline-link-rx"></block>ください。</block>
+  <block id="1e130656f520fa6c2ea0d619d4efcc6b" category="admonition">Cloud Volumes ONTAPのWORMストレージは「信頼されたストレージ管理者」モデルで動作するため、Snapshotコピーが特定の保持期間にわたって保護されていても、クラスタ管理者はソースボリュームを削除できます。また、信頼できるクラウド管理者は、クラウドストレージリソースを操作することでWORMデータを削除できます。</block>
+  <block id="459e9ae782f83a2cbafe2a1b4b586f00" category="section-title">オリジンが暗号化されている場合のFlexCacheの操作</block>
+  <block id="64c813604a577df1cdc73d1151096659" category="paragraph">元のボリュームが暗号化されているCloud Volumes ONTAPシステムでFlexCacheを設定する場合は、FlexCacheボリュームが暗号化されたデータに適切にアクセスしてキャッシュできるように、追加の手順が必要です。</block>
+  <block id="d60b485e85b0e4607a82dd03442b21fa" category="list-text">*暗号化のセットアップ*：ソースボリュームが完全に暗号化され、動作可能であることを確認します。Cloud Volumes ONTAPシステムの場合、これにはクラウド固有のキー管理サービスとの統合が含まれます。</block>
+  <block id="99640d6025bf455243d3f387232dd986" category="paragraph">AWSの場合、これは通常、AWS Key Management Service（KMS）を使用することを意味します。詳細については、を参照して <block ref="6711acfd53e4de01e06335a0cfc766aa" category="inline-link-macro-rx"></block>ください。</block>
+  <block id="8a50a29d381983583d14487214a67fe7" category="paragraph">Azureの場合は、NetApp Volume Encryption（NVE）用のAzureキーヴォールトをセットアップする必要があります。詳細については、を参照して <block ref="b3cdfbdda37551364c377e96fb97e7a0" category="inline-link-macro-rx"></block>ください。</block>
+  <block id="2f3839adaa606a1f97c79876fe7c1c58" category="inline-link-macro">GoogleのCloud Key Management Serviceを使用したキーの管理</block>
+  <block id="ee361a3f988700740b3fadeca2bdd1e0" category="paragraph">Google Cloudの場合は、Google Cloud Key Management Serviceです。詳細については、を参照して <block ref="9a0de177eaebd309cc4f26a09b5d5013" category="inline-link-macro-rx"></block>ください。</block>
+  <block id="e29e14dbb5385db3b2de688e4fbe1a6b" category="list-text">*キー管理サービス*：FlexCacheボリュームを作成する前に、Cloud Volumes ONTAPシステムでキー管理サービスが正しく設定されていることを確認してください。この設定は、FlexCacheボリュームが元のボリュームのデータを復号化するために不可欠です。</block>
+  <block id="5d6ac79246155b5f33cacd0077c2172a" category="list-text">*ライセンス*:有効なFlexCacheライセンスがCloud Volumes ONTAPシステムで使用可能で有効になっていることを確認します。BlueXPでは、すべての新しいCloud Volumes ONTAPシステム用にFlexCacheライセンスが生成されますが、使用量は500GiBに制限されています。</block>
+  <block id="0f40216c1ad47c12e8ccc087d555570f" category="inline-link">ONTAPリリースノート</block>
+  <block id="543cc078f66d581004934cfaa8988453" category="list-text">* ONTAPバージョン*：ONTAPバージョンのCloud Volumes ONTAPシステムが、暗号化されたボリュームを含むFlexCacheをサポートしていることを確認します。詳細については、最新または互換性マトリックスを参照して<block ref="9ec4657ceea5a1d054b2b0fa2482a129" category="inline-link-rx"></block> ください。</block>
+  <block id="38d57b85102d8663bf30488289425e48" category="list-text">*ネットワーク構成*：ネットワーク構成で、元のボリュームとFlexCacheボリューム間のシームレスな通信が可能であることを確認します。これには、クラウド環境での適切なルーティングとDNS解決が含まれます。</block>
+  <block id="51aa8ce93131e7a6746f62c49df04fe2" category="paragraph">Cloud Volumes ONTAPシステムに、暗号化されたソースボリュームを使用してFlexCacheボリュームを作成します。詳細な手順とその他の考慮事項については、次のセクションを参照してください。</block>
 </blocks>

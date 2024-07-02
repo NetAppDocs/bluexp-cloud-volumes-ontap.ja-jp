@@ -29,3 +29,43 @@ ONTAP CLIまたはONTAPシステムマネージャを使用して、FlexCacheボ
 すべての新しいCloud Volumes ONTAPシステムに対してFlexCacheライセンスが生成されます。ライセンスの使用量は 500GiB に制限されています。
 
 video::PBNPVRUeT1o[youtube,width=848,height=480]
+
+
+== オリジンが暗号化されている場合のFlexCacheの操作
+
+元のボリュームが暗号化されているCloud Volumes ONTAPシステムでFlexCacheを設定する場合は、FlexCacheボリュームが暗号化されたデータに適切にアクセスしてキャッシュできるように、追加の手順が必要です。
+
+.必要なもの
+. *暗号化のセットアップ*：ソースボリュームが完全に暗号化され、動作可能であることを確認します。Cloud Volumes ONTAPシステムの場合、これにはクラウド固有のキー管理サービスとの統合が含まれます。
+
+
+ifdef::aws[]
+
+AWSの場合、これは通常、AWS Key Management Service（KMS）を使用することを意味します。詳細については、を参照して link:task-aws-key-management.html["AWS Key Management Serviceを使用してキーを管理します"]ください。
+
+endif::aws[]
+
+ifdef::azure[]
+
+Azureの場合は、NetApp Volume Encryption（NVE）用のAzureキーヴォールトをセットアップする必要があります。詳細については、を参照して link:task-azure-key-vault.html["Azure Key Vaultを使用してキーを管理します"]ください。
+
+endif::azure[]
+
+ifdef::gcp[]
+
+Google Cloudの場合は、Google Cloud Key Management Serviceです。詳細については、を参照して link:task-google-key-manager.html["GoogleのCloud Key Management Serviceを使用したキーの管理"]ください。
+
+endif::gcp[]
+
+. *キー管理サービス*：FlexCacheボリュームを作成する前に、Cloud Volumes ONTAPシステムでキー管理サービスが正しく設定されていることを確認してください。この設定は、FlexCacheボリュームが元のボリュームのデータを復号化するために不可欠です。
+. *ライセンス*:有効なFlexCacheライセンスがCloud Volumes ONTAPシステムで使用可能で有効になっていることを確認します。BlueXPでは、すべての新しいCloud Volumes ONTAPシステム用にFlexCacheライセンスが生成されますが、使用量は500GiBに制限されています。
+. * ONTAPバージョン*：ONTAPバージョンのCloud Volumes ONTAPシステムが、暗号化されたボリュームを含むFlexCacheをサポートしていることを確認します。詳細については、最新または互換性マトリックスを参照して https://docs.netapp.com/us-en/ontap/release-notes/index.html["ONTAPリリースノート"^] ください。
+. *ネットワーク構成*：ネットワーク構成で、元のボリュームとFlexCacheボリューム間のシームレスな通信が可能であることを確認します。これには、クラウド環境での適切なルーティングとDNS解決が含まれます。
+
+
+.手順
+Cloud Volumes ONTAPシステムに、暗号化されたソースボリュームを使用してFlexCacheボリュームを作成します。詳細な手順とその他の考慮事項については、次のセクションを参照してください。
+
+* http://docs.netapp.com/ontap-9/topic/com.netapp.doc.pow-fc-mgmt/home.html["『 FlexCache Volumes for Faster Data Access Power Guide 』を参照してください"^]
+* http://docs.netapp.com/ontap-9/topic/com.netapp.doc.onc-sm-help-960/GUID-07F4C213-076D-4FE8-A8E3-410F49498D49.html["System Manager での FlexCache ボリュームの作成"^]
+
