@@ -2381,7 +2381,6 @@
   <block id="44521137c9499dbef6a006058d0d9127" category="section-title">Cloud Volumes ONTAP 9.11.0</block>
   <block id="a0834297e8b28b9a51d59500441c7351" category="section-title">メディエーターのアップグレードに関する機能拡張</block>
   <block id="e6e5b99786bfefd88e32c940b7547ab3" category="section-title">K8sタブが削除されました</block>
-  <block id="6eb7d1343cce33ec7d31b57edd9f3aef" category="paragraph">K8sタブは以前のでは廃止されており、現在は削除されています。KubernetesとCloud Volumes ONTAP を併用する場合は、高度なデータ管理のための作業環境として、管理対象- Kubernetesクラスタをキャンバスに追加できます。</block>
   <block id="7475abfb4039c00bb03fd05d6d792b3d" category="section-title">Azureの年間契約</block>
   <block id="52b398f13b1acf3e73584a9cb106e989" category="paragraph">EssentialsパッケージとProfessionalパッケージは、年間契約を通じてAzureで利用できるようになりました。年間契約を購入するには、ネットアップの営業担当者にお問い合わせください。この契約は、Azure Marketplaceでのプライベートオファーとして提供されます。</block>
   <block id="ba089edca33f314482ad946ae680f1eb" category="inline-link">ライセンスの詳細については、こちらをご覧ください</block>
@@ -3519,7 +3518,6 @@
   <block id="f161f6edfaf6d911de2566d694781369" category="paragraph">Google CloudのCloud Volumes ONTAP では、9.11.1リリース以降、複数のStorage VMがサポートされています。このリリースのコネクタから、BlueXPでは、Cloud Volumes ONTAP を使用してGoogle CloudのHAペアにStorage VMを作成できるようになりました。</block>
   <block id="dbb2a3618007fc68b403b5db7a27888c" category="paragraph">BlueXPでCloud Volumes ONTAP 9.11.0の導入と管理が可能になりました</block>
   <block id="17cc55e2cfcef39231025dad282b0760" category="paragraph">BlueXPがHAペアのメディエーターをアップグレードすると、新しいメディエーターイメージがブートディスクを削除する前に使用可能であることが検証されるようになりました。この変更により、アップグレードプロセスが失敗した場合でもメディエーターは正常に動作し続けることができます。</block>
-  <block id="998eb27e3e05260958103da3d27eb4ac" category="inline-link">BlueXPでのKubernetesのデータ管理について説明します</block>
   <block id="496550dfa4d3b1c3955fe8ab428eedbf" category="paragraph">これらの権限は、BlueXPによる配置グループの作成方法を最適化するために必要になりました。</block>
   <block id="1fcd17a990e75722697d64df5dd2ffde" category="list-text">Google CloudでCloud Volumes ONTAP HAペアを作成すると、VPC内の既存のすべてのファイアウォールポリシーがBlueXPに表示されるようになりました。</block>
   <block id="46fc311e1b8dc6670926551c44511f90" category="paragraph">以前は、ターゲットタグがないVPC -1、VPC -2、またはVPC -3のポリシーは表示されませんでした。</block>
@@ -4477,7 +4475,6 @@ NetApp （ BYOL ）からライセンスを直接購入した場合、 AWS サ�
   <block id="8ade4dc1ca161da57728a6bf29be1db9" category="paragraph">BlueXPに追加したAWSクレデンシャルの各セットに、これらの権限を必ず付与してください。<block ref="64ae4f789cd26cb4c9b5096ed42d2482" category="inline-link-rx"></block>。</block>
   <block id="ac1bc6f2b2358438076867200e537370" category="paragraph"><block ref="7abbb63a2cd3cab475ace2a577aa3de3" category="inline-link-rx"></block>。</block>
   <block id="07e4a4acdb333fe3d7b8dac1958d6459" category="list-text"><block ref="07e4a4acdb333fe3d7b8dac1958d6459" category="inline-link-rx"></block></block>
-  <block id="755c513b451157c807794bf1213fd1f9" category="paragraph"><block ref="755c513b451157c807794bf1213fd1f9" category="inline-link-rx"></block></block>
   <block id="73f030bd359abb41dc1089c470531542" category="paragraph"><block ref="37698926d26a2683d3b5c90c9b2406a6" category="inline-link-rx"></block>。</block>
   <block id="2e56aeba3c1fc24d42b0f15df12a08f9" category="paragraph"><block ref="5d4901194aa2380bf45bcc72c63f2763" category="inline-link-rx"></block>。</block>
   <block id="7abee0635d8cb81d3ae89fd8d82a442a" category="paragraph"><block ref="7abee0635d8cb81d3ae89fd8d82a442a" category="inline-image-macro-rx" type="image"></block></block>
@@ -5424,4 +5421,5 @@ Mac OSでtailコマンドを完了します。</block>
   <block id="543cc078f66d581004934cfaa8988453" category="list-text">* ONTAPバージョン*：ONTAPバージョンのCloud Volumes ONTAPシステムが、暗号化されたボリュームを含むFlexCacheをサポートしていることを確認します。詳細については、最新または互換性マトリックスを参照して<block ref="9ec4657ceea5a1d054b2b0fa2482a129" category="inline-link-rx"></block> ください。</block>
   <block id="38d57b85102d8663bf30488289425e48" category="list-text">*ネットワーク構成*：ネットワーク構成で、元のボリュームとFlexCacheボリューム間のシームレスな通信が可能であることを確認します。これには、クラウド環境での適切なルーティングとDNS解決が含まれます。</block>
   <block id="51aa8ce93131e7a6746f62c49df04fe2" category="paragraph">Cloud Volumes ONTAPシステムに、暗号化されたソースボリュームを使用してFlexCacheボリュームを作成します。詳細な手順とその他の考慮事項については、次のセクションを参照してください。</block>
+  <block id="9a06593a786548bb3b7320df7c76e7f1" category="paragraph">[K8s]タブは以前のリリースで廃止され、現在は削除されています。</block>
 </blocks>

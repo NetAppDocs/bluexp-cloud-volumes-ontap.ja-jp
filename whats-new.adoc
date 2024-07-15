@@ -960,9 +960,7 @@ BlueXPがHAペアのメディエーターをアップグレードすると、新
 
 === K8sタブが削除されました
 
-K8sタブは以前のでは廃止されており、現在は削除されています。KubernetesとCloud Volumes ONTAP を併用する場合は、高度なデータ管理のための作業環境として、管理対象- Kubernetesクラスタをキャンバスに追加できます。
-
-https://docs.netapp.com/us-en/bluexp-kubernetes/concept-kubernetes.html["BlueXPでのKubernetesのデータ管理について説明します"^]
+[K8s]タブは以前のリリースで廃止され、現在は削除されています。
 
 
 
