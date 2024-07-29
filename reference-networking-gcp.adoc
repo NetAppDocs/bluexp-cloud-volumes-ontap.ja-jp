@@ -215,22 +215,6 @@ TIP: HA ペアを使用している場合、 HA メディエーターではア�
 
 AutoSupport メッセージを送信できないことがBlueXPから通知された場合は、 link:task-verify-autosupport.html#troubleshoot-your-autosupport-configuration["AutoSupport 構成のトラブルシューティングを行います"]。
 
-ファイアウォールルール:: ファイアウォールルールを作成する必要はありません。BlueXPはファイアウォールルールを作成します。独自のファイアウォールを使用する必要がある場合は、以下のファイアウォールルールを参照してください。
-+
---
-HA 構成には、次の 2 組のファイアウォールルールが必要です。
-
-* VPC -0 の HA コンポーネントのルールセット。これらのルールにより、 Cloud Volumes ONTAP へのデータアクセスが可能になります。 <<ファイアウォールルール,詳細はこちら。>>。
-* VPC -1 、 VPC -2 、および VPC -3 の HA コンポーネントに関するもう 1 つのルールセット。これらのルールは、 HA コンポーネント間のインバウンド通信とアウトバウンド通信に対してオープンです。 <<ファイアウォールルール,詳細はこちら。>>。
-
-
---
-
-
-コールドデータを Google Cloud Storage バケットに階層化する場合は、 Cloud Volumes ONTAP が配置されているサブネットをプライベート Google Access 用に設定する必要があります（ HA ペアを使用している場合、これは VPC 0 のサブネットです）。手順については、を参照してください https://cloud.google.com/vpc/docs/configure-private-google-access["Google Cloud のドキュメント：「 Configuring Private Google Access"^]。
-
-BlueXPでデータの階層化を設定するために必要な追加手順については'を参照してください link:task-tiering.html["コールドデータを低コストのオブジェクトストレージに階層化する"]。
-
 
 
 === 他のネットワーク内の ONTAP システムへの接続

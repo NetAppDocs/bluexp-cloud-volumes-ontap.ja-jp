@@ -1751,7 +1751,6 @@
   <block id="a882b8d486f84abfbb2472c835d49dbf" category="paragraph">Cloud Volumes ONTAP が AutoSupport メッセージを送信できるように、ルーティングポリシーとファイアウォールポリシーで次のエンドポイントへの HTTP / HTTPS トラフィックを許可する必要があります。</block>
   <block id="1d9e509ddb93a176b7d369a91ad7deaf" category="section-title">IP アドレス</block>
   <block id="0af87aead9b1478c9d33afc90cbcbf02" category="section-title">Azure サービスへのセキュアな接続</block>
-  <block id="465b92b3276cc18a4183d48ccf476d6a" category="inline-link-macro">コールドデータを低コストのオブジェクトストレージに階層化する</block>
   <block id="87b7d9ff8a42dbb6c0bcd13ae09f6010" category="section-title">他の ONTAP システムへの接続</block>
   <block id="29a865e45adc910f0644ded74b229df8" category="inline-link">Microsoft Azure のドキュメント：「 Create a Site-to-Site connection in the Azure portal</block>
   <block id="81acf7ceaf81844868547b75b3cbad05" category="paragraph">手順については、を参照してください<block ref="58f617c37f2c96a9d814e3cfdc48d6c4" category="inline-link-rx"></block>。</block>
@@ -1919,8 +1918,6 @@
   <block id="2be40f62b7c4e1d13a18dcc030852bf8" category="paragraph">LIF は、物理ポートに関連付けられた IP アドレスです。SnapCenter などの管理ツールには、 Storage VM （ SVM ）管理 LIF が必要です。</block>
   <block id="4dfddd1829f7fb340bd9b36bff6e3130" category="list-text">ファイアウォールルール</block>
   <block id="2a361a1f21cbd928455b1bd06df94169" category="paragraph">HA 構成には、次の 2 組のファイアウォールルールが必要です。</block>
-  <block id="5e74b536fe3c8bd111e49f783c8e991c" category="inline-link">Google Cloud のドキュメント：「 Configuring Private Google Access</block>
-  <block id="9e0ae4847043d43d71330ce503e69ac8" category="list-text">コールドデータを Google Cloud Storage バケットに階層化する場合は、 Cloud Volumes ONTAP が配置されているサブネットをプライベート Google Access 用に設定する必要があります（ HA ペアを使用している場合、これは VPC 0 のサブネットです）。手順については、を参照してください<block ref="6db326f0ee07df97e25069fccf883deb" category="inline-link-rx"></block>。</block>
   <block id="df025646ed6854c0696237c0ac916446" category="list-text">他のネットワーク内の ONTAP システムへの接続</block>
   <block id="2fbb401eef4220b4a89cce3e59325dcb" category="inline-link">Google Cloud のドキュメント：「 Cloud VPN Overview</block>
   <block id="6d1472a8434e4945740fa177e609f886" category="paragraph">手順については、を参照してください<block ref="1bc8aad79f56acf8c242cfb981c11ee1" category="inline-link-rx"></block>。</block>
@@ -3330,7 +3327,6 @@
   <block id="0d5b8e06664cffcf9f498e7821c89481" category="list-text">複数のゾーンまたは単一のゾーンに HA 構成を導入することで、データの高可用性を確保できます。HAペアを作成すると、複数のゾーンまたは単一のゾーンを選択するように求められます。</block>
   <block id="44b028753f7a7976b8be9d11b1afed32" category="paragraph">HAペアを作成するときに、4つのVPCを選択するように要求されます。</block>
   <block id="c44db905496bb7220714be5427afb035" category="paragraph">AutoSupport メッセージの送信にアウトバウンドのインターネット接続が使用できない場合、Cloud Volumes ONTAP システムは自動的にコネクタをプロキシサーバとして使用するように設定されます。唯一の要件は、コネクタのファイアウォールがポート3128上の_INBOUND接続を許可することです。コネクタを展開した後、このポートを開く必要があります。</block>
-  <block id="33e7d975fa9a0910415fa300d8bf304a" category="paragraph">BlueXPでデータの階層化を設定するために必要な追加手順については'を参照してください <block ref="9ae9bcf59853ba48ce2658a41db24feb" category="inline-link-macro-rx"></block>。</block>
   <block id="639c4a9b76126cf4712751dee5546383" category="paragraph">一方、BlueXPでVPC -1、VPC -2、およびVPC -3のインスタンスに対して作成される定義済みのファイアウォールルールにより、_All_protocolsとポートでの入力通信が可能になります。これらのルールに従って、 HA ノード間の通信が可能になります。</block>
   <block id="3ef69cb41da937aa60ab5fbab53eb42a" category="list-text">Cloud Volumes ONTAP をアップグレードすると、必要に応じてメディエーターインスタンスも更新されます。</block>
   <block id="5d345d14f8662bfe45d8562fba90c487" category="list-text">BlueXPからCloud Volumes ONTAP HAペアを作成すると、メディエーターインスタンスのキーペアを指定するように求められます。このキーペアは、を使用したSSHアクセスに使用できます<block ref="21232f297a57a5a743894a0e4a801fc3" prefix=" " category="inline-code"></block> ユーザ：</block>
@@ -4049,7 +4045,6 @@
   <block id="a00377c792cd8ccb6a0c832ffec2c1dc" category="list-text">クラスタLIF×2（e0b）</block>
   <block id="bbe8dbabe5bfd1d32eaa2131b90c191a" category="list-text">HAインターコネクトIPアドレス×2（e0c）</block>
   <block id="0baf3fbe98870c6047f6b10e5370bff7" category="list-text">RSM iSCSI IPアドレス×2（e0d）</block>
-  <block id="c3872c89a315822852621c448e41aac4" category="list-text">ファイアウォールルールを作成する必要はありません。BlueXPはファイアウォールルールを作成します。独自のファイアウォールを使用する必要がある場合は、以下のファイアウォールルールを参照してください。</block>
   <block id="e2f177a250a8772cd8ebbe4839390958" category="paragraph">BlueXPでは、1つのノードシステムに6つのIPアドレスが割り当てられます。</block>
   <block id="b4f6a6268e9ed79637c765266075ab8c" category="paragraph">次の表に、各プライベートIPアドレスに関連付けられているLIFの詳細を示します。</block>
   <block id="6d0c9e6ffd2de679838428abdea38009" category="cell">iSCSI プロトコルを使用したクライアントアクセス。システムでは、その他の重要なネットワークワークフローにも使用されます。このLIFは必須であり、削除することはできません。</block>
@@ -4693,8 +4688,6 @@ NetApp （ BYOL ）からライセンスを直接購入した場合、 AWS サ�
   <block id="34b51cb01d3605c2b908600c2b516152" category="list-text"><block ref="34b51cb01d3605c2b908600c2b516152" category="inline-link-macro-rx"></block></block>
   <block id="2a79e18dae8df0be0a0d70d12cf4bfec" category="list-text"><block ref="2a79e18dae8df0be0a0d70d12cf4bfec" category="inline-link-macro-rx"></block></block>
   <block id="14c10e4dfdbfa7bb1944c39086904d79" category="list-text"><block ref="14c10e4dfdbfa7bb1944c39086904d79" category="inline-link-macro-rx"></block></block>
-  <block id="f784e2eca8423af6d4b6e02cd9dc17b6" category="list-text">VPC -0 の HA コンポーネントのルールセット。これらのルールにより、 Cloud Volumes ONTAP へのデータアクセスが可能になります。 <block ref="1a421f2e5e3047ae3801063040dbe3fb" category="inline-xref-macro-rx"></block>。</block>
-  <block id="29642aeaa8aff442388842cc2c36f19d" category="list-text">VPC -1 、 VPC -2 、および VPC -3 の HA コンポーネントに関するもう 1 つのルールセット。これらのルールは、 HA コンポーネント間のインバウンド通信とアウトバウンド通信に対してオープンです。 <block ref="1a421f2e5e3047ae3801063040dbe3fb" category="inline-xref-macro-rx"></block>。</block>
   <block id="b0082432bdd8f260c6c2bf11437fb1b7" category="list-text">VPC -1 、 VPC -2 、および VPC -3 の HA コンポーネントに関するもう 1 つのルールセット。これらのルールは、 HA コンポーネント間のインバウンド通信とアウトバウンド通信に対してオープンです。 <block ref="07ead3ac53ea1b122b25bf61bd233110" category="inline-xref-macro-rx"></block>。</block>
   <block id="d2d30bf70c79bbb95b5e7ce630b66c21" category="cell">既存のセキュリティグループを選択する場合は、 Cloud Volumes ONTAP の要件を満たす必要があります。 <block ref="c840f14212255ea9808d6d3aa32adaf9" category="inline-link-macro-rx"></block>。</block>
   <block id="4956de48e08bd2176b53bb70ae88a9ea" category="paragraph">ディスクの種類とサイズの選択については、を参照してください <block ref="2a79e18dae8df0be0a0d70d12cf4bfec" category="inline-link-macro-rx"></block>。</block>
@@ -4972,7 +4965,6 @@ NetApp （ BYOL ）からライセンスを直接購入した場合、 AWS サ�
   <block id="25163e975710186a452c0f2fefe81448" category="inline-xref">ONTAPイメエシノタウンロオト</block>
   <block id="17464ff13145a21ed61cc7a0b9513ce7" category="paragraph">2024年1月より、BlueXPでパッチをアップグレードできるのは、3つの最新バージョンのCloud Volumes ONTAPのパッチリリースのみです。BlueXPに表示する3つの最新バージョンは、最新のGAリリースを使用して決定されます。たとえば、現在のGAリリースが9.13.1の場合、BlueXPには9.11.1~9.13.1のパッチが表示されます。バージョン9.11.1以前のパッチリリースにアップグレードする場合は、手順を手動でアップグレードする必要があります。 <block ref="741f5e59386960528e5ac58506855727" category="inline-xref-macro-rx"></block>。</block>
   <block id="b0b450f5a78908e6b78f5c13bf6b0da4" category="paragraph">パッチ（P）リリースの一般的なルールとして、あるバージョンリリースから現在実行しているバージョンまたは次のバージョンの任意のPリリースにアップグレードできます。</block>
-  <block id="6641aeac9c3a566deb4f56b743076e2a" category="list-text">NAEはAKVでは使用できません。NAEには、外部でサポートされるKMIPサーバが必要です。</block>
   <block id="8f3a7aeceb3049764382da1a82a27238" category="list-text">アプリケーションの登録後に保存されたクライアントIDとテナントIDを使用して、Azure Key Vaultを有効にします。<block ref="5e256216aa762875258d90fbe836b7b2" prefix=" " category="inline-code"></block></block>
   <block id="27546657617543a3f0cd8927c3f369c8" category="admonition">。<block ref="ee5ecb949ba751e6c3f7b03d02fc2819" prefix=" " category="inline-code"></block> 値は、<block ref="b5fd887d199c5a44249b4fce7085da7f" prefix=" " category="inline-code"></block> の形式で入力し</block>
   <block id="b386d04ca3a89226a06701e85f70e33d" category="list-text">Azure Key Vaultが有効になったら、<block ref="00c44d3486742ffa7af4a8bfbab4d3d3" prefix=" " category="inline-code"></block> プロンプトが表示されたら、</block>
@@ -5422,4 +5414,6 @@ Mac OSでtailコマンドを完了します。</block>
   <block id="38d57b85102d8663bf30488289425e48" category="list-text">*ネットワーク構成*：ネットワーク構成で、元のボリュームとFlexCacheボリューム間のシームレスな通信が可能であることを確認します。これには、クラウド環境での適切なルーティングとDNS解決が含まれます。</block>
   <block id="51aa8ce93131e7a6746f62c49df04fe2" category="paragraph">Cloud Volumes ONTAPシステムに、暗号化されたソースボリュームを使用してFlexCacheボリュームを作成します。詳細な手順とその他の考慮事項については、次のセクションを参照してください。</block>
   <block id="9a06593a786548bb3b7320df7c76e7f1" category="paragraph">[K8s]タブは以前のリリースで廃止され、現在は削除されています。</block>
+  <block id="526b16be728da42dd3eb25f5c378e218" category="list-text">AKVではNAEは使用できません。NAEには、外部でサポートされるKMIPサーバが必要です。</block>
+  <block id="70004026f1ac6c7f08784ebf0a55c142" category="list-text">Cloud Volumes ONTAPノードは、アクセス性とキーの可用性を確認するために、15分ごとにAKVをポーリングします。このポーリング期間は設定できません。ポーリング試行で連続して4回失敗（合計1時間）すると、ボリュームはオフラインになります。</block>
 </blocks>
