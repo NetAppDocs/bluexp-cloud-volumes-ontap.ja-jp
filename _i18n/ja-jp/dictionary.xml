@@ -253,7 +253,6 @@
   <block id="7630e1f6ebde3d280c53fd350ed9e414" category="list-text">Azure Storage Service Encryption の略</block>
   <block id="d988a92cb3f4d22d80f5a79f6d0df13d" category="list-text">Google Cloud Platform のデフォルトの暗号化</block>
   <block id="1948af9c9d5426628760bb0ef4a35cdf" category="inline-link">NetApp Volume Encryption （ NVE ）および NetApp Aggregate Encryption （ NAE ）</block>
-  <block id="ea345086090743ba32da6aae6c9b6998" category="paragraph">Cloud Volumes ONTAP はをサポートします<block ref="ae505195628dd60ca701666c408297af" category="inline-link-rx"></block>。NVE と NAE は、（ FIPS ） 140-2 に準拠したボリュームの保管データ暗号化を可能にするソフトウェアベースのソリューションです。NVE と NAE はいずれも AES 256 ビット暗号化を使用します。</block>
   <block id="0bf3330853877ab4b76b4f1e00d3ace2" category="list-text">NVE は、一度に 1 ボリュームずつ保管データを暗号化する。各データボリュームには、一意の暗号化キーがあります。</block>
   <block id="988d5e992ea371904581e6f8ad13bac7" category="list-text">NAE は NVE の拡張機能です。 NVE は各ボリュームのデータを暗号化し、ボリュームはアグリゲート全体でキーを共有します。NAE では、アグリゲート内のすべてのボリュームの共通ブロックも重複排除できます。</block>
   <block id="e1bf87c98edd3bee07d170ae8b118aeb" category="paragraph">新しいアグリゲートでは、外部キー管理ツールの設定後に NetApp Aggregate Encryption （ NAE ）がデフォルトで有効になります。NAE アグリゲートに含まれない新しいボリュームでは、 NetApp Volume Encryption （ NVE ）がデフォルトで有効になります（たとえば、外部キー管理ツールを設定する前に作成された既存のアグリゲートがある場合）。</block>
@@ -5416,4 +5415,5 @@ Mac OSでtailコマンドを完了します。</block>
   <block id="9a06593a786548bb3b7320df7c76e7f1" category="paragraph">[K8s]タブは以前のリリースで廃止され、現在は削除されています。</block>
   <block id="526b16be728da42dd3eb25f5c378e218" category="list-text">AKVではNAEは使用できません。NAEには、外部でサポートされるKMIPサーバが必要です。</block>
   <block id="70004026f1ac6c7f08784ebf0a55c142" category="list-text">Cloud Volumes ONTAPノードは、アクセス性とキーの可用性を確認するために、15分ごとにAKVをポーリングします。このポーリング期間は設定できません。ポーリング試行で連続して4回失敗（合計1時間）すると、ボリュームはオフラインになります。</block>
+  <block id="368b5e8e02b8134e8d1009fff74bf2bc" category="paragraph">Cloud Volumes ONTAPはをサポートし<block ref="09aecd5417a289ba24f2f00949971fbc" category="inline-link-rx"></block>ます。NVE と NAE は、（ FIPS ） 140-2 に準拠したボリュームの保管データ暗号化を可能にするソフトウェアベースのソリューションです。NVE と NAE はいずれも AES 256 ビット暗号化を使用します。</block>
 </blocks>

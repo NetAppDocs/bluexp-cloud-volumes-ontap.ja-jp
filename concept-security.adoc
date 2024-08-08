@@ -52,7 +52,7 @@ endif::gcp[]
 
 === ネットアップの暗号化ソリューション（ NVE および NAE ）
 
-Cloud Volumes ONTAP はをサポートします https://www.netapp.com/us/media/ds-3899.pdf["NetApp Volume Encryption （ NVE ）および NetApp Aggregate Encryption （ NAE ）"^]。NVE と NAE は、（ FIPS ） 140-2 に準拠したボリュームの保管データ暗号化を可能にするソフトウェアベースのソリューションです。NVE と NAE はいずれも AES 256 ビット暗号化を使用します。
+Cloud Volumes ONTAPはをサポートし https://www.netapp.com/pdf.html?item=/media/17070-ds-3899.pdf["NetApp Volume Encryption （ NVE ）および NetApp Aggregate Encryption （ NAE ）"^]ます。NVE と NAE は、（ FIPS ） 140-2 に準拠したボリュームの保管データ暗号化を可能にするソフトウェアベースのソリューションです。NVE と NAE はいずれも AES 256 ビット暗号化を使用します。
 
 * NVE は、一度に 1 ボリュームずつ保管データを暗号化する。各データボリュームには、一意の暗号化キーがあります。
 * NAE は NVE の拡張機能です。 NVE は各ボリュームのデータを暗号化し、ボリュームはアグリゲート全体でキーを共有します。NAE では、アグリゲート内のすべてのボリュームの共通ブロックも重複排除できます。
