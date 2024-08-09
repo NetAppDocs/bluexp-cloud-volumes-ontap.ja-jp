@@ -1860,7 +1860,6 @@
   <block id="fdde7a7f3783aa0ce1e585f8be9c2def" category="list-text">ライセンスの期間が終了する場合</block>
   <block id="36e4d5ff70cec517180ae18f1c34d2fd" category="list-text">市場から年間契約を結んでいる場合、導入する Cloud Volumes ONTAP システムにはその契約が適用されます。BYOL と年間市場契約を組み合わせることはできません。</block>
   <block id="e22ac25b066b201473de7aa700ef5d92" category="section-title">価格設定</block>
-  <block id="25b035aed2fdd6599b8102a76363fdec" category="section-title">無償トライアルを利用できます</block>
   <block id="1f0b82560627b660c6c6958a1df834b8" category="section-title">サポートされている構成</block>
   <block id="4e4c431843fe55f93c074808800bf7d0" category="paragraph">容量ベースのライセンスパッケージは Cloud Volumes ONTAP 9.7 以降で利用できます。</block>
   <block id="37040d43404231d8205705e4353af733" category="section-title">容量制限</block>
@@ -1878,7 +1877,6 @@
   <block id="aad2b08c0103cffcbb5efae0a56ee747" category="paragraph">個々の Cloud Volumes ONTAP システムでは、ディスクとオブジェクトストレージへの階層化によって、最大 2 PiB の容量をサポートしています。</block>
   <block id="b2e75bbfb9933bc21b7f875e8676641d" category="inline-link">ネットアップにお問い合わせください</block>
   <block id="a2f6a3e98ea1849ed1ab07d821bf6a18" category="section-title">ノードベースのライセンス</block>
-  <block id="361abfc2eaabdb045de49dafd20dbdf1" category="paragraph">ノードベースのライセンスは、 Cloud Volumes ONTAP のライセンスをノード単位で付与することが可能になった旧世代のライセンスモデルです。このライセンスモデルは、新規のお客様にはご利用いただけません。また、無償トライアルもご利用いただけません。ノード単位の充電は、前述のキャパシティ単位の充電方法に置き換えられました。</block>
   <block id="749b4d71be76e8fee5fe7895ae5ff71d" category="paragraph">既存のお客様は、ノードベースのライセンスを引き続き利用できます。</block>
   <block id="04c40151a6d53f981d0364aef6215bd0" category="list-text">アクティブなライセンスがある場合は、 BYOL をライセンスの更新のみに使用できます。</block>
   <block id="358962d4cc759ccb4c98e87cc3396033" category="list-text">有効なマーケットプレイスサブスクリプションをお持ちの場合は、そのサブスクリプションを通じて引き続き課金をご利用いただけます。</block>
@@ -2471,8 +2469,6 @@
   <block id="783e44882ef395447a1b422181ebb3d4" category="section-title">Google Cloudのサポート</block>
   <block id="c0a92ff7cf6e8a1570f1775a4a7c563d" category="list-text">Cloud Volumes ONTAP 9.6以降では、Google Cloudでデータ階層化がサポートされます。</block>
   <block id="0285440088a9a63b47028bcc1bccb076" category="section-title">機能の相互運用性</block>
-  <block id="2986f3edb85e34a7556b412028be57fb" category="paragraph">インスタンスや容量の制限はありません。Cloud Volumes ONTAP システムは必要な数だけ導入でき、必要な容量を30日間無償で割り当てることができます。無料トライアルは、30日後に1時間ごとの有料サブスクリプションに自動的に変換されます。</block>
-  <block id="631556a144b10d5d5f19603b18176e32" category="paragraph">Cloud Volumes ONTAP のソフトウェアライセンス料金は1時間ごとに発生しませんが、クラウドプロバイダからインフラ料金が請求されます。</block>
   <block id="6c30ec25f9c157f6acd5cb63a6abee29" category="list-text">いずれかのアグリゲートでオブジェクトに古い命名規則が使用されています。両方のアグリゲートで同じ名前形式を使用する必要があります。</block>
   <block id="181e3299a212253d089ee23c58a37a10" category="list-text">EssentialsパッケージとProfessionalパッケージは、すべてのクラウドプロバイダマーケットプレイスで利用できるようになりました。</block>
   <block id="e399fe858ae4c467e1c830b512b1718c" category="list-text">すべてのクラウドプロバイダマーケットプレイスからのノード単位のライセンスが廃止され、新しいユーザには提供されなくなりました。これには、年間契約と時間単位のサブスクリプション（ Explore 、 Standard 、 Premium ）が含まれます。</block>
@@ -3066,13 +3062,6 @@
   <block id="6e539d2ea7d82ed0e31c450e64ff8c04" category="section-title">最適化</block>
   <block id="a131e5df30c445534883b2b08d3f9e4e" category="paragraph">プロビジョニングされた容量とI/O処理の料金は別途お支払いください。</block>
   <block id="258f58bf86a685fa4951f45a75224c86" category="list-text">Cloud Volumes ONTAP のシングルノードまたはHA</block>
-  <block id="98b2954d7b26ad04d4f74c70881d3ece" category="section-title">Edge Cache（エッジキャッシュ）</block>
-  <block id="0e6fc7a8a0a2e83eed1877313299a807" category="paragraph">Cloud Volume Edge Cacheのライセンスを提供します。</block>
-  <block id="cbea577daebf267793d8d7234ee50729" category="list-text">分散型企業向けのビジネス継続性とデータ保護を備えたプロフェッショナルパッケージと同じ機能を提供します</block>
-  <block id="90083db3dbad73e69a817501be172673" category="list-text">設置面積の小さいWindows VMを使用して、各場所でインテリジェントなエッジキャッシングを実現します</block>
-  <block id="7c4c7c30514b4cc21e76f21acfaacf2a" category="inline-link">Cloud Volume Edgeキャッシュがビジネスにどのように役立つかをご確認ください</block>
-  <block id="20044e95e1ba41fb44c428898ee01dc2" category="paragraph"><block ref="20044e95e1ba41fb44c428898ee01dc2" category="inline-link-rx"></block></block>
-  <block id="54dcd2c31a61414eef44d6ac931b8f57" category="paragraph">+ OptimizedパッケージとEdge Cacheパッケージは、BYOLでは使用できません。</block>
   <block id="69ab7c49a4285d04bdc7e75b51a4a476" category="section-title">パッケージの変更</block>
   <block id="5bdd4028830bea76f4939d67baa460ff" category="paragraph">導入後、容量ベースのライセンスを使用するCloud Volumes ONTAP システムのパッケージを変更できます。たとえば、Essentialsパッケージを含むCloud Volumes ONTAP システムを導入した場合、ビジネスニーズの変化に応じて、そのシステムをProfessionalパッケージに変更できます。</block>
   <block id="ec3e25d80cfc0e5561493729eadecef7" category="paragraph"><block ref="ea19fa0e06a6047bcaabb9af62b066c3" category="inline-link-macro-rx"></block>。</block>
@@ -3356,8 +3345,6 @@
   <block id="16c274138bfaf739b851a1b611d4cdb0" category="list-text">Cloud Volumes ONTAP システム用にプロビジョニングされた容量が500GiBを超えると、BlueXPはシステムをEssentialsパッケージに変換します。</block>
   <block id="2cfe7b7de2a1df6b585bf1321d37fb8a" category="inline-link">NetApp BlueXPのWebサイト</block>
   <block id="490f0cb4ab517a2c88f9d425fc84b42d" category="paragraph">価格設定の詳細については、を参照してください<block ref="c412404f1934ae5bd4e59f00ec0e79b9" category="inline-link-rx"></block>。</block>
-  <block id="d6887d442590b333a9ed7ab379a87bec" category="inline-image-macro">BlueXPインターフェイスでの通知のスクリーンショット。無料トライアルで残り7日間しか残っていないことを示しています。</block>
-  <block id="25e3832249c9db3c8e31fc1a1a13b691" category="admonition">無料トライアルが開始されたとき、7日間残っているとき、残りの1日があるときに、BlueXPに通知が届きます。例：<block ref="5b65ab6646c17c41bf724ce3fdc19942" category="inline-image-macro-rx" type="image"></block></block>
   <block id="4f6ffa2529265a9e4fcff29a28a16ebe" category="paragraph">プライマリ（読み取り/書き込み）ボリュームが1つ以上あるStorage VMをデータ提供する場合は、最小4TiBの料金が発生します。プライマリボリュームの合計が4TiBを下回った場合、BlueXPはそのStorage VMに4TiBの最小料金を適用します。</block>
   <block id="3116f8acc3e396f2ab1859f3fbe8234e" category="summary">Cloud Volumes ONTAP を停止してBlueXPから起動することで、クラウドコンピューティングコストを管理できます。</block>
   <block id="d4cf496f112c8443c55c77f819b95b4b" category="paragraph">特定の時間間隔で Cloud Volumes ONTAP をシャットダウンして、コンピューティングコストを削減できます。この操作を手動で行う代わりに、システムを自動的にシャットダウンして特定の時刻に再起動するようにBlueXPを設定できます。</block>
@@ -3745,7 +3732,6 @@
   <block id="3cbff90f9e1dd222c93cec86291eb0d2" category="inline-xref">充電の仕組みを理解する</block>
   <block id="c975ffb3e3e23a37bf8f249186a33e9a" category="paragraph">どちらのオプションを選択してもかまいません <block ref="67a3b6c0cb52274370d571e06a09839a" category="inline-xref-macro-rx"></block>。</block>
   <block id="432afd81656ecff91097001b2dbff0ad" category="section-title">バージョン9.10.0以前</block>
-  <block id="05f24457306e58dd0ea1e99766bc28dc" category="list-text">3台のTiBを購入するごとに、1つのエッジノードを使用します</block>
   <block id="18cf072964a583150dd247485ba75b92" category="inline-link-macro">ONTAP 対応の Amazon FSX</block>
   <block id="7450cfde7058dc5e1f7909d0280fd7ae" category="inline-link-macro">Azure NetApp Files の特長</block>
   <block id="b0cee72642f5457a71ddd0b49efb6d93" category="inline-link-macro">Cloud Volumes Service for Google Cloud</block>
@@ -3858,7 +3844,6 @@
   <block id="5b430d19ce10cad3c93da5d1a58ae5da" category="list-text">ONTAP でadvanced権限モードに切り替えます。<block ref="b18455e94f1f10f091d6cc4ad2e0507e" prefix=" " category="inline-code"></block></block>
   <block id="2b92b9eae444abb7f44aa96b856847a4" category="paragraph">状況に応じて<block ref="c02e65ef2be24722283d91b62774dd3d" prefix=" " category="inline-code"></block> ステータスがではありません<block ref="e0aa021e21dddbd6d8cecec71e9cf564" prefix=" " category="inline-code"></block>では、必要なすべての接続と権限を使用してSVMがAzure Key Vaultサービスにアクセスすることはできません。Azureのネットワークポリシーとルーティングによって、プライベートVNetがAzure KeyVaultパブリックエンドポイントに到達できないようにしてください。その場合は、Azureプライベートエンドポイントを使用してVNet内からキーヴォールトにアクセスすることを検討してください。エンドポイントのプライベートIPアドレスを解決するために、SVMに静的ホストエントリを追加する必要がある場合もあります。</block>
   <block id="840b18b97e1e55325d94f00b965a31cf" category="paragraph">。<block ref="5fb243bae51d7320aff8e09d0bb56325" prefix=" " category="inline-code"></block> が報告します<block ref="696b031073e74bf2cb98e5ef201d4aa3" prefix=" " category="inline-code"></block> 初期設定時。ステータスがに変わります<block ref="e0aa021e21dddbd6d8cecec71e9cf564" prefix=" " category="inline-code"></block> 最初のボリュームが暗号化されたあと。</block>
-  <block id="4237e167da34ce4cc54b7915a9ee779a" category="list-text">Cloud Volumes ONTAP 9.12.0までのFlash Cacheのパフォーマンス向上を利用するには、すべてのボリュームで圧縮を無効にする必要があります。Cloud Volumes ONTAP 9.12.1を導入またはアップグレードする場合、圧縮を無効にする必要はありません。</block>
   <block id="dd1852694a70af4fe454fcf679ab1071" category="inline-link-macro">Azureリージョンペア</block>
   <block id="ab83b37918dd75da5385d47425e5a41b" category="paragraph">ビジネスで必要な場合は、BlueXPの設定を変更して、Azureプライベートリンクの代わりにサービスエンドポイントを使用するようにCloud Volumes ONTAP を設定できます。この設定を変更すると、新しく作成した環境 Cloud Volumes ONTAP システムに変更が適用されます。サービスエンドポイントは、でのみサポートされます <block ref="143d2b52aa05d0c2b5e02a98661c9a57" category="inline-link-macro-rx"></block> コネクタとCloud Volumes ONTAP VNetの間。</block>
   <block id="23c74e586b63f34de771242b40d88dcf" category="paragraph">コネクタは、管理対象の Cloud Volumes ONTAP システムまたはにある Azure リージョンと同じ Azure リージョンに導入する必要があります<block ref="71e0e9a7366955554f0600c5ea8cfc7f" category="inline-link-rx"></block> Cloud Volumes ONTAP システム用。</block>
@@ -4300,7 +4285,6 @@
   <block id="fc0a70bcada485a87b25779f9232cd77" category="summary">Cloud Volumes ONTAP には、 2 つの目的で Google Cloud サービスアカウントが必要です。1 つ目は、 Google Cloud の低コストのオブジェクトストレージにコールドデータを階層化するデータ階層化を有効にする場合です。2つ目は、BlueXPのバックアップとリカバリを有効にして、低コストのオブジェクトストレージにボリュームをバックアップする場合です。</block>
   <block id="3051092d4bbc438c196cba870b70c79f" category="paragraph">この手順はデータ階層化にのみ必要です。BlueXPのバックアップとリカバリには必要ありません。</block>
   <block id="aaaac746aa3fb70f64bdaf1919aefe27" category="admonition">BlueXPのバックアップとリカバリではSnapMirrorを実装してバックアップファイル（SnapMirror Cloud）を作成しますが、システムのアップグレード時にバックアップを一時停止する必要はありません。</block>
-  <block id="35ae8932a2c6f1191cf21157a991b4dd" category="paragraph">30 日間の無償トライアルをクラウドプロバイダのマーケットプレイスで従量課金制サブスクリプションで利用できます。この無償トライアルには、Cloud Volumes ONTAP とBlueXPのバックアップとリカバリ機能が含まれています。トライアルは、市場で提供サービスに登録すると開始されます。</block>
   <block id="26ee3f5587dc47d76226ef9b570828ff" category="paragraph">BlueXPデジタルウォレットでは、_Essentials Single Node_licenseに対して請求される50TiBが表示されます。</block>
   <block id="3ea1315566755c191cc8996f86a9af02" category="paragraph">課金は、Keystoneサブスクリプションに含まれる1つ以上のCloud Volumes ONTAP HAペアのコミット済み容量に基づいて行われます。</block>
   <block id="46b39bb522bc6ece1b6bf75e81db3cbf" category="paragraph">各ボリュームのプロビジョニング済み容量は集計され、Keystoneサブスクリプションのコミット済み容量と定期的に比較されます。超過した容量はKeystoneサブスクリプションのバーストとして課金されます。</block>
@@ -4578,7 +4562,6 @@ NetApp （ BYOL ）からライセンスを直接購入した場合、 AWS サ�
   <block id="ba106db82d3577b52130dde5ddd372b4" category="section-title">Cloud Volumes ONTAP 9.13.1 RC1</block>
   <block id="9bc26bf4259fc1662eaaa13a7534abb1" category="paragraph">BlueXPで、AWS、Azure、Google CloudにCloud Volumes ONTAP 9.13.1を導入、管理できるようになりました。</block>
   <block id="3dc988ad93a3ac0c3a1487fc3b6754cf" category="paragraph">Cloud Volumes ONTAPはスケールアウトストレージのオプションとしてS3をサポートしていますが、BlueXPにはこの機能の管理機能はありません。CLI を使用することが、 Cloud Volumes ONTAP からの S3 クライアントアクセスを設定するためのベストプラクティスです。詳細については、を参照してください<block ref="49e8fee748cd4c8d6f01bdb03113fc2a" category="inline-link-rx"></block>。</block>
-  <block id="2db3dc5428f2e0831511cd891db676b1" category="paragraph">Essentialsパッケージの場合、4TiBの最小容量料金は、セカンダリ（データ保護）ボリュームのみを含むStorage VMには適用されません。たとえば、1TiBのセカンダリデータが格納されたStorage VMがある場合、その1TiBのデータに対してのみ課金されます。Essentials以外のパッケージタイプ（Optimized、Professional、Edge Cache）では、ボリュームタイプに関係なく、最小容量4TiBが適用されます。</block>
   <block id="f73b546b2cf111d3a080443f2cd3b97f" category="section-title">2023年7月2日</block>
   <block id="a6d6a466484f2718bba09926e0dfb2c7" category="paragraph">コネクタの3.9.31リリースでは、次の変更が導入されました。</block>
   <block id="0888a7f5d81ff73f5ec9fa719b091bdc" category="section-title">AzureでのHAマルチアベイラビリティゾーン環境のサポート</block>
@@ -5416,4 +5399,18 @@ Mac OSでtailコマンドを完了します。</block>
   <block id="526b16be728da42dd3eb25f5c378e218" category="list-text">AKVではNAEは使用できません。NAEには、外部でサポートされるKMIPサーバが必要です。</block>
   <block id="70004026f1ac6c7f08784ebf0a55c142" category="list-text">Cloud Volumes ONTAPノードは、アクセス性とキーの可用性を確認するために、15分ごとにAKVをポーリングします。このポーリング期間は設定できません。ポーリング試行で連続して4回失敗（合計1時間）すると、ボリュームはオフラインになります。</block>
   <block id="368b5e8e02b8134e8d1009fff74bf2bc" category="paragraph">Cloud Volumes ONTAPはをサポートし<block ref="09aecd5417a289ba24f2f00949971fbc" category="inline-link-rx"></block>ます。NVE と NAE は、（ FIPS ） 140-2 に準拠したボリュームの保管データ暗号化を可能にするソフトウェアベースのソリューションです。NVE と NAE はいずれも AES 256 ビット暗号化を使用します。</block>
+  <block id="c89c4d58a7009250769a012cf2451410" category="list-text">AWSでCloud Volumes ONTAP 9.12.0以前用にFlash Cacheを設定する場合は、Flash Cacheのパフォーマンス向上を利用するために、すべてのボリュームで圧縮を無効にする必要があります。Cloud Volumes ONTAP 9.12.1以降を導入またはアップグレードする場合は、圧縮を無効にする必要はありません。</block>
+  <block id="f21def4319b19574f5ca7ab45389822b" category="paragraph">+ BYOLではOptimizedパッケージを使用できないことに注意してください。</block>
+  <block id="e2299e8e355a9b503858d1f8d800ccaa" category="paragraph">Essentialsパッケージの場合、4TiBの最小容量料金は、セカンダリ（データ保護）ボリュームのみを含むStorage VMには適用されません。たとえば、1TiBのセカンダリデータが格納されたStorage VMがある場合、その1TiBのデータに対してのみ課金されます。Essentials以外のパッケージタイプ（OptimizedおよびProfessional）では、ボリュームタイプに関係なく、最小容量4TiBが適用されます。</block>
+  <block id="ea4ba4158f6b2b895b0418072f2ba06d" category="paragraph">ノードベースのライセンスは、 Cloud Volumes ONTAP のライセンスをノード単位で付与することが可能になった旧世代のライセンスモデルです。このライセンスモデルは新規のお客様にはご利用いただけません。ノード単位の充電は、前述のキャパシティ単位の充電方法に置き換えられました。</block>
+  <block id="9cc3df8e0a65f95d62b0d0dc557d0fa9" category="section-title">2024 年 8 月 8 日</block>
+  <block id="e84c1e70dc9a2186ec21e22a3e9cbda0" category="section-title">Edge Cacheライセンスパッケージの廃止</block>
+  <block id="882b50ca44d46bfb8d9502390cfeaf96" category="paragraph">Cloud Volumes ONTAPの今後の導入では、Edge Cache容量ベースのライセンスパッケージは利用できなくなります。ただし、APIを使用してこの機能を利用することはできます。</block>
+  <block id="a5729938408dc232ea97fb5d7d00b71c" category="section-title">AzureのFlash Cacheでサポートされる最小ONTAPバージョン</block>
+  <block id="9eed4224485f0ec8f22ac2ca0b031514" category="paragraph">AzureでFlash Cacheを設定するには、9.13.1 GA以上のONTAPバージョンが必要です。Azure用のCloud Volumes ONTAPシステムへのFlash Cacheの導入に使用できるのは、ONTAP 9.13.1 GA以降のバージョンのみです。</block>
+  <block id="2936dc7efe93e6248aca38d21b92cc62" category="paragraph">サポートされる構成については、を参照してください<block ref="10c1bb30d666a83202b9e687d7b06d1b" category="inline-link-rx"></block>。</block>
+  <block id="bc5af032a5cd69ef4ac57b8c2cd1f1d6" category="section-title">マーケットプレイスサブスクリプションの無償トライアルの廃止</block>
+  <block id="860dc5e7395e0f2c15a42ffdef98eca4" category="paragraph">クラウドプロバイダのマーケットプレイスで提供される従量課金制サブスクリプションの30日間無償トライアルは、Cloud Volumes ONTAPではご利用いただけなくなります。あらゆるタイプのマーケットプレイスサブスクリプション（PAYGOまたは年間契約）の料金は、無料トライアル期間なしで最初の使用から有効になります。</block>
+  <block id="2c8ad7deb621eae9ecb23ccf84d9c22c" category="section-title">カナダ西部リージョンがAWSでサポートされるようになりました</block>
+  <block id="184c928c73aa00c7569ba55c0b9e0064" category="paragraph">Cloud Volumes ONTAP 9.12.1 GA以降では、カナダ西部リージョンがAWSでサポートされるようになりました。</block>
 </blocks>

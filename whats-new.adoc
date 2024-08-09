@@ -20,6 +20,38 @@ BlueXPのCloud Volumes ONTAP Managementの新機能をご紹介します。
 
 
 
+== 2024 年 8 月 8 日
+
+
+
+=== Edge Cacheライセンスパッケージの廃止
+
+Cloud Volumes ONTAPの今後の導入では、Edge Cache容量ベースのライセンスパッケージは利用できなくなります。ただし、APIを使用してこの機能を利用することはできます。
+
+
+
+=== AzureのFlash Cacheでサポートされる最小ONTAPバージョン
+
+AzureでFlash Cacheを設定するには、9.13.1 GA以上のONTAPバージョンが必要です。Azure用のCloud Volumes ONTAPシステムへのFlash Cacheの導入に使用できるのは、ONTAP 9.13.1 GA以降のバージョンのみです。
+
+サポートされる構成については、を参照してください https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-configs-azure.html#single-node-systems["Azure でサポートされる構成"^]。
+
+
+
+=== マーケットプレイスサブスクリプションの無償トライアルの廃止
+
+クラウドプロバイダのマーケットプレイスで提供される従量課金制サブスクリプションの30日間無償トライアルは、Cloud Volumes ONTAPではご利用いただけなくなります。あらゆるタイプのマーケットプレイスサブスクリプション（PAYGOまたは年間契約）の料金は、無料トライアル期間なしで最初の使用から有効になります。
+
+
+
+=== カナダ西部リージョンがAWSでサポートされるようになりました
+
+Cloud Volumes ONTAP 9.12.1 GA以降では、カナダ西部リージョンがAWSでサポートされるようになりました。
+
+すべての地域のリストについては、 https://bluexp.netapp.com/cloud-volumes-global-regions["AWSのグローバルリージョンマップ"^]。
+
+
+
 == 2024年6月10日
 
 
@@ -100,6 +132,8 @@ AWSでは、Cloud Volumes ONTAP、メディエーター、コネクタがすべ�
 === Cloud Volumes ONTAP 9.14.1 GA
 
 BlueXPで、AWS、Azure、Google CloudにCloud Volumes ONTAP 9.14.1 General Availabilityリリースを導入、管理できるようになりました。
+
+link:https://docs.netapp.com/us-en/cloud-volumes-ontap-9141-relnotes/["このリリースのに含まれる新機能について説明します Cloud Volumes ONTAP"^]。
 
 
 

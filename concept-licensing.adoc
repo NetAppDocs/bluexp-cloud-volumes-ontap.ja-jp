@@ -152,33 +152,6 @@ NOTE: BlueXPのバックアップとリカバリにはPAYGOのサブスクリプ
 
 
 
-==== Edge Cache（エッジキャッシュ）
-
-Cloud Volume Edge Cacheのライセンスを提供します。
-
-* 分散型企業向けのビジネス継続性とデータ保護を備えたプロフェッショナルパッケージと同じ機能を提供します
-* 設置面積の小さいWindows VMを使用して、各場所でインテリジェントなエッジキャッシングを実現します
-* 3台のTiBを購入するごとに、1つのエッジノードを使用します
-
-
-ifdef::azure[]
-
-* Azure Marketplaceでは、従量課金制または年間契約として提供されています
-
-
-endif::azure[]
-
-ifdef::gcp[]
-
-* Google Cloud Marketplaceでは、従量課金制サービスまたは年間契約として提供されます
-
-
-endif::gcp[]
-
-https://cloud.netapp.com/cloud-volumes-edge-cache["Cloud Volume Edgeキャッシュがビジネスにどのように役立つかをご確認ください"^]
-
-
-
 === 消費モデル
 
 容量ベースのライセンスパッケージには、次の消費モデルがあります。
@@ -188,7 +161,7 @@ https://cloud.netapp.com/cloud-volumes-edge-cache["Cloud Volume Edgeキャッシ
 
 ifdef::azure[]
 
-+ OptimizedパッケージとEdge Cacheパッケージは、BYOLでは使用できません。
++ BYOLではOptimizedパッケージを使用できないことに注意してください。
 
 endif::azure[]
 
@@ -224,19 +197,6 @@ link:task-manage-capacity-licenses.html["充電方法を変更する方法につ
 === 価格設定
 
 価格設定の詳細については、を参照してください https://cloud.netapp.com/pricing?hsCtaTracking=4f8b7b77-8f63-4b73-b5af-ee09eab4fbd6%7C5fefbc99-396c-4084-99e6-f1e22dc8ffe7["NetApp BlueXPのWebサイト"^]。
-
-
-
-=== 無償トライアルを利用できます
-
-30 日間の無償トライアルをクラウドプロバイダのマーケットプレイスで従量課金制サブスクリプションで利用できます。この無償トライアルには、Cloud Volumes ONTAP とBlueXPのバックアップとリカバリ機能が含まれています。トライアルは、市場で提供サービスに登録すると開始されます。
-
-インスタンスや容量の制限はありません。Cloud Volumes ONTAP システムは必要な数だけ導入でき、必要な容量を30日間無償で割り当てることができます。無料トライアルは、30日後に1時間ごとの有料サブスクリプションに自動的に変換されます。
-
-Cloud Volumes ONTAP のソフトウェアライセンス料金は1時間ごとに発生しませんが、クラウドプロバイダからインフラ料金が請求されます。
-
-
-TIP: 無料トライアルが開始されたとき、7日間残っているとき、残りの1日があるときに、BlueXPに通知が届きます。例：image:screenshot-free-trial-notification.png["BlueXPインターフェイスでの通知のスクリーンショット。無料トライアルで残り7日間しか残っていないことを示しています。"]
 
 
 
@@ -294,7 +254,7 @@ https://docs.netapp.com/us-en/bluexp-setup-admin/concept-netapp-accounts.html["�
 
 まだボリュームをプロビジョニングしていない場合は、最小料金は適用されません。
 
-Essentialsパッケージの場合、4TiBの最小容量料金は、セカンダリ（データ保護）ボリュームのみを含むStorage VMには適用されません。たとえば、1TiBのセカンダリデータが格納されたStorage VMがある場合、その1TiBのデータに対してのみ課金されます。Essentials以外のパッケージタイプ（Optimized、Professional、Edge Cache）では、ボリュームタイプに関係なく、最小容量4TiBが適用されます。
+Essentialsパッケージの場合、4TiBの最小容量料金は、セカンダリ（データ保護）ボリュームのみを含むStorage VMには適用されません。たとえば、1TiBのセカンダリデータが格納されたStorage VMがある場合、その1TiBのデータに対してのみ課金されます。Essentials以外のパッケージタイプ（OptimizedおよびProfessional）では、ボリュームタイプに関係なく、最小容量4TiBが適用されます。
 
 
 
@@ -440,7 +400,7 @@ endif::gcp[]
 
 == ノードベースのライセンス
 
-ノードベースのライセンスは、 Cloud Volumes ONTAP のライセンスをノード単位で付与することが可能になった旧世代のライセンスモデルです。このライセンスモデルは、新規のお客様にはご利用いただけません。また、無償トライアルもご利用いただけません。ノード単位の充電は、前述のキャパシティ単位の充電方法に置き換えられました。
+ノードベースのライセンスは、 Cloud Volumes ONTAP のライセンスをノード単位で付与することが可能になった旧世代のライセンスモデルです。このライセンスモデルは新規のお客様にはご利用いただけません。ノード単位の充電は、前述のキャパシティ単位の充電方法に置き換えられました。
 
 既存のお客様は、ノードベースのライセンスを引き続き利用できます。
 
