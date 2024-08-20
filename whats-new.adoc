@@ -44,14 +44,6 @@ AzureでFlash Cacheを設定するには、9.13.1 GA以上のONTAPバージョ�
 
 
 
-=== カナダ西部リージョンがAWSでサポートされるようになりました
-
-Cloud Volumes ONTAP 9.12.1 GA以降では、カナダ西部リージョンがAWSでサポートされるようになりました。
-
-すべての地域のリストについては、 https://bluexp.netapp.com/cloud-volumes-global-regions["AWSのグローバルリージョンマップ"^]。
-
-
-
 == 2024年6月10日
 
 
