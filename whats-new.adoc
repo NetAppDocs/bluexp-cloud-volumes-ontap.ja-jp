@@ -20,6 +20,18 @@ BlueXPのCloud Volumes ONTAP Managementの新機能をご紹介します。
 
 
 
+== 2024年8月22日
+
+
+
+=== Cloud Volumes ONTAP 9.15.1 GA
+
+BlueXPで、AWS、Azure、Google CloudにCloud Volumes ONTAP 9.15.1 General Availabilityリリースを導入、管理できるようになりました。
+
+link:https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/["このリリースのに含まれる新機能について説明します Cloud Volumes ONTAP"^]。
+
+
+
 == 2024 年 8 月 8 日
 
 
@@ -32,7 +44,7 @@ Cloud Volumes ONTAPの今後の導入では、Edge Cache容量ベースのライ
 
 === AzureのFlash Cacheでサポートされる最小ONTAPバージョン
 
-AzureでFlash Cacheを設定するには、9.13.1 GA以上のONTAPバージョンが必要です。Azure用のCloud Volumes ONTAPシステムへのFlash Cacheの導入に使用できるのは、ONTAP 9.13.1 GA以降のバージョンのみです。
+AzureでFlash Cacheを設定するには、9.13.1 GA以上のONTAPバージョンが必要です。のCloud Volumes ONTAPシステムへの導入には、ONTAP 9 .13.1 GA以降のバージョンのみを使用できます。
 
 サポートされる構成については、を参照してください https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-configs-azure.html#single-node-systems["Azure でサポートされる構成"^]。
 
@@ -87,7 +99,7 @@ Azure for Cloud Volumes ONTAP 9.12.1 GA以降では、次のリージョンでHA
 * カナダセントラル
 
 
-すべての地域のリストについては、 https://bluexp.netapp.com/cloud-volumes-global-regions["Azureのグローバルリージョンマップ"^]。
+すべてのリージョンのリストについては、を参照して https://bluexp.netapp.com/cloud-volumes-global-regions["Azureのグローバルリージョンマップ"^]ください。
 
 
 
@@ -95,7 +107,7 @@ Azure for Cloud Volumes ONTAP 9.12.1 GA以降では、次のリージョンでHA
 
 ヨハネスブルグ地域 (`africa-south1` リージョン）は、Google Cloud for Cloud Volumes ONTAP 9.12.1 GA以降でサポートされるようになりました。
 
-すべての地域のリストについては、 https://bluexp.netapp.com/cloud-volumes-global-regions["Google Cloudのグローバルリージョンマップ"^]。
+すべてのリージョンのリストについては、を参照して https://bluexp.netapp.com/cloud-volumes-global-regions["Google Cloudのグローバルリージョンマップ"^]ください。
 
 
 
@@ -233,7 +245,7 @@ Azure for Cloud Volumes ONTAP 9.12.1 GA以降では、次のリージョンで�
 * アラブ首長国連邦北部
 
 
-すべての地域のリストについては、 https://bluexp.netapp.com/cloud-volumes-global-regions["Azureのグローバルリージョンマップ"^]。
+すべてのリージョンのリストについては、を参照して https://bluexp.netapp.com/cloud-volumes-global-regions["Azureのグローバルリージョンマップ"^]ください。
 
 
 
@@ -247,7 +259,7 @@ Azure for Cloud Volumes ONTAP 9.12.1 GA以降では、次のリージョンで�
 
 ベルリン地域は、Google Cloud for Cloud Volumes ONTAP 9.12.1 GA以降でサポートされるようになりました。
 
-すべての地域のリストについては、 https://bluexp.netapp.com/cloud-volumes-global-regions["Google Cloudのグローバルリージョンマップ"^]。
+すべてのリージョンのリストについては、を参照して https://bluexp.netapp.com/cloud-volumes-global-regions["Google Cloudのグローバルリージョンマップ"^]ください。
 
 
 
@@ -261,7 +273,7 @@ Azure for Cloud Volumes ONTAP 9.12.1 GA以降では、次のリージョンで�
 
 テルアビブリージョンは、Cloud Volumes ONTAP 9.12.1 GA以降でAWSでサポートされるようになりました。
 
-すべての地域のリストについては、 https://bluexp.netapp.com/cloud-volumes-global-regions["AWSのグローバルリージョンマップ"^]。
+すべてのリージョンのリストについては、を参照して https://bluexp.netapp.com/cloud-volumes-global-regions["AWSのグローバルリージョンマップ"^]ください。
 
 
 
@@ -275,7 +287,7 @@ Azure for Cloud Volumes ONTAP 9.12.1 GA以降では、次のリージョンで�
 
 サウジアラビアリージョンは、Google Cloud for Cloud Volumes ONTAPおよびConnector for Cloud Volumes ONTAP 9.12.1 GA以降でサポートされるようになりました。
 
-すべての地域のリストについては、 https://bluexp.netapp.com/cloud-volumes-global-regions["Google Cloudのグローバルリージョンマップ"^]。
+すべてのリージョンのリストについては、を参照して https://bluexp.netapp.com/cloud-volumes-global-regions["Google Cloudのグローバルリージョンマップ"^]ください。
 
 
 
@@ -366,7 +378,7 @@ link:https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-deploying-gcp
 * ボリュームタイプ「secondary」のラベルが「Secondary（DP）」に変更されました。
 
 
-使用状況レポートの詳細については、を参照してください。 link:https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-manage-capacity-licenses.html#download-usage-reports["使用状況レポートをダウンロードします"^]。
+使用状況レポートの詳細については、を参照してくださいlink:https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-manage-capacity-licenses.html#download-usage-reports["使用状況レポートをダウンロードします"^]。
 
 
 
@@ -430,7 +442,7 @@ https://docs.netapp.com/us-en/cloud-volumes-ontap-9131-relnotes["このリリー
 
 Upgrade Cloud Volumes ONTAPページで、Cloud Volumes ONTAPの最新バージョンまたは古いバージョンへのアップグレードを選択できるようになりました。
 
-BlueXPを使用したCloud Volumes ONTAPのアップグレードの詳細については、を参照してください https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-updating-ontap-cloud.html#upgrade-cloud-volumes-ontap["Cloud Volumes ONTAP をアップグレードします"^]。
+BlueXP  を使用したCloud Volumes ONTAPのアップグレードの詳細については、を参照してください https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-updating-ontap-cloud.html#upgrade-cloud-volumes-ontap["Cloud Volumes ONTAP をアップグレードします"^]。
 
 
 
@@ -486,7 +498,7 @@ Cloud Volumes ONTAP 9.12.1 GA以降では、次のように中国リージョン
 * ネットアップから直接購入したライセンスはサポートされます。
 
 
-地域ごとの可用性については、を参照してください link:https://bluexp.netapp.com/cloud-volumes-global-regions["Cloud Volumes ONTAP のグローバルリージョンマップ"^]。
+地域によって利用可能な場合は、を参照してlink:https://bluexp.netapp.com/cloud-volumes-global-regions["Cloud Volumes ONTAP のグローバルリージョンマップ"^]ください。
 
 
 
@@ -526,7 +538,7 @@ image:https://raw.githubusercontent.com/NetAppDocs/bluexp-cloud-volumes-ontap/ma
 
 === FlexGroup ボリュームはCloud Volumes ONTAP で確認できます
 
-CLIまたはSystem Managerで作成したFlexGroup ボリュームは、BlueXPの再設計された[ボリューム]タイルで直接表示できるようになりました。FlexVol ボリュームの場合と同じように、作成したFlexGroup ボリュームの詳細情報は専用の[Volumes]タイルで確認できます。
+ONTAPシステムマネージャまたはONTAP CLIで作成したFlexGroupボリュームは、BlueXP  の[再設計されたボリューム]タイルで直接表示できるようになりました。FlexVol ボリュームの場合と同じように、作成したFlexGroup ボリュームの詳細情報は専用の[Volumes]タイルで確認できます。
 
 
 NOTE: 現時点では、BlueXPでは既存のFlexGroup ボリュームのみを表示できます。BlueXPでFlexGroup ボリュームを作成することはできませんが、今後のリリースでサポートする予定です。
@@ -550,7 +562,7 @@ Cloud Volumes ONTAP 9.12.1 GA以降では、次のように中国リージョン
 * ネットアップから直接購入したライセンスはサポートされます。
 
 
-地域ごとの可用性については、を参照してください link:https://bluexp.netapp.com/cloud-volumes-global-regions["Cloud Volumes ONTAP のグローバルリージョンマップ"^]。
+地域によって利用可能な場合は、を参照してlink:https://bluexp.netapp.com/cloud-volumes-global-regions["Cloud Volumes ONTAP のグローバルリージョンマップ"^]ください。
 
 
 
@@ -615,7 +627,7 @@ Cloud Volumes ONTAP 9.13.0リリースでは、Flash Cache、高速な書き込�
 
 AWS HA単一アベイラビリティゾーン（AZ）環境で配置グループを作成するための新しい設定が追加されました。失敗した配置グループの作成をバイパスして、AWS HA単一のAZ環境を正常に完了できるようにすることができます。
 
-配置グループの作成設定の詳細については、を参照してください link:https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-configure-placement-group-failure-aws.html#overview["AWS HA単一AZ用の配置グループの作成を設定する"^]。
+配置グループ作成設定の構成方法の詳細については、を参照してくださいlink:https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-configure-placement-group-failure-aws.html#overview["AWS HA単一AZ用の配置グループの作成を設定する"^]。
 
 
 
@@ -653,7 +665,7 @@ link:https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-worm.html[
 
 マルチテナント暗号化キー管理（MTEKM）ライセンスは新しいCloud Volumes ONTAP 環境には含まれなくなりました。
 
-Cloud Volumes ONTAP とともに自動的にインストールされるONTAP 機能ライセンスの詳細については、を参照してください link:https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/reference-default-configs.html["Cloud Volumes ONTAP のデフォルト設定"^]。
+Cloud Volumes ONTAPとともに自動的にインストールされるONTAP機能ライセンスの詳細については、を参照してくださいlink:https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/reference-default-configs.html["Cloud Volumes ONTAP のデフォルト設定"^]。
 
 
 
@@ -731,7 +743,7 @@ https://docs.netapp.com/us-en/ontap/object-storage-management/index.html["ONTAP 
 
 ONTAP VolumeでのNDMPコピーの使用が認定されました。
 
-NDMPの設定方法および使用方法については、を参照してください https://docs.netapp.com/us-en/ontap/ndmp/index.html["NDMP 設定の概要"]。
+NDMPの設定および使用方法については、を参照してください https://docs.netapp.com/us-en/ontap/ndmp/index.html["NDMP 設定の概要"]。
 
 
 

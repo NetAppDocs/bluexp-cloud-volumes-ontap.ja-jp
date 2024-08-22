@@ -628,7 +628,7 @@ CAUTION: ウィザードで選択を行う場合は、*[サービス]*で*[Data 
 .複数のアベイラビリティゾーンにCloud Volumes ONTAP HAを導入する場合の注意事項
 HAペアのウィザードを実行する際は、次の点に注意してください。
 
-* 複数のアベイラビリティゾーン（AZ）にCloud Volumes ONTAP HAを導入する場合は、トランジットゲートウェイを設定する必要があります。を参照してください link:task-setting-up-transit-gateway.html["AWS 転送ゲートウェイを設定します"]。
+* 複数のアベイラビリティゾーン（AZ）にCloud Volumes ONTAP HAを導入する場合は、トランジットゲートウェイを設定する必要があります。手順については、を参照してくださいlink:task-setting-up-transit-gateway.html["AWS 転送ゲートウェイを設定します"]。
 * 公開時点でAWS Top Secret Cloudで利用可能なAZは2つしかなかったため、次のように構成を導入します。
 +
 ** ノード 1 ：アベイラビリティゾーン A

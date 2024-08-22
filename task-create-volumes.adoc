@@ -30,7 +30,7 @@ BlueXPでは、いくつかの方法で新しいボリュームを作成でき�
 ボリュームのプロビジョニングに関する注意事項は次のとおりです。
 
 * iSCSIボリュームを作成すると、BlueXPによって自動的にLUNが作成されます。ボリュームごとに 1 つの LUN だけを作成することでシンプルになり、管理は不要になります。ボリュームを作成したら、 link:https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-connect-lun.html["IQN を使用して、から LUN に接続します ホスト"^]。
-* LUN は、 System Manager または CLI を使用して追加で作成できます。
+* ONTAP System ManagerまたはONTAP CLIから追加のLUNを作成できます。
 
 
 ifdef::aws[]
@@ -154,7 +154,7 @@ ifdef::gcp[]
 endif::gcp[]
 
 DNS ドメイン:: Cloud Volumes ONTAP Storage Virtual Machine （ SVM ）の DNS ドメイン。ほとんどの場合、ドメインは AD ドメインと同じです。
-NTP サーバ:: Active Directory DNS を使用して NTP サーバを設定するには、「 Active Directory ドメインを使用」を選択します。別のアドレスを使用して NTP サーバを設定する必要がある場合は、 API を使用してください。を参照してください https://docs.netapp.com/us-en/bluexp-automation/index.html["BlueXP自動化ドキュメント"^] を参照してください。
+NTP サーバ:: Active Directory DNS を使用して NTP サーバを設定するには、「 Active Directory ドメインを使用」を選択します。別のアドレスを使用して NTP サーバを設定する必要がある場合は、 API を使用してください。詳細については、を参照して https://docs.netapp.com/us-en/bluexp-automation/index.html["BlueXP自動化ドキュメント"^]ください。
 +
 --
 NTP サーバは、 CIFS サーバを作成するときにのみ設定できます。CIFS サーバを作成したあとで設定することはできません。
@@ -251,4 +251,4 @@ endif::aws[]
 
 CIFS 共有をプロビジョニングした場合は、ファイルとフォルダに対する権限をユーザまたはグループに付与し、それらのユーザが共有にアクセスしてファイルを作成できることを確認します。
 
-ボリュームにクォータを適用する場合は、 System Manager または CLI を使用する必要があります。クォータを使用すると、ユーザ、グループ、または qtree が使用するディスク・スペースとファイル数を制限または追跡できます。
+ボリュームにクォータを適用する場合は、ONTAP System ManagerまたはONTAP CLIを使用する必要があります。クォータを使用すると、ユーザ、グループ、または qtree が使用するディスク・スペースとファイル数を制限または追跡できます。

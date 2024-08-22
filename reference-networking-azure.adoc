@@ -183,7 +183,7 @@ TIP: コネクタに関する情報をお探しですか？ https://docs.netapp.
 | 1000 inbound_ssh | 22 TCP | Any から Any | クラスタ管理 LIF またはノード管理 LIF の IP アドレスへの SSH アクセス 
 
 
-| 1001 INBOUND _http | 80 TCP | Any から Any | クラスタ管理 LIF の IP アドレスを使用した System Manager Web コンソールへの HTTP アクセス 
+| 1001 INBOUND _http | 80 TCP | Any から Any | クラスタ管理LIFのIPアドレスを使用したONTAP System Manager WebコンソールへのHTTPアクセス 
 
 
 | 1002 INBOUND _111_TCP | 111 TCP | Any から Any | NFS のリモートプロシージャコール 
@@ -201,7 +201,7 @@ TIP: コネクタに関する情報をお探しですか？ https://docs.netapp.
 | 1006 INBOUND _161-162_UDP | UDP 161-162 | Any から Any | 簡易ネットワーク管理プロトコル 
 
 
-| 1007 INBOUND _443 | 443 tcp | Any から Any | コネクタへの接続と、クラスタ管理LIFのIPアドレスを使用したSystem Manager WebコンソールへのHTTPSアクセス 
+| 1007 INBOUND _443 | 443 tcp | Any から Any | コネクタとの接続、およびクラスタ管理LIFのIPアドレスを使用したONTAP System Manager WebコンソールへのHTTPSアクセス 
 
 
 | 1008 INBOUND _445 | 445 TCP | Any から Any | NetBIOS フレーム同期を使用した Microsoft SMB over TCP 
@@ -269,7 +269,7 @@ NOTE: HA システムのインバウンドデータトラフィックは Azure S
 | 優先順位と名前 | ポートおよびプロトコル | ソースとデスティネーションの 2 つです | 説明 
 
 
-| 100 インバウンド _ 443 | 443 ：任意のプロトコル | Any から Any | コネクタへの接続と、クラスタ管理LIFのIPアドレスを使用したSystem Manager WebコンソールへのHTTPSアクセス 
+| 100 インバウンド _ 443 | 443 ：任意のプロトコル | Any から Any | コネクタとの接続、およびクラスタ管理LIFのIPアドレスを使用したONTAP System Manager WebコンソールへのHTTPSアクセス 
 
 
 | 101 INBOUND _111_TCP | 111 すべてのプロトコル | Any から Any | NFS のリモートプロシージャコール 

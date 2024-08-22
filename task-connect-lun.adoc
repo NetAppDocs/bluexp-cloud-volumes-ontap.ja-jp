@@ -19,7 +19,7 @@ iSCSIボリュームを作成すると、BlueXPによって自動的にLUNが作
 次の点に注意してください。
 
 * BlueXPの自動容量管理はLUNには適用されませんBlueXPでLUNを作成すると'自動拡張機能が無効になります
-* LUN は、 System Manager または CLI を使用して追加で作成できます。
+* ONTAP System ManagerまたはONTAP CLIから追加のLUNを作成できます。
 
 
 .手順

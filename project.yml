@@ -83,6 +83,8 @@ sidebar:
         url: "/task-set-up-licensing-azure.html"
       - title: ハイアベイラビリティモードを有効にします
         url: "/task-azure-high-availability-mode.html"
+      - title: 単一のアベイラビリティゾーンに対してVMOrchestratorZonalMultiFDを有効にする
+        url: "/task-saz-feature.html"
       - title: Azure で Cloud Volumes ONTAP を起動します
         url: "/task-deploying-otc-azure.html"
       - title: Azureプラットフォームイメージの検証

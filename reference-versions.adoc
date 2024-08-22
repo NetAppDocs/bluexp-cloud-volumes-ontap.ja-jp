@@ -16,7 +16,7 @@ summary: 'BlueXPでは"新しいCloud Volumes ONTAP 作業環境を作成する�
 [role="lead"]
 BlueXPでは'新しいCloud Volumes ONTAP 作業環境を作成するときに'いくつかの異なるONTAP バージョンから選択できます
 
-ここに記載されている以外のCloud Volumes ONTAPバージョンは、新規導入では使用できません。アップグレードの詳細については、を参照してください。 link:task-updating-ontap-cloud.html#supported-upgrade-paths["サポートされているアップグレードパス"]。
+ここに記載されている以外のCloud Volumes ONTAPバージョンは、新規導入では使用できません。アップグレードの詳細については、を参照してlink:task-updating-ontap-cloud.html#supported-upgrade-paths["サポートされているアップグレードパス"]ください。
 
 ifdef::aws[]
 

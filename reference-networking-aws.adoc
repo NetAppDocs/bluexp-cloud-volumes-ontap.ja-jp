@@ -50,7 +50,7 @@ AutoSupport メッセージを送信できないことがBlueXPから通知さ�
 
 HA メディエータインスタンスは、 AWS EC2 サービスへのアウトバウンド接続を持っている必要があります。これにより、ストレージのフェイルオーバーを支援できます。接続を提供するには、パブリック IP アドレスを追加するか、プロキシサーバを指定するか、または手動オプションを使用します。
 
-手動オプションには、 NAT ゲートウェイまたはターゲットサブネットから AWS EC2 サービスへのインターフェイス VPC エンドポイントを指定できます。VPC エンドポイントの詳細については、を参照してください http://docs.aws.amazon.com/AmazonVPC/latest/UserGuide/vpce-interface.html["AWS ドキュメント：「 Interface VPC Endpoints 」（ AWS PrivateLink ）"^]。
+手動オプションには、 NAT ゲートウェイまたはターゲットサブネットから AWS EC2 サービスへのインターフェイス VPC エンドポイントを指定できます。VPCエンドポイントの詳細については、を参照して http://docs.aws.amazon.com/AmazonVPC/latest/UserGuide/vpce-interface.html["AWS ドキュメント：「 Interface VPC Endpoints 」（ AWS PrivateLink ）"^]ください。
 
 
 
@@ -182,17 +182,17 @@ TIP: コネクタに関する情報をお探しですか？ https://docs.netapp.
 
 === データ階層化のための接続
 
-EBS をパフォーマンス階層として使用し、 AWS S3 を容量階層として使用する場合は、 Cloud Volumes ONTAP が S3 に接続されていることを確認する必要があります。この接続を提供する最善の方法は、 S3 サービスへの vPC エンドポイントを作成することです。手順については、を参照してください https://docs.aws.amazon.com/AmazonVPC/latest/UserGuide/vpce-gateway.html#create-gateway-endpoint["AWS のドキュメント：「 Creating a Gateway Endpoint"^]。
+EBS をパフォーマンス階層として使用し、 AWS S3 を容量階層として使用する場合は、 Cloud Volumes ONTAP が S3 に接続されていることを確認する必要があります。この接続を提供する最善の方法は、 S3 サービスへの vPC エンドポイントを作成することです。手順については、を参照して https://docs.aws.amazon.com/AmazonVPC/latest/UserGuide/vpce-gateway.html#create-gateway-endpoint["AWS のドキュメント：「 Creating a Gateway Endpoint"^]ください。
 
 vPC エンドポイントを作成するときは、 Cloud Volumes ONTAP インスタンスに対応するリージョン、 vPC 、およびルートテーブルを必ず選択してください。S3 エンドポイントへのトラフィックを有効にする発信 HTTPS ルールを追加するには、セキュリティグループも変更する必要があります。そうしないと、 Cloud Volumes ONTAP は S3 サービスに接続できません。
 
-問題が発生した場合は、を参照してください https://aws.amazon.com/premiumsupport/knowledge-center/connect-s3-vpc-endpoint/["AWS のサポートナレッジセンター：ゲートウェイ VPC エンドポイントを使用して S3 バケットに接続できないのはなぜですか。"^]
+問題が発生した場合は、 https://aws.amazon.com/premiumsupport/knowledge-center/connect-s3-vpc-endpoint/["AWS のサポートナレッジセンター：ゲートウェイ VPC エンドポイントを使用して S3 バケットに接続できないのはなぜですか。"^]
 
 
 
 === ONTAP システムへの接続
 
-AWSのCloud Volumes ONTAP システムと他のネットワークのONTAP システムの間でデータをレプリケートするには、AWS VPCと他のネットワーク（社内ネットワークなど）の間にVPN接続が必要です。手順については、を参照してください https://docs.aws.amazon.com/AmazonVPC/latest/UserGuide/SetUpVPNConnections.html["AWS ドキュメント：「 Setting Up an AWS VPN Connection"^]。
+AWSのCloud Volumes ONTAP システムと他のネットワークのONTAP システムの間でデータをレプリケートするには、AWS VPCと他のネットワーク（社内ネットワークなど）の間にVPN接続が必要です。手順については、を参照して https://docs.aws.amazon.com/AmazonVPC/latest/UserGuide/SetUpVPNConnections.html["AWS ドキュメント：「 Setting Up an AWS VPN Connection"^]ください。
 
 
 
@@ -202,7 +202,7 @@ CIFS ストレージをプロビジョニングする場合は、 AWS で DNS �
 
 DNS サーバは、 Active Directory 環境に名前解決サービスを提供する必要があります。デフォルトの EC2 DNS サーバを使用するように DHCP オプションセットを設定できます。このサーバは、 Active Directory 環境で使用される DNS サーバであってはなりません。
 
-手順については、を参照してください https://aws-quickstart.github.io/quickstart-microsoft-activedirectory/["AWS ドキュメント：「 Active Directory Domain Services on the AWS Cloud ： Quick Start Reference Deployment"^]。
+手順については、を参照して https://aws-quickstart.github.io/quickstart-microsoft-activedirectory/["AWS ドキュメント：「 Active Directory Domain Services on the AWS Cloud ： Quick Start Reference Deployment"^]ください。
 
 
 
@@ -218,7 +218,7 @@ link:task-deploy-aws-shared-vpc.html["共有サブネットにHAペアを導入�
 
 複数の可用性ゾーン（ AZS ）を使用する Cloud Volumes ONTAP HA 構成には、 AWS ネットワークの追加要件が適用されます。HAペアを起動する前に、作業環境の作成時にBlueXPでネットワークの詳細を入力する必要があるため、これらの要件を確認してください。
 
-HA ペアの仕組みについては、を参照してください link:concept-ha.html["ハイアベイラビリティペア"]。
+HAペアの仕組みについては、を参照してくださいlink:concept-ha.html["ハイアベイラビリティペア"]。
 
 可用性ゾーン:: この HA 導入モデルでは、複数の AZS を使用してデータの高可用性を確保します。各 Cloud Volumes ONTAP インスタンスと、 HA ペア間の通信チャネルを提供するメディエータインスタンスには、専用の AZ を使用する必要があります。
 
@@ -254,7 +254,7 @@ VPC内のサブネット用のルーティングテーブルが1つ（メイン�
 
 たとえば、異なるルートテーブルに関連付けられた 2 つのサブネットがあるとします。ルーティングテーブル A を選択し、ルーティングテーブル B は選択しなかった場合、ルーティングテーブル A に関連付けられたサブネット内のクライアントは HA ペアにアクセスできますが、ルーティングテーブル B に関連付けられたサブネット内のクライアントはアクセスできません。
 
-ルーティングテーブルの詳細については、を参照してください http://docs.aws.amazon.com/AmazonVPC/latest/UserGuide/VPC_Route_Tables.html["AWS のドキュメント：「 Route Tables"^]。
+ルーティングテーブルの詳細については、を参照して http://docs.aws.amazon.com/AmazonVPC/latest/UserGuide/VPC_Route_Tables.html["AWS のドキュメント：「 Route Tables"^]ください。
 
 --
 ネットアップの管理ツールとの連携:: 複数の AZ に展開された HA 構成でネットアップ管理ツールを使用するには、次の 2 つの接続オプションがあります。

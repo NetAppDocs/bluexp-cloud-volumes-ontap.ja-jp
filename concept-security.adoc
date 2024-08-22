@@ -83,7 +83,7 @@ AWS で Cloud Volumes ONTAP システムを起動する場合、を使用して�
 
 TIP: Cloud Volumes ONTAP システムの作成後に AWS のデータ暗号化方式を変更することはできません。
 
-この暗号化オプションを使用する場合は、 AWS KMS が適切に設定されていることを確認する必要があります。詳細については、を参照してください link:task-setting-up-kms.html["AWS KMS のセットアップ"]。
+この暗号化オプションを使用する場合は、 AWS KMS が適切に設定されていることを確認する必要があります。詳細については、を参照して link:task-setting-up-kms.html["AWS KMS のセットアップ"]ください。
 
 endif::aws[]
 
@@ -119,9 +119,9 @@ ONTAP システムの統合アンチウイルス機能を使用すると、デ�
 
 ONTAP ウィルススキャン（ _vscan ）は、クラス最高のサードパーティ製ウィルス対策ソフトウェアと ONTAP 機能を組み合わせたもので、どのファイルをスキャンするか、いつスキャンするかを柔軟に制御できます。
 
-Vscan でサポートされるベンダー、ソフトウェア、およびバージョンについては、を参照してください http://mysupport.netapp.com/matrix["NetApp Interoperability Matrix を参照してください"^]。
+Vscanでサポートされるベンダー、ソフトウェア、およびバージョンについては、を参照して http://mysupport.netapp.com/matrix["NetApp Interoperability Matrix を参照してください"^]ください。
 
-ONTAP システムでウィルス対策機能を設定および管理する方法については、を参照してください http://docs.netapp.com/ontap-9/topic/com.netapp.doc.dot-cm-acg/home.html["ONTAP 9 ウィルス対策構成ガイド"^]。
+ONTAPシステムでウィルス対策機能を設定および管理する方法については、を参照して http://docs.netapp.com/ontap-9/topic/com.netapp.doc.dot-cm-acg/home.html["ONTAP 9 ウィルス対策構成ガイド"^]ください。
 
 
 

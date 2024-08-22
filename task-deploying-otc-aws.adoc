@@ -73,7 +73,7 @@ AWSでCloud Volumes ONTAP を起動する場合は、BlueXPで新しい作業環
 | タグを追加します | AWS タグは、 AWS リソースのメタデータです。BlueXPは、Cloud Volumes ONTAP インスタンスとそのインスタンスに関連付けられている各AWSリソースにタグを追加します。作業環境を作成するときに、ユーザインターフェイスから最大 4 つのタグを追加し、作成後にさらに追加できます。API では、作業環境の作成時にタグを 4 つに制限することはありません。タグの詳細については、を参照してください https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/Using_Tags.html["AWS ドキュメント：「 Tagging your Amazon EC2 Resources"^]。 
 
 
-| ユーザ名とパスワード | Cloud Volumes ONTAP クラスタ管理者アカウントのクレデンシャルです。このクレデンシャルを使用して、 System Manager またはその CLI から Cloud Volumes ONTAP に接続できます。default_admin_user の名前をそのまま使用するか ' カスタム・ユーザー名に変更します 
+| ユーザ名とパスワード | Cloud Volumes ONTAP クラスタ管理者アカウントのクレデンシャルです。これらのクレデンシャルを使用して、ONTAPシステムマネージャまたはONTAP CLIからCloud Volumes ONTAPに接続できます。default_admin_user の名前をそのまま使用するか ' カスタム・ユーザー名に変更します 
 
 
 | 資格情報を編集します | このシステムを導入するアカウントに関連付けられている AWS クレデンシャルを選択します。この Cloud Volumes ONTAP システムで使用する AWS Marketplace サブスクリプションを関連付けることもできます。
@@ -161,7 +161,7 @@ link:concept-security.html#encryption-of-data-at-rest["サポートされてい�
 . *ライセンス*：必要に応じてCloud Volumes ONTAP のバージョンを変更し、インスタンスタイプとインスタンステナンシーを選択します。
 +
 
-NOTE: 選択したバージョンで新しいリリース候補、一般提供、またはパッチリリースが利用可能な場合、作業環境の作成時にシステムがそのバージョンに更新されます。たとえば、Cloud Volumes ONTAP 9.10.1と9.10.1 P4が利用可能になっていれば、更新が実行されます。たとえば、 9.6 から 9.7 への更新など、あるリリースから別のリリースへの更新は行われません。
+NOTE: 選択したバージョンで新しいリリース候補、一般提供、またはパッチリリースが利用可能な場合、作業環境の作成時にシステムがそのバージョンに更新されます。たとえば、Cloud Volumes ONTAP 9.13.1と9.13.1 P4が利用可能になっていれば、更新が実行されます。あるリリースから別のリリース（ 9.13 から 9.14 など）への更新は行われません。
 
 . *基盤となるストレージリソース*：ディスクタイプを選択し、基盤となるストレージを構成して、データの階層化を有効にするかどうかを選択します。
 +
@@ -255,13 +255,11 @@ image:screenshot_cot_vol.gif["スクリーンショット： Cloud Volumes ONTAP
 | DNS ドメイン | Cloud Volumes ONTAP Storage Virtual Machine （ SVM ）の DNS ドメイン。ほとんどの場合、ドメインは AD ドメインと同じです。 
 
 
-| NTP サーバ | Active Directory DNS を使用して NTP サーバを設定するには、「 Active Directory ドメインを使用」を選択します。別のアドレスを使用して NTP サーバを設定する必要がある場合は、 API を使用してください。を参照してください https://docs.netapp.com/us-en/bluexp-automation/index.html["BlueXP自動化ドキュメント"^] を参照してください。
-
-NTP サーバは、 CIFS サーバを作成するときにのみ設定できます。CIFS サーバを作成したあとで設定することはできません。 
+| NTP サーバ | Active Directory DNS を使用して NTP サーバを設定するには、「 Active Directory ドメインを使用」を選択します。別のアドレスを使用して NTP サーバを設定する必要がある場合は、 API を使用してください。詳細については、を参照して https://docs.netapp.com/us-en/bluexp-automation/index.html["BlueXP自動化ドキュメント"^] ください。NTP サーバは、 CIFS サーバを作成するときにのみ設定できます。CIFS サーバを作成したあとで設定することはできません。 
 |===
 . * 使用状況プロファイル、ディスクタイプ、階層化ポリシー * ：必要に応じて、 Storage Efficiency 機能を有効にするかどうかを選択し、ボリューム階層化ポリシーを編集します。
 +
-詳細については、を参照してください link:https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-planning-your-config.html#choose-a-volume-usage-profile["ボリューム使用率プロファイルについて"^] および link:concept-data-tiering.html["データ階層化の概要"^]。
+詳細については、およびを参照して link:https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-planning-your-config.html#choose-a-volume-usage-profile["ボリューム使用率プロファイルについて"^] link:concept-data-tiering.html["データ階層化の概要"^]ください。
 
 . * レビューと承認 *: 選択内容を確認して確認します。
 +
@@ -282,7 +280,7 @@ Cloud Volumes ONTAP インスタンスの起動時に問題が発生した場合
 
 .完了後
 * CIFS 共有をプロビジョニングした場合は、ファイルとフォルダに対する権限をユーザまたはグループに付与し、それらのユーザが共有にアクセスしてファイルを作成できることを確認します。
-* ボリュームにクォータを適用する場合は、 System Manager または CLI を使用します。
+* ボリュームにクォータを適用する場合は、ONTAPシステムマネージャまたはONTAP CLIを使用します。
 +
 クォータを使用すると、ユーザ、グループ、または qtree が使用するディスク・スペースとファイル数を制限または追跡できます。
 
@@ -329,7 +327,7 @@ AWSローカルゾーンを使用する前に、ローカルゾーンを有効�
 | タグを追加します | AWS タグは、 AWS リソースのメタデータです。BlueXPは、Cloud Volumes ONTAP インスタンスとそのインスタンスに関連付けられている各AWSリソースにタグを追加します。作業環境を作成するときに、ユーザインターフェイスから最大 4 つのタグを追加し、作成後にさらに追加できます。API では、作業環境の作成時にタグを 4 つに制限することはありません。タグの詳細については、を参照してください https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/Using_Tags.html["AWS ドキュメント：「 Tagging your Amazon EC2 Resources"^]。 
 
 
-| ユーザ名とパスワード | Cloud Volumes ONTAP クラスタ管理者アカウントのクレデンシャルです。このクレデンシャルを使用して、 System Manager またはその CLI から Cloud Volumes ONTAP に接続できます。default_admin_user の名前をそのまま使用するか ' カスタム・ユーザー名に変更します 
+| ユーザ名とパスワード | Cloud Volumes ONTAP クラスタ管理者アカウントのクレデンシャルです。これらのクレデンシャルを使用して、ONTAPシステムマネージャまたはONTAP CLIからCloud Volumes ONTAPに接続できます。default_admin_user の名前をそのまま使用するか ' カスタム・ユーザー名に変更します 
 
 
 | 資格情報を編集します | この Cloud Volumes ONTAP システムで使用する AWS クレデンシャルと Marketplace サブスクリプションを選択します。
@@ -362,7 +360,7 @@ TIP: WORMとデータ階層化を活用する場合は、BlueXPのバックア�
 
 . *HA 導入モデル *: HA 構成を選択します。
 +
-導入モデルの概要については、を参照してください link:concept-ha.html["AWS での Cloud Volumes ONTAP HA"^]。
+導入モデルの概要については、を参照してくださいlink:concept-ha.html["AWS での Cloud Volumes ONTAP HA"^]。
 
 . *場所と接続*（単一AZ）または*リージョンとVPC *（複数のAZ）：AWSワークシートに記録したネットワーク情報を入力します。
 +
@@ -388,11 +386,11 @@ BlueXPがセキュリティグループを生成するようにした場合は�
 . * 接続と SSH 認証 * ： HA ペアとメディエーターの接続方法を選択します。
 . * フローティング IP * ：複数の AZ を選択した場合は、フローティング IP アドレスを指定します。
 +
-IP アドレスは、その地域のすべての VPC の CIDR ブロックの外側にある必要があります。詳細については、を参照してください link:https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/reference-networking-aws.html#requirements-for-ha-pairs-in-multiple-azs["複数の AZS での Cloud Volumes ONTAP HA の AWS ネットワーク要件"^]。
+IP アドレスは、その地域のすべての VPC の CIDR ブロックの外側にある必要があります。詳細については、を参照してくださいlink:https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/reference-networking-aws.html#requirements-for-ha-pairs-in-multiple-azs["複数の AZS での Cloud Volumes ONTAP HA の AWS ネットワーク要件"^]。
 
 . * ルートテーブル * ：複数の AZ を選択した場合は、フローティング IP アドレスへのルートを含むルーティングテーブルを選択します。
 +
-複数のルートテーブルがある場合は、正しいルートテーブルを選択することが非常に重要です。そうしないと、一部のクライアントが Cloud Volumes ONTAP HA ペアにアクセスできない場合があります。ルーティングテーブルの詳細については、を参照してください http://docs.aws.amazon.com/AmazonVPC/latest/UserGuide/VPC_Route_Tables.html["AWS のドキュメント：「 Route Tables"^]。
+複数のルートテーブルがある場合は、正しいルートテーブルを選択することが非常に重要です。そうしないと、一部のクライアントが Cloud Volumes ONTAP HA ペアにアクセスできない場合があります。ルーティングテーブルの詳細については、を参照して http://docs.aws.amazon.com/AmazonVPC/latest/UserGuide/VPC_Route_Tables.html["AWS のドキュメント：「 Route Tables"^]ください。
 
 . * データ暗号化 * ：データ暗号化なし、または AWS で管理する暗号化を選択します。
 +
@@ -429,7 +427,7 @@ link:concept-security.html#encryption-of-data-at-rest["サポートされてい�
 . *ライセンス*：必要に応じてCloud Volumes ONTAP のバージョンを変更し、インスタンスタイプとインスタンステナンシーを選択します。
 +
 
-NOTE: 選択したバージョンで新しいリリース候補、一般提供、またはパッチリリースが利用可能な場合、作業環境の作成時にシステムがそのバージョンに更新されます。たとえば、Cloud Volumes ONTAP 9.10.1と9.10.1 P4が利用可能になっていれば、更新が実行されます。たとえば、 9.6 から 9.7 への更新など、あるリリースから別のリリースへの更新は行われません。
+NOTE: 選択したバージョンで新しいリリース候補、一般提供、またはパッチリリースが利用可能な場合、作業環境の作成時にシステムがそのバージョンに更新されます。たとえば、Cloud Volumes ONTAP 9.13.1と9.13.1 P4が利用可能になっていれば、更新が実行されます。あるリリースから別のリリース（ 9.13 から 9.14 など）への更新は行われません。
 
 . *基盤となるストレージリソース*：ディスクタイプを選択し、基盤となるストレージを構成して、データの階層化を有効にするかどうかを選択します。
 +
@@ -523,13 +521,11 @@ image:screenshot_cot_vol.gif["スクリーンショット： Cloud Volumes ONTAP
 | DNS ドメイン | Cloud Volumes ONTAP Storage Virtual Machine （ SVM ）の DNS ドメイン。ほとんどの場合、ドメインは AD ドメインと同じです。 
 
 
-| NTP サーバ | Active Directory DNS を使用して NTP サーバを設定するには、「 Active Directory ドメインを使用」を選択します。別のアドレスを使用して NTP サーバを設定する必要がある場合は、 API を使用してください。を参照してください https://docs.netapp.com/us-en/bluexp-automation/index.html["BlueXP自動化ドキュメント"^] を参照してください。
-
-NTP サーバは、 CIFS サーバを作成するときにのみ設定できます。CIFS サーバを作成したあとで設定することはできません。 
+| NTP サーバ | Active Directory DNS を使用して NTP サーバを設定するには、「 Active Directory ドメインを使用」を選択します。別のアドレスを使用して NTP サーバを設定する必要がある場合は、 API を使用してください。詳細については、を参照して https://docs.netapp.com/us-en/bluexp-automation/index.html["BlueXP自動化ドキュメント"^] ください。NTP サーバは、 CIFS サーバを作成するときにのみ設定できます。CIFS サーバを作成したあとで設定することはできません。 
 |===
 . * 使用状況プロファイル、ディスクタイプ、階層化ポリシー * ：必要に応じて、 Storage Efficiency 機能を有効にするかどうかを選択し、ボリューム階層化ポリシーを編集します。
 +
-詳細については、を参照してください link:https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-planning-your-config.html#choose-a-volume-usage-profile["ボリュームの使用プロファイルを選択してください"^] および link:concept-data-tiering.html["データ階層化の概要"^]。
+詳細については、およびを参照して link:https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-planning-your-config.html#choose-a-volume-usage-profile["ボリュームの使用プロファイルを選択してください"^] link:concept-data-tiering.html["データ階層化の概要"^]ください。
 
 . * レビューと承認 *: 選択内容を確認して確認します。
 +
@@ -550,7 +546,7 @@ HA ペアの起動で問題が発生した場合は、障害メッセージを�
 
 .完了後
 * CIFS 共有をプロビジョニングした場合は、ファイルとフォルダに対する権限をユーザまたはグループに付与し、それらのユーザが共有にアクセスしてファイルを作成できることを確認します。
-* ボリュームにクォータを適用する場合は、 System Manager または CLI を使用します。
+* ボリュームにクォータを適用する場合は、ONTAPシステムマネージャまたはONTAP CLIを使用します。
 +
 クォータを使用すると、ユーザ、グループ、または qtree が使用するディスク・スペースとファイル数を制限または追跡できます。
 

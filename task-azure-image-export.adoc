@@ -22,7 +22,7 @@ VHDイメージがAzureクラウドにパブリッシュされると、イメー
 * Azure CLIがインストールされているか、AzureポータルからAzure Cloud Shellを使用できます。
 +
 
-NOTE: Azure CLIのインストール方法の詳細については、を参照してください。 https://learn.microsoft.com/en-us/cli/azure/install-azure-cli["Azureのドキュメント：Azure CLIのインストール方法"^]。
+NOTE: Azure CLIのインストール方法の詳細については、を参照してください https://learn.microsoft.com/en-us/cli/azure/install-azure-cli["Azureのドキュメント：Azure CLIのインストール方法"^]。
 
 
 

@@ -28,7 +28,7 @@ Storage VM は ONTAP 内で実行される仮想マシンであり、クライ�
 
 == Storage VM を作成
 
-ライセンスでサポートされている場合は、1つのノードシステムまたはHAペアに複数のStorage VMを作成できます。HAペアでStorage VMを作成する場合はBlueXP APIを使用する必要がありますが、CLIまたはSystem Managerを使用してシングルノードシステムでStorage VMを作成できます。
+ライセンスでサポートされている場合は、1つのノードシステムまたはHAペアに複数のStorage VMを作成できます。HAペアにStorage VMを作成するにはBlueXP  APIを使用する必要がありますが、ONTAP System ManagerまたはONTAP CLIを使用してシングルノードシステムにStorage VMを作成することもできます。
 
 
 
@@ -98,7 +98,7 @@ vserver add-aggregates -vserver <svm-name> -aggregates <aggr1,aggr2>
 
 === HA ペア
 
-Google CloudのCloud Volumes ONTAP システムでStorage VMを作成するには、BlueXP APIを使用する必要があります。BlueXPでは、必要なLIFサービスがStorage VMに設定され、アウトバウンドのSMB / CIFS通信に必要なiSCSI LIFが設定されるため、API（System ManagerやCLIではなく）を使用する必要があります。
+Google CloudのCloud Volumes ONTAP システムでStorage VMを作成するには、BlueXP APIを使用する必要があります。BlueXP  では、必要なLIFサービスと、アウトバウンドSMB / CIFS通信に必要なiSCSI LIFがStorage VMに設定されるため、API（ONTAP System ManagerやONTAP CLIではなく）を使用する必要があります。
 
 BlueXPはGoogle Cloudで必要なIPアドレスを割り当て、SMB / NFSアクセス用のデータLIFとアウトバウンドSMB通信用のiSCSI LIFを備えたStorage VMを作成します。
 

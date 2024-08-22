@@ -76,7 +76,7 @@ ARPが有効なボリュームの状態は「ラーニングモード」また�
 
 ボリュームのARPの設定は、ONTAP System ManagerとONTAP CLIを使用して実行します。
 
-ONTAP System ManagerおよびCLIでARPを有効にする方法の詳細については、を参照してください https://docs.netapp.com/us-en/ontap/anti-ransomware/enable-task.html["自動ランサムウェア対策を有効化"^]。
+ONTAP System ManagerおよびONTAP CLIでARPを有効にする方法の詳細については、を参照してください https://docs.netapp.com/us-en/ontap/anti-ransomware/enable-task.html["自動ランサムウェア対策を有効化"^]。
 
 image::screenshot_arp.png[スクリーンショットは、Autonomous Ransomware Protectionのアドオンライセンスを示しています。]
 

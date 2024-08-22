@@ -103,7 +103,7 @@ iSCSI では浮動 IP アドレスが使用されないため、クロス VPC �
 iSCSI の場合、 ONTAP はマルチパス I/O （ MPIO ）と非対称論理ユニットアクセス（ ALUA ）を使用して、アクティブ最適化パスと非最適化パス間のパスフェイルオーバーを管理します。
 
 
-NOTE: ALUA をサポートする具体的なホスト構成については、を参照してください http://mysupport.netapp.com/matrix["NetApp Interoperability Matrix Tool で確認できます"^] およびお使いのホストオペレーティングシステムに対応した Host Utilities の『 Installation and Setup Guide 』を参照してください。
+NOTE: ALUAをサポートする具体的なホスト構成については http://mysupport.netapp.com/matrix["NetApp Interoperability Matrix Tool で確認できます"^] https://docs.netapp.com/us-en/ontap-sanhost/["SANホストおよびクラウドクライアントガイド"]、ご使用のホストオペレーティングシステムに対応したおよびを参照してください。
 
 
 
@@ -145,7 +145,7 @@ image:diagram_single_az.png["単一の可用性ゾーンでの ONTAP HA 構成�
 iSCSI の場合、 ONTAP はマルチパス I/O （ MPIO ）と非対称論理ユニットアクセス（ ALUA ）を使用して、アクティブ最適化パスと非最適化パス間のパスフェイルオーバーを管理します。
 
 
-NOTE: ALUA をサポートする具体的なホスト構成については、を参照してください http://mysupport.netapp.com/matrix["NetApp Interoperability Matrix Tool で確認できます"^] およびお使いのホストオペレーティングシステムに対応した Host Utilities の『 Installation and Setup Guide 』を参照してください。
+NOTE: ALUAをサポートする具体的なホスト構成については http://mysupport.netapp.com/matrix["NetApp Interoperability Matrix Tool で確認できます"^] https://docs.netapp.com/us-en/ontap-sanhost/["SANホストおよびクラウドクライアントガイド"]、ご使用のホストオペレーティングシステムに対応したおよびを参照してください。
 
 NAS 構成では、障害が発生した場合に、データ IP アドレスを HA ノード間で移行できます。これにより、クライアントからストレージへのアクセスが保証されます。
 
@@ -195,7 +195,7 @@ NOTE: AWSのローカルゾーンは、BlueXPを標準モードで使用して�
 * R5d
 
 
-link:https://aws.amazon.com/about-aws/global-infrastructure/localzones/features/?nc=sn&loc=2["ローカルゾーンでサポートされているEC2インスタンスタイプに関する最新の詳細については、AWSを参照してください。"^]。
+サポートされているの最新かつ詳細な情報については、AWSのドキュメントを参照してlink:https://aws.amazon.com/about-aws/global-infrastructure/localzones/features/?nc=sn&loc=2["ローカルゾーンのEC2インスタンスタイプ"^]ください。
 
 
 
@@ -228,7 +228,7 @@ Cloud Volumes ONTAP HA 構成では、ノード間でデータを同期的にレ
 * 両方のノードからデータを提供する HA 構成の場合、読み取りパフォーマンスはシングルノード構成の読み取りパフォーマンスよりも高く、書き込みパフォーマンスは同じかそれ以上です。
 
 
-Cloud Volumes ONTAP のパフォーマンスの詳細については、を参照してください link:concept-performance.html["パフォーマンス"]。
+Cloud Volumes ONTAPのパフォーマンスの詳細については、を参照してくださいlink:concept-performance.html["パフォーマンス"]。
 
 
 
@@ -237,7 +237,7 @@ Cloud Volumes ONTAP のパフォーマンスの詳細については、を参照
 クライアントは、ボリュームが存在するノードのデータ IP アドレスを使用して、 NFS ボリュームと CIFS ボリュームにアクセスする必要があります。NAS クライアントがパートナーノードの IP アドレスを使用してボリュームにアクセスする場合、トラフィックは両方のノード間を通過するため、パフォーマンスが低下します。
 
 
-TIP: HA ペアのノード間でボリュームを移動する場合は、もう一方のノードの IP アドレスを使用してボリュームを再マウントする必要があります。そうしないと、パフォーマンスが低下する可能性があります。クライアントが CIFS の NFSv4 リファールまたはフォルダリダイレクションをサポートしている場合は、ボリュームの再マウントを回避するために、 Cloud Volumes ONTAP システムでこれらの機能を有効にできます。詳細については、 ONTAP のマニュアルを参照してください。
+TIP: HA ペアのノード間でボリュームを移動する場合は、もう一方のノードの IP アドレスを使用してボリュームを再マウントする必要があります。そうしないと、パフォーマンスが低下する可能性があります。クライアントが CIFS の NFSv4 リファールまたはフォルダリダイレクションをサポートしている場合は、ボリュームの再マウントを回避するために、 Cloud Volumes ONTAP システムでこれらの機能を有効にできます。詳細については、ONTAPのドキュメントを参照してください。
 
 BlueXPの[Manage Volumes]パネルにある_Mount Command_Optionを使用すると、正しいIPアドレスを簡単に特定できます。
 

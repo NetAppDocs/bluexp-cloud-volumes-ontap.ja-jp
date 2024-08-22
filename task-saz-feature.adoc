@@ -1,0 +1,41 @@
+---
+sidebar: sidebar 
+permalink: task-saz-feature.html 
+keywords: Microsoft Azure feature, HA in SAZ, single availability zone, Azure feature, Virtual Machine Scale Sets in Flexible mode 
+summary: sazにHAを導入するには、このMicrosoft Azure機能を有効にします。 
+---
+= 単一のアベイラビリティゾーンに対してVMOrchestratorZonalMultiFDを有効にする
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+ローカル冗長ストレージ（LRS）の単一アベイラビリティゾーンにVMインスタンスを導入するには、 `Microsoft.Compute/VMOrchestratorZonalMultiFD`サブスクリプションのMicrosoft機能をアクティブ化する必要があります。HAモードでは、この機能を使用すると、同じアベイラビリティゾーン内の別 々 の障害ドメインにノードを簡単に導入できます。
+
+この機能をアクティブにしないと、ゾーン配置は行われず、以前のLRS非ゾーン配置が有効になります。
+
+単一アベイラビリティゾーンへのVMの導入については、を参照してくださいlink:concept-ha-azure.html["Azure のハイアベイラビリティペア"]。
+
+「Owner」Privilegesを持つユーザとして、次の手順を実行します。
+
+.手順
+. AzureポータルからAzure Cloud Shellにアクセスします。詳細については、を参照して https://learn.microsoft.com/en-us/azure/cloud-shell/get-started/["Microsoft Azureのドキュメント：「Get started with Azure Cloud Shell」"^]ください。
+.  `Microsoft.Compute/VMOrchestratorZonalMultiFD`次のコマンドを実行して、機能を登録します。
++
+[]
+====
+az account set -s_VM_AZ feature register -- name <Azure_subscription_name_or_ID> OrchestratorZonalMultiFD -- namespace Microsoft.Compute
+
+====
+. 登録ステータスと出力サンプルを確認します。
++
+[]
+====
+az feature show -n VMOrchestratorZonalMultiFD -- namespace Microsoft.Compute｛"id"：<ID>"/subscriptions/_subscriptions/_subscriptions/_providers/Microsoft.Features/providers/Microsoft.Compute/features/VMOrchestratorZonalMultiFD"、"name"："Microsoft.Compute/VMOrchestratorZonalMultiFD"、"properties"：｛"state"："registered"｝、"type"："Microsoft.Features
+
+====
+

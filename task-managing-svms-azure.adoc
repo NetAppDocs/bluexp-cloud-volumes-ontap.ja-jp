@@ -19,7 +19,7 @@ Storage VM は ONTAP 内で実行される仮想マシンであり、クライ�
 データを提供する Storage VM を追加で作成するには、 Azure で IP アドレスを割り当ててから、 ONTAP コマンドを実行して Storage VM とデータ LIF を作成する必要があります。
 
 
-NOTE: NIC関連の追加タスクを実行するには、Azureで適切な権限を持つネットワーク貢献者ロールまたはカスタムロールを割り当てることができます。これらのNIC関連の権限の詳細については、を参照してください。 https://learn.microsoft.com/en-us/azure/virtual-network/virtual-network-network-interface?tabs=azure-portal#permissions["Microsoft Azureのドキュメント"^]。
+NOTE: NIC関連の追加タスクを実行するには、Azureで適切な権限を持つネットワーク貢献者ロールまたはカスタムロールを割り当てることができます。これらのNIC関連の権限の詳細については、を参照して https://learn.microsoft.com/en-us/azure/virtual-network/virtual-network-network-interface?tabs=azure-portal#permissions["Microsoft Azureのドキュメント"^]ください。
 
 
 
@@ -198,7 +198,7 @@ iSCSI LIF は、 DNS 通信と SMB 通信に必要です。iSCSI LIF はフェ�
 . データLIFとSVM LIFのみに、必要な数のフロントエンドIP構成を作成します。
 +
 
-NOTE: フロントエンドIPは、対応する各SVMのNIC0の下にのみ作成する必要があります。SVM NIC0にIPアドレスを追加する方法の詳細については、「手順7 [ハイパーリンク]」を参照してください。
+NOTE: フロントエンドIPは、対応する各SVMのNIC0の下にのみ作成する必要があります。SVM NIC0にIPアドレスを追加する方法の詳細については、「手順7 [hyperlink]」を参照してください。
 
 +
 .. [* 設定 ] で、 [* フロントエンド IP 設定 *] をクリックします。

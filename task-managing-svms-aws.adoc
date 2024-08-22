@@ -64,7 +64,7 @@ image:screenshot_aws_e0a.gif["ネットワークインターフェイスのポ�
 +
 このページの前のセクションで、インターフェイスごとにサポートされる IP アドレスの最大数を確認しておく必要があります。
 
-.. オプション： Cloud Volumes ONTAP の CLI に移動し、 * network interface show * を実行して、各 IP アドレスが使用中であることを確認します。
+.. オプション：ONTAP CLI for Cloud Volumes ONTAPに移動し、* network interface show *を実行して、これらのIPアドレスがそれぞれ使用されていることを確認します。
 +
 IP アドレスが使用されていない場合は、新しい Storage VM で使用できます。
 

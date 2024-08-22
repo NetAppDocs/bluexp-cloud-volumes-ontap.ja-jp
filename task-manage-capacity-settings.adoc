@@ -42,7 +42,7 @@ link:concept-storage-management.html#capacity-management["容量管理モード�
 空きスペース率は、次のように計算します。
 （アグリゲート容量-アグリゲートで使用されている合計容量）/アグリゲートの容量
 
-を参照してください link:concept-storage-management.html#automatic-capacity-management["自動容量管理"] Cloud Volumes ONTAPで容量が自動的に管理されるようになりました。
+link:concept-storage-management.html#automatic-capacity-management["自動容量管理"]容量がCloud Volumes ONTAPで自動的に管理されるようになったことについては、を参照してください。
 
 --
 アグリゲート容量のしきい値-データ階層化の空きスペース率:: データを大容量階層（オブジェクトストレージ）に階層化するときに必要な高パフォーマンス階層（ディスク）の空きスペースの量を定義します。

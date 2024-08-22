@@ -22,7 +22,7 @@ summary: 既知の制限事項は、このリリースの製品でサポート�
 
 == BlueXPでは、FlexGroup ボリュームの作成はサポートされていません
 
-Cloud Volumes ONTAP ではFlexGroup ボリュームがサポートされますが、現時点ではFlexGroup ボリュームの作成はサポートされていません。System ManagerまたはCLIからFlexGroup ボリュームを作成する場合は、BlueXPの容量管理モードを手動に設定する必要があります。FlexGroup ボリュームで自動モードが適切に機能しない可能性があります。
+Cloud Volumes ONTAP ではFlexGroup ボリュームがサポートされますが、現時点ではFlexGroup ボリュームの作成はサポートされていません。ONTAPシステムマネージャまたはONTAP CLIからFlexGroupボリュームを作成する場合は、BlueXP  の容量管理モードを手動に設定する必要があります。FlexGroup ボリュームで自動モードが適切に機能しない可能性があります。
 
 
 NOTE: 今後のリリースでは、BlueXPでFlexGroup ボリュームを作成できるようになる予定です。
@@ -39,6 +39,6 @@ link:concept-client-protocols.html["S3およびその他のクライアントプ
 
 == BlueXPでは、Storage VMのディザスタリカバリはサポートされていません
 
-BlueXPは、Storage VM（SVM）ディザスタリカバリのセットアップやオーケストレーションのサポートは提供していません。System Manager または CLI を使用する必要があります。
+BlueXPは、Storage VM（SVM）ディザスタリカバリのセットアップやオーケストレーションのサポートは提供していません。ONTAPシステムマネージャまたはONTAP CLIを使用する必要があります。
 
 link:task-manage-svm-dr.html["SVMディザスタリカバリに関する詳細情報"]。

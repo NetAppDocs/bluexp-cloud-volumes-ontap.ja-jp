@@ -26,7 +26,7 @@ image::graphic_azure_check_signature.png[Azureチェックシグネチャのグ�
 
 * からAzure Image Digestファイルをダウンロードします。 https://mysupport.netapp.com/site/["NetApp Support Site"^] そして、ダイジェストファイル（.sig）、公開鍵証明書ファイル（.pem）、チェーン証明書ファイル（.pem）を展開します。
 +
-を参照してください https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-azure-download-digest-file.html["Azureイメージダイジェストファイルをダウンロード"^] を参照してください。
+詳細については、を参照してください link:task-azure-download-digest-file.html["Azureイメージダイジェストファイルをダウンロード"] 。
 
 * 信頼チェーンを検証します。
 * 公開鍵証明書（.pem）から公開鍵（.pub）を抽出します。

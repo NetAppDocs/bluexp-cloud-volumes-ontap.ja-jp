@@ -40,10 +40,10 @@ Cloud Volumes ONTAP のセキュリティグループには、インバウンド
 | すべての ICMP | すべて | インスタンスの ping を実行します 
 
 
-| HTTP | 80 | クラスタ管理 LIF の IP アドレスを使用した System Manager Web コンソールへの HTTP アクセス 
+| HTTP | 80 | クラスタ管理LIFのIPアドレスを使用したONTAP System Manager WebコンソールへのHTTPアクセス 
 
 
-| HTTPS | 443 | コネクタへの接続と、クラスタ管理LIFのIPアドレスを使用したSystem Manager WebコンソールへのHTTPSアクセス 
+| HTTPS | 443 | コネクタとの接続、およびクラスタ管理LIFのIPアドレスを使用したONTAP System Manager WebコンソールへのHTTPSアクセス 
 
 
 | SSH | 22 | クラスタ管理 LIF またはノード管理 LIF の IP アドレスへの SSH アクセス 

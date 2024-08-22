@@ -79,7 +79,7 @@ BlueXPで作業環境を作成し、Cloud Volumes ONTAP をGoogle Cloudで起動
 | ラベルを追加します | ラベルは、Google Cloudリソースのメタデータです。BlueXPは、システムに関連付けられているCloud Volumes ONTAP システムとGoogle Cloudリソースにラベルを追加します。作業環境の作成時にユーザインターフェイスからラベルを 4 つまで追加し、その後追加することができます。API では、作業環境の作成時にラベルを 4 つに制限することはありません。ラベルの詳細については、を参照してください https://cloud.google.com/compute/docs/labeling-resources["Google Cloud のドキュメント：「 Labeling Resources"^]。 
 
 
-| ユーザ名とパスワード | Cloud Volumes ONTAP クラスタ管理者アカウントのクレデンシャルです。このクレデンシャルを使用して、 System Manager またはその CLI から Cloud Volumes ONTAP に接続できます。default_admin_user の名前をそのまま使用するか ' カスタム・ユーザー名に変更します 
+| ユーザ名とパスワード | Cloud Volumes ONTAP クラスタ管理者アカウントのクレデンシャルです。これらのクレデンシャルを使用して、ONTAPシステムマネージャまたはONTAP CLIからCloud Volumes ONTAPに接続できます。default_admin_user の名前をそのまま使用するか ' カスタム・ユーザー名に変更します 
 
 
 | プロジェクトを編集します  a| 
@@ -143,7 +143,7 @@ BlueXPがファイアウォールポリシーを生成するようにした場�
 . *ライセンス*：必要に応じてCloud Volumes ONTAP バージョンを変更し、マシンタイプを選択します。
 +
 
-NOTE: 選択したバージョンで新しいリリース候補、一般提供、またはパッチリリースが利用可能な場合、作業環境の作成時にシステムがそのバージョンに更新されます。たとえば、Cloud Volumes ONTAP 9.10.1と9.10.1 P4が利用可能になっていれば、更新が実行されます。たとえば、 9.6 から 9.7 への更新など、あるリリースから別のリリースへの更新は行われません。
+NOTE: 選択したバージョンで新しいリリース候補、一般提供、またはパッチリリースが利用可能な場合、作業環境の作成時にシステムがそのバージョンに更新されます。たとえば、Cloud Volumes ONTAP 9.13.1と9.13.1 P4が利用可能になっていれば、更新が実行されます。あるリリースから別のリリース（ 9.13 から 9.14 など）への更新は行われません。
 
 . * 基盤となるストレージリソース * ：初期アグリゲートの設定、つまりディスクタイプと各ディスクのサイズを選択します。
 +
@@ -153,7 +153,7 @@ NOTE: 選択したバージョンで新しいリリース候補、一般提供�
 シンプルなプロビジョニングオプションを使用した場合、ディスクサイズは、初期アグリゲートのすべてのディスクと、BlueXPで作成される追加のアグリゲートのサイズです。Advanced Allocation オプションを使用すると、異なるディスクサイズを使用するアグリゲートを作成できます。
 
 +
-ディスクの種類とサイズの選択については、を参照してください link:task-planning-your-config-gcp.html#size-your-system-in-gcp["Google Cloudでシステムをサイジングする"^]。
+ディスクのタイプとサイズの選択については、を参照してくださいlink:task-planning-your-config-gcp.html#size-your-system-in-gcp["Google Cloudでシステムをサイジングする"^]。
 
 . * Flash Cache、書き込み速度、WORM *：
 +
@@ -255,13 +255,11 @@ image:screenshot_cot_vol.gif["スクリーンショット： Cloud Volumes ONTAP
 | DNS ドメイン | Cloud Volumes ONTAP Storage Virtual Machine （ SVM ）の DNS ドメイン。ほとんどの場合、ドメインは AD ドメインと同じです。 
 
 
-| NTP サーバ | Active Directory DNS を使用して NTP サーバを設定するには、「 Active Directory ドメインを使用」を選択します。別のアドレスを使用して NTP サーバを設定する必要がある場合は、 API を使用してください。を参照してください https://docs.netapp.com/us-en/bluexp-automation/index.html["BlueXP自動化ドキュメント"^] を参照してください。
-
-NTP サーバは、 CIFS サーバを作成するときにのみ設定できます。CIFS サーバを作成したあとで設定することはできません。 
+| NTP サーバ | Active Directory DNS を使用して NTP サーバを設定するには、「 Active Directory ドメインを使用」を選択します。別のアドレスを使用して NTP サーバを設定する必要がある場合は、 API を使用してください。 https://docs.netapp.com/us-en/bluexp-automation/index.html["BlueXP自動化ドキュメント"^]詳細については、を参照してください。NTP サーバは、 CIFS サーバを作成するときにのみ設定できます。CIFS サーバを作成したあとで設定することはできません。 
 |===
 . * 使用状況プロファイル、ディスクタイプ、階層化ポリシー * ： Storage Efficiency 機能を有効にするかどうかを選択し、必要に応じてボリューム階層化ポリシーを変更します。
 +
-詳細については、を参照してください link:task-planning-your-config-gcp.html#choose-a-volume-usage-profile["ボリュームの使用プロファイルを選択してください"^] および link:concept-data-tiering.html["データ階層化の概要"^]。
+詳細については、およびを参照して link:task-planning-your-config-gcp.html#choose-a-volume-usage-profile["ボリュームの使用プロファイルを選択してください"^] link:concept-data-tiering.html["データ階層化の概要"^]ください。
 
 . * レビューと承認 *: 選択内容を確認して確認します。
 +
@@ -282,7 +280,7 @@ Cloud Volumes ONTAP システムの導入で問題が発生した場合は、障
 
 .完了後
 * CIFS 共有をプロビジョニングした場合は、ファイルとフォルダに対する権限をユーザまたはグループに付与し、それらのユーザが共有にアクセスしてファイルを作成できることを確認します。
-* ボリュームにクォータを適用する場合は、 System Manager または CLI を使用します。
+* ボリュームにクォータを適用する場合は、ONTAPシステムマネージャまたはONTAP CLIを使用します。
 +
 クォータを使用すると、ユーザ、グループ、または qtree が使用するディスク・スペースとファイル数を制限または追跡できます。
 
@@ -317,7 +315,7 @@ BlueXPで作業環境を作成し、Cloud Volumes ONTAP をGoogle Cloudで起動
 | ラベルを追加します | ラベルは、Google Cloudリソースのメタデータです。BlueXPは、システムに関連付けられているCloud Volumes ONTAP システムとGoogle Cloudリソースにラベルを追加します。作業環境の作成時にユーザインターフェイスからラベルを 4 つまで追加し、その後追加することができます。API では、作業環境の作成時にラベルを 4 つに制限することはありません。ラベルの詳細については、を参照してください https://cloud.google.com/compute/docs/labeling-resources["Google Cloud のドキュメント：「 Labeling Resources"^]。 
 
 
-| ユーザ名とパスワード | Cloud Volumes ONTAP クラスタ管理者アカウントのクレデンシャルです。このクレデンシャルを使用して、 System Manager またはその CLI から Cloud Volumes ONTAP に接続できます。default_admin_user の名前をそのまま使用するか ' カスタム・ユーザー名に変更します 
+| ユーザ名とパスワード | Cloud Volumes ONTAP クラスタ管理者アカウントのクレデンシャルです。これらのクレデンシャルを使用して、ONTAPシステムマネージャまたはONTAP CLIからCloud Volumes ONTAPに接続できます。default_admin_user の名前をそのまま使用するか ' カスタム・ユーザー名に変更します 
 
 
 | プロジェクトを編集します  a| 
@@ -385,7 +383,7 @@ BlueXPがファイアウォールポリシーを生成するようにした場�
 . *ライセンス*：必要に応じてCloud Volumes ONTAP バージョンを変更し、マシンタイプを選択します。
 +
 
-NOTE: 選択したバージョンで新しいリリース候補、一般提供、またはパッチリリースが利用可能な場合、作業環境の作成時にシステムがそのバージョンに更新されます。たとえば、Cloud Volumes ONTAP 9.10.1と9.10.1 P4が利用可能になっていれば、更新が実行されます。たとえば、 9.6 から 9.7 への更新など、あるリリースから別のリリースへの更新は行われません。
+NOTE: 選択したバージョンで新しいリリース候補、一般提供、またはパッチリリースが利用可能な場合、作業環境の作成時にシステムがそのバージョンに更新されます。たとえば、Cloud Volumes ONTAP 9.13.1と9.13.1 P4が利用可能になっていれば、更新が実行されます。あるリリースから別のリリース（ 9.13 から 9.14 など）への更新は行われません。
 
 . * 基盤となるストレージリソース * ：初期アグリゲートの設定、つまりディスクタイプと各ディスクのサイズを選択します。
 +
@@ -395,7 +393,7 @@ NOTE: 選択したバージョンで新しいリリース候補、一般提供�
 シンプルなプロビジョニングオプションを使用した場合、ディスクサイズは、初期アグリゲートのすべてのディスクと、BlueXPで作成される追加のアグリゲートのサイズです。Advanced Allocation オプションを使用すると、異なるディスクサイズを使用するアグリゲートを作成できます。
 
 +
-ディスクの種類とサイズの選択については、を参照してください link:task-planning-your-config-gcp.html#size-your-system-in-gcp["Google Cloudでシステムをサイジングする"^]。
+ディスクのタイプとサイズの選択については、を参照してくださいlink:task-planning-your-config-gcp.html#size-your-system-in-gcp["Google Cloudでシステムをサイジングする"^]。
 
 . * Flash Cache、書き込み速度、WORM *：
 +
@@ -496,13 +494,11 @@ image:screenshot_cot_vol.gif["スクリーンショット： Cloud Volumes ONTAP
 | DNS ドメイン | Cloud Volumes ONTAP Storage Virtual Machine （ SVM ）の DNS ドメイン。ほとんどの場合、ドメインは AD ドメインと同じです。 
 
 
-| NTP サーバ | Active Directory DNS を使用して NTP サーバを設定するには、「 Active Directory ドメインを使用」を選択します。別のアドレスを使用して NTP サーバを設定する必要がある場合は、 API を使用してください。を参照してください https://docs.netapp.com/us-en/bluexp-automation/index.html["BlueXP自動化ドキュメント"^] を参照してください。
-
-NTP サーバは、 CIFS サーバを作成するときにのみ設定できます。CIFS サーバを作成したあとで設定することはできません。 
+| NTP サーバ | Active Directory DNS を使用して NTP サーバを設定するには、「 Active Directory ドメインを使用」を選択します。別のアドレスを使用して NTP サーバを設定する必要がある場合は、 API を使用してください。詳細については、を参照して https://docs.netapp.com/us-en/bluexp-automation/index.html["BlueXP自動化ドキュメント"^] ください。NTP サーバは、 CIFS サーバを作成するときにのみ設定できます。CIFS サーバを作成したあとで設定することはできません。 
 |===
 . * 使用状況プロファイル、ディスクタイプ、階層化ポリシー * ： Storage Efficiency 機能を有効にするかどうかを選択し、必要に応じてボリューム階層化ポリシーを変更します。
 +
-詳細については、を参照してください link:task-planning-your-config-gcp.html#choose-a-volume-usage-profile["ボリュームの使用プロファイルを選択してください"^] および link:concept-data-tiering.html["データ階層化の概要"^]。
+詳細については、およびを参照して link:task-planning-your-config-gcp.html#choose-a-volume-usage-profile["ボリュームの使用プロファイルを選択してください"^] link:concept-data-tiering.html["データ階層化の概要"^]ください。
 
 . * レビューと承認 *: 選択内容を確認して確認します。
 +
@@ -523,7 +519,7 @@ Cloud Volumes ONTAP システムの導入で問題が発生した場合は、障
 
 .完了後
 * CIFS 共有をプロビジョニングした場合は、ファイルとフォルダに対する権限をユーザまたはグループに付与し、それらのユーザが共有にアクセスしてファイルを作成できることを確認します。
-* ボリュームにクォータを適用する場合は、 System Manager または CLI を使用します。
+* ボリュームにクォータを適用する場合は、ONTAPシステムマネージャまたはONTAP CLIを使用します。
 +
 クォータを使用すると、ユーザ、グループ、または qtree が使用するディスク・スペースとファイル数を制限または追跡できます。
 

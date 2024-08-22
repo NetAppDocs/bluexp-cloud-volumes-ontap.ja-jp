@@ -97,7 +97,7 @@ NOTE: クラウドプロバイダの要件により、Cloud Volumes ONTAP のLIF
 +
 バックアップには\ http://ipaddress/occm/offboxconfig/からアクセスできます。_ipaddress_はコネクタホストのIPアドレスです。
 
-** BlueXPでは、他の管理ツール（System ManagerやCLIなど）とは異なる方法でいくつかのボリューム属性を設定します。
+** BlueXP  は、他の管理ツール（ONTAPシステムマネージャやONTAP CLIなど）とは異なる方法で、いくつかのボリューム属性を設定します。
 +
 次の表に、BlueXPで設定されるボリューム属性とデフォルト値の違いを示します。
 
@@ -127,7 +127,7 @@ NOTE: アカウント管理者は、 [ 設定 ] ページからこの値を変�
 | UNIX 権限（ NFS のみ） | 777 
 |===
 +
-を参照してください link:https://docs.netapp.com/us-en/ontap-cli-9121/volume-create.html["ONTAP _ volume create _のマニュアルページ"] これらの属性については、を参照してください。
+これらの属性の詳細については、を参照してくださいlink:https://docs.netapp.com/us-en/ontap-cli-9121/volume-create.html["ONTAP _ volume create _のマニュアルページ"]。
 
 
 
@@ -189,6 +189,9 @@ Cloud Volumes ONTAP 用に選択した仮想マシンでウルトラ SSD がサ�
 * コアを節約するために 1024 GiB の標準 HDD ディスクを 1 台
 * 各ブートディスクとルートディスクに 1 つの Azure Snapshot
 * Azureのデフォルトでは、すべてのディスクが保存データとして暗号化されます。
++
+Cloud Volumes ONTAP用に選択した仮想マシンがプレミアムSSD v2管理対象ディスクをデータディスクとしてサポートしている場合、システムは32GiBプレミアムSSD v2管理対象ディスクをNVRAM用に使用し、もう1つをルートディスクとして使用します。
+
 
 
 
@@ -210,7 +213,7 @@ NOTE: スナップショットは、リブート時に自動的に作成され�
 
 .複数のアベイラビリティゾーンに共有管理対象ディスクを配置したHAペア
 * ブートボリューム用の 10GiB Premium SSD ディスク × 2 （ノードごとに 1 つ）
-* 512 GiB Premium Storage 2ページのrootボリューム用blob（ノードごとに1つ）
+* ルートボリューム用に512GiB Premium SSDディスク×2（ノードごとに1本）
 * コアを節約するために 1024 GiB の標準 HDD ディスク 2 台 （ノードごとに 1 つ）
 * NVRAM 用 512GiB Premium SSD ディスク × 2 （各ノードに 1 つ）
 * 各ブートディスクとルートディスクに 1 つの Azure Snapshot
@@ -219,6 +222,16 @@ NOTE: スナップショットは、リブート時に自動的に作成され�
 NOTE: スナップショットは、リブート時に自動的に作成されます。
 
 * Azureのデフォルトでは、すべてのディスクが保存データとして暗号化されます。
+
+
+.単一のアベイラビリティゾーンに共有管理対象ディスクを配置したHAペア
+* ブートボリューム用の 10GiB Premium SSD ディスク × 2 （ノードごとに 1 つ）
+* ルートボリューム用に512GiB Premium SSD共有管理ディスク×2（ノードごとに1本）
+* コアを節約するために 1024 GiB の標準 HDD ディスク 2 台 （ノードごとに 1 つ）
+* NVRAM用の512GiB Premium SSD Managedディスク×2（ノードあたり1本）
++
+仮想マシンがデータディスクとしてPremium SSD v2 Managed Disksをサポートしている場合、NVRAMには32GiB Premium SSD v2 Managed Disks、ルートボリュームには512GiB Premium SSD v2 Shared Managed Disksを使用します。
+
 
 
 endif::azure[]

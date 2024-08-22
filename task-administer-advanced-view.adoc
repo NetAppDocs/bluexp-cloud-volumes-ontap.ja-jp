@@ -48,7 +48,7 @@ SANイニシエータグループとNFSクライアントを設定します。
 
 == サポートされている構成
 
-System Managerを使用した高度な管理は、標準のクラウドリージョンでCloud Volumes ONTAP 9.10.0以降でサポートされます。
+ONTAP System Managerを使用した高度な管理は、標準のクラウドリージョンのCloud Volumes ONTAP 9.10.0以降でサポートされます。
 
 GovCloudリージョンまたはアウトバウンドのインターネットアクセスがないリージョンでは、System Managerの統合はサポートされません。
 

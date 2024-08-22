@@ -21,7 +21,7 @@ Cloud Volumes ONTAP ではAzureリソースグループの移動がサポート�
 .手順
 . 作業環境を* Canvas *から削除します。
 +
-作業環境を削除する方法については、を参照してください link:https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-removing.html["Cloud Volumes ONTAP の動作環境を削除しています"]。
+作業環境を削除する方法については、を参照してくださいlink:https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-removing.html["Cloud Volumes ONTAP の動作環境を削除しています"]。
 
 . Azureコンソールでリソースグループ移動を実行する。
 +

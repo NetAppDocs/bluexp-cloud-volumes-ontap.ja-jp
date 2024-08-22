@@ -37,7 +37,7 @@ Elastic Volumesで有効になっているアグリゲートには、最大8本�
 
 
 
-https://aws.amazon.com/ebs/features/["Elastic Volumesの詳細については、AWSでご確認ください"^]
+https://aws.amazon.com/ebs/features/["AWSのドキュメント：「Learn more about Elastic Volumes from AWS」"^]
 
 
 

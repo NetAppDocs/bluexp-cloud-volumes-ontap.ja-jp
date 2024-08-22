@@ -14,7 +14,7 @@ summary: サードパーティのキー管理サービスにGoogleのキー管�
 [role="lead"]
 を使用できます link:https://cloud.google.com/kms/docs["Google Cloud Platform のキー管理サービス（ Cloud KMS ）"^] Google Cloud Platform導入アプリケーションでONTAP 暗号化キーを保護します。
 
-Cloud KMSを使用したキー管理は、CLIまたはONTAP REST APIを使用して有効にすることができます。
+Cloud KMSを使用したキー管理は、ONTAP CLIまたはONTAP REST APIを使用して有効にできます。
 
 Cloud KMSを使用する場合は、デフォルトではデータSVMのLIFがクラウドキー管理エンドポイントとの通信に使用されることに注意してください。ノード管理ネットワークは、クラウドプロバイダの認証サービス（oauth2.googleapis.com）との通信に使用されます。クラスタネットワークが正しく設定されていないと、クラスタでキー管理サービスが適切に利用されません。
 

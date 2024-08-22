@@ -47,7 +47,7 @@ Cloud Volumes ONTAP に厳密なアウトバウンドルールを定義した場
 この問題に対処するには、次の手順を実行します。
 
 .手順
-. CLIからシステムを管理できるように、Cloud Volumes ONTAP システムにSSH接続します。
+. Cloud Volumes ONTAPシステムにSSH接続し、ONTAP CLIからシステムを管理できるようにします。
 +
 link:task-connecting-to-otc.html["Cloud Volumes ONTAP にSSH接続する方法について説明します"]。
 

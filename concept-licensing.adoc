@@ -145,7 +145,7 @@ endif::gcp[]
 * BlueXPのバックアップとリカバリを使用したボリュームバックアップは無制限ですが、Professionalパッケージを使用するCloud Volumes ONTAPシステムのみが対象です。
 +
 
-NOTE: BlueXPのバックアップとリカバリにはPAYGOのサブスクリプションが必要ですが、このサービスの使用には料金は発生しません。BlueXPのバックアップとリカバリのライセンス設定の詳細については、を参照してください。 https://docs.netapp.com/us-en/bluexp-backup-recovery/task-licensing-cloud-backup.html["BlueXPのバックアップとリカバリのライセンスをセットアップ"^]。
+NOTE: BlueXPのバックアップとリカバリにはPAYGOのサブスクリプションが必要ですが、このサービスの使用には料金は発生しません。BlueXP  バックアップ/リカバリのライセンス設定の詳細については、を参照してください https://docs.netapp.com/us-en/bluexp-backup-recovery/task-licensing-cloud-backup.html["BlueXPのバックアップとリカバリのライセンスをセットアップ"^]。
 
 * ネットアップのクラウドデータサービスを追加コストで利用できます
 

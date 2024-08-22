@@ -28,7 +28,7 @@ BlueXPでCloud Volumes ONTAP 作業環境を作成することで、Azureで単�
 
 * 使用する構成についての理解。
 +
-設定を選択し、ネットワーク管理者から Azure ネットワーク情報を入手しておく必要があります。詳細については、を参照してください link:task-planning-your-config-azure.html["Cloud Volumes ONTAP 構成を計画"^]。
+設定を選択し、ネットワーク管理者から Azure ネットワーク情報を入手しておく必要があります。詳細については、を参照して link:task-planning-your-config-azure.html["Cloud Volumes ONTAP 構成を計画"^]ください。
 
 * Cloud Volumes ONTAP のライセンスを設定するために必要な事項を理解する。
 +
@@ -71,10 +71,10 @@ AzureでシングルノードのCloud Volumes ONTAP システムを起動する�
 | 作業環境名 | BlueXPでは、作業環境名を使用して、Cloud Volumes ONTAP システムとAzure仮想マシンの両方に名前が付けられます。また、このオプションを選択した場合は、事前定義されたセキュリティグループのプレフィックスとして名前が使用されます。 
 
 
-| リソースグループタグ | タグは、 Azure リソースのメタデータです。このフィールドにタグを入力すると、Cloud Volumes ONTAP システムに関連付けられているリソースグループにタグが追加されます。作業環境を作成するときに、ユーザインターフェイスから最大 4 つのタグを追加し、作成後にさらに追加できます。API では、作業環境の作成時にタグを 4 つに制限することはありません。タグの詳細については、を参照してください https://azure.microsoft.com/documentation/articles/resource-group-using-tags/["Microsoft Azure のドキュメント：「 Using tags to organize your Azure resources"^]。 
+| リソースグループタグ | タグは、 Azure リソースのメタデータです。このフィールドにタグを入力すると、Cloud Volumes ONTAP システムに関連付けられているリソースグループにタグが追加されます。作業環境を作成するときに、ユーザインターフェイスから最大 4 つのタグを追加し、作成後にさらに追加できます。API では、作業環境の作成時にタグを 4 つに制限することはありません。タグの詳細については、を参照して https://azure.microsoft.com/documentation/articles/resource-group-using-tags/["Microsoft Azure のドキュメント：「 Using tags to organize your Azure resources"^]ください。 
 
 
-| ユーザ名とパスワード | Cloud Volumes ONTAP クラスタ管理者アカウントのクレデンシャルです。このクレデンシャルを使用して、 System Manager またはその CLI から Cloud Volumes ONTAP に接続できます。default_admin_user の名前をそのまま使用するか ' カスタム・ユーザー名に変更します 
+| ユーザ名とパスワード | Cloud Volumes ONTAP クラスタ管理者アカウントのクレデンシャルです。これらのクレデンシャルを使用して、ONTAPシステムマネージャまたはONTAP CLIからCloud Volumes ONTAPに接続できます。default_admin_user の名前をそのまま使用するか ' カスタム・ユーザー名に変更します 
 
 
 | [[video]] 資格情報を編集します | この Cloud Volumes ONTAP システムで使用する別の Azure クレデンシャルと別の Azure サブスクリプションを選択できます。従量課金制 Cloud Volumes ONTAP システムを導入するには、選択した Azure サブスクリプションに Azure Marketplace サブスクリプションを関連付ける必要があります。 https://docs.netapp.com/us-en/bluexp-setup-admin/task-adding-azure-accounts.html["クレデンシャルを追加する方法について説明します"^]。 
@@ -85,7 +85,7 @@ AzureでシングルノードのCloud Volumes ONTAP システムを起動する�
 +
 .Azure MarketplaceでBlueXPにサブスクライブ
 video::b7e97509-2ecf-4fa0-b39b-b0510109a318[panopto]
-. * サービス *: サービスを有効にしておくか、 Cloud Volumes ONTAP で使用しない個々のサービスを無効にします。
+. *サービス*：Cloud Volumes ONTAPで使用する個 々 のサービスを有効または無効にします。
 +
 ** https://docs.netapp.com/us-en/bluexp-classification/concept-cloud-compliance.html["BlueXPの分類の詳細については、こちらをご覧ください"^]
 ** https://docs.netapp.com/us-en/bluexp-backup-recovery/concept-backup-to-cloud.html["BlueXPのバックアップとリカバリの詳細については、こちらをご覧ください"^]
@@ -96,9 +96,6 @@ TIP: WORMとデータ階層化を活用する場合は、BlueXPのバックア�
 
 
 . *場所*：リージョン、アベイラビリティゾーン、VNet、およびサブネットを選択し、チェックボックスを選択してコネクタとターゲットの場所間のネットワーク接続を確認します。
-+
-シングルノードシステムの場合は、 Cloud Volumes ONTAP を導入するアベイラビリティゾーンを選択できます。AZを選択しない場合は、BlueXPによってそのAZが選択されます。
-
 . *接続性*:新しいリソースグループまたは既存のリソースグループを選択し、事前定義されたセキュリティグループを使用するか、独自のリソースグループを使用するかを選択します。
 +
 次の表では、ガイダンスが必要なフィールドについて説明します。
@@ -138,12 +135,12 @@ BlueXPがセキュリティグループを生成するようにした場合は�
 +
 いずれかのパッケージを選択した場合は、ボリュームを指定してから、設定を確認して承認するだけで済みます。
 
-. *ライセンス*：必要に応じてCloud Volumes ONTAP のバージョンを変更し、仮想マシンのタイプを選択します。
+. *ライセンス*:必要に応じてCloud Volumes ONTAPのバージョンを変更し、仮想マシンの種類を選択します。
 +
 
-NOTE: 選択したバージョンで新しいリリース候補、一般提供、またはパッチリリースが利用可能な場合、作業環境の作成時にシステムがそのバージョンに更新されます。たとえば、Cloud Volumes ONTAP 9.10.1と9.10.1 P4が利用可能になっていれば、更新が実行されます。たとえば、 9.6 から 9.7 への更新など、あるリリースから別のリリースへの更新は行われません。
+NOTE: 選択したバージョンで新しいリリース候補、一般提供、またはパッチリリースが利用可能な場合、作業環境の作成時にシステムがそのバージョンに更新されます。たとえば、Cloud Volumes ONTAP 9.13.1と9.13.1 P4が利用可能になっていれば、更新が実行されます。あるリリースから別のリリース（ 9.13 から 9.14 など）への更新は行われません。
 
-. * Azure Marketplaceからサブスクライブ*：BlueXPでCloud Volumes ONTAPのプログラムによる導入を有効にできなかった場合は、このページが表示されます。画面に表示される手順に従います。を参照してください https://learn.microsoft.com/en-us/marketplace/programmatic-deploy-of-marketplace-products["Marketplace製品のプログラムによる導入"^] を参照してください。
+. * Azure Marketplaceからサブスクライブ*：BlueXPでCloud Volumes ONTAPのプログラムによる導入を有効にできなかった場合は、このページが表示されます。画面に表示される手順に従います。 https://learn.microsoft.com/en-us/marketplace/programmatic-deploy-of-marketplace-products["Marketplace製品のプログラムによる導入"^]詳細については、を参照してください。
 . * 基盤となるストレージリソース * ：初期アグリゲートの設定を選択します。ディスクタイプ、各ディスクのサイズ、 BLOB ストレージへのデータ階層化を有効にするかどうかを指定します。
 +
 次の点に注意してください。
@@ -152,7 +149,7 @@ NOTE: 選択したバージョンで新しいリリース候補、一般提供�
 ** ディスクタイプは初期ボリューム用です。以降のボリュームでは、別のディスクタイプを選択できます。
 ** シンプルなプロビジョニングオプションを使用した場合、ディスクサイズは、初期アグリゲートのすべてのディスクと、BlueXPで作成される追加のアグリゲートのサイズです。Advanced Allocation オプションを使用すると、異なるディスクサイズを使用するアグリゲートを作成できます。
 +
-ディスクの種類とサイズの選択については、を参照してください link:https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-planning-your-config-azure.html#size-your-system-in-azure["Azure でのシステムのサイジング"^]。
+ディスクのタイプとサイズの選択については、を参照してくださいlink:https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-planning-your-config-azure.html#size-your-system-in-azure["Azure でのシステムのサイジング"^]。
 
 ** ボリュームを作成または編集するときに、特定のボリューム階層化ポリシーを選択できます。
 ** データの階層化を無効にすると、以降のアグリゲートで有効にすることができます。
@@ -169,7 +166,7 @@ link:concept-write-speed.html["書き込み速度の詳細については、こ�
 
 .. 必要に応じて、Write Once、Read Many（WORM）ストレージをアクティブにします。
 +
-このオプションは、特定のVMタイプに対してのみ使用できます。サポートされるVMタイプについては、を参照してください link:https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-configs-azure.html#ha-pairs["HAペアのライセンスでサポートされる構成"^]。
+このオプションは、特定のVMタイプに対してのみ使用できます。サポートされているVMタイプについては、を参照してくださいlink:https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-configs-azure.html#ha-pairs["HAペアのライセンスでサポートされる構成"^]。
 
 +
 Cloud Volumes ONTAP 9.7以前のバージョンでデータ階層化が有効になっている場合は、WORMを有効にすることはできません。Cloud Volumes ONTAP 9.8へのリバートまたはダウングレードは、WORMと階層化を有効にしたあとはブロックされます。
@@ -241,13 +238,11 @@ image:screenshot_cot_vol.gif["スクリーンショット： Cloud Volumes ONTAP
 | DNS ドメイン | Cloud Volumes ONTAP Storage Virtual Machine （ SVM ）の DNS ドメイン。ほとんどの場合、ドメインは AD ドメインと同じです。 
 
 
-| NTP サーバ | Active Directory DNS を使用して NTP サーバを設定するには、「 Active Directory ドメインを使用」を選択します。別のアドレスを使用して NTP サーバを設定する必要がある場合は、 API を使用してください。を参照してください https://docs.netapp.com/us-en/bluexp-automation/index.html["BlueXP自動化ドキュメント"^] を参照してください。
-
-NTP サーバは、 CIFS サーバを作成するときにのみ設定できます。CIFS サーバを作成したあとで設定することはできません。 
+| NTP サーバ | Active Directory DNS を使用して NTP サーバを設定するには、「 Active Directory ドメインを使用」を選択します。別のアドレスを使用して NTP サーバを設定する必要がある場合は、 API を使用してください。詳細については、を参照して https://docs.netapp.com/us-en/bluexp-automation/index.html["BlueXP自動化ドキュメント"^] ください。NTP サーバは、 CIFS サーバを作成するときにのみ設定できます。CIFS サーバを作成したあとで設定することはできません。 
 |===
 . * 使用状況プロファイル、ディスクタイプ、階層化ポリシー * ： Storage Efficiency 機能を有効にするかどうかを選択し、必要に応じてボリューム階層化ポリシーを変更します。
 +
-詳細については、を参照してください link:https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-planning-your-config-azure.html#choose-a-volume-usage-profile["ボリューム使用率プロファイルについて"^] および link:concept-data-tiering.html["データ階層化の概要"^]。
+詳細については、およびを参照して link:https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-planning-your-config-azure.html#choose-a-volume-usage-profile["ボリューム使用率プロファイルについて"^] link:concept-data-tiering.html["データ階層化の概要"^]ください。
 
 . * レビューと承認 *: 選択内容を確認して確認します。
 +
@@ -268,7 +263,7 @@ Cloud Volumes ONTAP システムの導入で問題が発生した場合は、障
 
 .完了後
 * CIFS 共有をプロビジョニングした場合は、ファイルとフォルダに対する権限をユーザまたはグループに付与し、それらのユーザが共有にアクセスしてファイルを作成できることを確認します。
-* ボリュームにクォータを適用する場合は、 System Manager または CLI を使用します。
+* ボリュームにクォータを適用する場合は、ONTAPシステムマネージャまたはONTAP CLIを使用します。
 +
 クォータを使用すると、ユーザ、グループ、または qtree が使用するディスク・スペースとファイル数を制限または追跡できます。
 
@@ -297,10 +292,10 @@ AzureでCloud Volumes ONTAP HAペアを起動するには、BlueXPでHA作業環
 | 作業環境名 | BlueXPでは、作業環境名を使用して、Cloud Volumes ONTAP システムとAzure仮想マシンの両方に名前が付けられます。また、このオプションを選択した場合は、事前定義されたセキュリティグループのプレフィックスとして名前が使用されます。 
 
 
-| リソースグループタグ | タグは、 Azure リソースのメタデータです。このフィールドにタグを入力すると、Cloud Volumes ONTAP システムに関連付けられているリソースグループにタグが追加されます。作業環境を作成するときに、ユーザインターフェイスから最大 4 つのタグを追加し、作成後にさらに追加できます。API では、作業環境の作成時にタグを 4 つに制限することはありません。タグの詳細については、を参照してください https://azure.microsoft.com/documentation/articles/resource-group-using-tags/["Microsoft Azure のドキュメント：「 Using tags to organize your Azure resources"^]。 
+| リソースグループタグ | タグは、 Azure リソースのメタデータです。このフィールドにタグを入力すると、Cloud Volumes ONTAP システムに関連付けられているリソースグループにタグが追加されます。作業環境を作成するときに、ユーザインターフェイスから最大 4 つのタグを追加し、作成後にさらに追加できます。API では、作業環境の作成時にタグを 4 つに制限することはありません。タグの詳細については、を参照して https://azure.microsoft.com/documentation/articles/resource-group-using-tags/["Microsoft Azure のドキュメント：「 Using tags to organize your Azure resources"^]ください。 
 
 
-| ユーザ名とパスワード | Cloud Volumes ONTAP クラスタ管理者アカウントのクレデンシャルです。このクレデンシャルを使用して、 System Manager またはその CLI から Cloud Volumes ONTAP に接続できます。default_admin_user の名前をそのまま使用するか ' カスタム・ユーザー名に変更します 
+| ユーザ名とパスワード | Cloud Volumes ONTAP クラスタ管理者アカウントのクレデンシャルです。これらのクレデンシャルを使用して、ONTAPシステムマネージャまたはONTAP CLIからCloud Volumes ONTAPに接続できます。default_admin_user の名前をそのまま使用するか ' カスタム・ユーザー名に変更します 
 
 
 | [[video]] 資格情報を編集します | この Cloud Volumes ONTAP システムで使用する別の Azure クレデンシャルと別の Azure サブスクリプションを選択できます。従量課金制 Cloud Volumes ONTAP システムを導入するには、選択した Azure サブスクリプションに Azure Marketplace サブスクリプションを関連付ける必要があります。 https://docs.netapp.com/us-en/bluexp-setup-admin/task-adding-azure-accounts.html["クレデンシャルを追加する方法について説明します"^]。 
@@ -311,7 +306,10 @@ AzureでCloud Volumes ONTAP HAペアを起動するには、BlueXPでHA作業環
 +
 .Azure MarketplaceでBlueXPにサブスクライブ
 video::b7e97509-2ecf-4fa0-b39b-b0510109a318[panopto]
-. * サービス *: サービスを有効にしておくか、 Cloud Volumes ONTAP で使用しない個々のサービスを無効にします。
+. *サービス*：Cloud Volumes ONTAPでサービスを使用するかどうかに基づいて、個 々 のサービスを有効または無効にします。
++
+Cloud Volumes ONTAP 9.15.1以降では、ローカル冗長ストレージ（LRS）の単一アベイラビリティゾーンにVMインスタンスを導入できます。また、この `Microsoft.Compute/VMOrchestratorZonalMultiFD`機能をサブスクリプションでアクティブ化する必要があります。この機能を使用すると、同じアベイラビリティゾーンにハイアベイラビリティ（HA）ペアを簡単に導入できます。link:task-saz-feature.html["単一のアベイラビリティゾーンに対してVMOrchestratorZonalMultiFDを有効にする"]およびを参照してくださいlink:task-azure-high-availability-mode.html["Azureでハイアベイラビリティモードを有効にします"]。
+
 +
 ** https://docs.netapp.com/us-en/bluexp-classification/concept-cloud-compliance.html["BlueXPの分類の詳細については、こちらをご覧ください"^]
 ** https://docs.netapp.com/us-en/bluexp-backup-recovery/concept-backup-to-cloud.html["BlueXPのバックアップとリカバリの詳細については、こちらをご覧ください"^]
@@ -324,10 +322,12 @@ TIP: WORMとデータ階層化を活用する場合は、BlueXPのバックア�
 . * HA導入モデル*：
 +
 .. 単一アベイラビリティゾーン*または*複数のアベイラビリティゾーン*を選択します。
-.. *場所と接続*（単一AZ）および*地域と接続*（複数のAZ）
 +
-*** 単一のAZの場合は、リージョン、VNet、およびサブネットを選択します。
-*** 複数のAZについて、リージョン、VNet、サブネット、ノード1のゾーン、およびノード2のゾーンを選択します。
+*** 単一のアベイラビリティゾーンの場合は、Azureリージョン、アベイラビリティゾーン、VNet、およびサブネットを選択します。Cloud Volumes ONTAP 9.15.1以降では、1つのアベイラビリティゾーンにVMインスタンスをインストールできます。このモードをサポートするリージョンを選択する必要があります。によって選択されたリージョンがゾーン配置をサポートしていない場合は、以前のLRSの非ゾーン配置モデルに従います。
++
+この展開モードとサポートされるAzureゾーンの詳細については https://learn.microsoft.com/en-us/azure/virtual-machine-scale-sets/["Microsoft Azureのドキュメント：「Virtual Machine Scale Sets documentation」"^]、およびを参照してください https://azure.microsoft.com/en-us/explore/global-infrastructure/products-by-region/["Microsoft AzureのWebサイト：「リージョン別の利用可能な製品」"^]。
+
+*** 複数のアベイラビリティゾーンの場合は、リージョン、VNet、サブネット、ノード1のゾーン、ノード2のゾーンを選択します。
 
 
 .. [ネットワーク接続を検証しました...]*]チェックボックスを選択します。
@@ -377,7 +377,7 @@ BlueXPがセキュリティグループを生成するようにした場合は�
 . *ライセンス*：必要に応じてCloud Volumes ONTAP のバージョンを変更し、仮想マシンのタイプを選択します。
 +
 
-NOTE: 選択したバージョンで新しいリリース候補、一般提供、またはパッチリリースが利用可能な場合、作業環境の作成時にシステムがそのバージョンに更新されます。たとえば、Cloud Volumes ONTAP 9.10.1と9.10.1 P4が利用可能になっていれば、更新が実行されます。たとえば、 9.6 から 9.7 への更新など、あるリリースから別のリリースへの更新は行われません。
+NOTE: 選択したバージョンで新しいリリース候補、一般提供、またはパッチリリースが利用可能な場合、作業環境の作成時にシステムがそのバージョンに更新されます。たとえば、Cloud Volumes ONTAP 9.13.1と9.13.1 P4が利用可能になっていれば、更新が実行されます。あるリリースから別のリリース（ 9.13 から 9.14 など）への更新は行われません。
 
 . * Azure Marketplaceからサブスクライブ*：BlueXPでCloud Volumes ONTAP のプログラムによる導入を有効にできなかった場合は、以下の手順に従ってください。
 . * 基盤となるストレージリソース * ：初期アグリゲートの設定を選択します。ディスクタイプ、各ディスクのサイズ、 BLOB ストレージへのデータ階層化を有効にするかどうかを指定します。
@@ -387,7 +387,7 @@ NOTE: 選択したバージョンで新しいリリース候補、一般提供�
 +
 ** シンプルなプロビジョニングオプションを使用した場合、ディスクサイズは、初期アグリゲートのすべてのディスクと、BlueXPで作成される追加のアグリゲートのサイズです。Advanced Allocation オプションを使用すると、異なるディスクサイズを使用するアグリゲートを作成できます。
 +
-ディスク・サイズの選択については、を参照してください link:https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-planning-your-config-azure.html#size-your-system-in-azure["Azureでシステムのサイズを設定します"^]。
+ディスク・サイズの選択については、を参照してくださいlink:https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-planning-your-config-azure.html#size-your-system-in-azure["Azureでシステムのサイズを設定します"^]。
 
 ** ボリュームを作成または編集するときに、特定のボリューム階層化ポリシーを選択できます。
 ** データの階層化を無効にすると、以降のアグリゲートで有効にすることができます。
@@ -404,7 +404,7 @@ link:concept-write-speed.html["書き込み速度の詳細については、こ�
 
 .. 必要に応じて、Write Once、Read Many（WORM）ストレージをアクティブにします。
 +
-このオプションは、特定のVMタイプに対してのみ使用できます。サポートされるVMタイプについては、を参照してください link:https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-configs-azure.html#ha-pairs["HAペアのライセンスでサポートされる構成"^]。
+このオプションは、特定のVMタイプに対してのみ使用できます。サポートされているVMタイプについては、を参照してくださいlink:https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-configs-azure.html#ha-pairs["HAペアのライセンスでサポートされる構成"^]。
 
 +
 Cloud Volumes ONTAP 9.7以前のバージョンでデータ階層化が有効になっている場合は、WORMを有効にすることはできません。Cloud Volumes ONTAP 9.8へのリバートまたはダウングレードは、WORMと階層化を有効にしたあとはブロックされます。
@@ -489,13 +489,11 @@ image:screenshot_cot_vol.gif["スクリーンショット： Cloud Volumes ONTAP
 | DNS ドメイン | Cloud Volumes ONTAP Storage Virtual Machine （ SVM ）の DNS ドメイン。ほとんどの場合、ドメインは AD ドメインと同じです。 
 
 
-| NTP サーバ | Active Directory DNS を使用して NTP サーバを設定するには、「 Active Directory ドメインを使用」を選択します。別のアドレスを使用して NTP サーバを設定する必要がある場合は、 API を使用してください。を参照してください https://docs.netapp.com/us-en/bluexp-automation/index.html["BlueXP自動化ドキュメント"^] を参照してください。
-
-NTP サーバは、 CIFS サーバを作成するときにのみ設定できます。CIFS サーバを作成したあとで設定することはできません。 
+| NTP サーバ | Active Directory DNS を使用して NTP サーバを設定するには、「 Active Directory ドメインを使用」を選択します。別のアドレスを使用して NTP サーバを設定する必要がある場合は、 API を使用してください。詳細については、を参照して https://docs.netapp.com/us-en/bluexp-automation/index.html["BlueXP自動化ドキュメント"^] ください。NTP サーバは、 CIFS サーバを作成するときにのみ設定できます。CIFS サーバを作成したあとで設定することはできません。 
 |===
 . * 使用状況プロファイル、ディスクタイプ、階層化ポリシー * ： Storage Efficiency 機能を有効にするかどうかを選択し、必要に応じてボリューム階層化ポリシーを変更します。
 +
-詳細については、を参照してください link:https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-planning-your-config-azure.html#choose-a-volume-usage-profile["ボリュームの使用プロファイルを選択してください"^] および link:concept-data-tiering.html["データ階層化の概要"^]。
+詳細については、およびを参照して link:https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-planning-your-config-azure.html#choose-a-volume-usage-profile["ボリュームの使用プロファイルを選択してください"^] link:concept-data-tiering.html["データ階層化の概要"^]ください。
 
 . * レビューと承認 *: 選択内容を確認して確認します。
 +
@@ -516,7 +514,7 @@ Cloud Volumes ONTAP システムの導入で問題が発生した場合は、障
 
 .完了後
 * CIFS 共有をプロビジョニングした場合は、ファイルとフォルダに対する権限をユーザまたはグループに付与し、それらのユーザが共有にアクセスしてファイルを作成できることを確認します。
-* ボリュームにクォータを適用する場合は、 System Manager または CLI を使用します。
+* ボリュームにクォータを適用する場合は、ONTAPシステムマネージャまたはONTAP CLIを使用します。
 +
 クォータを使用すると、ユーザ、グループ、または qtree が使用するディスク・スペースとファイル数を制限または追跡できます。
 

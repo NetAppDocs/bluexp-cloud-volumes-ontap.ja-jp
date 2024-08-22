@@ -26,7 +26,7 @@ Cloud Volumes ONTAP のアップグレードプロセスを開始する前に、
 
 === BlueXPのみからのアップグレード
 
-Cloud Volumes ONTAP のアップグレードは、BlueXPから完了している必要があります。System Manager または CLI を使用して Cloud Volumes ONTAP をアップグレードしないでください。これを行うと、システムの安定性に影響を与える可能性
+Cloud Volumes ONTAP のアップグレードは、BlueXPから完了している必要があります。ONTAPシステムマネージャまたはONTAP CLIを使用してCloud Volumes ONTAPをアップグレードしないでください。これを行うと、システムの安定性に影響を与える可能性
 
 
 
@@ -241,7 +241,7 @@ Cloud Volumes ONTAP システムにアクティブな SnapMirror 関係がある
 NOTE: BlueXPのバックアップとリカバリではSnapMirrorを実装してバックアップファイル（SnapMirror Cloud）を作成しますが、システムのアップグレード時にバックアップを一時停止する必要はありません。
 
 .このタスクについて
-ここでは、 System Manager for Version 9.3 以降の使用方法について説明します。
+ここでは、バージョン9.3以降でONTAP System Managerを使用する手順について説明します。
 
 .手順
 . デスティネーションシステムから System Manager にログインします。
@@ -263,7 +263,7 @@ NOTE: BlueXPにアクセスしているコンピュータには、Cloud Volumes 
 ソフトウェアを更新する前に、 Cloud Volumes ONTAP のアグリゲートがオンラインである必要があります。アグリゲートはほとんどの構成でオンラインになっている必要がありますが、オンラインになっていない場合はオンラインにしてください。
 
 .このタスクについて
-ここでは、 System Manager for Version 9.3 以降の使用方法について説明します。
+ここでは、バージョン9.3以降でONTAP System Managerを使用する手順について説明します。
 
 .手順
 . 作業環境で、*[アグリゲート]*タブをクリックします。
