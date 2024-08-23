@@ -20,6 +20,18 @@ BlueXPのCloud Volumes ONTAP Managementの新機能をご紹介します。
 
 
 
+== 2024 年 8 月 23 日
+
+
+
+=== カナダ西部リージョンがAWSでサポートされるようになりました
+
+Cloud Volumes ONTAP 9.12.1 GA以降では、カナダ西部リージョンがAWSでサポートされるようになりました。
+
+すべてのリージョンのリストについては、を参照してください https://bluexp.netapp.com/cloud-volumes-global-regions["AWSのグローバルリージョンマップ"^]。
+
+
+
 == 2024年8月22日
 
 
