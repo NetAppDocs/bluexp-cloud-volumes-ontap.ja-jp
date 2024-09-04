@@ -100,9 +100,10 @@ HA ペア:: HAペアは、I/O負荷の高いワークロードに高パフォー
 
 * 関連リンク *
 
+* link:task-planning-your-config-azure.html["でディスクタイプとディスクサイズを選択する方法について説明します Azure の既存のシステムを"]
+* link:task-deploying-otc-azure.html#launching-a-cloud-volumes-ontap-ha-pair-in-azure["AzureでのCloud Volumes ONTAP HAペアの起動"]
 * https://docs.microsoft.com/en-us/azure/virtual-machines/disks-types["Microsoft Azure のドキュメント：「 Azure managed disk types"^]
 * https://docs.microsoft.com/en-us/azure/storage/blobs/storage-blob-pageblob-overview["Microsoft Azure のドキュメント：「 Overview of Azure page blob"^]
-* link:task-planning-your-config-azure.html["でディスクタイプとディスクサイズを選択する方法について説明します Azure の既存のシステムを"]
 * https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-limits-azure.html["Azure での Cloud Volumes ONTAP のストレージの制限を確認します"^]
 
 

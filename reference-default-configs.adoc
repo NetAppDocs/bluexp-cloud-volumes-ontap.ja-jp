@@ -229,9 +229,15 @@ NOTE: スナップショットは、リブート時に自動的に作成され�
 * ルートボリューム用に512GiB Premium SSD共有管理ディスク×2（ノードごとに1本）
 * コアを節約するために 1024 GiB の標準 HDD ディスク 2 台 （ノードごとに 1 つ）
 * NVRAM用の512GiB Premium SSD Managedディスク×2（ノードあたり1本）
-+
+
+
 仮想マシンがデータディスクとしてPremium SSD v2 Managed Disksをサポートしている場合、NVRAMには32GiB Premium SSD v2 Managed Disks、ルートボリュームには512GiB Premium SSD v2 Shared Managed Disksを使用します。
 
+次の条件を満たす場合は、単一のアベイラビリティゾーンにHAペアを導入し、Premium SSD v2管理ディスクを使用できます。
+
+* Cloud Volumes ONTAPのバージョンは9.15.1以降です。
+* 選択したリージョンとゾーンでは、Premium SSD v2管理ディスクがサポートされます。サポートされるリージョンの詳細については、を参照してください https://azure.microsoft.com/en-us/explore/global-infrastructure/products-by-region/["Microsoft AzureのWebサイト：「リージョン別の利用可能な製品」"^]。
+* サブスクリプションはMicrosoftに登録されていlink:task-saz-feature.html["Microsoft.Compute/VMOrchestratorZonalMultiFDノキノウ"]ます。
 
 
 endif::azure[]

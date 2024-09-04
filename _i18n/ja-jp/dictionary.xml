@@ -5351,11 +5351,7 @@ Mac OSでtailコマンドを完了します。</block>
   <block id="d91c9bd9d601398d431e2acc5559f7bf" category="paragraph">詳細については、およびを参照して <block ref="f7e49e28b2875e2913382dd3096ff790" category="inline-link-macro-rx"></block> <block ref="1e62300500e1ad0802bb2b24113c7036" category="inline-link-macro-rx"></block>ください。</block>
   <block id="8c286011c74e75b22d1d90dbeb4504b6" category="list-text">*サービス*：Cloud Volumes ONTAPでサービスを使用するかどうかに基づいて、個 々 のサービスを有効または無効にします。</block>
   <block id="e9e34ff3ab97c79b3c316c17375f6ff1" category="inline-link-macro">単一のアベイラビリティゾーンに対してVMOrchestratorZonalMultiFDを有効にする</block>
-  <block id="5d53fdb6098c234fa40898b914a4f5db" category="paragraph">Cloud Volumes ONTAP 9.15.1以降では、ローカル冗長ストレージ（LRS）の単一アベイラビリティゾーンにVMインスタンスを導入できます。また、この<block ref="fdfb47698b60e554acc8cff3a6065992" prefix=" " category="inline-code"></block>機能をサブスクリプションでアクティブ化する必要があります。この機能を使用すると、同じアベイラビリティゾーンにハイアベイラビリティ（HA）ペアを簡単に導入できます。<block ref="8237f408225e4c565d3ae8daf52a7def" category="inline-link-macro-rx"></block>およびを参照してください<block ref="88705e19880d9fa1af5df70699e53b95" category="inline-link-macro-rx"></block>。</block>
-  <block id="2976779596586c38da75f46052ad2926" category="list-text">単一のアベイラビリティゾーンの場合は、Azureリージョン、アベイラビリティゾーン、VNet、およびサブネットを選択します。Cloud Volumes ONTAP 9.15.1以降では、1つのアベイラビリティゾーンにVMインスタンスをインストールできます。このモードをサポートするリージョンを選択する必要があります。によって選択されたリージョンがゾーン配置をサポートしていない場合は、以前のLRSの非ゾーン配置モデルに従います。</block>
-  <block id="fcb7516396bf1d9722f3e765d3004427" category="inline-link">Microsoft Azureのドキュメント：「Virtual Machine Scale Sets documentation」</block>
   <block id="840f8de5c9f54f772062c77429778e38" category="inline-link">Microsoft AzureのWebサイト：「リージョン別の利用可能な製品」</block>
-  <block id="6d613bce1a88fcb164ac593c1058e246" category="paragraph">この展開モードとサポートされるAzureゾーンの詳細については<block ref="a0eb41cb535bf2a39d70134c95375180" category="inline-link-rx"></block>、およびを参照してください<block ref="4cad7f2a2d9c49229b747bad0a9e56da" category="inline-link-rx"></block>。</block>
   <block id="e4eaa3d391d7d55d8c20cbf06dc81915" category="list-text">複数のアベイラビリティゾーンの場合は、リージョン、VNet、サブネット、ノード1のゾーン、ノード2のゾーンを選択します。</block>
   <block id="407f144abfa1ac000a5a8035a2a3eb77" category="paragraph">ディスク・サイズの選択については、を参照してください<block ref="693042947faf99c4ded2e1854ea1714d" category="inline-link-macro-rx"></block>。</block>
   <block id="561bec0387138d2b07f137df6774960c" category="paragraph">詳細については、およびを参照して <block ref="b12f776b16b59fa8d20c1c83946e77ac" category="inline-link-macro-rx"></block> <block ref="1e62300500e1ad0802bb2b24113c7036" category="inline-link-macro-rx"></block>ください。</block>
@@ -5445,4 +5441,13 @@ Mac OSでtailコマンドを完了します。</block>
   <block id="2c8ad7deb621eae9ecb23ccf84d9c22c" category="section-title">カナダ西部リージョンがAWSでサポートされるようになりました</block>
   <block id="184c928c73aa00c7569ba55c0b9e0064" category="paragraph">Cloud Volumes ONTAP 9.12.1 GA以降では、カナダ西部リージョンがAWSでサポートされるようになりました。</block>
   <block id="96c6a6277896e4ed7c2cef558b5542c1" category="paragraph">すべてのリージョンのリストについては、を参照してください<block ref="24faa078890c2d8c97de1a6b5a5789e3" category="inline-link-rx"></block>。</block>
+  <block id="208717af2c6557faae5e8d47b38680bd" category="paragraph">ゾーン環境では、次の条件を満たす場合にPremium SSD v2 Managed Disksを使用します。</block>
+  <block id="6326d313b843fff1d57ed50ec7c000f1" category="list-text">Cloud Volumes ONTAPのバージョンは9.15.1以降です。</block>
+  <block id="fd4ec163c1cf6efd42bc780358b7fb84" category="list-text">選択したリージョンとゾーンでは、Premium SSD v2管理ディスクがサポートされます。サポートされるリージョンの詳細については、を参照してください<block ref="4cad7f2a2d9c49229b747bad0a9e56da" category="inline-link-rx"></block>。</block>
+  <block id="a9b7d8164fa6256aced367d79aa2abab" category="inline-link-macro">Microsoft.Compute/VMOrchestratorZonalMultiFDノキノウ</block>
+  <block id="218949100f9bb1c7fe8ef525701547a0" category="list-text">サブスクリプションはMicrosoftに登録されてい<block ref="b47370f17ae59423c751ec1694c9ca74" category="inline-link-macro-rx"></block>ます。</block>
+  <block id="d63d6372ae20eb19f707718f270a6b48" category="list-text"><block ref="d63d6372ae20eb19f707718f270a6b48" category="inline-link-macro-rx"></block></block>
+  <block id="fadac06c68e9ffce4bb17bd0d6ec5f2b" category="paragraph">次の条件を満たす場合は、単一のアベイラビリティゾーンにHAペアを導入し、Premium SSD v2管理ディスクを使用できます。</block>
+  <block id="ed0e2426cd36bf5b4eb9a140ae9a7508" category="list-text">単一のアベイラビリティゾーンの場合は、Azureリージョン、アベイラビリティゾーン、VNet、およびサブネットを選択します。</block>
+  <block id="e09953ef98be5a0cd4cc4ad0c288c775" category="paragraph">Cloud Volumes ONTAP 9.15.1以降では、Azureの単一アベイラビリティゾーン（AZ）にHAモードで仮想マシン（VM）インスタンスを導入できます。この展開をサポートするゾーンとリージョンを選択する必要があります。ゾーンまたはリージョンがゾーン配置をサポートしていない場合は、LRSの以前のゾーン以外の配置モードに従います。共有管理対象ディスクでサポートされる構成については、を参照してください<block ref="2148c58538cc3adf327c3ade110b8487" category="inline-link-macro-rx"></block>。</block>
 </blocks>

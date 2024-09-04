@@ -61,6 +61,16 @@ BlueXPによって導入されるAzureコンポーネントについては、次
 
 Azure Standard Load Balancer の略:: ロードバランサは、 Cloud Volumes ONTAP HA ペアへの着信トラフィックを管理します。
 タンイチノアベイラビリティゾーンニVM:: Cloud Volumes ONTAP 9.15.1以降では、単一のアベイラビリティゾーン（AZ）で異機種混在の仮想マシン（VM）を作成および管理できます。同じAZ内の別 々 のフォールトドメインにハイアベイラビリティ（HA）ノードを導入して、最適な可用性を保証できます。この機能を有効にする柔軟なオーケストレーションモードの詳細については、を参照してください https://learn.microsoft.com/en-us/azure/virtual-machine-scale-sets/["Microsoft Azureのドキュメント：「Virtual Machine Scale Sets」"^]。
++
+--
+ゾーン環境では、次の条件を満たす場合にPremium SSD v2 Managed Disksを使用します。
+
+* Cloud Volumes ONTAPのバージョンは9.15.1以降です。
+* 選択したリージョンとゾーンでは、Premium SSD v2管理ディスクがサポートされます。サポートされるリージョンの詳細については、を参照してください https://azure.microsoft.com/en-us/explore/global-infrastructure/products-by-region/["Microsoft AzureのWebサイト：「リージョン別の利用可能な製品」"^]。
+* サブスクリプションはMicrosoftに登録されていlink:task-saz-feature.html["Microsoft.Compute/VMOrchestratorZonalMultiFDノキノウ"]ます。
+
+
+--
 ディスク:: お客様のデータは、ローカル冗長ストレージ（LRS）で管理されるディスクに保存されます。各ノードがもう一方のノードのストレージにアクセスできます。にも追加のストレージが必要ですlink:https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/reference-default-configs.html#azure-ha-pair["ブート、ルート、パートナーのルート、コア、NVRAMの各データ"^]。
 ストレージアカウント:: ストレージアカウントは、診断ログの処理とBLOBストレージへの階層化を行うディスクベースの管理環境で使用されます。
 
