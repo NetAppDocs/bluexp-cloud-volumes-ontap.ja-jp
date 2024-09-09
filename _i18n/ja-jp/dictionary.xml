@@ -691,7 +691,6 @@
   <block id="1ee261e062b77615a21251aa4b6da907" category="section-title">WORM ストレージの仕組み</block>
   <block id="a4a6f068d81ff1afeac110af2570a8ab" category="paragraph">WORM ストレージにコミットされたファイルは、保持期間が過ぎたあとも変更することはできません。改ざん防止クロックは、 WORM ファイルの保持期間が経過したタイミングを決定します。</block>
   <block id="487d92711c834ef6ed6c245a4ade969b" category="paragraph">保存期間が経過すると、不要になったファイルを削除する必要があります。</block>
-  <block id="d7b54fc61b65b19c4694a29b6044aacd" category="section-title">充電中</block>
   <block id="74f13d97ea448b8140308bf35c78920e" category="section-title">WORM ストレージのアクティブ化</block>
   <block id="785248b65164fa7ba3b7948c05afc1cc" category="section-title">ファイルを WORM にコミットしています</block>
   <block id="3fd6e3cd7f26f44db79e5d9fabdbeda0" category="paragraph">アプリケーションを使用して、 NFS または CIFS を介してファイルを WORM にコミットしたり、 ONTAP CLI を使用してファイルを WORM に自動コミットしたりできます。また、追記可能 WORM ファイルを使用して、ログ情報のように増分的に書き込まれるデータを保持することもできます。</block>
@@ -2242,7 +2241,6 @@
   <block id="7546f1896fe746593fe39c57ea23bd23" category="paragraph">RAID0 は、冗長性を確保するためにホットスペアの使用をサポートしていません。</block>
   <block id="ee9bdabf55f98e793b6a92484c2f5bb5" category="paragraph">Cloud Volumes ONTAP インスタンスに接続された未使用のディスク（ホットスペア）の作成は不要な費用であり、必要に応じて追加のスペースをプロビジョニングすることができません。そのため、お勧めしません。</block>
   <block id="d30ed55a4efaa85c9be23afd54902f99" category="paragraph">各 Cloud Volumes ONTAP アグリゲートの RAID タイプは RAID 0 （ストライピング）です。Cloud Volumes ONTAP は、ディスクの可用性とデータ保持性についてクラウドプロバイダに依存しています。その他の RAID タイプはサポートされません。</block>
-  <block id="e85cd480a7048786255eb3e2a749e48d" category="paragraph">WORM ストレージの充電は、合計プロビジョニング容量に基づいて 1 時間ごとに行われます。</block>
   <block id="d87a373c29bad4362e9f6515cb3a6927" category="paragraph">導入時の特別料金が期限切れになり、 WORM ストレージの使用料が請求されます。WORM ボリュームのプロビジョニング済みの合計容量に基づいて、 1 時間ごとに課金されます。この環境 の新規および既存の Cloud Volumes ONTAP システムです。</block>
   <block id="36f3832717137e178e376fc49ba4e550" category="doc">クライアントプロトコル</block>
   <block id="5494b349161a941df24b2a8abfcb1bc9" category="paragraph">iSCSI は、標準のイーサネットネットワークで実行できるブロックプロトコルです。ほとんどのクライアントオペレーティングシステムには、標準のイーサネットポートで動作するソフトウェアイニシエータが搭載されています。</block>
@@ -3092,8 +3090,6 @@
   <block id="ea92910b55077f3c4e27aa9df66efbf8" category="list-text">Cloud Volumes ONTAP のCLIに戻って、Cloud Volumes ONTAP からAutoSupport メッセージを送信できることを確認します。</block>
   <block id="135b308ed83c53f1516b7c754566d1c4" category="list-title">作業を開始する前に</block>
   <block id="434256b12ce281ef5e4d73836f3321d4" category="paragraph">手順を追った操作手順については、ネットアップのナレッジベースを参照してください。</block>
-  <block id="6a8bfe07e1e703ed3692dbea8b2a81de" category="inline-link">Cloud Volumes ONTAP メディエーターに関する通知</block>
-  <block id="b8a867ef3334c621e08f3cfef506f53b" category="list-text"><block ref="b8a867ef3334c621e08f3cfef506f53b" category="inline-link-rx"></block></block>
   <block id="8a11b7df22322ab2814174e7745c863f" category="inline-link">ONTAP に関する注意</block>
   <block id="a65d010a2b24f9e4a0919b7faf52d022" category="list-text"><block ref="a65d010a2b24f9e4a0919b7faf52d022" category="inline-link-rx"></block></block>
   <block id="bc5ec30cd3249636e4dc6b792074194d" category="inline-link">ONTAP SAN ホスト構成</block>
@@ -3566,10 +3562,6 @@
   <block id="5a5214fb40dd557d5d3934ffa3d72686" category="list-text">Cloud Volumes ONTAP ノードのベースポリシー</block>
   <block id="bf82e7bc6353b008da4cfeb0bcb78391" category="list-text">Cloud Volumes ONTAP ノードのバックアップポリシー</block>
   <block id="80fca5903d4623d5bd92d44dca6188ff" category="list-text">IAMロールを作成し、作成したポリシーを関連付けます。</block>
-  <block id="f30b44d93ffa429590bd7907a3d0099c" category="paragraph">Cloud Volumes ONTAP 9.10.1以降では、次の充電動作について理解しておく必要があります。</block>
-  <block id="0514cef4c1e1a5949a3acc085ee50110" category="list-text">ONTAP 9.10.1以降では、WORMボリュームとWORM以外のボリュームを同じアグリゲートに配置できるようになりました。</block>
-  <block id="7ec6925d846a27916198adf7334fcae3" category="list-text">Cloud Volumes ONTAP 作業環境の作成時にWORMを有効にすると、BlueXPで作成したすべてのボリュームでWORMが有効になります。ただし、ONTAP CLIまたはSystem Managerを使用して、WORMを無効にしたボリュームを作成できます。これらのボリュームはWORM状態のままです。</block>
-  <block id="38aefad2ca205e663da97b7fdd932dcf" category="paragraph"><block ref="38aefad2ca205e663da97b7fdd932dcf" category="inline-link-rx"></block></block>
   <block id="5aabc9069557be7e4aeff466605cbc75" category="list-text">シングルノード</block>
   <block id="d83f214fdb8074463fb047c3669d0f00" category="list-text">HAペアは、I/O負荷の高いワークロードに高パフォーマンスを提供する次の2種類のディスクを使用します。</block>
   <block id="de017bcc9ee62a910294463646126cd7" category="list-text">_Premiumページblobs_'最大ディスク・サイズ8TiB</block>
@@ -3640,8 +3632,6 @@
   <block id="770d7d25a250359f096cca82c310f07b" category="paragraph">WORMストレージをアクティブ化する方法は、使用しているCloud Volumes ONTAP のバージョンによって異なります。</block>
   <block id="f7bdab9f1b3e432deef3bba2021d518d" category="section-title">バージョン9.10.1以降</block>
   <block id="2c404b5c40a30cea75e4486ca42855d7" category="paragraph">新しいCloud Volumes ONTAP 作業環境を作成する場合は、WORMストレージを有効または無効にするように求められます。</block>
-  <block id="3cbff90f9e1dd222c93cec86291eb0d2" category="inline-xref">充電の仕組みを理解する</block>
-  <block id="c975ffb3e3e23a37bf8f249186a33e9a" category="paragraph">どちらのオプションを選択してもかまいません <block ref="67a3b6c0cb52274370d571e06a09839a" category="inline-xref-macro-rx"></block>。</block>
   <block id="432afd81656ecff91097001b2dbff0ad" category="section-title">バージョン9.10.0以前</block>
   <block id="18cf072964a583150dd247485ba75b92" category="inline-link-macro">ONTAP 対応の Amazon FSX</block>
   <block id="7450cfde7058dc5e1f7909d0280fd7ae" category="inline-link-macro">Azure NetApp Files の特長</block>
@@ -3879,7 +3869,6 @@
   <block id="824be8b95270c8a8618f49cb7fb21ae8" category="inline-link">BlueXPがGoogle Cloud権限で実行する機能</block>
   <block id="c8f6e82c7aad23d387dc5633fe484591" category="paragraph">Cloud Volumes ONTAP 9.10.1以降では、ボリュームレベルでWORMを有効または無効にすることができます。</block>
   <block id="f4b6aa85f64f47d1816ec182949156ef" category="paragraph">新しい作業環境を作成するときに、 Cloud Volumes ONTAP システムで WORM ストレージをアクティブにできます。BlueXPで作成するすべてのボリュームでWORMが有効になっています。WORMストレージは個 々 のボリュームで無効にすることはできません。</block>
-  <block id="60e4218f85755238d0c16943a070de88" category="list-text">作業環境の作成時にWORMを有効にしないと、BlueXPで作成したすべてのボリュームでWORMが無効になります。これらのボリュームのWORMレートでは課金されません。</block>
   <block id="39c6a1c30ae1faf01f4bd99a4757f7ae" category="paragraph">Azure Private Linksを無効にし、コネクタがプロキシサーバーを使用している場合は、ダイレクトAPIトラフィックを有効にする必要があります。</block>
   <block id="40e86593118ce089551b3691f6bba919" category="inline-link">コネクタで直接APIトラフィックを有効にする方法について説明します</block>
   <block id="aa036f3aad369ff5710a7a7d5043dcbc" category="list-text">Azure の階層化データのデフォルトのストレージアクセス階層は、 _hot_tier です。ホット階層は、大容量階層でアクセス頻度が高いデータに最適です。</block>
@@ -4451,8 +4440,6 @@ NetApp （ BYOL ）からライセンスを直接購入した場合、 AWS サ�
   <block id="533c17bbfdfb297420db9af0908070d6" category="inline-link">自律的なランサムウェア防御</block>
   <block id="6f7a609c476697f17ecdfbfe367e39ad" category="paragraph">Cloud Volumes ONTAPは、Autonomous Ransomware Protection（ARP）機能をサポートしています。この機能は、ワークロードを分析し、ランサムウェア攻撃の可能性がある異常なアクティビティをプロアクティブに検出して警告します。</block>
   <block id="e22c3a8f0786d359fea7cca144bbee1b" category="inline-link">自動ランサムウェア対策を有効化</block>
-  <block id="46d7a6dd7db3af97caa5603b84f76cc1" category="paragraph">WORMのライセンスは、従量課金制または年間契約の条件でのみ利用できます。クラウドプロバイダのマーケットプレイスから購入できます。WORMは、ノードベースと容量ベースの両方のライセンスモデルをサポートしています。</block>
-  <block id="66ab7e49c11a830935ab2c9b0bf49e5e" category="admonition">Cloud Volumes ONTAPのWORMストレージにはBYOLライセンスは使用できません。</block>
   <block id="9216a2741f7e54826d99a0fcfc0c7c58" category="section-title">WORMファイルを削除しています</block>
   <block id="728c208823318f76bc30851f92119221" category="paragraph">privileged delete機能を使用して、保持期間中にWORMファイルを削除できます。</block>
   <block id="44c48c2759b23de55aafe43a43856a08" category="paragraph">手順については、を参照してください<block ref="03bc56e40fb58df28e53112c02ca2ae1" category="inline-link-rx"></block></block>
@@ -4783,14 +4770,12 @@ NetApp （ BYOL ）からライセンスを直接購入した場合、 AWS サ�
   <block id="87ade7583253b06f01182c970d65aacd" category="paragraph">BlueXPは、Cloud Volumes ONTAP が正常に動作するために必要なインバウンドとアウトバウンドのルールを含むGoogle Cloudファイアウォールルールを作成します。テスト目的や独自のファイアウォールルールを使用する場合は、ポートを参照してください。</block>
   <block id="f297f6161ef6c027c4e0cd622d4c9f53" category="paragraph">ARP機能は、ノードベースと容量ベースの両方のライセンスモデルで、BYOLライセンスでのみ使用できます（1~36カ月）。Cloud Volumes ONTAPのARP機能で使用する新しいアドオンライセンスを別途購入するには、NetAppの営業担当者にお問い合わせください。</block>
   <block id="9edc62814e18ad5dad22ed4f08602be6" category="admonition">ノードベースのCloud Volumes ONTAPライセンスでのARP機能の使用は、現在Digital Walletには反映されていません。ノードベースのARP使用状況を表示する機能は、今後のリリースでDigital Walletで利用できるようになる予定です。</block>
-  <block id="36228eb2dbf48b5f5e080f1abf747714" category="paragraph">アドオンライセンスを購入してデジタルウォレットに追加すると、Cloud Volumes ONTAPを使用してボリューム単位でARPを有効にできます。ARPの課金は、ARP機能が有効になっているボリュームのプロビジョニング済み容量の合計に基づいて、ボリュームレベルで計測されます。最小ライセンス容量は1TBです。ただし、ARP機能の最小容量課金はありません。</block>
   <block id="bab89553328d9045a17e6cd7ae426ebe" category="paragraph">ボリュームのARPの設定は、ONTAP System ManagerとONTAP CLIを使用して実行します。</block>
   <block id="35588fa7f53bdbd040bfa9c96c87bf3d" category="section-title">2024年1月16日</block>
   <block id="9ed7d4ae8d042664394e899e9c1f5e9a" category="section-title">BlueXPでのパッチリリース</block>
   <block id="5c04c0351e9f1e168f13ca5689c21d92" category="paragraph">BlueXPでは、最新の3つのバージョンのCloud Volumes ONTAPに対してのみパッチリリースを提供しています。</block>
   <block id="debc8fcbe9103b95d21857d1276dbb26" category="paragraph"><block ref="debc8fcbe9103b95d21857d1276dbb26" category="inline-link-macro-rx"></block></block>
   <block id="fa8624c42ea6d2ce73d1dbb434c41dc8" category="paragraph">ARPライセンスは「フローティング」ライセンスと見なされます。つまり、単一のCloud Volumes ONTAPインスタンスにバインドされず、複数のCloud Volumes ONTAP環境に適用できます。</block>
-  <block id="a7453af7846f7db9aba5aa90fa8093e5" category="paragraph">ARPが有効なボリュームの状態は「ラーニングモード」または「アクティブ」になります。ARP状態が「Disabled」のボリュームは課金対象から除外されます。たとえば、30TiBの容量がプロビジョニングされたCloud Volumes ONTAP環境では、ARPが有効な15TiBのボリュームの一部のみを含めることができます。</block>
   <block id="677ee5101eb2acd8a357643d03784fa7" category="section-title">パッチリリース</block>
   <block id="25163e975710186a452c0f2fefe81448" category="inline-xref">ONTAPイメエシノタウンロオト</block>
   <block id="17464ff13145a21ed61cc7a0b9513ce7" category="paragraph">2024年1月より、BlueXPでパッチをアップグレードできるのは、3つの最新バージョンのCloud Volumes ONTAPのパッチリリースのみです。BlueXPに表示する3つの最新バージョンは、最新のGAリリースを使用して決定されます。たとえば、現在のGAリリースが9.13.1の場合、BlueXPには9.11.1~9.13.1のパッチが表示されます。バージョン9.11.1以前のパッチリリースにアップグレードする場合は、手順を手動でアップグレードする必要があります。 <block ref="741f5e59386960528e5ac58506855727" category="inline-xref-macro-rx"></block>。</block>
@@ -5450,4 +5435,16 @@ Mac OSでtailコマンドを完了します。</block>
   <block id="fadac06c68e9ffce4bb17bd0d6ec5f2b" category="paragraph">次の条件を満たす場合は、単一のアベイラビリティゾーンにHAペアを導入し、Premium SSD v2管理ディスクを使用できます。</block>
   <block id="ed0e2426cd36bf5b4eb9a140ae9a7508" category="list-text">単一のアベイラビリティゾーンの場合は、Azureリージョン、アベイラビリティゾーン、VNet、およびサブネットを選択します。</block>
   <block id="e09953ef98be5a0cd4cc4ad0c288c775" category="paragraph">Cloud Volumes ONTAP 9.15.1以降では、Azureの単一アベイラビリティゾーン（AZ）にHAモードで仮想マシン（VM）インスタンスを導入できます。この展開をサポートするゾーンとリージョンを選択する必要があります。ゾーンまたはリージョンがゾーン配置をサポートしていない場合は、LRSの以前のゾーン以外の配置モードに従います。共有管理対象ディスクでサポートされる構成については、を参照してください<block ref="2148c58538cc3adf327c3ade110b8487" category="inline-link-macro-rx"></block>。</block>
+  <block id="e378925ca7c13e386e5c5d854097dc26" category="inline-link">Cloud Volumes ONTAPに関する注意事項</block>
+  <block id="72b3ada156bb3b51f9862f1754d974d2" category="list-text"><block ref="72b3ada156bb3b51f9862f1754d974d2" category="inline-link-rx"></block></block>
+  <block id="ea7b4173339bef8c2570812171d360a0" category="paragraph">このバックアップを使用して、Cloud Volumes ONTAPシステムを再設定できます。構成バックアップの詳細については、を参照してください<block ref="49fe905ea86eeb386daebc5876800d6b" category="inline-link-rx"></block>。</block>
+  <block id="26ab4d3fe221f0b273d79d8ce5ebc8bc" category="paragraph">アドオンライセンスを購入してデジタルウォレットに追加すると、Cloud Volumes ONTAPを使用してボリューム単位でARPを有効にできます。</block>
+  <block id="c728dacf8c5d7e9da86b3512e6ea5301" category="paragraph">ARPが有効なボリュームの状態は「ラーニングモード」または「アクティブ」になります。</block>
+  <block id="c842acaca9e3ea9ec2dc61f28e69ea15" category="section-title">2024年9月9日</block>
+  <block id="cdd78645b017b927a25b5449e345f823" category="section-title">ワームとARPの機能は有料ではなくなりました。</block>
+  <block id="f1967946737edb98fc1947e0768aa8bf" category="paragraph">すべてのCloud Volumes ONTAPライセンスには、WORM（Write Once Read Many）とARP（Autonomous Ransomware Protection）の組み込みのデータ保護機能とセキュリティ機能が追加コストなしで含まれます。これは、ノードベースと容量ベースの両方のライセンスで、新規および既存のBYOLおよびPAYGO /マーケットプレイスの導入に適用されます。新しい価格モデルは、シングルノード構成やハイアベイラビリティ（HA）構成など、すべてのクラウドプロバイダと導入タイプに適用されます。</block>
+  <block id="be80dbfae56af07d4af9dfce1c36cc75" category="paragraph">次のようなメリットがあります。</block>
+  <block id="c2cf1fd5e48d77ab96276adb197066c3" category="list-text">WORMおよびARPを使用している既存のアカウントには、これらの機能に対する料金は請求されなくなります。この変更前に適用された容量使用量に対して課金されます。ワームおよびARPは、今後の請求で除外されます。</block>
+  <block id="404e8d1aa5724e9535ccf69bb3ee9c54" category="list-text">既存のアカウントでこれらの機能を有効にしていない場合は、追加料金なしでWORMとARPを選択できるようになりました。</block>
+  <block id="3ed34d6b3fd7cd8c4e08b032a9f2dc07" category="list-text">新規アカウントの場合、WORMおよびARPの料金はすべてのCloud Volumes ONTAPオファリングから除外されます。</block>
 </blocks>
