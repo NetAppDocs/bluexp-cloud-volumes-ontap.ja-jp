@@ -26,13 +26,19 @@ BlueXPのCloud Volumes ONTAP Managementの新機能をご紹介します。
 
 === ワームとARPの機能は有料ではなくなりました。
 
-すべてのCloud Volumes ONTAPライセンスには、WORM（Write Once Read Many）とARP（Autonomous Ransomware Protection）の組み込みのデータ保護機能とセキュリティ機能が追加コストなしで含まれます。これは、ノードベースと容量ベースの両方のライセンスで、新規および既存のBYOLおよびPAYGO /マーケットプレイスの導入に適用されます。新しい価格モデルは、シングルノード構成やハイアベイラビリティ（HA）構成など、すべてのクラウドプロバイダと導入タイプに適用されます。
+WORM（Write Once Read Many）とARP（Autonomous Ransomware Protection）の組み込みのデータ保護機能とセキュリティ機能は、Cloud Volumes ONTAPライセンスで追加料金なしで提供されます。新しい価格モデルは、AWS、Azure、Google Cloudの新規および既存のBYOLおよびPAYGO / Marketplaceサブスクリプションの両方に適用されます。容量ベースとノードベースのどちらのライセンスにも、シングルノードとハイアベイラビリティ（HA）ペアを含むすべての構成用のARPとWORMが追加料金なしで含まれます。
 
-次のようなメリットがあります。
+シンプルな価格設定により、次のようなメリットが得られます。
 
-* WORMおよびARPを使用している既存のアカウントには、これらの機能に対する料金は請求されなくなります。この変更前に適用された容量使用量に対して課金されます。ワームおよびARPは、今後の請求で除外されます。
-* 既存のアカウントでこれらの機能を有効にしていない場合は、追加料金なしでWORMとARPを選択できるようになりました。
-* 新規アカウントの場合、WORMおよびARPの料金はすべてのCloud Volumes ONTAPオファリングから除外されます。
+* 現在、WORMとARPが含まれているアカウントでは、これらの機能の料金は発生しなくなります。今後は、この変更前と同様に、使用容量に関する料金のみが請求されます。ワームとARPは今後の請求書に含まれなくなります。
+* 現在のアカウントにこれらの機能が含まれていない場合は、追加料金なしでWORMとARPを選択できるようになりました。
+* 新規アカウントのすべてのCloud Volumes ONTAPサービスには、WORMとARPの料金は含まれません。
+
+
+これらの機能の詳細については、こちらをご覧ください。
+
+* https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-protecting-ransomware.html["ランサムウェアからの保護を強化"^]
+* https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-worm.html["WORM ストレージ"^]
 
 
 
