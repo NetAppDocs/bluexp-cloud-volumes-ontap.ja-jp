@@ -17,7 +17,7 @@ summary: AzureイメージダイジェストファイルはNetApp Support Site�
 Azureイメージダイジェストファイルは、 https://mysupport.netapp.com/site/["NetApp Support Site"^]。ダウンロードはtar.gz形式で、画像署名検証用のファイルが含まれています。
 
 .手順
-. にアクセスします https://mysupport.netapp.com/site/products/all/details/cloud-volumes-ontap/guideme-tab["NetApp Support SiteのCloud Volumes ONTAP製品ページ"^] ダウンロードセクションの下に目的のソフトウェアバージョンをダウンロードします。
+. に移動し https://mysupport.netapp.com/site/products/all/details/cloud-volumes-ontap/guideme-tab["NetApp Support SiteのCloud Volumes ONTAP製品ページ"^]、[Downloads]セクションで必要なソフトウェアバージョンをダウンロードします。
 . Cloud Volumes ONTAPのダウンロードページで、Azureイメージダイジェストファイルの*ダウンロードボタン*をクリックしてTARをダウンロードします。 GZファイル。
 +
 image::screenshot_cloud_volumes_ontap_tar.gz.png[Cloud Volumes ONTAPのスクリーンショットtar.gz]

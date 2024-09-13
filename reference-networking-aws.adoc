@@ -26,6 +26,69 @@ AWS では、次の要件を満たす必要があります。
 
 === Cloud Volumes ONTAP ノードのアウトバウンドインターネットアクセス
 
+Cloud Volumes ONTAPノードは、日常業務で次のエンドポイントに接続するためにアウトバウンドインターネットアクセスを必要とします。
+
+
+
+==== Cloud Volumes ONTAPエンドポイント
+
+Cloud Volumes ONTAPでは、日常業務のためにさまざまなエンドポイントに接続するために、アウトバウンドインターネットアクセスが必要です。
+
+次のエンドポイントはCloud Volumes ONTAPに固有です。また、コネクタは、BlueXP  Webベースのコンソールだけでなく、日常的な操作のためにいくつかのエンドポイントにも接続します。およびを参照してください https://docs.netapp.com/us-en/bluexp-setup-admin/task-install-connector-on-prem.html#step-3-set-up-networking["コネクタから接続されたエンドポイントの表示"^] https://docs.netapp.com/us-en/bluexp-setup-admin/reference-networking-saas-console.html["BlueXPコンソールを使用するためのネットワークの準備"^]。
+
+[cols="5*"]
+|===
+| エンドポイント | 適用対象 | 目的 | BlueXPの導入モード | エンドポイントを使用できない場合の影響 
+
+
+| \https://netapp-cloud-account.auth0.com | 認証  a| 
+BlueXP  認証に使用されます。
+| 標準モードと制限モード。  a| 
+ユーザ認証は失敗し、次のサービスは使用できません。
+
+* Cloud Volumes ONTAPサービス
+* ONTAPサービス
+* プロトコルとプロキシサービス
+
+
+
+
+| \https://keyvault-production-aks.vault.azure.net | キーボールト | メタデータ処理用にS3バケットと通信するためにAzure Key Vaultからクライアントシークレットキーを取得するために使用されます。Cloud Volumes ONTAPサービスはこのコンポーネントを内部的に使用します。 | 標準モード、制限モード、およびプライベートモード。 | Cloud Volumes ONTAPサービスを使用できません。 
+
+
+| \ https://cloudmanager.cloud.netapp.com/tenancy | テナンシー | BlueXP  テナンシーからCloud Volumes ONTAPリソースを取得して、リソースとユーザを許可します。 | 標準モードと制限モード。 | Cloud Volumes ONTAPリソースとユーザは許可されていません。 
+
+
+| \ https://support。NetApp .com /aods/asupmessage\ https://support。NetApp .com /asupprod/post/1.0/postAsup | AutoSupport | AutoSupportテレメトリデータをNetAppサポートに送信するために使用されます。 | 標準モードと制限モード。 | AutoSupport情報は配信されません。 
+
+
+| AWSサービスの正確な商用エンドポイント（サフィックス付き `amazonaws.com`）は、使用しているAWSリージョンによって異なります。を参照してください https://docs.aws.amazon.com/general/latest/gr/rande.html["詳細はAWSのドキュメントを参照"^]。  a| 
+* クラウド形成
+* 柔軟なコンピューティングクラウド（ EC2 ）
+* IDおよびアクセス管理（IAM）
+* キー管理サービス（ KMS ）
+* セキュリティトークンサービス（ STS ）
+* シンプルなストレージサービス（ S3 ）
+
+| AWSサービスとの通信。 | 標準モードとプライベートモード。 | Cloud Volumes ONTAPがAWSサービスと通信してAWSで特定のBlueXP  処理を実行することはできません。 
+
+
+| AWSサービスの政府機関のエンドポイントは、使用しているAWSリージョンによって異なります。エンドポイントには `amazonaws.com`、サフィックスとが `c2s.ic.gov`付加されます。	https://docs.aws.amazon.com/AWSJavaSDK/latest/javadoc/com/amazonaws/services/s3/model/Region.html["AWS SDK"] https://docs.aws.amazon.com/general/latest/gr/rande.html["Amazonのドキュメント"]詳細については、およびを参照してください。  a| 
+* クラウド形成
+* 柔軟なコンピューティングクラウド（ EC2 ）
+* IDおよびアクセス管理（IAM）
+* キー管理サービス（ KMS ）
+* セキュリティトークンサービス（ STS ）
+* シンプルなストレージサービス（ S3 ）
+
+| AWSサービスとの通信。 | 制限モード。 | Cloud Volumes ONTAPがAWSサービスと通信してAWSで特定のBlueXP  処理を実行することはできません。 
+|===
+
+
+==== NetApp AutoSupportのアウトバウンドインターネットアクセス
+
+Cloud Volumes ONTAPノードは、さまざまな機能のために外部エンドポイントにアクセスするためのアウトバウンドインターネットアクセスを必要とします。セキュリティ要件が厳しい環境でこれらのエンドポイントがブロックされていると、Cloud Volumes ONTAPは正常に動作しません。
+
 Cloud Volumes ONTAP ノードには、NetApp AutoSupport へのアウトバウンドインターネットアクセスが必要です。ネットアップは、システムの健常性をプロアクティブに監視し、ネットアップテクニカルサポートにメッセージを送信します。
 
 Cloud Volumes ONTAP が AutoSupport メッセージを送信できるように、ルーティングポリシーとファイアウォールポリシーで次のエンドポイントへの HTTP / HTTPS トラフィックを許可する必要があります。
