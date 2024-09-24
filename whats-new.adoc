@@ -77,9 +77,9 @@ Cloud Volumes ONTAPの今後の導入では、Edge Cache容量ベースのライ
 
 
 
-=== AzureのFlash Cacheでサポートされる最小ONTAPバージョン
+=== AzureでサポートされるFlash Cacheの最小バージョン
 
-AzureでFlash Cacheを設定するには、9.13.1 GA以上のONTAPバージョンが必要です。のCloud Volumes ONTAPシステムへの導入には、ONTAP 9 .13.1 GA以降のバージョンのみを使用できます。
+AzureでFlash Cacheを設定するには、9.13.1 GA以上のCloud Volumes ONTAPバージョンが必要です。のCloud Volumes ONTAPシステムへの導入には、ONTAP 9 .13.1 GA以降のバージョンのみを使用できます。
 
 サポートされる構成については、を参照してください https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-configs-azure.html#single-node-systems["Azure でサポートされる構成"^]。
 
