@@ -38,4 +38,4 @@ endif::aws[]
 
 
 .結果
-Cloud Volumes ONTAP インスタンスがワークスペースに追加されます。
+BlueXP  は、Cloud Volumes ONTAPインスタンスをプロジェクトまたはワークスペースに追加します。

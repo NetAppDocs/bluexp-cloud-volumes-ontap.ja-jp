@@ -52,7 +52,7 @@ BlueXPで、* Digital Advisor *サービスをクリックします。
 +
 image:screenshot_aiq_digital_advisor.png["BlueXPのDigital Advisorユーザインターフェイスのスクリーンショット。"]
 
-* BlueXP  にNSSアカウントを登録していない場合は、今すぐNSSアカウントを登録すると、Digital AdvisorのUIが表示されます。 https://docs.netapp.com/us-en/bluexp-setup-admin/task-adding-nss-accounts.html["BlueXPアカウントに関連付けられているNSSクレデンシャルを管理します"]手順については、を参照してください。
+* BlueXP  にNSSアカウントを登録していない場合は、今すぐNSSアカウントを登録すると、Digital AdvisorのUIが表示されます。 https://docs.netapp.com/us-en/bluexp-setup-admin/task-adding-nss-accounts.html["BlueXP  の組織またはアカウントに関連付けられたNSSクレデンシャルの管理"]手順については、を参照してください。
 
 
 

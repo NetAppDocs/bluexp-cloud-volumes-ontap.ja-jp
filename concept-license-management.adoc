@@ -55,7 +55,7 @@ image:screenshot_warning.gif["スクリーンショット：警告アイコン�
 
 メッセージを確認する作業環境を選択できます。
 
-アカウント管理者がオプションを有効にしている場合、Cloud Volumes ONTAP レポートにライセンスの有効期限に関する警告が電子メールで送信されます。
+BlueXP  のCloud Volumes ONTAPレポートには、BlueXP  組織またはアカウント管理者が次のオプションを有効にしている場合に電子メールで送信されるライセンスの有効期限に関する警告が表示されます。
 
 image:screenshot_cvo_report.gif["E メールで Cloud Volumes ONTAP レポートを有効にするチェックボックスを示すユーザプロファイルパネルのスクリーンショット。"]
 

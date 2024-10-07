@@ -18,7 +18,7 @@ summary: いくつかの手順で、 Cloud Volumes ONTAP for AWS を使い始め
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png["1つ"] コネクタを作成します
 [role="quick-margin-para"]
-を持っていなければ https://docs.netapp.com/us-en/bluexp-setup-admin/concept-connectors.html["コネクタ"^] ただし、アカウント管理者がアカウントを作成する必要があります。 https://docs.netapp.com/us-en/bluexp-setup-admin/task-quick-start-connector-aws.html["AWS でコネクタを作成する方法について説明します"^]
+まだを持っていない場合は https://docs.netapp.com/us-en/bluexp-setup-admin/concept-connectors.html["コネクタ"^]、作成する必要があります。 https://docs.netapp.com/us-en/bluexp-setup-admin/task-quick-start-connector-aws.html["AWS でコネクタを作成する方法について説明します"^]
 
 [role="quick-margin-para"]
 インターネットアクセスを使用できないサブネットにCloud Volumes ONTAP を導入する場合は、コネクタを手動でインストールし、そのコネクタで実行されているBlueXPユーザインターフェイスにアクセスする必要があります。 https://docs.netapp.com/us-en/bluexp-setup-admin/task-quick-start-private-mode.html["インターネットにアクセスできない場所にコネクタを手動でインストールする方法について説明します"^]

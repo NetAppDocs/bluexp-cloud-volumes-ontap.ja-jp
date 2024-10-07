@@ -22,7 +22,7 @@ BlueXPでCloud Volumes ONTAP 作業環境を作成することで、Azureで単�
 [[licensing]]
 * 稼働中のコネクタ。
 +
-** を用意しておく必要があります https://docs.netapp.com/us-en/bluexp-setup-admin/task-quick-start-connector-azure.html["ワークスペースに関連付けられているコネクタ"^]。
+** を用意する必要があります https://docs.netapp.com/us-en/bluexp-setup-admin/task-quick-start-connector-azure.html["プロジェクトまたはワークスペースに関連付けられているコネクタ"^]。
 ** https://docs.netapp.com/us-en/bluexp-setup-admin/concept-connectors.html["コネクタをで実行したままにする準備をしておく必要があります 常時"^]。
 
 

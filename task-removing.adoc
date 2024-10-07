@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: task-removing.html 
 keywords: working environments, removing, remove, rediscover 
-summary: アカウント管理者は、 Cloud Volumes ONTAP 作業環境を削除して別のシステムに移動したり、検出に関する問題のトラブルシューティングを行ったりできます。 
+summary: Cloud Volumes ONTAP作業環境を削除して、別のシステムに移動したり、検出に関する問題をトラブルシューティングしたりすることができます。 
 ---
 = Cloud Volumes ONTAP の動作環境を削除しています
 :hardbreaks:
@@ -14,17 +14,10 @@ summary: アカウント管理者は、 Cloud Volumes ONTAP 作業環境を削�
 
 
 [role="lead"]
-アカウント管理者は、 Cloud Volumes ONTAP 作業環境を削除して別のシステムに移動したり、検出に関する問題のトラブルシューティングを行ったりできます。
+Cloud Volumes ONTAP作業環境を削除して、別のシステムに移動したり、検出に関する問題をトラブルシューティングしたりすることができます。
 
 .このタスクについて
-Cloud Volumes ONTAP 作業環境を削除すると'BlueXPから削除されますCloud Volumes ONTAP システムは削除されません。作業環境は後で再検出できます。
-
-BlueXPから作業環境を削除すると'次の操作を実行できます
-
-* 作業環境を別のワークスペースで再検出します
-* 別のBlueXPシステムから再検出します
-* 初期検出中に問題が発生した場合は、再検出します
-
+Cloud Volumes ONTAP 作業環境を削除すると'BlueXPから削除されますCloud Volumes ONTAP システムは削除されません。最初の検出で問題が発生した場合など、作業環境をあとで再検出できます。
 
 .手順
 . [Canvas]ページで、削除する作業環境をダブルクリックします。
