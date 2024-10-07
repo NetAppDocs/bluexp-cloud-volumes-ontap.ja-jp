@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: concept-ha.html 
 keywords: high availability, HA, mediator, concepts, understanding, overview, availability zones, AZs, takeover, giveback, rpo, rto, floating ip, nondisruptive, ha pairs, node, nodes, synchronous, resync, recovery point objective, recovery time objective, nas, nfs, cifs, floating ip address, route tables, iscsi, mpio, alua, failover, mount, remount, failure, data access, access, ip address, performance 
-summary: Cloud Volumes ONTAP High Availability （ HA ）構成は、無停止の運用と耐障害性を提供します。AWS では、 2 つのノード間でデータが同期ミラーリングされます。 
+summary: Cloud Volumes ONTAPのハイアベイラビリティ（HA）構成は、ノンストップオペレーションとフォールトトレランスを実現します。AWS では、 2 つのノード間でデータが同期ミラーリングされます。 
 ---
 = AWS におけるハイアベイラビリティペア
 :hardbreaks:
@@ -14,7 +14,7 @@ summary: Cloud Volumes ONTAP High Availability （ HA ）構成は、無停止�
 
 
 [role="lead"]
-Cloud Volumes ONTAP High Availability （ HA ）構成は、無停止の運用と耐障害性を提供します。AWS では、 2 つのノード間でデータが同期ミラーリングされます。
+Cloud Volumes ONTAPのハイアベイラビリティ（HA）構成は、ノンストップオペレーションとフォールトトレランスを実現します。AWS では、 2 つのノード間でデータが同期ミラーリングされます。
 
 
 
@@ -60,7 +60,7 @@ NOTE: Cloud Volumes ONTAP 9.10.0 以前では、 Debian 10 はメディエータ
 
 == RPO と RTO
 
-HA 構成では、次のようにデータの高可用性が維持されます。
+HA構成では、次のようにデータの高可用性を維持します。
 
 * RPO （ Recovery Point Objective ：目標復旧時点）は 0 秒です。データはトランザクション的に整合性が保たれ、データ損失は発生しません。
 * Recovery Time Objective（RTO；目標復旧時間）は120秒です。システム停止が発生した場合、120秒以内にデータを利用できるようにする必要があります。

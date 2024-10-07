@@ -26,8 +26,6 @@ ONTAP CLIまたはONTAPシステムマネージャを使用して、FlexCacheボ
 * http://docs.netapp.com/ontap-9/topic/com.netapp.doc.onc-sm-help-960/GUID-07F4C213-076D-4FE8-A8E3-410F49498D49.html["System Manager での FlexCache ボリュームの作成"^]
 
 
-すべての新しいCloud Volumes ONTAPシステムに対してFlexCacheライセンスが生成されます。ライセンスの使用量は 500GiB に制限されています。
-
 video::PBNPVRUeT1o[youtube,width=848,height=480]
 
 
@@ -58,7 +56,7 @@ Google Cloudの場合は、Google Cloud Key Management Serviceです。詳細に
 endif::gcp[]
 
 . *キー管理サービス*：FlexCacheボリュームを作成する前に、Cloud Volumes ONTAPシステムでキー管理サービスが正しく設定されていることを確認してください。この設定は、FlexCacheボリュームが元のボリュームのデータを復号化するために不可欠です。
-. *ライセンス*:有効なFlexCacheライセンスがCloud Volumes ONTAPシステムで使用可能で有効になっていることを確認します。BlueXPでは、すべての新しいCloud Volumes ONTAPシステム用にFlexCacheライセンスが生成されますが、使用量は500GiBに制限されています。
+. *ライセンス*:有効なFlexCacheライセンスがCloud Volumes ONTAPシステムで使用可能で有効になっていることを確認します。
 . * ONTAPバージョン*：ONTAPバージョンのCloud Volumes ONTAPシステムが、暗号化されたボリュームを含むFlexCacheをサポートしていることを確認します。詳細については、最新または互換性マトリックスを参照して https://docs.netapp.com/us-en/ontap/release-notes/index.html["ONTAPリリースノート"^] ください。
 . *ネットワーク構成*：ネットワーク構成で、元のボリュームとFlexCacheボリューム間のシームレスな通信が可能であることを確認します。これには、クラウド環境での適切なルーティングとDNS解決が含まれます。
 

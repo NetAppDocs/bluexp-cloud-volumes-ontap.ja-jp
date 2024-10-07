@@ -307,7 +307,8 @@ image:screenshots_aggregate_details_state.png["スクリーンショット：ア
 
 新しいバージョンのCloud Volumes ONTAP が使用可能になると、Cloud Volumes ONTAP の作業環境に通知が表示されます。
 
-image:screenshot_overview_upgrade.png["スクリーンショット：作業環境を選択した後に Canvas ページに表示される、新しいバージョンの通知を示しています。"]
+
+NOTE: BlueXPの通知を通じてCloud Volumes ONTAPをアップグレードするには、NetApp Support Siteアカウントが必要です。
 
 この通知からアップグレードプロセスを開始できます。アップグレードプロセスを自動化するには、 S3 バケットからソフトウェアイメージを取得し、イメージをインストールしてから、システムを再起動します。
 
@@ -323,21 +324,22 @@ Cloud Volumes ONTAP システムでボリュームやアグリゲートの作成
 +
 image:screenshot_overview_upgrade.png["「今すぐアップグレード！」のスクリーンショット [Overview]タブの下のリンク。"]
 
-. 新しいバージョンが利用可能な場合は、*今すぐアップグレード！*をクリックします
-+
-
-NOTE: BlueXPの通知を通じてCloud Volumes ONTAPをアップグレードするには、NetApp Support Siteアカウントが必要です。
-
-. [Upgrade Cloud Volumes ONTAP （EULAのアップグレード）]ページで、EULAを読み、*[I read and approve the EULA]*を選択します。
-. [* アップグレード ] をクリックします。
-+
-
-NOTE: Upgrade Cloud Volumes ONTAPページでは、デフォルトでアップグレード可能な最新のCloud Volumes ONTAPバージョンが選択されます。可能な場合は、*[古いバージョンを選択]*をクリックして、以前のバージョンのCloud Volumes ONTAPをアップグレード対象として選択できます。
-を参照してください https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-updating-ontap-cloud.html#supported-upgrade-paths["サポートされるアップグレードパスのリスト"^] をクリックし、Cloud Volumes ONTAPの現在のバージョンに基づいて適切なアップグレードパスを選択します。
-
+. インストールされているCloud Volumes ONTAPのバージョンをアップグレードする場合は、*今すぐアップグレード*をクリックしてください。デフォルトでは、互換性のある最新のアップグレードバージョンが表示されます。
 +
 image:screenshot_upgrade_select_versions.png["[Upgrade Cloud Volumes ONTAP version]ページのスクリーンショット。"]
 
++
+別のバージョンにアップグレードする場合は、*[他のバージョンを選択]*をクリックします。システムにインストールされているバージョンと互換性のある最新のCloud Volumes ONTAPバージョンが表示されます。たとえば、システムにインストールされているバージョンは9.12.1P3で、互換性のある次のバージョンを使用できます。
+
++
+** 9.12.1P4～9.12.1P14
+** 9.13.1と9.13.1P1アップグレードのデフォルトバージョンは9.13.1P1、その他の利用可能なバージョンは9.12.1P13、9.13.1P14、9.13.1、9.13.1P1です。
+
+
+. 必要に応じて、*[すべてのバージョン]*をクリックして、アップグレードする別のバージョン（インストールされているバージョンの次のパッチなど）を入力できます。現在のCloud Volumes ONTAPバージョンと互換性のあるアップグレードパスについては、を参照してくださいlink:task-updating-ontap-cloud.html#supported-upgrade-paths["サポートされているアップグレードパス"]。
+. [保存]*をクリックし、*[適用]*をクリックします。image:screenshot_upgrade_other_versions.png["アップグレード可能なバージョンを示すスクリーンショット。"]
+. [Upgrade Cloud Volumes ONTAP （EULAのアップグレード）]ページで、EULAを読み、*[I read and approve the EULA]*を選択します。
+. [* アップグレード ] をクリックします。
 . アップグレードのステータスを確認するには、[設定]アイコンをクリックして*[タイムライン]*を選択します。
 
 

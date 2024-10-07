@@ -2,9 +2,9 @@
 sidebar: sidebar 
 permalink: task-azure-high-availability-mode.html 
 keywords: high availability mode, EnableHighAvailabilityMode, action required, nfsv4 
-summary: Microsoft Azureの高可用性モードを有効にして、計画外のフェイルオーバー時間を短縮し、NFSv4でCloud Volumes ONTAP がサポートされるようにする必要があります。 
+summary: 計画外フェイルオーバーの時間を短縮し、NFSv4でCloud Volumes ONTAPをサポートするには、Microsoft Azureのハイアベイラビリティモードを有効にする必要があります。 
 ---
-= Azureでハイアベイラビリティモードを有効にします
+= Azureでハイアベイラビリティモードを有効にする
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,9 +14,9 @@ summary: Microsoft Azureの高可用性モードを有効にして、計画外�
 
 
 [role="lead"]
-Microsoft Azureの高可用性モードを有効にして、計画外のフェイルオーバー時間を短縮し、NFSv4でCloud Volumes ONTAP がサポートされるようにする必要があります。
+計画外フェイルオーバーの時間を短縮し、NFSv4でCloud Volumes ONTAPをサポートするには、Microsoft Azureのハイアベイラビリティモードを有効にする必要があります。
 
-Cloud Volumes ONTAP 9.10.1リリースから、Microsoft Azureで実行されるCloud Volumes ONTAP HAペアの計画外フェイルオーバー時間が短縮され、NFSv4がサポートされるようになりました。これらの機能拡張をCloud Volumes ONTAP で使用できるようにするには、Azureサブスクリプションでハイアベイラビリティ機能を有効にする必要があります。
+Cloud Volumes ONTAP 9.10.1リリースから、Microsoft Azureで実行されるCloud Volumes ONTAP HAペアの計画外フェイルオーバー時間が短縮され、NFSv4がサポートされるようになりました。これらの機能拡張をCloud Volumes ONTAPで利用できるようにするには、Azureサブスクリプションで高可用性機能を有効にする必要があります。
 
 Azureサブスクリプションでこの機能を有効にする必要がある場合、「Action Required」メッセージにこれらの詳細が表示されます。
 

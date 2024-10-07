@@ -1,8 +1,8 @@
 ---
 sidebar: sidebar 
 permalink: concept-ha-google-cloud.html 
-keywords: high availability, HA, mediator, concepts, understanding, overview, takeover, giveback, rpo, rto, nondisruptive, ha pairs, node, nodes, synchronous, resync, recovery point objective, recovery time objective, failover, mount, remount, failure, data access, access, ip address, performance, gcp, gcp ha, google cloud ha, ha in google cloud 
-summary: Cloud Volumes ONTAP のハイアベイラビリティ構成は、ノンストップオペレーションとフォールトトレランスを実現します。Google Cloudでは、2つのノード間でデータが同期ミラーリングされます。 
+keywords: high-availability, HA, mediator, concepts, understanding, overview, takeover, giveback, rpo, rto, nondisruptive, ha pairs, node, nodes, synchronous, resync, recovery point objective, recovery time objective, failover, mount, remount, failure, data access, access, ip address, performance, gcp, gcp ha, google cloud ha, ha in google cloud 
+summary: Cloud Volumes ONTAPのハイアベイラビリティ構成は、ノンストップオペレーションとフォールトトレランスを実現します。Google Cloudでは、2つのノード間でデータが同期ミラーリングされます。 
 ---
 = Google Cloud のハイアベイラビリティペア
 :hardbreaks:
@@ -14,7 +14,7 @@ summary: Cloud Volumes ONTAP のハイアベイラビリティ構成は、ノン
 
 
 [role="lead"]
-Cloud Volumes ONTAP High Availability （ HA ）構成は、無停止の運用と耐障害性を提供します。Google Cloudでは、2つのノード間でデータが同期ミラーリングされます。
+Cloud Volumes ONTAPのハイアベイラビリティ（HA）構成は、ノンストップオペレーションとフォールトトレランスを実現します。Google Cloudでは、2つのノード間でデータが同期ミラーリングされます。
 
 
 

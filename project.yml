@@ -81,7 +81,7 @@ sidebar:
         url: "/task-set-up-azure-encryption.html"
       - title: ライセンスをセットアップする
         url: "/task-set-up-licensing-azure.html"
-      - title: ハイアベイラビリティモードを有効にします
+      - title: ハイアベイラビリティモードを有効にする
         url: "/task-azure-high-availability-mode.html"
       - title: 単一のアベイラビリティゾーンに対してVMOrchestratorZonalMultiFDを有効にする
         url: "/task-saz-feature.html"
