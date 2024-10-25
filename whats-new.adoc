@@ -20,6 +20,29 @@ BlueXPのCloud Volumes ONTAP Managementの新機能をご紹介します。
 
 
 
+== 2024年10月25日
+
+
+
+=== N1シリーズマシンはBlueXP  で選択できません
+
+Google CloudにCloud Volumes ONTAPの新しいインスタンスを導入する際に、BlueXP  でn1シリーズマシンを選択できなくなりました。n1シリーズのマシンは、既存の古いシステムでのみ保持およびサポートされます。Cloud Volumes ONTAPの新規導入は、Google Cloud 9.8リリース以降でのみサポートされます。Cloud Volumes ONTAP 9.8以降と互換性のあるn2シリーズマシンタイプに切り替えることをお勧めします。ただし、n1シリーズマシンは、APIを介して実行される新しい導入に使用できます。
+
+https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-configs-gcp.html["Google Cloud でサポートされている構成"^]です。
+
+
+
+=== ローカルゾーンでのAmazon Web Servicesのプライベートモードのサポート
+
+BlueXP  では、AWSローカルゾーンがサポートされるようになり、プライベートモードのCloud Volumes ONTAPハイアベイラビリティ（HA）構成がサポートされるようになりました。以前は標準モードのみに限定されていたサポートが、プライベートモードを含むように拡張されました。
+
+
+NOTE: BlueXP  を制限モードで使用している場合、AWSローカルゾーンはサポートされません。
+
+HA環境でのAWSローカルゾーンの詳細については、を参照してください。 link:https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-ha.html#aws-local-zones["AWSローカルゾーン"^]。
+
+
+
 == 2024年10月7日
 
 

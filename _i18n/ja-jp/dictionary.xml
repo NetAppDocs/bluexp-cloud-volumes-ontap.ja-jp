@@ -1779,8 +1779,6 @@
   <block id="8efc36afc2e7202a9c9bda00b8e8a75d" category="section-title">ライセンスの概要</block>
   <block id="f008ecd5469e24eee31eb4e2e4a1e23f" category="paragraph">新規のお客様は、次のライセンスオプションを利用できます。</block>
   <block id="27d0a1d0fc95280fbaf78c65ff6b37fb" category="list-text">Essentials パッケージ</block>
-  <block id="57050f826fe75d25457ab448568ae53d" category="list-text">さまざまな構成で Cloud Volumes ONTAP の容量に基づいて料金が発生します。</block>
-  <block id="a7c9ae4b871102b7553565c7089cf839" category="list-text">ニーズに合わせて拡張できるサブスクリプションベースのサービス。 HA ペア向けのシームレスなハイブリッドクラウドエクスペリエンスを提供します。</block>
   <block id="0e1a6eb7eed81777ed9d0610be51df3b" category="paragraph">以前のノード単位のライセンスモデルは、ライセンスを購入済みの既存のお客様や、アクティブな Marketplace サブスクリプションを所有しているお客様には引き続き提供されます。</block>
   <block id="08598187312665a33ac3ebb5fc060c00" category="paragraph">以降のセクションでは、これらの各オプションについて詳しく説明します。</block>
   <block id="d7c357dcc3b8476a2eeba19c87ec383d" category="paragraph">Cloud Volumes ONTAP のすべての機能をネットアップから無償で提供（クラウドプロバイダの料金がまだ適用されます）。</block>
@@ -4936,10 +4934,8 @@ HAペアの場合、BlueXPでCloud Volumes ONTAP作業環境を作成すると�
   <block id="9915334dccd6082757486cc7db7c4599" category="section-title">タンイチノアベイラビリティゾーン</block>
   <block id="4214b1507155cb0c63890d5526690625" category="paragraph">単一のアベイラビリティゾーン（AZ）にHA構成を導入すると、Cloud Volumes ONTAPノードを実行するインスタンスで障害が発生した場合にデータの高可用性を確保できます。すべてのデータは、 vPC の外部からネイティブにアクセスできます。</block>
   <block id="e0b08acf0828bf4594a0b9bd6411df1b" category="section-title">AWSローカルゾーン</block>
-  <block id="bc54c20d96244cbf865df76934081bb9" category="paragraph">AWSローカルゾーンは、ストレージ、コンピューティング、データベース、その他の一部のAWSサービスが大都市や業界の近くに配置されているインフラ環境です。AWSローカルゾーンを使用すると、AWSサービスを近くに配置して、ワークロードのレイテンシを改善し、データベースをローカルに維持できます。</block>
   <block id="ac654b16577855244ce7dae48d89fba9" category="paragraph">AWSローカルゾーンには、単一のAZ構成または複数のAZ構成を導入できます。</block>
   <block id="2a6302a8529ac1ec37d01886ead088d0" category="section-title">AWSローカルゾーンの設定例</block>
-  <block id="19af59a268c506bb19268e318e2e9e5f" category="paragraph">次に、設定例を示します。</block>
   <block id="cc9d5d3b16643a54feae6e4778e4d7b9" category="list-text">単一のアベイラビリティゾーン：クラスタノードとメディエーターの両方が同じローカルゾーンにあります。</block>
   <block id="9f1aad520102b4f5b24cb8c2d5dce3eb" category="list-text">複数のアベイラビリティゾーン
 複数のアベイラビリティゾーン構成では、3つのインスタンス（2つのノードと1つのメディエーター）があります。3つのインスタンスのうち1つは別のゾーンに配置する必要があります。これをどのように設定するかを選択できます。</block>
@@ -4948,8 +4944,6 @@ HAペアの場合、BlueXPでCloud Volumes ONTAP作業環境を作成すると�
   <block id="e7b2b5f10ffa3982dbe023fcc44d9809" category="list-text">ローカルゾーンに1つのクラスタノード、ローカルゾーンにメディエーター、および2つ目のクラスタノードがアベイラビリティゾーンにあります。</block>
   <block id="7f1ca580f0235d8ecd120f9905161358" category="list-text">各クラスタノードとメディエーターが別 々 のローカルゾーンにあります。</block>
   <block id="53e8d12efd0a1f3029b5796a1b3b6d97" category="section-title">サポートされるディスクタイプとインスタンスタイプ</block>
-  <block id="b725b06baf48d4e1dcf97d094f7fa465" category="paragraph">サポートされるディスクタイプはgp2のみです。</block>
-  <block id="3d3c8175d796b0c12230914779b33fbb" category="paragraph">現在、サイズがxlarge ~ 4xlargeの次のEC2インスタンスタイプファミリーがサポートされています。</block>
   <block id="3f44a84e6e34fdb5a2f89c68d8c36175" category="list-text">M5</block>
   <block id="fea813d4ddba3c46cf8b8e664b92cdaa" category="list-text">C5</block>
   <block id="82bce2d16d12d889961dbfbfac9b0015" category="list-text">C5d</block>
@@ -5195,7 +5189,6 @@ Mac OSでtailコマンドを完了します。</block>
   <block id="1a08696b6a25e68d9e9c3ade6c185546" category="admonition">HA ペアのノード間でボリュームを移動する場合は、もう一方のノードの IP アドレスを使用してボリュームを再マウントする必要があります。そうしないと、パフォーマンスが低下する可能性があります。クライアントが CIFS の NFSv4 リファールまたはフォルダリダイレクションをサポートしている場合は、ボリュームの再マウントを回避するために、 Cloud Volumes ONTAP システムでこれらの機能を有効にできます。詳細については、ONTAPのドキュメントを参照してください。</block>
   <block id="a9c5983e35ef10e7675e8d4743ca9b78" category="paragraph">詳細については、を参照してください <block ref="e677af9e7ca6c446fefd39f21658da89" category="inline-link-macro-rx"></block>。</block>
   <block id="13adeba04a9bbea1e4724de79afe951f" category="inline-link-macro">ローカルゾーンのEC2インスタンスタイプ</block>
-  <block id="98e2f4a9a2f3a4c17ad6b8f877a88762" category="paragraph">サポートされているの最新かつ詳細な情報については、AWSのドキュメントを参照して<block ref="a4408f4d4cfd81ced6d2ec2b8da89160" category="inline-link-macro-rx"></block>ください。</block>
   <block id="973154cd70a812583853f9af98175e4b" category="admonition">HA ペアのノード間でボリュームを移動する場合は、もう一方のノードの IP アドレスを使用してボリュームを再マウントする必要があります。そうしないと、パフォーマンスが低下する可能性があります。クライアントが CIFS の NFSv4 リファールまたはフォルダリダイレクションをサポートしている場合は、ボリュームの再マウントを回避するために、 Cloud Volumes ONTAP システムでこれらの機能を有効にできます。詳細については、ONTAPのドキュメントを参照してください。</block>
   <block id="a91a698de1a811c466dcfeeb6a0b5b2c" category="admonition">BlueXPのバックアップとリカバリにはPAYGOのサブスクリプションが必要ですが、このサービスの使用には料金は発生しません。BlueXP  バックアップ/リカバリのライセンス設定の詳細については、を参照してください<block ref="c958f229a6c4d788e19159c7ba08a48b" category="inline-link-rx"></block>。</block>
   <block id="1598bd897bc443f364d77a0ead2b386d" category="paragraph">詳細については、<block ref="07e6a6e4814dabc1a0870a10a70c4b44" category="inline-link-rx"></block></block>
@@ -5385,7 +5378,6 @@ Mac OSでtailコマンドを完了します。</block>
   <block id="a100999de1d9ee815d7e13741acf163d" category="list-text"><block ref="a100999de1d9ee815d7e13741acf163d" category="inline-link-rx"></block></block>
   <block id="2a57c4c48ac4fed7319e97ba358228fe" category="paragraph">Google Cloudのイメージ検証機能は、ネットアップの高度なセキュリティ要件に準拠しています。このタスク用に特別に生成された秘密鍵を使用して、途中でイメージに署名するためのイメージを生成するスクリプトに変更が加えられました。Google Cloudイメージの整合性を検証するには、Google Cloud用の署名済みダイジェストとパブリック証明書を使用します。この証明書は、<block ref="4af4717946461f54169780875a3b5a98" category="inline-link-rx"></block>特定のリリースのからダウンロードできます。</block>
   <block id="92d90815a32824fbae3b0e1cc8bbf0bf" category="inline-link">お客様とのコミュニケーション：CPC-00589</block>
-  <block id="86cd1a1bf629b4d25461fa99ef89719f" category="admonition">NetAppでは、ノードベースのライセンスが廃止される予定です。ノードベースのライセンスは容量ベースのライセンスに置き換えられます。詳細については、を参照して<block ref="f09d1138443525e41476e551a1dde747" category="inline-link-rx"></block>ください。</block>
   <block id="c4dbcb8cfcc96461b41d3911e9d893a3" category="paragraph">Cloud Volumes ONTAPノードは、日常業務で次のエンドポイントに接続するためにアウトバウンドインターネットアクセスを必要とします。</block>
   <block id="760b52b586ad97b520ea1071bb2f9839" category="section-title">Cloud Volumes ONTAPエンドポイント</block>
   <block id="26d5c70af8a128834ad7ae9714c92190" category="paragraph">Cloud Volumes ONTAPでは、日常業務のためにさまざまなエンドポイントに接続するために、アウトバウンドインターネットアクセスが必要です。</block>
@@ -5530,4 +5522,30 @@ Mac OSでtailコマンドを完了します。</block>
   <block id="c4603a2a1f5be3fcdbe4e7ce09178104" category="sidebar">ハイアベイラビリティモードを有効にする</block>
   <block id="7c27c9e51d561399ee84fb8d2259328c" category="paragraph">これで、サブスクリプションがBlueXP  の組織またはアカウントにリンクされ、Cloud Volumes ONTAP作業環境の作成時に選択できるようになりました。</block>
   <block id="287c693dd0bc6ec48aa0fc3f4b950a9e" category="paragraph">サブスクリプションはBlueXP  の組織またはアカウントからリンク解除され、Cloud Volumes ONTAP作業環境の作成時に選択できなくなります。</block>
+  <block id="bae74b170f7e19d783c68e9e4e5e5a70" category="paragraph">AWSローカルゾーンは、ストレージ、コンピューティング、データベース、その他の一部のAWSサービスが大都市や業界の近くに配置されているインフラ環境です。AWSローカルゾーンを使用すると、AWSサービスを近くに配置して、ワークロードのレイテンシを改善し、データベースをローカルに維持できます。Cloud Volumes ONTAPでは、</block>
+  <block id="12132105a5861c2a904da865554d4e62" category="admonition">AWSローカルゾーンは、BlueXP  を標準モードとプライベートモードで使用する場合にサポートされます。現時点では、BlueXP  を制限モードで使用している場合、AWSローカルゾーンはサポートされていません。</block>
+  <block id="87836512100e1272a8e293d9b1584ca0" category="paragraph">Cloud Volumes ONTAPでは、AWSローカルゾーンでのHA環境のみがサポートされます。次に、設定例を示します。</block>
+  <block id="15c32962b3a74affab8eda8b723d5a9d" category="paragraph">サポートされるディスクタイプはgp2のみです。現在、サイズがxlarge ~ 4xlargeの次のEC2インスタンスタイプファミリーがサポートされています。</block>
+  <block id="238181028bdcb33e3ea129371a6d2545" category="paragraph">Cloud Volumes ONTAPは、これらの構成のみをサポートします。Cloud Volumes ONTAPのAWSローカルゾーン設定で他のディスクタイプまたはEC2インスタンスを選択すると、導入に失敗することがあります。の最新の詳細情報については、AWSのドキュメントを参照して<block ref="a4408f4d4cfd81ced6d2ec2b8da89160" category="inline-link-macro-rx"></block>ください。</block>
+  <block id="a02d03fc43afe508f920c7ac72a54af6" category="list-text">ハイアベイラビリティ（HA）ペアに対してシームレスなハイブリッドクラウドエクスペリエンスを提供する、従量課金制のサブスクリプションベースのサービスです。</block>
+  <block id="e7c597b04ce35f0f025ccab446eee809" category="paragraph">容量単位での支払いには、次のようなさまざまな構成が用意されています。</block>
+  <block id="53e6fd574dbf70e62183a00bd6dce317" category="paragraph">ライセンスは、Cloud Volumes ONTAPシステム内で作成されたボリュームタイプのみに基づいています。</block>
+  <block id="596c5d8dcae750f891e49d8906d45469" category="list-text">Essentialsシングルノード：1つのONTAPノードのみを使用してCloud Volumes ONTAPシステムに作成された読み取り/書き込みボリューム。</block>
+  <block id="71f99453811d19ef15d9324559b4818c" category="list-text">Essentials HA：2つのONTAPノードを使用する読み取り/書き込みボリュームで、相互にフェイルオーバーして無停止のデータアクセスを実現します。</block>
+  <block id="788e4b8f4de48df585a507f6facd4562" category="list-text">Essentialsセカンダリシングルノード：1つのONTAPノードのみを使用するCloud Volumes ONTAPシステムで作成されるデータ保護（DP）タイプのボリューム（通常は読み取り専用のSnapMirrorまたはSnapVaultデスティネーションボリューム）。</block>
+  <block id="7d16eeb76acfceb848e2519cce58c471" category="admonition">読み取り専用/ DPボリュームがプライマリボリュームになった場合、BlueXP  はそのボリュームをプライマリデータとみなし、ボリュームが読み取り/書き込みモードであった時間に基づいて課金コストを計算します。ボリュームが再び読み取り専用/ DPに設定されると、BlueXP  は再びそのボリュームをセカンダリデータと見なし、デジタルウォレット内の最適なライセンスを使用して課金します。</block>
+  <block id="7e634413e3c77c89dba2562f5b7c1937" category="list-text">EssentialsセカンダリHA：データ保護（DP）タイプのボリューム（通常は読み取り専用のSnapMirrorまたはSnapVaultデスティネーションボリューム）。2つのONTAPノードを使用してCloud Volumes ONTAPシステムで作成され、無停止のデータアクセス用に相互にフェイルオーバーできる。</block>
+  <block id="8bf4a89637b88a17fe1be4dad5d23488" category="paragraph">次の点に注意してください。</block>
+  <block id="71f51fd779e6f30ac906929b2dcb02df" category="list-text">最小料金：少なくとも1つのプライマリ（読み書き可能）ボリュームを持つデータ提供用Storage VMごとに4TiB以上の料金が必要です。Essentialsパッケージの場合、この最小料金は、セカンダリ（データ保護）ボリュームのみを含むStorage VMには適用されません。</block>
+  <block id="42a9ff8d7662759290ac08e2ee0929f4" category="list-text">超過分：ライセンスで許可された容量を超えた場合、超過分にはマーケットプレイスの料金が適用され、最初に他のライセンスの使用可能な容量を優先して課金されます。</block>
+  <block id="f93da9b042a7ade0f4d86a091309ed87" category="list-text">FlexCloneおよびFlexCache Volume：FlexCloneボリュームは課金されません。ソースとデスティネーションのFlexCacheボリュームはプライマリデータとみなされ、プロビジョニング済みスペースに従って課金されます。</block>
+  <block id="371519ace7adec1f0d1a909854d1cbec" category="list-text">HAペアの充電：HAペアでは、ノード上のプロビジョニング済み容量のみが充電されます。パートナーノードに同期ミラーリングされたデータは課金されません。</block>
+  <block id="0099e212d78247cd7545328dc1350ae0" category="admonition">NetAppでは、まもなくノードベースライセンスの提供を終了します。販売終了後は、ノードベースのライセンスを容量ベースのライセンスに変換する必要があります。詳細については、を参照して<block ref="f09d1138443525e41476e551a1dde747" category="inline-link-rx"></block>ください。</block>
+  <block id="2bb8a9ed1433f0f845b92c7da5440dea" category="section-title">2024年10月25日</block>
+  <block id="dc1815932afdea52f1a4c12d73f2eed0" category="section-title">N1シリーズマシンはBlueXP  で選択できません</block>
+  <block id="1bb0d11a534c8ee967cd62e4d75e3da3" category="paragraph">Google CloudにCloud Volumes ONTAPの新しいインスタンスを導入する際に、BlueXP  でn1シリーズマシンを選択できなくなりました。n1シリーズのマシンは、既存の古いシステムでのみ保持およびサポートされます。Cloud Volumes ONTAPの新規導入は、Google Cloud 9.8リリース以降でのみサポートされます。Cloud Volumes ONTAP 9.8以降と互換性のあるn2シリーズマシンタイプに切り替えることをお勧めします。ただし、n1シリーズマシンは、APIを介して実行される新しい導入に使用できます。</block>
+  <block id="e55067e1e9c0716bdbc0866b4393aa68" category="paragraph"><block ref="55218e2079fe45aad8bd65bcb61a1a9f" category="inline-link-rx"></block>です。</block>
+  <block id="e8ae21b110baed89680dca18585c158c" category="section-title">ローカルゾーンでのAmazon Web Servicesのプライベートモードのサポート</block>
+  <block id="b32702079d81c2fd1e39448319edfa06" category="paragraph">BlueXP  では、AWSローカルゾーンがサポートされるようになり、プライベートモードのCloud Volumes ONTAPハイアベイラビリティ（HA）構成がサポートされるようになりました。以前は標準モードのみに限定されていたサポートが、プライベートモードを含むように拡張されました。</block>
+  <block id="648169096ce56c8569ce36a4abebe9c7" category="admonition">BlueXP  を制限モードで使用している場合、AWSローカルゾーンはサポートされません。</block>
 </blocks>
