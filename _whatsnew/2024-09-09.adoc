@@ -1,0 +1,22 @@
+= ワームとARPの機能は有料ではなくなりました。
+:allow-uri-read: 
+
+
+
+
+=== ワームとARPの機能は有料ではなくなりました。
+
+WORM（Write Once Read Many）とARP（Autonomous Ransomware Protection）の組み込みのデータ保護機能とセキュリティ機能は、Cloud Volumes ONTAPライセンスで追加料金なしで提供されます。新しい価格モデルは、AWS、Azure、Google Cloudの新規および既存のBYOLおよびPAYGO / Marketplaceサブスクリプションの両方に適用されます。容量ベースとノードベースのどちらのライセンスにも、シングルノードとハイアベイラビリティ（HA）ペアを含むすべての構成用のARPとWORMが追加料金なしで含まれます。
+
+シンプルな価格設定により、次のようなメリットが得られます。
+
+* 現在、WORMとARPが含まれているアカウントでは、これらの機能の料金は発生しなくなります。今後は、この変更前と同様に、使用容量に関する料金のみが請求されます。ワームとARPは今後の請求書に含まれなくなります。
+* 現在のアカウントにこれらの機能が含まれていない場合は、追加料金なしでWORMとARPを選択できるようになりました。
+* 新規アカウントのすべてのCloud Volumes ONTAPサービスには、WORMとARPの料金は含まれません。
+
+
+これらの機能の詳細については、こちらをご覧ください。
+
+* https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-protecting-ransomware.html["ランサムウェアからの保護を強化"]
+* https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-worm.html["WORM ストレージ"]
+

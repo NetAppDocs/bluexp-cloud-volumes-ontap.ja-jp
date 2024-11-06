@@ -51,7 +51,7 @@ HA環境でのAWSローカルゾーンの詳細については、を参照して
 
 このリリースから、BlueXP  通知を使用してCloud Volumes ONTAPをアップグレードしようとすると、使用するデフォルトのバージョン、最新のバージョン、および互換性のあるバージョンに関するガイダンスが表示されます。また、Cloud Volumes ONTAPインスタンスと互換性のある最新のパッチまたはメジャーバージョンを選択することも、アップグレードするバージョンを手動で入力することもできます。
 
-https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-updating-ontap-cloud.html#upgrade-from-bluexp-notifications["Cloud Volumes ONTAP ソフトウェアをアップグレードします"^]
+https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-updating-ontap-cloud.html#upgrade-from-bluexp-notifications["Cloud Volumes ONTAP ソフトウェアをアップグレードします"]
 
 
 
@@ -72,8 +72,8 @@ WORM（Write Once Read Many）とARP（Autonomous Ransomware Protection）の組
 
 これらの機能の詳細については、こちらをご覧ください。
 
-* https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-protecting-ransomware.html["ランサムウェアからの保護を強化"^]
-* https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-worm.html["WORM ストレージ"^]
+* https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-protecting-ransomware.html["ランサムウェアからの保護を強化"]
+* https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-worm.html["WORM ストレージ"]
 
 
 
@@ -292,20 +292,14 @@ System ManagerとONTAP CLI（Cloud Volumes ONTAP 9.12.1 P2および9.13.0 P2以�
 
 === Azureでの新しいリージョンのサポート
 
-
-
-==== 単一のアベイラビリティゾーンリージョンのサポート
-
+.単一のアベイラビリティゾーンリージョンのサポート
 Azure for Cloud Volumes ONTAP 9.12.1 GA以降では、次のリージョンで可用性の高い単一アベイラビリティゾーンの導入がサポートされるようになりました。
 
 * テルアビブ
 * ミラノ
 
 
-
-
-==== 複数のアベイラビリティゾーンリージョンのサポート
-
+.複数のアベイラビリティゾーンリージョンのサポート
 Azure for Cloud Volumes ONTAP 9.12.1 GA以降では、次のリージョンで可用性の高い複数アベイラビリティゾーンの導入がサポートされるようになりました。
 
 * 中央インド
