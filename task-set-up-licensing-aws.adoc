@@ -51,7 +51,7 @@ link:task-deploying-otc-aws.html["ステップバイステップの手順を確�
 
 Essentials パッケージと Professional パッケージには、次の消費モデルがあります。
 
-* ネットアップから購入したライセンス（ BYOL ）
+* NetAppから購入したライセンス（お客様所有のライセンスを使用（BYOL））
 * AWS Marketplaceで提供する従量課金制（PAYGO）の1時間単位のサブスクリプション
 * AWS Marketplaceからの年間契約
 

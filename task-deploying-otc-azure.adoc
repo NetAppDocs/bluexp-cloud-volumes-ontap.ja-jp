@@ -146,6 +146,7 @@ NOTE: 選択したバージョンで新しいリリース候補、一般提供�
 次の点に注意してください。
 
 +
+** VNet内でストレージアカウントへのパブリックアクセスが無効になっている場合、Cloud Volumes ONTAPシステムでデータ階層化を有効にすることはできません。詳細については、を参照して link:reference-networking-azure.html#security-group-rules["セキュリティグループのルール"]ください。
 ** ディスクタイプは初期ボリューム用です。以降のボリュームでは、別のディスクタイプを選択できます。
 ** シンプルなプロビジョニングオプションを使用した場合、ディスクサイズは、初期アグリゲートのすべてのディスクと、BlueXPで作成される追加のアグリゲートのサイズです。Advanced Allocation オプションを使用すると、異なるディスクサイズを使用するアグリゲートを作成できます。
 +
@@ -386,6 +387,7 @@ NOTE: 選択したバージョンで新しいリリース候補、一般提供�
 +
 ディスク・サイズの選択については、を参照してくださいlink:https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-planning-your-config-azure.html#size-your-system-in-azure["Azureでシステムのサイズを設定します"^]。
 
+** VNet内でストレージアカウントへのパブリックアクセスが無効になっている場合、Cloud Volumes ONTAPシステムでデータ階層化を有効にすることはできません。詳細については、を参照して link:reference-networking-azure.html#security-group-rules["セキュリティグループのルール"]ください。
 ** ボリュームを作成または編集するときに、特定のボリューム階層化ポリシーを選択できます。
 ** データの階層化を無効にすると、以降のアグリゲートで有効にすることができます。
 +

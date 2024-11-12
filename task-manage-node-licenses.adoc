@@ -18,7 +18,7 @@ BlueXPデジタルウォレットでノードベースライセンスを管理�
 
 ノードベースライセンス _ は旧世代のライセンスモデルです（新規のお客様は使用できません）。
 
-* ネットアップから購入した BYOL ライセンス
+* NetAppから購入したお客様所有のライセンスを使用（BYOL）
 * クラウドプロバイダの市場から従量課金制（ PAYGO ）で 1 時間単位のサブスクリプションが提供されます
 
 
@@ -231,3 +231,6 @@ https://docs.netapp.com/us-en/bluexp-replication/task-replicating-data.html["シ
 https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-deleting-working-env.html["Cloud Volumes ONTAP 作業環境を削除する方法について説明します"]。
 
 
+
+.関連トピック
+リンク：link:concept-licensing.html#end-of-availability-of-node-based-licenses["ノードベースライセンスの販売終了"] link:task-convert-node-capacity.html["ノードベースライセンスから容量ベースライセンスへの変換"]

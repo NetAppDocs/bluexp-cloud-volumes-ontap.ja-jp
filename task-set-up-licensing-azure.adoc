@@ -51,7 +51,7 @@ link:task-deploying-otc-azure.html["ステップバイステップの手順を�
 
 Essentials パッケージと Professional パッケージには、次の消費モデルがあります。
 
-* ネットアップから購入したライセンス（ BYOL ）
+* NetAppから購入したライセンス（お客様所有のライセンスを使用（BYOL））
 * Azure Marketplaceからの従量課金制（PAYGO）単位のサブスクリプション
 * 年間契約
 

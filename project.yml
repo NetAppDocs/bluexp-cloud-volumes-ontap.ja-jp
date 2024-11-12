@@ -204,6 +204,8 @@ sidebar:
         url: "/task-updating-ontap-cloud.html"
       - title: 従量課金制システムを登録
         url: "/task-registering.html"
+      - title: ノードベースライセンスの変換
+        url: "/task-convert-node-capacity.html"
       - title: システムを停止して起動します
         url: "/task-managing-state.html"
       - title: システム時間を同期します
@@ -260,7 +262,11 @@ sidebar:
   - title: 概念
     entries:
     - title: ライセンス
-      url: "/concept-licensing.html"
+      entries:
+      - title: Cloud Volumes ONTAPでのライセンス
+        url: "/concept-licensing.html"
+      - title: 容量ベースライセンスの詳細
+        url: "/concept-licensing-charging.html"
     - title: ストレージ
       entries:
       - title: クライアントプロトコル

@@ -16,6 +16,8 @@ summary: Cloud Volumes ONTAP システム上で Write Once Read Many （ WORM �
 [role="lead"]
 Cloud Volumes ONTAP システム上で Write Once Read Many （ WORM ）ストレージをアクティブにして、指定した保存期間内にファイルを変更せずに保持できます。クラウド WORM ストレージには SnapLock テクノロジが採用されており、 WORM ファイルはファイルレベルで保護されます。
 
+WORM機能は、お客様所有のライセンスを使用（BYOL）およびマーケットプレイスのサブスクリプションと組み合わせて使用できます。追加コストはかかりません。NetAppの営業担当者に連絡して、現在のライセンスにWORMを追加してください。
+
 
 
 == WORM ストレージの仕組み
@@ -39,7 +41,7 @@ Cloud Volumes ONTAP 9.10.1以降では、WORMをボリュームレベルで有�
 新しいCloud Volumes ONTAP 作業環境を作成する場合は、WORMストレージを有効または無効にするように求められます。
 
 * 作業環境の作成時にWORMストレージを有効にすると、BlueXPで作成したすべてのボリュームでWORMが有効になります。ただし、WORMが無効になっているボリュームは、ONTAP System ManagerまたはONTAP CLIを使用して作成できます。
-* 作業環境の作成時にWORMストレージを無効にすると、BlueXP 、ONTAP System Manager、またはONTAP CLIで作成するすべてのボリュームでWORMが無効になります。作成時に有効にしなかったCloud Volumes ONTAP 作業環境でWORMを有効にする場合は、ネットアップサポートとのサポートチケットを作成する必要があります。
+* 作業環境の作成時にWORMストレージを無効にすると、BlueXP 、ONTAP System Manager、またはONTAP CLIで作成するすべてのボリュームでWORMが無効になります。
 
 
 
@@ -58,11 +60,38 @@ Cloud Volumes ONTAP システムで WORM ストレージをアクティブにし
 
 
 
+== Cloud Volumes ONTAP作業環境でのWORMの有効化
+
+BlueXP  でCloud Volumes ONTAP作業環境を作成するときに、WORMストレージを有効にすることができます。作成時にWORMが有効になっていない場合は、作業環境でWORMを有効にすることもできます。一度有効にすると、WORMを無効にすることはできません。
+
+.このタスクについて
+* WORMはONTAP 9 10.1以降でサポートされています。
+* バックアップを含むWORMは、ONTAP 9 .11.1以降でサポートされます。
+
+
+.手順
+. [Canvas]ページで、WORMを有効にする作業環境の名前をダブルクリックします。
+. [概要]タブで、[機能]パネルをクリックし、* WORM *の横にある鉛筆アイコンをクリックします。
++
+システムでWORMがすでに有効になっている場合、鉛筆のアイコンは無効になります。
+
+. [WORM *]ページで、クラスタのコンプライアンスクロックの保持期間を設定します。
++
+詳細については、を参照してください https://docs.netapp.com/us-en/ontap/snaplock/initialize-complianceclock-task.html["ONTAPのドキュメント：コンプライアンスクロックの初期化"^]。
+
+. [設定]*をクリックします。
+
+
+.完了後
+機能パネルで* WORM *のステータスを確認できます。WORMを有効にすると、SnapLockライセンスが自動的にクラスタにインストールされます。SnapLockライセンスはONTAP System Managerで確認できます。
+
+
+
 == WORMファイルを削除しています
 
 privileged delete機能を使用して、保持期間中にWORMファイルを削除できます。
 
-手順については、を参照してください https://docs.netapp.com/us-en/ontap/snaplock/delete-worm-files-concept.html["ONTAP のドキュメント"^]
+手順については、を参照してください https://docs.netapp.com/us-en/ontap/snaplock/delete-worm-files-concept.html["ONTAP のドキュメント"^]。
 
 
 

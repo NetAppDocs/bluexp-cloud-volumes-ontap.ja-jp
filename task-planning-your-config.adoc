@@ -38,15 +38,15 @@ Cloud Volumes ONTAP はほとんどの AWS リージョンでサポートされ�
 
 === サポートされるローカルゾーンの選択
 
-Cloud Volumes ONTAPは、シンガポールを含む一部のAWSローカルゾーンでサポートされています。ローカルゾーンの選択はオプションです。
+ローカルゾーンの選択はオプションです。Cloud Volumes ONTAPは、シンガポールを含む一部のAWSローカルゾーンでサポートされています。AWSのCloud Volumes ONTAPでは、単一のアベイラビリティゾーンでのハイアベイラビリティ（HA）モードのみがサポートされます。シングルノード環境はサポートされていません。
+
+
+NOTE: Cloud Volumes ONTAPでは、AWSローカルゾーンでのデータ階層化とクラウド階層化はサポートされていません。また、Cloud Volumes ONTAPに対応していないインスタンスを含むローカルゾーンはサポートされません。その一例がマイアミです。マイアミにはサポートされておらず、認定されていないGen6インスタンスしかないため、ローカルゾーンとしては使用できません。
 
 link:https://aws.amazon.com/about-aws/global-infrastructure/localzones/locations/?nc=sn&loc=3["ローカルゾーンの完全なリストを表示する"^]。
 ローカルゾーンでリソースを作成および管理するには、ローカルゾーンを有効にする必要があります。
 
 link:https://aws.amazon.com/tutorials/deploying-low-latency-applications-with-aws-local-zones/["ローカルゾーンを有効にする方法"^]。
-
-
-NOTE: Phoenixはサポートされているローカルゾーンではありません。
 
 
 
@@ -102,7 +102,7 @@ Cloud Volumes ONTAP では、io1ディスクを使用したAmazon EBS Elastic Vo
 * _Throughput Optimized HDD （ st1 ） _disks は、高速で安定したスループットを必要とする、アクセス頻度の高いワークロード用です。価格は低くなります。
 +
 
-NOTE: スループット最適化 HDD （ st1 ）を使用している場合、オブジェクトストレージへのデータの階層化は推奨されません。
+NOTE: 接続がないため、AWSローカルゾーンでAWS S3へのデータ階層化を使用できません。
 
 
 

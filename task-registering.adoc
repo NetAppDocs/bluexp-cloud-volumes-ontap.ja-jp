@@ -14,7 +14,7 @@ summary: ネットアップによるサポートは Cloud Volumes ONTAP PAYGO �
 
 
 [role="lead"]
-ネットアップによるサポートは Cloud Volumes ONTAP PAYGO システムに含まれていますが、最初にシステムをネットアップに登録してサポートをアクティブ化する必要があります。
+NetAppのサポートはCloud Volumes ONTAP従量課金制（PAYGO）システムに含まれていますが、最初にシステムをNetAppに登録してサポートをアクティブ化する必要があります。
 
 アップグレードするには、ネットアップに PAYGO システムを登録する必要があります いずれかの方法を使用して ONTAP ソフトウェアをインストールします link:task-updating-ontap-cloud.html["このページで説明します"]。
 

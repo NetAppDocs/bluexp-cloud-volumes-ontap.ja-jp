@@ -63,22 +63,12 @@ Cloud Volumes ONTAPは、Autonomous Ransomware Protection（ARP）機能をサ�
 
 で提供されるファイル拡張子保護とは別に、 https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-protecting-ransomware.html#protection-from-common-ransomware-file-extensions["ランサムウェア対策設定"]ARP機能は、ワークロード分析を使用して、検出された「異常なアクティビティ」に基づいて潜在的な攻撃についてユーザに警告します。ランサムウェア対策設定とARP機能の両方を組み合わせて、包括的なランサムウェア対策を行うことができます。
 
-ARP機能は、BYOLおよびマーケットプレイスのサブスクリプションで、ノードベースと容量ベースの両方のライセンスを追加コストなしで使用できます。NetAppの営業担当者に連絡して、現在のライセンスにARPを追加してください。
+ARP機能は、お客様所有のライセンスを使用（BYOL）およびマーケットプレイスのサブスクリプションと組み合わせて使用できます。追加料金はかかりません。
 
-ARPライセンスは「フローティング」ライセンスと見なされます。つまり、単一のCloud Volumes ONTAPインスタンスにバインドされず、複数のCloud Volumes ONTAP環境に適用できます。
-
-
-NOTE: ノードベースのCloud Volumes ONTAPライセンスでのARP機能の使用は、現在Digital Walletには反映されていません。ノードベースのARP使用状況を表示する機能は、今後のリリースでDigital Walletで利用できるようになる予定です。
-
-アドオンライセンスを購入してデジタルウォレットに追加すると、Cloud Volumes ONTAPを使用してボリューム単位でARPを有効にできます。
-
-ARPが有効なボリュームの状態は「ラーニングモード」または「アクティブ」になります。
+ARP対応ボリュームの状態は「ラーニングモード」または「アクティブ」になります。
 
 ボリュームのARPの設定は、ONTAP System ManagerとONTAP CLIを使用して実行します。
 
 ONTAP System ManagerおよびONTAP CLIでARPを有効にする方法の詳細については、を参照してください https://docs.netapp.com/us-en/ontap/anti-ransomware/enable-task.html["自動ランサムウェア対策を有効化"^]。
 
 image::screenshot_arp.png[スクリーンショットは、Autonomous Ransomware Protectionのアドオンライセンスを示しています。]
-
-
-NOTE: ライセンスがないと、ライセンスされた機能の使用はサポートされません。

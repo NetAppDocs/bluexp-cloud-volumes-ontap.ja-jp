@@ -965,7 +965,6 @@
   <block id="bd87106622bcf823ab94ad8e03ed23db" category="inline-link-macro">Storage VM の管理に関する詳細情報</block>
   <block id="f24ce81f056d5acd59788df7f5ab36a1" category="list-text">FlexCache</block>
   <block id="a701f5d044348085ee4f97fef6636845" category="list-text">FlexClone</block>
-  <block id="1ea97bc51cb5d4c0ad79186aeb4e4775" category="list-text">NetApp Volume Encryption （ライセンス使用システムまたは登録従量課金制システムの場合のみ）</block>
   <block id="794cb725c5631ad99b5b7c000307f0df" category="list-text">SnapMirror</block>
   <block id="82ef718f4ebe0c276814ee3d51e33361" category="list-text">SnapRestore</block>
   <block id="5bc075cee240a70af54270621d93765c" category="list-text">SnapVault</block>
@@ -1524,7 +1523,6 @@
   <block id="0a2292629d42074cb011142b9cd8f433" category="list-text">_private_IP_は 、 CVO-node2 の eth0 （ e0a ）上の未使用のセカンダリプライベート IP アドレスです。</block>
   <block id="de94398a333e3b7bdafad2ddf3232331" category="doc">ノードベースのライセンスを管理します</block>
   <block id="4627bd080634e9380c75a1cc04a09486" category="paragraph">ノードベースライセンス _ は旧世代のライセンスモデルです（新規のお客様は使用できません）。</block>
-  <block id="81f9d97336a30fb7be6f8d770fee25eb" category="list-text">ネットアップから購入した BYOL ライセンス</block>
   <block id="17ac9e85cf5b6f7b77acf61fb7721242" category="list-text">クラウドプロバイダの市場から従量課金制（ PAYGO ）で 1 時間単位のサブスクリプションが提供されます</block>
   <block id="9426b05d2fc423b761e34f9d75b4066d" category="section-title">PAYGO ライセンスを管理します</block>
   <block id="87089bacab591352ad6ad6579e34d93e" category="list-text">[PAYGO] をクリックします。</block>
@@ -1779,7 +1777,6 @@
   <block id="8efc36afc2e7202a9c9bda00b8e8a75d" category="section-title">ライセンスの概要</block>
   <block id="f008ecd5469e24eee31eb4e2e4a1e23f" category="paragraph">新規のお客様は、次のライセンスオプションを利用できます。</block>
   <block id="27d0a1d0fc95280fbaf78c65ff6b37fb" category="list-text">Essentials パッケージ</block>
-  <block id="0e1a6eb7eed81777ed9d0610be51df3b" category="paragraph">以前のノード単位のライセンスモデルは、ライセンスを購入済みの既存のお客様や、アクティブな Marketplace サブスクリプションを所有しているお客様には引き続き提供されます。</block>
   <block id="08598187312665a33ac3ebb5fc060c00" category="paragraph">以降のセクションでは、これらの各オプションについて詳しく説明します。</block>
   <block id="d7c357dcc3b8476a2eeba19c87ec383d" category="paragraph">Cloud Volumes ONTAP のすべての機能をネットアップから無償で提供（クラウドプロバイダの料金がまだ適用されます）。</block>
   <block id="24996c045717f17c4e40ebb44791b2af" category="list-text">ライセンスや契約は必要ありません。</block>
@@ -1800,7 +1797,6 @@
   <block id="6246af80c9ea9c857c70d2c643fcb249" category="list-text">ライセンス容量を超えた場合</block>
   <block id="fdde7a7f3783aa0ce1e585f8be9c2def" category="list-text">ライセンスの期間が終了する場合</block>
   <block id="36e4d5ff70cec517180ae18f1c34d2fd" category="list-text">市場から年間契約を結んでいる場合、導入する Cloud Volumes ONTAP システムにはその契約が適用されます。BYOL と年間市場契約を組み合わせることはできません。</block>
-  <block id="e22ac25b066b201473de7aa700ef5d92" category="section-title">価格設定</block>
   <block id="1f0b82560627b660c6c6958a1df834b8" category="section-title">サポートされている構成</block>
   <block id="4e4c431843fe55f93c074808800bf7d0" category="paragraph">容量ベースのライセンスパッケージは Cloud Volumes ONTAP 9.7 以降で利用できます。</block>
   <block id="37040d43404231d8205705e4353af733" category="section-title">容量制限</block>
@@ -1818,11 +1814,6 @@
   <block id="aad2b08c0103cffcbb5efae0a56ee747" category="paragraph">個々の Cloud Volumes ONTAP システムでは、ディスクとオブジェクトストレージへの階層化によって、最大 2 PiB の容量をサポートしています。</block>
   <block id="b2e75bbfb9933bc21b7f875e8676641d" category="inline-link">ネットアップにお問い合わせください</block>
   <block id="a2f6a3e98ea1849ed1ab07d821bf6a18" category="section-title">ノードベースのライセンス</block>
-  <block id="749b4d71be76e8fee5fe7895ae5ff71d" category="paragraph">既存のお客様は、ノードベースのライセンスを引き続き利用できます。</block>
-  <block id="04c40151a6d53f981d0364aef6215bd0" category="list-text">アクティブなライセンスがある場合は、 BYOL をライセンスの更新のみに使用できます。</block>
-  <block id="358962d4cc759ccb4c98e87cc3396033" category="list-text">有効なマーケットプレイスサブスクリプションをお持ちの場合は、そのサブスクリプションを通じて引き続き課金をご利用いただけます。</block>
-  <block id="7a216ec4d6977719ed1b40a4322bfd8f" category="section-title">ライセンスの変換</block>
-  <block id="7bd090ccc30738cd79592e7431dee17b" category="paragraph">別のライセンス方式に移行する場合は、ライセンスを購入し、そのライセンスを使用して新しい Cloud Volumes ONTAP システムを導入してから、その新しいシステムにデータをレプリケートできます。</block>
   <block id="170d227d215fb560bb4c8ad4e345183a" category="section-title">システムの最大数</block>
   <block id="0b92442656d83f3067193055685902c8" category="list-text">内部ロードバランサ</block>
   <block id="bed26a3b752abff1e6e50d64a46ef060" category="paragraph">クラスタ管理用のロードバランサで、 1 つは Storage VM （ SVM ）管理用、もう 1 つはノード 1 への NAS トラフィック用、もう 1 つはノード 2 への NAS トラフィック用です。</block>
@@ -2462,7 +2453,6 @@
   <block id="9d43d6f0219326b62a38c7746df96925" category="paragraph"><block ref="c1037565bcb6e1d770690e1d252b358c" category="inline-link-macro-rx"></block>。</block>
   <block id="376c581ebe9ec9aa8853377f8538ebbd" category="section-title">容量単位のライセンスです</block>
   <block id="f63eded59a08a3b3bd8dd4b30f5cd2d8" category="paragraph">容量単位のライセンスでは、 TiB 単位の Cloud Volumes ONTAP に対して料金を支払うことができます。容量ベースのライセンスは、_パッケージ_：Essentialsパッケージまたはプロフェッショナルパッケージの形式で提供されます。</block>
-  <block id="64e2a2e379eafbf4fdc21f4b5b6b9670" category="list-text">ネットアップから購入したライセンス（ BYOL ）</block>
   <block id="fdbbc45fde04fd31543205fa0418c269" category="list-text">Azure Marketplaceからの従量課金制（PAYGO）単位のサブスクリプション</block>
   <block id="e627d7610d38524265b212be19391938" category="list-text">年間契約</block>
   <block id="3d241a11657521246cf272331a926bbb" category="inline-link-macro">容量単位のライセンスに関する詳細は、こちらをご覧ください</block>
@@ -2802,8 +2792,6 @@
   <block id="870789b9d0beec538c84e00432400091" category="list-text">Google Cloudで、Cloud Volumes ONTAP インスタンスに移動し、各LIFのnic0にIPアドレスを追加します。</block>
   <block id="b961ba228f0253598e8fe47f55865219" category="list-text">フロントエンドIPの名前を入力し、Cloud Volumes ONTAP HAペアのサブネットを選択し、* Dynamic *が選択されたままにしておきます。また、アベイラビリティゾーンに障害が発生した場合でもIPアドレスを使用できるようにするには、ゾーン冗長*を選択したままにします。</block>
   <block id="c00e2d19af360558425fe43036ba7057" category="paragraph"><block ref="c00e2d19af360558425fe43036ba7057" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="5505ffcb759fb1c9c3793b2dd386cd82" category="inline-link-macro">PAYGOとBYOLの違いを解説します</block>
-  <block id="b71c93cf4431b3a81c64a35fe6dbe9cf" category="paragraph">システムをPAYGOからノード単位のライセンスからBYOLへ（逆も同様）に変換することはサポートされていません。新しいシステムを導入し、そのシステムにデータをレプリケートする必要があります。 <block ref="d81e4230804422351d525c6f4d42f594" category="inline-link-macro-rx"></block>。</block>
   <block id="594cb44c6500d8855ad820b0653e02c7" category="section-title">PAYGOとBYOLの2つのモデルが変わります</block>
   <block id="a704128156d562fe5860508e9584ee34" category="paragraph">システムをPAYGOからノード単位のライセンスからBYOLへ（逆も同様）に変換することはできません。従量課金制サブスクリプションとBYOLサブスクリプションを切り替える場合は、新しいシステムを導入し、既存のシステムから新しいシステムにデータをレプリケートする必要があります。</block>
   <block id="7f7c7e70efe0e6e29f5d0b207145f30e" category="list-text">新しい Cloud Volumes ONTAP の作業環境を作成します。</block>
@@ -2885,8 +2873,6 @@
   <block id="fdb568933703a9268c5ba46f3208f414" category="list-text">Cloud Volumes ONTAP 構成のライセンスを提供します</block>
   <block id="2b7a2bda81dcf84ff8d6b600415c5e52" category="paragraph">プライマリボリュームとセカンダリボリュームの容量を同じ速度で課金する、シングルノードまたはHA</block>
   <block id="728fd439c2abdc887c4a5e678d7c8708" category="paragraph">容量ベースのライセンスパッケージには、次の消費モデルがあります。</block>
-  <block id="fcbd09a2622ccd7b58495c6277262566" category="list-text">* BYOL *：ネットアップから購入したライセンス。任意のクラウドプロバイダでCloud Volumes ONTAP を導入する際に使用できます。</block>
-  <block id="1e101142b61a711e7fbc92238adf9d20" category="list-text">* PAYGO *：クラウドプロバイダの市場から1時間ごとのサブスクリプション。</block>
   <block id="146cb6145f5238f0a019636047844250" category="list-text">* Annual *：クラウドプロバイダの市場から年間契約。</block>
   <block id="e26935ad375965079b7681b616fa96eb" category="paragraph">以下の詳細は、課金が容量ベースのライセンスとどのように連携するかを理解するのに役立ちます。</block>
   <block id="10297bdbea13a5f039ea0c228d352388" category="section-title">最低料金</block>
@@ -3002,8 +2988,6 @@
   <block id="e4bdb4038975db929f91098fe2d7ec12" category="inline-link">Cloud Volume エッジキャッシュ</block>
   <block id="acc34707a7642d8ca31b72c25ca50920" category="list-text">* Edge Cache*:のライセンス<block ref="1bc1fd590dd203d9bb10cdd372d8de71" category="inline-link-rx"></block></block>
   <block id="2d66a0b2e45838b2ebcec83efd6c765c" category="inline-link">これらのライセンスパッケージの詳細については、こちらをご覧ください</block>
-  <block id="c3c41ceeecb96e561c7ec71ffc1c62fe" category="list-text">*選択したVNetのみ*：インバウンドトラフィックのソースは、Cloud Volumes ONTAP システムのVNetのサブネット範囲およびコネクタが存在するVNetのサブネット範囲です。これが推奨されるオプションです。</block>
-  <block id="35b1e30bbf7722e3019259ffb8c9f0b7" category="list-text">*すべてのVNet *：インバウンドトラフィックの送信元は0.0.0.0/0のIP範囲です。</block>
   <block id="cfdb32f80009b1e5c5c0468dda9f013d" category="paragraph">クラウドプロバイダの市場からプライベートオファーまたは契約を結んでいる場合、契約に含まれていない課金方式に変更すると、BYOL（ネットアップからライセンスを購入した場合）またはPAYGOに対して課金されます。</block>
   <block id="4f9ff6137bed641431cf4f88c0e37ba0" category="inline-image-macro">Cloud Volumes ONTAP HAペアとそのコンポーネントの概念図。</block>
   <block id="deec4375ad9dbb52932d049564b46c2c" category="paragraph"><block ref="deec4375ad9dbb52932d049564b46c2c" category="inline-image-macro-rx" type="image"></block></block>
@@ -3829,7 +3813,6 @@
   <block id="39c6a1c30ae1faf01f4bd99a4757f7ae" category="paragraph">Azure Private Linksを無効にし、コネクタがプロキシサーバーを使用している場合は、ダイレクトAPIトラフィックを有効にする必要があります。</block>
   <block id="40e86593118ce089551b3691f6bba919" category="inline-link">コネクタで直接APIトラフィックを有効にする方法について説明します</block>
   <block id="aa036f3aad369ff5710a7a7d5043dcbc" category="list-text">Azure の階層化データのデフォルトのストレージアクセス階層は、 _hot_tier です。ホット階層は、大容量階層でアクセス頻度が高いデータに最適です。</block>
-  <block id="07524ae3949ffd6bf3d8864e62191d5c" category="paragraph">大容量階層のアクセス頻度の低いデータにアクセスする予定がない場合は、_cool_storage階層に変更することでストレージコストを削減できます。ストレージ階層をクールに変更すると、アクセス頻度の低い大容量階層のデータがクールなストレージ階層に直接移動します。</block>
   <block id="5b420079bca1c870914caa221b31442e" category="section-title">Cloud Volumes ONTAP 9.13.0</block>
   <block id="ad598f033e541927e862b0c5e17319ec" category="paragraph">BlueXPで、AWS、Azure、Google CloudにCloud Volumes ONTAP 9.13.0を導入、管理できるようになりました。</block>
   <block id="12169a51b108f73888655f2a089d493a" category="list-text">中国のリージョンでは、BYOLを使用するシングルノードシステムのみがサポートされます。</block>
@@ -3908,9 +3891,7 @@
   <block id="906b0fc78378feea1883fe721c72e648" category="list-text">[概要]タブで、[機能]パネルをクリックし、*[マシンタイプ]*の横にある鉛筆アイコンをクリックします。</block>
   <block id="6466b41798117de76beee910171ffc8f" category="inline-image-macro">作業環境を表示しているときに[Overview]ページの右上にある[Features]パネルの下にある[Machine type]設定を示すスクリーンショット。</block>
   <block id="65501384f1f7cf6e689e492914a698c1" category="paragraph"><block ref="65501384f1f7cf6e689e492914a698c1" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="6ccb38ae114176203c2592f430a889d7" category="list-text">ノードベースのPAYGOライセンスを使用している場合は、*[ライセンスタイプ]*の横にある鉛筆のアイコンをクリックして、別のライセンスとマシンタイプを選択することもできます。</block>
   <block id="f5e2fedd06abf8315436e3971f9755de" category="list-text">マシンタイプを選択し、チェックボックスを選択して変更の影響を理解していることを確認し、*[変更]*をクリックします。</block>
-  <block id="def968f0e18d0f7aed6421ac81039272" category="list-text">_Total precommitted capacity_は、ネットアップから購入したライセンスで許可された容量（BYOLまたはマーケットプレイス契約）の合計です。</block>
   <block id="af61e314a8c2484dfcfef0afc2e5b8b9" category="list-text">消費容量_パッケージのボリュームの容量を表示します。特定のパッケージの詳細を表示するには、ツールチップの上にマウスポインタを置きます。</block>
   <block id="cfc852810f89c13febd473e12117d828" category="list-text">_推奨容量_は、ネットアップから購入したライセンス容量（BYOLまたはマーケットプレイス契約）です。</block>
   <block id="b35741916171a2b4d1210c1ccf6e3920" category="list-text">_BYOL_このパッケージタイプに対してネットアップから購入したライセンス容量を表示します。</block>
@@ -3948,7 +3929,6 @@
   <block id="df8131ce273465a002c95cb0c5cf8a39" category="list-text">[Overview]タブで、[Features]パネルをクリックし、*[VM type]*の横にある鉛筆のアイコンをクリックします。</block>
   <block id="838630480d269a60c2c6bb929717f964" category="inline-image-macro">作業環境を表示しているときに[Overview]ページの右上にある[Features]パネルに表示されるVMタイプの設定を示すスクリーンショット。</block>
   <block id="4782218bc1564550fa76897e159be9bf" category="paragraph"><block ref="4782218bc1564550fa76897e159be9bf" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="e257ba6100e7f02e04c1d8b474024a3c" category="list-text">ノードベースのPAYGOライセンスを使用している場合は、*[ライセンスタイプ]*の横にある鉛筆のアイコンをクリックして、別のライセンスとVMタイプを選択することもできます。</block>
   <block id="0b52c0f8f311ea5465845d81cc4401f1" category="list-text">VMタイプを選択し、変更の影響を理解していることを確認するチェックボックスを選択し、*[変更]*をクリックします。</block>
   <block id="c529c6170bed402afd9deff05a6b3d0d" category="paragraph">BlueXPで正しいIPアドレスを確認するには、BlueXPの[Manage Volumes]パネルにある*[Mount Command]*オプションを使用します。</block>
   <block id="c7f5c1a75acc58c6f004efc0ce1eba09" category="list-text">*添付ファイル（オプション）*：一度に1つずつ、最大5つの添付ファイルをアップロードできます。</block>
@@ -4016,7 +3996,6 @@
   <block id="c6d494ac63d05f0797b17cc4e9b671a5" category="list-text">アグリゲートタイルで、使用可能容量（プロビジョニング済みサイズから使用済みアグリゲート容量を引いた値）を確認します。</block>
   <block id="85cbc8c9d17142818868d0deb987b7d4" category="section-title">FlexGroup ボリュームを表示します</block>
   <block id="18f38afc08c122a02d1cef0b8f55b13c" category="list-text">[Overview]タブで、[Features]パネルをクリックし、*[Instance type]*の横にある鉛筆アイコンをクリックします。</block>
-  <block id="e977a40ba12e4cbe82ec5ad1eeca10d3" category="list-text">ノードベースのPAYGOライセンスを使用している場合は、*[ライセンスタイプ]*の横にある鉛筆のアイコンをクリックして、別のライセンスとインスタンスタイプを選択することもできます。</block>
   <block id="dcee8dbc1dce5317d8cfa6588f8f050e" category="list-text">インスタンスタイプを選択し、変更の影響を理解していることを確認するチェックボックスを選択して、*[変更]*をクリックします。</block>
   <block id="942c9249796cf6b78c981ebf15195809" category="list-text"><block ref="942c9249796cf6b78c981ebf15195809" category="inline-link-rx"></block></block>
   <block id="38d4d167f6dd9174c3535fc5c7ba4b76" category="section-title">2023年4月4日</block>
@@ -4027,7 +4006,6 @@
   <block id="66d5639668d7c3e585771304940a252b" category="paragraph">通常の書き込み速度が有効な場合、 Microsoft Azure または Google Cloud で Cloud Volumes ONTAP 作業環境を導入するための時間を短縮しました。導入時間が平均して 3~4 分短縮されます。</block>
   <block id="43bfd35e9b57eaace0eafa6750af5ff7" category="list-text">BlueXPナビゲーションメニューから、* Governance &gt; Digital Wallet *を選択します。</block>
   <block id="e83a5b2754cd537ac6467dc025115726" category="list-text">Cloud Volumes ONTAP *タブで、* Capacity Based Licenses *を選択したままにします。</block>
-  <block id="2bd469c6a2a1a44818909050205d416b" category="list-text">パッケージの概要を確認します。この概要には、消費容量、事前コミット済み容量の合計、従量課金制の合計容量が表示されます。</block>
   <block id="492847bcbc9ec0bd3075b612aa43e4a7" category="list-text">[Keystone ]*を選択します。</block>
   <block id="ece137c555d8c53c8378fee53f6273c4" category="paragraph">AKVは保護に使用できます <block ref="defc94716dcceab396c0509ed7db9366" category="inline-link-macro-rx"></block> データSVMの場合のみ。</block>
   <block id="c6a56bb8eca094c529c75a2c22c92bcc" category="inline-link-macro">ノードベースライセンスの管理方法については、こちらをご覧ください</block>
@@ -4131,7 +4109,6 @@
   <block id="100bae5c7e0821077de0fde9621000c1" category="list-text"><block ref="bc493c0c6367fdf80f51179db159d9ed" category="inline-link-rx"></block>。</block>
   <block id="73511701791994e2ed3cc40c68089746" category="paragraph">KeystoneサブスクリプションはHAペアでサポートされます。現時点では、このライセンスオプションはシングルノードシステムではサポートされていません。</block>
   <block id="9a762a1c55d92068610f4f2bc3e42d91" category="paragraph">Keystoneサブスクリプションの利用を開始する方法をご確認ください。</block>
-  <block id="fc757430059ba1c5429f69be6c92e93b" category="paragraph">既存の Cloud Volumes ONTAP システムを別のライセンス方式に変換することはできません。現在のライセンス方式は、容量単位のライセンス、Keystoneサブスクリプション、ノード単位のライセンスの3つです。たとえば、システムをノードベースのライセンスから容量ベースのライセンスに変換することはできません（逆の場合も同様）。</block>
   <block id="221a174f8f629fb4aa230caa988c2112" category="summary">BlueXPのCloud Volumes ONTAP Managementの新機能をご紹介します。</block>
   <block id="24794b3bdde84ec6ccbec9ca5a92cf43" category="section-title">BlueXPのデジタルウォレット機能の強化</block>
   <block id="ca8d7ad5e36d40f4e29b0a489cf94294" category="paragraph">BlueXPのデジタルウォレットに、Marketplaceのプライベートオファーで購入したライセンス容量が表示されるようになりました。</block>
@@ -4236,13 +4213,6 @@ Add Subscription * をクリックして、選択したクレデンシャルを�
 <block ref="2ae6dc7cea05e6172a8f0e381f70d632" category="inline-link-rx"></block>。</block>
   <block id="f55b18eeaddb29e4e968d14603f99e82" category="list-text"><block ref="f55b18eeaddb29e4e968d14603f99e82" category="inline-link-rx"></block></block>
   <block id="d7e4497b251053c3a95e730a472e0f1a" category="list-text"><block ref="d7e4497b251053c3a95e730a472e0f1a" category="inline-link-rx"></block></block>
-  <block id="85c76e0af4d25f0011f167d772dba6ab" category="cell">この Cloud Volumes ONTAP システムで使用する AWS クレデンシャルと Marketplace サブスクリプションを選択します。
-
-Add Subscription * をクリックして、選択したクレデンシャルを新しい AWS Marketplace サブスクリプションに関連付けます。サブスクリプションは、年間契約の場合と、 Cloud Volumes ONTAP の料金を 1 時間ごとに支払う場合があります。
-
-NetApp （ BYOL ）からライセンスを直接購入した場合、 AWS サブスクリプションは必要ありません。
-
-<block ref="2ae6dc7cea05e6172a8f0e381f70d632" category="inline-link-rx"></block>。</block>
   <block id="f647c880dd21951d680e6e9b7ad216f0" category="list-text"><block ref="f647c880dd21951d680e6e9b7ad216f0" category="inline-link-rx"></block></block>
   <block id="31506a250b099663a98d7d365371bda0" category="paragraph">権限は、で提供されています<block ref="7aa097bb85d23c6d9f43a1db610a79f9" category="inline-link-rx"></block>、ただし、Cloud Key Management Serviceに別のプロジェクトを使用する場合は適用できません。</block>
   <block id="f0b4f84896926e6a2dbb48986fffd0a3" category="paragraph">を参照してください<block ref="7665d9260dd9d6a287f2bbc0560d523f" category="inline-link-rx"></block> "GcpEncryption" パラメータの使用方法の詳細については、を参照してください。</block>
@@ -4378,7 +4348,6 @@ NetApp （ BYOL ）からライセンスを直接購入した場合、 AWS サ�
   <block id="e22c3a8f0786d359fea7cca144bbee1b" category="inline-link">自動ランサムウェア対策を有効化</block>
   <block id="9216a2741f7e54826d99a0fcfc0c7c58" category="section-title">WORMファイルを削除しています</block>
   <block id="728c208823318f76bc30851f92119221" category="paragraph">privileged delete機能を使用して、保持期間中にWORMファイルを削除できます。</block>
-  <block id="44c48c2759b23de55aafe43a43856a08" category="paragraph">手順については、を参照してください<block ref="03bc56e40fb58df28e53112c02ca2ae1" category="inline-link-rx"></block></block>
   <block id="59e727e0c151e53fa5beabd59871cb88" category="paragraph">多くの場合、HAペアのアップグレードは無停止で実行され、I/Oが中断されることはありません。無停止アップグレードでは、各ノードが連携してアップグレードされ、クライアントへの I/O の提供が継続されます。</block>
   <block id="67e0d115b5c2df9254836fd8f762d3dc" category="inline-link">ONTAPのドキュメントを参照</block>
   <block id="ff0dae83f1884b2852a33110d07283d1" category="paragraph">セッション指向プロトコルは、アップグレードの実行中に特定領域のクライアントとアプリケーションに原因が悪影響を及ぼす可能性があります。詳細については、<block ref="69d6ddda693aaf09f72544089a10fab3" category="inline-link-rx"></block></block>
@@ -4687,7 +4656,6 @@ NetApp （ BYOL ）からライセンスを直接購入した場合、 AWS サ�
   <block id="9f9a7e011920aed7b91c7f5809cef3df" category="paragraph">ページBLOBを含むAzure HA単一アベイラビリティゾーン</block>
   <block id="7df51deb241262b7a30e9f895e6b3b75" category="paragraph">共有管理対象ディスクを使用するAzure HA単一アベイラビリティゾーン</block>
   <block id="75b5d41c945fb77a44a02275e5167f03" category="paragraph">Azure HA：共有管理対象ディスクを使用する複数のアベイラビリティゾーン</block>
-  <block id="735d36020b1ee0734f4e9ddbbea4948e" category="paragraph">Cloud Volumes ONTAP 用のすべての Azure ストレージアカウントは、お客様が管理するキーを使用して暗号化されます。作成時にストレージアカウントを暗号化する場合は、CVO作成要求でリソースのIDを作成して指定する必要があります。これは、すべてのタイプの導入に当てはまります。提供しない場合でもストレージアカウントは暗号化されますが、BlueXPはまずMicrosoftが管理するキー暗号化を使用してストレージアカウントを作成し、次にストレージアカウントを更新してお客様が管理するキーを使用するようにします。</block>
   <block id="3d398b97e4c42f1072862ca68a5330e0" category="inline-link-macro">技術情報アーティクル「Cloud Volumes ONTAPのアップグレードが失敗する」</block>
   <block id="73f61210747fe91bea8a184200d3fcc5" category="paragraph">アップグレードエラーが発生した場合は、 <block ref="60b526b210a3d8d7f028168de61b0c4a" category="inline-link-macro-rx"></block>。</block>
   <block id="9239af3d88d2e7788330e1bb0d8cd044" category="list-text"><block ref="9239af3d88d2e7788330e1bb0d8cd044" category="inline-link-rx"></block></block>
@@ -4703,13 +4671,11 @@ NetApp （ BYOL ）からライセンスを直接購入した場合、 AWS サ�
   <block id="eb4c08b87f805a62e5af64a0b7c6fb5a" category="paragraph">BlueXPでは、Cloud Volumes ONTAP が正常に動作するために必要なインバウンドとアウトバウンドのルールを含むAzureセキュリティグループが作成されます。テスト目的または独自のセキュリティグループを使用する場合は、ポートを参照してください。</block>
   <block id="9864c286612d20c437e06d1612a86f2d" category="summary">BlueXPでは、Cloud Volumes ONTAP が正常に動作するために必要なインバウンドとアウトバウンドのルールを含むAWSセキュリティグループが作成されます。テスト目的または独自のセキュリティグループを使用する場合は、ポートを参照してください。</block>
   <block id="87ade7583253b06f01182c970d65aacd" category="paragraph">BlueXPは、Cloud Volumes ONTAP が正常に動作するために必要なインバウンドとアウトバウンドのルールを含むGoogle Cloudファイアウォールルールを作成します。テスト目的や独自のファイアウォールルールを使用する場合は、ポートを参照してください。</block>
-  <block id="9edc62814e18ad5dad22ed4f08602be6" category="admonition">ノードベースのCloud Volumes ONTAPライセンスでのARP機能の使用は、現在Digital Walletには反映されていません。ノードベースのARP使用状況を表示する機能は、今後のリリースでDigital Walletで利用できるようになる予定です。</block>
   <block id="bab89553328d9045a17e6cd7ae426ebe" category="paragraph">ボリュームのARPの設定は、ONTAP System ManagerとONTAP CLIを使用して実行します。</block>
   <block id="35588fa7f53bdbd040bfa9c96c87bf3d" category="section-title">2024年1月16日</block>
   <block id="9ed7d4ae8d042664394e899e9c1f5e9a" category="section-title">BlueXPでのパッチリリース</block>
   <block id="5c04c0351e9f1e168f13ca5689c21d92" category="paragraph">BlueXPでは、最新の3つのバージョンのCloud Volumes ONTAPに対してのみパッチリリースを提供しています。</block>
   <block id="debc8fcbe9103b95d21857d1276dbb26" category="paragraph"><block ref="debc8fcbe9103b95d21857d1276dbb26" category="inline-link-macro-rx"></block></block>
-  <block id="fa8624c42ea6d2ce73d1dbb434c41dc8" category="paragraph">ARPライセンスは「フローティング」ライセンスと見なされます。つまり、単一のCloud Volumes ONTAPインスタンスにバインドされず、複数のCloud Volumes ONTAP環境に適用できます。</block>
   <block id="677ee5101eb2acd8a357643d03784fa7" category="section-title">パッチリリース</block>
   <block id="25163e975710186a452c0f2fefe81448" category="inline-xref">ONTAPイメエシノタウンロオト</block>
   <block id="17464ff13145a21ed61cc7a0b9513ce7" category="paragraph">2024年1月より、BlueXPでパッチをアップグレードできるのは、3つの最新バージョンのCloud Volumes ONTAPのパッチリリースのみです。BlueXPに表示する3つの最新バージョンは、最新のGAリリースを使用して決定されます。たとえば、現在のGAリリースが9.13.1の場合、BlueXPには9.11.1~9.13.1のパッチが表示されます。バージョン9.11.1以前のパッチリリースにアップグレードする場合は、手順を手動でアップグレードする必要があります。 <block ref="741f5e59386960528e5ac58506855727" category="inline-xref-macro-rx"></block>。</block>
@@ -4920,13 +4886,11 @@ HAペアの場合、BlueXPでCloud Volumes ONTAP作業環境を作成すると�
   <block id="21374a20e08d3e0c8ca328133d8fe5f4" category="list-text">BlueXPコンソールの右上にある省略記号アイコンをクリックし、*[ワークスペースから削除]*を選択します。</block>
   <block id="b724364be6320cfd44126523f60ef584" category="inline-link">Marketplace製品のプログラムによる導入</block>
   <block id="64d1ac557c8992bc5d65b98a95e0b497" category="section-title">サポートされるローカルゾーンの選択</block>
-  <block id="951d6dba79708fba245b5798bb84dde6" category="paragraph">Cloud Volumes ONTAPは、シンガポールを含む一部のAWSローカルゾーンでサポートされています。ローカルゾーンの選択はオプションです。</block>
   <block id="b1968c5681446da9bdcedadbf7a34131" category="inline-link-macro">ローカルゾーンの完全なリストを表示する</block>
   <block id="a455e3549f40e60e4a9c2e8c6580a6a2" category="paragraph"><block ref="27bdb425ba8206d688a379332282fbb4" category="inline-link-macro-rx"></block>。
 ローカルゾーンでリソースを作成および管理するには、ローカルゾーンを有効にする必要があります。</block>
   <block id="7d273ac4682ff6458339567063ef099c" category="inline-link-macro">ローカルゾーンを有効にする方法</block>
   <block id="9d27b872e974d3d08bf3a26f3677a159" category="paragraph"><block ref="4d81cb3a41369feab014b9955336458e" category="inline-link-macro-rx"></block>。</block>
-  <block id="f5d7776a3ddb7ca1ecdd36a3e71b0903" category="admonition">Phoenixはサポートされているローカルゾーンではありません。</block>
   <block id="14f93e26a64410a779a8f05ff019c578" category="paragraph">複数のアベイラビリティゾーン（AZ）または単一のアベイラビリティゾーン（AZ）にHA構成を導入することで、データの高可用性を確保できます。各構成の詳細を確認して、ニーズに最適な構成を選択してください。</block>
   <block id="086e808bdf46a8027609222c8bc2ae0b" category="section-title">複数のアベイラビリティゾーン</block>
   <block id="1f0c75dd86d99f8dd501e6ad73083cb9" category="paragraph">複数のアベイラビリティゾーン（AZ）にHA構成を導入すると、AZまたはCloud Volumes ONTAPノードを実行するインスタンスで障害が発生した場合にデータの高可用性を確保できます。NAS IP アドレスがデータアクセスとストレージフェイルオーバーに与える影響を理解しておく必要があります。</block>
@@ -5163,13 +5127,9 @@ Mac OSでtailコマンドを完了します。</block>
   <block id="61631dd1eb0609d79c27c109e55de5c8" category="paragraph">詳細については、を参照して<block ref="f2e318b984927d4781fb278ddc8ba233" category="inline-link-rx"></block> ください。</block>
   <block id="5baa1341b4ee5dbbcf72c1bca3fb5576" category="inline-link">Amazon S3のドキュメント：Amazon S3ストレージクラスの詳細</block>
   <block id="39298274cceb2a817c0b454941ec8e9a" category="paragraph">データにアクセスするとアクセスコストが高くなるため、ストレージクラスを変更する前にその点を考慮してください。<block ref="0c2470317fad27a81908b0930cf9e62d" category="inline-link-rx"></block>です。</block>
-  <block id="f2d057ba2400451d6e60c2bfbcdd515f" category="paragraph">作業環境の作成時にストレージクラスを選択し、あとでいつでも変更できます。ストレージクラスを変更する手順については、を参照して<block ref="4fbc08218411ffa53189962e6368b39b" category="inline-link-macro-rx"></block>ください。</block>
   <block id="db9ff71bc9bf52beb98f0d113ff7ccbf" category="inline-link">Microsoft Azureのドキュメント：「Azure Blob Storage Access Tiersの詳細」</block>
-  <block id="3b03939d4e383d03bdf27286fcbfba97" category="paragraph">データにアクセスするとアクセスコストが高くなるため、ストレージ階層を変更する前にその点を考慮してください。<block ref="30699d9b3a005c39386e73a7c4627191" category="inline-link-rx"></block>です。</block>
-  <block id="dfb39f09588961540489e064238fc85a" category="paragraph">作業環境の作成時にストレージ階層を選択し、あとでいつでも変更できます。ストレージ階層の変更の詳細については、を参照してください<block ref="4fbc08218411ffa53189962e6368b39b" category="inline-link-macro-rx"></block>。</block>
   <block id="2071f090de049a0bafd6e8e9ebc886a4" category="inline-link">Google Cloudのドキュメント：ストレージクラス</block>
   <block id="b7394e89ab52c2644e6abe3428b0bdee" category="paragraph">データにアクセスするとアクセスコストが高くなるため、ストレージクラスを変更する前にこの点を考慮する必要があります。詳細については、を参照して<block ref="3f6491f63b376fc9e505b3fd50e825aa" category="inline-link-rx"></block>ください。</block>
-  <block id="0573e6b6d29f7e14bd02accced1264d7" category="paragraph">作業環境の作成時にストレージ階層を選択し、あとでいつでも変更できます。ストレージクラスの変更の詳細については、を参照してください<block ref="4fbc08218411ffa53189962e6368b39b" category="inline-link-macro-rx"></block>。</block>
   <block id="2fb88c61a4ec945d000763abb10cbd1d" category="paragraph">手順とサポートされる構成のリストについては、を参照してください<block ref="4fbc08218411ffa53189962e6368b39b" category="inline-link-macro-rx"></block>。</block>
   <block id="38850f8a756c82c89e87237ed4f91234" category="inline-image-macro">この概念図は、ロードバランサがBlueXP  およびクライアントからの受信トラフィック、VMSS Flexの2つのCloud Volumes ONTAPノード、ブートデータ用のSSDディスク、顧客データ用のページBlobを管理する様子を示しています。</block>
   <block id="fb33ca393b61decaf86e6a0dccadd3c1" category="paragraph"><block ref="fb33ca393b61decaf86e6a0dccadd3c1" category="inline-image-macro-rx" type="image"></block></block>
@@ -5190,7 +5150,6 @@ Mac OSでtailコマンドを完了します。</block>
   <block id="a9c5983e35ef10e7675e8d4743ca9b78" category="paragraph">詳細については、を参照してください <block ref="e677af9e7ca6c446fefd39f21658da89" category="inline-link-macro-rx"></block>。</block>
   <block id="13adeba04a9bbea1e4724de79afe951f" category="inline-link-macro">ローカルゾーンのEC2インスタンスタイプ</block>
   <block id="973154cd70a812583853f9af98175e4b" category="admonition">HA ペアのノード間でボリュームを移動する場合は、もう一方のノードの IP アドレスを使用してボリュームを再マウントする必要があります。そうしないと、パフォーマンスが低下する可能性があります。クライアントが CIFS の NFSv4 リファールまたはフォルダリダイレクションをサポートしている場合は、ボリュームの再マウントを回避するために、 Cloud Volumes ONTAP システムでこれらの機能を有効にできます。詳細については、ONTAPのドキュメントを参照してください。</block>
-  <block id="a91a698de1a811c466dcfeeb6a0b5b2c" category="admonition">BlueXPのバックアップとリカバリにはPAYGOのサブスクリプションが必要ですが、このサービスの使用には料金は発生しません。BlueXP  バックアップ/リカバリのライセンス設定の詳細については、を参照してください<block ref="c958f229a6c4d788e19159c7ba08a48b" category="inline-link-rx"></block>。</block>
   <block id="1598bd897bc443f364d77a0ead2b386d" category="paragraph">詳細については、<block ref="07e6a6e4814dabc1a0870a10a70c4b44" category="inline-link-rx"></block></block>
   <block id="e35f4f28f28dcf48ae9d3ccf0f0cefa5" category="paragraph">この暗号化オプションを使用する場合は、 AWS KMS が適切に設定されていることを確認する必要があります。詳細については、を参照して <block ref="01123efe4d08d28ad1b6d58169335a21" category="inline-link-macro-rx"></block>ください。</block>
   <block id="31bba8b3ba9d8527af7c728ba014c87c" category="paragraph">Vscanでサポートされるベンダー、ソフトウェア、およびバージョンについては、を参照して<block ref="ae69c67e09c854d61b64be1ef166878d" category="inline-link-rx"></block>ください。</block>
@@ -5198,7 +5157,6 @@ Mac OSでtailコマンドを完了します。</block>
   <block id="f9a29c4f12d918677aac4f08102edf1b" category="list-text">シングルノードシステムでは、次のタイプのAzureマネージドディスクを使用できます。</block>
   <block id="747d4ec445455d90b072fa27bca4895a" category="list-text">_Premium SSD v2管理ディスク_ Premium SSD Managed Disksと比較して、シングルノードとHAペアの両方で低コストで高いパフォーマンスと低レイテンシを実現します。</block>
   <block id="ae239537955756b1880e92d14a279360" category="list-text">作業環境の作成時にWORMストレージを有効にすると、BlueXPで作成したすべてのボリュームでWORMが有効になります。ただし、WORMが無効になっているボリュームは、ONTAP System ManagerまたはONTAP CLIを使用して作成できます。</block>
-  <block id="c699841d655c41d53469e8578e8bd3ef" category="list-text">作業環境の作成時にWORMストレージを無効にすると、BlueXP 、ONTAP System Manager、またはONTAP CLIで作成するすべてのボリュームでWORMが無効になります。作成時に有効にしなかったCloud Volumes ONTAP 作業環境でWORMを有効にする場合は、ネットアップサポートとのサポートチケットを作成する必要があります。</block>
   <block id="cd0293a5ac443202995d2747957a273f" category="list-text">BlueXP  は、他の管理ツール（ONTAPシステムマネージャやONTAP CLIなど）とは異なる方法で、いくつかのボリューム属性を設定します。</block>
   <block id="2de4b6feb53ae91459bc42bdf2b868ff" category="paragraph">これらの属性の詳細については、を参照してください<block ref="c8a7e79f678b1faddb103e58db2edb75" category="inline-link-macro-rx"></block>。</block>
   <block id="70a45a83881e6b547c9c6dabf0392df4" category="paragraph">Cloud Volumes ONTAP用に選択した仮想マシンがプレミアムSSD v2管理対象ディスクをデータディスクとしてサポートしている場合、システムは32GiBプレミアムSSD v2管理対象ディスクをNVRAM用に使用し、もう1つをルートディスクとして使用します。</block>
@@ -5359,8 +5317,6 @@ Mac OSでtailコマンドを完了します。</block>
   <block id="e378925ca7c13e386e5c5d854097dc26" category="inline-link">Cloud Volumes ONTAPに関する注意事項</block>
   <block id="72b3ada156bb3b51f9862f1754d974d2" category="list-text"><block ref="72b3ada156bb3b51f9862f1754d974d2" category="inline-link-rx"></block></block>
   <block id="ea7b4173339bef8c2570812171d360a0" category="paragraph">このバックアップを使用して、Cloud Volumes ONTAPシステムを再設定できます。構成バックアップの詳細については、を参照してください<block ref="49fe905ea86eeb386daebc5876800d6b" category="inline-link-rx"></block>。</block>
-  <block id="26ab4d3fe221f0b273d79d8ce5ebc8bc" category="paragraph">アドオンライセンスを購入してデジタルウォレットに追加すると、Cloud Volumes ONTAPを使用してボリューム単位でARPを有効にできます。</block>
-  <block id="c728dacf8c5d7e9da86b3512e6ea5301" category="paragraph">ARPが有効なボリュームの状態は「ラーニングモード」または「アクティブ」になります。</block>
   <block id="c842acaca9e3ea9ec2dc61f28e69ea15" category="section-title">2024年9月9日</block>
   <block id="cdd78645b017b927a25b5449e345f823" category="section-title">ワームとARPの機能は有料ではなくなりました。</block>
   <block id="8ddfd051601ea88c75625c16c542a149" category="paragraph">BlueXP  では<block ref="891e111023ee3cccd4407be6ddd24c21" prefix=" " category="inline-code"></block>、NASデータLIFから次のサービスを削除してiSCSIデータLIFに追加することで、データStorage VMのポリシーも変更されます。</block>
@@ -5443,9 +5399,7 @@ Mac OSでtailコマンドを完了します。</block>
   <block id="bec523fb694fd6fe80736494c1a45a30" category="cell">Google Cloudサービスとの通信。</block>
   <block id="958a7d50dde5e697e4e9a16ba64515e6" category="cell">Cloud Volumes ONTAPは、Google Cloud上で特定のBlueXP  処理を実行するためにGoogle Cloudサービスと通信できません。</block>
   <block id="12acb6948c0c5fe54c5651d99ff9fd04" category="list-text">に移動し<block ref="5003136445bb4fa028e23c93c86053e6" category="inline-link-rx"></block>、[Downloads]セクションで必要なソフトウェアバージョンをダウンロードします。</block>
-  <block id="c3288ce29225fc4244fa01d5aef04aa3" category="paragraph">ARP機能は、BYOLおよびマーケットプレイスのサブスクリプションで、ノードベースと容量ベースの両方のライセンスを追加コストなしで使用できます。NetAppの営業担当者に連絡して、現在のライセンスにARPを追加してください。</block>
   <block id="5ee4faea784afb4b7750a3c91c073449" category="admonition">十分なスペースがないとCloud Volumes ONTAPでデータを移動できないため、パフォーマンスが低下する可能性があります。変更は慎重に行ってください。不明な場合は、NetAppサポートにお問い合わせください。</block>
-  <block id="becb0288ca83df315765f9f31eb5847f" category="paragraph">このページに記載されているいずれかの方法でソフトウェアをアップグレードするには、Cloud Volumes ONTAPがNetAppサポートに登録されている必要があります。PAYGO と BYOL の両方に該当します。<block ref="f7029dacbf10b8aa72bca74845a64729" category="inline-link-macro-rx"></block>BYOLシステムはデフォルトで登録されていますが、必要になります。</block>
   <block id="fd8831656d484b23e386115d7264f056" category="list-text">HAペアの場合：</block>
   <block id="180b275121e0f37251fecae975bf46df" category="list-text">メディエーターインスタンス用の2つのst1 EBSボリューム（ルートディスクとして約8GiBのうち1つ、データディスクとして4GiBのうち1つ）</block>
   <block id="64b03175221d53e202f475eebaa91d75" category="list-text">140GiB GP3ディスクを各ノードに1本（もう一方のノードのルートデータのコピーを格納）</block>
@@ -5521,9 +5475,7 @@ Mac OSでtailコマンドを完了します。</block>
   <block id="287c693dd0bc6ec48aa0fc3f4b950a9e" category="paragraph">サブスクリプションはBlueXP  の組織またはアカウントからリンク解除され、Cloud Volumes ONTAP作業環境の作成時に選択できなくなります。</block>
   <block id="bae74b170f7e19d783c68e9e4e5e5a70" category="paragraph">AWSローカルゾーンは、ストレージ、コンピューティング、データベース、その他の一部のAWSサービスが大都市や業界の近くに配置されているインフラ環境です。AWSローカルゾーンを使用すると、AWSサービスを近くに配置して、ワークロードのレイテンシを改善し、データベースをローカルに維持できます。Cloud Volumes ONTAPでは、</block>
   <block id="12132105a5861c2a904da865554d4e62" category="admonition">AWSローカルゾーンは、BlueXP  を標準モードとプライベートモードで使用する場合にサポートされます。現時点では、BlueXP  を制限モードで使用している場合、AWSローカルゾーンはサポートされていません。</block>
-  <block id="87836512100e1272a8e293d9b1584ca0" category="paragraph">Cloud Volumes ONTAPでは、AWSローカルゾーンでのHA環境のみがサポートされます。次に、設定例を示します。</block>
   <block id="15c32962b3a74affab8eda8b723d5a9d" category="paragraph">サポートされるディスクタイプはgp2のみです。現在、サイズがxlarge ~ 4xlargeの次のEC2インスタンスタイプファミリーがサポートされています。</block>
-  <block id="238181028bdcb33e3ea129371a6d2545" category="paragraph">Cloud Volumes ONTAPは、これらの構成のみをサポートします。Cloud Volumes ONTAPのAWSローカルゾーン設定で他のディスクタイプまたはEC2インスタンスを選択すると、導入に失敗することがあります。の最新の詳細情報については、AWSのドキュメントを参照して<block ref="a4408f4d4cfd81ced6d2ec2b8da89160" category="inline-link-macro-rx"></block>ください。</block>
   <block id="a02d03fc43afe508f920c7ac72a54af6" category="list-text">ハイアベイラビリティ（HA）ペアに対してシームレスなハイブリッドクラウドエクスペリエンスを提供する、従量課金制のサブスクリプションベースのサービスです。</block>
   <block id="e7c597b04ce35f0f025ccab446eee809" category="paragraph">容量単位での支払いには、次のようなさまざまな構成が用意されています。</block>
   <block id="53e6fd574dbf70e62183a00bd6dce317" category="paragraph">ライセンスは、Cloud Volumes ONTAPシステム内で作成されたボリュームタイプのみに基づいています。</block>
@@ -5537,7 +5489,6 @@ Mac OSでtailコマンドを完了します。</block>
   <block id="42a9ff8d7662759290ac08e2ee0929f4" category="list-text">超過分：ライセンスで許可された容量を超えた場合、超過分にはマーケットプレイスの料金が適用され、最初に他のライセンスの使用可能な容量を優先して課金されます。</block>
   <block id="f93da9b042a7ade0f4d86a091309ed87" category="list-text">FlexCloneおよびFlexCache Volume：FlexCloneボリュームは課金されません。ソースとデスティネーションのFlexCacheボリュームはプライマリデータとみなされ、プロビジョニング済みスペースに従って課金されます。</block>
   <block id="371519ace7adec1f0d1a909854d1cbec" category="list-text">HAペアの充電：HAペアでは、ノード上のプロビジョニング済み容量のみが充電されます。パートナーノードに同期ミラーリングされたデータは課金されません。</block>
-  <block id="0099e212d78247cd7545328dc1350ae0" category="admonition">NetAppでは、まもなくノードベースライセンスの提供を終了します。販売終了後は、ノードベースのライセンスを容量ベースのライセンスに変換する必要があります。詳細については、を参照して<block ref="f09d1138443525e41476e551a1dde747" category="inline-link-rx"></block>ください。</block>
   <block id="2bb8a9ed1433f0f845b92c7da5440dea" category="section-title">2024年10月25日</block>
   <block id="dc1815932afdea52f1a4c12d73f2eed0" category="section-title">N1シリーズマシンはBlueXP  で選択できません</block>
   <block id="1bb0d11a534c8ee967cd62e4d75e3da3" category="paragraph">Google CloudにCloud Volumes ONTAPの新しいインスタンスを導入する際に、BlueXP  でn1シリーズマシンを選択できなくなりました。n1シリーズのマシンは、既存の古いシステムでのみ保持およびサポートされます。Cloud Volumes ONTAPの新規導入は、Google Cloud 9.8リリース以降でのみサポートされます。Cloud Volumes ONTAP 9.8以降と互換性のあるn2シリーズマシンタイプに切り替えることをお勧めします。ただし、n1シリーズマシンは、APIを介して実行される新しい導入に使用できます。</block>
@@ -5548,4 +5499,151 @@ Mac OSでtailコマンドを完了します。</block>
   <block id="7a73f560e215c4ff952d3384c5435ae9" category="list-text"><block ref="7a73f560e215c4ff952d3384c5435ae9" category="inline-link-rx"></block></block>
   <block id="c8eac8ecc3bb9bb52e4fa6b3d34c3c38" category="list-text"><block ref="c8eac8ecc3bb9bb52e4fa6b3d34c3c38" category="inline-link-rx"></block></block>
   <block id="448c087351c52cb72f971666e2159491" category="paragraph"><block ref="448c087351c52cb72f971666e2159491" category="inline-link-rx"></block></block>
+  <block id="059b6fdd2ea839d9327c322a4c87e168" category="doc">ノードベースライセンスの販売終了</block>
+  <block id="73dfeef5d38f87e4c1d9e4b6417db109" category="paragraph">NetAppでは、Cloud Volumes ONTAPノードベースライセンスの販売終了（EOA）とサポート終了（EOS）を計画しています。2024年11月11日より、ノードベースライセンスの限定的な可用性が終了しました。ノードベースのライセンスのサポートは2024年12月31日に終了します。ノードベースライセンスのEOAが完了したら、BlueXP  ライセンス変換ツールを使用して容量ベースのライセンスに移行する必要があります。</block>
+  <block id="412842ace3db013f5cc3f99342aac206" category="paragraph">年間契約または長期契約の場合は、NetApp EOA日またはライセンスの有効期限前にNetApp担当者に連絡して、移行の前提条件が満たされていることを確認することを推奨します。Cloud Volumes ONTAPノードの長期契約がなく、オンデマンドのPAYGOサブスクリプションに対してシステムを運用している場合は、EOS日までに変換を計画することが重要です。長期契約とPAYGOサブスクリプションの両方で、BlueXP  ライセンス変換ツールを使用してシームレスな変換を行うことができます。</block>
+  <block id="90df487d076cd9295a7192268b4439ee" category="inline-link">ノードベースライセンスの販売終了</block>
+  <block id="342dcce6bda294bb4b60fc9333bcafbe" category="inline-link">ノードベースライセンスから容量ベースライセンスへの変換</block>
+  <block id="2293617fe352e42e5a1e5d757463cb39" category="paragraph"><block ref="677ce77d69762bd9f63d8a2760e6a0c4" category="inline-link-rx"></block> <block ref="5987d844b1ad687ea551a96a31c7c0df" category="inline-link-rx"></block></block>
+  <block id="a4b4a128b8ea43df8551a18d37b0bfcd" category="section-title">BlueXP  からのノードベースの導入の削除</block>
+  <block id="04b144a0be31129b4ac9a0f2751271d9" category="paragraph">ノードベースのライセンスを使用してCloud Volumes ONTAPシステムを導入するオプションは、BlueXP  では廃止されました。いくつかの特別なケースを除き、どのクラウドプロバイダのCloud Volumes ONTAP環境にもノードベースのライセンスを使用できません。</block>
+  <block id="11c97a8e296f1428a1d4c9a2253b1bfb" category="paragraph">NetAppは、契約上の義務および運用上のニーズに準拠して、次の固有のライセンス要件を認識し、このような状況でも引き続きノードベースのライセンスをサポートします。</block>
+  <block id="57389c1aef6c1264d9ad4bbe74640b2e" category="list-text">USPSのお客様</block>
+  <block id="43b1a7bfd4243a44cf321f03e7878ffd" category="list-text">プライベートモードでの導入</block>
+  <block id="bbef1435f544b56bbed0e1c536c2515e" category="list-text">AWSでのCloud Volumes ONTAPの中国リージョン導入</block>
+  <block id="e6eb4bcca3ad358d710ea99dd5c577d1" category="list-text">ノード単位で有効期限が切れていない場合は、お客様所有のライセンスを使用（BYOLライセンス）</block>
+  <block id="677ce77d69762bd9f63d8a2760e6a0c4" category="paragraph"><block ref="677ce77d69762bd9f63d8a2760e6a0c4" category="inline-link-rx"></block></block>
+  <block id="02077474df02850d5f691ab4c25f3b7c" category="section-title">Azure BLOBストレージにCloud Volumes ONTAPデータ用のコールド階層を追加</block>
+  <block id="b37931f01938eae6736d1bea8fd72fed" category="paragraph">BlueXP  で、コールド階層を選択してアクセス頻度の低い大容量階層のデータをAzure BLOBストレージに格納できるようになりました。既存のホット階層とクール階層にコールド階層を追加すると、より手頃な価格のストレージオプションが提供され、コスト効率が向上します。</block>
+  <block id="2ede20fe3152113b3c27cd841c879ccf" category="paragraph"><block ref="2ede20fe3152113b3c27cd841c879ccf" category="inline-link-rx"></block></block>
+  <block id="7a315b4592c0ed57964da376a6b04868" category="section-title">Azureのストレージアカウントへのパブリックアクセスを制限するオプション</block>
+  <block id="c11ad5eeb4b3088d2c151593e9c1204e" category="paragraph">Azure上のCloud Volumes ONTAPシステムのストレージアカウントへのパブリックアクセスを制限できるようになりました。アクセスを無効にすると、組織のセキュリティポリシーに準拠する必要がある場合に、同じVNet内であってもプライベートIPアドレスが公開されないように保護できます。このオプションは、Cloud Volumes ONTAPシステムのデータ階層化も無効になり、シングルノードペアとハイアベイラビリティペアの両方に適用されます。</block>
+  <block id="69e89afe4b2013c34ff51df883ddc022" category="paragraph"><block ref="9064ea2dae3c9dc76b91a834ab88d8bf" category="inline-link-rx"></block>です。</block>
+  <block id="f87269f0bcffd4dd379148db58c41b11" category="section-title">Cloud Volumes ONTAP導入後のWORM有効化</block>
+  <block id="8d9d085ab6acd5074907258fafcff341" category="paragraph">これまでは、BlueXP  でCloud Volumes ONTAP作業環境を作成するときにWORMストレージを有効にすることができました。現在は、作成時にWORMが有効になっていなかった場合でも、BlueXP  で作業環境でWORMを有効にするオプションが提供されています。一度有効にすると、WORMを無効にすることはできません。</block>
+  <block id="664bf259381c1fa1513c4c79450fb0f4" category="inline-link">Cloud Volumes ONTAP作業環境でのWORMの有効化</block>
+  <block id="42009eda159da22132429f44bf400e6c" category="paragraph"><block ref="42009eda159da22132429f44bf400e6c" category="inline-link-rx"></block></block>
+  <block id="2db5c6d1af8e977d496e788510cbddd0" category="paragraph">ストレージクラスは作業環境の作成時に選択でき、あとからいつでも変更できます。ストレージクラスを変更する手順については、を参照して<block ref="4fbc08218411ffa53189962e6368b39b" category="inline-link-macro-rx"></block>ください。</block>
+  <block id="930e999bb64aeb9cc71cdd63d9f4948c" category="paragraph">大容量階層のアクセス頻度の低いデータにアクセスする予定がない場合は、_cool_storage階層を選択できます。この階層では、アクセス頻度の低いデータを最低30日間保持します。また、_cold_tierを選択することもできます。この階層では、アクセス頻度の低いデータが最低90日間格納されます。ストレージ要件とコストに関する考慮事項に基づいて、ニーズに最も適した階層を選択できます。ストレージ階層を_cool_or_cold_に変更すると、アクセス頻度の低い大容量階層のデータはクールストレージ階層またはコールドストレージ階層に直接移動されます。クール階層とコールド階層では、ホット階層に比べてストレージコストは低くなりますが、アクセスコストが高くなるため、ストレージ階層を変更する前にこの点を考慮してください。を参照してください<block ref="30699d9b3a005c39386e73a7c4627191" category="inline-link-rx"></block>。</block>
+  <block id="3bb51211db193484b68905ef8f68ac0f" category="paragraph">ストレージ階層は作業環境の作成時に選択でき、あとからいつでも変更できます。ストレージ階層の変更の詳細については、を参照してください<block ref="4fbc08218411ffa53189962e6368b39b" category="inline-link-macro-rx"></block>。</block>
+  <block id="546c7b1d0701c3dcea6eb887ba9a499b" category="paragraph">ストレージ階層は作業環境の作成時に選択でき、あとからいつでも変更できます。ストレージクラスの変更の詳細については、を参照してください<block ref="4fbc08218411ffa53189962e6368b39b" category="inline-link-macro-rx"></block>。</block>
+  <block id="8c26cfdad94fa97c367b921f4702fcea" category="paragraph">HAペアは、両方のノードがクライアントにデータを提供するアクティブ/アクティブ構成として使用することも、アクティブ/パッシブ構成として使用することもできます。アクティブ/パッシブ構成では、パッシブノードがアクティブノードのストレージをテイクオーバーした場合にのみ、パッシブノードがデータ要求に応答します。</block>
+  <block id="fa317d8412b494ed6cf39e304ca9a341" category="paragraph">AWSのCloud Volumes ONTAPでは、単一のアベイラビリティゾーンでのハイアベイラビリティ（HA）モードのみがサポートされます。シングルノード環境はサポートされていません。</block>
+  <block id="eb99da0ddbfd6f5a24a511ef8df7c577" category="paragraph">Cloud Volumes ONTAPでは、データ階層化、クラウド階層化、およびAWSローカルゾーンでの非認定インスタンスはサポートされていません。</block>
+  <block id="19af59a268c506bb19268e318e2e9e5f" category="paragraph">次に、設定例を示します。</block>
+  <block id="02648096bf738946ffc4d338cb4e9d59" category="admonition">Cloud Volumes ONTAPは、これらの構成のみをサポートします。AWSローカルゾーン構成でサポートされないディスクタイプや認定されていないインスタンスを選択すると、導入に失敗することがあります。接続がないため、AWSローカルゾーンでAWS S3へのデータ階層化を使用できません。</block>
+  <block id="54a223dbcc3dca4a58e9e5bc292e0c6b" category="paragraph">の最新の詳細情報については、AWSのドキュメントを参照して<block ref="a4408f4d4cfd81ced6d2ec2b8da89160" category="inline-link-macro-rx"></block>ください。</block>
+  <block id="8d4ac812d0760131bc0db9a92eb2b512" category="paragraph">ノードベースのお客様所有のライセンスの使用（BYOL）がある各Cloud Volumes ONTAPシステムには、アクティブなサブスクリプションとともにシステムライセンスをインストールする必要があります。BlueXPは、ライセンスを管理し、期限が切れる前に警告を表示することで、プロセスを簡素化します。</block>
+  <block id="2316a1561b1b51c9eb0f231cb338cf48" category="summary">容量ベースのライセンスの充電、消費モデル、価格設定、構成について理解しておく必要があります。</block>
+  <block id="13dba612a4f942a80cbc82c5f678d57c" category="doc">容量ベースライセンスの詳細</block>
+  <block id="24382072604813ac4ccf773eac088de7" category="paragraph">容量ベースのライセンスの課金と使用容量について理解しておく必要があります。</block>
+  <block id="14f508f0826944b504efb176670357e8" category="list-text">* BYOL *：お客様所有のライセンスを使用（BYOL）。NetAppから購入したライセンスで、任意のクラウドプロバイダでCloud Volumes ONTAPを導入するために使用できます。</block>
+  <block id="3c7a90227f7481790a6d7eb5b1a274ea" category="list-text">* PAYGO *：従量課金制（PAYGO）サブスクリプションは、クラウドプロバイダのマーケットプレイスから提供される時間単位のサブスクリプションです。</block>
+  <block id="2b0470da2a26cbbea5d95f4e261d82ee" category="paragraph">ノードベースライセンスから容量ベースライセンスへの変換の詳細については、を参照してください。</block>
+  <block id="7af9b0ab22150a40b2c1c451de82db3c" category="section-title">価格設定とサポートされる構成</block>
+  <block id="f05f2e524280a4aaf976825a1f6748f6" category="inline-link-macro">ヨウリヨウヘエスライセンスノシユンヒ</block>
+  <block id="6c418172eb2db3f08bae6e40862aa940" category="paragraph">詳細については、を参照してください <block ref="28d08582e43bd81e1450bd514123324f" category="inline-link-macro-rx"></block>。</block>
+  <block id="a9949f1e97b05bac6285563868b6954a" category="admonition">BlueXP  のバックアップとリカバリには従量課金制（PAYGO）サブスクリプションが必要ですが、このサービスの使用料金は発生しません。BlueXP  バックアップ/リカバリのライセンス設定の詳細については、を参照してください<block ref="c958f229a6c4d788e19159c7ba08a48b" category="inline-link-rx"></block>。</block>
+  <block id="05e7dd258874d61cb2bb985c9da9a17d" category="paragraph">NetAppでは、ノードベースのライセンスの販売終了（EOA）とサポート終了（EOS）を計画しています。EOAおよびEOS後は、ノードベースのライセンスを容量ベースのライセンスに変換する必要があります。</block>
+  <block id="8c6aee7f6d39fa3bea95c2ae09851a7a" category="paragraph">詳細については、を参照して<block ref="f09d1138443525e41476e551a1dde747" category="inline-link-rx"></block>ください。</block>
+  <block id="5b4d3df9f94e27cca9f34f152bff2940" category="paragraph">2024年11月11日より、ノードベースライセンスの限定的な可用性が終了しました。ノードベースのライセンスのサポートは2024年12月31日に終了します。</block>
+  <block id="f61f8b3c935630ec8f0486cee8916013" category="paragraph">有効なノードベースの契約がEOA日を超えている場合は、契約が期限切れになるまでライセンスを引き続き使用できます。契約が期限切れになったら、容量ベースのライセンスモデルに移行する必要があります。Cloud Volumes ONTAPノードの長期契約をお持ちでない場合は、EOS日までに変換を計画することが重要です。</block>
+  <block id="bf2b1d7970167b534d54bc96e7402716" category="paragraph">各ライセンスタイプの詳細と、EOAがライセンスタイプに与える影響については、次の表を参照してください。</block>
+  <block id="82060d81b7ce43c57280e879899f9a2c" category="cell">ライセンスタイプ</block>
+  <block id="9278d7740d8ae06ade950cb6b0dd3e8c" category="cell">EOA後の影響</block>
+  <block id="614e524d2f2decbb0935ad5876d363a6" category="paragraph">お客様所有のライセンスを使用（BYOL）から購入した、有効なノードベースライセンス</block>
+  <block id="478c4f4681eac78a0ac305ec7be4713f" category="paragraph">ライセンスは有効期限まで有効です。未使用の既存のノードベースライセンスを新しいCloud Volumes ONTAPシステムの導入に使用できます。</block>
+  <block id="16d5ab209831029745e64e98e66ba23c" category="paragraph">BYOLから購入した、期限切れのノードベースライセンス</block>
+  <block id="d83127b1411e10b0e57743f291048e63" category="paragraph">このライセンスを使用して新しいCloud Volumes ONTAPシステムを導入する権利はありません。既存のシステムは引き続き機能する可能性がありますが、EOS日以降はシステムのサポートや更新を受けることはできません。</block>
+  <block id="dddb9d06ec44b2f4783c5cbeb3b3f962" category="paragraph">PAYGOサブスクリプションを含む有効なノードベースライセンス</block>
+  <block id="1992166b3e269c648d4c3627fe482fa5" category="paragraph">は、容量ベースのライセンスに移行するまで、EOS日以降はNetAppサポートの提供を停止します。</block>
+  <block id="ddbff06fb221c5c1396bb37c09f6f2fb" category="paragraph-title">対象外事項</block>
+  <block id="60d1148bddcd69c1238a0b69f45bdaa5" category="paragraph">NetAppは、特定の状況について特別な考慮が必要であると認識しており、以下の場合はノードベースライセンスのEOAおよびEOSは適用されません。</block>
+  <block id="0fda23bdfd335df1f36c51b87bc2b780" category="paragraph">これらの特定のシナリオでは、NetAppは、契約上の義務と運用上のニーズに準拠して、固有のライセンス要件に対処するためのサポートを提供します。</block>
+  <block id="913f6cd3e420105c804151f182c6938f" category="admonition">このような場合でも、新しいノードベースライセンスとライセンスの更新は、承認日から最長1年間有効です。</block>
+  <block id="5be0251ff1848cd4d292e0a684e70539" category="section-title">ライセンスの変換</block>
+  <block id="a3562fcfc4a85274195b7100a2a26d71" category="paragraph">BlueXP  では、ライセンス変換ツールを使用して、ノードベースのライセンスを容量ベースにシームレスに変換できます。ノードベースライセンスの販売終了（EOA）については、を参照してください<block ref="1ef8ea114dcf1680f435cb8143e047b7" category="inline-link-macro-rx"></block>。</block>
+  <block id="67b50b6cd5ac50e92192638dab47bddc" category="paragraph">移行する前に、2つのライセンスモデルの違いを理解しておくことをお勧めします。ノードベースのライセンスには、ONTAPインスタンスごとに容量が固定されているため、柔軟性が制限される場合があります。一方、容量ベースのライセンスでは、複数のインスタンスにまたがるストレージプールを共有できるため、柔軟性が向上し、リソース利用率が最適化され、ワークロードを再配分する際の金銭的なペナルティが軽減されます。容量ベースの充電は、変化するストレージ要件に合わせてシームレスに調整できます。</block>
+  <block id="9deed5641b081a08e814b22533f5376e" category="paragraph">この変換方法については、を参照してください<block ref="431f655d5a9ac309b561fc62a4c619ea" category="inline-link-macro-rx"></block>。</block>
+  <block id="2840378978873ef766f1cf65e35e8874" category="admonition">システムを容量ベースのライセンスからノードベースのライセンスに変換することはできません。</block>
+  <block id="eb6b8681b70b8bdf10f97c0999d1a166" category="paragraph">WORM機能は、お客様所有のライセンスを使用（BYOL）およびマーケットプレイスのサブスクリプションと組み合わせて使用できます。追加コストはかかりません。NetAppの営業担当者に連絡して、現在のライセンスにWORMを追加してください。</block>
+  <block id="860927af902beb1428465c4ff2b73981" category="list-text">作業環境の作成時にWORMストレージを無効にすると、BlueXP 、ONTAP System Manager、またはONTAP CLIで作成するすべてのボリュームでWORMが無効になります。</block>
+  <block id="584bce636e6a152cb14b10a9d95cc134" category="paragraph">BlueXP  でCloud Volumes ONTAP作業環境を作成するときに、WORMストレージを有効にすることができます。作成時にWORMが有効になっていない場合は、作業環境でWORMを有効にすることもできます。一度有効にすると、WORMを無効にすることはできません。</block>
+  <block id="1cfbcfa88923d0df6b5764e50ce3a549" category="list-text">WORMはONTAP 9 10.1以降でサポートされています。</block>
+  <block id="1b52e286a71c7852e84e0a121bc9874b" category="list-text">バックアップを含むWORMは、ONTAP 9 .11.1以降でサポートされます。</block>
+  <block id="f3b94705a03d2506d182cf13e262ad27" category="list-text">[Canvas]ページで、WORMを有効にする作業環境の名前をダブルクリックします。</block>
+  <block id="e2ba39c84c604d7eb0a5b7184cab7d68" category="list-text">[概要]タブで、[機能]パネルをクリックし、* WORM *の横にある鉛筆アイコンをクリックします。</block>
+  <block id="b474fb933ed760adc08677bc4bc42339" category="paragraph">システムでWORMがすでに有効になっている場合、鉛筆のアイコンは無効になります。</block>
+  <block id="fe19c26d9707943e3d7c9c5da6083944" category="list-text">[WORM *]ページで、クラスタのコンプライアンスクロックの保持期間を設定します。</block>
+  <block id="78e3f451c302e6f4fc3497680e508ed4" category="inline-link">ONTAPのドキュメント：コンプライアンスクロックの初期化</block>
+  <block id="40a4c252d21fe44c5babb5cd38a59474" category="paragraph">詳細については、を参照してください<block ref="e2235bff328f7d7d636e45c1db9cf9c0" category="inline-link-rx"></block>。</block>
+  <block id="0488bab91fb4582b53a14eb8fc2a032b" category="paragraph">機能パネルで* WORM *のステータスを確認できます。WORMを有効にすると、SnapLockライセンスが自動的にクラスタにインストールされます。SnapLockライセンスはONTAP System Managerで確認できます。</block>
+  <block id="b0af18cd69843e047afd09d32ac1cd7f" category="paragraph">手順については、を参照してください<block ref="03bc56e40fb58df28e53112c02ca2ae1" category="inline-link-rx"></block>。</block>
+  <block id="560c2ebf5fdf3cdbb830bad54eafda28" category="list-text">NetApp Volume Encryption（お客様所有のライセンスを使用（BYOL）または登録済みの従量課金制（PAYGO）システムのみ）</block>
+  <block id="7f5d518134ff332807df54a0d0660a08" category="list-text">*選択したVNetのみ*：インバウンドトラフィックのソースは、Cloud Volumes ONTAPシステムのVNetのサブネット範囲と、コネクタが配置されているVNetのサブネット範囲です。これが推奨されるオプションです。</block>
+  <block id="cd8b82367babbe39683e8fb9f0c22ed5" category="list-text">*すべてのVNet *：着信トラフィックの送信元は、0.0.0.0/0 IP範囲です。</block>
+  <block id="30b4fbeeeca063d0518f937681d54cb1" category="list-text">*無効*：このオプションは、ストレージアカウントへのパブリックネットワークアクセスを制限し、Cloud Volumes ONTAPシステムのデータ階層化を無効にします。セキュリティ規制やポリシーにより、プライベートIPアドレスが同じVNet内であっても公開されないようにする場合は、このオプションをお勧めします。</block>
+  <block id="57c6d237e15f528fad8e3f65f9a16398" category="paragraph">ノードベースの従量課金制（PAYGO）ライセンスを使用している場合は、*[ライセンスタイプ]*の横にある鉛筆のアイコンをクリックして、別のライセンスとVMタイプを選択できます。</block>
+  <block id="61f61b36ca3ee8ac47bd8319d6a6da9e" category="paragraph">ノードベースの従量課金制（PAYGO）ライセンスを使用している場合は、*[ライセンスタイプ]*の横にある鉛筆のアイコンをクリックして、別のライセンスとインスタンスタイプを選択することもできます。</block>
+  <block id="a6ecef7da6963fbad59a3086a2850e01" category="paragraph">ノードベースの従量課金制（PAYGO）ライセンスを使用している場合は、*[ライセンスタイプ]*の横にある鉛筆のアイコンをクリックして、別のライセンスとマシンタイプを選択することもできます。</block>
+  <block id="ad7ec214f507336a7e17d120e074d946" category="summary">ノードベースライセンスの販売終了（EOA）が完了したら、BlueXP  ライセンス変換ツールを使用して容量ベースのライセンスに移行する必要があります。</block>
+  <block id="ede3b64e47be4458ec3b083a508317d8" category="paragraph">年間契約または長期契約の場合は、NetApp EOA日（2024年11月11日）またはライセンスの有効期限前にNetApp担当者に連絡して、移行の前提条件が満たされていることを確認することを推奨します。Cloud Volumes ONTAPノードの長期契約を結んでおらず、オンデマンドの従量課金制（PAYGO）サブスクリプションに対してシステムを運用している場合は、2024年12月31日のサポート終了（EOS）までに変換を計画することが重要です。どちらの場合も、BlueXP  ライセンス変換ツールを使用してシームレスに移行する前に、システムが要件を満たしていることを確認する必要があります。</block>
+  <block id="4bedf07f0fb0e4e91062f6c20aefb983" category="paragraph">EOAとEOSの詳細については、を参照してください<block ref="7f9a8649ca2d86db235ba56502d14f92" category="inline-link-macro-rx"></block>。</block>
+  <block id="aef6fd472f817709940e55ee0509b06b" category="list-text">ライセンス変換ツールを使用すると、ノードベースのライセンスモデルから容量ベースのライセンスモデルに移行できるため、データを移行したり、追加のクラウドリソースをプロビジョニングしたりする必要がありません。</block>
+  <block id="1b740ae810dbba9c533dc649a7e00e1a" category="list-text">この処理は無停止で実行され、サービスの停止やアプリケーションのダウンタイムは発生しません。</block>
+  <block id="ae7204194871107f02073f12fcf8eef4" category="list-text">Cloud Volumes ONTAPシステムのアカウントデータとアプリケーションデータはそのまま維持されます。</block>
+  <block id="0caba03d6443607a5e6317db3c48768b" category="list-text">基盤となるクラウドリソースは、変換後も影響を受けません。</block>
+  <block id="c71b87b7ddb6142065c0158af5ec7d67" category="list-text">ライセンス変換ツールは、シングルノード、単一アベイラビリティゾーン（AZ）における高可用性（HA）、複数のAZにおけるHA、お客様所有のライセンスを使用（BYOL）、PAYGOなど、すべての導入タイプをサポートします。</block>
+  <block id="98017309484ea1c630aac29d1d5cde75" category="list-text">このツールでは、すべてのノードベースライセンスがソースとしてサポートされ、すべての容量ベースライセンスがデスティネーションとしてサポートされます。たとえば、PAYGO Standardノードベースライセンスをお持ちの場合は、そのライセンスをBYOL容量ベースライセンスに変換できます。</block>
+  <block id="d83716c2cd131d390d1534102b05cd41" category="list-text">この変換は、AWS、Azure、Google Cloudのすべてのクラウドプロバイダでサポートされています。</block>
+  <block id="17b44aa5dd5a227e033b4a869774c160" category="list-text">変換後、ノードベースライセンスのシリアル番号が容量ベースの形式に置き換えられます。これは変換の一環として行われ、NetAppサポートサイト（NSS）のアカウントに反映されます。</block>
+  <block id="57badbd9aeb6e5152434b70bdd22ed2e" category="list-text">容量ベースモデルに移行した場合、データは引き続きノードベースのライセンスと同じ場所に保持されます。このアプローチは、データ配置の中断を保証するものではなく、移行全体を通じてデータ主権の原則を支持します。</block>
+  <block id="185df8fc7d6cba2b3dc4ddbb241610fe" category="list-title">始める前に</block>
+  <block id="c89523d65a6a7e4c3fbcb8cbfee5d6e5" category="list-text">顧客アクセス権または管理者アクセス権を持つNSSアカウントが必要です。</block>
+  <block id="6f20448e7fc594c65cbf039bc1158f6e" category="list-text">NSSアカウントがBlueXP  ユーザクレデンシャルで登録されている必要があります。</block>
+  <block id="fe48b2f64d3e692a977f98f771bb114c" category="list-text">作業環境は、顧客アクセス権または管理者アクセス権を持つNSSアカウントにリンクされている必要があります。</block>
+  <block id="2d7b42dafac67ae8d4acec7cdad288fb" category="list-text">有効な容量ベースライセンス（BYOLライセンスまたはマーケットプレイスのサブスクリプション）を用意しておく必要があります。</block>
+  <block id="f45e4501bcc29fe221f7780836d48c71" category="list-text">容量ベースのライセンスがBlueXP  アカウントで提供されている必要があります。このライセンスは、マーケットプレイスのサブスクリプション、またはBlueXP  デジタルウォレットのBYOL /プライベートオファーパッケージにすることができます。</block>
+  <block id="cbafe80857ccd6774c5a1e53cc912746" category="list-text">宛先パッケージを選択する前に、次の条件を理解してください。</block>
+  <block id="a906cad1e2bd71c3fd41efc1424f282e" category="list-text">アカウントに容量ベースのBYOLライセンスがある場合は、アカウントのBYOL容量ベースライセンスと一致するデスティネーションパッケージを選択する必要があります。</block>
+  <block id="6905efe5cff8820565676d6d40bbc083" category="list-text">がデスティネーションパッケージとして選択されている場合、<block ref="9e8b160226c9fe22a910c782ce5076e2" prefix=" " category="inline-code"></block>アカウントにはプロフェッショナルパッケージを含むBYOLライセンスが必要です。</block>
+  <block id="3074c4231dd896cfd0c588f36eae9ca4" category="list-text">がデスティネーションパッケージとして選択されている場合、<block ref="4d55f77f062bf48891bd0f749c36a36d" prefix=" " category="inline-code"></block>アカウントにはEssentialsパッケージのBYOLライセンスが必要です。</block>
+  <block id="a69a8ea18d8053f3a86291dc9d373615" category="list-text">がデスティネーションパッケージとして選択されている場合<block ref="6e539d2ea7d82ed0e31c450e64ff8c04" prefix=" " category="inline-code"></block>、アカウントには最適化パッケージのBYOLライセンスが必要です。</block>
+  <block id="bd37a5a3b2ad6bc210a3a7eaa1a44b64" category="list-text">デスティネーションパッケージがアカウントのBYOLライセンスと一致しない場合は、容量ベースライセンスに選択したパッケージが含まれていない可能性があります。この場合、マーケットプレイスのサブスクリプションを通じて課金されます。</block>
+  <block id="29de10157e38deb8ae7d4bcf417d7bca" category="list-text">容量ベースのBYOLライセンスではなく、マーケットプレイスのサブスクリプションのみの場合、選択したパッケージが容量ベースのマーケットプレイスのサブスクリプションに含まれることを確認する必要があります。</block>
+  <block id="2ff79b1cb99d3f2339a1ba9f8784b183" category="list-text">既存の容量ベースライセンスに十分な容量がない場合や、追加の容量使用量に対して課金するMarketplaceのサブスクリプションをお持ちの場合は、Marketplaceのサブスクリプションを通じて追加の容量に対して課金されます。</block>
+  <block id="7775102e8cdaa249c6e16d91543c875f" category="list-text">既存の容量ベースライセンスに十分な容量がなく、使用容量の追加料金を請求するマーケットプレイスのサブスクリプションがない場合、変換は実行されません。容量の追加料金を請求するか、現在のライセンスに容量を拡張するには、Marketplaceのサブスクリプションを追加する必要があります。</block>
+  <block id="400c55906a66dfb0a544082037323a6b" category="list-text">移行先のパッケージがアカウントのBYOLライセンスの可用性と一致しない場合や、既存の容量ベースライセンスに十分な容量がない場合は、Marketplaceのサブスクリプションを通じて課金されます。</block>
+  <block id="0e5c1be9c6aca6c1aaf08bf9ed203110" category="admonition">これらの要件のいずれかが満たされていない場合、ライセンス変換は行われません。場合によっては、ライセンスが変換されても使用できないことがあります。情報アイコンをクリックして問題を特定し、対処方法を実行します。</block>
+  <block id="d196b764b4e42a2a99aacead075f4b58" category="list-text">[Canvas]ページで、ライセンスタイプを変更する作業環境の名前をダブルクリックします。</block>
+  <block id="ccf71cd219d20a210964977da3ff250e" category="list-text">[Overview]タブで、[Features]パネルをクリックします。</block>
+  <block id="498a7301ce7f11c6c87ae04fa3f52b88" category="list-text">*充電方法*の横にある鉛筆アイコンを確認します。システムの充電方法がの場合は<block ref="e71f388bff446d0d83b053510eafc3ce" prefix=" " category="inline-code"></block>、容量別充電に変換できます。</block>
+  <block id="1c72b9c278e1ac9dd3d0f1e9d9732d89" category="admonition">Cloud Volumes ONTAPシステムがすでに容量単位で課金されている場合、またはいずれかの要件が満たされていない場合、アイコンは無効になります。</block>
+  <block id="b168f6cc04ffcf2dda599d1ba73d94c2" category="list-text">[Convert Node-based licenses to Capacity-based]*画面で、作業環境名とソースライセンスの詳細を確認します。</block>
+  <block id="cd2d0eea05654ca89f4d05184b605a3f" category="list-text">既存のライセンスを変換するデスティネーションパッケージを選択してください：</block>
+  <block id="ad55f0eebc5068e31eecc1bc08fae252" category="list-text">エッセンシャル。デフォルト値はです<block ref="4d55f77f062bf48891bd0f749c36a36d" prefix=" " category="inline-code"></block>。</block>
+  <block id="954b5977f70cfdad6145a9a16edd2fed" category="list-text">最適化（Azure向け）</block>
+  <block id="6a9b652c3f19ffc2d3128d21e07dc641" category="list-text">最適化（Google Cloud向け）</block>
+  <block id="0913524919eac0f6e05917a28ac0868a" category="list-text">BYOLライセンスをお持ちの場合は、チェックボックスをオンにして、変換後にBlueXP  デジタルウォレットからノードベースのライセンスを削除できます。変換が完了していない場合は、このチェックボックスをオンにしても、ライセンスはデジタルウォレットから削除されません。Marketplaceサブスクリプションをお持ちの場合、このオプションは利用できません。</block>
+  <block id="a42381ccb4c9b07d94af68aac09b97db" category="list-text">チェックボックスを選択して、変更の影響を理解したことを確認し、*[続行]*をクリックします。</block>
+  <block id="54173685d0a19dc27fc7d74a0b1348f0" category="paragraph">新しいライセンスシリアル番号を表示し、BlueXP  デジタルウォレットの変更を確認します。</block>
+  <block id="3c3004e9c8348137de8afab1e2968653" category="cell">この Cloud Volumes ONTAP システムで使用する AWS クレデンシャルと Marketplace サブスクリプションを選択します。Add Subscription * をクリックして、選択したクレデンシャルを新しい AWS Marketplace サブスクリプションに関連付けます。サブスクリプションは、年間契約の場合と、 Cloud Volumes ONTAP の料金を 1 時間ごとに支払う場合があります。NetAppからライセンスを直接購入した場合（お客様所有のライセンスを使用（BYOL））、AWSサブスクリプションは必要ありません。<block ref="2ae6dc7cea05e6172a8f0e381f70d632" category="inline-link-rx"></block>です。</block>
+  <block id="4aecb2a001e9ed1c57930cdd68e5a8e2" category="list-text">VNet内でストレージアカウントへのパブリックアクセスが無効になっている場合、Cloud Volumes ONTAPシステムでデータ階層化を有効にすることはできません。詳細については、を参照して <block ref="cf7250ba2a63a15ad3b094d85cccecb2" category="inline-link-macro-rx"></block>ください。</block>
+  <block id="ffee78f944ad8168ad943b188f69ad15" category="list-text">パッケージの概要を確認して、消費容量、事前コミット済み容量の合計、従量課金制（PAYGO）容量の合計を確認します。</block>
+  <block id="84d1a8b78e647d328dc1794599f688b4" category="list-text">_Total precommitted capacity_は、NetAppから購入したライセンス容量（お客様所有のライセンスを使用（BYOL）またはマーケットプレイス契約）の合計です。</block>
+  <block id="0d4e36aae457a1001b3373de2fd510f1" category="list-text">NetAppから購入したお客様所有のライセンスを使用（BYOL）</block>
+  <block id="83c2a6ded9467f8048f9a53cabd2e783" category="paragraph-title">関連トピック</block>
+  <block id="cb90b48918ed9cd8ea355c04c171177b" category="paragraph">リンク：<block ref="7f9a8649ca2d86db235ba56502d14f92" category="inline-link-macro-rx"></block> <block ref="431f655d5a9ac309b561fc62a4c619ea" category="inline-link-macro-rx"></block></block>
+  <block id="829695792a0f96cf880394f0cc741cb2" category="paragraph">ローカルゾーンの選択はオプションです。Cloud Volumes ONTAPは、シンガポールを含む一部のAWSローカルゾーンでサポートされています。AWSのCloud Volumes ONTAPでは、単一のアベイラビリティゾーンでのハイアベイラビリティ（HA）モードのみがサポートされます。シングルノード環境はサポートされていません。</block>
+  <block id="d5d3ecd60f97415d2a0cea0a8c702e45" category="admonition">Cloud Volumes ONTAPでは、AWSローカルゾーンでのデータ階層化とクラウド階層化はサポートされていません。また、Cloud Volumes ONTAPに対応していないインスタンスを含むローカルゾーンはサポートされません。その一例がマイアミです。マイアミにはサポートされておらず、認定されていないGen6インスタンスしかないため、ローカルゾーンとしては使用できません。</block>
+  <block id="d7a299bbe372f280000198df797460f2" category="admonition">接続がないため、AWSローカルゾーンでAWS S3へのデータ階層化を使用できません。</block>
+  <block id="f2f8375eb7b616d452f38372555c4aa8" category="paragraph">ARP機能は、お客様所有のライセンスを使用（BYOL）およびマーケットプレイスのサブスクリプションと組み合わせて使用できます。追加料金はかかりません。</block>
+  <block id="3726a55835255c4aca3d6a6c1c330738" category="paragraph">ARP対応ボリュームの状態は「ラーニングモード」または「アクティブ」になります。</block>
+  <block id="666b3c5243cbd568acfe4b3a0706b9ea" category="paragraph">NetAppのサポートはCloud Volumes ONTAP従量課金制（PAYGO）システムに含まれていますが、最初にシステムをNetAppに登録してサポートをアクティブ化する必要があります。</block>
+  <block id="a106b22f73b105919cf50f17420fef76" category="paragraph">Cloud Volumes ONTAP 用のすべての Azure ストレージアカウントは、お客様が管理するキーを使用して暗号化されます。作成時にストレージアカウントを暗号化する場合は、Cloud Volumes ONTAP 作成要求でリソースのIDを作成して指定する必要があります。これは、すべてのタイプの導入に当てはまります。提供しない場合でもストレージアカウントは暗号化されますが、BlueXPはまずMicrosoftが管理するキー暗号化を使用してストレージアカウントを作成し、次にストレージアカウントを更新してお客様が管理するキーを使用するようにします。</block>
+  <block id="07e88f0b5e8f468010f124459e470871" category="list-text">NetAppから購入したライセンス（お客様所有のライセンスを使用（BYOL））</block>
+  <block id="c1585e9c456b4e2c6743fe20780c5bff" category="paragraph">このページに記載されているいずれかの方法でソフトウェアをアップグレードするには、Cloud Volumes ONTAPがNetAppサポートに登録されている必要があります。これは、従量課金制（PAYGO）とお客様所有のライセンスの使用（BYOL）の両方に適用されます。<block ref="f7029dacbf10b8aa72bca74845a64729" category="inline-link-macro-rx"></block>BYOLシステムはデフォルトで登録されていますが、必要になります。</block>
+  <block id="ecbeaffbfe15c72e3bf702b0d0bf9694" category="section-title">2024年11月11日</block>
+  <block id="4eaed4ff800bc18688fff95b8dee6d1e" category="sidebar">ノードベースライセンスの変換</block>
+  <block id="b8c05ba27f3f7ff64dca585f43789e57" category="sidebar">Cloud Volumes ONTAPでのライセンス</block>
 </blocks>

@@ -330,13 +330,7 @@ AWSローカルゾーンを使用する前に、ローカルゾーンを有効�
 | ユーザ名とパスワード | Cloud Volumes ONTAP クラスタ管理者アカウントのクレデンシャルです。これらのクレデンシャルを使用して、ONTAPシステムマネージャまたはONTAP CLIからCloud Volumes ONTAPに接続できます。default_admin_user の名前をそのまま使用するか ' カスタム・ユーザー名に変更します 
 
 
-| 資格情報を編集します | この Cloud Volumes ONTAP システムで使用する AWS クレデンシャルと Marketplace サブスクリプションを選択します。
-
-Add Subscription * をクリックして、選択したクレデンシャルを新しい AWS Marketplace サブスクリプションに関連付けます。サブスクリプションは、年間契約の場合と、 Cloud Volumes ONTAP の料金を 1 時間ごとに支払う場合があります。
-
-NetApp （ BYOL ）からライセンスを直接購入した場合、 AWS サブスクリプションは必要ありません。
-
-https://docs.netapp.com/us-en/bluexp-setup-admin/task-adding-aws-accounts.html["BlueXPにAWSクレデンシャルを追加する方法について説明します"^]。 
+| 資格情報を編集します | この Cloud Volumes ONTAP システムで使用する AWS クレデンシャルと Marketplace サブスクリプションを選択します。Add Subscription * をクリックして、選択したクレデンシャルを新しい AWS Marketplace サブスクリプションに関連付けます。サブスクリプションは、年間契約の場合と、 Cloud Volumes ONTAP の料金を 1 時間ごとに支払う場合があります。NetAppからライセンスを直接購入した場合（お客様所有のライセンスを使用（BYOL））、AWSサブスクリプションは必要ありません。https://docs.netapp.com/us-en/bluexp-setup-admin/task-adding-aws-accounts.html["BlueXPにAWSクレデンシャルを追加する方法について説明します"^]です。 
 |===
 +
 次のビデオでは、従量課金制の Marketplace サブスクリプションを AWS クレデンシャルに関連付ける方法を紹介します。
