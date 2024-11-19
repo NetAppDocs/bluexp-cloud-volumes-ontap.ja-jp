@@ -40,7 +40,7 @@ https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-licensing.html#
 
 NetAppは、契約上の義務および運用上のニーズに準拠して、次の固有のライセンス要件を認識し、このような状況でも引き続きノードベースのライセンスをサポートします。
 
-* USPSのお客様
+* 米国公共機関のお客様
 * プライベートモードでの導入
 * AWSでのCloud Volumes ONTAPの中国リージョン導入
 * ノード単位で有効期限が切れていない場合は、お客様所有のライセンスを使用（BYOLライセンス）

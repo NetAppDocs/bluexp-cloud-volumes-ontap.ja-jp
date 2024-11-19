@@ -67,23 +67,28 @@ South Central US          southcentralus       (US) South Central US
 ----
 
 
-. 次の表から、対応するVM導入タイプのSKU名を確認します。
+. 次の表から、対応するCloud Volumes ONTAPバージョンとVM導入タイプのSKU名を確認してください。
 +
 SKU名は、マーケットプレイスイメージのURNを設定するときに「skuName」変数の値として使用されます。
 
 +
-たとえば、シングルノード環境では「ontap_cloud_byol」SKU名を使用する必要があります。
+たとえば、Cloud Volumes ONTAP 9.15.0を使用したシングルノード環境では、SKU名としてを使用する必要があります `ontap_cloud_byol`。
 
 +
-[cols="1,1"]
+[cols="1,1,1"]
 |===
-| VM導入タイプ | SKU名 
 
 
-| シングルノード | ONTAP_CLOUD_BYOL 
+| * Cloud Volumes ONTAPバージョン* | * VM導入タイプ* | * SKU名* 
 
 
-| 高可用性 | ONTAP_CLOUD_BYOL_HA 
+| 9.15.1および9.16.0 | BlueXP  を使用したすべての導入 | ONTAPクラウド 
+
+
+| 9.15.0 | シングルノード | ONTAP_CLOUD_BYOL 
+
+
+| 9.15.0 | 高可用性 | ONTAP_CLOUD_BYOL_HA 
 |===
 . ONTAPのバージョンとAzure Marketplaceのイメージをマッピングしたら、Azure Cloud ShellまたはAzure CLIを使用してAzure MarketplaceからVHDファイルをエクスポートします。
 
@@ -94,7 +99,7 @@ SKU名は、マーケットプレイスイメージのURNを設定するとき�
 
 . Azure Cloud Shellから、MarketplaceイメージをVHD（image2、例：9150.01000024.05090105.vhd）にエクスポートし、ローカルマシン（Linuxマシン、Windows PCなど）にダウンロードします。
 +
-.クリックして表示
+.手順を確認する
 [%collapsible]
 ====
 [source]
@@ -150,7 +155,7 @@ PS /home/user1> Remove-AzDisk -ResourceGroupName $diskRG -DiskName $diskName
 
 . ローカルのLinuxマシンからAzure CLIを使用してマーケットプレイスイメージをVHDにエクスポートします。
 +
-.クリックして表示
+.手順を確認する
 [%collapsible]
 ====
 [source]
