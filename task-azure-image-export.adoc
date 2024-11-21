@@ -82,7 +82,7 @@ SKU名は、マーケットプレイスイメージのURNを設定するとき�
 | * Cloud Volumes ONTAPバージョン* | * VM導入タイプ* | * SKU名* 
 
 
-| 9.15.1および9.16.0 | BlueXP  を使用したすべての導入 | ONTAPクラウド 
+| 9.15.1 | BlueXP  を使用したすべての導入 | ONTAPクラウド 
 
 
 | 9.15.0 | シングルノード | ONTAP_CLOUD_BYOL 

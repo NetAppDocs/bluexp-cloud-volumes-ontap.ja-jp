@@ -66,7 +66,7 @@ SVM 管理 LIF を作成する場合は、上記の手順を繰り返して追�
 
 === HA ペア
 
-HA ペアに IP アドレスを割り当てる方法は、使用しているストレージプロトコルによって異なります。
+ハイアベイラビリティ（HA）ペアの場合は、クラスタ内の各Storage VM（SVM）にアクセスし、各SVMのnic0で対応するIPを作成する必要があります。HA ペアに IP アドレスを割り当てる方法は、使用しているストレージプロトコルによって異なります。HAモードでは、フェイルオーバーと冗長性をサポートするようにIPアドレスが正しく設定されていることを確認する必要があります。これは、ストレージシステムの高可用性と信頼性を維持するために不可欠です。
 
 [role="tabbed-block"]
 ====
@@ -78,7 +78,7 @@ Storage VM を作成して LIF を割り当てる前に、 Azure で iSCSI IP �
 
 * ノード 1 からの iSCSI データ LIF アクセス用に IP アドレス × 1
 * ノード 2 からの iSCSI データ LIF アクセス用に 1 つの IP アドレス
-* Storage VM （ SVM ）管理 LIF のオプションの IP アドレスです
+* SVM管理LIFのオプションのIPアドレス
 +
 この管理 LIF は、 SnapCenter などの管理ツールへの接続を提供します。
 
@@ -111,7 +111,7 @@ NFS に使用する IP アドレスはロードバランサに割り当てられ
 * ノード 2 からの NAS データ LIF アクセス用に 1 つの IP アドレス
 * Storage VM （ SVM ）管理 LIF のオプションの IP アドレスです
 +
-iSCSI LIFはDNS通信に必要です。iSCSI LIF はフェイルオーバー時に移行されないため、この目的に使用されます。
+iSCSI LIFは、iSCSIプロトコルを使用しない場合でもDNS通信に必要です。iSCSI LIF はフェイルオーバー時に移行されないため、この目的に使用されます。
 
 +
 この管理 LIF は、 SnapCenter などの管理ツールへの接続を提供します。
@@ -434,7 +434,7 @@ vserver create -vserver <svm-name> -subtype default -rootvolume <root-volume-nam
 ----
 network route create -vserver <svm-name> -destination 0.0.0.0/0 -gateway <ip-of-gateway-server>
 ----
-. データ LIF を作成します。
+. データLIFを作成この手順では、で割り当てたIPをデータLIFとして使用しlink:task-managing-svms-azure.html#ha-pair["前の手順"]ます。
 +
 .. 次のコマンドを使用して、ノード 1 に iSCSI LIF を作成します。
 +
@@ -519,7 +519,7 @@ vserver create -vserver <svm-name> -subtype default -rootvolume <root-volume-nam
 ----
 network route create -vserver <svm-name> -destination 0.0.0.0/0 -gateway <ip-of-gateway-server>
 ----
-. データ LIF を作成します。
+. データLIFを作成この手順では、で割り当てたIPをデータLIFとして使用しlink:task-managing-svms-azure.html#ha-pair["前の手順"]ます。
 +
 .. 次のコマンドを使用して、ノード 1 に NAS LIF を作成します。
 +
@@ -535,7 +535,7 @@ network interface create -vserver <svm-name> -lif <lif-name> -service-policy def
 ----
 
 
-. DNS通信を提供するiSCSI LIFを作成します。
+. iSCSI LIFを作成してDNS通信を提供します。iSCSI LIFは、iSCSIプロトコルを使用しない場合でもDNS通信に必要です。
 +
 .. 次のコマンドを使用して、ノード 1 に iSCSI LIF を作成します。
 +
@@ -629,7 +629,7 @@ vserver create -vserver <svm-name> -subtype default -rootvolume <root-volume-nam
 ----
 network route create -vserver <svm-name> -destination 0.0.0.0/0 -gateway <ip-of-gateway-server>
 ----
-. NAS データ LIF を作成します。
+. NASデータLIFを作成この手順では、で割り当てたIPをデータLIFとして使用しlink:task-managing-svms-azure.html#ha-pair["前の手順"]ます。
 +
 .. 次のコマンドを使用して、ノード 1 に NAS LIF を作成します。
 +
@@ -645,7 +645,7 @@ network interface create -vserver <svm-name> -lif <lif-name> -service-policy def
 ----
 
 
-. DNS通信を提供するiSCSI LIFを作成します。
+. iSCSI LIFを作成してDNS通信を提供します。iSCSI LIFは、iSCSIプロトコルを使用しない場合でもDNS通信に必要です。
 +
 .. 次のコマンドを使用して、ノード 1 に iSCSI LIF を作成します。
 +
