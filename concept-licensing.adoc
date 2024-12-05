@@ -100,7 +100,7 @@ Cloud Volumes ONTAP のすべての機能をネットアップから無償で提
 * ネットアップのクラウドデータサービスを追加コストで利用できます
 
 
-詳細については、を参照してください link:licensing-charging.html["ヨウリヨウヘエスライセンスノシユンヒ"]。
+詳細については、を参照してください link:concept-licensing-charging.html["容量ベースライセンスの詳細"]。
 
 
 

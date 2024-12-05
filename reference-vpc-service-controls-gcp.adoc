@@ -4,7 +4,7 @@ permalink: reference-vpc-service-controls-gcp.html
 keywords: vpc, service controls, vpc-sc, google, psc, private service connect 
 summary: Google環境をVPC Service Controlsでロックダウンする場合は、BlueXPとCloud Volumes ONTAP がどのようにGoogle APIを操作しているか、またサービスパラメータを設定してBlueXPとCloud Volumes ONTAP を展開する方法について理解しておく必要があります。 
 ---
-= GCP での VPC サービスコントロールの計画
+= Google CloudでのVPCサービス制御の計画
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
