@@ -20,6 +20,18 @@ BlueXPのCloud Volumes ONTAP Managementの新機能をご紹介します。
 
 
 
+== 2024年12月9日
+
+
+
+=== ベストプラクティスに準拠するようにAzure向けに更新されたサポート対象VMのリスト
+
+AzureにCloud Volumes ONTAPの新しいインスタンスを導入する場合、DS_v2およびES_v3マシンファミリーはBlueXP  で選択できなくなりました。これらのファミリーは、既存の古いシステムでのみ保持およびサポートされます。Cloud Volumes ONTAPの新規導入は、Azureでサポートされるのは9.12.1リリース以降のみです。ES_v4またはCloud Volumes ONTAP 9.12.1以降と互換性のある他のシリーズに切り替えることをお勧めします。ただし、DS_v2およびES_v3シリーズマシンは、APIを使用した新しい展開で使用できます。
+
+https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-configs-azure.html["Azure でサポートされる構成"^]
+
+
+
 == 2024年11月11日
 
 
@@ -78,7 +90,7 @@ https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-worm.html#enabl
 
 
 
-=== N1シリーズマシンはBlueXP  で選択できません
+=== ベストプラクティスに準拠するようにGoogle Cloud向けに更新されたサポート対象VMのリスト
 
 Google CloudにCloud Volumes ONTAPの新しいインスタンスを導入する際に、BlueXP  でn1シリーズマシンを選択できなくなりました。n1シリーズのマシンは、既存の古いシステムでのみ保持およびサポートされます。Cloud Volumes ONTAPの新規導入は、Google Cloud 9.8リリース以降でのみサポートされます。Cloud Volumes ONTAP 9.8以降と互換性のあるn2シリーズマシンタイプに切り替えることをお勧めします。ただし、n1シリーズマシンは、APIを介して実行される新しい導入に使用できます。
 
@@ -1410,7 +1422,7 @@ https://docs.netapp.com/us-en/cloud-volumes-ontap-9100-relnotes["このリリー
 
 === Azure のお客様が管理する暗号化キー
 
-データは、を使用して Azure の Cloud Volumes ONTAP で自動的に暗号化されます https://azure.microsoft.com/en-us/documentation/articles/storage-service-encryption/["Azure Storage Service Encryption の略"^] Microsoft が管理するキーを使用する場合：ただし、次の手順を実行する代わりに、お客様が管理する独自の暗号化キーを使用できるようになりました。
+データは、Microsoftが管理するキーを使用して、AzureのCloud Volumes ONTAPで自動的に暗号化されます https://learn.microsoft.com/en-us/azure/security/fundamentals/encryption-overview["Azure Storage Service Encryption の略"^]。ただし、次の手順を実行する代わりに、お客様が管理する独自の暗号化キーを使用できるようになりました。
 
 . Azure で、キーヴォールトを作成し、そのヴォールトでキーを生成します。
 . BlueXPから'APIを使用して'キーを使用するCloud Volumes ONTAP 作業環境を作成します

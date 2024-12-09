@@ -1,10 +1,10 @@
-= N1シリーズマシンはBlueXP  で選択できません
+= ベストプラクティスに準拠するようにGoogle Cloud向けに更新されたサポート対象VMのリスト
 :allow-uri-read: 
 
 
 
 
-=== N1シリーズマシンはBlueXP  で選択できません
+=== ベストプラクティスに準拠するようにGoogle Cloud向けに更新されたサポート対象VMのリスト
 
 Google CloudにCloud Volumes ONTAPの新しいインスタンスを導入する際に、BlueXP  でn1シリーズマシンを選択できなくなりました。n1シリーズのマシンは、既存の古いシステムでのみ保持およびサポートされます。Cloud Volumes ONTAPの新規導入は、Google Cloud 9.8リリース以降でのみサポートされます。Cloud Volumes ONTAP 9.8以降と互換性のあるn2シリーズマシンタイプに切り替えることをお勧めします。ただし、n1シリーズマシンは、APIを介して実行される新しい導入に使用できます。
 

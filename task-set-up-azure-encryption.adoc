@@ -14,13 +14,13 @@ summary: Azure の Cloud Volumes ONTAP では、 Microsoft 管理キーを使用
 
 
 [role="lead"]
-データは、を使用して Azure の Cloud Volumes ONTAP で自動的に暗号化されます https://azure.microsoft.com/en-us/documentation/articles/storage-service-encryption/["Azure Storage Service Encryption の略"] Microsoft が管理するキーを使用する場合：ただし、このページの手順に従って独自の暗号化キーを使用することもできます。
+Azure の Cloud Volumes ONTAP では、 Microsoft 管理キーを使用して Azure Storage Service Encryption でデータが自動的に暗号化されます。ただし、このページの手順に従って独自の暗号化キーを使用することもできます。
 
 
 
 == データ暗号化の概要
 
-Cloud Volumes ONTAP データは、を使用して Azure で自動的に暗号化されます https://azure.microsoft.com/en-us/documentation/articles/storage-service-encryption/["Azure Storage Service Encryption の略"^]。デフォルトの実装では、 Microsoft が管理するキーが使用されます。セットアップは必要ありません。
+Cloud Volumes ONTAPデータは、を使用してAzureで自動的に暗号化されます https://learn.microsoft.com/en-us/azure/security/fundamentals/encryption-overview["Azure Storage Service Encryption の略"^]。デフォルトの実装では、 Microsoft が管理するキーが使用されます。セットアップは必要ありません。
 
 Cloud Volumes ONTAP で顧客管理キーを使用する場合は、次の手順を実行する必要があります。
 

@@ -93,7 +93,7 @@ ifdef::azure[]
 
 === Azure Storage Service Encryption の略
 
-データは、を使用して Azure の Cloud Volumes ONTAP で自動的に暗号化されます https://azure.microsoft.com/en-us/documentation/articles/storage-service-encryption/["Azure Storage Service Encryption の略"^] Microsoft が管理するキーを使用する場合：
+データは、Microsoftが管理するキーを使用して、AzureのCloud Volumes ONTAPで自動的に暗号化されます https://learn.microsoft.com/en-us/azure/security/fundamentals/encryption-overview["Azure Storage Service Encryption の略"^]。
 
 必要に応じて、独自の暗号化キーを使用できます。 link:task-set-up-azure-encryption.html["Azure でお客様が管理するキーを使用するように Cloud Volumes ONTAP を設定する方法について説明します"]。
 
