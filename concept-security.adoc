@@ -60,13 +60,7 @@ Cloud Volumes ONTAPはをサポートし https://www.netapp.com/pdf.html?item=/m
 
 NVE と NAE はどちらも外部キー管理機能でサポートされています。
 
-ifdef::azure[]
-
-endif::azure[]
-
-ifdef::gcp[]
-
-endif::gcp[]
+ifdef：：azure[] endif：：azure[] ifdef：：gcp[] endif：：gcp[]
 
 新しいアグリゲートでは、外部キー管理ツールの設定後に NetApp Aggregate Encryption （ NAE ）がデフォルトで有効になります。NAE アグリゲートに含まれない新しいボリュームでは、 NetApp Volume Encryption （ NVE ）がデフォルトで有効になります（たとえば、外部キー管理ツールを設定する前に作成された既存のアグリゲートがある場合）。
 

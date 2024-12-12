@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: task-set-up-licensing-google.html 
-keywords: freemium, professional, essentials, licensing, licenses, cloud volumes ontap charging, cloud volumes ontap licenses, cloud volumes ontap licensing, cvo licenses, cvo licensing, byol, bring your own license, paygo, pay as you go, keystone flex, keystone, digital wallet 
+keywords: freemium, professional, essentials, licensing, licenses, cloud volumes ontap charging, cloud volumes ontap licenses, cloud volumes ontap licensing, cvo licenses, cvo licensing, byol, bring your own license, optimized, paygo, pay as you go, keystone flex, keystone, digital wallet 
 summary: Cloud Volumes ONTAP で使用するライセンスオプションを決定したら、新しいシステムを導入する際にそのライセンスオプションを選択する前に、いくつかの手順を実行する必要があります。 
 ---
 = Google CloudでCloud Volumes ONTAP のライセンスを設定します
@@ -44,9 +44,9 @@ link:task-deploying-gcp.html["Google CloudでCloud Volumes ONTAP を起動する
 
 == 容量単位のライセンスです
 
-容量単位のライセンスでは、 TiB 単位の Cloud Volumes ONTAP に対して料金を支払うことができます。容量ベースのライセンスは、_パッケージ_：Essentialsパッケージまたはプロフェッショナルパッケージの形式で提供されます。
+容量単位のライセンスでは、 TiB 単位の Cloud Volumes ONTAP に対して料金を支払うことができます。容量ベースのライセンスは、a_package_：Essentials、Optimized、Professionalのいずれかのパッケージ形式で提供されます。
 
-Essentials パッケージと Professional パッケージには、次の消費モデルがあります。
+Essentials、Optimized、Professionalの各パッケージには、次の消費モデルが用意されています。
 
 * NetAppから購入したライセンス（お客様所有のライセンスを使用（BYOL））
 * Google Cloud Marketplaceから1時間単位の従量課金制（PAYGO）サブスクリプション

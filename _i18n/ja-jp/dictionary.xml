@@ -3110,7 +3110,6 @@
   <block id="6065260b6e2ca957f806162cf33800f6" category="paragraph">ビジネスニーズに応じて、プライベートリンク接続を無効にすることもできます。リンクを無効にすると、Cloud Volumes ONTAP はサービスエンドポイントを使用するように設定されます。</block>
   <block id="2a37f0bf23209f41128e5c28160ecd0b" category="paragraph">Azureリソースグループに2つ目のCloud Volumes ONTAP HAペアを導入しようとすると、接続の問題が発生します。</block>
   <block id="4350eea5911affd7e2c237dd5705777c" category="list-text">BlueXPでは、Cloud Volumes ONTAP を導入するとデータ提供用のStorage VMが1つ作成されます。追加の Storage VM をサポートする構成もあります。 <block ref="a7cc00a0b341c53959a0ff9bb9ec925b" category="inline-link-macro-rx"></block>。</block>
-  <block id="d3ba63f114f62f143d97434a92eb48a8" category="paragraph">BlueXP 3.9.5リリース以降では、最初のStorage VMで論理スペースのレポートが有効になります。スペースが論理的に報告されると、 ONTAP は、 Storage Efficiency 機能で削減されたすべての物理スペースが使用済みと報告するようにボリュームスペースを報告します。</block>
   <block id="0dbf08a19cabe7472c89a9c1e7157737" category="list-text">BlueXPでは、次のONTAP 機能ライセンスがCloud Volumes ONTAP に自動的にインストールされます。</block>
   <block id="11d111ac1cc9cf65f25ba47f1cd4b23b" category="paragraph">次の表に、BlueXPで設定されるボリューム属性とデフォルト値の違いを示します。</block>
   <block id="8e2921a1922b2a0ecfbeec5648e2a4ab" category="cell">BlueXPによって設定された値</block>
@@ -5184,7 +5183,6 @@ Mac OSでtailコマンドを完了します。</block>
   <block id="a868fdec3895d3124b3057eb37731062" category="paragraph">設定を選択し、管理者から AWS ネットワーク情報を取得して準備を完了しておく必要があります。詳細については、を参照してください <block ref="b2852d75c9a2b653b1ca3941854c33b3" category="inline-link-macro-rx"></block>。</block>
   <block id="11eabc4c2e02ada201e4f8ce94a56167" category="paragraph">詳細については、を参照してください <block ref="517e0808f26a9b41dd03b24bae4c07de" category="inline-link-macro-rx"></block>。</block>
   <block id="c95e55331ee9ea930a177638f6578513" category="cell">Active Directory DNS を使用して NTP サーバを設定するには、「 Active Directory ドメインを使用」を選択します。別のアドレスを使用して NTP サーバを設定する必要がある場合は、 API を使用してください。詳細については、を参照して<block ref="7665d9260dd9d6a287f2bbc0560d523f" category="inline-link-rx"></block> ください。NTP サーバは、 CIFS サーバを作成するときにのみ設定できます。CIFS サーバを作成したあとで設定することはできません。</block>
-  <block id="89a2456bdd5480899e2d6a3ee4ee019c" category="paragraph">詳細については、およびを参照して <block ref="24fc9da0f00ff5ec38c6b3fffe9cc77c" category="inline-link-macro-rx"></block> <block ref="1e62300500e1ad0802bb2b24113c7036" category="inline-link-macro-rx"></block>ください。</block>
   <block id="66962b0e026c08cab80e01e87da346a8" category="paragraph">導入モデルの概要については、を参照してください<block ref="ac890ff87988e1f4fe9ed78d7a128a29" category="inline-link-macro-rx"></block>。</block>
   <block id="f83835b81bb53fd1da3358b2d3599219" category="paragraph">IP アドレスは、その地域のすべての VPC の CIDR ブロックの外側にある必要があります。詳細については、を参照してください<block ref="e677af9e7ca6c446fefd39f21658da89" category="inline-link-macro-rx"></block>。</block>
   <block id="597ca2dc5fd01a4decfca37440543f47" category="paragraph">複数のルートテーブルがある場合は、正しいルートテーブルを選択することが非常に重要です。そうしないと、一部のクライアントが Cloud Volumes ONTAP HA ペアにアクセスできない場合があります。ルーティングテーブルの詳細については、を参照して<block ref="8ed06851f50fcdbded65cb78f986bfa5" category="inline-link-rx"></block>ください。</block>
@@ -5202,7 +5200,6 @@ Mac OSでtailコマンドを完了します。</block>
   <block id="840f8de5c9f54f772062c77429778e38" category="inline-link">Microsoft AzureのWebサイト：「リージョン別の利用可能な製品」</block>
   <block id="e4eaa3d391d7d55d8c20cbf06dc81915" category="list-text">複数のアベイラビリティゾーンの場合は、リージョン、VNet、サブネット、ノード1のゾーン、ノード2のゾーンを選択します。</block>
   <block id="407f144abfa1ac000a5a8035a2a3eb77" category="paragraph">ディスク・サイズの選択については、を参照してください<block ref="693042947faf99c4ded2e1854ea1714d" category="inline-link-macro-rx"></block>。</block>
-  <block id="561bec0387138d2b07f137df6774960c" category="paragraph">詳細については、およびを参照して <block ref="b12f776b16b59fa8d20c1c83946e77ac" category="inline-link-macro-rx"></block> <block ref="1e62300500e1ad0802bb2b24113c7036" category="inline-link-macro-rx"></block>ください。</block>
   <block id="8f2f3f69e91b562b368312a0d9a50b10" category="admonition">Google Cloudを使用して画像をエクスポートする方法の詳細については、を参照してください<block ref="c7e947f0888e30efd1d729c87ccc8502" category="inline-link-rx"></block>。</block>
   <block id="dffa64286b22863be6fb6ce536cfea25" category="list-text">複数のアベイラビリティゾーン（AZ）にCloud Volumes ONTAP HAを導入する場合は、トランジットゲートウェイを設定する必要があります。手順については、を参照してください<block ref="8ed1c74f676e6267bda3930e176fcde5" category="inline-link-macro-rx"></block>。</block>
   <block id="6242dbff130ee0bc438bfa60a5b4de51" category="paragraph">BlueXPでは、ワークロード要件に合わせて事前設定されたパッケージを提供しています。また、独自の構成を作成することもできます。独自の設定を選択する場合は、使用可能なオプションを理解しておく必要があります。詳細については、を参照して <block ref="01a63aaf870d7f59ca64d1c54c969d0e" category="inline-link-macro-rx"></block>ください。</block>
@@ -5652,4 +5649,14 @@ Mac OSでtailコマンドを完了します。</block>
   <block id="c97a482803062120aadcb028bb25c6d1" category="paragraph">Cloud Volumes ONTAPデータは、を使用してAzureで自動的に暗号化されます<block ref="840493a517ea59018e3217960e80e550" category="inline-link-rx"></block>。デフォルトの実装では、 Microsoft が管理するキーが使用されます。セットアップは必要ありません。</block>
   <block id="1f86b1e4048d088ce153a6f451fb30d6" category="section-title">2024年12月9日</block>
   <block id="c02b5fa56aae4296da253938ec788b53" category="paragraph">データは、Microsoftが管理するキーを使用して、AzureのCloud Volumes ONTAPで自動的に暗号化されます<block ref="840493a517ea59018e3217960e80e550" category="inline-link-rx"></block>。ただし、次の手順を実行する代わりに、お客様が管理する独自の暗号化キーを使用できるようになりました。</block>
+  <block id="a12f9b162c1d705866995451c3607b7a" category="paragraph">ifdef：：azure[] endif：：azure[] ifdef：：gcp[] endif：：gcp[]</block>
+  <block id="2da8645e38c3d4f73ccf32db700949e1" category="inline-link">KB：CVOでサポートされているインラインStorage Efficiency機能を教えてください。</block>
+  <block id="d3f3737cc08ede35a7833c219be7cf96" category="paragraph">BlueXP 3.9.5リリース以降では、最初のStorage VMで論理スペースのレポートが有効になります。スペースが論理的に報告されると、 ONTAP は、 Storage Efficiency 機能で削減されたすべての物理スペースが使用済みと報告するようにボリュームスペースを報告します。インラインのStorage Efficiency機能については、ナレッジベースの記事を参照してください。<block ref="9af56c326a803ff09c4af3da1cdbc4e2" category="inline-link-rx"></block></block>
+  <block id="2036e42877d5092c3afda2b202817932" category="list-text">NFS ifdef：：aws[] endif：：aws[] ifdef：：azure[] endif：：azure[]</block>
+  <block id="a9a68a4c2a3e1d9ea3aa0198251e51b3" category="paragraph">詳細については<block ref="449d1f3dba62fd34c10497ac720687ce" category="inline-link-macro-rx"></block>、、、<block ref="1e62300500e1ad0802bb2b24113c7036" category="inline-link-macro-rx"></block>およびを<block ref="9af56c326a803ff09c4af3da1cdbc4e2" category="inline-link-rx"></block>参照してください。</block>
+  <block id="ee7f44a3ee50a804694c28101731c80b" category="paragraph">詳細については<block ref="24fc9da0f00ff5ec38c6b3fffe9cc77c" category="inline-link-macro-rx"></block>、、、<block ref="1e62300500e1ad0802bb2b24113c7036" category="inline-link-macro-rx"></block>およびを<block ref="9af56c326a803ff09c4af3da1cdbc4e2" category="inline-link-rx"></block>参照してください。</block>
+  <block id="9b5ca9f023a445b9980873fe985b03c2" category="paragraph">詳細については<block ref="b12f776b16b59fa8d20c1c83946e77ac" category="inline-link-macro-rx"></block>、、、<block ref="1e62300500e1ad0802bb2b24113c7036" category="inline-link-macro-rx"></block>およびを<block ref="9af56c326a803ff09c4af3da1cdbc4e2" category="inline-link-rx"></block>参照してください。</block>
+  <block id="1d7416ead0f5e395552a7bea35bb1485" category="paragraph">ifdef：：aws[] endif：：aws[] ifdef：：azure[] endif：：gcp[] endif：：gcp[] endif：：aws[] endif：：azure[] endif：：azure[] endif：：gcp[] endif：：：gcp[] endif：：：gcp[]</block>
+  <block id="86402869cd4d06d1574d76517f21f563" category="paragraph">容量単位のライセンスでは、 TiB 単位の Cloud Volumes ONTAP に対して料金を支払うことができます。容量ベースのライセンスは、a_package_：Essentials、Optimized、Professionalのいずれかのパッケージ形式で提供されます。</block>
+  <block id="318162ad2b4d0154510a1c3fe1ca774b" category="paragraph">Essentials、Optimized、Professionalの各パッケージには、次の消費モデルが用意されています。</block>
 </blocks>
