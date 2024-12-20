@@ -228,7 +228,9 @@ BlueXPは、Cloud Volumes ONTAP システムの充電方法を変更します。
 
 == 容量ベースのライセンスを削除する
 
-容量ベースのライセンスの期限が切れて使用できなくなった場合は、いつでも削除できます。
+容量ベースライセンスの有効期限が切れて使用されなくなった場合は、いつでも削除できます。
+
+ライセンスの有効期限または削除時にCloud Volumes ONTAPデータがどうなるかについては、を参照してください https://kb.netapp.com/Cloud/Cloud_Volumes_ONTAP/FAQs_on_Cloud_Volumes_ONTAP_license_expiry["このナレッジベース（KB）記事"^]。
 
 .手順
 . BlueXPナビゲーションメニューから、* Governance > Digital Wallet *を選択します。

@@ -4,7 +4,7 @@ permalink: concept-licensing-charging.html
 keywords: capacity-based license charging, consumption for licenses, pricing for licenses, CVO licensing, CVO charging 
 summary: 容量ベースのライセンスの充電、消費モデル、価格設定、構成について理解しておく必要があります。 
 ---
-= 容量ベースライセンスの詳細
+= 容量ベースのライセンスに関する詳細情報
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

@@ -82,7 +82,7 @@ Cloud Volumes ONTAP の未割り当てのノードベースライセンスがあ
 * Cloud Volumes ONTAP シングルノードのライセンスは、 32TiB のデータサービスライセンスに変換されます
 
 
-変換されたライセンスの有効期限は、 Cloud Volumes ONTAP ライセンスと同じです。
+変換されたライセンスの有効期限は、Cloud Volumes ONTAPライセンスと同じです。
 
 .手順
 . BlueXPナビゲーションメニューから、* Governance > Digital Wallet *を選択します。

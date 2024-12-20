@@ -265,7 +265,7 @@ sidebar:
       entries:
       - title: Cloud Volumes ONTAPでのライセンス
         url: "/concept-licensing.html"
-      - title: 容量ベースライセンスの詳細
+      - title: 容量ベースのライセンスに関する詳細情報
         url: "/concept-licensing-charging.html"
     - title: ストレージ
       entries:
