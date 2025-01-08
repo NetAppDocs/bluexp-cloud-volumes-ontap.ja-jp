@@ -50,6 +50,9 @@ https://docs.microsoft.com/en-us/azure/storage/common/storage-scalability-target
 
 
 
+NOTE: Cloud Volumes ONTAP 9.15.0P1以降では、ハイアベイラビリティペアの新規導入でAzureページBLOBがサポートされなくなりました。既存のハイアベイラビリティペア環境でAzureページBLOBを使用している場合は、Edsv4シリーズVMおよびEdsv5シリーズVMの新しいVMインスタンスタイプに移行できます。link:https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-configs-azure.html#ha-pairs["Azureでサポートされる構成の詳細"^]です。
+
+
 
 === 共有管理対象ディスクを使用するHAシングルアベイラビリティゾーン構成
 

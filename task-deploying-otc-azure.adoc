@@ -393,6 +393,10 @@ NOTE: 選択したバージョンで新しいリリース候補、一般提供�
 +
 link:concept-data-tiering.html["データ階層化の詳細については、こちらをご覧ください。"^]。
 
+** Cloud Volumes ONTAP 9.15.0P1以降では、ハイアベイラビリティペアの新規導入でAzureページBLOBがサポートされなくなりました。既存のハイアベイラビリティペア環境でAzureページBLOBを使用している場合は、Edsv4シリーズVMおよびEdsv5シリーズVMの新しいVMインスタンスタイプに移行できます。
++
+link:https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-configs-azure.html#ha-pairs["Azureでサポートされる構成の詳細"^]です。
+
 
 
 . *書き込み速度とWORM *：
