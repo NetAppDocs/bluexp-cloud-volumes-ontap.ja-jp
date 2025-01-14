@@ -834,7 +834,6 @@
   <block id="907c78338365697be8fd8d4a130503c8" category="admonition">スループット最適化 HDD （ st1 ）を使用している場合、オブジェクトストレージへのデータの階層化は推奨されません。</block>
   <block id="f7c94a9d0c1e0feee8c2687a0f8fa5ad" category="list-text">大容量階層</block>
   <block id="7672a092783c4348b96b40ea2dcf6681" category="list-text">ストレージクラス</block>
-  <block id="31089fb1bcdba9204af0a200bd8dcfab" category="inline-link-macro">使用頻度の低いデータを低コストのオブジェクトストレージに階層化</block>
   <block id="d40a00133c09c6d1518e8f39dc3b963e" category="paragraph">データ階層化のストレージクラスは、システム全体に適用されます。ボリューム単位ではありません。</block>
   <block id="176cd61977ca55fd13eff7c7ba3659f5" category="section-title">Azure のデータ階層化</block>
   <block id="9f5e7587dc37b317df0faf00f072c5b5" category="paragraph">Azure でデータ階層化を有効にすると、 Cloud Volumes ONTAP は、ホットデータ用のパフォーマンス階層として Azure で管理されているディスクを、アクセス頻度の低いデータ用の大容量階層として Azure Blob Storage を使用します。</block>
@@ -1881,8 +1880,6 @@
   <block id="afe7022770dc53fd2a2de81727d4343a" category="list-text">バケットをお客様が管理する暗号化キーで暗号化するには、 Google Cloud ストレージバケットでキーを使用できるようにします。</block>
   <block id="030b67ae86ab61438eb6b00a3ade8e7a" category="inline-link-macro">お客様が管理する暗号化キーを Cloud Volumes ONTAP で使用する方法について説明します</block>
   <block id="d9c32a88801cedef2b665ed828d3ec26" category="paragraph"><block ref="c6d38e0757454a32ebb960ce7a42b88f" category="inline-link-macro-rx"></block>。</block>
-  <block id="350a5f4a5776c36c5a3cd04127fb4fe5" category="section-title">要件の実装後にデータ階層化を有効化</block>
-  <block id="75a38ac7969fd8d12bc86993fd41536a" category="section-title">アグリゲートで階層化が有効になっていることを確認してください</block>
   <block id="d1795f03cc65928e7e6c681acf520582" category="paragraph">ボリュームでデータ階層化を有効にするには、アグリゲートでデータ階層化が有効になっている必要があります。新しいボリュームと既存のボリュームの要件を確認しておく必要があります。</block>
   <block id="a424b516a0915a28d7aed2e00bd7621a" category="list-text">* 新しいボリューム *</block>
   <block id="7837a0921d66e4bb13eaadfbd4e230b5" category="list-text">* 既存のボリューム *</block>
@@ -1891,30 +1888,25 @@
   <block id="a81d10975a3cf570e21398a50ce230b9" category="list-text">アグリゲートの操作メニューをクリックし、 * クラウド階層の接続 * を選択します。</block>
   <block id="d868c846c4dcadf6cfa6658140d5efcf" category="list-text">接続するクラウド階層を選択し、 * 保存 * をクリックします。</block>
   <block id="a323b1a6695991c4c107a123436089fb" category="paragraph">次のセクションで説明するように、新規および既存のボリュームでデータ階層化を有効にできます。</block>
-  <block id="4378a09b2897cb95172610f9ab82105b" category="section-title">読み取り / 書き込みボリュームのデータの階層化</block>
   <block id="38f85b7b21b44c9b59780ab299932eff" category="paragraph">Cloud Volumes ONTAP は、読み書き可能なボリューム上にあるアクセス頻度の低いデータを対費用効果の高いオブジェクトストレージに階層化して、ホットデータ用に高パフォーマンス階層を解放できます。</block>
   <block id="39bd65df7752a24493d186f47c1c4bcd" category="cell">新しいボリュームを作成します</block>
   <block id="e0e02b01eefffa92ef6dd41ca0bfddaa" category="cell">[ 新しいボリュームの追加 ] をクリックします。</block>
   <block id="182706d5a3d41050c9687bc12322e932" category="cell">既存のボリュームを変更します</block>
   <block id="8e18d8c821310741023d16bcccb5aa95" category="list-text">階層化ポリシーを選択します。</block>
-  <block id="bbef357c8db2518419bffde441df9910" category="section-title">データ保護ボリュームのデータを階層化する</block>
   <block id="f7ace3ec87f10c0e3afcafcb4cf7b425" category="paragraph">Cloud Volumes ONTAP では、データ保護ボリュームから容量階層にデータを階層化できます。デスティネーションボリュームをアクティブにすると、データは読み取られた時点でパフォーマンス階層に徐々に移動します。</block>
   <block id="29e71d65fc647320e822efb6ec422c56" category="list-text">キャンバスページで、ソースボリュームを含む作業環境を選択し、ボリュームを複製する作業環境にドラッグします。</block>
   <block id="43d764b69e7c6b24a451e0f6a58ed33d" category="list-text">画面の指示に従って、階層化ページに移動し、オブジェクトストレージへのデータ階層化を有効にします。</block>
   <block id="9f873d6c6a1788f5273861c45a8e56fa" category="inline-image-macro">ボリュームのレプリケーション時の S3 階層化オプションを示すスクリーンショット。</block>
   <block id="b69cef59fd529fdd17b7e8981c791ce2" category="paragraph"><block ref="b69cef59fd529fdd17b7e8981c791ce2" category="inline-image-macro-rx" type="image"></block></block>
   <block id="3f7a02f565e0f68ea031041e7e890314" category="inline-link">クラウドとの間でデータをレプリケートする</block>
-  <block id="d2ceebd2cbebfd9830eac76d28a12b82" category="section-title">階層化データのストレージクラスを変更する</block>
   <block id="685b93acf24fff38428d46b5ddbc90bf" category="paragraph">Cloud Volumes ONTAP を導入したら、アクセスされていないアクセス頻度の低いデータのストレージクラスを 30 日間変更することで、ストレージコストを削減できます。データにアクセスするとアクセスコストが高くなるため、ストレージクラスを変更する前にこの点を考慮する必要があります。</block>
   <block id="923cfd28dcb7b052c5d38988ebb71dcd" category="paragraph">階層化データのストレージクラスはシステム全体に適用され、ボリュームごとにではないものに限られます。</block>
   <block id="6ce76737e6ad455cc49c865bc6d2c466" category="list-text">作業環境で、メニューアイコンをクリックし、 * ストレージクラス * または * BLOB ストレージの階層化 * をクリックします。</block>
   <block id="5bb29017b3feae0bd72d137d95ec631c" category="list-text">ストレージクラスを選択して、「 * 保存」をクリックします。</block>
-  <block id="2cca3ca6096bf8fb9c832683c582250c" category="section-title">データ階層化の空きスペース率を変更する</block>
   <block id="0f25882e78be6d7c0e2d9cd5c7808fb5" category="paragraph">データ階層化の空きスペース率は、オブジェクトストレージへのデータの階層化時に Cloud Volumes ONTAP SSD / HDD で必要な空きスペースの量を定義します。デフォルトの設定は 10% の空きスペースですが、必要に応じて設定を調整できます。</block>
   <block id="2aa3b7e505c0c56df0a2f60f7d4f87cc" category="paragraph">この比率はディザスタリカバリシナリオで重要になります。オブジェクトストレージからデータが読み取られると、 Cloud Volumes ONTAP はパフォーマンスを向上させるためにデータを SSD / HDD に移動するためです。十分なスペースがないと、 Cloud Volumes ONTAP はデータを移動できません。この比率を変更する際は、ビジネス要件を満たすためにこの点を考慮してください。</block>
   <block id="804f26a0bc44f8e04d1fb697d33eb4d8" category="list-text">容量 * で、アグリゲート容量しきい値 - データ階層化の空きスペース率 * をクリックします。</block>
   <block id="c389556b61d8e54624252a2563fdfc17" category="list-text">必要に応じて空き領域の比率を変更し、 [ 保存（ Save ） ] をクリックします。</block>
-  <block id="24c979ae168264040ca2c88e59f2902a" category="section-title">auto 階層化ポリシーのクーリング期間を変更します</block>
   <block id="77ac5bdafcd5300a46db8d23117433c1" category="paragraph">クーリング期間とは、ボリューム内のユーザデータが「コールド」とみなされてオブジェクトストレージに移動されるまでの期間です。</block>
   <block id="15d3560479839db873ba3a7d6309b50c" category="paragraph">auto 階層化ポリシーのデフォルトのクーリング期間は 31 日です。冷却期間は次のように変更できます。</block>
   <block id="07c1e6ebf913a40fd18f3f57f20d6d68" category="list-text">9.8 以降： 2 日 ～ 183 日</block>
@@ -5108,7 +5100,6 @@ Mac OSでtailコマンドを完了します。</block>
   <block id="db9ff71bc9bf52beb98f0d113ff7ccbf" category="inline-link">Microsoft Azureのドキュメント：「Azure Blob Storage Access Tiersの詳細」</block>
   <block id="2071f090de049a0bafd6e8e9ebc886a4" category="inline-link">Google Cloudのドキュメント：ストレージクラス</block>
   <block id="b7394e89ab52c2644e6abe3428b0bdee" category="paragraph">データにアクセスするとアクセスコストが高くなるため、ストレージクラスを変更する前にこの点を考慮する必要があります。詳細については、を参照して<block ref="3f6491f63b376fc9e505b3fd50e825aa" category="inline-link-rx"></block>ください。</block>
-  <block id="2fb88c61a4ec945d000763abb10cbd1d" category="paragraph">手順とサポートされる構成のリストについては、を参照してください<block ref="4fbc08218411ffa53189962e6368b39b" category="inline-link-macro-rx"></block>。</block>
   <block id="38850f8a756c82c89e87237ed4f91234" category="inline-image-macro">この概念図は、ロードバランサがBlueXP  およびクライアントからの受信トラフィック、VMSS Flexの2つのCloud Volumes ONTAPノード、ブートデータ用のSSDディスク、顧客データ用のページBlobを管理する様子を示しています。</block>
   <block id="fb33ca393b61decaf86e6a0dccadd3c1" category="paragraph"><block ref="fb33ca393b61decaf86e6a0dccadd3c1" category="inline-image-macro-rx" type="image"></block></block>
   <block id="fff8d8adf9a040085ccf70ab0f209712" category="list-text">タンイチノアベイラビリティゾーンニVM</block>
@@ -5369,7 +5360,6 @@ Mac OSでtailコマンドを完了します。</block>
   <block id="b2723147717f1c60a42e0b1cbdb0ad6c" category="cell">https://management.azure.microsoft.scloud https://login.microsoftonline.microsoft.scloud https://blob.core.microsoft.scloud https://core.microsoft.scloud</block>
   <block id="08c0a2896fee0160c8083277678851f6" category="cell">政府国防総省の地域</block>
   <block id="98179c4c799c9419b4ba6f502cd22783" category="cell">BlueXP  導入モード</block>
-  <block id="7b8d76983ab84b3978e67a05e145f16e" category="cell">メタデータ処理用にS3バケットと通信するために、Azure Key Vaultからクライアントシークレットキーを取得するために使用されます。Cloud Volumes ONTAPサービスはこのコンポーネントを内部的に使用します。</block>
   <block id="f235e1a740b92e59100dda0cf4e3d76b" category="cell">\https://www.googleapis.com/compute/v1/projects/ \https://cloudresourcemanager.googleapis.com/v1/projects \https://www.googleapis.com/compute/beta \https://storage.googleapis.com/storage/v1 \https://www.googleapis.com/storage/v1 \https://iam.googleapis.com/v1 \https://cloudkms.googleapis.com/v1 \https://www.googleapis.com/deploymentmanager/v2/projects \https://compute.googleapis.com/compute/v1</block>
   <block id="342804fdcc569427f0c6f21b0757653d" category="cell">Google Cloud（商用利用）：</block>
   <block id="bec523fb694fd6fe80736494c1a45a30" category="cell">Google Cloudサービスとの通信。</block>
@@ -5494,10 +5484,7 @@ Mac OSでtailコマンドを完了します。</block>
   <block id="f87269f0bcffd4dd379148db58c41b11" category="section-title">Cloud Volumes ONTAP導入後のWORM有効化</block>
   <block id="664bf259381c1fa1513c4c79450fb0f4" category="inline-link">Cloud Volumes ONTAP作業環境でのWORMの有効化</block>
   <block id="42009eda159da22132429f44bf400e6c" category="paragraph"><block ref="42009eda159da22132429f44bf400e6c" category="inline-link-rx"></block></block>
-  <block id="2db5c6d1af8e977d496e788510cbddd0" category="paragraph">ストレージクラスは作業環境の作成時に選択でき、あとからいつでも変更できます。ストレージクラスを変更する手順については、を参照して<block ref="4fbc08218411ffa53189962e6368b39b" category="inline-link-macro-rx"></block>ください。</block>
   <block id="930e999bb64aeb9cc71cdd63d9f4948c" category="paragraph">大容量階層のアクセス頻度の低いデータにアクセスする予定がない場合は、_cool_storage階層を選択できます。この階層では、アクセス頻度の低いデータを最低30日間保持します。また、_cold_tierを選択することもできます。この階層では、アクセス頻度の低いデータが最低90日間格納されます。ストレージ要件とコストに関する考慮事項に基づいて、ニーズに最も適した階層を選択できます。ストレージ階層を_cool_or_cold_に変更すると、アクセス頻度の低い大容量階層のデータはクールストレージ階層またはコールドストレージ階層に直接移動されます。クール階層とコールド階層では、ホット階層に比べてストレージコストは低くなりますが、アクセスコストが高くなるため、ストレージ階層を変更する前にこの点を考慮してください。を参照してください<block ref="30699d9b3a005c39386e73a7c4627191" category="inline-link-rx"></block>。</block>
-  <block id="3bb51211db193484b68905ef8f68ac0f" category="paragraph">ストレージ階層は作業環境の作成時に選択でき、あとからいつでも変更できます。ストレージ階層の変更の詳細については、を参照してください<block ref="4fbc08218411ffa53189962e6368b39b" category="inline-link-macro-rx"></block>。</block>
-  <block id="546c7b1d0701c3dcea6eb887ba9a499b" category="paragraph">ストレージ階層は作業環境の作成時に選択でき、あとからいつでも変更できます。ストレージクラスの変更の詳細については、を参照してください<block ref="4fbc08218411ffa53189962e6368b39b" category="inline-link-macro-rx"></block>。</block>
   <block id="8c26cfdad94fa97c367b921f4702fcea" category="paragraph">HAペアは、両方のノードがクライアントにデータを提供するアクティブ/アクティブ構成として使用することも、アクティブ/パッシブ構成として使用することもできます。アクティブ/パッシブ構成では、パッシブノードがアクティブノードのストレージをテイクオーバーした場合にのみ、パッシブノードがデータ要求に応答します。</block>
   <block id="fa317d8412b494ed6cf39e304ca9a341" category="paragraph">AWSのCloud Volumes ONTAPでは、単一のアベイラビリティゾーンでのハイアベイラビリティ（HA）モードのみがサポートされます。シングルノード環境はサポートされていません。</block>
   <block id="eb99da0ddbfd6f5a24a511ef8df7c577" category="paragraph">Cloud Volumes ONTAPでは、データ階層化、クラウド階層化、およびAWSローカルゾーンでの非認定インスタンスはサポートされていません。</block>
@@ -5531,7 +5518,6 @@ Mac OSでtailコマンドを完了します。</block>
   <block id="0fda23bdfd335df1f36c51b87bc2b780" category="paragraph">これらの特定のシナリオでは、NetAppは、契約上の義務と運用上のニーズに準拠して、固有のライセンス要件に対処するためのサポートを提供します。</block>
   <block id="913f6cd3e420105c804151f182c6938f" category="admonition">このような場合でも、新しいノードベースライセンスとライセンスの更新は、承認日から最長1年間有効です。</block>
   <block id="5be0251ff1848cd4d292e0a684e70539" category="section-title">ライセンスの変換</block>
-  <block id="a3562fcfc4a85274195b7100a2a26d71" category="paragraph">BlueXP  では、ライセンス変換ツールを使用して、ノードベースのライセンスを容量ベースにシームレスに変換できます。ノードベースライセンスの販売終了（EOA）については、を参照してください<block ref="1ef8ea114dcf1680f435cb8143e047b7" category="inline-link-macro-rx"></block>。</block>
   <block id="67b50b6cd5ac50e92192638dab47bddc" category="paragraph">移行する前に、2つのライセンスモデルの違いを理解しておくことをお勧めします。ノードベースのライセンスには、ONTAPインスタンスごとに容量が固定されているため、柔軟性が制限される場合があります。一方、容量ベースのライセンスでは、複数のインスタンスにまたがるストレージプールを共有できるため、柔軟性が向上し、リソース利用率が最適化され、ワークロードを再配分する際の金銭的なペナルティが軽減されます。容量ベースの充電は、変化するストレージ要件に合わせてシームレスに調整できます。</block>
   <block id="9deed5641b081a08e814b22533f5376e" category="paragraph">この変換方法については、を参照してください<block ref="431f655d5a9ac309b561fc62a4c619ea" category="inline-link-macro-rx"></block>。</block>
   <block id="2840378978873ef766f1cf65e35e8874" category="admonition">システムを容量ベースのライセンスからノードベースのライセンスに変換することはできません。</block>
@@ -5669,4 +5655,25 @@ Mac OSでtailコマンドを完了します。</block>
   <block id="9601655a1a70b76faca1edfd7d7dff06" category="admonition">Cloud Volumes ONTAP 9.15.0P1以降では、ハイアベイラビリティペアの新規導入でAzureページBLOBがサポートされなくなりました。既存のハイアベイラビリティペア環境でAzureページBLOBを使用している場合は、Edsv4シリーズVMおよびEdsv5シリーズVMの新しいVMインスタンスタイプに移行できます。<block ref="ecdad61fcd8abefb7dbc2e5c682b6e1d" category="inline-link-macro-rx"></block>です。</block>
   <block id="096eb93e7b28ed2b978956821258d0c8" category="list-text">Cloud Volumes ONTAP 9.15.0P1以降では、ハイアベイラビリティペアの新規導入でAzureページBLOBがサポートされなくなりました。既存のハイアベイラビリティペア環境でAzureページBLOBを使用している場合は、Edsv4シリーズVMおよびEdsv5シリーズVMの新しいVMインスタンスタイプに移行できます。</block>
   <block id="32fc2dbe6ce23818c00cefccab1d6097" category="paragraph"><block ref="ecdad61fcd8abefb7dbc2e5c682b6e1d" category="inline-link-macro-rx"></block>です。</block>
+  <block id="a1d3242487e006d5790b1572e34a22f0" category="inline-link-macro">アクセス頻度の低いデータを低コストのオブジェクトストレージに階層化</block>
+  <block id="c4232fd6e7b3110c40c884976710003f" category="paragraph">ストレージクラスは作業環境の作成時に選択でき、あとからいつでも変更できます。ストレージクラスを変更する手順については、を参照して<block ref="689d305972679ec3d62f87ce158f78a1" category="inline-link-macro-rx"></block>ください。</block>
+  <block id="7605a01088a25de348f9b1bf778bb57d" category="paragraph">ストレージ階層は作業環境の作成時に選択でき、あとからいつでも変更できます。ストレージ階層の変更の詳細については、を参照してください<block ref="689d305972679ec3d62f87ce158f78a1" category="inline-link-macro-rx"></block>。</block>
+  <block id="14eefbeb9f44a2759fdf3f12b232390d" category="paragraph">ストレージ階層は作業環境の作成時に選択でき、あとからいつでも変更できます。ストレージクラスの変更の詳細については、を参照してください<block ref="689d305972679ec3d62f87ce158f78a1" category="inline-link-macro-rx"></block>。</block>
+  <block id="e9d2b1ce92a5b5e640b96ff8b087951c" category="paragraph">手順とサポートされる構成のリストについては、を参照してください<block ref="689d305972679ec3d62f87ce158f78a1" category="inline-link-macro-rx"></block>。</block>
+  <block id="e9e29c9db65cd5278aaf851dd73ff92f" category="doc">Cloud Volumes ONTAPの容量ベースライセンスに関する詳細情報</block>
+  <block id="a8c501f77feee17c50fcd08e17a9c892" category="paragraph">BlueXP  では、ライセンス変換ツールを使用して、ノードベースのライセンスを容量ベースにシームレスに変換できます。ノードベースライセンスの販売終了（EOA）については、を参照してください<block ref="7f9a8649ca2d86db235ba56502d14f92" category="inline-link-macro-rx"></block>。</block>
+  <block id="d582c826d3814a85fb4b333a4fe7d017" category="section-title">要件の実装後にデータ階層化を有効にする</block>
+  <block id="f405b2e27c94adfd81c23f7e45ff0d6a" category="section-title">アグリゲートで階層化が有効になっていることを確認する</block>
+  <block id="dff0c181874d8c9c189ebadee034e447" category="section-title">読み取り/書き込みボリュームのデータを階層化</block>
+  <block id="dd8a8744e35ea92bb2b505dcb4f9298a" category="section-title">データ保護ボリュームのデータを階層化</block>
+  <block id="334c664b1a356000015bfee8f7c166af" category="section-title">階層化データのストレージクラスを変更する</block>
+  <block id="1fbd47af266b41d696dc1bcb8bd7c267" category="section-title">データ階層化の空きスペース比率を変更する</block>
+  <block id="39b1c94860491dd4e9c223d992664703" category="section-title">auto階層化ポリシーのクーリング期間を変更する</block>
+  <block id="a746df8d8a8e535afbdb1fa2b85acc7d" category="section-title">作業環境の運用停止時にS3バケットを削除する</block>
+  <block id="56abe7aac633cd3c0025ef3e203a5fcd" category="paragraph">環境の運用を停止するときに、データが階層化されたS3バケットをCloud Volumes ONTAP作業環境から削除できます。</block>
+  <block id="dd29a3dfa7d0b08f5d6c195c15c1198b" category="paragraph">S3バケットは次の場合にのみ削除できます。</block>
+  <block id="da7394763f52e8449cc5b4cf2cfde0ed" category="list-text">Cloud Volume ONTAP作業環境がBlueXP  から削除されます。</block>
+  <block id="d2d3ec1947496479a509e0bb5fb4ff4f" category="list-text">バケットからすべてのオブジェクトが削除され、S3バケットが空になります。</block>
+  <block id="dee6c945054b27877b8f184c2904e708" category="inline-link">ONTAP CLI：vserver object-store-server bucket delete</block>
+  <block id="308afc6d4a9db3e5427a33ad1e32b3be" category="paragraph">Cloud Volumes ONTAP作業環境の運用を停止しても、環境用に作成されたS3バケットは自動的には削除されません。代わりに、偶発的なデータ損失を防ぐために孤立した状態のままになります。バケット内のオブジェクトを削除したあとにS3バケット自体を削除したり、あとで使用できるように保持したりできます。を参照してください<block ref="68bba29ef3429f4e3e6e1695929c5629" category="inline-link-rx"></block>。</block>
 </blocks>

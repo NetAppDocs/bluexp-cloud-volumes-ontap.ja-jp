@@ -1,10 +1,10 @@
 ---
 sidebar: sidebar 
 permalink: task-tiering.html 
-keywords: tier, tiering, cold data, hot data, storage tiering, data tiering, fabricpool, fabric pool, s3 endpoint, endpoint, connection, performance tier, capacity tier, object store, blob tiering, container, inactive, tiering requirements 
+keywords: tier, tiering, cold data, hot data, storage tiering, data tiering, fabricpool, fabric pool, s3 endpoint, endpoint, connection, performance tier, capacity tier, object store, blob tiering, container, inactive, tiering requirements, remove S3 bucket, delete S3 CVO bucket 
 summary: ホットデータ用の SSD または HDD の高パフォーマンス階層と、アクセス頻度の低いデータ用のオブジェクトストレージの大容量階層を組み合わせることで、 Cloud Volumes ONTAP のストレージコストを削減できます。データ階層化は、 FabricPool テクノロジによって実現されます。 
 ---
-= 使用頻度の低いデータを低コストのオブジェクトストレージに階層化
+= アクセス頻度の低いデータを低コストのオブジェクトストレージに階層化
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -47,7 +47,7 @@ endif::gcp[]
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png["3つ"] 階層化が有効なアグリゲートがあることを確認してください
 [role="quick-margin-para"]
-ボリュームでデータ階層化を有効にするには、アグリゲートでデータ階層化が有効になっている必要があります。新しいボリュームと既存のボリュームの要件を確認しておく必要があります。 <<アグリゲートで階層化が有効になっていることを確認してください,詳細はこちら。>>。
+ボリュームでデータ階層化を有効にするには、アグリゲートでデータ階層化が有効になっている必要があります。新しいボリュームと既存のボリュームの要件を確認しておく必要があります。 <<Ensuring that tiering is enabled on aggregates,詳細はこちら。>>。
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-4.png["4."] ボリュームを作成、変更、またはレプリケートするときに階層化ポリシーを選択します
 [role="quick-margin-para"]
@@ -65,7 +65,7 @@ endif::gcp[]
 * 大容量階層用のオブジェクトストアを作成する必要はありません。BlueXPはそのような機能を提供します。
 * システムレベルでデータの階層化を有効にする必要はありません。
 +
-BlueXPでは'システムの作成時にコールドデータ用のオブジェクトストアが作成されます <<要件の実装後にデータ階層化を有効化,接続または権限に問題がないことが必要です>>。その後は、ボリューム（および場合によっては、 <<アグリゲートで階層化が有効になっていることを確認してください,アグリゲート>>）。
+BlueXPでは'システムの作成時にコールドデータ用のオブジェクトストアが作成されます <<Enabling data tiering after implementing the requirements,接続または権限に問題がないことが必要です>>。その後は、ボリューム（および場合によっては、 <<Ensuring that tiering is enabled on aggregates,アグリゲート>>）。
 
 
 
@@ -193,7 +193,7 @@ endif::gcp[]
 
 
 
-=== 要件の実装後にデータ階層化を有効化
+=== 要件の実装後にデータ階層化を有効にする
 
 BlueXPでは'接続やアクセス権に問題がない限り'システムの作成時にコールドデータ用のオブジェクトストアが作成されますシステムを作成するまで上記の要件を実装しなかった場合は、APIまたはONTAP System Managerを使用して階層化を手動で有効にする必要があります。この場合、オブジェクトストアが作成されます。
 
@@ -202,7 +202,7 @@ NOTE: BlueXPユーザインターフェイスで階層化を有効にする機�
 
 
 
-== アグリゲートで階層化が有効になっていることを確認してください
+== アグリゲートで階層化が有効になっていることを確認する
 
 ボリュームでデータ階層化を有効にするには、アグリゲートでデータ階層化が有効になっている必要があります。新しいボリュームと既存のボリュームの要件を確認しておく必要があります。
 
@@ -236,7 +236,7 @@ image:screenshot_aggregate_tiering_enabled.png["階層化ステータスを含�
 
 
 
-== 読み取り / 書き込みボリュームのデータの階層化
+== 読み取り/書き込みボリュームのデータを階層化
 
 Cloud Volumes ONTAP は、読み書き可能なボリューム上にあるアクセス頻度の低いデータを対費用効果の高いオブジェクトストレージに階層化して、ホットデータ用に高パフォーマンス階層を解放できます。
 
@@ -270,7 +270,7 @@ image:screenshot_volumes_change_tiering_policy.png["ボリュームの階層化�
 
 
 
-== データ保護ボリュームのデータを階層化する
+== データ保護ボリュームのデータを階層化
 
 Cloud Volumes ONTAP では、データ保護ボリュームから容量階層にデータを階層化できます。デスティネーションボリュームをアクティブにすると、データは読み取られた時点でパフォーマンス階層に徐々に移動します。
 
@@ -306,7 +306,7 @@ Cloud Volumes ONTAP を導入したら、アクセスされていないアクセ
 
 
 
-== データ階層化の空きスペース率を変更する
+== データ階層化の空きスペース比率を変更する
 
 データ階層化の空きスペース率は、オブジェクトストレージへのデータの階層化時に Cloud Volumes ONTAP SSD / HDD で必要な空きスペースの量を定義します。デフォルトの設定は 10% の空きスペースですが、必要に応じて設定を調整できます。
 
@@ -328,7 +328,7 @@ image:screenshot_settings_icon.png["BlueXPコンソールの右上にある設�
 
 
 
-== auto 階層化ポリシーのクーリング期間を変更します
+== auto階層化ポリシーのクーリング期間を変更する
 
 _auto_tiering ポリシーを使用して Cloud Volumes ONTAP ボリュームのデータ階層化を有効にした場合は、ビジネスニーズに基づいてデフォルトのクーリング期間を調整できます。このアクションは、ONTAP CLIおよびAPIでのみサポートされます。
 
@@ -343,3 +343,17 @@ auto 階層化ポリシーのデフォルトのクーリング期間は 31 日�
 .ステップ
 . ボリュームの作成時や既存のボリュームの変更時に、 API 要求で _minimumCoolingDays_ パラメータを使用します。
 
+
+
+
+== 作業環境の運用停止時にS3バケットを削除する
+
+環境の運用を停止するときに、データが階層化されたS3バケットをCloud Volumes ONTAP作業環境から削除できます。
+
+S3バケットは次の場合にのみ削除できます。
+
+* Cloud Volume ONTAP作業環境がBlueXP  から削除されます。
+* バケットからすべてのオブジェクトが削除され、S3バケットが空になります。
+
+
+Cloud Volumes ONTAP作業環境の運用を停止しても、環境用に作成されたS3バケットは自動的には削除されません。代わりに、偶発的なデータ損失を防ぐために孤立した状態のままになります。バケット内のオブジェクトを削除したあとにS3バケット自体を削除したり、あとで使用できるように保持したりできます。を参照してください https://docs.netapp.com/us-en/ontap-cli/vserver-object-store-server-bucket-delete.html#description["ONTAP CLI：vserver object-store-server bucket delete"^]。
