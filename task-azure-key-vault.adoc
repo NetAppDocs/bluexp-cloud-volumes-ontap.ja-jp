@@ -193,3 +193,8 @@ vol create -vserver_svm_name_-volume_name_-aggregate _aggr_size_state online -po
 
 . ボリュームが正しく作成および暗号化されたことを確認します。その場合、「-is-encrypted」パラメータは「true」と表示されます。vol show -vserver_svm_name_-fields is-cencryptedです
 
+
+.関連リンク
+* link:task-set-up-azure-encryption.html["Azure でお客様が管理するキーを使用するように Cloud Volumes ONTAP を設定します"]
+* https://learn.microsoft.com/en-us/azure/key-vault/general/overview["Microsoft Azureのドキュメント：Azure Key Vaultについて"^]
+

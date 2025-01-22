@@ -39,7 +39,7 @@ Digital Advisorは、完全なインベントリおよびソフトウェアと�
 
 
 
-.関連情報
+.関連リンク
 * https://docs.netapp.com/us-en/active-iq/["NetAppのドキュメント：デジタルアドバイザ"^]
 * https://aiq.netapp.com/custom-dashboard/search["Digital Advisorを起動"^]
 * https://www.netapp.com/us/services/support-edge.aspx["SupportEdge サービス"^]

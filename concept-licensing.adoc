@@ -152,6 +152,12 @@ NOTE: BlueXP  のバックアップとリカバリには従量課金制（PAYGO
 
 
 
+=== ヨウリヨウヘエスライセンスノシヨウカノウ
+
+Cloud Volumes ONTAPシステムでPAYGOライセンスとBYOLライセンスを利用できるようにするには、BlueXP  Connectorが稼働している必要があります。詳細については、を参照してください https://docs.netapp.com/us-en/bluexp-setup-admin/concept-connectors.html#impact-on-cloud-volumes-ontap["コネクタについて説明します"^]。
+
+
+
 === 開始方法
 
 容量単位のライセンスの取得方法については、以下をご覧ください。

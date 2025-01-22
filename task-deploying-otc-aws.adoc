@@ -47,7 +47,7 @@ link:task-set-up-licensing-aws.html["ライセンスの設定方法について�
 
 == AWS でのシングルノード Cloud Volumes ONTAP システムの起動
 
-AWSでCloud Volumes ONTAP を起動する場合は、BlueXPで新しい作業環境を作成する必要があります
+AWSでCloud Volumes ONTAPを起動する場合は、BlueXP  で新しい作業環境を作成する必要があります。
 
 .このタスクについて
 作業環境を作成した直後に、指定されたVPCでテストインスタンスを起動して接続を検証します。成功すると、すぐにインスタンスが終了し、Cloud Volumes ONTAP システムの導入が開始されます。BlueXPが接続を検証できない場合は'作業環境の作成に失敗しますテストインスタンスは、 t2.nano （デフォルトの vPC テナンシーの場合）または m3.medium （専用の vPC テナンシーの場合）のいずれかです。
@@ -274,7 +274,7 @@ image:screenshot_cot_vol.gif["スクリーンショット： Cloud Volumes ONTAP
 .結果
 Cloud Volumes ONTAP インスタンスが起動します。タイムラインで進行状況を追跡できます。
 
-Cloud Volumes ONTAP インスタンスの起動時に問題が発生した場合は、障害メッセージを確認してください。また、作業環境を選択して、 [ 環境の再作成 ] をクリックすることもできます。
+Cloud Volumes ONTAPインスタンスの起動で問題が発生した場合は、エラーメッセージを確認してください。また、作業環境を選択して、 [ 環境の再作成 ] をクリックすることもできます。
 
 詳細については、を参照してください https://mysupport.netapp.com/site/products/all/details/cloud-volumes-ontap/guideme-tab["NetApp Cloud Volumes ONTAP のサポート"^]。
 

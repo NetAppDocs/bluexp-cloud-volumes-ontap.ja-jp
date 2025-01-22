@@ -20,7 +20,7 @@ summary: ホットデータ用の SSD または HDD の高パフォーマンス�
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png["1つ"] サポートされている構成を選択します
 [role="quick-margin-para"]
-ほとんどの構成がサポートされています。最新バージョンを実行している Cloud Volumes ONTAP システムがある場合は、に進んでください。 link:task-tiering.html#configurations-that-support-data-tiering["詳細はこちら。"]。
+ほとんどの構成がサポートされています。最新バージョンを実行しているCloud Volumes ONTAPシステムがある場合は、お勧めします。link:task-tiering.html#configurations-that-support-data-tiering["詳細はこちら。"]です。
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["2 つ"] Cloud Volumes ONTAP とオブジェクトストレージ間の接続を確認します
 [role="quick-margin-list"]
@@ -47,7 +47,7 @@ endif::gcp[]
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png["3つ"] 階層化が有効なアグリゲートがあることを確認してください
 [role="quick-margin-para"]
-ボリュームでデータ階層化を有効にするには、アグリゲートでデータ階層化が有効になっている必要があります。新しいボリュームと既存のボリュームの要件を確認しておく必要があります。 <<Ensuring that tiering is enabled on aggregates,詳細はこちら。>>。
+データ階層化をボリュームで有効にするには、アグリゲートでデータ階層化を有効にする必要があります。新しいボリュームと既存のボリュームの要件を確認しておく必要があります。<<Ensuring that tiering is enabled on aggregates,詳細はこちら。>>です。
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-4.png["4."] ボリュームを作成、変更、またはレプリケートするときに階層化ポリシーを選択します
 [role="quick-margin-para"]
@@ -65,7 +65,7 @@ endif::gcp[]
 * 大容量階層用のオブジェクトストアを作成する必要はありません。BlueXPはそのような機能を提供します。
 * システムレベルでデータの階層化を有効にする必要はありません。
 +
-BlueXPでは'システムの作成時にコールドデータ用のオブジェクトストアが作成されます <<Enabling data tiering after implementing the requirements,接続または権限に問題がないことが必要です>>。その後は、ボリューム（および場合によっては、 <<Ensuring that tiering is enabled on aggregates,アグリゲート>>）。
+BlueXP  では、システムの作成時にコールドデータ用のオブジェクトストアが作成されます<<Enabling data tiering after implementing the requirements,接続または権限に問題がないことが必要です>>。その後は、ボリュームでデータ階層化を有効にするだけで<<Ensuring that tiering is enabled on aggregates,アグリゲート>>済みます（場合によっては）。
 
 
 
@@ -162,7 +162,7 @@ BlueXPに必要な権限があれば、高パフォーマンス階層と大容�
 "Microsoft.Network/virtualNetworks/subnets/write",
 "Microsoft.Network/routeTables/join/action",
 ----
-権限はデフォルトでカスタムロールに含まれています。 https://docs.netapp.com/us-en/bluexp-setup-admin/reference-permissions-azure.html["ConnectorのAzure権限を表示します"^]
+カスタムロールには、デフォルトで権限が含まれています。 https://docs.netapp.com/us-en/bluexp-setup-admin/reference-permissions-azure.html["ConnectorのAzure権限を表示します"^]
 
 endif::azure[]
 
@@ -212,7 +212,7 @@ NOTE: BlueXPユーザインターフェイスで階層化を有効にする機�
 
 * * 既存のボリューム *
 +
-既存のボリュームでデータ階層化を有効にする場合は、基盤となるアグリゲートでデータ階層化を有効にする必要があります。既存のアグリゲートでデータ階層化が有効になっていない場合は、ONTAP System Managerを使用して既存のアグリゲートをオブジェクトストアに接続する必要があります。
+既存のボリュームでデータ階層化を有効にするには、基盤となるアグリゲートでボリュームのデータ階層化が有効になっていることを確認します。既存のアグリゲートでデータ階層化が有効になっていない場合は、ONTAP System Managerを使用して既存のアグリゲートをオブジェクトストアに接続する必要があります。
 
 
 
@@ -356,4 +356,4 @@ S3バケットは次の場合にのみ削除できます。
 * バケットからすべてのオブジェクトが削除され、S3バケットが空になります。
 
 
-Cloud Volumes ONTAP作業環境の運用を停止しても、環境用に作成されたS3バケットは自動的には削除されません。代わりに、偶発的なデータ損失を防ぐために孤立した状態のままになります。バケット内のオブジェクトを削除したあとにS3バケット自体を削除したり、あとで使用できるように保持したりできます。を参照してください https://docs.netapp.com/us-en/ontap-cli/vserver-object-store-server-bucket-delete.html#description["ONTAP CLI：vserver object-store-server bucket delete"^]。
+Cloud Volumes ONTAP作業環境の運用を停止しても、環境用に作成されたS3バケットは自動的には削除されません。代わりに、偶発的なデータ損失を防ぐために孤立した状態のままになります。バケット内のオブジェクトを削除してからS3バケット自体を削除するか、あとで使用できるように保持できます。を参照してください https://docs.netapp.com/us-en/ontap-cli/vserver-object-store-server-bucket-delete.html#description["ONTAP CLI：vserver object-store-server bucket delete"^]。
