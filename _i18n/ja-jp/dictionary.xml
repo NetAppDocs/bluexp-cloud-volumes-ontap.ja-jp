@@ -5288,12 +5288,9 @@ Mac OSでtailコマンドを完了します。</block>
   <block id="0e3986fb787ff1e55f1d15206f8b39d9" category="paragraph">これらの機能の詳細については、こちらをご覧ください。</block>
   <block id="2a57c4c48ac4fed7319e97ba358228fe" category="paragraph">Google Cloudのイメージ検証機能は、ネットアップの高度なセキュリティ要件に準拠しています。このタスク用に特別に生成された秘密鍵を使用して、途中でイメージに署名するためのイメージを生成するスクリプトに変更が加えられました。Google Cloudイメージの整合性を検証するには、Google Cloud用の署名済みダイジェストとパブリック証明書を使用します。この証明書は、<block ref="4af4717946461f54169780875a3b5a98" category="inline-link-rx"></block>特定のリリースのからダウンロードできます。</block>
   <block id="92d90815a32824fbae3b0e1cc8bbf0bf" category="inline-link">お客様とのコミュニケーション：CPC-00589</block>
-  <block id="c4dbcb8cfcc96461b41d3911e9d893a3" category="paragraph">Cloud Volumes ONTAPノードは、日常業務で次のエンドポイントに接続するためにアウトバウンドインターネットアクセスを必要とします。</block>
   <block id="760b52b586ad97b520ea1071bb2f9839" category="section-title">Cloud Volumes ONTAPエンドポイント</block>
-  <block id="26d5c70af8a128834ad7ae9714c92190" category="paragraph">Cloud Volumes ONTAPでは、日常業務のためにさまざまなエンドポイントに接続するために、アウトバウンドインターネットアクセスが必要です。</block>
   <block id="5d17fe0f5737fcf131ca89bbb8891fd6" category="inline-link">コネクタから接続されたエンドポイントの表示</block>
   <block id="13ba2efb4fd4a349dae9e57188cc7124" category="inline-link">BlueXPコンソールを使用するためのネットワークの準備</block>
-  <block id="1633003ddfc1abefd1ac5659e539f81c" category="paragraph">次のエンドポイントはCloud Volumes ONTAPに固有です。また、コネクタは、BlueXP  Webベースのコンソールだけでなく、日常的な操作のためにいくつかのエンドポイントにも接続します。およびを参照してください<block ref="0a8949f1130beab385180d157118cad5" category="inline-link-rx"></block><block ref="979bd9d5982d3343248cd50bd0e0a8e2" category="inline-link-rx"></block>。</block>
   <block id="b8724da75fb917e992576b17378e66b3" category="cell">エンドポイント</block>
   <block id="b5d798aa448124265adcb904b18f9ca3" category="cell">適用対象</block>
   <block id="2579d10862aa7770a64b058fb84ce858" category="cell">BlueXPの導入モード</block>
@@ -5665,7 +5662,6 @@ Mac OSでtailコマンドを完了します。</block>
   <block id="40785b143c7b01389082916cdddfec97" category="paragraph">データにアクセスするとアクセスコストが高くなるため、ストレージクラスを変更する前にこの点を考慮してください。<block ref="0c2470317fad27a81908b0930cf9e62d" category="inline-link-rx"></block>です。</block>
   <block id="cf4245b9ee7a6fb38d76a96f7ceabbb7" category="section-title">ヨウリヨウヘエスライセンスノシヨウカノウ</block>
   <block id="e6e80588e9fe7cf89218fea44300f7ca" category="inline-link">コネクタについて説明します</block>
-  <block id="a5daa3d40ac8970760795069627b96f6" category="paragraph">Cloud Volumes ONTAPシステムでPAYGOライセンスとBYOLライセンスを利用できるようにするには、BlueXP  Connectorが稼働している必要があります。詳細については、を参照してください<block ref="f8567339606c01cec8a34e44063abbd0" category="inline-link-rx"></block>。</block>
   <block id="06afa66cf6eca938a45be835a47030e1" category="list-title">関連リンク</block>
   <block id="0d09904ade23c96d36078b02e246f1d8" category="list-text"><block ref="0d09904ade23c96d36078b02e246f1d8" category="inline-link-macro-rx"></block></block>
   <block id="526c6a5f29679ba9d316867c249d9130" category="inline-link">Microsoft Azureのドキュメント：Azure Key Vaultについて</block>
@@ -5685,4 +5681,8 @@ Mac OSでtailコマンドを完了します。</block>
   <block id="8ce366e694d5c3c3c27249c7cedf502e" category="paragraph">カスタムロールには、デフォルトで権限が含まれています。<block ref="b7d06976ba0f29792527e383824a0357" category="inline-link-rx"></block></block>
   <block id="97cc667ec30a818b8495fe4772b6f90d" category="paragraph">既存のボリュームでデータ階層化を有効にするには、基盤となるアグリゲートでボリュームのデータ階層化が有効になっていることを確認します。既存のアグリゲートでデータ階層化が有効になっていない場合は、ONTAP System Managerを使用して既存のアグリゲートをオブジェクトストアに接続する必要があります。</block>
   <block id="6b18d3e430bd8e9cf2e82762b16ab491" category="paragraph">Cloud Volumes ONTAP作業環境の運用を停止しても、環境用に作成されたS3バケットは自動的には削除されません。代わりに、偶発的なデータ損失を防ぐために孤立した状態のままになります。バケット内のオブジェクトを削除してからS3バケット自体を削除するか、あとで使用できるように保持できます。を参照してください<block ref="68bba29ef3429f4e3e6e1695929c5629" category="inline-link-rx"></block>。</block>
+  <block id="4d4be0bddb2eb1eb628ff206715d74e9" category="paragraph">Cloud Volumes ONTAPシステムでPAYGOライセンスとBYOLライセンスを利用できるようにするには、BlueXP  Connectorが稼働している必要があります。詳細については、を参照してください<block ref="f8567339606c01cec8a34e44063abbd0" category="inline-link-rx"></block>。</block>
+  <block id="70dfa56e7de1c3a338c88fe5bed4fe14" category="paragraph">Cloud Volumes ONTAPシステムでは、さまざまな機能の外部エンドポイントにアクセスするために、アウトバウンドインターネットアクセスが必要です。セキュリティ要件が厳しい環境でこれらのエンドポイントがブロックされていると、Cloud Volumes ONTAPは正常に動作しません。</block>
+  <block id="6a4145e8bef527d8870a20695d55d74f" category="paragraph">BlueXP  Connectorは、BlueXP  Webベースのコンソールだけでなく、日常的な操作のためにいくつかのエンドポイントにも接続します。BlueXP  エンドポイントの詳細については、およびを<block ref="979bd9d5982d3343248cd50bd0e0a8e2" category="inline-link-rx"></block>参照して<block ref="0a8949f1130beab385180d157118cad5" category="inline-link-rx"></block>ください。</block>
+  <block id="54df7aa57f75c8fe24e8c54795f38fa6" category="paragraph">Cloud Volumes ONTAPは、これらのエンドポイントを使用してさまざまなサービスと通信します。</block>
 </blocks>

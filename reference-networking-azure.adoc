@@ -26,15 +26,15 @@ Azure では、次のネットワーク要件を満たしている必要があ�
 
 === アウトバウンドインターネットアクセス
 
-Cloud Volumes ONTAPノードは、さまざまな機能のために外部エンドポイントにアクセスするためのアウトバウンドインターネットアクセスを必要とします。セキュリティ要件が厳しい環境でこれらのエンドポイントがブロックされていると、Cloud Volumes ONTAPは正常に動作しません。
+Cloud Volumes ONTAPシステムでは、さまざまな機能の外部エンドポイントにアクセスするために、アウトバウンドインターネットアクセスが必要です。セキュリティ要件が厳しい環境でこれらのエンドポイントがブロックされていると、Cloud Volumes ONTAPは正常に動作しません。
+
+BlueXP  Connectorは、BlueXP  Webベースのコンソールだけでなく、日常的な操作のためにいくつかのエンドポイントにも接続します。BlueXP  エンドポイントの詳細については、およびを https://docs.netapp.com/us-en/bluexp-setup-admin/reference-networking-saas-console.html["BlueXPコンソールを使用するためのネットワークの準備"^]参照して https://docs.netapp.com/us-en/bluexp-setup-admin/task-install-connector-on-prem.html#step-3-set-up-networking["コネクタから接続されたエンドポイントの表示"^]ください。
 
 
 
 ==== Cloud Volumes ONTAPエンドポイント
 
-Cloud Volumes ONTAPでは、日常業務のためにさまざまなエンドポイントに接続するために、アウトバウンドインターネットアクセスが必要です。
-
-次のエンドポイントはCloud Volumes ONTAPに固有です。また、コネクタは、BlueXP  Webベースのコンソールだけでなく、日常的な操作のためにいくつかのエンドポイントにも接続します。およびを参照してください https://docs.netapp.com/us-en/bluexp-setup-admin/task-install-connector-on-prem.html#step-3-set-up-networking["コネクタから接続されたエンドポイントの表示"^] https://docs.netapp.com/us-en/bluexp-setup-admin/reference-networking-saas-console.html["BlueXPコンソールを使用するためのネットワークの準備"^]。
+Cloud Volumes ONTAPは、これらのエンドポイントを使用してさまざまなサービスと通信します。
 
 [cols="5*"]
 |===
