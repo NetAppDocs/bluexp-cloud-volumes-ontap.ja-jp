@@ -56,6 +56,8 @@ sidebar:
           url: "/task-setting-up-transit-gateway.html"
         - title: HAペアを共有サブネットに導入します
           url: "/task-deploy-aws-shared-vpc.html"
+        - title: Cloud Volumes ONTAP for AWS配置グループの作成の設定
+          url: "/task-configure-placement-group-failure-aws.html"
         - title: AWS のセキュリティグループルール
           url: "/reference-security-groups.html"
       - title: AWS KMS を設定します

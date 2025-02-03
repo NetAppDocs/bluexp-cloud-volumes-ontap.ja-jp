@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: task-saz-feature.html 
-keywords: Microsoft Azure feature, HA in SAZ, single availability zone, Azure feature, Virtual Machine Scale Sets in Flexible mode 
+keywords: Microsoft Azure feature, HA in SAZ, single availability zone, Azure feature, Virtual Machine Scale Sets in Flexible mode, VMOrchestratorZonalMultiFD, VM Orchestrator, Zonal, MultiFD, Microsoft.Compute/VMOrchestratorZonalMultiFD feature 
 summary: sazにHAを導入するには、このMicrosoft Azure機能を有効にします。 
 ---
 = 単一のアベイラビリティゾーンに対してVMOrchestratorZonalMultiFDを有効にする
@@ -14,7 +14,7 @@ summary: sazにHAを導入するには、このMicrosoft Azure機能を有効に
 
 
 [role="lead"]
-ローカル冗長ストレージ（LRS）の単一アベイラビリティゾーンにVMインスタンスを導入するには、 `Microsoft.Compute/VMOrchestratorZonalMultiFD`サブスクリプションのMicrosoft機能をアクティブ化する必要があります。HAモードでは、この機能を使用すると、同じアベイラビリティゾーン内の別 々 の障害ドメインにノードを簡単に導入できます。
+ローカル冗長ストレージ（LRS）の単一アベイラビリティゾーン（AZ）にVMインスタンスを導入するには、サブスクリプションのMicrosoft機能をアクティブ化する必要があります `Microsoft.Compute/VMOrchestratorZonalMultiFD`。ハイアベイラビリティ（HA）モードでは、この機能を使用すると、同じアベイラビリティゾーン内の別 々 のフォールトドメインにノードを簡単に導入できます。
 
 この機能をアクティブにしないと、ゾーン配置は行われず、以前のLRS非ゾーン配置が有効になります。
 
