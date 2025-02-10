@@ -4,7 +4,7 @@ permalink: task-administer-advanced-view.html
 keywords: system manager, advanced view, access system manager, load system manager, use system manager, cloud tiering 
 summary: Cloud Volumes ONTAP の高度な管理が必要な場合は、ONTAP システムに付属の管理インターフェイスであるONTAP System Managerを使用して実行できます。BlueXPにはSystem Managerインターフェイスが搭載されているので、高度な管理のためにBlueXPを残す必要はありません。 
 ---
-= 拡張ビューを使用してCloud Volumes ONTAP を管理します
+= System Managerを使用したCloud Volumes ONTAPの管理
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -20,7 +20,7 @@ Cloud Volumes ONTAP の高度な管理が必要な場合は、ONTAP システム
 
 == の機能
 
-BlueXPの詳細ビューでは、次の管理機能を使用できます。
+次の管理機能を実行できます。
 
 * 高度なストレージ管理
 +
@@ -48,7 +48,7 @@ SANイニシエータグループとNFSクライアントを設定します。
 
 == サポートされている構成
 
-ONTAP System Managerを使用した高度な管理は、標準のクラウドリージョンのCloud Volumes ONTAP 9.10.0以降でサポートされます。
+Cloud Volumes ONTAP 9.10.0以降では、標準のクラウドリージョンでONTAP System Managerを使用した高度な管理がサポートされます。
 
 GovCloudリージョンまたはアウトバウンドのインターネットアクセスがないリージョンでは、System Managerの統合はサポートされません。
 
@@ -60,7 +60,7 @@ System Managerインターフェイスに表示されるいくつかの機能は
 
 * BlueXPの階層化
 +
-Cloud Volumes ONTAP では、BlueXP階層化サービスはサポートされていません。ボリュームを作成するときは、BlueXPの標準ビューからデータをオブジェクトストレージに階層化するように直接設定する必要があります。
+Cloud Volumes ONTAPでは、BlueXP  階層化サービスはサポートされていません。ボリュームを作成するときは、BlueXP  の標準ビューからオブジェクトストレージへのデータの階層化を直接設定する必要があります。
 
 * 階層
 +
@@ -68,7 +68,7 @@ Cloud Volumes ONTAP では、BlueXP階層化サービスはサポートされて
 
 * ファームウェアのアップグレード
 +
-Cloud Volumes ONTAP では、[クラスタ]>[設定*]ページからの自動ファームウェア更新はサポートされていません。
+Cloud Volumes ONTAPでは、*[クラスタ]>[設定]*ページからの自動ファームウェア更新はサポートされていません。
 
 
 
@@ -76,14 +76,39 @@ Cloud Volumes ONTAP では、[クラスタ]>[設定*]ページからの自動フ
 
 
 
-== 開始方法
+== System Managerにアクセスするための認証の設定
 
-Cloud Volumes ONTAP 作業環境を開き、詳細ビューオプションをクリックします。
+管理者は、BlueXP  からONTAP System Managerにアクセスするユーザの認証をアクティブ化できます。ONTAPユーザロールに基づいて適切なアクセス権限レベルを決定し、必要に応じて認証を有効または無効にすることができます。認証を有効にすると、BlueXP  ではクレデンシャルが内部的に格納されないため、BlueXP  からSystem Managerにアクセスするたびに、またはページがリロードされたときにユーザがONTAPユーザクレデンシャルを入力する必要があります。認証を無効にした場合、ユーザはBlueXP  の管理者クレデンシャルを使用してSystem Managerにアクセスできます。
+
+
+NOTE: この設定は、Cloud Volumes ONTAP作業環境やBlueXP  プロジェクトに関係なく、組織またはアカウントのONTAPユーザーに対してBlueXP  Connectorごとに適用されます。
+
+.必要な権限
+Cloud Volumes ONTAPユーザ認証用のBlueXP  Connector設定を変更するには、BlueXP  組織またはアカウント管理者Privilegesを割り当てる必要があります。
+
+.手順
+. BlueXPヘッダーの* Connector *ドロップダウンを選択します。
+. [コネクタの管理]*を選択します。
+. 必要なコネクタのアクションメニューをクリックしimage:icon-action.png["省略記号アイコン"]、*コネクタの編集*を選択します。
+. [ユーザクレデンシャルを強制する]*で、*[有効化/無効化]*チェックボックスをオンにします。デフォルトでは、認証は無効になっています。
++
+
+NOTE: この値を* Enable *に設定すると、認証がリセットされ、この変更に対応するために既存のワークフローを変更する必要があります。
+
+. [ 保存（ Save ） ] をクリックします。
+
+
+
+
+== System Managerでの作業の開始
+
+ONTAP System Managerには、Cloud Volumes ONTAP作業環境からアクセスできます。
 
 .手順
 . 左側のナビゲーションメニューから、* Storage > Canvas *を選択します。
 . [キャンバス]ページで、Cloud Volumes ONTAPシステムを選択します。
-. 右側のパネルの*[サービス]*で、*[System Manager]*を探して*[開く]*を選択します。
+. 右側のパネルで*[サービス]>[System Manager]>[開く]*を選択します。
+. プロンプトが表示されたら、ONTAPユーザクレデンシャルを入力し、*[ログイン]*をクリックします。
 . 確認メッセージが表示されたら、そのメッセージを読み、*閉じる*をクリックします。
 . System Managerを使用してCloud Volumes ONTAP を管理する。
 . 必要に応じて、[標準表示に切り替える]をクリックして、BlueXPを使用した標準管理に戻ります。
@@ -95,6 +120,8 @@ Cloud Volumes ONTAP 作業環境を開き、詳細ビューオプションをク
 
 Cloud Volumes ONTAP でSystem Managerを使用する際にサポートが必要な場合は、を参照してください https://docs.netapp.com/us-en/ontap/index.html["ONTAP のドキュメント"^] を参照してください。役立つリンクをいくつか紹介します。
 
+* https://docs.netapp.com/us-en/ontap/ontap-security-hardening/roles-applications-authentication.html["ONTAPのロール、アプリケーション、認証"^]
+* https://docs.netapp.com/us-en/ontap/system-admin/access-cluster-system-manager-browser-task.html["System Managerを使用してクラスタにアクセスする"^]です。
 * https://docs.netapp.com/us-en/ontap/volume-admin-overview-concept.html["ボリュームとLUNの管理"^]
 * https://docs.netapp.com/us-en/ontap/network-manage-overview-concept.html["Network Management の略"^]
 * https://docs.netapp.com/us-en/ontap/concept_dp_overview.html["データ保護"^]
