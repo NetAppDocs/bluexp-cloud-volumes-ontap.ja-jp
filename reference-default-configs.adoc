@@ -88,7 +88,7 @@ NOTE: クラウドプロバイダの要件により、Cloud Volumes ONTAP のLIF
 バックアップには\ http://ipaddress/occm/offboxconfig/からアクセスできます。_ipaddress_はコネクタホストのIPアドレスです。
 
 +
-このバックアップを使用して、Cloud Volumes ONTAPシステムを再設定できます。構成バックアップの詳細については、を参照してください https://docs.netapp.com/us-en/ontap/system-admin/config-backup-file-concept.html["ONTAP のドキュメント"]。
+このバックアップを使用して、Cloud Volumes ONTAPシステムを再設定できます。構成バックアップの詳細については、を参照して https://docs.netapp.com/us-en/ontap/system-admin/config-backup-file-concept.html["ONTAP のドキュメント"^]ください。
 
 ** BlueXP  は、他の管理ツール（ONTAPシステムマネージャやONTAP CLIなど）とは異なる方法で、いくつかのボリューム属性を設定します。
 +

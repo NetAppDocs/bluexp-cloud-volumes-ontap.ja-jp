@@ -92,7 +92,7 @@ AutoSupport メッセージの送信にアウトバウンドのインターネ�
 
 Cloud Volumes ONTAP に厳密なアウトバウンドルールを定義した場合は、Cloud Volumes ONTAP セキュリティグループがポート3128で_OUTBOUND接続を許可する必要もあります。
 
-アウトバウンドのインターネットアクセスが使用可能であることを確認したら、 AutoSupport をテストしてメッセージを送信できることを確認します。手順については、を参照してください https://docs.netapp.com/us-en/ontap/system-admin/setup-autosupport-task.html["ONTAP のドキュメント：「 AutoSupport のセットアップ"^]。
+アウトバウンドのインターネットアクセスが使用可能であることを確認したら、 AutoSupport をテストしてメッセージを送信できることを確認します。手順については、を参照して https://docs.netapp.com/us-en/ontap/system-admin/setup-autosupport-task.html["ONTAPのマニュアル：AutoSupportのセットアップ"^]ください。
 
 AutoSupport メッセージを送信できないことがBlueXPから通知された場合は、 link:task-verify-autosupport.html#troubleshoot-your-autosupport-configuration["AutoSupport 構成のトラブルシューティングを行います"]。
 
@@ -449,7 +449,7 @@ NOTE: source は、 Cloud Volumes ONTAP システムのインターフェイス�
 | TCP | 3128 | ノード管理 LIF | コネクタ | アウトバウンドのインターネット接続が使用できない場合に、コネクタのプロキシサーバを介してAutoSupport メッセージを送信する 
 
 
-| 構成のバックアップ | HTTP | 80 | ノード管理 LIF | \http://<connector-IP-address> /occm/offboxconfig | 構成バックアップをコネクタに送信します。 link:https://docs.netapp.com/us-en/ontap/system-admin/node-cluster-config-backed-up-automatically-concept.html["構成バックアップファイルについて説明します"^]。 
+| 構成のバックアップ | HTTP | 80 | ノード管理 LIF | \http://<connector-IP-address> /occm/offboxconfig | 構成バックアップをコネクタに送信します。link:https://docs.netapp.com/us-en/ontap/system-admin/node-cluster-config-backed-up-automatically-concept.html["ONTAP のドキュメント"^]です。 
 
 
 | DHCP | 68 | UDP | ノード管理 LIF | DHCP | 初回セットアップ用の DHCP クライアント 

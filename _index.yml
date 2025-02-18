@@ -68,12 +68,12 @@ indexpage:
     - title: サポートされるクラウドリージョン
       url: https://bluexp.netapp.com/cloud-volumes-global-regions
     - title: 計算機
-      url: https://cloud.netapp.com/calculator-hub
+      url: https://bluexp.netapp.com/calculator-hub
   - title: ブログコミュニティ
     links:
     - title: ネットアップコミュニティ
       url: https://community.netapp.com/t5/Cloud-Volumes-ONTAP/bd-p/CloudVolumes
     - title: BlueXPのウェブサイトのblog
-      url: https://cloud.netapp.com/blog/topic/cloud-volumes-ontap
+      url: https://bluexp.netapp.com/blog/topic/cloud-volumes-ontap
     - title: クラウドに関する Web セミナー
-      url: https://cloud.netapp.com/events
+      url: https://bluexp.netapp.com/events

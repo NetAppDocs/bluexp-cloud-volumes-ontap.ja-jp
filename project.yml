@@ -73,40 +73,48 @@ sidebar:
     - title: Microsoft Azure で利用を開始しましょう
       flavor: azure
       entries:
-      - title: クイックスタート
-        url: "/task-getting-started-azure.html"
-      - title: 構成を計画
-        url: "/task-planning-your-config-azure.html"
-      - title: ネットワークをセットアップします
-        url: "/reference-networking-azure.html"
-      - title: キーを使用して暗号化を設定します
-        url: "/task-set-up-azure-encryption.html"
-      - title: ライセンスをセットアップする
-        url: "/task-set-up-licensing-azure.html"
-      - title: ハイアベイラビリティモードを有効にする
-        url: "/task-azure-high-availability-mode.html"
-      - title: 単一のアベイラビリティゾーンに対してVMOrchestratorZonalMultiFDを有効にする
-        url: "/task-saz-feature.html"
-      - title: Azure で Cloud Volumes ONTAP を起動します
-        url: "/task-deploying-otc-azure.html"
-      - title: Azureプラットフォームイメージの検証
+      - title: 導入オプションを確認する
+        url: "/concept-azure-mktplace-direct.html"
+      - title: BlueXP  で開始する
         entries:
-        - title: 概要
-          url: "/concept-azure-image-verification.html"
-        - title: Azureイメージダイジェストファイルをダウンロード
-          url: "/task-azure-download-digest-file.html"
-        - title: 画像のエクスポート
-          url: "/task-azure-image-export.html"
-        - title: ファイル署名の検証
+        - title: クイックスタート
+          url: "/task-getting-started-azure.html"
+        - title: 構成を計画
+          url: "/task-planning-your-config-azure.html"
+        - title: ネットワークをセットアップします
+          url: "/reference-networking-azure.html"
+        - title: キーを使用して暗号化を設定します
+          url: "/task-set-up-azure-encryption.html"
+        - title: ライセンスをセットアップする
+          url: "/task-set-up-licensing-azure.html"
+        - title: ハイアベイラビリティモードを有効にする
+          url: "/task-azure-high-availability-mode.html"
+        - title: 単一のアベイラビリティゾーンに対してVMOrchestratorZonalMultiFDを有効にする
+          url: "/task-saz-feature.html"
+        - title: Azure で Cloud Volumes ONTAP を起動します
+          url: "/task-deploying-otc-azure.html"
+        - title: Azureプラットフォームイメージの検証
           entries:
+          - title: 概要
+            url: "/concept-azure-image-verification.html"
+          - title: Azureイメージダイジェストファイルをダウンロード
+            url: "/task-azure-download-digest-file.html"
+          - title: 画像のエクスポート
+            url: "/task-azure-image-export.html"
           - title: ファイル署名の検証
-            url: "/concept-azure-file-sig-verify.html"
-          - title: Linuxファイル署名の検証
-            url: "/task-file-verification-linux.html"
-          - title: Mac OSファイル署名の検証
-            url: "/task-file-verification-mac.html"
-        - title: 追加情報
-          url: "/reference-image-verification-links.html"
+            entries:
+            - title: ファイル署名の検証
+              url: "/concept-azure-file-sig-verify.html"
+            - title: Linuxファイル署名の検証
+              url: "/task-file-verification-linux.html"
+            - title: Mac OSファイル署名の検証
+              url: "/task-file-verification-mac.html"
+          - title: 追加情報
+            url: "/reference-image-verification-links.html"
+      - title: 市場での販売を開始
+        entries:
+        - title: 市場からのCloud Volumes ONTAPの導入
+          url: "/task-deploy-cvo-azure-mktplc.html"
     - title: Google Cloud で始めましょう
       flavor: gcp
       entries:
@@ -227,7 +235,7 @@ sidebar:
       - title: AWSの管理
         flavor: aws
         entries:
-        - title: EC2 インスタンスタイプを変更します
+        - title: AWSのEC2インスタンスとの連携
           url: "/task-change-ec2-instance.html"
         - title: HA ペアのルーティングテーブルを変更する
           url: "/task-change-route-tables.html"

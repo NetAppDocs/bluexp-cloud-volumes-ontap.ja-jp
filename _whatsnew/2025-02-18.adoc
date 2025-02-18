@@ -1,0 +1,13 @@
+= Azure Marketplaceの導入：直接導入
+:allow-uri-read: 
+
+
+
+
+=== Azure Marketplaceの導入：直接導入
+
+Azure Marketplaceの直接導入を利用して、Cloud Volumes ONTAPをAzure Marketplaceから簡単かつ迅速に直接導入できるようになりました。この合理的な方法を使用すると、BlueXP  Connectorをセットアップしたり、BlueXP  を使用したCloud Volumes ONTAPの導入に必要なその他のオンボーディング基準を満たしたりすることなく、環境内のCloud Volumes ONTAPのコア機能を確認できます。
+
+* https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-azure-mktplace-direct.html["AzureでのCloud Volumes ONTAP導入オプションの詳細"^]
+* https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-deploy-cvo-azure-mktplc.html["Azure MarketplaceからCloud Volumes ONTAPを導入"^]
+

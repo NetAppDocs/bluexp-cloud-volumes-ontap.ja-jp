@@ -65,4 +65,4 @@ NOTE: ONTAP 機能のライセンスは、 Cloud Volumes ONTAP に含まれて�
 
 https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/index.html["サポートされている Cloud Volumes ONTAP 構成を表示します"^]
 
-https://cloud.netapp.com/ontap-cloud["Cloud Volumes ONTAP の詳細については、こちらを参照してください"^]
+https://bluexp.netapp.com/ontap-cloud["Cloud Volumes ONTAP の詳細については、こちらを参照してください"^]

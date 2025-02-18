@@ -20,6 +20,20 @@ BlueXPのCloud Volumes ONTAP Managementの新機能をご紹介します。
 
 
 
+== 2025年2月18日
+
+
+
+=== Azure Marketplaceの導入：直接導入
+
+Azure Marketplaceの直接導入を利用して、Cloud Volumes ONTAPをAzure Marketplaceから簡単かつ迅速に直接導入できるようになりました。この合理的な方法を使用すると、BlueXP  Connectorをセットアップしたり、BlueXP  を使用したCloud Volumes ONTAPの導入に必要なその他のオンボーディング基準を満たしたりすることなく、環境内のCloud Volumes ONTAPのコア機能を確認できます。
+
+* https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-azure-mktplace-direct.html["AzureでのCloud Volumes ONTAP導入オプションの詳細"^]
+* https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-deploy-cvo-azure-mktplc.html["Azure MarketplaceからCloud Volumes ONTAPを導入"^]
+
+
+
+
 == 2025年2月10日
 
 
@@ -213,7 +227,7 @@ Cloud Volumes ONTAPの今後の導入では、Edge Cache容量ベースのライ
 
 === AzureでサポートされるFlash Cacheの最小バージョン
 
-AzureでFlash Cacheを設定するには、9.13.1 GA以上のCloud Volumes ONTAPバージョンが必要です。のCloud Volumes ONTAPシステムへの導入には、ONTAP 9 .13.1 GA以降のバージョンのみを使用できます。
+AzureでFlash Cacheを設定するには、9.13.1 GA以上のCloud Volumes ONTAPバージョンが必要です。ONTAP 9.13.1 GA以降のバージョンは、AzureのCloud Volumes ONTAPシステムへのFlash Cacheの導入にのみ使用できます。
 
 サポートされる構成については、を参照してください https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-configs-azure.html#single-node-systems["Azure でサポートされる構成"^]。
 
@@ -655,6 +669,10 @@ Marketplaceのサブスクリプションを購入せずにBlueXPでCloud Volume
 
 == 2023年4月4日
 
+
+
+=== 中国リージョンでのAWSのサポート
+
 Cloud Volumes ONTAP 9.12.1 GA以降では、次のように中国リージョンがAWSでサポートされるようになりました。
 
 * シングルノードシステムがサポートされます。
@@ -716,14 +734,12 @@ link:https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-manage-volume
 
 
 
-=== 中国地域のサポート
+=== Azureでの中国リージョンのサポート
 
-Cloud Volumes ONTAP 9.12.1 GA以降では、次のように中国リージョンのサポートがAzureでサポートされるようになりました。
+中国北部3リージョンは、AzureでのCloud Volumes ONTAP 9.12.1 GAおよび9.13.0 GAのシングルノード導入でサポートされるようになりました。これらの地域では、NetAppから直接購入したライセンス（BYOLライセンス）のみがサポートされます。
 
-* Cloud Volumes ONTAP は中国北部3でサポートされています。
-* シングルノードシステムがサポートされます。
-* ネットアップから直接購入したライセンスはサポートされます。
 
+NOTE: 中国地域でのCloud Volumes ONTAPの新規導入は、9.12.1 GAおよび9.13.0 GAでのみサポートされています。これらのバージョンは、Cloud Volumes ONTAPの新しいパッチおよびリリースにアップグレードできます。中国の地域に新しいCloud Volumes ONTAPバージョンを導入する場合は、NetAppサポートにお問い合わせください。
 
 地域によって利用可能な場合は、を参照してlink:https://bluexp.netapp.com/cloud-volumes-global-regions["Cloud Volumes ONTAP のグローバルリージョンマップ"^]ください。
 
@@ -884,7 +900,7 @@ Cloud Volumes ONTAP の作成プロセスで、Write Once、Read Many（WORM）�
 
 ONTAP Cloud Platformでバージョン9.12.1以降を実行する新規および既存のCloud Volumes ONTAP システムに、S3ライセンスが含まれるようになりました。
 
-https://docs.netapp.com/us-en/ontap/object-storage-management/index.html["ONTAP で S3 オブジェクトストレージサービスを設定および管理する方法について説明します"^]
+https://docs.netapp.com/us-en/ontap/object-storage-management/index.html["ONTAPのドキュメント：S3オブジェクトストレージサービスの設定および管理方法"^]
 
 
 
@@ -906,7 +922,7 @@ https://docs.netapp.com/us-en/ontap/object-storage-management/index.html["ONTAP 
 
 ONTAP VolumeでのNDMPコピーの使用が認定されました。
 
-NDMPの設定および使用方法については、を参照してください https://docs.netapp.com/us-en/ontap/ndmp/index.html["NDMP 設定の概要"]。
+NDMPの設定方法と使用方法については、を参照して https://docs.netapp.com/us-en/ontap/ndmp/index.html["ONTAPのドキュメント：NDMP構成の概要"]ください。
 
 
 
@@ -1008,7 +1024,7 @@ image:https://raw.githubusercontent.com/NetAppDocs/bluexp-cloud-volumes-ontap/ma
 Azure Marketplaceサブスクリプションでのお支払い時に、Cloud Volumes ONTAP 用に2つの容量ベースのライセンスパッケージが新たに提供されます。
 
 * *最適化*：プロビジョニングされた容量とI/O処理に別々に課金します
-* * Edge Cache*:のライセンス https://cloud.netapp.com/cloud-volumes-edge-cache["Cloud Volume エッジキャッシュ"^]
+* * Edge Cache *：ライセンス https://bluexp.netapp.com/cloud-volumes-edge-cache["Cloud Volume エッジキャッシュ"^]
 
 
 https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-licensing.html#packages["これらのライセンスパッケージの詳細については、こちらをご覧ください"]。
@@ -1041,7 +1057,7 @@ https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-aws-elastic-vol
 
 AWSでバージョン9.11.0以降を実行している新規および既存のCloud Volumes ONTAP システムにONTAP S3ライセンスが追加されました。
 
-https://docs.netapp.com/us-en/ontap/object-storage-management/index.html["ONTAP で S3 オブジェクトストレージサービスを設定および管理する方法について説明します"^]
+https://docs.netapp.com/us-en/ontap/object-storage-management/index.html["ONTAPのドキュメント：S3オブジェクトストレージサービスの設定および管理方法"^]
 
 
 
@@ -1057,7 +1073,7 @@ https://bluexp.netapp.com/cloud-volumes-global-regions["Cloud Volumes ONTAP で�
 
 バージョン9.9.1以降を実行する新規および既存のCloud Volumes ONTAP システムにONTAP S3ライセンスが追加されました。
 
-https://docs.netapp.com/us-en/ontap/object-storage-management/index.html["ONTAP で S3 オブジェクトストレージサービスを設定および管理する方法について説明します"^]
+https://docs.netapp.com/us-en/ontap/object-storage-management/index.html["ONTAPのドキュメント：S3オブジェクトストレージサービスの設定および管理方法"^]
 
 
 
@@ -1255,7 +1271,7 @@ Cloud Volumes ONTAP システムに接続している Web ブラウザにクラ�
 
 導入時の特別料金が期限切れになり、 WORM ストレージの使用料が請求されます。WORM ボリュームのプロビジョニング済みの合計容量に基づいて、 1 時間ごとに課金されます。この環境 の新規および既存の Cloud Volumes ONTAP システムです。
 
-https://cloud.netapp.com/pricing["WORM ストレージの価格設定については、こちらをご覧ください"^]。
+https://bluexp.netapp.com/pricing["WORM ストレージの価格設定については、こちらをご覧ください"^]です。
 
 
 

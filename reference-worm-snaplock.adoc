@@ -17,14 +17,14 @@ summary: Cloud Volumes ONTAPシステム上にWrite Once Read Many（WORM）フ�
 Cloud Volumes ONTAPシステム上にWrite Once Read Many（WORM）ファイルの改ざんを防止し、Snapshotを変更せずに特定の保持期間にわたって保持できます。この機能はSnapLockテクノロジを基盤としており、データ保護とコンプライアンスのレイヤを追加します。
 
 .作業を開始する前に
-Snapshotコピーの作成に使用するボリュームがSnapLockボリュームであることを確認します。ボリュームでSnapLock保護を有効にする方法については、を参照してください https://docs.netapp.com/us-en/ontap/snaplock/snaplock-config-overview-concept.html["SnapLockの設定"^]。
+Snapshotコピーの作成に使用するボリュームがSnapLockボリュームであることを確認します。ボリュームでSnapLock保護を有効にする方法については、を参照し https://docs.netapp.com/us-en/ontap/snaplock/snaplock-config-overview-concept.html["ONTAPのドキュメント：「Configure SnapLock」"^]てください。
 
 .手順
-. SnapLockボリュームからSnapshotコピーを作成します。CLIまたはSystem Managerを使用したSnapshotコピーの作成については、を参照してください https://docs.netapp.com/us-en/ontap/data-protection/manage-local-snapshot-copies-concept.html["ローカルSnapshotコピーの管理の概要"^]。
+. SnapLockボリュームからSnapshotコピーを作成します。CLIまたはSystem Managerを使用したSnapshotコピーの作成については、を参照して https://docs.netapp.com/us-en/ontap/data-protection/manage-local-snapshot-copies-concept.html["ONTAPのドキュメント：ローカルSnapshotコピーの管理の概要"^]ください。
 +
 SnapshotコピーはボリュームのWORMプロパティを継承し、改ざんを防止します。基盤となるSnapLockテクノロジにより、指定した保持期間が経過するまで、Snapshotの編集や削除が行われないように保護されます。
 
-. これらのSnapshotを編集する必要がある場合は、保持期間を変更できます。詳細については、を参照して https://docs.netapp.com/us-en/ontap/snaplock/set-retention-period-task.html#set-the-default-retention-period["保持期限を設定する"^]ください。
+. これらのSnapshotを編集する必要がある場合は、保持期間を変更できます。詳細については、を参照して https://docs.netapp.com/us-en/ontap/snaplock/set-retention-period-task.html#set-the-default-retention-period["ONTAPのドキュメント：保持期限の設定"^]ください。
 
 
 

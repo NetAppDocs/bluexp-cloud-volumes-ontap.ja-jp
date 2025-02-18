@@ -42,7 +42,7 @@ SMB は、 Windows システム向けの従来のファイルアクセスプロ�
 
 Cloud Volumes ONTAP は、スケールアウトストレージ用のオプションとしてS3をサポートしています。S3プロトコルをサポートすることで、Storage VM（SVM）のバケットに格納されたオブジェクトへのS3クライアントアクセスを設定できます。
 
-link:https://docs.netapp.com/us-en/ontap/s3-multiprotocol/index.html#how-s3-multiprotocol-works["S3マルチプロトコルの仕組みを説明します"^]。link:https://docs.netapp.com/us-en/ontap/object-storage-management/index.html["ONTAP で S3 オブジェクトストレージサービスを設定および管理する方法について説明します"^]。
+link:https://docs.netapp.com/us-en/ontap/s3-multiprotocol/index.html#how-s3-multiprotocol-works["ONTAPのドキュメント：S3マルチプロトコルの仕組み"^]です。link:https://docs.netapp.com/us-en/ontap/object-storage-management/index.html["ONTAPのドキュメント：ONTAPでS3オブジェクトストレージサービスを設定および管理する方法"^]です。
 
 
 
@@ -50,4 +50,4 @@ link:https://docs.netapp.com/us-en/ontap/s3-multiprotocol/index.html#how-s3-mult
 
 ONTAPバージョン9.12.1以降では、クラウドプロバイダでNVMe-TCPがサポートされます。BlueXPには、NVMe-oF TCPの管理機能はありません。
 
-ONTAPを使用したNVMeの設定の詳細については、を参照してください https://docs.netapp.com/us-en/ontap/san-admin/configure-svm-nvme-task.html["NVMe用のStorage VMを設定する"^]。
+ONTAPを使用したNVMeの設定の詳細については、を参照して https://docs.netapp.com/us-en/ontap/san-admin/configure-svm-nvme-task.html["ONTAPのドキュメント：NVMe用のStorage VMの設定"^]ください。

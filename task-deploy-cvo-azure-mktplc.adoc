@@ -1,0 +1,121 @@
+---
+sidebar: sidebar 
+permalink: task-deploy-cvo-azure-mktplc.html 
+keywords: deploy cvo marketplace, marketplace direct cvo deployment, azure marketplace 
+summary:  
+---
+= Azure MarketplaceからCloud Volumes ONTAPを導入
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Cloud Volumes ONTAP 9.16.1以降では、Azure Marketplaceの直接導入機能を使用して、Azure MarketplaceからCloud Volumes ONTAPを迅速かつ簡単に導入し、その中核機能を環境内で確認できます。
+
+このサービスの詳細については、を参照してくださいlink:concept-azure-mktplace-direct.html["BlueXP  と市場で提供されているCloud Volumes ONTAPソリューションの詳細を確認する"]。
+
+.このタスクについて
+Azure Marketplaceを使用して導入されるCloud Volumes ONTAPのインスタンスには、次のプロパティがあります。
+
+* 最新のCloud Volumes ONTAPバージョン（9.16.1以降）。
+* プロビジョニング可能な容量が500GiBに制限されているCloud Volumes ONTAPの無償ライセンス。このライセンスにはNetAppのサポートは含まれておらず、有効期限はありません。
+* 単一のアベイラビリティゾーン（AZ）内にハイアベイラビリティ（HA）モードで構成され、デフォルトのシリアル番号でプロビジョニングされた2つのノード。Storage Virtual Machine（SVM）はに導入されていlink:concept-ha-azure.html#ha-single-availability-zone-configuration-with-shared-managed-disks["柔軟なオーケストレーションモード"]ます。
+* デフォルトで作成されるインスタンスのアグリゲート。
+* 500GiBのプロビジョニング済み容量のPremium SSD v2マネージドディスク、ルートディスクとデータディスク。
+* データSVMを1つ導入し、NFS、CIFS、iSCSI、NVMe/TCPデータサービスを実装追加のSVM用のプロビジョニングはありません。
+* デフォルトのシリアル番号に対してインストールされたNFS、CIFS（SMB）、iSCSI、Anti-Ransomware（ARW）、SnapLock、SnapMirrorのライセンス。
+* https://docs.netapp.com/us-en/ontap/volumes/enable-temperature-sensitive-efficiency-concept.html["ONTAPの温度依存型Storage Efficiency（TSSE）"^]、ボリューム暗号化、および外部キー管理がデフォルトで有効になっています。
+* 次の機能はサポートされていません。
++
+** FabricPool による階層化
+** インスタンスタイフノヘンコウ
+** 高速書き込みモード
+
+
+
+
+.作業を開始する前に
+* Azure Marketplaceの有効なサブスクリプションを所有していることを確認します。
+* Azure内ののネットワーク要件を満たしていることを確認しますlink:concept-ha-azure.html#ha-single-availability-zone-configuration-with-shared-managed-disks["単一のAZにHAを導入"]。を参照してください link:reference-networking-azure.html["Cloud Volumes ONTAP用のAzureネットワークのセットアップ"]。
+* Cloud Volumes ONTAPを導入するには、次のAzureロールのいずれかが割り当てられている必要があります。
++
+**  `contributor`デフォルトの権限を持つロール。詳細については、を参照して https://learn.microsoft.com/en-us/azure/role-based-access-control/built-in-roles["Azureのドキュメント：Azureの組み込みロール"^]ください。
+** 次の権限を持つカスタムRBACロール。詳細については、を参照して https://learn.microsoft.com/en-us/azure/role-based-access-control/custom-roles["Azureのドキュメント：Azureのカスタムロール"^]ください。
++
+[]
+====
+"permissions"：[｛"actions"：["Microsoft.aad/register/action"、"Microsoft.Resources/subscriptions/resourceGroups/write"、"Microsoft.Network/loadBalancers/write" Microsoft.Compute/capacityReservationGroups/deploy/action" Microsoft.Compute/virtualMachines/write" Microsoft.Network/virtualNetworks/read" Microsoft.Compute/disks/write" Microsoft.Network/virtualNetworks/subnets/write"、"Microsoft.ClassicCompute/virtualMachines/networkInterfaces/networkSecurityResources/write" Microsoft.Network/networkInterfaces/write"、"Microsoft.DataGroups/write" Microsoft.Compute/virtualMachines/extensions/write"、",",",",",",",",",",",",",",",",",",",",",",",",",",",",". Microsoft.Network/virtualNetworks/write" Microsoft.Network/networkSecurityGroups/write" Microsoft.Network/networkSecurityGroups/read" Microsoft.Compute/virtualMachineScaleSets/write" Microsoft.Network/virtualNetworks/subnets/read"
+
+====
++
+
+NOTE: リソースプロバイダ「Microsoft.storage」をサブスクリプションに登録している場合は、権限は必要ありません `Microsoft.AAD/register/action`。詳細については、を参照して https://learn.microsoft.com/en-us/azure/role-based-access-control/permissions/storage["Azureのドキュメント：Azure Permissions for Storage"^]ください。
+
+
+
+
+
+.手順
+. Azure MarketplaceサイトでNetApp製品を検索します。
+. NetApp Cloud Volumes ONTAP DIRECT *を選択します。
+. [作成]*をクリックして導入ウィザードを起動します。
+. 計画を選択します。通常、*プラン*リストにはCloud Volumes ONTAPの最新リリースが表示されます。
+. [基本設定]タブで、次の詳細を指定します。
++
+** *サブスクリプション*:サブスクリプションを選択します。展開はサブスクリプション番号にリンクされます。
+** *リソースグループ*：既存のリソースグループを使用するか、新しいリソースグループを作成します。リソースグループを使用すると、Cloud Volumes ONTAPインスタンスの1つのグループ内ですべてのリソース（ディスクやSVMなど）を割り当てることができます。
+** *リージョン*：単一のAZでAzure HAの導入をサポートするリージョンを選択します。リストには、使用可能なリージョンのみが表示されます。
+** *サイズ*：サポートされるPremium SSD v2管理対象ディスクのSVMサイズを選択します。
+** *ゾーン*:選択したリージョンのゾーンを選択します。
+** *管理者パスワード*：パスワードを設定します。導入後にこの管理者パスワードを使用してシステムにログインします。
+** *パスワードの確認*：確認のために同じパスワードを再入力します。
++
+*** [ネットワーク]*タブで、仮想ネットワークとサブネットを追加するか、リストから選択します。
++
+
+NOTE: Microsoft Azureの制限事項に準拠するには、新しい仮想ネットワークのセットアップ時に新しいサブネットを作成する必要があります。同様に、既存のネットワークを選択する場合は、既存のサブネットを選択する必要があります。
+
+*** 事前定義されたネットワークセキュリティグループを選択するには、* Yes *を選択します。事前定義されたAzureネットワークセキュリティグループに必要なトラフィックルールを割り当てるには、*[いいえ]*を選択します。詳細については、を参照してください link:reference-networking-azure.html#security-group-rules["Azure のセキュリティグループルール"]。
+*** [Advanced]*タブで、この導入に必要な2つのAzure機能が設定されているかどうかを確認します。link:task-saz-feature.html["Cloud Volumes ONTAPの単一AZ環境でAzureの機能を有効にする"]およびを参照してくださいlink:task-azure-high-availability-mode.html["AzureでCloud Volumes ONTAPのハイアベイラビリティモードを有効にする"]。
+*** [タグ]タブでは、リソースまたはリソースグループの名前と値のペアを定義できます。
+*** [Review + Create]タブで、詳細を確認して導入を開始します。
+
+
+
+
+
+
+.完了後
+通知アイコンを選択すると、導入の進行状況が表示されます。Cloud Volumes ONTAPを導入したら、処理用のSVMを表示できます。
+
+アクセス可能になったら、ONTAP System ManagerまたはONTAP CLIを使用して、設定した管理者クレデンシャルでSVMにログインします。その後、ボリューム、LUN、または共有を作成して、Cloud Volumes ONTAPのストレージ機能の利用を開始できます。
+
+
+
+== トラブルシューティング
+
+Azure Marketplace経由で直接導入されたCloud Volumes ONTAPには、NetAppによるサポートは含まれていません。導入時に問題が発生した場合は、個別にトラブルシューティングして解決できます。
+
+.手順
+. Azure Marketplaceサイトで、*[Boot diagnostics]>[Serial log]*に移動します。
+. シリアルログをダウンロードして調査します。
+. トラブルシューティングについては、製品マニュアルとナレッジベース（KB）記事を参照してください。
++
+** https://learn.microsoft.com/en-us/partner-center/["Azure Marketplaceのドキュメント"]
+** https://www.netapp.com/support-and-training/documentation/["NetApp のドキュメント"]
+** https://kb.netapp.com/["NetAppの技術情報アーティクル"]
+
+
+
+
+.関連リンク
+ストレージの作成の詳細については、ONTAPのドキュメントを参照してください。
+
+* https://docs.netapp.com/us-en/ontap/volumes/create-volume-task.html["NFS用のボリュームの作成"^]
+* https://docs.netapp.com/us-en/ontap-cli/lun-create.html["iSCSI用のLUNの作成"^]
+* https://docs.netapp.com/us-en/ontap-cli/vserver-cifs-share-create.html["CIFS用の共有の作成"^]
+
