@@ -14,9 +14,9 @@ summary:
 
 
 [role="lead"]
-NetAppには、AzureにCloud Volumes ONTAPを導入するための2つのオプションがあります。NetApp BlueXP  を使用する方法と、Azure Marketplaceを使用する方法です。Cloud Volumes ONTAPは従来、導入とオーケストレーションにBlueXP  を利用していました。Cloud Volumes ONTAP 9.16.1以降では、Azure Marketplaceの直接導入を活用できます。Azure Marketplaceは、限られているが強力なCloud Volumes ONTAPの機能とオプションにアクセスできる合理化されたプロセスです。
+NetAppには、AzureにCloud Volumes ONTAPを導入するための2つのオプションがあります。Cloud Volumes ONTAPは従来、導入とオーケストレーションにBlueXP  を利用していました。Cloud Volumes ONTAP 9.16.1以降では、Azure Marketplaceの直接導入を活用できます。Azure Marketplaceは、限られているが強力なCloud Volumes ONTAPの機能とオプションにアクセスできる合理化されたプロセスです。
 
-Cloud Volumes ONTAPをAzure Marketplaceから直接導入する場合、BlueXP  Connectorを設定したり、BlueXP  を使用してCloud Volumes ONTAPを導入するために必要なその他のセキュリティおよびオンボーディングの基準を満たしたりする必要はありません。Azure Marketplaceでは、数回のクリックでCloud Volumes ONTAPをすばやく導入し、自社環境の中核機能を確認できます。
+Cloud Volumes ONTAPをAzure Marketplaceから直接導入する場合、BlueXP  Connectorを設定したり、BlueXP  を使用してCloud Volumes ONTAPを導入するために必要なその他のセキュリティおよびオンボーディングの基準を満たしたりする必要はありません。Azure Marketplaceでは、数回のクリックでCloud Volumes ONTAPを迅速に導入し、自社環境の中核的な機能を確認できます。
 
 2つのオプションの機能比較を次に示します。
 
@@ -28,7 +28,7 @@ Cloud Volumes ONTAPをAzure Marketplaceから直接導入する場合、BlueXP 
 | *オンボーディング* | 短時間で簡単に導入でき、直接導入に必要な準備は最小限 | オンボーディングプロセスの長期化（BlueXP  Connectorのインストールなど） 
 
 
-| *サポートされるStorage Virtual Machine（SVM）インスタンス* | Edsv5およびLsV3 | Storage VMの全オプションhttps://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-configs-azure.html["Azure でサポートされる構成"^] 
+| *サポートされるStorage Virtual Machine（Storage VM）インスタンス* | Edsv5およびLsv3 | Storage VMの全オプションhttps://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-configs-azure.html["Azure でサポートされる構成"^] 
 
 
 | * ライセンス * | 無償ライセンス | 任意の容量単位のライセンス：link:concept-licensing.html["Cloud Volumes ONTAP ライセンス"] 
@@ -52,7 +52,7 @@ Cloud Volumes ONTAPをAzure Marketplaceから直接導入する場合、BlueXP 
 | *オーケストレーション機能* | 使用不可 | ライセンスタイプに基づいてBlueXP  から利用可能 
 
 
-| *サポートされるSVM数* | 環境ごとに1つのSVM | 複数のSVM（構成に応じて）。link:task-managing-svms-azure.html#supported-number-of-storage-vms["サポートされるSVM数"] 
+| *サポートされるStorage VM数* | 導入環境ごとに1つ | 複数のStorage VM（構成に応じて）。link:task-managing-svms-azure.html#supported-number-of-storage-vms["サポートされている Storage VM 数"] 
 
 
 | *インスタンスタイプの変更* | サポート対象外 | サポート対象 
@@ -60,7 +60,7 @@ Cloud Volumes ONTAPをAzure Marketplaceから直接導入する場合、BlueXP 
 
 | * FabricPool階層化* | サポート対象外 | サポート対象 
 |===
-将来的には、Cloud Volumes ONTAPの完全な管理機能とオーケストレーション機能を体験できるようになるため、BlueXP  ConnectorはAzure Marketplaceを介して行われたデプロイメントを検出できるようになります。
+将来的には、BlueXP  Connectorは、Azure Marketplaceを介して行われたデプロイメントを特定できるようになります。これにより、BlueXP  が提供する拡張機能を活用できます。
 
 .関連リンク
 * Azure Marketplaceの直接導入：link:task-deploy-cvo-azure-mktplc.html["Azure MarketplaceからCloud Volumes ONTAPを導入"]

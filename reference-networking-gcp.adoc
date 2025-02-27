@@ -235,7 +235,7 @@ Cloud Volumes ONTAPは、これらのエンドポイントを使用してさま�
 
 Cloud Volumes ONTAP では、ネットアップAutoSupport へのアウトバウンドのインターネットアクセスが必要です。ネットアップは、システムの健常性をプロアクティブに監視し、ネットアップテクニカルサポートにメッセージを送信します。
 
-Cloud Volumes ONTAP が AutoSupport メッセージを送信できるように、ルーティングポリシーとファイアウォールポリシーで次のエンドポイントへの HTTP / HTTPS トラフィックを許可する必要があります。
+Cloud Volumes ONTAPがAutoSupportメッセージを送信できるように、ルーティングおよびファイアウォールポリシーで次のエンドポイントへのHTTPSトラフィックを許可する必要があります。
 
 * \ https://support.netapp.com/aods/asupmessage
 * \ https://support.netapp.com/asupprod/post/1.0/postAsup

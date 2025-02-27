@@ -14,7 +14,7 @@ summary:
 
 
 [role="lead"]
-Cloud Volumes ONTAP 9.16.1以降では、Azure Marketplaceの直接導入機能を使用して、Azure MarketplaceからCloud Volumes ONTAPを迅速かつ簡単に導入し、その中核機能を環境内で確認できます。
+Cloud Volumes ONTAP 9.16.1以降では、Azure Marketplaceの直接導入を使用して、Cloud Volumes ONTAPをすばやく簡単に導入できます。Azure Marketplaceでは、数回のクリックでCloud Volumes ONTAPを迅速に導入し、自社環境の中核的な機能を確認できます。
 
 このサービスの詳細については、を参照してくださいlink:concept-azure-mktplace-direct.html["BlueXP  と市場で提供されているCloud Volumes ONTAPソリューションの詳細を確認する"]。
 
@@ -23,11 +23,11 @@ Azure Marketplaceを使用して導入されるCloud Volumes ONTAPのインス�
 
 * 最新のCloud Volumes ONTAPバージョン（9.16.1以降）。
 * プロビジョニング可能な容量が500GiBに制限されているCloud Volumes ONTAPの無償ライセンス。このライセンスにはNetAppのサポートは含まれておらず、有効期限はありません。
-* 単一のアベイラビリティゾーン（AZ）内にハイアベイラビリティ（HA）モードで構成され、デフォルトのシリアル番号でプロビジョニングされた2つのノード。Storage Virtual Machine（SVM）はに導入されていlink:concept-ha-azure.html#ha-single-availability-zone-configuration-with-shared-managed-disks["柔軟なオーケストレーションモード"]ます。
+* 単一のアベイラビリティゾーン（AZ）内にハイアベイラビリティ（HA）モードで構成され、デフォルトのシリアル番号でプロビジョニングされた2つのノード。Storage Virtual Machine（Storage VM）はに導入されlink:concept-ha-azure.html#ha-single-availability-zone-configuration-with-shared-managed-disks["柔軟なオーケストレーションモード"]ます。
 * デフォルトで作成されるインスタンスのアグリゲート。
 * 500GiBのプロビジョニング済み容量のPremium SSD v2マネージドディスク、ルートディスクとデータディスク。
-* データSVMを1つ導入し、NFS、CIFS、iSCSI、NVMe/TCPデータサービスを実装追加のSVM用のプロビジョニングはありません。
-* デフォルトのシリアル番号に対してインストールされたNFS、CIFS（SMB）、iSCSI、Anti-Ransomware（ARW）、SnapLock、SnapMirrorのライセンス。
+* データStorage VMを1台導入し、NFS、CIFS、iSCSI、NVMe/TCPデータサービスを利用追加データStorage VMは追加できません。
+* NFS、CIFS（SMB）、iSCSI、Anti-Ransomware（ARW）、SnapLock、SnapMirror用にインストールされたライセンス。
 * https://docs.netapp.com/us-en/ontap/volumes/enable-temperature-sensitive-efficiency-concept.html["ONTAPの温度依存型Storage Efficiency（TSSE）"^]、ボリューム暗号化、および外部キー管理がデフォルトで有効になっています。
 * 次の機能はサポートされていません。
 +
@@ -67,9 +67,9 @@ NOTE: リソースプロバイダ「Microsoft.storage」をサブスクリプシ
 . [基本設定]タブで、次の詳細を指定します。
 +
 ** *サブスクリプション*:サブスクリプションを選択します。展開はサブスクリプション番号にリンクされます。
-** *リソースグループ*：既存のリソースグループを使用するか、新しいリソースグループを作成します。リソースグループを使用すると、Cloud Volumes ONTAPインスタンスの1つのグループ内ですべてのリソース（ディスクやSVMなど）を割り当てることができます。
+** *リソースグループ*：既存のリソースグループを使用するか、新しいリソースグループを作成します。リソースグループを使用すると、Cloud Volumes ONTAPインスタンスの1つのグループ内でディスクやStorage VMなどのすべてのリソースを割り当てることができます。
 ** *リージョン*：単一のAZでAzure HAの導入をサポートするリージョンを選択します。リストには、使用可能なリージョンのみが表示されます。
-** *サイズ*：サポートされるPremium SSD v2管理対象ディスクのSVMサイズを選択します。
+** *サイズ*：サポートされているPremium SSD v2管理ディスク用のStorage VMサイズを選択します。
 ** *ゾーン*:選択したリージョンのゾーンを選択します。
 ** *管理者パスワード*：パスワードを設定します。導入後にこの管理者パスワードを使用してシステムにログインします。
 ** *パスワードの確認*：確認のために同じパスワードを再入力します。
@@ -90,9 +90,9 @@ NOTE: Microsoft Azureの制限事項に準拠するには、新しい仮想ネ�
 
 
 .完了後
-通知アイコンを選択すると、導入の進行状況が表示されます。Cloud Volumes ONTAPを導入したら、処理用のSVMを表示できます。
+通知アイコンを選択すると、導入の進行状況が表示されます。Cloud Volumes ONTAPを導入したら、リストに処理用のStorage VMを表示できます。
 
-アクセス可能になったら、ONTAP System ManagerまたはONTAP CLIを使用して、設定した管理者クレデンシャルでSVMにログインします。その後、ボリューム、LUN、または共有を作成して、Cloud Volumes ONTAPのストレージ機能の利用を開始できます。
+アクセス可能になったら、ONTAP System ManagerまたはONTAP CLIを使用して、設定した管理者クレデンシャルでStorage VMにログインします。その後、ボリューム、LUN、または共有を作成して、Cloud Volumes ONTAPのストレージ機能の利用を開始できます。
 
 
 

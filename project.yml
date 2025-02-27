@@ -73,7 +73,7 @@ sidebar:
     - title: Microsoft Azure で利用を開始しましょう
       flavor: azure
       entries:
-      - title: 導入オプションを確認する
+      - title: AzureでのCloud Volumes ONTAP導入オプションの詳細
         url: "/concept-azure-mktplace-direct.html"
       - title: BlueXP  で開始する
         entries:
@@ -112,9 +112,7 @@ sidebar:
           - title: 追加情報
             url: "/reference-image-verification-links.html"
       - title: 市場での販売を開始
-        entries:
-        - title: 市場からのCloud Volumes ONTAPの導入
-          url: "/task-deploy-cvo-azure-mktplc.html"
+        url: "/task-deploy-cvo-azure-mktplc.html"
     - title: Google Cloud で始めましょう
       flavor: gcp
       entries:

@@ -16,7 +16,7 @@ summary: Azure MarketplaceからONTAPイメージをエクスポートして、V
 [role="lead"]
 VHDイメージがAzureクラウドにパブリッシュされると、イメージはNetAppで管理されなくなります。公開されたイメージはAzure Marketplaceに配置されます。AzureによるVHDの先頭1MBと末尾512Bへの変更は、イメージがAzure Marketplaceでステージングされて公開されるときに発生します。VHDファイルの署名を検証するには、まずAzureによって変更されたVHDイメージをAzure Marketplaceからエクスポートする必要があります。
 
-.必要なもの
+.作業を開始する前に
 必要なプログラムをシステムにインストールする必要があります。
 
 * Azure CLIがインストールされているか、AzureポータルからAzure Cloud Shellを使用できます。
