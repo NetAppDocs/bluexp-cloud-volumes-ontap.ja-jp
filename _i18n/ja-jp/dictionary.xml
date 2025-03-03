@@ -5827,4 +5827,5 @@ Mac OSでtailコマンドを完了します。</block>
   <block id="0573433fb185b84611f18e3f6e506cd2" category="paragraph">通知アイコンを選択すると、導入の進行状況が表示されます。Cloud Volumes ONTAPを導入したら、リストに処理用のStorage VMを表示できます。</block>
   <block id="20a0bd63dc9b064c0cedc40d649eb29a" category="paragraph">アクセス可能になったら、ONTAP System ManagerまたはONTAP CLIを使用して、設定した管理者クレデンシャルでStorage VMにログインします。その後、ボリューム、LUN、または共有を作成して、Cloud Volumes ONTAPのストレージ機能の利用を開始できます。</block>
   <block id="1c3093638c74eef35618192ff8049216" category="admonition">中国地域では、シングルノード環境はCloud Volumes ONTAP 9.12.1 GAおよび9.13.0 GAでのみサポートされます。これらのバージョンは、Cloud Volumes ONTAPの新しいパッチおよびリリースにアップグレードできます。中国の地域に新しいCloud Volumes ONTAPバージョンを導入する場合は、NetAppサポートにお問い合わせください。中国地域では、NetAppから直接購入したライセンスのみがサポートされています。マーケットプレイスのサブスクリプションは利用できません。</block>
+  <block id="4fbdcdf3c2d8694d5e358b3175b867da" category="section-title">2025 年 3 月 3 日</block>
 </blocks>
