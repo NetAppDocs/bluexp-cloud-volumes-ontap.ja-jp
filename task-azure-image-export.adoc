@@ -69,7 +69,7 @@ South Central US          southcentralus       (US) South Central US
 
 . 次の表から、対応するCloud Volumes ONTAPバージョンとVM導入タイプのSKU名を確認してください。
 +
-SKU名は、マーケットプレイスイメージのURNを設定するときに「skuName」変数の値として使用されます。
+SKU名は、マーケットプレイスイメージのURNを設定するときの「skuName」変数の値です。
 
 +
 たとえば、Cloud Volumes ONTAP 9.15.0を使用したシングルノード環境では、SKU名としてを使用する必要があります `ontap_cloud_byol`。
@@ -79,7 +79,13 @@ SKU名は、マーケットプレイスイメージのURNを設定するとき�
 |===
 
 
-| * Cloud Volumes ONTAPバージョン* | * VM導入タイプ* | * SKU名* 
+| * Cloud Volumes ONTAPバージョン* | *仮想マシンの導入方法* | * SKU名* 
+
+
+| 9.16.1以降 | Marketplaceの直接導入方式を使用 | ONTAPクラウドダイレクト 
+
+
+| 9.16.1以降 | BlueXP  を使用したすべての導入 | ONTAPクラウド 
 
 
 | 9.15.1 | BlueXP  を使用したすべての導入 | ONTAPクラウド 

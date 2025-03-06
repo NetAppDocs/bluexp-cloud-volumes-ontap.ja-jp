@@ -28,7 +28,7 @@ Cloud Volumes ONTAPをAzure Marketplaceから直接導入する場合、BlueXP 
 | *オンボーディング* | 短時間で簡単に導入でき、直接導入に必要な準備は最小限 | オンボーディングプロセスの長期化（BlueXP  Connectorのインストールなど） 
 
 
-| *サポートされるStorage Virtual Machine（Storage VM）インスタンス* | Edsv5およびLsv3 | Storage VMの全オプションhttps://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-configs-azure.html["Azure でサポートされる構成"^] 
+| *サポートされる仮想マシン（VM）タイプ* | Edsv5およびLsv3 | あらゆる種類のVMhttps://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-configs-azure.html["Azure でサポートされる構成"^] 
 
 
 | * ライセンス * | 無償ライセンス | 任意の容量単位のライセンス：link:concept-licensing.html["Cloud Volumes ONTAP ライセンス"] 

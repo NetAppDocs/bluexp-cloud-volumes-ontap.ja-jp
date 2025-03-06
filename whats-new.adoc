@@ -16,7 +16,19 @@ summary: BlueXPのCloud Volumes ONTAP Managementの新機能をご紹介しま�
 [role="lead"]
 BlueXPのCloud Volumes ONTAP Managementの新機能をご紹介します。
 
-このページで説明Cloud Volumes ONTAP する機能拡張は'BlueXPの機能に固有のものであり'BlueXPの管理を可能にしますCloud Volumes ONTAP ソフトウェア自体の新機能については、 https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/index.html["Cloud Volumes ONTAP のリリースノートに移動します"^]
+このページで説明Cloud Volumes ONTAP する機能拡張は'BlueXPの機能に固有のものであり'BlueXPの管理を可能にしますCloud Volumes ONTAPソフトウェア自体の新機能については、を参照してください https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/index.html["Cloud Volumes ONTAP のリリースノートに移動します"^]。
+
+
+
+== 2025年3月6日
+
+
+
+=== Cloud Volumes ONTAP 9.16.1 GA
+
+BlueXP  を使用して、AzureとGoogle CloudでCloud Volumes ONTAP 9.16.1 General Availabilityリリースを導入、管理できるようになりました。ただし、このバージョンは、AWSでの導入およびアップグレードには使用できません。
+
+link:https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/["このリリースのに含まれる新機能について説明します Cloud Volumes ONTAP"^]。
 
 
 
@@ -24,7 +36,7 @@ BlueXPのCloud Volumes ONTAP Managementの新機能をご紹介します。
 
 
 
-=== ニュージーランド北部リージョンがAzureでサポートされるようになりました
+=== Azureでのニュージーランド北部リージョンのサポート
 
 ニュージーランド北部リージョンは、Cloud Volumes ONTAP 9.12.1 GA以降のシングルノードおよびハイアベイラビリティ（HA）構成でAzureでサポートされるようになりました。このリージョンでは、Lsv3インスタンスタイプはサポートされていないことに注意してください。
 
@@ -223,7 +235,7 @@ Cloud Volumes ONTAP 9.12.1 GA以降では、カナダ西部リージョンがAWS
 
 BlueXPで、AWS、Azure、Google CloudにCloud Volumes ONTAP 9.15.1 General Availabilityリリースを導入、管理できるようになりました。
 
-link:https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/["このリリースのに含まれる新機能について説明します Cloud Volumes ONTAP"^]。
+link:https://docs.netapp.com/us-en/cloud-volumes-ontap-9151-relnotes/["このリリースのに含まれる新機能について説明します Cloud Volumes ONTAP"^]です。
 
 
 
@@ -259,7 +271,7 @@ AzureでFlash Cacheを設定するには、9.13.1 GA以上のCloud Volumes ONTAP
 
 BlueXPで、AWS、Azure、Google CloudにCloud Volumes ONTAP 9.15.0を導入して管理できるようになりました。
 
-link:https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/["このリリースのに含まれる新機能について説明します Cloud Volumes ONTAP"^]。
+link:https://docs.netapp.com/us-en/cloud-volumes-ontap-9150-relnotes/["このリリースのに含まれる新機能について説明します Cloud Volumes ONTAP"^]です。
 
 
 
