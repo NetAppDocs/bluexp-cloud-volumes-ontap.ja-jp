@@ -1,0 +1,15 @@
+= Azureの複数のアベイラビリティゾーン環境でサポートされる新しいリージョン
+:allow-uri-read: 
+
+
+
+
+=== Azureの複数のアベイラビリティゾーン環境でサポートされる新しいリージョン
+
+Azure for Cloud Volumes ONTAP 9.12.1 GA以降では、次のリージョンでHA複数アベイラビリティゾーンの導入がサポートされるようになりました。
+
+* 米国中部
+* US Gov Virginia（米国政府地域-バージニア州）
+
+
+すべてのリージョンのリストについては、を参照して https://bluexp.netapp.com/cloud-volumes-global-regions["Azureのグローバルリージョンマップ"^]ください。
