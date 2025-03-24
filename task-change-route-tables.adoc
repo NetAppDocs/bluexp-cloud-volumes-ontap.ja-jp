@@ -4,7 +4,7 @@ permalink: task-change-route-tables.html
 keywords: route tables, update route tables, modify route tables, change route table 
 summary: 複数の AWS アベイラビリティゾーンに導入されている HA ペアのフローティング IP アドレスへのルートを含む AWS ルーティングテーブルを変更できます。この処理は、新しい NFS または CIFS クライアントが AWS の HA ペアにアクセスする必要がある場合に実行できます。 
 ---
-= 複数の AZ にまたがる HA ペア用のルーティングテーブルを変更します
+= 複数のAWS AZにあるCloud Volumes ONTAP HAペアのルーティングテーブルを変更する
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

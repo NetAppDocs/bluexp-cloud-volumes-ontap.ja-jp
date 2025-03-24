@@ -4,7 +4,7 @@ permalink: task-deploying-otc-aws.html
 keywords: Cloud Volumes ONTAP, deploying, launching, creating, deploy, launch, create, aws, serial number, license key, byol, test instance, aws tags, tags, location, vpc, encryption, security group, aws-managed encryption, disk size, disk type, write speed, licensing, IAM role, preconfigured package, access control, volume protection, usage profile, register, CIFS share, quota, qtree, WorkingEnvironmentId, HA, high-availability, subscription, cloud data sense, cloud backup 
 summary: Cloud Volumes ONTAP インスタンスは、単一システム構成または AWS での HA ペアとして起動できます。 
 ---
-= AWS での Cloud Volumes ONTAP の起動
+= AWS で Cloud Volumes ONTAP を起動します
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -45,7 +45,7 @@ link:task-set-up-licensing-aws.html["ライセンスの設定方法について�
 
 
 
-== AWS でのシングルノード Cloud Volumes ONTAP システムの起動
+== AWSでシングルノードCloud Volumes ONTAPシステムを起動する
 
 AWSでCloud Volumes ONTAPを起動する場合は、BlueXP  で新しい作業環境を作成する必要があります。
 
@@ -288,7 +288,7 @@ Cloud Volumes ONTAPインスタンスの起動で問題が発生した場合は�
 
 
 
-== AWS での Cloud Volumes ONTAP HA ペアの起動
+== AWSでCloud Volumes ONTAP HAペアを起動する
 
 AWSでCloud Volumes ONTAP HAペアを起動するには、BlueXPでHA作業環境を作成する必要があります。
 

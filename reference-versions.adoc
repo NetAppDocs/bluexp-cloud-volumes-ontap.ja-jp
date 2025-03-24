@@ -4,7 +4,7 @@ permalink: reference-versions.html
 keywords: versions, supported versions, new versions, cloud volumes ontap version 
 summary: 'BlueXPでは"新しいCloud Volumes ONTAP 作業環境を作成するときに"いくつかの異なるONTAP バージョンから選択できます' 
 ---
-= 新規導入でサポートされるONTAPのバージョン
+= Cloud Volumes ONTAP環境でサポートされるONTAPのバージョン
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

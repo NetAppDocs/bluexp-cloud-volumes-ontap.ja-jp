@@ -4,7 +4,7 @@ permalink: task-setting-up-kms.html
 keywords: encryption, kms, key management service, cmk, customer master key, master key, key, permissions 
 summary: Cloud Volumes ONTAP で Amazon 暗号化を使用する場合は、 AWS Key Management Service をセットアップする必要があります。 
 ---
-= AWS KMS のセットアップ
+= AWSでお客様管理のキーを使用するようにCloud Volumes ONTAPを設定する
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

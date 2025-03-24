@@ -4,7 +4,7 @@ permalink: task-sync-time.html
 keywords: set up, setting up, ntp, time, synch 
 summary: NTP サーバを指定すると、ネットワーク内のシステム間で時刻が同期されるため、時刻の違いによる問題の回避に役立ちます。 
 ---
-= NTP を使用してシステム時刻を同期します
+= NTPサーバを使用したCloud Volumes ONTAPシステム時間の同期
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

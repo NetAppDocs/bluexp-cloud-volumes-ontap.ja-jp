@@ -4,7 +4,7 @@ permalink: task-getting-started-aws-c2s.html
 keywords: commercial cloud services, c2s, secret cloud, top secret cloud, aws secret region, BlueXP 
 summary: 標準のAWSリージョンと同様に、AWS Secret Cloud環境やTop Secret Cloud環境でBlueXPを使用してCloud Volumes ONTAPを導入できます。これにより、クラウドストレージにエンタープライズクラスの機能が提供されます。AWS Secret CloudリージョンとTop Secret Cloudリージョンは、米国Intelligence Community：このページの手順は、AWS Secret CloudおよびTop Secret Cloudリージョンのユーザにのみ適用されます。 
 ---
-= AWS Secret CloudリージョンとTop Secret CloudリージョンにCloud Volumes ONTAPを導入
+= AWS Secret CloudまたはAWS Top Secret CloudにCloud Volumes ONTAPを導入
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

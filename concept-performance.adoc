@@ -4,7 +4,7 @@ permalink: concept-performance.html
 keywords: performance, technical report, TR, workload, cpu 
 summary: パフォーマンスの結果を確認して、 Cloud Volumes ONTAP に適したワークロードを決定できます。 
 ---
-= パフォーマンス
+= Cloud Volumes ONTAPワークロードのパフォーマンス監視の詳細
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

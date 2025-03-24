@@ -4,7 +4,7 @@ permalink: task-setting-up-transit-gateway.html
 keywords: transit gateway, aws, amazon web services, transit gateway, floating ip, client access, nas, outside, vpc, virtual private cloud, route table 
 summary: AWS 転送ゲートウェイを設定して、 Cloud Volumes ONTAP が配置された VPC の外部からフローティング IP アドレスへの NAS クライアントアクセスを有効にします。この機能は、障害の発生時にフローティング IP がノード間で自動的に移行されるため便利です。 
 ---
-= での HA ペアの AWS 転送ゲートウェイのセットアップ 複数の AZ
+= Cloud Volumes ONTAP HAペア用のAWSトランジットゲートウェイを設定する
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

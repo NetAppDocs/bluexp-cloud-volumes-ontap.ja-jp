@@ -4,7 +4,7 @@ permalink: concept-aws-elastic-volumes.html
 keywords: elastic volumes, ev, ebs elastic volumes, ebs, amazon ebs, disk growth 
 summary: Cloud Volumes ONTAP アグリゲートでAmazon EBS Elastic Volumes機能がサポートされるため、パフォーマンスが向上し、容量が追加されます。また、必要に応じて基盤となるディスク容量が自動的に拡張されます。 
 ---
-= AWSのElastic Volumes
+= Cloud Volumes ONTAPを使用したAWS Elastic Volumesのサポートについて
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

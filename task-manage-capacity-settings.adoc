@@ -4,7 +4,7 @@ permalink: task-manage-capacity-settings.html
 keywords: aggregates, delete aggregates, add disks, view aggregates 
 summary: アグリゲートの管理を自分で行うには、ディスクの追加、アグリゲートに関する情報の表示、およびアグリゲートの削除を行います。 
 ---
-= コネクタの容量設定を管理します
+= コネクタのCloud Volumes ONTAPアグリゲート容量を管理します。
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

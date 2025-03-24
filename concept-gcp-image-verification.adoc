@@ -4,7 +4,7 @@ permalink: concept-gcp-image-verification.html
 keywords: Google Cloud, image, VHD, image signature file, 
 summary: Google Cloudイメージファイルのシグネチャファイルを確認します。 
 ---
-= Google Cloudの画像検証の概要
+= Cloud Volumes ONTAPでGoogle Cloudのイメージを検証する方法をご確認ください
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

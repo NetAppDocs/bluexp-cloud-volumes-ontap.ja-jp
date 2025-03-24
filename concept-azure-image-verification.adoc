@@ -4,7 +4,7 @@ permalink: concept-azure-image-verification.html
 keywords: Azure, image, VHD, image signature file, 
 summary: Azure VHDイメージファイルのシグネチャファイルを確認します。 
 ---
-= Azureイメージの検証の概要
+= Azure MarketplaceでのCloud Volumes ONTAPのイメージ検証
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -28,3 +28,13 @@ NOTE: Azureイメージの検証は、Cloud Volumes ONTAPソフトウェアバ�
 image:screenshot_azure_vhd_10gb.png["Azureで10GBのVHDファイルが切り替わる様子を示す図"]
 
 例として、上の図は10GBのVHDファイルを示しています。ただし、NetApp署名部分は緑色で表示され、サイズは10GB~1MB-512Bです。
+
+.関連リンク
+* https://pagefault.blog/2019/04/22/how-to-sign-and-verify-using-openssl/["Page Fault Blog: How to sign and verify using OpenSSL"^]
+* https://docs.microsoft.com/en-us/azure/databox-online/azure-stack-edge-gpu-create-virtual-machine-marketplace-image["Azure Marketplaceイメージを使用してAzure Stack Edge Pro GPU用のVMイメージを作成| Microsoft Learn"^]
+* https://docs.microsoft.com/en-us/azure/virtual-machines/scripts/copy-managed-disks-vhd-to-storage-account["Azure CLIを使用して管理対象ディスクをストレージアカウントにエクスポート/コピーする| Microsoft Learn"^]
+* https://learn.microsoft.com/en-us/azure/cloud-shell/quickstart["Azure Cloud Shellクイックスタート- Bash | Microsoft Learn"^]
+* https://learn.microsoft.com/en-us/cli/azure/install-azure-cli["Azure CLIのインストール方法| Microsoft Learn"^]
+* https://learn.microsoft.com/en-us/cli/azure/storage/blob/copy?view=azure-cli-latest#az-storage-blob-copy-start["AZストレージBlobコピー| Microsoft Learn"^]
+* https://learn.microsoft.com/en-us/cli/azure/authenticate-azure-cli["Azure CLIでサインイン—ログインと認証| Microsoft Learn"^]
+

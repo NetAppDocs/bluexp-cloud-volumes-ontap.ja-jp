@@ -4,7 +4,7 @@ permalink: task-deploy-aws-shared-vpc.html
 keywords: shared vpc, aws shared vpc, vpc sharing, shared subnet, deploy shared vpc, assume role 
 summary: 9.11.1リリース以降では、VPCを共有するAWSでCloud Volumes ONTAP HAペアがサポートされます。VPC共有を使用すると、他のAWSアカウントとサブネットを共有できます。この構成を使用するには、AWS環境をセットアップし、APIを使用してHAペアを導入する必要があります。 
 ---
-= HAペアを共有サブネットに導入します
+= AWS共有サブネットにCloud Volumes ONTAP HAペアを導入する
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

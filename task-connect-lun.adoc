@@ -4,7 +4,7 @@ permalink: task-connect-lun.html
 keywords: lun, connect lun, iscsi lun, target iqn, iqn 
 summary: iSCSIボリュームを作成すると、BlueXPによって自動的にLUNが作成されます。ボリュームごとに 1 つの LUN を作成するだけでシンプルになり、管理は不要です。ボリュームの作成後、 IQN を使用してホストから LUN に接続します。 
 ---
-= LUN をホストに接続します
+= ホストシステムからCloud Volumes ONTAP上のLUNへの接続
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

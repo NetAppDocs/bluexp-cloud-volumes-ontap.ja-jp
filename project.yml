@@ -50,7 +50,7 @@ sidebar:
         url: "/task-planning-your-config.html"
       - title: ネットワークをセットアップします
         entries:
-        - title: ネットワーク要件
+        - title: AWSネットワークをセットアップする
           url: "/reference-networking-aws.html"
         - title: AWS 転送ゲートウェイを設定します
           url: "/task-setting-up-transit-gateway.html"
@@ -109,8 +109,6 @@ sidebar:
               url: "/task-file-verification-linux.html"
             - title: Mac OSファイル署名の検証
               url: "/task-file-verification-mac.html"
-          - title: 追加情報
-            url: "/reference-image-verification-links.html"
       - title: 市場での販売を開始
         url: "/task-deploy-cvo-azure-mktplc.html"
     - title: Google Cloud で始めましょう
@@ -178,13 +176,13 @@ sidebar:
       entries:
       - title: BlueXPでStorage VMを操作します
         url: "/task-managing-svms.html"
-      - title: AWS で Storage VM を作成します
+      - title: AWSでStorage VMを管理します。
         flavor: aws
         url: "/task-managing-svms-aws.html"
-      - title: Azure で Storage VM を作成します
+      - title: AzureでStorage VMを管理します。
         flavor: azure
         url: "/task-managing-svms-azure.html"
-      - title: Google CloudでStorage VMを作成します
+      - title: Google CloudでStorage VMを管理
         flavor: gcp
         url: "/task-managing-svms-gcp.html"
       - title: SVMディザスタリカバリのセットアップ

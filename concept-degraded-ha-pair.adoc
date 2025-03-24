@@ -4,7 +4,7 @@ permalink: concept-degraded-ha-pair.html
 keywords: storage takeover, storage giveback, degraded, degraded status, degraded state, ha pair, ha takeover, takeover, giveback 
 summary: HA ペアの一方のノードが利用できない場合は、もう一方のノードがパートナーに引き続きデータを提供します。これをストレージテイクオーバーと呼びます。storage giveback が完了するまで、いくつかの操作は実行できません。 
 ---
-= テイクオーバー中は操作を実行できません
+= Cloud Volumes ONTAP HAペアのノードがオフラインの場合に処理を実行できない
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

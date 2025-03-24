@@ -4,7 +4,7 @@ permalink: task-manage-svm-dr.html
 keywords: storage virtual machine, vserver, svm, storage vm, svm dr, disaster recovery, svm disaster recovery, storage vm dr 
 summary: BlueXPでは、Storage VMディザスタリカバリのセットアップやオーケストレーションはサポートされていません。System Manager または CLI を使用する必要があります。 
 ---
-= SVMディザスタリカバリのセットアップ
+= Cloud Volumes ONTAP用のStorage VMディザスタリカバリのセットアップ
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

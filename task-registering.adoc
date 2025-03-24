@@ -4,7 +4,7 @@ permalink: task-registering.html
 keywords: Cloud Volumes ONTAP, register, registering, paygo, pay-as-you-go, registration, instance id, serial number, account id, support 
 summary: ネットアップによるサポートは Cloud Volumes ONTAP PAYGO システムに含まれていますが、最初にシステムをネットアップに登録してサポートをアクティブ化する必要があります。 
 ---
-= 従量課金制システムの登録
+= Cloud Volumes ONTAP従量課金制システムの登録
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

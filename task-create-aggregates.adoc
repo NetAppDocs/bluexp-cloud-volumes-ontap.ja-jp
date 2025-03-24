@@ -4,7 +4,7 @@ permalink: task-create-aggregates.html
 keywords: storage, provisioning, aggregates, provision, create, advanced allocation, creating aggregates, adding an aggregate, add an aggregate, create an aggregate 
 summary: アグリゲートは、手動で作成することも、ボリュームの作成時にBlueXPに自動で作成させることもできます。アグリゲートを手動で作成することのメリットは、基盤となるディスクサイズを選択して、必要な容量またはパフォーマンスに合わせてアグリゲートをサイジングできることです。 
 ---
-= アグリゲートを作成する
+= Cloud Volumes ONTAPシステムのアグリゲートを作成する
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

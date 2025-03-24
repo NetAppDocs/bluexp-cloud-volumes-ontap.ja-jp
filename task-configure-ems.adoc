@@ -4,7 +4,7 @@ permalink: task-configure-ems.html
 keywords: ems, event management system, ems notifications, notifications 
 summary: イベント管理システムは、 ONTAP システムで発生したイベントに関する情報を収集して表示します。イベント通知を受信するために、特定のイベント重大度に対してイベントの送信先とイベントルートを設定できます。 
 ---
-= EMS を設定します
+= Cloud Volumes ONTAPシステム用のEMSの設定
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

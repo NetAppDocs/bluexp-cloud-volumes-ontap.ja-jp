@@ -4,7 +4,7 @@ permalink: task-aws-key-management.html
 keywords: aws, amazon, encryption, NVE, NetApp volume encryption, KMIP, kms, key manager service 
 summary: AWSのキー管理サービスをサードパーティのキー管理サービスに利用できます。 
 ---
-= AWS Key Management Serviceを使用してキーを管理します
+= AWSキー管理サービスを使用したCloud Volumes ONTAP暗号化キーの管理
 :hardbreaks:
 :allow-uri-read: 
 :icons: font

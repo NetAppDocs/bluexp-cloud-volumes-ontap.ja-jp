@@ -4,36 +4,19 @@ permalink: task-configure-placement-group-failure-aws.html
 keywords: placement group, failure, HA single zone, app.conf, rollback, AWS 
 summary: Cloud Volumes ONTAP は、関連付けられたストレージアカウントへの接続にAzure Private Linkを使用します。必要に応じて、Azure Private Linkを無効にし、サービスエンドポイントを使用することができます。 
 ---
-= AWS HA単一AZ用の配置グループの作成を設定する
-:hardbreaks:
+= AWS単一のAZでのCloud Volumes ONTAP HAペア用の配置グループの作成の設定
 :allow-uri-read: 
-:nofooter: 
-:icons: font
-:linkattrs: 
-:imagesdir: ./media/
 
 
 [role="lead"]
-配置グループの作成に失敗すると、Cloud Volumes ONTAPは失敗し、単一のアベイラビリティゾーン（AZ）にAWSハイアベイラビリティ（HA）構成の新規導入をロールバックします。必要に応じて、配置グループを設定して、作成に失敗したときに必ずロールバックプロセスをバイパスすることで、展開を強制的に正常に完了させることができます。
+AWSの単一アベイラビリティゾーン（AZ）のCloud Volumes ONTAPハイアベイラビリティ（HA）環境では、配置グループの作成に失敗した場合に、障害が発生してロールバックすることがあります。Cloud Volumes ONTAPノードとメディエーターインスタンスを使用できない場合は、配置グループの作成も失敗し、配置がロールバックされます。これを回避するには、配置グループの作成が失敗した場合でも配置を完了できるように設定を変更します。
 
-
-
-== 概要
-
-デフォルトでは、配置グループがHA単一アベイラビリティゾーン作業環境の作成プロセスに失敗すると、配置は失敗し、ロールバックされます。また、Cloud Volumes ONTAP ノードとメディエーターインスタンスが両方とも存在しない場合は、配置グループの作成が失敗してロールバックされます。
-
-配置グループの作成に失敗するたびにロールバックプロセスをバイパスし、app.confファイルを設定して展開を続行できます。ロールバックプロセスを省略すると、導入が正常に完了し、配置グループの作成が失敗したことを示す通知がシステムによって生成され、完了した状態になります。
-
-
-
-=== 配置グループの障害時のロールバックを無効にする
-
-配置グループの障害をオフにするには、「rollback-on-placement-group-failure」フラグを「false」に設定する必要があります。
+ロールバックプロセスを省略すると、Cloud Volumes ONTAP展開プロセスが正常に完了し、配置グループの作成が完了していないことが通知されます。
 
 .手順
 . SSHを使用してコネクタホストに接続し、ログインします。
-. 次のディレクトリに移動します。 /opt/application/NetApp/cloudmanager/docx_occm/data
-. 「rollback-on-placement-group-failure」パラメータの値を「false」に変更して、app.confを編集します。
+. に移動します `/opt/application/netapp/cloudmanager/docker_occm/data`。
+. パラメータの値をに `false`変更して `rollback-on-placement-group-failure`編集します `app.conf`。このパラメータのデフォルト値はです `true`。
 +
 [listing]
 ----
@@ -45,12 +28,5 @@ summary: Cloud Volumes ONTAP は、関連付けられたストレージアカウ
     }
 }
 ----
-+
-
-NOTE: デフォルトでは、「rollback-on-placement-group-failure」パラメータは「True」に設定されています。
-
-. ファイルを保存し、コネクタからログオフします。
-+
-リブートは不要です。
-
+. ファイルを保存し、コネクタからログオフします。コネクタを再起動する必要はありません。
 

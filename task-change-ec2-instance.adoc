@@ -4,7 +4,7 @@ permalink: task-change-ec2-instance.html
 keywords: ec2 instance type, change ec2 instance type, change instance type, modify instance type, modify ec2 instance, amazon ec2 
 summary: AWS で Cloud Volumes ONTAP を起動する際には、いくつかのインスタンスまたはタイプから選択できます。インスタンスタイプは、ニーズに合わせてサイズが小さすぎる、または大きすぎると判断した場合にいつでも変更できます。 
 ---
-= Cloud Volumes ONTAP の EC2 インスタンスタイプを変更します
+= AWSのCloud Volumes ONTAPシステムのEC2インスタンスタイプを変更する
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

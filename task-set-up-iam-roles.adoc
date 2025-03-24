@@ -4,7 +4,7 @@ permalink: task-set-up-iam-roles.html
 keywords: iam role, mediator role, cloud volumes ontap role, policy, iam policy, permissions, cloud backup 
 summary: 必要な権限を持つIAMロールを各Cloud Volumes ONTAP ノードに関連付ける必要があります。HAメディエーターについても同様です。BlueXPでIAMロールを作成するのが最も簡単ですが、自分の役割を使用することもできます。 
 ---
-= Cloud Volumes ONTAP 用のIAMロールを設定します
+= Cloud Volumes ONTAPノード用のAWS IAMロールを設定する
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

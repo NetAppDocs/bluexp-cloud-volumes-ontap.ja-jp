@@ -4,7 +4,7 @@ permalink: concept-storage.html
 keywords: storage, capacity, volumes, aggregates, raw capacity, usable capacity 
 summary: Cloud Volumes ONTAP でのクラウドストレージの使用方法を理解することで、ストレージコストを把握することができます。 
 ---
-= ディスクとアグリゲート
+= Cloud Volumes ONTAPクラスタで使用されるディスクとアグリゲート
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -45,7 +45,7 @@ EBS ストレージ:: AWS では、アグリゲートに同じサイズのディ
 --
 最大ディスクサイズは 16TiB です。
 
-基盤となる EBS ディスクタイプは、汎用 SSD （ GP3 または gp2 ）、プロビジョニングされる IOPS SSD （ io1 ）、またはスループット最適化 HDD （ st1 ）です。EBS ディスクと Amazon S3 をにペアリングできます link:concept-data-tiering.html["使用頻度の低いデータを低コストのオブジェクトストレージに階層化します"]。
+基盤となる EBS ディスクタイプは、汎用 SSD （ GP3 または gp2 ）、プロビジョニングされる IOPS SSD （ io1 ）、またはスループット最適化 HDD （ st1 ）です。EBSディスクとAmazon S3をにペアリングできますlink:concept-data-tiering.html["低コストのオブジェクトストレージ"]。
 
 
 NOTE: スループット最適化 HDD （ st1 ）を使用している場合、オブジェクトストレージへのデータの階層化は推奨されません。
@@ -83,7 +83,7 @@ Azure では、アグリゲートに同じサイズのディスクを 12 本ま�
 管理対象の各ディスクタイプの最大ディスクサイズは 32TiB です。
 
 +
-管理対象ディスクと Azure BLOB ストレージをペアリングすることができます からに link:concept-data-tiering.html["使用頻度の低いデータを低コストのオブジェクトストレージに階層化します"]。
+管理対象ディスクをAzure BLOBストレージとペアリングすることができますlink:concept-data-tiering.html["低コストのオブジェクトストレージ"]。
 
 
 
@@ -101,7 +101,7 @@ HA ペア:: HAペアは、I/O負荷の高いワークロードに高パフォー
 * 関連リンク *
 
 * link:task-planning-your-config-azure.html["でディスクタイプとディスクサイズを選択する方法について説明します Azure の既存のシステムを"]
-* link:task-deploying-otc-azure.html#launching-a-cloud-volumes-ontap-ha-pair-in-azure["AzureでのCloud Volumes ONTAP HAペアの起動"]
+* link:task-deploying-otc-azure.html#launching-a-cloud-volumes-ontap-ha-pair-in-azure["AzureでCloud Volumes ONTAP HAペアを起動する"]
 * https://docs.microsoft.com/en-us/azure/virtual-machines/disks-types["Microsoft Azure のドキュメント：「 Azure managed disk types"^]
 * https://docs.microsoft.com/en-us/azure/storage/blobs/storage-blob-pageblob-overview["Microsoft Azure のドキュメント：「 Overview of Azure page blob"^]
 * https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-limits-azure.html["Azure での Cloud Volumes ONTAP のストレージの制限を確認します"^]
@@ -117,7 +117,7 @@ ifdef::gcp[]
 
 Google Cloudでは、アグリゲートに同じサイズのディスクを6本まで含めることができます。最大ディスクサイズは 64TiB です。
 
-ディスクタイプは、 _Zonal SSD persistent disks _ 、 _Zonal Balanced persistent disks _ 、または _Zonal standard persistent disks _ のいずれかです。永続ディスクを Google Storage バケットとペアリングできます からに link:concept-data-tiering.html["使用頻度の低いデータを低コストのオブジェクトストレージに階層化します"]。
+ディスクタイプは、 _Zonal SSD persistent disks _ 、 _Zonal Balanced persistent disks _ 、または _Zonal standard persistent disks _ のいずれかです。永続ディスクをGoogle Storageバケットとペアリングすることができますlink:concept-data-tiering.html["低コストのオブジェクトストレージ"]。
 
 * 関連リンク *
 

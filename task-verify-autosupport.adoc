@@ -4,7 +4,7 @@ permalink: task-verify-autosupport.html
 keywords: autosupport, set up autosupport, test autosupport, asup, test asup 
 summary: AutoSupport は、システムの健常性をプロアクティブに監視し、ネットアップテクニカルサポートにメッセージを送信します。デフォルトでは、各ノードで AutoSupport が有効になっており、 HTTPS 転送プロトコルを使用してテクニカルサポートにメッセージを送信できます。AutoSupport がこれらのメッセージを送信できることを確認することをお勧めします。 
 ---
-= AutoSupport のセットアップを確認します
+= Cloud Volumes ONTAPのAutoSupportセットアップの確認
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

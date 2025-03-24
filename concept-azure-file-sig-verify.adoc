@@ -4,7 +4,7 @@ permalink: concept-azure-file-sig-verify.html
 keywords: Azure, image, VHD, file signature verification, encryption, sha256, ONTAP, Cloud Volumes, CLI, 
 summary: Cloud Volumes ONTAPイメージダイジェストファイルツールを使用して、エクスポートされたVHDファイルの署名を確認する方法について説明します。 
 ---
-= ファイル署名の検証
+= Cloud Volumes ONTAP向けのAzure Marketplaceイメージシグネチャ検証
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

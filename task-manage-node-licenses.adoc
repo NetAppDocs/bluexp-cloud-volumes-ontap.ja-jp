@@ -4,7 +4,7 @@ permalink: task-manage-node-licenses.html
 keywords: license, licensing, install, updating license, system license, add system license, adding a system license, byol license, add byol license, update byol license, nlf, license generator, extra, by-node, digital wallet, cloud backup, cloud data sense, cloud tiering 
 summary: BlueXPデジタルウォレットでノードベースライセンスを管理して、各Cloud Volumes ONTAP システムに必要な容量を含む有効なライセンスがあることを確認します。 
 ---
-= ノードベースのライセンスを管理します
+= Cloud Volumes ONTAPのノード単位のライセンスを管理します。
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

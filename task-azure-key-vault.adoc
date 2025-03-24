@@ -4,7 +4,7 @@ permalink: task-azure-key-vault.html
 keywords: azure, encryption, NVE, NetApp volume encryption, KMIP, azure key vault 
 summary: サードパーティのキー管理サービスにAzure Key Vaultを利用 
 ---
-= Azure Key Vaultを使用してキーを管理します
+= Azure Key Vaultを使用したCloud Volumes ONTAP暗号化キーの管理
 :hardbreaks:
 :allow-uri-read: 
 :icons: font

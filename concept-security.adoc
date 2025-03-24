@@ -4,7 +4,7 @@ permalink: concept-security.html
 keywords: security, encryption, antivirus, concepts, key managers, safenet, kms, keys, vscan, encrypt, key management service, cmk, customer master key, data at rest, data-at-rest, netapp storage encryption, certificate signing request, csr, certificate, ca certificate, virus, scan, virus scan, certificate authority, netapp volume encryption, nve, volume encryption, key management server, ransomware, fpolicy, snapshots 
 summary: Cloud Volumes ONTAP は、データ暗号化をサポートし、ウィルスやランサムウェアからの保護を提供します。 
 ---
-= セキュリティ
+= Cloud Volumes ONTAPのデータ暗号化とランサムウェア対策の詳細
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -64,7 +64,7 @@ ifdef：：azure[] endif：：azure[] ifdef：：gcp[] endif：：gcp[]
 
 新しいアグリゲートでは、外部キー管理ツールの設定後に NetApp Aggregate Encryption （ NAE ）がデフォルトで有効になります。NAE アグリゲートに含まれない新しいボリュームでは、 NetApp Volume Encryption （ NVE ）がデフォルトで有効になります（たとえば、外部キー管理ツールを設定する前に作成された既存のアグリゲートがある場合）。
 
-サポートされているキー管理ツールをセットアップするだけで済みます。セットアップ手順については、を参照してください link:task-encrypting-volumes.html["ネットアップの暗号化ソリューションによるボリュームの暗号化"]。
+サポートされているキー管理ツールをセットアップするだけで済みます。セットアップ手順については、を参照してくださいlink:task-encrypting-volumes.html["NetApp暗号化ソリューションによるボリュームの暗号化"]。
 
 ifdef::aws[]
 

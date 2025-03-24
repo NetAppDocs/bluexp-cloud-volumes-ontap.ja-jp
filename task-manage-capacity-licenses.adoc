@@ -4,7 +4,7 @@ permalink: task-manage-capacity-licenses.html
 keywords: license, licensing, capacity license, capacity based license, add license, install license, digital wallet 
 summary: BlueXPデジタルウォレットから容量ベースライセンスを管理して、ネットアップアカウントにCloud Volumes ONTAP システム用の十分な容量を確保します。 
 ---
-= 容量ベースのライセンスを管理します
+= Cloud Volumes ONTAPの容量単位のライセンスを管理
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

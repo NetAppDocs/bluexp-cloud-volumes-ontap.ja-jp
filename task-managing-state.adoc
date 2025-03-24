@@ -4,7 +4,7 @@ permalink: task-managing-state.html
 keywords: schedule, schedules, scheduling, shutdowns, shut down, restart, stop, stopping, turn off, weekday, weekend 
 summary: Cloud Volumes ONTAP を停止してBlueXPから起動することで、クラウドコンピューティングコストを管理できます。 
 ---
-= Cloud Volumes ONTAP の状態の管理
+= Cloud Volumes ONTAPシステムの起動と停止
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

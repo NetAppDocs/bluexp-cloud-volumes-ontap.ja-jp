@@ -4,7 +4,7 @@ permalink: task-managing-svms.html
 keywords: storage virtual machine, vserver, svm, storage vm, supported number, number supported 
 summary: Storage VM は ONTAP 内で実行される仮想マシンであり、クライアントにストレージサービスとデータサービスを提供します。これは SVM または SVM として認識されていることがあります。Cloud Volumes ONTAP にはデフォルトで 1 つの Storage VM が設定されますが、一部の設定では追加の Storage VM がサポートされます。 
 ---
-= BlueXPでStorage VMを管理します
+= Cloud Volumes ONTAPのStorage VMを管理します。
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

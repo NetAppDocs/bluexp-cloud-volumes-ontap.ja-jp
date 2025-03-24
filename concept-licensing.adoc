@@ -4,7 +4,7 @@ permalink: concept-licensing.html
 keywords: 'freemium, professional, essentials, licensing, licenses, cloud volumes ontap charging, cloud volumes ontap licenses, cloud volumes ontap licensing, cvo licenses, cvo licensing, byol, bring your own license, paygo, pay as you go, keystone flex, keystone, cloud backup, digital wallet, bluexp license conversion for node based, license end of support (EOS) node-based, end of availability (EOA) of node-based' 
 summary: Cloud Volumes ONTAP には、いくつかのライセンスオプションがあります。それぞれのオプションを使用することで、ニーズに合わせた構成を選択できます。 
 ---
-= Cloud Volumes ONTAP ライセンス
+= Cloud Volumes ONTAP のライセンス
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -22,7 +22,7 @@ Cloud Volumes ONTAP には、いくつかのライセンスオプションがあ
 
 新規のお客様は、次のライセンスオプションを利用できます。
 
-容量単位のライセンス:: ネットアップアカウントで複数のCloud Volumes ONTAP システムをプロビジョニングした容量分だけ料金が発生追加のクラウドデータサービスを購入できます。
+容量単位のライセンス:: ネットアップアカウントで複数のCloud Volumes ONTAP システムをプロビジョニングした容量分だけ料金が発生追加のクラウドデータサービスを購入できます。容量ベースライセンスの消費モデルの詳細については、を参照してくださいlink:concept-licensing-charging.html["容量ベースのライセンスに関する詳細情報"]。
 Keystoneサブスクリプション:: ハイアベイラビリティ（HA）ペアに対してシームレスなハイブリッドクラウドエクスペリエンスを提供する、従量課金制のサブスクリプションベースのサービスです。
 
 
@@ -48,7 +48,7 @@ NOTE: BlueXPで管理される製品とサービスの実際の使用量と計�
 
 === パッケージ
 
-Cloud Volumes ONTAP で使用できる容量ベースのパッケージは次のとおりです。
+Cloud Volumes ONTAP で使用できる容量ベースのパッケージは次のとおりです。容量ベースのライセンスパッケージの詳細については、を参照してくださいlink:concept-licensing-charging.html["容量ベースのライセンスに関する詳細情報"]。
 
 次の容量ベースパッケージでサポートされるVMタイプの一覧については、を参照してください。
 
@@ -78,7 +78,7 @@ Cloud Volumes ONTAP のすべての機能をネットアップから無償で提
 * ネットアップのアカウント 1 つにつき、最大 10 台の Cloud Volumes ONTAP システムを任意のクラウドプロバイダで使用できます。
 * Cloud Volumes ONTAP システム用にプロビジョニングされた容量が500GiBを超えると、BlueXPはシステムをEssentialsパッケージに変換します。
 +
-システムがEssentialsパッケージに変換されるとすぐに、が表示されます <<充電に関するメモ,最低料金>> 適用されます。
+システムがEssentialsパッケージに変換されるとすぐに、がlink:concept-licensing-charging.html#minimum-charge["最小充電"]適用されます。
 
 +
 プロビジョニングされた容量が 500GiB 未満の他のシステムは、 Freemium （ Freemium 製品を使用して導入されている場合）に残ります。
@@ -99,8 +99,6 @@ Cloud Volumes ONTAP のすべての機能をネットアップから無償で提
 
 * ネットアップのクラウドデータサービスを追加コストで利用できます
 
-
-詳細については、を参照してください link:concept-licensing-charging.html["容量ベースライセンスの詳細"]。
 
 
 
@@ -300,7 +298,7 @@ BlueXP  では、ライセンス変換ツールを使用して、ノードベ�
 
 移行する前に、2つのライセンスモデルの違いを理解しておくことをお勧めします。ノードベースのライセンスには、ONTAPインスタンスごとに容量が固定されているため、柔軟性が制限される場合があります。一方、容量ベースのライセンスでは、複数のインスタンスにまたがるストレージプールを共有できるため、柔軟性が向上し、リソース利用率が最適化され、ワークロードを再配分する際の金銭的なペナルティが軽減されます。容量ベースの充電は、変化するストレージ要件に合わせてシームレスに調整できます。
 
-この変換方法については、を参照してくださいlink:task-convert-node-capacity.html["ノードベースライセンスから容量ベースライセンスへの変換"]。
+この変換方法については、を参照してくださいlink:task-convert-node-capacity.html["Cloud Volumes ONTAPノードベースライセンスを容量ベースライセンスに変換する"]。
 
 
 NOTE: システムを容量ベースのライセンスからノードベースのライセンスに変換することはできません。
