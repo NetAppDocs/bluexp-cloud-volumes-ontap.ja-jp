@@ -5360,11 +5360,6 @@ Mac OSでtailコマンドを完了します。</block>
   <block id="7fc21546461474a1cc543852dc120330" category="paragraph">Cloud Volumes ONTAPインスタンスの起動で問題が発生した場合は、エラーメッセージを確認してください。また、作業環境を選択して、 [ 環境の再作成 ] をクリックすることもできます。</block>
   <block id="d036b4a2aa80729ab508e1851458f506" category="cell">この Cloud Volumes ONTAP システムで使用する AWS クレデンシャルと Marketplace サブスクリプションを選択します。Add Subscription * をクリックして、選択したクレデンシャルを新しい AWS Marketplace サブスクリプションに関連付けます。サブスクリプションは、年間契約の場合と、 Cloud Volumes ONTAP の料金を 1 時間ごとに支払う場合があります。NetAppからライセンスを直接購入した場合（お客様所有のライセンスを使用（BYOL））、AWSサブスクリプションは必要ありません。<block ref="2ae6dc7cea05e6172a8f0e381f70d632" category="inline-link-rx"></block>です。</block>
   <block id="fc687f57dc8188e5dad217858c078354" category="section-title">Cloud Volumes ONTAPでのキーローテーション</block>
-  <block id="c8f70aa37f5c88b6da2024d42bae9616" category="paragraph">キーの新しいバージョンを作成すると、Cloud Volumes ONTAPでは自動的に最新バージョンのキーが使用されるため、手動で更新することなくデータのセキュリティを確保できます。</block>
-  <block id="7463254e31b93d5b76992c84139a17de" category="list-text">Azureポータルでキーボルトに移動します。</block>
-  <block id="d6cff41b1c8a33920bc46aba04b89485" category="list-text">回転させるキーを選択します。</block>
-  <block id="38b4782700181268adc6819ae7534a0f" category="list-text">[新しいバージョン]*をクリックして、新しいバージョンのキーを生成します。</block>
-  <block id="d35d0e531d2de4587a8bd21e51823f97" category="paragraph">新しいバージョンが作成されると、Cloud Volumes ONTAPは自動的に最新バージョンのキーを検出して暗号化に使用します。</block>
   <block id="d2a95dd3692cce58be8541add2bc6897" category="paragraph">ほとんどの構成がサポートされています。最新バージョンを実行しているCloud Volumes ONTAPシステムがある場合は、お勧めします。<block ref="f2e6a88e181ee9519c72412b23fc6e17" category="inline-link-macro-rx"></block>です。</block>
   <block id="1a59c4cde0b6364677026791f943ea0f" category="paragraph">データ階層化をボリュームで有効にするには、アグリゲートでデータ階層化を有効にする必要があります。新しいボリュームと既存のボリュームの要件を確認しておく必要があります。<block ref="7beee552935977f4dc8f9885d22b65a0" category="inline-xref-macro-rx"></block>です。</block>
   <block id="c64796eb83e1bb434daed77e0937d1b4" category="paragraph">BlueXP  では、システムの作成時にコールドデータ用のオブジェクトストアが作成されます<block ref="dbb78a2cc39acf14e084217f8235322a" category="inline-xref-macro-rx"></block>。その後は、ボリュームでデータ階層化を有効にするだけで<block ref="7f499208f2ff911432bf2cd70bde52dd" category="inline-xref-macro-rx"></block>済みます（場合によっては）。</block>
@@ -5802,4 +5797,17 @@ Mac OSでtailコマンドを完了します。</block>
   <block id="7533d0f4870d29edf1d705a15d4f71e3" category="sidebar">AWSでStorage VMを管理します。</block>
   <block id="db5cf7834d39ce63219e28d402aeb9c2" category="sidebar">AzureでStorage VMを管理します。</block>
   <block id="137413da40700294b3660243904ade25" category="sidebar">Google CloudでStorage VMを管理</block>
+  <block id="5920daf334ecef8057dd1e1d15f6124e" category="doc">Cloud Volumes ONTAP 9.14.1でイネーブルになっているプライベートモード展開</block>
+  <block id="f2035db09bb2be2db0508915fa584149" category="paragraph">Cloud Volumes ONTAP 9.14.1をプライベートモードでAWS、Azure、Google Cloudに導入できるようになりました。プライベートモードは、Cloud Volumes ONTAP 9.14.1のシングルノード環境とハイアベイラビリティ（HA）環境の両方で有効になります。</block>
+  <block id="62bd7572081df25dd3f1f52151883c4a" category="inline-link">BlueXPの導入モードについて説明します</block>
+  <block id="dc748283e7593515df9e8f2759a85349" category="paragraph">プライベートモード配置の詳細については、を参照してください<block ref="312f421b6dd5cf62286ecf6a82a8132e" category="inline-link-rx"></block>。</block>
+  <block id="210dc676779eae6698e4064fd965bda8" category="paragraph">暗号化キーはAzureポータルで設定する必要があります。キーの設定とキーローテーションの設定の詳細については、Microsoft Azureの次のドキュメントトピックを参照してください。</block>
+  <block id="348c2304e1a6efb529d00b9bacd96a8e" category="inline-link">Azure Key Vaultで暗号化キーの自動ローテーションを設定する</block>
+  <block id="f4d57411fbf6c0075178b1e3767b496e" category="list-text"><block ref="f4d57411fbf6c0075178b1e3767b496e" category="inline-link-rx"></block></block>
+  <block id="881f8c1da4935c7dbe1f6d696a16cd9c" category="inline-link">Azure PowerShell -お客様管理キーを有効にする</block>
+  <block id="4a9f4b73b48b26dea345a1977b58dd51" category="list-text"><block ref="4a9f4b73b48b26dea345a1977b58dd51" category="inline-link-rx"></block></block>
+  <block id="a15076d8f5fd9af7af6dec9ab282588e" category="inline-link">Azureポータルでキーローテーションを有効にする</block>
+  <block id="71b5648e677d1a5ebf3d343f3c10eb54" category="admonition">キーを設定したら、Cloud Volumes ONTAPが新しいキーを利用できるように、キーがあることを確認し<block ref="7b90d7bac505d4641bd5cd9a13a09c6c" category="inline-link-rx"></block>ます。</block>
+  <block id="5b41754d54a59a01d58e45b59544d3a6" category="paragraph">新しいバージョンのキーを作成して有効にすると、Cloud Volumes ONTAPは自動的に最新バージョンを検出して暗号化に使用するため、手動更新を必要とせずにデータの安全性を確保できます。</block>
+  <block id="5f2734b84896bdabcf7fd3574325d116" category="section-title">2025年3月28日</block>
 </blocks>

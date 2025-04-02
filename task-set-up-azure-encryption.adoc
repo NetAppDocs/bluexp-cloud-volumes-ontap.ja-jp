@@ -100,15 +100,16 @@ Cloud Volumes ONTAP 用のすべての Azure ストレージアカウントは�
 
 == Cloud Volumes ONTAPでのキーローテーション
 
-キーの新しいバージョンを作成すると、Cloud Volumes ONTAPでは自動的に最新バージョンのキーが使用されるため、手動で更新することなくデータのセキュリティを確保できます。
+暗号化キーはAzureポータルで設定する必要があります。キーの設定とキーローテーションの設定の詳細については、Microsoft Azureの次のドキュメントトピックを参照してください。
 
-.手順
-. Azureポータルでキーボルトに移動します。
-. 回転させるキーを選択します。
-. [新しいバージョン]*をクリックして、新しいバージョンのキーを生成します。
+* https://learn.microsoft.com/en-us/azure/key-vault/keys/how-to-configure-key-rotation["Azure Key Vaultで暗号化キーの自動ローテーションを設定する"^]
+* https://learn.microsoft.com/en-us/azure/virtual-machines/windows/disks-enable-customer-managed-keys-powershell#set-up-an-azure-key-vault-and-diskencryptionset-with-automatic-key-rotation-preview["Azure PowerShell -お客様管理キーを有効にする"^]
 
 
-新しいバージョンが作成されると、Cloud Volumes ONTAPは自動的に最新バージョンのキーを検出して暗号化に使用します。
+
+NOTE: キーを設定したら、Cloud Volumes ONTAPが新しいキーを利用できるように、キーがあることを確認し https://learn.microsoft.com/en-us/azure/virtual-machines/disk-encryption#customer-managed-keys["Azureポータルでキーローテーションを有効にする"^]ます。
+
+新しいバージョンのキーを作成して有効にすると、Cloud Volumes ONTAPは自動的に最新バージョンを検出して暗号化に使用するため、手動更新を必要とせずにデータの安全性を確保できます。
 
 
 

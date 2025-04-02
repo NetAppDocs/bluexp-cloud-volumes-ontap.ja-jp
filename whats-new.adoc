@@ -20,6 +20,18 @@ BlueXPのCloud Volumes ONTAP Managementの新機能をご紹介します。
 
 
 
+== 2025年3月28日
+
+
+
+=== Cloud Volumes ONTAP 9.14.1でイネーブルになっているプライベートモード展開
+
+Cloud Volumes ONTAP 9.14.1をプライベートモードでAWS、Azure、Google Cloudに導入できるようになりました。プライベートモードは、Cloud Volumes ONTAP 9.14.1のシングルノード環境とハイアベイラビリティ（HA）環境の両方で有効になります。
+
+プライベートモード配置の詳細については、を参照してくださいhttps://docs.netapp.com/us-en/bluexp-setup-admin/concept-modes.html#restricted-mode["BlueXPの導入モードについて説明します"^]。
+
+
+
 == 2025年3月12日
 
 
