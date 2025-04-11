@@ -62,19 +62,19 @@ BlueXP  認証に使用されます。
 | \ https://support。NetApp .com /aods/asupmessage\ https://support。NetApp .com /asupprod/post/1.0/postAsup | AutoSupport | AutoSupportテレメトリデータをNetAppサポートに送信するために使用されます。 | 標準モードと制限モード。 | AutoSupport情報は配信されません。 
 
 
-| https://management.azure.com https://login.microsoftonline.com https://blob.core.windows.net https://core.windows.net | パブリックリージョン | Azureサービスとの通信。 | 標準モード、制限モード、およびプライベートモード。 | Cloud Volumes ONTAPがAzureサービスと通信してAzureで特定のBlueXP  処理を実行できません。 
+| https://management.azure.com https://login.microsoftonline.com https://blob.core.windows.net https://core.windows.net | パブリックリージョン | Azureサービスとの通信。 | 標準モード、制限モード、およびプライベートモード。 | Cloud Volumes ONTAPはAzureサービスと通信してAzureで特定のBlueXP  処理を実行できません。 
 
 
-| https://management.chinacloudapi.cn https://login.chinacloudapi.cn https://blob.core.chinacloudapi.cn https://core.chinacloudapi.cn | 中国 | Azureサービスとの通信。 | 標準モード、制限モード、およびプライベートモード。 | Cloud Volumes ONTAPがAzureサービスと通信してAzureで特定のBlueXP  処理を実行できません。 
+| https://management.chinacloudapi.cn https://login.chinacloudapi.cn https://blob.core.chinacloudapi.cn https://core.chinacloudapi.cn | 中国 | Azureサービスとの通信。 | 標準モード、制限モード、およびプライベートモード。 | Cloud Volumes ONTAPはAzureサービスと通信してAzureで特定のBlueXP  処理を実行できません。 
 
 
-| \https://management.microsoftazure.de \https://login.microsoftonline.de \https://blob.core.cloudapi.de \https://core.cloudapi.de | ドイツ地域 | Azureサービスとの通信。 | 標準モード、制限モード、およびプライベートモード。 | Cloud Volumes ONTAPがAzureサービスと通信してAzureで特定のBlueXP  処理を実行できません。 
+| \https://management.microsoftazure.de \https://login.microsoftonline.de \https://blob.core.cloudapi.de \https://core.cloudapi.de | ドイツ地域 | Azureサービスとの通信。 | 標準モード、制限モード、およびプライベートモード。 | Cloud Volumes ONTAPはAzureサービスと通信してAzureで特定のBlueXP  処理を実行できません。 
 
 
-| https://management.usgovcloudapi.net https://login.microsoftonline.us https://blob.core.usgovcloudapi.net https://core.usgovcloudapi.net | 行政機関の地域 | Azureサービスとの通信。 | 標準モード、制限モード、およびプライベートモード。 | Cloud Volumes ONTAPがAzureサービスと通信してAzureで特定のBlueXP  処理を実行できません。 
+| https://management.usgovcloudapi.net https://login.microsoftonline.us https://blob.core.usgovcloudapi.net https://core.usgovcloudapi.net | 行政機関の地域 | Azureサービスとの通信。 | 標準モード、制限モード、およびプライベートモード。 | Cloud Volumes ONTAPはAzureサービスと通信してAzureで特定のBlueXP  処理を実行できません。 
 
 
-| https://management.azure.microsoft.scloud https://login.microsoftonline.microsoft.scloud https://blob.core.microsoft.scloud https://core.microsoft.scloud | 政府国防総省の地域 | Azureサービスとの通信。 | 標準モード、制限モード、およびプライベートモード。 | Cloud Volumes ONTAPがAzureサービスと通信してAzureで特定のBlueXP  処理を実行できません。 
+| https://management.azure.microsoft.scloud https://login.microsoftonline.microsoft.scloud https://blob.core.microsoft.scloud https://core.microsoft.scloud | 政府国防総省の地域 | Azureサービスとの通信。 | 標準モード、制限モード、およびプライベートモード。 | Cloud Volumes ONTAPはAzureサービスと通信してAzureで特定のBlueXP  処理を実行できません。 
 |===
 
 

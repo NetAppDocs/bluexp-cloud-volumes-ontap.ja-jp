@@ -40,7 +40,7 @@ https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-data-tiering.ht
 
 === Azureのストレージアカウントへのパブリックアクセスを制限するオプション
 
-Azure上のCloud Volumes ONTAPシステムのストレージアカウントへのパブリックアクセスを制限できるようになりました。アクセスを無効にすると、組織のセキュリティポリシーに準拠する必要がある場合に、同じVNet内であってもプライベートIPアドレスが公開されないように保護できます。このオプションは、Cloud Volumes ONTAPシステムのデータ階層化も無効になり、シングルノードペアとハイアベイラビリティペアの両方に適用されます。
+AzureのCloud Volumes ONTAPシステムのストレージアカウントへのパブリックアクセスを制限できるようになりました。アクセスを無効にすると、組織のセキュリティポリシーに準拠する必要がある場合に、同じVNet内であってもプライベートIPアドレスが公開されないように保護できます。このオプションは、Cloud Volumes ONTAPシステムのデータ階層化も無効になり、シングルノードペアとハイアベイラビリティペアの両方に適用されます。
 
 https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/reference-networking-azure.html#security-group-rules["セキュリティグループのルール"^]です。
 

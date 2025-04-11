@@ -20,6 +20,18 @@ BlueXPのCloud Volumes ONTAP Managementの新機能をご紹介します。
 
 
 
+== 2025年4月14日
+
+
+
+=== Google CloudのAPIを使用してStorage VMの作成を自動化
+
+BlueXP  APIを使用して、Google CloudでのStorage VMの作成を自動化できるようになりました。この機能は、Cloud Volumes ONTAPのハイアベイラビリティ（HA）構成で使用してきましたが、シングルノード環境でも使用できるようになりました。BlueXP  APIを使用すると、追加データを提供するStorage VMをGoogle Cloud環境で簡単に作成、名前変更、および削除できます。必要なネットワークインターフェイス、LIF、管理LIFを手動で設定する必要はありません。この自動化により、Storage VMの管理プロセスが簡易化されます。
+
+https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-managing-svms-gcp.html["Google CloudでCloud Volumes ONTAP用のデータ提供用Storage VMを管理します。"^]
+
+
+
 == 2025年3月28日
 
 
@@ -122,7 +134,7 @@ link:https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-administer-ad
 
 BlueXP  デジタルウォレット内の改善されたナビゲーションポイントを使用して、Cloud Volumes ONTAPライセンスの管理を簡易化できるようになりました。
 
-* Cloud Volumes ONTAPライセンス情報には、*ガバナンス>デジタルウォレット>概要/データサービスライセンス*タブから簡単にアクセスできます。
+* Cloud Volumes ONTAPライセンス情報には、* Governance > Digital Wallet > Overview / Direct Licenses *タブから簡単にアクセスできます。
 * [Cloud Volume ONTAP ]パネルの*[Overview]*タブで*[View]*をクリックすると、容量ベースライセンスの全体像を確認できます。この詳細ビューには、ライセンスとサブスクリプションに関する詳細な情報が表示されます。
 * 以前のインターフェイスを使用する場合は、*[Switch to legacy view]*ボタンをクリックして、ライセンスの詳細をタイプ別に表示したり、ライセンスの課金方法を変更したりできます。
 
@@ -183,7 +195,7 @@ https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-data-tiering.ht
 
 === Azureのストレージアカウントへのパブリックアクセスを制限するオプション
 
-Azure上のCloud Volumes ONTAPシステムのストレージアカウントへのパブリックアクセスを制限できるようになりました。アクセスを無効にすると、組織のセキュリティポリシーに準拠する必要がある場合に、同じVNet内であってもプライベートIPアドレスが公開されないように保護できます。このオプションは、Cloud Volumes ONTAPシステムのデータ階層化も無効になり、シングルノードペアとハイアベイラビリティペアの両方に適用されます。
+AzureのCloud Volumes ONTAPシステムのストレージアカウントへのパブリックアクセスを制限できるようになりました。アクセスを無効にすると、組織のセキュリティポリシーに準拠する必要がある場合に、同じVNet内であってもプライベートIPアドレスが公開されないように保護できます。このオプションは、Cloud Volumes ONTAPシステムのデータ階層化も無効になり、シングルノードペアとハイアベイラビリティペアの両方に適用されます。
 
 https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/reference-networking-azure.html#security-group-rules["セキュリティグループのルール"^]です。
 

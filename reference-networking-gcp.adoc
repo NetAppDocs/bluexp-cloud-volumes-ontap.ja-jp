@@ -40,7 +40,14 @@ Google Cloudでは、次の要件を満たす必要があります。
 
 ==== プライベート IP アドレス
 
-BlueXPは、Google Cloudのシングルノードシステムに3つまたは4つのプライベートIPアドレスを割り当てます。
+Google Cloudのシングルノードシステムの場合、BlueXP  はプライベートIPアドレスを次のアドレスに割り当てます。
+
+* ノード
+* クラスタ
+* Storage VM
+* データNAS LIF
+* データiSCSI LIF
+
 
 Cloud Volumes ONTAP を API を使用して導入する場合、 Storage VM （ SVM ）管理 LIF の作成をスキップし、次のフラグを指定できます。
 
@@ -227,7 +234,7 @@ Cloud Volumes ONTAPは、これらのエンドポイントを使用してさま�
 | \ https://support。NetApp .com /aods/asupmessage\ https://support。NetApp .com /asupprod/post/1.0/postAsup | AutoSupport | AutoSupportテレメトリデータをNetAppサポートに送信するために使用されます。 | 標準モードと制限モード。 | AutoSupport情報は配信されません。 
 
 
-| \https://www.googleapis.com/compute/v1/projects/ \https://cloudresourcemanager.googleapis.com/v1/projects \https://www.googleapis.com/compute/beta \https://storage.googleapis.com/storage/v1 \https://www.googleapis.com/storage/v1 \https://iam.googleapis.com/v1 \https://cloudkms.googleapis.com/v1 \https://www.googleapis.com/deploymentmanager/v2/projects \https://compute.googleapis.com/compute/v1 | Google Cloud（商用利用）： | Google Cloudサービスとの通信。 | 標準モード、制限モード、およびプライベートモード。 | Cloud Volumes ONTAPは、Google Cloud上で特定のBlueXP  処理を実行するためにGoogle Cloudサービスと通信できません。 
+| \https://www.googleapis.com/compute/v1/projects/ \https://cloudresourcemanager.googleapis.com/v1/projects \https://www.googleapis.com/compute/beta \https://storage.googleapis.com/storage/v1 \https://www.googleapis.com/storage/v1 \https://iam.googleapis.com/v1 \https://cloudkms.googleapis.com/v1 \https://www.googleapis.com/deploymentmanager/v2/projects \https://compute.googleapis.com/compute/v1 | Google Cloud（商用利用）： | Google Cloudサービスとの通信。 | 標準モード、制限モード、およびプライベートモード。 | Cloud Volumes ONTAPは、Google Cloudで特定のBlueXP  処理を実行するためにGoogle Cloudサービスと通信できません。 
 |===
 
 

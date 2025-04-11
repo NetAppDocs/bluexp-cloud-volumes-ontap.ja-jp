@@ -26,9 +26,6 @@ Cloud Volumes ONTAP 9.9.0以降では、ライセンスに基づいて、特定�
 
 9.9.0より前のバージョンのCloud Volumes ONTAPでは、データ提供用Storage VMが1つとディザスタリカバリに使用されるデスティネーションStorage VMが1つずつサポートされます。ソース Storage VM で停止が発生した場合は、デスティネーション Storage VM をデータアクセス用にアクティブ化できます。
 
-.作業を開始する前に
-Cloud Volumes ONTAP用Storage VMを作成および管理するには、Connectorに特定の権限が必要です。必要な権限はに含まれてい https://docs.netapp.com/us-en/bluexp-setup-admin/reference-permissions-azure.html["ネットアップが提供するポリシー"^]ます。
-
 
 
 == Storage VM を作成
@@ -45,6 +42,9 @@ APIを使用してStorage VMを作成し、必要なネットワークインタ�
 * `management-nis-client`
 
 
+.作業を開始する前に
+Cloud Volumes ONTAP用のStorage VMを作成するには、コネクタに特定の権限が必要です。必要な権限はに含まれてい https://docs.netapp.com/us-en/bluexp-setup-admin/reference-permissions-azure.html["ネットアップが提供するポリシー"^]ます。
+
 
 
 === シングルノードシステム
@@ -53,7 +53,7 @@ APIを使用してStorage VMを作成し、必要なネットワークインタ�
 
 `POST /azure/vsa/working-environments/{workingEnvironmentId}/svm`
 
-要求の本文には次の情報が含まれている必要があります
+要求の本文には次のパラメータを含めます。
 
 [source, json]
 ----
@@ -65,11 +65,11 @@ APIを使用してStorage VMを作成し、必要なネットワークインタ�
 
 === HA ペア
 
-次のAPI呼び出しを使用して、Azure HA構成でStorage VMを作成します。
+次のAPI呼び出しを使用して、HAペアにStorage VMを作成します。
 
 `POST /azure/ha/working-environments/{workingEnvironmentId}/svm`
 
-要求の本文には次の情報が含まれている必要があります
+要求の本文には次のパラメータを含めます。
 
 [source, json]
 ----
@@ -83,6 +83,9 @@ APIを使用してStorage VMを作成し、必要なネットワークインタ�
 
 BlueXP  APIを使用すると、シングルノード構成とHA構成の両方で、Storage VMの名前変更と削除を行うことができます。
 
+.作業を開始する前に
+Cloud Volumes ONTAP用Storage VMを管理するには、コネクタに特定の権限が必要です。必要な権限はに含まれてい https://docs.netapp.com/us-en/bluexp-setup-admin/reference-permissions-azure.html["ネットアップが提供するポリシー"^]ます。
+
 
 
 === Storage VMの名前を変更します
@@ -95,7 +98,7 @@ Storage VMの名前を変更するには、既存のStorage VMと新しいStorag
 `PUT /azure/vsa/working-environments/{workingEnvironmentId}/svm`
 
 +
-要求の本文には次の情報が含まれている必要があります
+要求の本文には次のパラメータを含めます。
 
 +
 [source, json]
@@ -105,12 +108,12 @@ Storage VMの名前を変更するには、既存のStorage VMと新しいStorag
   "svmName": "OldSvmName"
 }
 ----
-* HA構成のStorage VMの名前を変更するには、次のAPI呼び出しを使用します。
+* HAペアのStorage VMの名前を変更するには、次のAPI呼び出しを使用します。
 +
 `PUT /azure/ha/working-environments/{workingEnvironmentId}/svm`
 
 +
-要求の本文には次の情報が含まれている必要があります
+要求の本文には次のパラメータを含めます。
 
 +
 [source, json]
@@ -133,7 +136,7 @@ Storage VMの名前を変更するには、既存のStorage VMと新しいStorag
 +
 `DELETE /azure/vsa/working-environments/{workingEnvironmentId}/svm/{svmName}`
 
-* 次のAPI呼び出しを使用して、HA構成のStorage VMを削除します。
+* HAペアのStorage VMを削除するには、次のAPI呼び出しを使用します。
 +
 `DELETE /azure/ha/working-environments/{workingEnvironmentId}/svm/{svmName}`
 
