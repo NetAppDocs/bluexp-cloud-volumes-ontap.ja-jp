@@ -1473,14 +1473,6 @@
   <block id="9906134ee224bc081497b19c4269cc34" category="paragraph">使用されなくなったために期限切れになった容量ライセンスは、いつでも削除できます。</block>
   <block id="c320af21170d1ca43751b7580a1125f4" category="list-text">容量ライセンスの横にあるアクションメニューをクリックし、 * ライセンスの削除 * を選択します。</block>
   <block id="03b194a23dcb353466fbfb7acff64363" category="list-text">[ 削除（ Remove ） ] をクリックします。</block>
-  <block id="b38317f372e5ede5e8e7662a6abf56de" category="section-title">評価ライセンスを BYOL に変換します</block>
-  <block id="6f3e45030426e1b86c424d2780111d20" category="paragraph">評価用ライセンスは 30 日間有効です。インプレースアップグレードの評価ライセンスの上に、新しい BYOL ライセンスを適用できます。</block>
-  <block id="9a640fdf29d0376d44625fbe7757592a" category="list-text">シングルノードシステムで再起動を実行すると、リブートプロセス中に I/O が中断されます。</block>
-  <block id="a1b2198d5e77e52b34a9567f6e8204f9" category="list-text">HA ペアの場合、再起動によってテイクオーバーとギブバックが開始され、クライアントへの I/O の提供が継続されます。</block>
-  <block id="b7c7df7a1f738eeeb402c8feafc80dba" category="list-text">「 * 評価 * 」をクリックします。</block>
-  <block id="fcb9420dfbbc4a57ba1b1a992a71d207" category="list-text">表で、 Cloud Volumes ONTAP システムの *Convert to BYOL License* をクリックします。</block>
-  <block id="e539cbd6aefe9d1fb7bc951680944206" category="list-text">シリアル番号を入力するか、ライセンスファイルをアップロードしてください。</block>
-  <block id="b171537681ac6ab38d6353435252c4f1" category="list-text">[ ライセンスの変換 ] をクリックします。</block>
   <block id="c165494898bc0fbf27151d6359a27936" category="doc">アグリゲートを作成する</block>
   <block id="67ea3f429e13cb33e66f1359eb85cc04" category="list-text">キャンバスページで、アグリゲートを管理する Cloud Volumes ONTAP インスタンスの名前をダブルクリックします。</block>
   <block id="833ac412ce32368430680596235b2009" category="list-text">[* Go * ] をクリックし、 [* 承認して購入 * ] をクリックします。</block>
@@ -3091,8 +3083,6 @@
   <block id="4632dee9f50d24fa16636177719f09ff" category="paragraph">Cloud Volumes ONTAP システムのライセンスが更新されます。</block>
   <block id="b4fb827c06226e7a2af35e533d837e28" category="paragraph">BlueXPの右下にあるチャットアイコンを使って、容量ライセンスを追加購入してください。購入したライセンスは、 Cloud Volumes ONTAP システムに適用できます。</block>
   <block id="4e1651bb146bb28e944da5ff79e00342" category="paragraph">容量ライセンスの期間を延長した場合は、BlueXPでライセンスを更新する必要があります。</block>
-  <block id="6e7fc6b7eae0415b78955003531a799e" category="paragraph">EvalライセンスをBYOLに変換すると、BlueXPはCloud Volumes ONTAP システムを再起動します。</block>
-  <block id="629b6ceff1a1b74de909c5f304f623b9" category="paragraph">BlueXPが変換プロセスを開始しますCloud Volumes ONTAP は、このプロセスの一環として自動的に再起動します。バックアップが完了すると、ライセンス情報に新しいライセンスが反映されます。</block>
   <block id="b8825138f3ad417826e664b97b11f43e" category="summary">ノードベース BYOL を使用する各 Cloud Volumes ONTAP システムには、アクティブなサブスクリプションを使用してシステムライセンスがインストールされている必要があります。BlueXPは、ライセンスを管理し、期限が切れる前に警告を表示することで、プロセスを簡素化します。</block>
   <block id="bbb99a752c8e900f1b48a90461879503" category="paragraph">ノードベースのBYOLシステムを作成すると、ライセンスのシリアル番号とNetApp Support Site アカウントを入力するように求められます。BlueXPでは、アカウントを使用してネットアップからライセンスファイルをダウンロードし、Cloud Volumes ONTAP システムにインストールします。</block>
   <block id="4c6af92d0fefe2bc8b47c8e72bf0caf5" category="inline-link">NetApp Support Site アカウントをBlueXPに追加する方法について説明します</block>
@@ -4785,7 +4775,6 @@ Mac OSでtailコマンドを完了します。</block>
   <block id="882b50ca44d46bfb8d9502390cfeaf96" category="paragraph">Cloud Volumes ONTAPの今後の導入では、Edge Cache容量ベースのライセンスパッケージは利用できなくなります。ただし、APIを使用してこの機能を利用することはできます。</block>
   <block id="2936dc7efe93e6248aca38d21b92cc62" category="paragraph">サポートされる構成については、を参照してください<block ref="10c1bb30d666a83202b9e687d7b06d1b" category="inline-link-rx"></block>。</block>
   <block id="bc5af032a5cd69ef4ac57b8c2cd1f1d6" category="section-title">マーケットプレイスサブスクリプションの無償トライアルの廃止</block>
-  <block id="860dc5e7395e0f2c15a42ffdef98eca4" category="paragraph">クラウドプロバイダのマーケットプレイスで提供される従量課金制サブスクリプションの30日間無償トライアルは、Cloud Volumes ONTAPではご利用いただけなくなります。あらゆるタイプのマーケットプレイスサブスクリプション（PAYGOまたは年間契約）の料金は、無料トライアル期間なしで最初の使用から有効になります。</block>
   <block id="6a42c267e29187643b9edeeabe6a9d85" category="inline-link">AWSのドキュメント：「Learn more about Elastic Volumes from AWS」</block>
   <block id="5f15094e671a035a778fece655f06e61" category="paragraph"><block ref="5f15094e671a035a778fece655f06e61" category="inline-link-rx"></block></block>
   <block id="32f75f1208336b30711f2ec6de39a1fc" category="paragraph">詳細については、を参照してください <block ref="b7c27672c14c5e155c3668c279ee7b61" category="inline-link-macro-rx"></block> 。</block>
@@ -5801,4 +5790,15 @@ Mac OSでtailコマンドを完了します。</block>
   <block id="4409983c60e456858bb3e9ef5737f98a" category="section-title">2025年4月14日</block>
   <block id="fdcb4cfaa6fda318a31e37ce29a14e92" category="section-title">AzureでサポートされるFlash Cacheの最小バージョン</block>
   <block id="d05c6d51d7a4b0bd019498131ff00f16" category="paragraph">AzureでFlash Cacheを設定するには、9.13.1 GA以上のCloud Volumes ONTAPバージョンが必要です。ONTAP 9.13.1 GA以降のバージョンは、AzureのCloud Volumes ONTAPシステムへのFlash Cacheの導入にのみ使用できます。</block>
+  <block id="b77891a5294c25aca8a6fda943805ecf" category="doc">AWSでのCloud Volumes ONTAP 9.13.1の中国リージョンのサポート</block>
+  <block id="3899c7c0df13a38296f1334779a1dfe7" category="paragraph">中国リージョンのAWSにCloud Volumes ONTAP 9.13.1を導入できるようになりました。これには、シングルノード環境とハイアベイラビリティ（HA）環境の両方がサポートされます。Cloud Volumes ONTAP 9.13.1を導入したら、それ以降のバージョンにアップグレードできます。NetAppから直接購入したライセンスのみがサポートされます。</block>
+  <block id="abe88f95b23156cb29c433c9ebe92a00" category="inline-link">Cloud Volumes ONTAP のグローバルリージョンマップ</block>
+  <block id="10df570a0447a18b299f516b2e8498c2" category="paragraph">地域によって利用可能な場合は、を参照して<block ref="f76c632bc8b9c4e032a9d48fcbfa8dc1" category="inline-link-rx"></block>ください。</block>
+  <block id="aa3bf76b3589430467bef386eaec9486" category="doc">Azureでサポートされる新しいリージョン</block>
+  <block id="c1ad65632774d8f35681af3ad68ef48e" category="paragraph">Cloud Volumes ONTAP 9.12.1 GA以降は、次のリージョンのAzureの単一または複数のアベイラビリティゾーンに導入できるようになりました。これには、シングルノード環境とハイアベイラビリティ（HA）環境の両方がサポートされます。</block>
+  <block id="db0cdd3af654aa7b69312d9b6154a9de" category="list-text">スペイン中部</block>
+  <block id="ef87967149148a309569bd7d04467de6" category="list-text">メキシコ中部</block>
+  <block id="801c0fa0d304ca22d8afec06189bcf93" category="section-title">2025年4月16日</block>
+  <block id="f0d468a1074534e3b37c7322f2e97bb1" category="section-title">2025年4月3日</block>
+  <block id="bbe4e5e3881ef8307eb1dd518412cb45" category="paragraph">クラウドプロバイダのマーケットプレイスで提供される従量課金制サブスクリプションの30日間無償トライアルまたは評価版ライセンスは、Cloud Volumes ONTAPでは利用できなくなります。あらゆるタイプのマーケットプレイスサブスクリプション（PAYGOまたは年間契約）の料金は、無料トライアル期間なしで最初の使用から有効になります。</block>
 </blocks>

@@ -20,6 +20,22 @@ BlueXPのCloud Volumes ONTAP Managementの新機能をご紹介します。
 
 
 
+== 2025年4月16日
+
+
+
+=== Azureでサポートされる新しいリージョン
+
+Cloud Volumes ONTAP 9.12.1 GA以降は、次のリージョンのAzureの単一または複数のアベイラビリティゾーンに導入できるようになりました。これには、シングルノード環境とハイアベイラビリティ（HA）環境の両方がサポートされます。
+
+* スペイン中部
+* メキシコ中部
+
+
+すべてのリージョンのリストについては、を参照して https://bluexp.netapp.com/cloud-volumes-global-regions["Azureのグローバルリージョンマップ"^]ください。
+
+
+
 == 2025年4月14日
 
 
@@ -29,6 +45,18 @@ BlueXPのCloud Volumes ONTAP Managementの新機能をご紹介します。
 BlueXP  APIを使用して、Google CloudでのStorage VMの作成を自動化できるようになりました。この機能は、Cloud Volumes ONTAPのハイアベイラビリティ（HA）構成で使用してきましたが、シングルノード環境でも使用できるようになりました。BlueXP  APIを使用すると、追加データを提供するStorage VMをGoogle Cloud環境で簡単に作成、名前変更、および削除できます。必要なネットワークインターフェイス、LIF、管理LIFを手動で設定する必要はありません。この自動化により、Storage VMの管理プロセスが簡易化されます。
 
 https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-managing-svms-gcp.html["Google CloudでCloud Volumes ONTAP用のデータ提供用Storage VMを管理します。"^]
+
+
+
+== 2025年4月3日
+
+
+
+=== AWSでのCloud Volumes ONTAP 9.13.1の中国リージョンのサポート
+
+中国リージョンのAWSにCloud Volumes ONTAP 9.13.1を導入できるようになりました。これには、シングルノード環境とハイアベイラビリティ（HA）環境の両方がサポートされます。Cloud Volumes ONTAP 9.13.1を導入したら、それ以降のバージョンにアップグレードできます。NetAppから直接購入したライセンスのみがサポートされます。
+
+地域によって利用可能な場合は、を参照して https://bluexp.netapp.com/cloud-volumes-global-regions["Cloud Volumes ONTAP のグローバルリージョンマップ"^]ください。
 
 
 
@@ -311,7 +339,7 @@ AzureでFlash Cacheを設定するには、9.13.1 GA以上のCloud Volumes ONTAP
 
 === マーケットプレイスサブスクリプションの無償トライアルの廃止
 
-クラウドプロバイダのマーケットプレイスで提供される従量課金制サブスクリプションの30日間無償トライアルは、Cloud Volumes ONTAPではご利用いただけなくなります。あらゆるタイプのマーケットプレイスサブスクリプション（PAYGOまたは年間契約）の料金は、無料トライアル期間なしで最初の使用から有効になります。
+クラウドプロバイダのマーケットプレイスで提供される従量課金制サブスクリプションの30日間無償トライアルまたは評価版ライセンスは、Cloud Volumes ONTAPでは利用できなくなります。あらゆるタイプのマーケットプレイスサブスクリプション（PAYGOまたは年間契約）の料金は、無料トライアル期間なしで最初の使用から有効になります。
 
 
 
