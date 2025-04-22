@@ -70,18 +70,18 @@ endif::gcp[]
 
 ==== フリーミアム
 
-Cloud Volumes ONTAP のすべての機能をネットアップから無償で提供（クラウドプロバイダの料金がまだ適用されます）。
+Cloud Volumes ONTAP のすべての機能をネットアップから無償で提供（クラウドプロバイダの料金がまだ適用されます）。Freemiumパッケージには次の特徴があります。
 
 * ライセンスや契約は必要ありません。
 * ネットアップによるサポートは含まれていません。
 * Cloud Volumes ONTAP システムあたりのプロビジョニング可能な容量は 500GiB に制限されています。
-* ネットアップのアカウント 1 つにつき、最大 10 台の Cloud Volumes ONTAP システムを任意のクラウドプロバイダで使用できます。
-* Cloud Volumes ONTAP システム用にプロビジョニングされた容量が500GiBを超えると、BlueXPはシステムをEssentialsパッケージに変換します。
+* どのクラウドプロバイダでも、1つのNetAppアカウントで最大10台のCloud Volumes ONTAPシステムを使用できます。
+* Cloud Volumes ONTAPシステム用にプロビジョニングされた容量が500GiBを超えると、BlueXP  はシステムをEssentialsパッケージに変換します。
 +
-システムがEssentialsパッケージに変換されるとすぐに、がlink:concept-licensing-charging.html#minimum-charge["最小充電"]適用されます。
+システムがEssentialsパッケージに変換されるとすぐに、がそのパッケージlink:concept-licensing-charging.html#minimum-charge["最小充電"]に適用されます。
 
 +
-プロビジョニングされた容量が 500GiB 未満の他のシステムは、 Freemium （ Freemium 製品を使用して導入されている場合）に残ります。
+Essentialsパッケージに変換されたCloud Volumes ONTAPシステムは、プロビジョニングされた容量が500GiB未満に減少しても、Freemiumに戻すことはできません。プロビジョニングされた容量が500GiB未満の他のシステムは、Freemiumサービスを使用して導入されている限り、Freemiumに残ります。
 
 
 
