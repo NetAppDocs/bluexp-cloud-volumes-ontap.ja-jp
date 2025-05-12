@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: task-tiering.html 
-keywords: tier, tiering, cold data, hot data, storage tiering, data tiering, fabricpool, fabric pool, s3 endpoint, endpoint, connection, performance tier, capacity tier, object store, blob tiering, container, inactive, tiering requirements, remove S3 bucket, delete S3 CVO bucket 
+keywords: tier, tiering, cold data, hot data, storage tiering, data tiering, fabricpool, fabric pool, s3 endpoint, endpoint, connection, performance tier, capacity tier, object store, blob tiering, container, inactive, tiering requirements, remove S3 bucket, delete S3 CVO bucket, tenant, multi-tenant tiering 
 summary: ホットデータ用の SSD または HDD の高パフォーマンス階層と、アクセス頻度の低いデータ用のオブジェクトストレージの大容量階層を組み合わせることで、 Cloud Volumes ONTAP のストレージコストを削減できます。データ階層化は、 FabricPool テクノロジによって実現されます。 
 ---
 = 使用頻度の低いCloud Volumes ONTAPデータを低コストのオブジェクトストレージに階層化
@@ -47,15 +47,15 @@ endif::gcp[]
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png["3つ"] 階層化が有効なアグリゲートがあることを確認してください
 [role="quick-margin-para"]
-データ階層化をボリュームで有効にするには、アグリゲートでデータ階層化を有効にする必要があります。新しいボリュームと既存のボリュームの要件を確認しておく必要があります。<<Ensuring that tiering is enabled on aggregates,詳細はこちら。>>です。
+データ階層化をボリュームで有効にするには、アグリゲートでデータ階層化を有効にする必要があります。新しいボリュームと既存のボリュームの要件を確認しておく必要があります。<<アグリゲートで階層化が有効になっていることを確認する,詳細はこちら。>>です。
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-4.png["4."] ボリュームを作成、変更、またはレプリケートするときに階層化ポリシーを選択します
 [role="quick-margin-para"]
 ボリュームを作成、変更、または複製するときに、階層化ポリシーを選択するよう求めるメッセージが表示されます。
 
 [role="quick-margin-list"]
-* link:task-tiering.html#tiering-data-from-read-write-volumes["読み取り / 書き込みボリュームでのデータの階層化"]
-* link:task-tiering.html#tiering-data-from-data-protection-volumes["データ保護ボリューム上のデータの階層化"]
+* link:task-tiering.html#tier-data-from-read-write-volumes["読み取り/書き込みボリュームのデータを階層化"]
+* link:task-tiering.html#tier-data-from-data-protection-volumes["データ保護ボリュームのデータを階層化"]
 
 
 [NOTE]
@@ -65,7 +65,7 @@ endif::gcp[]
 * 大容量階層用のオブジェクトストアを作成する必要はありません。BlueXPはそのような機能を提供します。
 * システムレベルでデータの階層化を有効にする必要はありません。
 +
-BlueXP  では、システムの作成時にコールドデータ用のオブジェクトストアが作成されます<<Enabling data tiering after implementing the requirements,接続または権限に問題がないことが必要です>>。その後は、ボリュームでデータ階層化を有効にするだけで<<Ensuring that tiering is enabled on aggregates,アグリゲート>>済みます（場合によっては）。
+BlueXP  では、システムの作成時にコールドデータ用のオブジェクトストアが作成されます<<要件の実装後にデータ階層化を有効にする,接続または権限に問題がないことが必要です>>。その後は、ボリュームでデータ階層化を有効にするだけで<<アグリゲートで階層化が有効になっていることを確認する,アグリゲート>>済みます（場合によっては）。
 
 
 
@@ -163,6 +163,17 @@ BlueXPに必要な権限があれば、高パフォーマンス階層と大容�
 "Microsoft.Network/routeTables/join/action",
 ----
 カスタムロールには、デフォルトで権限が含まれています。 https://docs.netapp.com/us-en/bluexp-setup-admin/reference-permissions-azure.html["ConnectorのAzure権限を表示します"^]
+
+
+
+=== Azureテナントのデータを階層化するための要件
+
+同じコネクタを使用して、複数のAzureテナントのデータを階層化できます。Cloud Volumes ONTAP作業環境があるテナントによって作成され、コネクタが別のテナントによって作成されるシナリオでAzureテナントの階層化を有効にするには、次の点を確認します。
+
+* BlueXP  で両方のテナントのクレデンシャルをクロス検証用に入力しておきます。を参照してください https://docs.netapp.com/us-en/bluexp-setup-admin/task-adding-azure-accounts.html["BlueXPのAzureクレデンシャルとマーケットプレイスサブスクリプションを管理"^]。
+* 2つのテナント間で仮想ネットワーク（VNet）ピアリングを有効にしておき https://learn.microsoft.com/en-us/azure/virtual-network/virtual-network-peering-overview["Azure portalからアクセス"^]ます。これは、コネクタがもう一方のテナントのストレージアカウントにアクセスできるようにするために必要です。
+* サブネットサービスエンドポイントを使用する必要がありlink:task-enabling-private-link.html#disable-azure-private-links-and-use-service-endpoints-instead["Azureプライベートリンクを無効にしました"]ます。
+
 
 endif::azure[]
 

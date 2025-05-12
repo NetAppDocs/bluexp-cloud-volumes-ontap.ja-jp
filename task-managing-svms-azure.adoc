@@ -18,6 +18,8 @@ Storage VM は ONTAP 内で実行される仮想マシンであり、クライ�
 
 Azureで追加データサービスを提供するStorage VMを作成および管理するには、BlueXP  APIを使用する必要があります。これは、Storage VMの作成と必要なネットワークインターフェイスの設定のプロセスがAPIによって自動化されるためです。Storage VMを作成する際に、BlueXP  は必要なLIFサービスと、Storage VMからのアウトバウンドSMB / CIFS通信に必要なiSCSI LIFを設定します。
 
+Cloud Volumes ONTAP API呼び出しの実行については、を参照してください https://docs.netapp.com/us-en/bluexp-automation/cm/your_api_call.html#step-1-select-the-identifie["最初のAPI呼び出し"^]。
+
 
 
 == サポートされている Storage VM 数
@@ -140,4 +142,9 @@ Storage VMの名前を変更するには、既存のStorage VMと新しいStorag
 +
 `DELETE /azure/ha/working-environments/{workingEnvironmentId}/svm/{svmName}`
 
+
+
+.関連情報
+* https://docs.netapp.com/us-en/bluexp-automation/cm/prepare.html["API を使用する準備をします"^]
+* https://docs.netapp.com/us-en/bluexp-automation/cm/workflow_processes.html#organization-of-cloud-volumes-ontap-workflows["Cloud Volumes ONTAPワークフロー"^]
 

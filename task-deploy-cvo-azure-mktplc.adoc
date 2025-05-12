@@ -14,12 +14,12 @@ summary:
 
 
 [role="lead"]
-Cloud Volumes ONTAP 9.16.1以降では、Azure Marketplaceの直接導入を使用して、Cloud Volumes ONTAPをすばやく簡単に導入できます。Azure Marketplaceでは、数回のクリックでCloud Volumes ONTAPを迅速に導入し、自社環境の中核的な機能を確認できます。
+Azure Marketplaceの直接導入を使用すると、Cloud Volumes ONTAPをすばやく簡単に導入できます。Azure Marketplaceでは、数回のクリックでCloud Volumes ONTAPを迅速に導入し、自社環境の中核的な機能を確認できます。
 
 このサービスの詳細については、を参照してくださいlink:concept-azure-mktplace-direct.html["BlueXP  と市場で提供されているCloud Volumes ONTAPソリューションの詳細を確認する"]。
 
 .このタスクについて
-Azure Marketplaceを使用して導入されるCloud Volumes ONTAPのインスタンスには、次のプロパティがあります。
+Azure Marketplaceを使用して導入されたCloud Volumes ONTAPシステムには、次のプロパティがあります。Azure Marketplaceを介して導入されたスタンドアロンインスタンスの機能は、BlueXP  で検出されると変更されます。
 
 * 最新のCloud Volumes ONTAPバージョン（9.16.1以降）。
 * プロビジョニング可能な容量が500GiBに制限されているCloud Volumes ONTAPの無償ライセンス。このライセンスにはNetAppのサポートは含まれておらず、有効期限はありません。
@@ -27,12 +27,12 @@ Azure Marketplaceを使用して導入されるCloud Volumes ONTAPのインス�
 * デフォルトで作成されるインスタンスのアグリゲート。
 * 500GiBのプロビジョニング済み容量のPremium SSD v2マネージドディスク、ルートディスクとデータディスク。
 * データStorage VMを1台導入し、NFS、CIFS、iSCSI、NVMe/TCPデータサービスを利用追加データStorage VMは追加できません。
-* NFS、CIFS（SMB）、iSCSI、Anti-Ransomware（ARW）、SnapLock、SnapMirror用にインストールされたライセンス。
+* NFS、CIFS（SMB）、iSCSI、Autonomous Ransomware Protection（ARP）、SnapLock、SnapMirror用のライセンスがインストールされている。
 * https://docs.netapp.com/us-en/ontap/volumes/enable-temperature-sensitive-efficiency-concept.html["ONTAPの温度依存型Storage Efficiency（TSSE）"^]、ボリューム暗号化、および外部キー管理がデフォルトで有効になっています。
 * 次の機能はサポートされていません。
 +
 ** FabricPool による階層化
-** インスタンスタイフノヘンコウ
+** Storage VMタイプの変更
 ** 高速書き込みモード
 
 
@@ -67,7 +67,7 @@ NOTE: リソースプロバイダ「Microsoft.storage」をサブスクリプシ
 . [基本設定]タブで、次の詳細を指定します。
 +
 ** *サブスクリプション*:サブスクリプションを選択します。展開はサブスクリプション番号にリンクされます。
-** *リソースグループ*：既存のリソースグループを使用するか、新しいリソースグループを作成します。リソースグループを使用すると、Cloud Volumes ONTAPインスタンスの1つのグループ内でディスクやStorage VMなどのすべてのリソースを割り当てることができます。
+** *リソースグループ*：既存のリソースグループを使用するか、新しいリソースグループを作成します。リソースグループを使用すると、Cloud Volumes ONTAPシステムの1つのグループ内でディスクやStorage VMなどのすべてのリソースを割り当てることができます。
 ** *リージョン*：単一のAZでAzure HAの導入をサポートするリージョンを選択します。リストには、使用可能なリージョンのみが表示されます。
 ** *サイズ*：サポートされているPremium SSD v2管理ディスク用のStorage VMサイズを選択します。
 ** *ゾーン*:選択したリージョンのゾーンを選択します。
@@ -96,9 +96,9 @@ NOTE: Microsoft Azureの制限事項に準拠するには、新しい仮想ネ�
 
 
 
-== トラブルシューティング
+== 導入に関する問題のトラブルシューティング
 
-Azure Marketplace経由で直接導入されたCloud Volumes ONTAPには、NetAppによるサポートは含まれていません。導入時に問題が発生した場合は、個別にトラブルシューティングして解決できます。
+Azure Marketplaceから直接導入されたCloud Volumes ONTAPシステムには、NetAppによるサポートは含まれていません。導入時に問題が発生した場合は、個別にトラブルシューティングして解決できます。
 
 .手順
 . Azure Marketplaceサイトで、*[Boot diagnostics]>[Serial log]*に移動します。
@@ -111,6 +111,38 @@ Azure Marketplace経由で直接導入されたCloud Volumes ONTAPには、NetAp
 
 
 
+
+
+
+== BlueXP  で導入されたシステムを検出する
+
+Azure Marketplaceの直接導入を使用して導入したCloud Volumes ONTAPシステムを検出し、BlueXP  で作業環境として管理できます。BlueXP  Connectorは、システムを検出して作業環境として追加し、必要なBlueXP  ライセンスを適用して、それらのシステムに対するBlueXP  のすべての機能をロック解除します。PSSD v2管理ディスクを使用する単一のAZ内の元のHA構成は保持され、システムは元の導入環境と同じAzureサブスクリプションとリソースグループに登録されます。
+
+.このタスクについて
+Azure Marketplaceの直接導入を使用して導入されたCloud Volumes ONTAPシステムを検出すると、BlueXP  Connectorは次のタスクを実行します。
+
+* 検出されたシステムの空きライセンスを通常の容量ベースとして置き換えますlink:concept-licensing.html#packages["フリーミアムライセンス"]。
+* 導入したシステムの既存の機能を維持し、データ保護、データ管理、セキュリティ機能など、BlueXP  の機能を追加します。
+* ノードにインストールされているライセンスを、NFS、CIFS（SMB）、iSCSI、ARP、SnapLock、SnapMirrorの新しいONTAPライセンスに置き換えます。
+* 汎用ノードのシリアル番号を一意のシリアル番号に変換します。
+* 必要に応じて、リソースに新しいシステムタグを割り当てます。
+* インスタンスの動的IPアドレスを静的IPアドレスに変換します。
+* 導入したシステムでlink:task-tiering.html["FabricPool による階層化"]、、link:task-verify-autosupport.html["AutoSupport"]およびlink:concept-worm.html["Write-Once-Read-Many"]（WORM）ストレージの機能を有効にします。これらの機能は、必要に応じてBlueXP  コンソールからアクティブ化できます。
+* インスタンスを検出するために使用されるNSSアカウントに登録します。
+* 検出されたシステムに対しての容量管理機能を有効にしますlink:concept-storage-management.html#capacity-management["自動モードと手動モード"]。
+
+
+.作業を開始する前に
+Azure Marketplaceでの導入が完了していることを確認BlueXP  Connectorでシステムを検出できるのは、導入が完了して検出可能になった場合のみです。
+
+
+NOTE: Azure Marketplaceの直接導入では、L8s_v3インスタンスタイプがサポートされます。ただし、のBlueXP  はHA構成でこのインスタンスタイプをサポートしておらず、検出時にこのインスタンスタイプを正しく検出できません。
+
+.手順
+BlueXP  では、既存のシステムを検出するための標準の手順に従います。を参照してください link:task-adding-systems.html["既存のCloud Volumes ONTAPシステムをBlueXP  に追加する"]。
+
+.完了後
+検出が完了すると、BlueXP  で作業環境として表示されたシステムを確認できます。link:task-manage-aggregates.html["アグリゲートの拡張"]、link:task-create-volumes.html["ボリュームの追加"]、、などのさまざまな管理タスクを実行できますlink:task-managing-svms-azure.html["追加のStorage VMのプロビジョニング"] link:task-change-azure-vm.html["インスタンスタイプの変更"]。
 
 .関連リンク
 ストレージの作成の詳細については、ONTAPのドキュメントを参照してください。
