@@ -212,12 +212,11 @@ Azureリソースグループに2つ目のCloud Volumes ONTAP HAペアを導入�
 
 === セキュリティグループのルール
 
-BlueXPでは、Cloud Volumes ONTAP が正常に動作するために必要なインバウンドとアウトバウンドのルールを含むAzureセキュリティグループが作成されます。テスト目的または独自のセキュリティグループを使用する場合は、ポートを参照してください。
+BlueXP は、Cloud Volumes ONTAP が正常に動作するための受信ルールと送信ルールを含む Azure セキュリティ グループを作成します。  https://docs.netapp.com/us-en/bluexp-setup-admin/reference-ports-azure.html["コネクタのセキュリティグループルールを表示します"^] 。
 
-Cloud Volumes ONTAP のセキュリティグループには、インバウンドルールとアウトバウンドルールの両方が必要です。
+Cloud Volumes ONTAP の Azure セキュリティ グループでは、ノード間の内部通信用に適切なポートが開いている必要があります。  https://docs.netapp.com/us-en/ontap/networking/ontap_internal_ports.html["ONTAP内部ポートの詳細"^] 。
 
-
-TIP: コネクタに関する情報をお探しですか？ https://docs.netapp.com/us-en/bluexp-setup-admin/reference-ports-azure.html["コネクタのセキュリティグループルールを表示します"^]
+事前定義されたセキュリティグループを変更したり、カスタムセキュリティグループを使用したりすることは推奨しません。ただし、どうしても変更する必要がある場合は、導入プロセスにおいて、Cloud Volumes ONTAPシステムが自身のサブネット内でフルアクセスを持つ必要があることにご注意ください。導入完了後にネットワークセキュリティグループを変更する場合は、クラスタポートとHAネットワークポートを開いたままにしてください。これにより、Cloud Volumes ONTAPクラスタ内でのシームレスな通信（ノード間のAny-to-Any通信）が確保されます。
 
 
 

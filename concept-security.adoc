@@ -52,17 +52,40 @@ endif::gcp[]
 
 === ネットアップの暗号化ソリューション（ NVE および NAE ）
 
-Cloud Volumes ONTAPはをサポートし https://www.netapp.com/pdf.html?item=/media/17070-ds-3899.pdf["NetApp Volume Encryption （ NVE ）および NetApp Aggregate Encryption （ NAE ）"^]ます。NVE と NAE は、（ FIPS ） 140-2 に準拠したボリュームの保管データ暗号化を可能にするソフトウェアベースのソリューションです。NVE と NAE はいずれも AES 256 ビット暗号化を使用します。
+Cloud Volumes ONTAPはをサポートし https://www.netapp.com/pdf.html?item=/media/17070-ds-3899.pdf["NetApp Volume Encryption （ NVE ）および NetApp Aggregate Encryption （ NAE ）"^]ます。NVE と NAE は、ボリュームの (FIPS) 140-2 準拠の保存データ暗号化を可能にするソフトウェア ベースのソリューションです。NVE と NAE はいずれも AES 256 ビット暗号化を使用します。
 
 * NVE は、一度に 1 ボリュームずつ保管データを暗号化する。各データボリュームには、一意の暗号化キーがあります。
 * NAE は NVE の拡張機能です。 NVE は各ボリュームのデータを暗号化し、ボリュームはアグリゲート全体でキーを共有します。NAE では、アグリゲート内のすべてのボリュームの共通ブロックも重複排除できます。
 
 
-NVE と NAE はどちらも外部キー管理機能でサポートされています。
+Cloud Volumes ONTAPは、AWS、Azure、Google Cloudが提供する外部キー管理サービス（EKM）（Fortanixなどのサードパーティソリューションを含む）を通じて、NVEとNAEの両方をサポートします。ONTAPとは異なり、Cloud Volumes ONTAPでは暗号化キーはONTAPではなくクラウドプロバイダー側で生成されます。
 
-ifdef：：azure[] endif：：azure[] ifdef：：gcp[] endif：：gcp[]
+Cloud Volumes ONTAPは、ONTAPが使用する標準のKey Management Interoperability Protocol（KMIP）サービスを使用します。サポートされているサービスの詳細については、  https://imt.netapp.com/imt/#welcome["Interoperability Matrix Tool"^] 。
 
-新しいアグリゲートでは、外部キー管理ツールの設定後に NetApp Aggregate Encryption （ NAE ）がデフォルトで有効になります。NAE アグリゲートに含まれない新しいボリュームでは、 NetApp Volume Encryption （ NVE ）がデフォルトで有効になります（たとえば、外部キー管理ツールを設定する前に作成された既存のアグリゲートがある場合）。
+NVE を使用する場合は、クラウド プロバイダーのキー ボールトを使用して ONTAP 暗号化キーを保護するオプションがあります。
+
+ifdef::aws[]
+
+* AWS Key Management Service （ KMS ；キー管理サービス）
+
+
+endif::aws[]
+
+ifdef::azure[]
+
+* Azure キーボールト（ AKV ）
+
+
+endif::azure[]
+
+ifdef::gcp[]
+
+* Google Cloud Key Management Serviceの略
+
+
+endif::gcp[]
+
+新しいアグリゲートでは、外部キー管理ツールの設定後に NetApp Aggregate Encryption （ NAE ）がデフォルトで有効になります。NAE アグリゲートの一部ではない新しいボリュームでは、NVE がデフォルトで有効になっています (たとえば、外部キー マネージャーを設定する前に作成された既存のアグリゲートがある場合)。
 
 サポートされているキー管理ツールをセットアップするだけで済みます。セットアップ手順については、を参照してくださいlink:task-encrypting-volumes.html["NetApp暗号化ソリューションによるボリュームの暗号化"]。
 

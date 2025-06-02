@@ -407,7 +407,7 @@ Cloud Volumes ONTAP 用の定義済みセキュリティグループには、次
 発信トラフィックに厳格なルールが必要な場合は、次の情報を使用して、 Cloud Volumes ONTAP による発信通信に必要なポートのみを開くことができます。
 
 
-NOTE: source は、 Cloud Volumes ONTAP システムのインターフェイス（ IP アドレス）です。
+NOTE: ソースは、Cloud Volumes ONTAP システムのインターフェース (IP アドレス) です。
 
 [cols="10,10,6,20,20,34"]
 |===

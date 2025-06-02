@@ -82,12 +82,13 @@ ifdef::aws[]
 
 === AWSでのサポート
 
-* Cloud Volumes ONTAP 9.2以降では、AWSでデータ階層化がサポートされます。
+* データ階層化は、Cloud Volumes ONTAP 9.2 以降で AWS でサポートされます。
 * パフォーマンス階層には、汎用 SSD （ GP3 または gp2 ）またはプロビジョニングされる IOPS SSD （ io1 ）を使用できます。
 +
 
-NOTE: スループット最適化 HDD （ st1 ）を使用している場合、オブジェクトストレージへのデータの階層化は推奨されません。
+NOTE: スループット最適化 HDD (st1) を使用する場合は、オブジェクト ストレージにデータを階層化することはお勧めしません。
 
+* 非アクティブなデータはAmazon S3バケットに階層化されます。他のプロバイダーへの階層化はサポートされていません。
 
 
 endif::aws[]
@@ -105,6 +106,7 @@ ifdef::azure[]
 
 
 * 高パフォーマンス階層には、Premium SSD Managed Disks、Standard SSD Managed Disks、Standard HDD Managed Disksがあります。
+* 非アクティブなデータはMicrosoft Azure Blobに階層化されます。他のプロバイダーへの階層化はサポートされていません。
 
 
 endif::azure[]
@@ -115,8 +117,9 @@ ifdef::gcp[]
 
 === Google Cloudのサポート
 
-* Cloud Volumes ONTAP 9.6以降では、Google Cloudでデータ階層化がサポートされます。
+* データ階層化は、Cloud Volumes ONTAP 9.6 以降、Google Cloud でサポートされます。
 * パフォーマンス階層には、 SSD 永続ディスク、分散型永続ディスク、標準の永続ディスクがあります。
+* 非アクティブなデータは Google Cloud Storage に階層化されます。他のプロバイダへの階層化はサポートされていません。
 
 
 endif::gcp[]
