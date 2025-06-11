@@ -19,15 +19,12 @@ Cloud KMSを使用したキー管理は、ONTAP CLIまたはONTAP REST APIを使
 Cloud KMSを使用する場合は、デフォルトではデータSVMのLIFがクラウドキー管理エンドポイントとの通信に使用されることに注意してください。ノード管理ネットワークは、クラウドプロバイダの認証サービス（oauth2.googleapis.com）との通信に使用されます。クラスタネットワークが正しく設定されていないと、クラスタでキー管理サービスが適切に利用されません。
 
 .作業を開始する前に
-* Cloud Volumes ONTAP でバージョン9.10.1以降が実行されている必要があります
-* Volume Encryption （ VE ）ライセンスがインストールされている
-* Cloud Volumes ONTAP 9.12.1 GA以降、マルチテナント暗号化キー管理（MTEKM）ライセンスがインストールされています。
+* システムではCloud Volumes ONTAP 9.10.1以降が実行されている必要があります
+* データ SVM を使用する必要があります。CloudKMS はデータ SVM でのみ構成できます。
 * クラスタ管理者またはSVMの管理者である必要があります
-* アクティブなGoogle Cloud Platformサブスクリプション
-
-
-.制限
-* クラウドKMSはデータSVMでのみ設定できます
+* ボリューム暗号化（VE）ライセンスをSVMにインストールする必要があります
+* Cloud Volumes ONTAP 9.12.1 GA以降では、マルチテナント暗号化キー管理（MTEKM）ライセンスもインストールする必要があります。
+* 有効な Google Cloud Platform サブスクリプションが必要です
 
 
 
@@ -36,7 +33,9 @@ Cloud KMSを使用する場合は、デフォルトではデータSVMのLIFが�
 
 .Google Cloud
 . Google Cloud環境では、 link:https://cloud.google.com/kms/docs/creating-keys["対称GCPキーリングとキーを作成します"^]。
-. Cloud Volumes ONTAP サービスアカウント用のカスタムロールを作成します。
+. Cloud KMS キーと Cloud Volumes ONTAP サービス アカウントにカスタム ロールを割り当てます。
++
+.. カスタム ロールを作成します。
 +
 [listing]
 ----
@@ -47,7 +46,14 @@ gcloud iam roles create kmsCustomRole
     --permissions=cloudkms.cryptoKeyVersions.get,cloudkms.cryptoKeyVersions.list,cloudkms.cryptoKeyVersions.useToDecrypt,cloudkms.cryptoKeyVersions.useToEncrypt,cloudkms.cryptoKeys.get,cloudkms.keyRings.get,cloudkms.locations.get,cloudkms.locations.list,resourcemanager.projects.get
     --stage=GA
 ----
-. カスタムロールをCloud KMSキーとCloud Volumes ONTAP サービスアカウントに割り当てます。「gcloud kms keys add -iam-policy binding_key_name_-- keyring_key_ring_name -- location_key_location_- member serviceAccount：_service_account_Name -- role project_id_id_roles/custommskmsk`key
+.. 作成したカスタム ロールを割り当てます。 
+`gcloud kms keys add-iam-policy-binding _key_name_ --keyring _key_ring_name_ --location _key_location_ --member serviceAccount:_service_account_Name_ --role projects/_customer_project_id_/roles/kmsCustomRole`
++
+
+NOTE: Cloud Volumes ONTAP 9.13.0以降をご利用の場合は、カスタムロールを作成する必要はありません。[`cloudkms.cryptoKeyEncrypterDecrypter` ^]の役割。
+
+
+
 . サービスアカウントのJSONキーをダウンロードします。「gcloud iam service-accounts keys create key-file --iam-account=_sa-name_@_project-id_.iam.gserviceaccount.com
 
 

@@ -14,7 +14,7 @@ summary: BlueXPでは、Storage VMディザスタリカバリのセットアッ�
 
 
 [role="lead"]
-BlueXPは、Storage VM（SVM）ディザスタリカバリのセットアップやオーケストレーションのサポートは提供していません。ONTAPシステムマネージャまたはONTAP CLIを使用する必要があります。
+BlueXPは、ストレージVM（SVM）のディザスタリカバリのセットアップやオーケストレーションのサポートを提供していません。これらのタスクを実行するには、ONTAP System ManagerまたはONTAP CLIを使用してください。
 
 2つのCloud Volumes ONTAPシステム間にSnapMirror SVMレプリケーションを設定する場合は、2つのHAペアシステム間または2つのシングルノードシステム間でレプリケーションを行う必要があります。HAペアとシングルノードシステムの間にSnapMirror SVMレプリケーションをセットアップすることはできません。
 

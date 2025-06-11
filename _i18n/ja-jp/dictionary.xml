@@ -2251,7 +2251,6 @@
   <block id="98084fb337b1b2cf4cb9e5af0b0ef9b1" category="list-text">Cloud Volumes ONTAP システムは、アクセス頻度の低いデータを単一のBLOBコンテナに階層化します。</block>
   <block id="f7c5c3f829ba75eb23b7c60381fd4f74" category="list-text">アクセス層：ホット</block>
   <block id="c89729007f1266a456e5a1133a9f58e9" category="list-text">パフォーマンス：標準</block>
-  <block id="dc4d23da133e198d425564262ad6976b" category="list-text">冗長性：ローカル冗長ストレージ（LRS）</block>
   <block id="2f546189dda4bc24c6d8f6ed71c57a36" category="list-text">アカウント：StorageV2（汎用v2）</block>
   <block id="e0d679a04a2c140c65cff67ffbfd8444" category="list-text">REST API処理にはセキュアな転送が必要：有効</block>
   <block id="4fbd5770a6fd5de01bbbcf2a407118d7" category="list-text">ストレージアカウントキーへのアクセス：有効</block>
@@ -2355,7 +2354,6 @@
   <block id="b80b61bef9c57d9979c8a0a11310d79b" category="paragraph">AKVを使用したキー管理は、CLIまたはONTAP REST APIを使用して有効にできます。</block>
   <block id="e99dab450e193aa16ab181a9cbb70701" category="paragraph">AKVを使用する場合、デフォルトではクラウドキー管理エンドポイントとの通信にデータSVM LIFが使用されることに注意してください。ノード管理ネットワークは、クラウドプロバイダの認証サービス（login.microsoftonline.com）との通信に使用されます。クラスタネットワークが正しく設定されていないと、クラスタでキー管理サービスが適切に利用されません。</block>
   <block id="0dbc3b305b67f45cc077782f1bde33be" category="list-text">Cloud Volumes ONTAP でバージョン9.10.1以降が実行されている必要があります</block>
-  <block id="3db7729c3f93b51e237e9f64f77736ce" category="list-text">Volume Encryption （ VE ）ライセンスがインストールされている</block>
   <block id="941d09f50e1c95a1d21454ff759fc757" category="list-text">クラスタ管理者またはSVMの管理者である必要があります</block>
   <block id="4da5254130066f3f3262c3aa07f10759" category="list-text">アクティブなAzureサブスクリプション</block>
   <block id="0c7af18d6ac0bf65ef1d6aec6f629263" category="list-text">AKVはデータSVM上でのみ設定できます</block>
@@ -2367,8 +2365,6 @@
   <block id="68f0035d3c55f26e0ec12ed454908a6e" category="list-text">キー管理ツールのステータスを確認します。「security key-manager external Azure check」出力は次のようになります。</block>
   <block id="776c67d51f3f1c503c9062c9d812c2b7" category="list-text">ボリュームが正しく作成および暗号化されたことを確認します。その場合、「-is-encrypted」パラメータは「true」と表示されます。vol show -vserver_svm_name_-fields is-cencryptedです</block>
   <block id="0dbdff8ed1ef0e78c4dc84ace48205d6" category="inline-link-macro">Google Cloud Platform のキー管理サービス（ Cloud KMS ）</block>
-  <block id="41a2c826f6f02a44a93533524c99b84e" category="list-text">クラウドKMSはデータSVMでのみ設定できます</block>
-  <block id="105e3d12938c631bc5d8ab6f6b628e1c" category="list-text">アクティブなGoogle Cloud Platformサブスクリプション</block>
   <block id="d21cbe89c10e8cddec31594493146dcf" category="list-text">サービスアカウントのJSONキーをダウンロードします。「gcloud iam service-accounts keys create key-file --iam-account=_sa-name_@_project-id_.iam.gserviceaccount.com</block>
   <block id="82e39d2f55f4956d1929bbcff0b210aa" category="list-text">advanced権限レベルに切り替えます:'set -privilege advanced</block>
   <block id="6deefebfd83493611afe8675c6d1ce7b" category="list-text">CMEKエントリを作成します：'security key-manager external GCP enable -vserver_svm_name_project-id_project_-key-ring-name_key_ring_name_-key-ring -location_key_ring_location_-key-name_key_name_`</block>
@@ -2413,8 +2409,6 @@
   <block id="254f642527b45bc260048e30704edb39" category="section-title">設定</block>
   <block id="d8cc118193ca8f7de894de3aa3760c8b" category="inline-link-macro">対称GCPキーリングとキーを作成します</block>
   <block id="f510135977c794727163a8e714df5b99" category="list-text">Google Cloud環境では、 <block ref="7ea8c432087c9eb8393041b63739b4b6" category="inline-link-macro-rx"></block>。</block>
-  <block id="43b2c0508e829808a52d205609043890" category="list-text">Cloud Volumes ONTAP サービスアカウント用のカスタムロールを作成します。</block>
-  <block id="df877e8ddc7d9aae543dcf9650ab2c34" category="list-text">カスタムロールをCloud KMSキーとCloud Volumes ONTAP サービスアカウントに割り当てます。「gcloud kms keys add -iam-policy binding_key_name_-- keyring_key_ring_name -- location_key_location_- member serviceAccount：_service_account_Name -- role project_id_id_roles/custommskmsk`key</block>
   <block id="d8787bda3ae35a469afc376610816a6a" category="list-text">データSVM用のDNSを作成'dns create -domains C._&lt;プロジェクト&gt;_.internal -name-servers_server_address_-vserver _svm_name _</block>
   <block id="1601dadf3d75da8ab487484480cbf4ef" category="list-text">オプション：暗号化「vol create _volume_name」をテストするボリュームを作成します。-aggregate-aggregate_aggregate_aggregate--vserver vserver_name _size 10Gです</block>
   <block id="401a8aaa330fe64d45395192c047e1ed" category="paragraph">Cloud Volumes ONTAP は、 NetApp Volume Encryption （ NVE ）および NetApp Aggregate Encryption （ NAE ）をサポートしています。NVEとNAEは、FIPS 140-2に準拠したボリュームの保管データ暗号化を可能にするソフトウェアベースのソリューションです。 <block ref="d36456219fc3d98cd4133816e30fd33f" category="inline-link-macro-rx"></block>。</block>
@@ -3486,7 +3480,6 @@
   <block id="6d9dd74e7709ef802d299966f7898f6b" category="list-text">*ケースの表示*:特定のケースの詳細を表示します。</block>
   <block id="e93217b2f709a398ce3c0fb753beb05f" category="inline-image-macro">テーブルの最後の列でメニューを選択した後に実行できる操作を示すスクリーンショット。</block>
   <block id="c616f204302ed58d4618e3ded77f1858" category="paragraph">HAペアを使用する場合、Cloud Volumes ONTAP 9.13.0リリース以降では、いくつかのタイプのVMで高速の書き込み速度がサポートされます。にアクセスします<block ref="44033d1307c0997839bd6a3cb420c3fd" category="inline-link-rx"></block> をクリックして、高速の書き込み速度をサポートする VM タイプを確認します。</block>
-  <block id="436ea77bab9d72d8fe71dbccf1dd6613" category="list-text">Cloud Volumes ONTAP 9.12.1 GA以降、マルチテナント暗号化キー管理（MTEKM）ライセンスがインストールされています。</block>
   <block id="51f24173f2f6195b17c8e22458037f6c" category="summary">Cloud Volumes ONTAP イメージダイジェストファイルツールを使用して、エクスポートされたGoogle Cloudイメージファイルの署名を確認します。</block>
   <block id="019892a31385e7fb7670de88abfcf3cd" category="paragraph">エクスポートされたGoogle Cloud署名済みイメージを確認するには、NSSからイメージダイジェストファイルをダウンロードして、disk.rawファイルとダイジェストファイルの内容を検証する必要があります。</block>
   <block id="c81429443fac6104f46abd88cff6840a" category="section-title">署名済み画像検証ワークフローの概要</block>
@@ -5865,4 +5858,17 @@ Mac OSでtailコマンドを完了します。</block>
   <block id="4fa4358b6bad8118578db6b5c02a52db" category="list-text">データ階層化は、Cloud Volumes ONTAP 9.6 以降、Google Cloud でサポートされます。</block>
   <block id="bae7cc0d7e8eb757103bffb3f43417c4" category="list-text">非アクティブなデータは Google Cloud Storage に階層化されます。他のプロバイダへの階層化はサポートされていません。</block>
   <block id="1971cba9fca6bc598cf10a08dfb20cb6" category="section-title">2025年5月29日</block>
+  <block id="af06b9862164f62f5ee6325272d44053" category="list-text">冗長性: Cloud Volume ONTAP の展開に準拠</block>
+  <block id="9a5070a4f48a9f2a4059c8b0f6fabc0f" category="list-text">単一の可用性ゾーン: ローカル冗長ストレージ (LRS)</block>
+  <block id="c43f742471855ab4046c8e23e0d8fe4e" category="list-text">複数の可用性ゾーン: ゾーン冗長ストレージ (ZRS)</block>
+  <block id="76246533f5983ea5fd5d33c0515bcb4d" category="list-text">システムではCloud Volumes ONTAP 9.10.1以降が実行されている必要があります</block>
+  <block id="7f41679ba0e676db7de59363a178d7d6" category="list-text">データ SVM を使用する必要があります。CloudKMS はデータ SVM でのみ構成できます。</block>
+  <block id="6c167007d611da9626ecac9c168c7e8a" category="list-text">ボリューム暗号化（VE）ライセンスをSVMにインストールする必要があります</block>
+  <block id="26a7c42662e416d13cb36f80c1950dfa" category="list-text">Cloud Volumes ONTAP 9.12.1 GA以降では、マルチテナント暗号化キー管理（MTEKM）ライセンスもインストールする必要があります。</block>
+  <block id="843cdd13756df08efb884f520d2add09" category="list-text">有効な Google Cloud Platform サブスクリプションが必要です</block>
+  <block id="7c10ba4172019b4730c14e61275bafac" category="list-text">Cloud KMS キーと Cloud Volumes ONTAP サービス アカウントにカスタム ロールを割り当てます。</block>
+  <block id="2428f19901807b70d43261121dafcf93" category="list-text">カスタム ロールを作成します。</block>
+  <block id="f193581eeaf23b712b81e0023faf5954" category="list-text">作成したカスタム ロールを割り当てます。 <block ref="1bc6114e9ddb3402400afe0f18264312" prefix=" " category="inline-code"></block></block>
+  <block id="2ca4641842d5ce20115dfc5ed991df9a" category="admonition">Cloud Volumes ONTAP 9.13.0以降をご利用の場合は、カスタムロールを作成する必要はありません。<block ref="73ac35632bb1fe345fd295d7683fcbee" category="inline-link-rx"></block><block ref="8f1f4fa398a38c70f01951f69f3c2a1f" prefix="[" category="inline-code"></block> ^]の役割。</block>
+  <block id="07bc73dbf27c2d6ca6dd4dcbb64687bf" category="paragraph">BlueXPは、ストレージVM（SVM）のディザスタリカバリのセットアップやオーケストレーションのサポートを提供していません。これらのタスクを実行するには、ONTAP System ManagerまたはONTAP CLIを使用してください。</block>
 </blocks>
