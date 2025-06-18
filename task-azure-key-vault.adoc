@@ -179,7 +179,7 @@ Category: kms_wrapped_key_status
 3 entries were displayed.
 ----
 +
-状況に応じて `service_reachability` ステータスがではありません `OK`では、必要なすべての接続と権限を使用してSVMがAzure Key Vaultサービスにアクセスすることはできません。Azureのネットワークポリシーとルーティングによって、プライベートVNetがAzure KeyVaultパブリックエンドポイントに到達できないようにしてください。その場合は、Azureプライベートエンドポイントを使用してVNet内からキーヴォールトにアクセスすることを検討してください。エンドポイントのプライベートIPアドレスを解決するために、SVMに静的ホストエントリを追加する必要がある場合もあります。
+もし `service_reachability`ステータスは `OK` SVM は必要な接続と権限をすべて備えた状態で Azure Key Vault サービスにアクセスできません。Azureネットワーク ポリシーとルーティングによって、プライベート VNet から Azure Key Vault パブリック エンドポイントへのアクセスがブロックされていないことを確認してください。その場合は、Azureプライベートエンドポイントを使用してVNet内からキーヴォールトにアクセスすることを検討してください。エンドポイントのプライベートIPアドレスを解決するために、SVMに静的ホストエントリを追加する必要がある場合もあります。
 
 +
 。 `kms_wrapped_key_status` が報告します `UNKNOWN` 初期設定時。ステータスがに変わります `OK` 最初のボリュームが暗号化されたあと。
@@ -192,9 +192,12 @@ vol create -vserver_svm_name_-volume_name_-aggregate _aggr_size_state online -po
 正しく設定されていれば、Cloud Volumes ONTAP でボリュームが自動的に作成され、ボリューム暗号化が有効になります。
 
 . ボリュームが正しく作成および暗号化されたことを確認します。その場合、「-is-encrypted」パラメータは「true」と表示されます。vol show -vserver_svm_name_-fields is-cencryptedです
+. オプション: Azure Key Vault 認証証明書の資格情報を更新する場合は、次のコマンドを使用します。 
+`security key-manager external azure update-credentials -vserver v1 -authentication-method certificate`
 
 
 .関連リンク
 * link:task-set-up-azure-encryption.html["Azure でお客様が管理するキーを使用するように Cloud Volumes ONTAP を設定します"]
 * https://learn.microsoft.com/en-us/azure/key-vault/general/overview["Microsoft Azureのドキュメント：Azure Key Vaultについて"^]
+* https://docs.netapp.com/us-en/ontap-cli/index.html["ONTAP コマンドリファレンスガイド"^]
 

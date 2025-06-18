@@ -93,21 +93,21 @@ sidebar:
           url: "/task-saz-feature.html"
         - title: Azure で Cloud Volumes ONTAP を起動します
           url: "/task-deploying-otc-azure.html"
-        - title: Azureプラットフォームイメージの検証
+        - title: Azure プラットフォーム イメージの検証
           entries:
           - title: 概要
             url: "/concept-azure-image-verification.html"
-          - title: Azureイメージダイジェストファイルをダウンロード
+          - title: Azureイメージファイルをダウンロードする
             url: "/task-azure-download-digest-file.html"
-          - title: 画像のエクスポート
+          - title: Azureイメージファイルをエクスポートする
             url: "/task-azure-image-export.html"
-          - title: ファイル署名の検証
+          - title: ファイル署名を検証する
             entries:
-            - title: ファイル署名の検証
+            - title: ファイル署名の検証について学ぶ
               url: "/concept-azure-file-sig-verify.html"
-            - title: Linuxファイル署名の検証
+            - title: Linuxでファイル署名を検証する
               url: "/task-file-verification-linux.html"
-            - title: Mac OSファイル署名の検証
+            - title: macOSでファイル署名を検証する
               url: "/task-file-verification-mac.html"
       - title: 市場での販売を開始
         url: "/task-deploy-cvo-azure-mktplc.html"

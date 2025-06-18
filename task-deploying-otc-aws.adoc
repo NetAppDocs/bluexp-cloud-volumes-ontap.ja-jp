@@ -76,21 +76,17 @@ AWSでCloud Volumes ONTAPを起動する場合は、BlueXP  で新しい作業�
 | ユーザ名とパスワード | Cloud Volumes ONTAP クラスタ管理者アカウントのクレデンシャルです。これらのクレデンシャルを使用して、ONTAPシステムマネージャまたはONTAP CLIからCloud Volumes ONTAPに接続できます。default_admin_user の名前をそのまま使用するか ' カスタム・ユーザー名に変更します 
 
 
-| 資格情報を編集します | このシステムを導入するアカウントに関連付けられている AWS クレデンシャルを選択します。この Cloud Volumes ONTAP システムで使用する AWS Marketplace サブスクリプションを関連付けることもできます。
-
-Add Subscription * をクリックして、選択したクレデンシャルを新しい AWS Marketplace サブスクリプションに関連付けます。サブスクリプションは、年間契約の場合と、 Cloud Volumes ONTAP の料金を 1 時間ごとに支払う場合があります。
-
-https://docs.netapp.com/us-en/bluexp-setup-admin/task-adding-aws-accounts.html["BlueXPにAWSクレデンシャルを追加する方法について説明します"^]。 
+| 資格情報を編集します | このシステムを導入するアカウントに関連付けられている AWS クレデンシャルを選択します。このCloud Volumes ONTAPシステムで使用するAWSマーケットプレイスサブスクリプションを関連付けることもできます。「サブスクリプションを追加」をクリックして、選択した認証情報を新しいAWSマーケットプレイスサブスクリプションに関連付けます。サブスクリプションは、年間契約の場合と、 Cloud Volumes ONTAP の料金を 1 時間ごとに支払う場合があります。https://docs.netapp.com/us-en/bluexp-setup-admin/task-adding-aws-accounts.html["BlueXPにAWSクレデンシャルを追加する方法について説明します"^]です。 
 |===
 +
-次のビデオでは、従量課金制の Marketplace サブスクリプションを AWS クレデンシャルに関連付ける方法を紹介します。
+次のビデオでは、従量課金制マーケットプレイスサブスクリプションを AWS 認証情報に関連付ける方法を示します。
 
 +
-.AWS MarketplaceでBlueXPにサブスクライブ
+.AWSマーケットプレイスからBlueXPをサブスクライブする
 video::096e1740-d115-44cf-8c27-b051011611eb[panopto]
 +
 
-TIP: 複数の IAM ユーザが同じ AWS アカウントで作業する場合は、各ユーザにサブスクライブする必要があります。最初のユーザがサブスクライブすると、次の図に示すように、 AWS Marketplace から後続のユーザに登録済みであることが通知されます。AWS_account_ のサブスクリプションが設定されている間、各 IAM ユーザは、そのサブスクリプションに自分自身を関連付ける必要があります。次のメッセージが表示されたら、[Click here *（ここをクリック）]リンクをクリックしてBlueXP Webサイトにアクセスし、プロセスを完了します。image:screenshot_aws_marketplace.gif["AWSアカウントにサブスクリプションがすでに設定されているものの、特定のIAMユーザがサブスクリプションを設定していない場合に、BlueXP for Cloud Volumes ONTAP のサブスクリプションページを示すスクリーンショット。"]
+TIP: 複数の IAM ユーザが同じ AWS アカウントで作業する場合は、各ユーザにサブスクライブする必要があります。最初のユーザーがサブスクリプションを完了すると、AWSマーケットプレイスは後続のユーザーに、既にサブスクリプションが完了していることを通知します（下の画像を参照）。AWS_account_ のサブスクリプションが設定されている間、各 IAM ユーザは、そのサブスクリプションに自分自身を関連付ける必要があります。下のメッセージが表示された場合は、「*こちらをクリック*」リンクをクリックしてBlueXPのウェブサイトにアクセスし、手続きを完了してください。 image:screenshot_aws_marketplace.gif["AWSアカウントにサブスクリプションがすでに設定されているものの、特定のIAMユーザがサブスクリプションを設定していない場合に、BlueXP for Cloud Volumes ONTAP のサブスクリプションページを示すスクリーンショット。"]
 
 . * サービス *: サービスを有効にしておくか、 Cloud Volumes ONTAP で使用しない個々のサービスを無効にします。
 +
@@ -146,7 +142,7 @@ link:concept-security.html#encryption-of-data-at-rest["サポートされてい�
 ** link:task-set-up-licensing-aws.html["ライセンスの設定方法について説明します"^]。
 
 
-. * Cloud Volumes ONTAP 構成 * （ AWS Marketplace の年間契約のみ）：デフォルトの構成を確認して「 * Continue * 」をクリックするか、「 * 構成の変更 * 」をクリックして独自の構成を選択します。
+. *Cloud Volumes ONTAP 構成* (年間 AWS マーケットプレイス契約のみ): デフォルトの構成を確認して *続行* をクリックするか、*構成の変更* をクリックして独自の構成を選択します。
 +
 デフォルトの設定を使用している場合、ボリュームを指定し、構成を確認および承認するだけで済みます。
 
@@ -330,17 +326,17 @@ AWSローカルゾーンを使用する前に、ローカルゾーンを有効�
 | ユーザ名とパスワード | Cloud Volumes ONTAP クラスタ管理者アカウントのクレデンシャルです。これらのクレデンシャルを使用して、ONTAPシステムマネージャまたはONTAP CLIからCloud Volumes ONTAPに接続できます。default_admin_user の名前をそのまま使用するか ' カスタム・ユーザー名に変更します 
 
 
-| 資格情報を編集します | この Cloud Volumes ONTAP システムで使用する AWS クレデンシャルと Marketplace サブスクリプションを選択します。Add Subscription * をクリックして、選択したクレデンシャルを新しい AWS Marketplace サブスクリプションに関連付けます。サブスクリプションは、年間契約の場合と、 Cloud Volumes ONTAP の料金を 1 時間ごとに支払う場合があります。NetAppからライセンスを直接購入した場合（お客様所有のライセンスを使用（BYOL））、AWSサブスクリプションは必要ありません。https://docs.netapp.com/us-en/bluexp-setup-admin/task-adding-aws-accounts.html["BlueXPにAWSクレデンシャルを追加する方法について説明します"^]です。 
+| 資格情報を編集します | この Cloud Volumes ONTAP システムで使用する AWS クレデンシャルと Marketplace サブスクリプションを選択します。選択した認証情報を新しい AWS マーケットプレイスサブスクリプションに関連付けるには、「サブスクリプションの追加」をクリックします。サブスクリプションは、年間契約の場合と、 Cloud Volumes ONTAP の料金を 1 時間ごとに支払う場合があります。NetAppからライセンスを直接購入した場合（お客様所有のライセンスを使用（BYOL））、AWSサブスクリプションは必要ありません。https://docs.netapp.com/us-en/bluexp-setup-admin/task-adding-aws-accounts.html["BlueXPにAWSクレデンシャルを追加する方法について説明します"^]です。 
 |===
 +
-次のビデオでは、従量課金制の Marketplace サブスクリプションを AWS クレデンシャルに関連付ける方法を紹介します。
+次のビデオでは、従量課金制マーケットプレイスサブスクリプションを AWS 認証情報に関連付ける方法を示します。
 
 +
-.AWS MarketplaceでBlueXPにサブスクライブ
+.AWSマーケットプレイスからBlueXPをサブスクライブする
 video::096e1740-d115-44cf-8c27-b051011611eb[panopto]
 +
 
-TIP: 複数の IAM ユーザが同じ AWS アカウントで作業する場合は、各ユーザにサブスクライブする必要があります。最初のユーザがサブスクライブすると、次の図に示すように、 AWS Marketplace から後続のユーザに登録済みであることが通知されます。AWS_account_ のサブスクリプションが設定されている間、各 IAM ユーザは、そのサブスクリプションに自分自身を関連付ける必要があります。次のメッセージが表示されたら、[Click here *（ここをクリック）]リンクをクリックしてBlueXP Webサイトにアクセスし、プロセスを完了します。image:screenshot_aws_marketplace.gif["AWSアカウントにサブスクリプションがすでに設定されているものの、特定のIAMユーザがサブスクリプションを設定していない場合に、BlueXP for Cloud Volumes ONTAP のサブスクリプションページを示すスクリーンショット。"]
+TIP: 複数の IAM ユーザが同じ AWS アカウントで作業する場合は、各ユーザにサブスクライブする必要があります。最初のユーザーがサブスクリプションを完了すると、AWSマーケットプレイスは後続のユーザーに、既にサブスクリプションが完了していることを通知します（下図参照）。下図のようなAWS_account_ のサブスクリプションが設定されている間、各 IAM ユーザは、そのサブスクリプションに自分自身を関連付ける必要があります。メッセージが表示された場合は、「*こちらをクリック*」リンクをクリックしてBlueXPのウェブサイトにアクセスし、手続きを完了してください。 image:screenshot_aws_marketplace.gif["AWSアカウントにサブスクリプションがすでに設定されているものの、特定のIAMユーザがサブスクリプションを設定していない場合に、BlueXP for Cloud Volumes ONTAP のサブスクリプションページを示すスクリーンショット。"]
 
 . * サービス *: この Cloud Volumes ONTAP システムで使用しない個々のサービスを有効または無効にしておきます。
 +

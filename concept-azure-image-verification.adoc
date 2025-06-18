@@ -4,7 +4,7 @@ permalink: concept-azure-image-verification.html
 keywords: Azure, image, VHD, image signature file, 
 summary: Azure VHDイメージファイルのシグネチャファイルを確認します。 
 ---
-= Azure MarketplaceでのCloud Volumes ONTAPのイメージ検証
+= Cloud Volumes ONTAP の Azure Marketplace イメージ検証
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,20 +14,20 @@ summary: Azure VHDイメージファイルのシグネチャファイルを確�
 
 
 [role="lead"]
-Azureイメージ検証は、強化されたNetAppセキュリティ要件に準拠しています。イメージファイルの検証は簡単なプロセスですが、Azure Marketplaceによる変更のため、Azureイメージシグネチャの検証には既知のAzure VHDイメージファイルへの特別な処理が必要です。
+Azureイメージ検証は、強化されたNetAppセキュリティ要件に準拠しています。イメージファイルの検証は簡単なプロセスです。ただし、Azure マーケットプレイスで変更される Azure VHD イメージファイルの場合、Azure イメージ署名の検証には特別な考慮が必要です。
 
 
-NOTE: Azureイメージの検証は、Cloud Volumes ONTAPソフトウェアバージョン9.15.0以降でサポートされます。
+NOTE: Azure イメージ検証は、Cloud Volumes ONTAP 9.15.0 以降でサポートされています。
 
 
 
 == Azureによる公開VHDファイルの変更
 
-先頭の1MB（1、048576バイト）と末尾の512バイトのVHDファイルがAzureによって変更されます。NetAppイメージ署名では、先頭の1MBと末尾の512バイトがスキップされ、残りのVHDイメージ部分に署名されます。
+VHD ファイルの先頭の 1 MB (1048576 バイト) と末尾の 512 バイトは Azure によって変更されます。残りの VHD ファイルは NetApp によって署名されます。
 
 image:screenshot_azure_vhd_10gb.png["Azureで10GBのVHDファイルが切り替わる様子を示す図"]
 
-例として、上の図は10GBのVHDファイルを示しています。ただし、NetApp署名部分は緑色で表示され、サイズは10GB~1MB-512Bです。
+この例では、VHD ファイルは 10GB です。NetAppが署名した部分は緑色でマークされています (10GB - 1MB - 512 バイト)。
 
 .関連リンク
 * https://pagefault.blog/2019/04/22/how-to-sign-and-verify-using-openssl/["Page Fault Blog: How to sign and verify using OpenSSL"^]

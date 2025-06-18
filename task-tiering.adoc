@@ -167,17 +167,6 @@ BlueXPに必要な権限があれば、高パフォーマンス階層と大容�
 ----
 カスタムロールには、デフォルトで権限が含まれています。 https://docs.netapp.com/us-en/bluexp-setup-admin/reference-permissions-azure.html["ConnectorのAzure権限を表示します"^]
 
-
-
-=== Azureテナントのデータを階層化するための要件
-
-同じコネクタを使用して、複数のAzureテナントのデータを階層化できます。Cloud Volumes ONTAP作業環境があるテナントによって作成され、コネクタが別のテナントによって作成されるシナリオでAzureテナントの階層化を有効にするには、次の点を確認します。
-
-* BlueXP  で両方のテナントのクレデンシャルをクロス検証用に入力しておきます。を参照してください https://docs.netapp.com/us-en/bluexp-setup-admin/task-adding-azure-accounts.html["BlueXPのAzureクレデンシャルとマーケットプレイスサブスクリプションを管理"^]。
-* 2つのテナント間で仮想ネットワーク（VNet）ピアリングを有効にしておき https://learn.microsoft.com/en-us/azure/virtual-network/virtual-network-peering-overview["Azure portalからアクセス"^]ます。これは、コネクタがもう一方のテナントのストレージアカウントにアクセスできるようにするために必要です。
-* サブネットサービスエンドポイントを使用する必要がありlink:task-enabling-private-link.html#disable-azure-private-links-and-use-service-endpoints-instead["Azureプライベートリンクを無効にしました"]ます。
-
-
 endif::azure[]
 
 ifdef::gcp[]

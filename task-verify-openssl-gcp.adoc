@@ -17,7 +17,7 @@ summary: OpenSSLを使用して、Google Cloudでダウンロードしたdisk.ra
 Google Cloudでダウンロードしたdisk.rawファイルを、で使用できるダイジェストファイルの内容と照合して確認できます https://mysupport.netapp.com/site/products/all/details/cloud-volumes-ontap/downloads-tab["NSS"^] OpenSSLを使用しています。
 
 
-NOTE: イメージがLinux、Mac OS、およびWindowsマシンと互換性があるかどうかを検証するOpenSSLコマンド。
+NOTE: イメージを検証するための OpenSSL コマンドは、Linux、macOS、および Windows マシンと互換性があります。
 
 .手順
 . OpenSSLを使用して証明書を確認します。

@@ -42,7 +42,7 @@ NOTE: ライセンスがないと、ライセンスされた機能の使用は�
 容量ベースのライセンスは、 a_packag_ の形式で用意されています。Cloud Volumes ONTAP システムを導入する際には、ビジネスニーズに応じて、複数のライセンスパッケージから選択できます。
 
 
-NOTE: BlueXPで管理される製品とサービスの実際の使用量と計測値は常にGiBとTiBで計算されますが、GB / GiBとTB / TiBという用語は同じ意味で使用されます。これは、Cloud Marketplaceのリスト、価格見積もり、リストの説明、およびその他の関連ドキュメントに反映されます。
+NOTE: BlueXPで管理される製品とサービスの実際の使用量と計測値は常にGiBとTiBで計算されますが、GB / GiBとTB / TiBという用語は同じ意味で使用されます。これは、クラウド マーケットプレイスのリスト、価格見積、リストの説明、およびその他のサポート ドキュメントに反映されます。
 
 
 
@@ -115,14 +115,14 @@ Essentialsパッケージに変換されたCloud Volumes ONTAPシステムは、
 
 ifdef::azure[]
 
-* Azure Marketplaceでは、従量課金制または年間契約として提供されています
+* Azure マーケットプレイスで従量課金制または年間契約として利用可能
 
 
 endif::azure[]
 
 ifdef::gcp[]
 
-* Google Cloud Marketplaceでは、従量課金制サービスまたは年間契約として提供されます
+* Google Cloud Marketplace で従量課金制または年間契約としてご利用いただけます
 
 
 endif::gcp[]

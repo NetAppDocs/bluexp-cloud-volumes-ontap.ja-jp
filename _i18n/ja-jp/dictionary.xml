@@ -1895,7 +1895,6 @@
   <block id="130d74c3ba60e43c646b8d2ae2e189f7" category="cell">タグを追加します</block>
   <block id="ab2bc7358191e02d5aacdd2ddaa4233d" category="inline-link">AWS ドキュメント：「 Tagging your Amazon EC2 Resources</block>
   <block id="6fc1b99ffd833c6c5570d86706e4dda3" category="cell">資格情報を編集します</block>
-  <block id="966af22a27db9cf9c8aed1bfaa29bceb" category="paragraph">次のビデオでは、従量課金制の Marketplace サブスクリプションを AWS クレデンシャルに関連付ける方法を紹介します。</block>
   <block id="6101eef8fd3b11affed5baa0379eb7b5" category="inline-link-macro">AWS ワークシート</block>
   <block id="6f27ddf091b10f1dfd4ab13be0759ec7" category="paragraph">AWS Outpost を使用している場合は、 Outpost VPC を選択して、その Outpost に単一のノードの Cloud Volumes ONTAP システムを導入できます。エクスペリエンスは、 AWS に存在する他の VPC と同じです。</block>
   <block id="94b720129da1fad395a78adb9dd8004f" category="list-text">* データ暗号化 * ：データ暗号化なし、または AWS で管理する暗号化を選択します。</block>
@@ -2965,12 +2964,10 @@
   <block id="d44d4a8594e5151de6fa4ee089278b67" category="cell">AWS タグは、 AWS リソースのメタデータです。BlueXPは、Cloud Volumes ONTAP インスタンスとそのインスタンスに関連付けられている各AWSリソースにタグを追加します。作業環境を作成するときに、ユーザインターフェイスから最大 4 つのタグを追加し、作成後にさらに追加できます。API では、作業環境の作成時にタグを 4 つに制限することはありません。タグの詳細については、を参照してください<block ref="9bd250e03cdf80384a24635f16673602" category="inline-link-rx"></block>。</block>
   <block id="2549a5df32120cf6ac614914f42ef32c" category="inline-link">BlueXPにAWSクレデンシャルを追加する方法について説明します</block>
   <block id="355c7a22767b9f2dd149515d08cc5490" category="inline-image-macro">AWSアカウントにサブスクリプションがすでに設定されているものの、特定のIAMユーザがサブスクリプションを設定していない場合に、BlueXP for Cloud Volumes ONTAP のサブスクリプションページを示すスクリーンショット。</block>
-  <block id="074d1b398f4753f3d064cfd562af4ed8" category="admonition">複数の IAM ユーザが同じ AWS アカウントで作業する場合は、各ユーザにサブスクライブする必要があります。最初のユーザがサブスクライブすると、次の図に示すように、 AWS Marketplace から後続のユーザに登録済みであることが通知されます。AWS_account_ のサブスクリプションが設定されている間、各 IAM ユーザは、そのサブスクリプションに自分自身を関連付ける必要があります。次のメッセージが表示されたら、[Click here *（ここをクリック）]リンクをクリックしてBlueXP Webサイトにアクセスし、プロセスを完了します。<block ref="42077b282858282a6d1d166f9467abaf" category="inline-image-macro-rx" type="image"></block></block>
   <block id="87ef523f982611ded33c8785ffdd2634" category="list-text">*IAMの役割*: BlueXPが役割を作成できるようにするには、既定のオプションをそのまま使用することをお勧めします。</block>
   <block id="9f2afa6e18a40ed2f547b1e2d13fee8e" category="list-text">gp2ディスクまたはst1ディスクを選択する場合、シンプルなプロビジョニングオプションを使用する場合、初期アグリゲートおよびBlueXPで作成される追加のアグリゲートのすべてのディスクサイズを選択できます。Advanced Allocation オプションを使用すると、異なるディスクサイズを使用するアグリゲートを作成できます。</block>
   <block id="de39a020e8e0c1962c8c0dfa6467fd71" category="list-text">[詳細情報*]をクリックして、BlueXPが購入するサポートとAWSリソースの詳細を確認します。</block>
   <block id="e1bc841e2651c6522307e17c20df7a4d" category="paragraph">AWSでCloud Volumes ONTAP HAペアを起動するには、BlueXPでHA作業環境を作成する必要があります。</block>
-  <block id="3a03e3e7da257bcd5d5826004cd5b227" category="admonition">複数の IAM ユーザが同じ AWS アカウントで作業する場合は、各ユーザにサブスクライブする必要があります。最初のユーザがサブスクライブすると、次の図に示すように、 AWS Marketplace から後続のユーザに登録済みであることが通知されます。AWS_account_ のサブスクリプションが設定されている間、各 IAM ユーザは、そのサブスクリプションに自分自身を関連付ける必要があります。次のメッセージが表示されたら、[Click here *（ここをクリック）]リンクをクリックしてBlueXP Webサイトにアクセスし、プロセスを完了します。<block ref="5176b925004072644ad0f4d50d425bc9" category="inline-image-macro-rx" type="image"></block></block>
   <block id="08716c56b69c38a1d4f3bf5e2aa2e5c8" category="paragraph">Cloud Volumes ONTAP HAペアが起動します。タイムラインで進行状況を追跡できます。</block>
   <block id="e8d7251c93bb0bbd59e5b2aca177a1a6" category="summary">Cloud Volumes ONTAP の高度な管理が必要な場合は、ONTAP システムに付属の管理インターフェイスであるONTAP System Managerを使用して実行できます。BlueXPにはSystem Managerインターフェイスが搭載されているので、高度な管理のためにBlueXPを残す必要はありません。</block>
   <block id="af97eb7a8d1a683de73e48cc402e070d" category="paragraph">アグリゲートの管理（ローカル階層とクラウド階層を含む）はSystem Managerではサポートされていません。アグリゲートは、BlueXPのStandard Viewから直接管理する必要があります。</block>
@@ -3292,8 +3289,6 @@
   <block id="54aeb573897a8b2a0c9627ff7030c996" category="paragraph">最適化さCloud Volumes ONTAP れた容量ベースのライセンスパッケージとエッジキャッシュ容量ベースのライセンスパッケージは、Google Cloud Marketplaceで従量課金制サービスまたは年間契約として提供されます。</block>
   <block id="fced3090ff990434831b838f07c6a3a7" category="paragraph">マルチテナント暗号化キー管理（MTEKM）ライセンスは新しいCloud Volumes ONTAP 環境には含まれなくなりました。</block>
   <block id="a1299d36f8821164c4414c1a5ab986dd" category="inline-link-macro">Cloud Volumes ONTAP のデフォルト設定</block>
-  <block id="d4a6e54c4d6405336cdeb07c50490008" category="list-text">Azure Marketplaceでは、従量課金制または年間契約として提供されています</block>
-  <block id="18daf9881514241d393343911b3c6b0d" category="list-text">Google Cloud Marketplaceでは、従量課金制サービスまたは年間契約として提供されます</block>
   <block id="3ee54ac340ad12860ef4b993b12b351c" category="summary">BlueXPでは'新しいCloud Volumes ONTAP 作業環境を作成するときに'いくつかの異なるONTAP バージョンから選択できます</block>
   <block id="94a06e39ad7d8a5f30a29ceb12e0cf9d" category="list-text">9.12.1 RC1</block>
   <block id="b783301cf6b68b7d026b486472da6add" category="list-text">9.12.0 P1</block>
@@ -3411,7 +3406,6 @@
   <block id="a329f820fccae25ebe98d73c85c8006c" category="inline-image-macro">選択された3つのサービスを示すサービスエンドポイントのスクリーンショット</block>
   <block id="892728a8cb7d01d3a80f6c63ad7a3b1a" category="paragraph"><block ref="892728a8cb7d01d3a80f6c63ad7a3b1a" category="inline-image-macro-rx" type="image"></block></block>
   <block id="5b430d19ce10cad3c93da5d1a58ae5da" category="list-text">ONTAP でadvanced権限モードに切り替えます。<block ref="b18455e94f1f10f091d6cc4ad2e0507e" prefix=" " category="inline-code"></block></block>
-  <block id="2b92b9eae444abb7f44aa96b856847a4" category="paragraph">状況に応じて<block ref="c02e65ef2be24722283d91b62774dd3d" prefix=" " category="inline-code"></block> ステータスがではありません<block ref="e0aa021e21dddbd6d8cecec71e9cf564" prefix=" " category="inline-code"></block>では、必要なすべての接続と権限を使用してSVMがAzure Key Vaultサービスにアクセスすることはできません。Azureのネットワークポリシーとルーティングによって、プライベートVNetがAzure KeyVaultパブリックエンドポイントに到達できないようにしてください。その場合は、Azureプライベートエンドポイントを使用してVNet内からキーヴォールトにアクセスすることを検討してください。エンドポイントのプライベートIPアドレスを解決するために、SVMに静的ホストエントリを追加する必要がある場合もあります。</block>
   <block id="840b18b97e1e55325d94f00b965a31cf" category="paragraph">。<block ref="5fb243bae51d7320aff8e09d0bb56325" prefix=" " category="inline-code"></block> が報告します<block ref="696b031073e74bf2cb98e5ef201d4aa3" prefix=" " category="inline-code"></block> 初期設定時。ステータスがに変わります<block ref="e0aa021e21dddbd6d8cecec71e9cf564" prefix=" " category="inline-code"></block> 最初のボリュームが暗号化されたあと。</block>
   <block id="dd1852694a70af4fe454fcf679ab1071" category="inline-link-macro">Azureリージョンペア</block>
   <block id="ab83b37918dd75da5385d47425e5a41b" category="paragraph">ビジネスで必要な場合は、BlueXPの設定を変更して、Azureプライベートリンクの代わりにサービスエンドポイントを使用するようにCloud Volumes ONTAP を設定できます。この設定を変更すると、新しく作成した環境 Cloud Volumes ONTAP システムに変更が適用されます。サービスエンドポイントは、でのみサポートされます <block ref="143d2b52aa05d0c2b5e02a98661c9a57" category="inline-link-macro-rx"></block> コネクタとCloud Volumes ONTAP VNetの間。</block>
@@ -3480,7 +3474,6 @@
   <block id="6d9dd74e7709ef802d299966f7898f6b" category="list-text">*ケースの表示*:特定のケースの詳細を表示します。</block>
   <block id="e93217b2f709a398ce3c0fb753beb05f" category="inline-image-macro">テーブルの最後の列でメニューを選択した後に実行できる操作を示すスクリーンショット。</block>
   <block id="c616f204302ed58d4618e3ded77f1858" category="paragraph">HAペアを使用する場合、Cloud Volumes ONTAP 9.13.0リリース以降では、いくつかのタイプのVMで高速の書き込み速度がサポートされます。にアクセスします<block ref="44033d1307c0997839bd6a3cb420c3fd" category="inline-link-rx"></block> をクリックして、高速の書き込み速度をサポートする VM タイプを確認します。</block>
-  <block id="51f24173f2f6195b17c8e22458037f6c" category="summary">Cloud Volumes ONTAP イメージダイジェストファイルツールを使用して、エクスポートされたGoogle Cloudイメージファイルの署名を確認します。</block>
   <block id="019892a31385e7fb7670de88abfcf3cd" category="paragraph">エクスポートされたGoogle Cloud署名済みイメージを確認するには、NSSからイメージダイジェストファイルをダウンロードして、disk.rawファイルとダイジェストファイルの内容を検証する必要があります。</block>
   <block id="c81429443fac6104f46abd88cff6840a" category="section-title">署名済み画像検証ワークフローの概要</block>
   <block id="89367ca4743c16d95c687430c6a0d9cc" category="paragraph">以下は、Google Cloudの署名付き画像検証ワークフロープロセスの概要です。</block>
@@ -3505,7 +3498,6 @@
   <block id="c09d91817b6017a3572898b867b22e36" category="inline-link">未割り当てライセンスを追加します</block>
   <block id="44579e142f1f753a153dbb19dac8125c" category="summary">OpenSSLを使用して、Google Cloudでダウンロードしたdisk.rawファイルとダイジェストファイルの内容を確認します。</block>
   <block id="9790936d7b09c3cf187b770347ee60d1" category="paragraph">Google Cloudでダウンロードしたdisk.rawファイルを、で使用できるダイジェストファイルの内容と照合して確認できます<block ref="4af4717946461f54169780875a3b5a98" category="inline-link-rx"></block> OpenSSLを使用しています。</block>
-  <block id="64bba92e74e274ead8d4e951ad8c9d3a" category="admonition">イメージがLinux、Mac OS、およびWindowsマシンと互換性があるかどうかを検証するOpenSSLコマンド。</block>
   <block id="c275ec11ecf674a6672183664681e98f" category="list-text">OpenSSLを使用して証明書を確認します。</block>
   <block id="72d3302ad6fe92c7f4d817235e6ec413" category="list-text">ダウンロードしたdisk.rawファイル、署名、および証明書をディレクトリに配置します。</block>
   <block id="f059e79846663b1827b8520855050095" category="list-text">OpenSSLを使用して証明書から公開鍵を抽出します。</block>
@@ -3842,9 +3834,7 @@
   <block id="4d0d11f252798b1130fe9f60f2d2e318" category="list-text">コネクタに関連付けられているサービスアカウント<block ref="5646254c2ac34b48f56ed296d6fb66e7" category="inline-link-rx"></block></block>
   <block id="d84cee0d6767da802f9effadbbc51142" category="list-text">プロンプトが表示されたら、<block ref="1ca84fde12203c4cfd29d288d7a6cf61" category="inline-link-rx"></block>。</block>
   <block id="422d2c91120cb9ddd1c3fd41a284e77a" category="admonition">これは、BlueXP用に設定したサービスアカウントです。 <block ref="d8e8dd577fee44652d34a1d1f4c2ce4b" category="inline-link-macro-rx"></block>。</block>
-  <block id="703803ff5402f92147fbc2904ced4f23" category="paragraph">次のビデオでは、従量課金制のMarketplaceサブスクリプションをGoogle Cloudプロジェクトに関連付ける方法を紹介します。または、の手順に従って、に登録します<block ref="d9f7e6ae4bc0528c4df5fe3f1a811c3e" category="inline-link-rx"></block> セクション。</block>
   <block id="dabcd93c47c69ecf7688c43957686bb7" category="cell">を使用する場合は <block ref="b0493934baf26f9529eb4214b9de6c71" category="inline-link-macro-rx"></block> または<block ref="9a17952183455df523c977039b4fb285" category="inline-link-rx"></block> サービスを利用するには、 * Service Account * スイッチを有効にし、事前定義された Storage Admin ロールが割り当てられたサービスアカウントを選択する必要があります。</block>
-  <block id="5355322e972163adefa502954b34d25c" category="paragraph">次のビデオでは、従量課金制のMarketplaceサブスクリプションをGoogle Cloudプロジェクトに関連付ける方法を紹介します。  または、の手順に従って、に登録します<block ref="d9f7e6ae4bc0528c4df5fe3f1a811c3e" category="inline-link-rx"></block> セクション。</block>
   <block id="200bfa431a059f9cb12bdce777845a7e" category="admonition">コネクタにはシステムディスクも必要です。<block ref="d20acabc118cd0226229fe484509d871" category="inline-link-rx"></block>。</block>
   <block id="3e15a93b8abafd714d90153ac66e4e82" category="paragraph">インターネットアクセスを使用できないサブネットにCloud Volumes ONTAP を導入する場合は、コネクタを手動でインストールし、そのコネクタで実行されているBlueXPユーザインターフェイスにアクセスする必要があります。<block ref="dfc982bbe2dfabd644ac809e4b468ae7" category="inline-link-rx"></block></block>
   <block id="687a1e66717978102d4e4948c08968d3" category="list-text"><block ref="687a1e66717978102d4e4948c08968d3" category="inline-link-rx"></block></block>
@@ -3879,11 +3869,6 @@
   <block id="882d5f98206dd8157654127073c920f2" category="paragraph"><block ref="882d5f98206dd8157654127073c920f2" category="inline-link-rx"></block></block>
   <block id="f870932f389b07a18c35e61ebc668c91" category="paragraph"><block ref="161ab28684c427e4961f0c360c1dbce7" category="inline-link-rx"></block>。</block>
   <block id="0a878535ad1a6e2ef955aba255e762cd" category="list-text">プロンプトが表示されたら、<block ref="b03d5bfc016d24f5269c25486d5c5105" category="inline-link-rx"></block>。</block>
-  <block id="d4632b36f41d4764afe08f6aac9dbe34" category="cell">このシステムを導入するアカウントに関連付けられている AWS クレデンシャルを選択します。この Cloud Volumes ONTAP システムで使用する AWS Marketplace サブスクリプションを関連付けることもできます。
-
-Add Subscription * をクリックして、選択したクレデンシャルを新しい AWS Marketplace サブスクリプションに関連付けます。サブスクリプションは、年間契約の場合と、 Cloud Volumes ONTAP の料金を 1 時間ごとに支払う場合があります。
-
-<block ref="2ae6dc7cea05e6172a8f0e381f70d632" category="inline-link-rx"></block>。</block>
   <block id="f55b18eeaddb29e4e968d14603f99e82" category="list-text"><block ref="f55b18eeaddb29e4e968d14603f99e82" category="inline-link-rx"></block></block>
   <block id="d7e4497b251053c3a95e730a472e0f1a" category="list-text"><block ref="d7e4497b251053c3a95e730a472e0f1a" category="inline-link-rx"></block></block>
   <block id="f647c880dd21951d680e6e9b7ad216f0" category="list-text"><block ref="f647c880dd21951d680e6e9b7ad216f0" category="inline-link-rx"></block></block>
@@ -4254,9 +4239,7 @@ Add Subscription * をクリックして、選択したクレデンシャルを�
   <block id="20d3f54acd662a128694ddf527ea22fb" category="list-text">[ルールの保存]*をクリックして変更を適用します。</block>
   <block id="2fd1ee72a12db129de96b6606fbce188" category="list-text">ソースクラスタとデスティネーションクラスタが同じ仮想ネットワーク（VNet）にアクセスできる必要があります。デスティネーションクラスタはAzure内のCloud Volumes ONTAPシステムです。ソースクラスタには、AzureのCloud Volumes ONTAPシステムまたはONTAPシステムを使用できます。</block>
   <block id="53dbdce3b901c59c8d3bbdae0e91364c" category="paragraph">既存のSnapMirrorレプリケーション関係を移動するには、新しいSnapMirrorレプリケーション関係を作成する前に、既存のSnapMirrorレプリケーション関係を解除する必要があります。</block>
-  <block id="c6e17aa071476599f5e5fc5b8bc42431" category="video-title">Google Cloud MarketplaceからBlueXPにサブスクライブ</block>
   <block id="040832c90148c5bba767901a4a55ebe4" category="video-title">Azure MarketplaceでBlueXPにサブスクライブ</block>
-  <block id="8ddd07f4c199accad92d619cc396eaef" category="video-title">AWS MarketplaceでBlueXPにサブスクライブ</block>
   <block id="c27b8e6a4f797d237583ca6d38a92cd6" category="summary">KeystoneサブスクリプションをBlueXPデジタルウォレットから管理するには、Cloud Volumes ONTAPで使用するサブスクリプションを有効にし、サブスクリプションのサービスレベルに応じてコミット済み容量の変更を要求します。サービスレベル用に容量の追加を要求すると、オンプレミスのONTAPクラスタやCloud Volumes ONTAPシステム用に追加のストレージが提供されます。</block>
   <block id="52ba144dbaac8239e9b6d8e287db93dc" category="doc">Keystoneサブスクリプションを管理</block>
   <block id="a3b1d6e06d4fd8ccc20c61ce51e45853" category="paragraph">NetApp Keystoneは、CAPEX（設備投資）やリースよりもOPEX（運用コスト）が望ましいお客様に、ハイブリッドクラウドエクスペリエンスを提供する、柔軟な従量課金制のサブスクリプションベースサービスです。</block>
@@ -4389,7 +4372,6 @@ Add Subscription * をクリックして、選択したクレデンシャルを�
   <block id="58dcfad3183b701a8f1b8781a5644d09" category="inline-link">容量単位のライセンスパッケージの詳細</block>
   <block id="07456d1e170e8be27eaff1e39e1ccdf6" category="paragraph">BlueXPは、常に最初にライセンスを請求しようとします。ライセンスが利用できない場合は、マーケットプレイスのサブスクリプションに対して課金されます。BYOLからMarketplaceへのサブスクリプション（またはその逆）では「変換」は必要ありません。</block>
   <block id="d5f06dc5f98a38b5ccff1592c5d20e76" category="admonition">BlueXPで管理される製品とサービスの実際の使用量と計測値は常にGiBとTiBで計算されますが、GB / GiBとTB / TiBという用語は同じ意味で使用されます。これは、クラウドマーケットプレイスのリスト、価格見積もり、リストの説明、およびその他の関連ドキュメントに反映されます。</block>
-  <block id="2732cf17c6f3094ab514d104cf7ecca1" category="admonition">BlueXPで管理される製品とサービスの実際の使用量と計測値は常にGiBとTiBで計算されますが、GB / GiBとTB / TiBという用語は同じ意味で使用されます。これは、Cloud Marketplaceのリスト、価格見積もり、リストの説明、およびその他の関連ドキュメントに反映されます。</block>
   <block id="1a09137ca087e36b72504f4276c7cd08" category="list-text">階層化データのデフォルトのストレージクラスは、 _Standard Storage_class です。データへのアクセス頻度が低い場合は、 _Nearline Storage_or_Coldline Storage_ に変更することでストレージコストを削減できます。ストレージクラスを変更すると、それ以降のアクセス頻度の低いデータは選択したクラスに直接移動されます。</block>
   <block id="0d79695d01dd236a00fcb17dec14227f" category="admonition">ストレージクラスを変更すると、アクセス頻度の低い既存のデータがデフォルトのストレージクラスのままになります。既存のアクセス頻度の低いデータのストレージクラスを変更するには、指定を手動で実行する必要があります。</block>
   <block id="ce46ac36501bd1de8616d715ef7ee1c2" category="paragraph"><block ref="ce46ac36501bd1de8616d715ef7ee1c2" category="inline-image-macro-rx" type="image"></block></block>
@@ -4585,82 +4567,24 @@ HAペアの場合、BlueXPでCloud Volumes ONTAP作業環境を作成すると�
   <block id="d3f932730561572a0dc4f8911dc7b758" category="paragraph">コネクタバージョン3.9.36以前を実行している場合は、AWS EC2コンソールのAWSコネクタロールにDescribeAvailabilityZones権限を追加する必要があります。</block>
   <block id="d4cffcdfb4fe4fc69dc234950d0f4151" category="admonition">AWSのローカルゾーンは、BlueXPを標準モードで使用している場合にサポートされます。現時点では、BlueXPを制限モードまたはプライベートモードで使用している場合、AWSローカルゾーンはサポートされていません。</block>
   <block id="dd9c0a56896702fcd7616d8a05a5734b" category="example-title">クリックして表示</block>
-  <block id="66477356c169bae503b8e5b68efae8f9" category="summary">Mac OSのCloud Volumes ONTAPイメージダイジェストファイルツールを使用して、エクスポートしたVHDファイルの署名を確認します。</block>
-  <block id="7dfe290ea310f3175330a9ea2e3f87f9" category="paragraph">エクスポートしたVHDファイルの署名をMac OSで確認するには、次の手順に従います。</block>
   <block id="9d2169c1c2855b78a7aeaa4f42d27dc7" category="inline-link">NetApp Support Site</block>
-  <block id="182f014f4c613a2ea00430b0555c0cfe" category="list-text">からAzure Image Digestファイルをダウンロードします。<block ref="3725c06f412bedb14ffd610de312875d" category="inline-link-rx"></block> そして、ダイジェストファイル（.sig）、公開鍵証明書ファイル（.pem）、チェーン証明書ファイル（.pem）を展開します。</block>
-  <block id="3ea81971526171c18d55f5c21b99575c" category="inline-link">Azureイメージダイジェストファイルをダウンロード</block>
-  <block id="448e33b68aea58b7fecc024d2c2b5dc4" category="paragraph">を参照してください<block ref="5fc79e069847e547e3ea31d52f49c511" category="inline-link-rx"></block> を参照してください。</block>
   <block id="1c70ba48a8faaae47a72ab185f6f3572" category="list-text">信頼チェーンを検証します。</block>
-  <block id="cd01d0f8e467738f2625378653bc8d43" category="list-text">先頭の1MB（1048576バイト）と末尾の512バイトのVHDファイルを削除します。</block>
-  <block id="a7997886de4e4c54fffe826bcd17411e" category="paragraph">'taile'を使用した場合、オプション'-c + K'はKTHバイトから始まるバイトを出力します。
-をクリックします。したがって、1048577は'tail -c'に渡されます。所要時間は約13mです。
-Mac OSでtailコマンドを完了します。</block>
-  <block id="eb7e6b99b56676dfe5f808750410e68a" category="list-text">opensslを使用して証明書から公開鍵を抽出し、
-署名ファイルと公開鍵を含むファイル（sign.tmp）。</block>
-  <block id="ccde39ff9aff3f514ac48f4d13e6d0f5" category="paragraph">入力ファイルが検証に合格すると、コマンドは「検証OK」と表示されます。
-それ以外の場合は、「Verification Failure」と表示されます。</block>
   <block id="7c00abf63371811634839eb405ec4038" category="list-text">ワークスペースをクリーンアップします。</block>
   <block id="4f366ac6c42231f45c88efd5aa987abb" category="cell">9.15.0</block>
-  <block id="e7e9a24e123538eed11a70e0eeb566a1" category="summary">Cloud Volumes ONTAPイメージダイジェストファイルツールを使用して、エクスポートされたVHDファイルの署名を確認する方法について説明します。</block>
-  <block id="a781d076243f95e28ab486d8c31b6ba4" category="doc">ファイル署名の検証</block>
-  <block id="437beb58ba8cb874df3b92dce25308d4" category="paragraph">Azureイメージ検証プロセスでは、先頭に1MB、末尾に512Bのハッシュ関数を使用してストライプされたVHDファイルからダイジェストが生成されます。署名手順と照合するために、SHA256を使用してハッシュが作成されます。先頭の1MBと末尾の512BをVHDファイルから削除し、VHDファイルの残りの部分を確認する必要があります。</block>
   <block id="f98e4b86cca760be2447f72ea72c4f88" category="section-title">ファイル署名検証ワークフローの概要</block>
   <block id="9454f651ecd65349c0f152b92965f048" category="paragraph">次に、ファイル署名検証のワークフロープロセスの概要を示します。</block>
   <block id="7c00934b1da44ca90cfaed118a5c7000" category="image-alt">Azureチェックシグネチャのグラフィック</block>
-  <block id="1e34d13948b6b17e50f7142a37354bd7" category="list-text">公開鍵証明書（.pem）から公開鍵（.pub）を抽出します。</block>
-  <block id="7879ab866e35c7b7f3b9fad5b096f64f" category="list-text">抽出された公開鍵は、ダイジェストファイルの復号化に使用されます。結果は、画像ファイルから作成された一時ファイルの新しい暗号化されていないダイジェストと比較され、先頭の1MBと末尾の512バイトが削除されます。</block>
-  <block id="561627cfa40a818097c26ee0df685e81" category="paragraph">この手順は、次のopensslコマンドを使用して実行します。</block>
-  <block id="43d4aabb0efd580944e1beb8c4db11b8" category="list-text">一般的なCLI文は次のように表示されます。</block>
-  <block id="c9fd91db7f23dc5a00305ec8fc9ab1fe" category="list-text">OpenSSL CLIツールでは、両方のファイルが一致する場合は「Verified OK」メッセージが表示され、一致しない場合は「Verification Failure」というメッセージが表示されます。</block>
-  <block id="ab1fa593a9d1b960b00310273793f399" category="summary">LinuxでCloud Volumes ONTAPイメージダイジェストファイルツールを使用して、エクスポートされたVHDファイルの署名を確認します。</block>
-  <block id="81a109e7e4df0170a877c862452626e0" category="paragraph">LinuxでエクスポートされたVHDファイルのシグネチャを確認するには、次の手順を実行します。</block>
-  <block id="99f6987f9f2f12754bef6acd4538d2b1" category="list-text">先頭の1MB（1048576バイト）と末尾の512バイトのVHDファイルを削除します。</block>
-  <block id="3b31a12051ccfe742940ab733efa90d2" category="paragraph">'taile'を使用した場合、オプション'-c + K'は指定されたファイルのKTHバイトから始まるバイトを出力します。したがって、1048577は'tail -c'に渡されます。</block>
-  <block id="4ca7d41e605902966252c31ef2c1bc50" category="list-text">opensslを使用して証明書から公開鍵を抽出し、署名ファイルと公開鍵でストライプされたファイル（sign.tmp）を確認します。</block>
-  <block id="e4127a353155a2ad0d83da1e1edcbaa5" category="paragraph">入力ファイルが検証に合格すると、コマンドは次のように表示されます。
-「検証OK」。それ以外の場合は、「Verification Failure」と表示されます。</block>
   <block id="51bbda97c30ecb8962c4be9cf6e522a3" category="doc">新規導入でサポートされるONTAPのバージョン</block>
   <block id="e6e83b7fc493536990c5a90ed0363355" category="list-text">9.15.0 P1</block>
   <block id="bc7b48cc8cbeb831f1e1c92e4edd2a73" category="summary">Azure VHDイメージファイルのシグネチャファイルを確認します。</block>
-  <block id="855546822713dfa86f90e0f04d628460" category="paragraph">Azureイメージ検証は、強化されたNetAppセキュリティ要件に準拠しています。イメージファイルの検証は簡単なプロセスですが、Azure Marketplaceによる変更のため、Azureイメージシグネチャの検証には既知のAzure VHDイメージファイルへの特別な処理が必要です。</block>
-  <block id="dc9332f8d6da3cf29879331701e1392b" category="admonition">Azureイメージの検証は、Cloud Volumes ONTAPソフトウェアバージョン9.15.0以降でサポートされます。</block>
   <block id="87a09a86dbf9477334c237c696cbf41c" category="section-title">Azureによる公開VHDファイルの変更</block>
-  <block id="69819291c7392ee878ca4ba0d8250573" category="paragraph">先頭の1MB（1、048576バイト）と末尾の512バイトのVHDファイルがAzureによって変更されます。NetAppイメージ署名では、先頭の1MBと末尾の512バイトがスキップされ、残りのVHDイメージ部分に署名されます。</block>
   <block id="a1d8f8fd0a1ed092e3a32c903199e6fe" category="inline-image-macro">Azureで10GBのVHDファイルが切り替わる様子を示す図</block>
   <block id="8d1e285a8c66f27a66a5b99050840700" category="paragraph"><block ref="8d1e285a8c66f27a66a5b99050840700" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="8c0945efb6cfc754835754066079f778" category="paragraph">例として、上の図は10GBのVHDファイルを示しています。ただし、NetApp署名部分は緑色で表示され、サイズは10GB~1MB-512Bです。</block>
   <block id="489b496cbe75299f2e7a58a43404a586" category="summary">Azure MarketplaceからONTAPイメージをエクスポートして、VHDファイルの署名を確認できます。</block>
-  <block id="7aa3d9edd6d375ddf241b7e3af36818a" category="paragraph">VHDイメージがAzureクラウドにパブリッシュされると、イメージはNetAppで管理されなくなります。公開されたイメージはAzure Marketplaceに配置されます。AzureによるVHDの先頭1MBと末尾512Bへの変更は、イメージがAzure Marketplaceでステージングされて公開されるときに発生します。VHDファイルの署名を検証するには、まずAzureによって変更されたVHDイメージをAzure Marketplaceからエクスポートする必要があります。</block>
-  <block id="05cd2a2bb059643c43d9e767a4032a24" category="paragraph">必要なプログラムをシステムにインストールする必要があります。</block>
-  <block id="0bcf8212654f6e73defd0e810da79d80" category="list-text">Azure CLIがインストールされているか、AzureポータルからAzure Cloud Shellを使用できます。</block>
-  <block id="1d03b797e238252da705789b819d0d7c" category="inline-link">Azureのドキュメント：Azure CLIのインストール方法</block>
-  <block id="995134c4eafdfb0af4373db79dfb90cf" category="list-text">version_readmeファイルの内容を使用して、ONTAPのバージョンをAzure Marketplaceのイメージのバージョンにマッピングします。</block>
-  <block id="a10146f718ca1ae9de28501f0472cee1" category="paragraph">version_readmeファイルにリストされているバージョンマッピングごとに、ONTAPのバージョンは「buildname」で表され、Azure Marketplaceのイメージのバージョンは「version」で表されます。</block>
-  <block id="03340c307e6a7221016970d046db2a97" category="paragraph">たとえば、次のversion_readmeファイルでは、ONTAPバージョン「9.15.0P1」がAzure Marketplaceイメージバージョン「9150.01000024.05090105」にマッピングされています。このAzure Marketplaceイメージバージョンは、あとでイメージのURNを設定するために使用されます。</block>
-  <block id="756c97654f989d1a779d50abe0847e31" category="list-text">VMを作成するリージョン名を指定します。</block>
-  <block id="e03d271d662bcb0fab1d9537df279ef3" category="paragraph">このリージョン名は、マーケットプレイスイメージのURNを設定するときに「locName」変数の値として使用されます。</block>
-  <block id="0bcd35ecf261a40cdfb4cbae00a11aa2" category="list-text">使用可能なリージョンのリストを受け取るには、<block ref="84ed3d395e738381fb9826cd0e156c91" prefix=" " category="inline-code"></block> コマンドを実行します</block>
-  <block id="30bf950af492b8ab681c83ec104628f7" category="paragraph">下の表では、リージョン名は「Name」フィールドと呼ばれています。</block>
   <block id="b2b27ade506086d79b3e7defdb321673" category="cell">ONTAP_CLOUD_BYOL</block>
   <block id="68593f3fae72dbec1b29acfd76c1aa17" category="cell">ONTAP_CLOUD_BYOL_HA</block>
-  <block id="fc7898b425992521a2ae92bc34f6fa79" category="list-text">ONTAPのバージョンとAzure Marketplaceのイメージをマッピングしたら、Azure Cloud ShellまたはAzure CLIを使用してAzure MarketplaceからVHDファイルをエクスポートします。</block>
-  <block id="4192872f9b14e75090d91ad3b58d627e" category="section-title">AzureポータルでAzure Cloud Shellを使用してVHDファイルをエクスポート</block>
-  <block id="7809e31621ae0deb07b629189d23bb1f" category="list-text">Azure Cloud Shellから、MarketplaceイメージをVHD（image2、例：9150.01000024.05090105.vhd）にエクスポートし、ローカルマシン（Linuxマシン、Windows PCなど）にダウンロードします。</block>
-  <block id="ce9805281812d5566785ffa90edc97c3" category="section-title">Azure CLIを使用してローカルのLinuxマシンからVHDファイルをエクスポート</block>
-  <block id="39ed6293eab956c9455664d389299103" category="list-text">ローカルのLinuxマシンからAzure CLIを使用してマーケットプレイスイメージをVHDにエクスポートします。</block>
-  <block id="96bd5fbfab590d16a7e4f221d5efbe02" category="summary">AzureイメージダイジェストファイルはNetApp Support Siteからダウンロードできます。</block>
-  <block id="c94570a50f1ce2dc5922d4591072ac73" category="paragraph">Azureイメージダイジェストファイルは、<block ref="3725c06f412bedb14ffd610de312875d" category="inline-link-rx"></block>。ダウンロードはtar.gz形式で、画像署名検証用のファイルが含まれています。</block>
   <block id="d3722e7531fbbcdfe3ca8955ec26bed2" category="inline-link">NetApp Support SiteのCloud Volumes ONTAP製品ページ</block>
-  <block id="27363a072eabeaf6d8f44930f92fec72" category="list-text">Cloud Volumes ONTAPのダウンロードページで、Azureイメージダイジェストファイルの*ダウンロードボタン*をクリックしてTARをダウンロードします。 GZファイル。</block>
   <block id="697ac446273be6ad7395fbb843a37765" category="image-alt">Cloud Volumes ONTAPのスクリーンショットtar.gz</block>
-  <block id="5b7b593c571013e3aad0faa73cd02227" category="list-text">LinuxおよびMacOSの場合、ダウンロードしたAzureイメージダイジェストファイルのmd5sumとsha256sumを取得するには、次の手順を実行する必要があります。</block>
-  <block id="719b12f978ea8563ea430f99e4edbe65" category="list-text">md5sumの場合は、<block ref="c8f1ee9a7c5fd4b3c66d7559e99807d0" prefix=" " category="inline-code"></block> コマンドを実行します</block>
-  <block id="1bdb05c72c1193c8d7770deac3a7119c" category="list-text">sha256sumの場合は、<block ref="948bfc754ae7f359e9d17a0a0efcb325" prefix=" " category="inline-code"></block> コマンドを実行します</block>
-  <block id="074df801eea148714f051719110d791a" category="list-text">を確認します<block ref="c8f1ee9a7c5fd4b3c66d7559e99807d0" prefix=" " category="inline-code"></block> および<block ref="948bfc754ae7f359e9d17a0a0efcb325" prefix=" " category="inline-code"></block> 値はAzureイメージダイジェストファイルのダウンロードと一致します。</block>
-  <block id="d25f22bb422f625ed7957622cda0ccdf" category="list-text">LinuxおよびMac OSの場合は、<block ref="b83523a8ca29d91ebd710492f899931c" prefix=" " category="inline-code"></block> コマンドを使用してtar.gzファイルを展開します。</block>
-  <block id="db1a854223ab47e95d5013d13683efbb" category="paragraph">抽出されたTAR。 GZファイルには、ダイジェストファイル（.sig）、公開鍵証明書ファイル（.pem）、チェーン証明書ファイル（.pem）が含まれます。</block>
-  <block id="73443c640d5252fdbab1820bcca19262" category="paragraph">* untar tar.gzファイルの結果をリストします*</block>
   <block id="8009eebf05fd33b87750f8b4048986f7" category="section-title">2024年6月10日</block>
   <block id="1601188d2b39087206296933e9255990" category="section-title">Cloud Volumes ONTAP 9.15.0</block>
   <block id="c6ee0c74323b0d984d764b4be950bd87" category="paragraph">BlueXPで、AWS、Azure、Google CloudにCloud Volumes ONTAP 9.15.0を導入して管理できるようになりました。</block>
@@ -4684,11 +4608,6 @@ Mac OSでtailコマンドを完了します。</block>
   <block id="9510056d5bb6540c58fdbfa856eb74cb" category="list-text"><block ref="9510056d5bb6540c58fdbfa856eb74cb" category="inline-link-rx"></block></block>
   <block id="bc3bc1db6420b2b20ed5fd575461af53" category="inline-link">Azure CLIでサインイン—ログインと認証| Microsoft Learn</block>
   <block id="c49d114e973270aafd10c3c90200f635" category="list-text"><block ref="c49d114e973270aafd10c3c90200f635" category="inline-link-rx"></block></block>
-  <block id="3ce3a6bc20350062d124e844899c78cb" category="sidebar">Azureプラットフォームイメージの検証</block>
-  <block id="df87714369784ad20a87cf1ecab656c0" category="sidebar">Azureイメージダイジェストファイルをダウンロード</block>
-  <block id="e15cc8414d8d61bbcd5fd0d0eccda0f7" category="sidebar">画像のエクスポート</block>
-  <block id="ea676e4072617197b2e26d0a11c13554" category="sidebar">Linuxファイル署名の検証</block>
-  <block id="088e8318708fce80162f63284a86929f" category="sidebar">Mac OSファイル署名の検証</block>
   <block id="c803b37d9c2a34c73d0b86de8cae9ac8" category="paragraph"><block ref="c803b37d9c2a34c73d0b86de8cae9ac8" category="inline-link-rx"></block></block>
   <block id="bbe2b5062d2c900ca465f9eb12592a92" category="paragraph">セキュリティポリシーで必要な場合は、IMDSv2を使用するようにEC2インスタンスを設定できます。手順については、を参照してください<block ref="a1765820625d1912b35ab79a3305fdea" category="inline-link-rx"></block>。</block>
   <block id="59232a2e0b92b4018a48415d0d13c3b4" category="list-text"><block ref="59232a2e0b92b4018a48415d0d13c3b4" category="inline-link-rx"></block></block>
@@ -4753,7 +4672,6 @@ Mac OSでtailコマンドを完了します。</block>
   <block id="bc5af032a5cd69ef4ac57b8c2cd1f1d6" category="section-title">マーケットプレイスサブスクリプションの無償トライアルの廃止</block>
   <block id="6a42c267e29187643b9edeeabe6a9d85" category="inline-link">AWSのドキュメント：「Learn more about Elastic Volumes from AWS」</block>
   <block id="5f15094e671a035a778fece655f06e61" category="paragraph"><block ref="5f15094e671a035a778fece655f06e61" category="inline-link-rx"></block></block>
-  <block id="32f75f1208336b30711f2ec6de39a1fc" category="paragraph">詳細については、を参照してください <block ref="b7c27672c14c5e155c3668c279ee7b61" category="inline-link-macro-rx"></block> 。</block>
   <block id="394af58b8754c06314d43b854dc5006f" category="inline-link">このFAQ</block>
   <block id="9c89822027b6c9736a75d3187c897d4d" category="admonition">2021 年 12 月 3 日時点で、ネットアップは NSS アカウントのクレデンシャルの登録方法を新たに変更しました。詳細については、を参照してください<block ref="e276cbae6a7bedd32258cb1ce27fb2ac" category="inline-link-rx"></block>。NSS アカウントで古いクレデンシャルのセットを使用している場合は、新しいクレデンシャルに更新する必要があります。</block>
   <block id="61631dd1eb0609d79c27c109e55de5c8" category="paragraph">詳細については、を参照して<block ref="f2e318b984927d4781fb278ddc8ba233" category="inline-link-rx"></block> ください。</block>
@@ -4807,7 +4725,6 @@ Mac OSでtailコマンドを完了します。</block>
   <block id="06dc2fe279cba2e4225b7ea669e09ba6" category="cell">クラスタ管理LIFのIPアドレスを使用したONTAP System Manager WebコンソールへのHTTPアクセス</block>
   <block id="bf56103f759b88ed509d0a67caf77918" category="cell">コネクタとの接続、およびクラスタ管理LIFのIPアドレスを使用したONTAP System Manager WebコンソールへのHTTPSアクセス</block>
   <block id="60c74fca932643a72ec9d1ed478cb2dd" category="paragraph">ここに記載されている以外のCloud Volumes ONTAPバージョンは、新規導入では使用できません。アップグレードの詳細については、を参照して<block ref="edc516954278e6b04bf6c1ef0d737956" category="inline-link-macro-rx"></block>ください。</block>
-  <block id="57330f26a1386f42b08aa33e8679785d" category="admonition">Azure CLIのインストール方法の詳細については、を参照してください<block ref="bb8fb2fba9b918c590d549f3c97582d7" category="inline-link-rx"></block>。</block>
   <block id="bd2041168f280dc42522d734d91fff47" category="admonition">BlueXP  では、テイクオーバーを開始してギブバックを待機することで、一度に1つのノードが変更されます。NetAppの品質保証チームは、このプロセス中にファイルの書き込みと読み取りの両方をテストしましたが、クライアント側に問題はありませんでした。接続が変更されると、I/Oレベルで一部の再試行が行われましたが、NFS / CIFS接続の再配線はアプリケーションレイヤで行われました。</block>
   <block id="5a6ab212605c11d29ddee412db34c72e" category="paragraph">AWSでサポートされるインスタンスタイプの一覧については、を参照してください<block ref="ab5d2be79e0f4831293646ade5590437" category="inline-link-macro-rx"></block>。</block>
   <block id="4b0969e2624ba8ba6a454be2d5629d7b" category="paragraph">インスタンスタイプをC4、M4、またはR4インスタンスから変更できない場合は、技術情報アーティクルを参照して<block ref="609c7ea2ea8625480f6266b3b7e7b947" category="inline-link-macro-rx"></block>ください。</block>
@@ -5001,7 +4918,6 @@ Mac OSでtailコマンドを完了します。</block>
   <block id="f235e1a740b92e59100dda0cf4e3d76b" category="cell">\https://www.googleapis.com/compute/v1/projects/ \https://cloudresourcemanager.googleapis.com/v1/projects \https://www.googleapis.com/compute/beta \https://storage.googleapis.com/storage/v1 \https://www.googleapis.com/storage/v1 \https://iam.googleapis.com/v1 \https://cloudkms.googleapis.com/v1 \https://www.googleapis.com/deploymentmanager/v2/projects \https://compute.googleapis.com/compute/v1</block>
   <block id="342804fdcc569427f0c6f21b0757653d" category="cell">Google Cloud（商用利用）：</block>
   <block id="bec523fb694fd6fe80736494c1a45a30" category="cell">Google Cloudサービスとの通信。</block>
-  <block id="12acb6948c0c5fe54c5651d99ff9fd04" category="list-text">に移動し<block ref="5003136445bb4fa028e23c93c86053e6" category="inline-link-rx"></block>、[Downloads]セクションで必要なソフトウェアバージョンをダウンロードします。</block>
   <block id="5ee4faea784afb4b7750a3c91c073449" category="admonition">十分なスペースがないとCloud Volumes ONTAPでデータを移動できないため、パフォーマンスが低下する可能性があります。変更は慎重に行ってください。不明な場合は、NetAppサポートにお問い合わせください。</block>
   <block id="fd8831656d484b23e386115d7264f056" category="list-text">HAペアの場合：</block>
   <block id="180b275121e0f37251fecae975bf46df" category="list-text">メディエーターインスタンス用の2つのst1 EBSボリューム（ルートディスクとして約8GiBのうち1つ、データディスクとして4GiBのうち1つ）</block>
@@ -5213,13 +5129,11 @@ Mac OSでtailコマンドを完了します。</block>
   <block id="4eaed4ff800bc18688fff95b8dee6d1e" category="sidebar">ノードベースライセンスの変換</block>
   <block id="b8c05ba27f3f7ff64dca585f43789e57" category="sidebar">Cloud Volumes ONTAPでのライセンス</block>
   <block id="500984bae07aedc6c662b31a3039d462" category="list-text">米国公共機関のお客様</block>
-  <block id="c1c1c782703499ca8577569137202bf1" category="list-text">次の表から、対応するCloud Volumes ONTAPバージョンとVM導入タイプのSKU名を確認してください。</block>
   <block id="90069a3873814503a767070f04f3c286" category="paragraph">たとえば、Cloud Volumes ONTAP 9.15.0を使用したシングルノード環境では、SKU名としてを使用する必要があります<block ref="b2b27ade506086d79b3e7defdb321673" prefix=" " category="inline-code"></block>。</block>
   <block id="d811ca86e147e8cf2239ee377f1dcd50" category="cell">* Cloud Volumes ONTAPバージョン*</block>
   <block id="aadb6d991e4406b990f6fca8b4c83fd6" category="cell">* SKU名*</block>
   <block id="1da19d67e22ac2cb25b90e0604702db1" category="cell">BlueXP  を使用したすべての導入</block>
   <block id="273062411bc731be8028321277142365" category="cell">ONTAPクラウド</block>
-  <block id="23364a1412324aba4675105eacf57908" category="example-title">手順を確認する</block>
   <block id="6ecba12db0576e8891316b6674fda716" category="paragraph">BlueXP  を使用して、既存のCloud Volumes ONTAPシステムでWrite Once Read Many（WORM）ストレージをアクティブ化できるようになりました。この機能を使用すると、作成時にWORMが有効になっていなかった場合でも、作業環境でWORMを柔軟に有効にできます。有効にすると、WORMを無効にすることはできません。</block>
   <block id="31ccaa5879eee7a69ef3c48f1004c59c" category="list-text">課金方法を変更しても、NetApp（BYOL）から購入したライセンスで課金されるか、クラウドプロバイダのマーケットプレイスの従量課金制（PAYGO）サブスクリプションで課金されるかには影響しません。</block>
   <block id="fa055d94084c7095d6c7ec354ec44857" category="doc">ベストプラクティスに準拠するようにGoogle Cloud向けに更新されたサポート対象VMのリスト</block>
@@ -5282,7 +5196,6 @@ Mac OSでtailコマンドを完了します。</block>
   <block id="19fc50e68ea13a6ad812df240a74e5fb" category="list-text"><block ref="19fc50e68ea13a6ad812df240a74e5fb" category="inline-link-rx"></block></block>
   <block id="926bfb189ee8c4179f7f53993b777d90" category="paragraph">AWSでCloud Volumes ONTAPを起動する場合は、BlueXP  で新しい作業環境を作成する必要があります。</block>
   <block id="7fc21546461474a1cc543852dc120330" category="paragraph">Cloud Volumes ONTAPインスタンスの起動で問題が発生した場合は、エラーメッセージを確認してください。また、作業環境を選択して、 [ 環境の再作成 ] をクリックすることもできます。</block>
-  <block id="d036b4a2aa80729ab508e1851458f506" category="cell">この Cloud Volumes ONTAP システムで使用する AWS クレデンシャルと Marketplace サブスクリプションを選択します。Add Subscription * をクリックして、選択したクレデンシャルを新しい AWS Marketplace サブスクリプションに関連付けます。サブスクリプションは、年間契約の場合と、 Cloud Volumes ONTAP の料金を 1 時間ごとに支払う場合があります。NetAppからライセンスを直接購入した場合（お客様所有のライセンスを使用（BYOL））、AWSサブスクリプションは必要ありません。<block ref="2ae6dc7cea05e6172a8f0e381f70d632" category="inline-link-rx"></block>です。</block>
   <block id="fc687f57dc8188e5dad217858c078354" category="section-title">Cloud Volumes ONTAPでのキーローテーション</block>
   <block id="d2a95dd3692cce58be8541add2bc6897" category="paragraph">ほとんどの構成がサポートされています。最新バージョンを実行しているCloud Volumes ONTAPシステムがある場合は、お勧めします。<block ref="f2e6a88e181ee9519c72412b23fc6e17" category="inline-link-macro-rx"></block>です。</block>
   <block id="8ce366e694d5c3c3c27249c7cedf502e" category="paragraph">カスタムロールには、デフォルトで権限が含まれています。<block ref="b7d06976ba0f29792527e383824a0357" category="inline-link-rx"></block></block>
@@ -5547,7 +5460,6 @@ Mac OSでtailコマンドを完了します。</block>
   <block id="df65d9be8ade62cf7505e34c307cecad" category="cell">*サポートされる仮想マシン（VM）タイプ*</block>
   <block id="b13b643af58b125fac839de04760d5f0" category="cell">あらゆる種類のVM<block ref="ef57b1c89cee8819c5de2b079e4b0640" category="inline-link-rx"></block></block>
   <block id="97c2102867c5b54db1b773f42a540c16" category="list-text">9.16.1 GA</block>
-  <block id="70e23d6e402d67f6f86de0aa757d7bf0" category="paragraph">SKU名は、マーケットプレイスイメージのURNを設定するときの「skuName」変数の値です。</block>
   <block id="4692723666baa52294f46ef51ee4ec3f" category="cell">*仮想マシンの導入方法*</block>
   <block id="95392acbc8522bf81166b3d44b333fca" category="cell">9.16.1以降</block>
   <block id="e6c4c5f3851cefbfb1da8daa3aff1fb0" category="cell">Marketplaceの直接導入方式を使用</block>
@@ -5575,7 +5487,6 @@ Mac OSでtailコマンドを完了します。</block>
   <block id="36b957c17f5c2834f27a8de7ecccad90" category="doc">AutoSupportとDigital AdvisorがCloud Volumes ONTAPにどのように使用されているかをご確認ください</block>
   <block id="a813237b7fa0fd426e65b5e81ab565df" category="doc">Cloud Volumes ONTAPを使用したAWS Elastic Volumesのサポートについて</block>
   <block id="367721c6da74417e71470676fd55bfec" category="doc">Cloud Volumes ONTAP向けのAzure Marketplaceイメージシグネチャ検証</block>
-  <block id="7e2d94ca440b9c349d09b9e01c8c90ab" category="doc">Azure MarketplaceでのCloud Volumes ONTAPのイメージ検証</block>
   <block id="b3b8964875bb6d67dab64d2f1d39b3aa" category="doc">Cloud Volumes ONTAPでサポートされるクライアントプロトコル</block>
   <block id="84fbe7f88bb3a63bec3ffcbda024a860" category="doc">AWS、Azure、Google CloudでのCloud Volumes ONTAPによるデータ階層化の詳細</block>
   <block id="46d42323928c4276f41709f7eacfb86f" category="doc">Cloud Volumes ONTAP HAペアのノードがオフラインの場合に処理を実行できない</block>
@@ -5613,7 +5524,6 @@ Mac OSでtailコマンドを完了します。</block>
   <block id="816ad715f74514ea0e194c106b673bf0" category="doc">Cloud Volumes ONTAPシステム上のFlexCacheボリュームを使用してデータアクセスを高速化</block>
   <block id="e1d184508c5a07e34d4799a6df05b20e" category="doc">既存のCloud Volumes ONTAPシステムをBlueXP  に追加する</block>
   <block id="bd38f10049f751a48716a3340ced5706" category="doc">AWSキー管理サービスを使用したCloud Volumes ONTAP暗号化キーの管理</block>
-  <block id="ec50d6cbb7b13703598a5b1e88bc013b" category="doc">Azure Marketplace for Cloud Volumes ONTAPイメージダイジェストをダウンロード</block>
   <block id="cd77a4de9d5cef0b54e9b8a8803001ee" category="doc">Cloud Volumes ONTAPのVHDイメージをAzure Marketplaceからエクスポート</block>
   <block id="890da2408e0505fbcfccbfee39ec96e9" category="doc">Azure Key Vaultを使用したCloud Volumes ONTAP暗号化キーの管理</block>
   <block id="733ed8eca6d49536d616b96f190c0f55" category="doc">AWSのCloud Volumes ONTAPシステムのEC2インスタンスタイプを変更する</block>
@@ -5642,7 +5552,6 @@ Mac OSでtailコマンドを完了します。</block>
   <block id="815c7816169ce0181021470fc851ad75" category="doc">Cloud Volumes ONTAPシステムにAzure Private Linkまたはサービスエンドポイントを使用する</block>
   <block id="3f8a964f1b4371b109b271e17740eb42" category="doc">NetApp暗号化ソリューションでCloud Volumes ONTAPのボリュームを暗号化</block>
   <block id="7e2f4ea87cd4ef2400c67d3a6b35c0e4" category="doc">LinuxでのCloud Volumes ONTAPのAzure Marketplaceイメージシグネチャの確認</block>
-  <block id="eb0bf51905bf265524b4344e372f0021" category="doc">MAC OS上のCloud Volumes ONTAPのAzure Marketplaceイメージシグネチャの確認</block>
   <block id="a6c30282f56568ee9b5729642207a5b5" category="doc">Google Cloudの画像をCloud Volumes ONTAPのRAW形式に変換する</block>
   <block id="240de91fb65f5d6acac3d891ccd57289" category="doc">AWS Secret CloudまたはAWS Top Secret CloudにCloud Volumes ONTAPを導入</block>
   <block id="e35e4a3b0dde1d61e0fbd30f69e261c0" category="doc">Google Cloud KMSを使用したCloud Volumes ONTAP暗号化キーの管理</block>
@@ -5828,13 +5737,6 @@ Mac OSでtailコマンドを完了します。</block>
   <block id="0b62bc8ec3e3c99207707d34c04bf762" category="list-text"><block ref="0b62bc8ec3e3c99207707d34c04bf762" category="inline-link-macro-rx"></block></block>
   <block id="feeb4931d6047ef8e401159d1c8fda09" category="list-text"><block ref="feeb4931d6047ef8e401159d1c8fda09" category="inline-link-macro-rx"></block></block>
   <block id="b2f263166e90b59fbacbe6b5ead0ba84" category="paragraph">BlueXP  では、システムの作成時にコールドデータ用のオブジェクトストアが作成されます<block ref="2bc42c273736fc8d1c1cbc5e39b01160" category="inline-xref-macro-rx"></block>。その後は、ボリュームでデータ階層化を有効にするだけで<block ref="20c714206be4f432619a9d0394b388bc" category="inline-xref-macro-rx"></block>済みます（場合によっては）。</block>
-  <block id="fdcb7ccb26d6b4864ac844c920b0f5d5" category="paragraph">同じコネクタを使用して、複数のAzureテナントのデータを階層化できます。Cloud Volumes ONTAP作業環境があるテナントによって作成され、コネクタが別のテナントによって作成されるシナリオでAzureテナントの階層化を有効にするには、次の点を確認します。</block>
-  <block id="0b3b411ceb545e69a73eeeea9e0f4812" category="inline-link">BlueXPのAzureクレデンシャルとマーケットプレイスサブスクリプションを管理</block>
-  <block id="ef83b75206a21def8410676276978aac" category="list-text">BlueXP  で両方のテナントのクレデンシャルをクロス検証用に入力しておきます。を参照してください<block ref="6ee6fc101b8550f56fdf56dce6277e28" category="inline-link-rx"></block>。</block>
-  <block id="c307dc26cbb58ad7fba2664c17cb4d16" category="inline-link">Azure portalからアクセス</block>
-  <block id="953bd3af818813e12a62ff4db4f175eb" category="list-text">2つのテナント間で仮想ネットワーク（VNet）ピアリングを有効にしておき<block ref="2f75b24d24389585ccc23662dba8f117" category="inline-link-rx"></block>ます。これは、コネクタがもう一方のテナントのストレージアカウントにアクセスできるようにするために必要です。</block>
-  <block id="5dc4c869682b55bd825dbd766c5a91c6" category="inline-link-macro">Azureプライベートリンクを無効にしました</block>
-  <block id="56942c64ec21bc5186a25c20b4c9231e" category="list-text">サブネットサービスエンドポイントを使用する必要があり<block ref="d1486d850c17a7ded1dee71bca015a76" category="inline-link-macro-rx"></block>ます。</block>
   <block id="e48502083eb8949c8f65b2ccddd5adec" category="section-title">2025年5月12日</block>
   <block id="389d4c98e2d0499c2e4e750430434afb" category="doc">Cloud Volumes ONTAP 9.15.1でイネーブルになっているプライベートモード展開</block>
   <block id="bce4906e9d915e525cd382b520b71325" category="paragraph">Cloud Volumes ONTAP 9.15.1をプライベートモードでAWS、Azure、Google Cloudに導入できるようになりました。プライベートモードは、Cloud Volumes ONTAP 9.15.1のシングルノード環境とハイアベイラビリティ（HA）環境の両方で有効になります。</block>
@@ -5871,4 +5773,97 @@ Mac OSでtailコマンドを完了します。</block>
   <block id="f193581eeaf23b712b81e0023faf5954" category="list-text">作成したカスタム ロールを割り当てます。 <block ref="1bc6114e9ddb3402400afe0f18264312" prefix=" " category="inline-code"></block></block>
   <block id="2ca4641842d5ce20115dfc5ed991df9a" category="admonition">Cloud Volumes ONTAP 9.13.0以降をご利用の場合は、カスタムロールを作成する必要はありません。<block ref="73ac35632bb1fe345fd295d7683fcbee" category="inline-link-rx"></block><block ref="8f1f4fa398a38c70f01951f69f3c2a1f" prefix="[" category="inline-code"></block> ^]の役割。</block>
   <block id="07bc73dbf27c2d6ca6dd4dcbb64687bf" category="paragraph">BlueXPは、ストレージVM（SVM）のディザスタリカバリのセットアップやオーケストレーションのサポートを提供していません。これらのタスクを実行するには、ONTAP System ManagerまたはONTAP CLIを使用してください。</block>
+  <block id="335f4b4c3f32d7fd5ea619fa6dbe4204" category="summary">Cloud Volumes ONTAP イメージダイジェスト ファイル ツールを使用してエクスポートされた VHD ファイルの署名を検証する方法を理解します。</block>
+  <block id="58b845122330da91119b6688c036350d" category="paragraph">Azure イメージ検証プロセスでは、VHD ファイルの先頭 1 MB と末尾 512 バイトを削除し、ハッシュ関数を適用することでダイジェストファイルを生成します。署名手順と一致するように、ハッシュには _sha256_ が使用されます。</block>
+  <block id="1fa20f0746983bcbf7a88c87a81e70e0" category="inline-link-macro">Azure イメージ ダイジェスト ファイルをダウンロードする</block>
+  <block id="e95fe530af34929abac0d194b5a233d9" category="list-text">Azureイメージを<block ref="3725c06f412bedb14ffd610de312875d" category="inline-link-rx"></block>ダイジェスト (.sig) ファイル、公開鍵証明書 (.pem) ファイル、チェーン証明書 (.pem) ファイルを抽出します。詳細については、を参照してください <block ref="9e172761773546c07c07e8a2bfa3e401" category="inline-link-macro-rx"></block> 。</block>
+  <block id="8d0322cf231d5afd998204b4188ce3b5" category="list-text">信頼チェーンの検証。</block>
+  <block id="c5f313eb33e695440bf645428b6dc2b0" category="list-text">公開鍵証明書 (.pem) から公開鍵 (.pub) を抽出します。</block>
+  <block id="0d4eaa3a100ccc68da9883a9e3662eec" category="list-text">抽出した公開鍵を使用してダイジェスト ファイルを復号化します。</block>
+  <block id="e42e2d7653b106c46ae319b6738643c5" category="list-text">結果を、画像ファイルから先頭1MBと末尾512バイトを削除して作成された一時ファイルのダイジェストと比較します。この手順はOpenSSLコマンドラインツールを使用して実行されます。OpenSSLCLIツールは、ファイルの一致が成功した場合と失敗した場合に適切なメッセージを表示します。</block>
+  <block id="adbd61b9b9edef58fd97573b9668d615" category="doc">Cloud Volumes ONTAP の Azure Marketplace イメージ検証</block>
+  <block id="ac4d6cdfd4bd3593fdc2c0bf74279483" category="paragraph">Azureイメージ検証は、強化されたNetAppセキュリティ要件に準拠しています。イメージファイルの検証は簡単なプロセスです。ただし、Azure マーケットプレイスで変更される Azure VHD イメージファイルの場合、Azure イメージ署名の検証には特別な考慮が必要です。</block>
+  <block id="2525830fb09d21a48ca7521979921f9f" category="admonition">Azure イメージ検証は、Cloud Volumes ONTAP 9.15.0 以降でサポートされています。</block>
+  <block id="8594c4075962a59740e91f8f6cfa48a6" category="paragraph">VHD ファイルの先頭の 1 MB (1048576 バイト) と末尾の 512 バイトは Azure によって変更されます。残りの VHD ファイルは NetApp によって署名されます。</block>
+  <block id="2449165dac49eeffc4339a03758e395d" category="paragraph">この例では、VHD ファイルは 10GB です。NetAppが署名した部分は緑色でマークされています (10GB - 1MB - 512 バイト)。</block>
+  <block id="b844697174ebc8c2c2eaadf0ae1954ea" category="summary">Cloud Volumes ONTAP イメージ ダイジェスト ファイル ツールを使用して、エクスポートされた Google Cloud イメージ ファイルの署名を検証します。</block>
+  <block id="916ff508220cd0f9544ff8e1a1538bc5" category="admonition">BlueXPで管理される製品とサービスの実際の使用量と計測値は常にGiBとTiBで計算されますが、GB / GiBとTB / TiBという用語は同じ意味で使用されます。これは、クラウド マーケットプレイスのリスト、価格見積、リストの説明、およびその他のサポート ドキュメントに反映されます。</block>
+  <block id="1718fe47f5ecc10fa0621d52cd8fcb44" category="list-text">Azure マーケットプレイスで従量課金制または年間契約として利用可能</block>
+  <block id="2def4bff61cd7bfa9062cc47d2c7968d" category="list-text">Google Cloud Marketplace で従量課金制または年間契約としてご利用いただけます</block>
+  <block id="b510d73bf4b9be5f22afae8b4d44a0c8" category="summary">Azure イメージ ダイジェスト ファイルは、NetApp サポート サイトからダウンロードできます。</block>
+  <block id="6638f6b622b4f4b4d37c4f1a1fe019bb" category="doc">Cloud Volumes ONTAP の Azure イメージ ファイルをダウンロードします</block>
+  <block id="8092c5aca0172beb3a5b74f7c0b1d012" category="paragraph">Azureイメージファイルは以下からダウンロードできます。 <block ref="3725c06f412bedb14ffd610de312875d" category="inline-link-rx"></block> 。</block>
+  <block id="6df1f64f45848c0bb0631283ed27ce27" category="paragraph">_tar.gz_ファイルには、イメージ署名の検証に必要なファイルが含まれています。_tar.gz_ファイルに加えて、イメージの_checksum_ファイルもダウンロードする必要があります。チェックサムファイルには、 <block ref="1bc29b36f623ba82aaf6724fd3b16718" prefix=" " category="inline-code"></block>そして<block ref="d8d8a6d2e9e1fb99302b479a8fe540d4" prefix=" " category="inline-code"></block> _tar.gz_ ファイルのチェックサム。</block>
+  <block id="0072ec12983477b835402f6aaa07db5f" category="list-text">に行く<block ref="5003136445bb4fa028e23c93c86053e6" category="inline-link-rx"></block> *ダウンロード*セクションから必要なソフトウェア バージョンをダウンロードします。</block>
+  <block id="4a7a4b5d2dd7a22744be0851c16f8194" category="list-text">Cloud Volumes ONTAP のダウンロード ページで、Azure イメージのダウンロード可能なファイルをクリックし、_tar.gz_ ファイルをダウンロードします。</block>
+  <block id="4cc94736b8108164bde72adbfd5fb5bd" category="list-text">Linuxでは、 <block ref="c3c22e8fbfdb4097ebad5fae427aec4a" prefix=" " category="inline-code"></block> 。</block>
+  <block id="91deda3d344b61592f9e7c5ad458786d" category="paragraph">macOSでは、 <block ref="8bf5a287562075c8e1f0e1e06d0227bc" prefix=" " category="inline-code"></block> 。</block>
+  <block id="05a6c4db607bd3e72790cf5b1ad82f1f" category="list-text">確認するには<block ref="c8f1ee9a7c5fd4b3c66d7559e99807d0" prefix=" " category="inline-code"></block>そして<block ref="948bfc754ae7f359e9d17a0a0efcb325" prefix=" " category="inline-code"></block>値は、ダウンロードした Azure イメージの値と一致します。</block>
+  <block id="5db71480b0c9dda6718c57c9a1b66d0e" category="list-text">LinuxおよびmacOSでは、 <block ref="b83523a8ca29d91ebd710492f899931c" prefix=" " category="inline-code"></block>指示。</block>
+  <block id="8ae7ff53b84fa20c2ff41ba7151a0bb8" category="paragraph">抽出された _tar.gz_ ファイルには、ダイジェスト (_.sig_) ファイル、公開鍵証明書 (_.pem_) ファイル、およびチェーン証明書 (_.pem_) ファイルが含まれています。</block>
+  <block id="7926415a130a1678f0dd302e6e12b7fc" category="paragraph">*tar.gzファイルを解凍した後の出力例:*</block>
+  <block id="f6dba46e078f9386beb8a4a79d76549a" category="paragraph">VHDイメージがAzureクラウドに公開されると、NetAppによる管理は解除されます。公開されたイメージはAzure Marketplaceに配置されます。イメージがAzure Marketplaceにステージングされ公開されると、AzureはVHDの先頭1MBと末尾512バイトを変更します。VHDファイルの署名を検証するには、Azure MarketplaceからAzureによって変更されたVHDイメージをエクスポートする必要があります。</block>
+  <block id="ec16213617a829ae3210a6b9c0b740b9" category="inline-link">Azureドキュメント: Azure CLIのインストール方法</block>
+  <block id="9c3f5558b03dabe44a3407603bd410c6" category="paragraph">Azure CLIがシステムにインストールされているか、AzureポータルからAzure Cloud Shellが利用できることを確認してください。AzureCLIのインストール方法の詳細については、以下を参照してください。 <block ref="4f331e0f89427a8f7dcdb4a3b7e4c417" category="inline-link-rx"></block> 。</block>
+  <block id="face343931d4059b6c3dd78d56fb0143" category="list-text">_version_readme_ファイルの内容を使用して、システム上のCloud Volumes ONTAPバージョンをAzure Marketplaceイメージバージョンにマッピングします。CloudVolumes ONTAPバージョンは次のように表されます。 <block ref="b5a3173cd3a7260f087f1a3b6ce8b253" prefix=" " category="inline-code"></block> Azureマーケットプレイスイメージバージョンは次のように表されます。 <block ref="2af72f100c356273d46284f6fd1dfc08" prefix=" " category="inline-code"></block>バージョン マッピングで。</block>
+  <block id="673621cd6c54925a5835c76a491a7692" category="paragraph">次の例では、Cloud Volumes ONTAPバージョン<block ref="d9df468f7ec059062fe27406e7e15237" prefix=" " category="inline-code"></block> Azureマーケットプレイスのイメージバージョンにマッピングされます<block ref="c9ad1fa1b8f10cec0a814f0e5a67040c" prefix=" " category="inline-code"></block> 。このAzure Marketplaceイメージバージョンは、あとでイメージのURNを設定するために使用されます。</block>
+  <block id="fc9e8de3d55cd0dcb193d83ed767262a" category="list-text">VMを作成するリージョンを指定します。リージョン名は、 <block ref="2c490d0ef82a3afb83c6ec1d8db95215" prefix=" " category="inline-code"></block>マーケットプレイスイメージのURNを設定する際に変数を使用します。利用可能なリージョンを一覧表示するには、次のコマンドを実行します。</block>
+  <block id="cdffbd57236bcf08f44921f8f58c219a" category="paragraph">この表では、地域名は<block ref="49ee3087348e8d44e1feda1917443987" prefix=" " category="inline-code"></block>分野。</block>
+  <block id="6b3d18349c55e7fe18acf14ca16f6283" category="list-text">以下の表で、対応するCloud Volumes ONTAPバージョンとVM導入タイプのSKU名を確認してください。SKU名は、 <block ref="54a8f9e3abd62e4fb1e4dcd2e2af6f84" prefix=" " category="inline-code"></block>マーケットプレイスイメージの URN を設定するときに使用する変数。</block>
+  <block id="f9e2290e145374e5b1637c66fa12a846" category="list-text">ONTAP バージョンと Azure マーケットプレイス イメージをマッピングした後、Azure Cloud Shell または Azure CLI を使用して、Azure マーケットプレイスから VHD ファイルをエクスポートします。</block>
+  <block id="dd0bd5034b076be810a4df7b017f2255" category="section-title">Linux 上の Azure Cloud Shell を使用して VHD ファイルをエクスポートする</block>
+  <block id="676b9ff7477545bf846f27485d8e5e26" category="paragraph">Azure Cloud Shell から、マーケットプレイスイメージを VHD ファイル（例: _9150.01000024.05090105.vhd_）にエクスポートし、ローカル Linux システムにダウンロードします。Azureマーケットプレイスから VHD イメージを取得するには、以下の手順を実行してください。</block>
+  <block id="12a72006cb63e1b4defb45de48564692" category="list-text">マーケットプレイスイメージのURNとその他のパラメータを設定します。URN、NetApp マーケットプレイスのイメージを一覧表示して、正しいイメージ バージョンを確認することもできます。</block>
+  <block id="d65e638e11d00fc79443255884da16db" category="list-text">一致するイメージ バージョンを持つマーケットプレイス イメージから新しいマネージド ディスクを作成します。</block>
+  <block id="0088c78e043b70edf9579595a2ee25d7" category="list-text">VHDファイルをマネージドディスクからAzure Storageにエクスポートします。適切なアクセスレベルを持つコンテナーを作成します。この例では、 <block ref="58aaa54fc7b24aa9f47628c9303e6032" prefix=" " category="inline-code"></block>と<block ref="0e7278cda02a9c0446dcc75a4df34eb2" prefix=" " category="inline-code"></block>アクセスレベル。Azureポータルからストレージアカウントのアクセスキーを取得します: *ストレージアカウント &gt; _examplesaname_ &gt; アクセスキー &gt; _key1_ &gt; _key_ &gt; 表示 &gt; _&lt;copy&gt;_*</block>
+  <block id="d58ff5368da0a9e07116d0914b0e100f" category="list-text">します。<block ref="af9d83836ecf1f49c598bcb1995b3c98" prefix=" " category="inline-code"></block> VHD ファイルをダウンロードするコマンド:</block>
+  <block id="080f4e725b29a35d5b454c3ef51a6ece" category="paragraph">URLは標準形式に従います。自動化のために、以下のようにURL文字列を取得できます。または、Azure CLIを使用することもできます。 <block ref="cc8c0a97c2dfcd73caff160b65aa39e2" prefix=" " category="inline-code"></block> URLを取得するコマンド。URLの例: <block ref="57f052fbd2c31b00951e080c2b038e9f" category="inline-link-rx"></block></block>
+  <block id="e29c7c72ff42387a45d366d92342fa54" category="list-text">管理ディスクをクリーンアップする</block>
+  <block id="7f38ba9b55c53cbc26b23634ed761a33" category="section-title">Linux 上の Azure CLI を使用して VHD ファイルをエクスポートする</block>
+  <block id="de4a72dd00c713fbc81776255cd85070" category="paragraph">ローカル Linux システムから Azure CLI を使用して、マーケットプレイス イメージを VHD ファイルにエクスポートします。</block>
+  <block id="f253a8188a73f633062457efd8293f1e" category="list-text">Azure CLI にログインし、マーケットプレイスのイメージを一覧表示します。</block>
+  <block id="1a3e043d34cb5c7950d868f9a58de344" category="list-text">サインインするには、ウェブブラウザを使用してページを開きます<block ref="7e6daf26208029492cb7d0605bc1fe16" category="inline-link-rx"></block>認証コードを入力します。</block>
+  <block id="5db94423edb9919ea9ed6a600ca8e454" category="list-text">一致するイメージ バージョンを持つマーケットプレイス イメージから新しいマネージド ディスクを作成します。</block>
+  <block id="b003c34a5effea0208f8242b4df557b8" category="paragraph">プロセスを自動化するには、SASを標準出力から抽出する必要があります。手順については、適切なドキュメントを参照してください。</block>
+  <block id="4f9c7172d5d5be7c41a3647575453a14" category="list-text">管理対象ディスクから VHD ファイルをエクスポートします。</block>
+  <block id="b6002e5678a3cdd8ad75bf1a31e1bcc5" category="list-text">適切なアクセスレベルを持つコンテナを作成します。この例では、 <block ref="58aaa54fc7b24aa9f47628c9303e6032" prefix=" " category="inline-code"></block>と<block ref="0e7278cda02a9c0446dcc75a4df34eb2" prefix=" " category="inline-code"></block>アクセス レベルが使用されます。</block>
+  <block id="ddba27390d0c0fbbe854c9b12fcdf284" category="list-text">Azure ポータルからストレージ アカウントのアクセス キーを取得します: *ストレージ アカウント &gt; _examplesaname_ &gt; アクセス キー &gt; _key1_ &gt; _key_ &gt; 表示 &gt; _&lt;copy&gt;_*</block>
+  <block id="13ddcbd747245998f2d13d87aea141a5" category="paragraph">また、 <block ref="cc8c0a97c2dfcd73caff160b65aa39e2" prefix=" " category="inline-code"></block>このステップのコマンド。</block>
+  <block id="83576ac06da530b4b3d474992ffac159" category="list-text">BLOB コピーのステータスを確認します。</block>
+  <block id="d9dfb532ad5d179e3b40189fde3f4248" category="list-text">生成されたイメージを Linux サーバーにダウンロードします。</block>
+  <block id="7788afc9b025c22557e447eaf4dffa93" category="paragraph">もし<block ref="c02e65ef2be24722283d91b62774dd3d" prefix=" " category="inline-code"></block>ステータスは<block ref="e0aa021e21dddbd6d8cecec71e9cf564" prefix=" " category="inline-code"></block> SVM は必要な接続と権限をすべて備えた状態で Azure Key Vault サービスにアクセスできません。Azureネットワーク ポリシーとルーティングによって、プライベート VNet から Azure Key Vault パブリック エンドポイントへのアクセスがブロックされていないことを確認してください。その場合は、Azureプライベートエンドポイントを使用してVNet内からキーヴォールトにアクセスすることを検討してください。エンドポイントのプライベートIPアドレスを解決するために、SVMに静的ホストエントリを追加する必要がある場合もあります。</block>
+  <block id="772cd21b67a339599db9c9999d2ea60c" category="list-text">オプション: Azure Key Vault 認証証明書の資格情報を更新する場合は、次のコマンドを使用します。 <block ref="a645f9ebef79ef42b1f3131cb6174f32" prefix=" " category="inline-code"></block></block>
+  <block id="ce7feeb9696e4acc1fcbb1add1f03816" category="inline-link">ONTAP コマンドリファレンスガイド</block>
+  <block id="fb572fa6aa049e4489436824a209a185" category="list-text"><block ref="fb572fa6aa049e4489436824a209a185" category="inline-link-rx"></block></block>
+  <block id="0b36bcb395ebb665af56da483fd99834" category="paragraph">従量課金制の Cloud Volumes ONTAP システムを作成するには、Google Cloud マーケットプレイスから Cloud Volumes ONTAP のサブスクリプションに関連付けられた Google Cloud プロジェクトを選択する必要があります。</block>
+  <block id="d902c674e6ba950d8402617e90996b0e" category="paragraph">次の動画では、従量課金制マーケットプレイスのサブスクリプションをGoogle Cloudプロジェクトに関連付ける方法を説明します。または、以下の手順に従ってサブスクリプションしてください。 <block ref="d9f7e6ae4bc0528c4df5fe3f1a811c3e" category="inline-link-rx"></block>セクション。</block>
+  <block id="1500dd80d4cc6d09d5133f1b625193db" category="video-title">Google Cloud マーケットプレイスから BlueXP を購読する</block>
+  <block id="60f8e11854532d0b25fd528a7475e02d" category="inline-link">マーケットプレイスのサブスクリプションを Google Cloud 認証情報に関連付ける</block>
+  <block id="3582172f990671e5c9b9847ca2466e47" category="paragraph">次の動画では、従量課金制マーケットプレイスのサブスクリプションをGoogle Cloudプロジェクトに関連付ける方法を説明します。または、以下の手順に従ってサブスクリプションしてください。 <block ref="26858d2411615dac691c2981d5338917" category="inline-link-rx"></block>セクション。</block>
+  <block id="9603e35668bf73569f7fb7d8ede35b73" category="cell">このシステムを導入するアカウントに関連付けられている AWS クレデンシャルを選択します。このCloud Volumes ONTAPシステムで使用するAWSマーケットプレイスサブスクリプションを関連付けることもできます。「サブスクリプションを追加」をクリックして、選択した認証情報を新しいAWSマーケットプレイスサブスクリプションに関連付けます。サブスクリプションは、年間契約の場合と、 Cloud Volumes ONTAP の料金を 1 時間ごとに支払う場合があります。<block ref="2ae6dc7cea05e6172a8f0e381f70d632" category="inline-link-rx"></block>です。</block>
+  <block id="46339f2ff186a945840b15ba0f6b2973" category="paragraph">次のビデオでは、従量課金制マーケットプレイスサブスクリプションを AWS 認証情報に関連付ける方法を示します。</block>
+  <block id="e649338f42e9d4b6232876c6fb010f0c" category="video-title">AWSマーケットプレイスからBlueXPをサブスクライブする</block>
+  <block id="d066267408b0996a7030fb9e612bc93c" category="admonition">複数の IAM ユーザが同じ AWS アカウントで作業する場合は、各ユーザにサブスクライブする必要があります。最初のユーザーがサブスクリプションを完了すると、AWSマーケットプレイスは後続のユーザーに、既にサブスクリプションが完了していることを通知します（下の画像を参照）。AWS_account_ のサブスクリプションが設定されている間、各 IAM ユーザは、そのサブスクリプションに自分自身を関連付ける必要があります。下のメッセージが表示された場合は、「*こちらをクリック*」リンクをクリックしてBlueXPのウェブサイトにアクセスし、手続きを完了してください。 <block ref="42077b282858282a6d1d166f9467abaf" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="ab15dd8600113904e0e4998b2fb7bd69" category="list-text">*Cloud Volumes ONTAP 構成* (年間 AWS マーケットプレイス契約のみ): デフォルトの構成を確認して *続行* をクリックするか、*構成の変更* をクリックして独自の構成を選択します。</block>
+  <block id="1726cdada46786ec07f15648484f3688" category="cell">この Cloud Volumes ONTAP システムで使用する AWS クレデンシャルと Marketplace サブスクリプションを選択します。選択した認証情報を新しい AWS マーケットプレイスサブスクリプションに関連付けるには、「サブスクリプションの追加」をクリックします。サブスクリプションは、年間契約の場合と、 Cloud Volumes ONTAP の料金を 1 時間ごとに支払う場合があります。NetAppからライセンスを直接購入した場合（お客様所有のライセンスを使用（BYOL））、AWSサブスクリプションは必要ありません。<block ref="2ae6dc7cea05e6172a8f0e381f70d632" category="inline-link-rx"></block>です。</block>
+  <block id="e242ae1daadb676e4a23b48a94c4619d" category="admonition">複数の IAM ユーザが同じ AWS アカウントで作業する場合は、各ユーザにサブスクライブする必要があります。最初のユーザーがサブスクリプションを完了すると、AWSマーケットプレイスは後続のユーザーに、既にサブスクリプションが完了していることを通知します（下図参照）。下図のようなAWS_account_ のサブスクリプションが設定されている間、各 IAM ユーザは、そのサブスクリプションに自分自身を関連付ける必要があります。メッセージが表示された場合は、「*こちらをクリック*」リンクをクリックしてBlueXPのウェブサイトにアクセスし、手続きを完了してください。 <block ref="5176b925004072644ad0f4d50d425bc9" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="80e0ce0662b2846621d1355a00843d7d" category="summary">Linux 上の Cloud Volumes ONTAP イメージダイジェストファイルツールを使用して、エクスポートされた VHD ファイルの署名を検証します。</block>
+  <block id="11e81e6e3ef9958c0f8028f9c79e5dbe" category="paragraph">Linux 上でエクスポートされた VHD ファイル署名の検証には、信頼チェーンの検証、ファイルの編集、署名の検証が含まれます。</block>
+  <block id="6339f94a77b583074840fe198737cc13" category="list-text">Azureイメージファイルを以下からダウンロードします。 <block ref="3725c06f412bedb14ffd610de312875d" category="inline-link-rx"></block>ダイジェスト (.sig) ファイル、公開鍵証明書 (.pem) ファイル、チェーン証明書 (.pem) ファイルを抽出します。</block>
+  <block id="c85b78e9ee53945bf5a3b15edfff0b5d" category="paragraph">詳細については、を参照してください<block ref="2a14363ee7293feb0b6b6ce81efa6b91" category="inline-link-rx"></block> 。</block>
+  <block id="21dadf74c218571a8ed71c1234029549" category="list-text">1MB（1,048,576バイト）と末尾から512バイトを削除します。<block ref="7aea2552dfe7eb84b9443b6fc9ba6e01" prefix=" " category="inline-code"></block> 、その<block ref="2040875c59e5bf4043fe4cfb86322cb2" prefix=" " category="inline-code"></block>オプションはファイルのK番目のバイトからバイトを生成します。したがって、1048577を<block ref="f7803ce2a90e2cf20bc01f7ab2c60c5c" prefix=" " category="inline-code"></block> 。</block>
+  <block id="836d55dad864fd03171b45683d3f0afe" category="list-text">OpenSSL を使用して証明書から公開キーを抽出し、署名ファイルと公開キーを使用してストリップされたファイル (sign.tmp) を検証します。</block>
+  <block id="b40380aca2b7f94b6fd1739f23b3c19b" category="paragraph">コマンド プロンプトには、検証に基づいて成功または失敗を示すメッセージが表示されます。</block>
+  <block id="a821b3210026c1d21c89671c2d45b1a4" category="summary">macOS の Cloud Volumes ONTAP イメージダイジェストファイルツールを使用して、エクスポートされた VHD ファイルの署名を検証します。</block>
+  <block id="a7cfd7b86c7190536d50b4749e7aadf1" category="doc">macOS 上の Cloud Volumes ONTAP の Azure Marketplace イメージ署名を確認する</block>
+  <block id="15b1d6274a4b31b0d3be9a3bcbe74b84" category="list-text">VHDファイルの先頭から1MB（1,048,576バイト）と末尾から512バイトを削除します。 <block ref="7aea2552dfe7eb84b9443b6fc9ba6e01" prefix=" " category="inline-code"></block> 、その<block ref="2040875c59e5bf4043fe4cfb86322cb2" prefix=" " category="inline-code"></block>オプションはファイルのK番目のバイトからバイトを生成します。。macOS では、 tail コマンドが完了するまでに約 10 分かかる場合があることに注意してください</block>
+  <block id="965eb67c5c4b0c477e47cea94faa6e75" category="list-text">OpenSSL を使用して証明書から公開鍵を抽出し、抽出されたファイル（sign.tmp）を署名ファイルと公開鍵で検証します。コマンドプロンプトには、検証結果に基づいて成功または失敗を示すメッセージが表示されます。</block>
+  <block id="d8272d492d8b39dd1ed365f53be37911" category="admonition">イメージを検証するための OpenSSL コマンドは、Linux、macOS、および Windows マシンと互換性があります。</block>
+  <block id="3e751f18a3082d45e1a90f2be8a0d29b" category="sidebar">Azure プラットフォーム イメージの検証</block>
+  <block id="ca0e21a7800019b9e65f270d55f99cb6" category="sidebar">Azureイメージファイルをダウンロードする</block>
+  <block id="c099cdaa5ee05ab15401993690590a92" category="sidebar">Azureイメージファイルをエクスポートする</block>
+  <block id="33dce177865d6e8dd6005e4540d1d852" category="sidebar">ファイル署名を検証する</block>
+  <block id="6e4a8826a7235b545d2d29f084c73624" category="sidebar">ファイル署名の検証について学ぶ</block>
+  <block id="56f9ff2318475a5d2c7b23d83297197e" category="sidebar">Linuxでファイル署名を検証する</block>
+  <block id="408c48907cb6a04176683305086c1ce2" category="sidebar">macOSでファイル署名を検証する</block>
 </blocks>

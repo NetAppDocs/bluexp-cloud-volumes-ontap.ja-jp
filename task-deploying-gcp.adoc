@@ -92,14 +92,14 @@ NOTE: これは、BlueXP用に設定したサービスアカウントです。 l
 
 [ サブスクリプションの追加 ] をクリックして、選択した資格情報をサブスクリプションに関連付けます。
 
-従量課金制のCloud Volumes ONTAP システムを作成するには、Google Cloud MarketplaceからCloud Volumes ONTAP へのサブスクリプションに関連付けられているGoogle Cloudプロジェクトを選択する必要があります。
+従量課金制の Cloud Volumes ONTAP システムを作成するには、Google Cloud マーケットプレイスから Cloud Volumes ONTAP のサブスクリプションに関連付けられた Google Cloud プロジェクトを選択する必要があります。
 
 |===
 +
-次のビデオでは、従量課金制のMarketplaceサブスクリプションをGoogle Cloudプロジェクトに関連付ける方法を紹介します。または、の手順に従って、に登録します https://docs.netapp.com/us-en/bluexp-setup-admin/task-adding-gcp-accounts.html["MarketplaceサブスクリプションとGoogle Cloudクレデンシャルの関連付け"^] セクション。
+次の動画では、従量課金制マーケットプレイスのサブスクリプションをGoogle Cloudプロジェクトに関連付ける方法を説明します。または、以下の手順に従ってサブスクリプションしてください。  https://docs.netapp.com/us-en/bluexp-setup-admin/task-adding-gcp-accounts.html["MarketplaceサブスクリプションとGoogle Cloudクレデンシャルの関連付け"^]セクション。
 
 +
-.Google Cloud MarketplaceからBlueXPにサブスクライブ
+.Google Cloud マーケットプレイスから BlueXP を購読する
 video::373b96de-3691-4d84-b3f3-b05101161638[panopto]
 . * サービス * ：このシステムで使用するサービスを選択します。BlueXPのバックアップとリカバリを選択するか、BlueXPの階層化を使用するには、ステップ3でサービスアカウントを指定しておく必要があります。
 +
@@ -332,10 +332,10 @@ NOTE: これは、BlueXP用に設定したサービスアカウントです。 l
 
 |===
 +
-次のビデオでは、従量課金制のMarketplaceサブスクリプションをGoogle Cloudプロジェクトに関連付ける方法を紹介します。  または、の手順に従って、に登録します https://docs.netapp.com/us-en/bluexp-setup-admin/task-adding-gcp-accounts.html["MarketplaceサブスクリプションとGoogle Cloudクレデンシャルの関連付け"^] セクション。
+次の動画では、従量課金制マーケットプレイスのサブスクリプションをGoogle Cloudプロジェクトに関連付ける方法を説明します。または、以下の手順に従ってサブスクリプションしてください。  https://docs.netapp.com/us-en/bluexp-setup-admin/task-adding-gcp-accounts.html["マーケットプレイスのサブスクリプションを Google Cloud 認証情報に関連付ける"^]セクション。
 
 +
-.Google Cloud MarketplaceからBlueXPにサブスクライブ
+.Google Cloud マーケットプレイスから BlueXP を購読する
 video::373b96de-3691-4d84-b3f3-b05101161638[panopto]
 . * サービス * ：このシステムで使用するサービスを選択します。BlueXPのバックアップとリカバリを選択するか、BlueXP階層化を使用するには、ステップ3でサービスアカウントを指定しておく必要があります。
 +
