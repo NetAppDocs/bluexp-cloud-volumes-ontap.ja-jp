@@ -100,16 +100,16 @@ Cloud Volumes ONTAP 用のすべての Azure ストレージアカウントは�
 
 == Cloud Volumes ONTAPでのキーローテーション
 
-暗号化キーはAzureポータルで設定する必要があります。キーの設定とキーローテーションの設定の詳細については、Microsoft Azureの次のドキュメントトピックを参照してください。
+暗号化キーを構成する際は、Azureポータルを使用して自動キーローテーションを設定および有効化する必要があります。新しいバージョンの暗号化キーを作成して有効化することで、Cloud Volumes ONTAPは最新のキーバージョンを自動的に検出し、暗号化に使用できるようになり、手動による介入を必要とせずにデータのセキュリティを確保できます。
+
+キーの設定とキーローテーションの設定の詳細については、Microsoft Azureの次のドキュメントトピックを参照してください。
 
 * https://learn.microsoft.com/en-us/azure/key-vault/keys/how-to-configure-key-rotation["Azure Key Vaultで暗号化キーの自動ローテーションを設定する"^]
 * https://learn.microsoft.com/en-us/azure/virtual-machines/windows/disks-enable-customer-managed-keys-powershell#set-up-an-azure-key-vault-and-diskencryptionset-with-automatic-key-rotation-preview["Azure PowerShell -お客様管理キーを有効にする"^]
 
 
 
-NOTE: キーを設定したら、Cloud Volumes ONTAPが新しいキーを利用できるように、キーがあることを確認し https://learn.microsoft.com/en-us/azure/virtual-machines/disk-encryption#customer-managed-keys["Azureポータルでキーローテーションを有効にする"^]ます。
-
-新しいバージョンのキーを作成して有効にすると、Cloud Volumes ONTAPは自動的に最新バージョンを検出して暗号化に使用するため、手動更新を必要とせずにデータの安全性を確保できます。
+NOTE: キーを設定したら、次の項目を選択したことを確認してください。  https://learn.microsoft.com/en-us/azure/key-vault/keys/how-to-configure-key-rotation#key-rotation-policy["_自動回転を有効にする_"^] 、これにより、Cloud Volumes ONTAPは以前のキーの有効期限が切れたときに新しいキーを使用できるようになります。Azureポータルでこのオプションを有効にしないと、Cloud Volumes ONTAPは新しいキーを自動的に検出できず、ストレージのプロビジョニングで問題が発生する可能性があります。
 
 
 

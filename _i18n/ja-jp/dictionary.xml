@@ -5609,14 +5609,10 @@ HAペアの場合、BlueXPでCloud Volumes ONTAP作業環境を作成すると�
   <block id="f2035db09bb2be2db0508915fa584149" category="paragraph">Cloud Volumes ONTAP 9.14.1をプライベートモードでAWS、Azure、Google Cloudに導入できるようになりました。プライベートモードは、Cloud Volumes ONTAP 9.14.1のシングルノード環境とハイアベイラビリティ（HA）環境の両方で有効になります。</block>
   <block id="62bd7572081df25dd3f1f52151883c4a" category="inline-link">BlueXPの導入モードについて説明します</block>
   <block id="dc748283e7593515df9e8f2759a85349" category="paragraph">プライベートモード配置の詳細については、を参照してください<block ref="312f421b6dd5cf62286ecf6a82a8132e" category="inline-link-rx"></block>。</block>
-  <block id="210dc676779eae6698e4064fd965bda8" category="paragraph">暗号化キーはAzureポータルで設定する必要があります。キーの設定とキーローテーションの設定の詳細については、Microsoft Azureの次のドキュメントトピックを参照してください。</block>
   <block id="348c2304e1a6efb529d00b9bacd96a8e" category="inline-link">Azure Key Vaultで暗号化キーの自動ローテーションを設定する</block>
   <block id="f4d57411fbf6c0075178b1e3767b496e" category="list-text"><block ref="f4d57411fbf6c0075178b1e3767b496e" category="inline-link-rx"></block></block>
   <block id="881f8c1da4935c7dbe1f6d696a16cd9c" category="inline-link">Azure PowerShell -お客様管理キーを有効にする</block>
   <block id="4a9f4b73b48b26dea345a1977b58dd51" category="list-text"><block ref="4a9f4b73b48b26dea345a1977b58dd51" category="inline-link-rx"></block></block>
-  <block id="a15076d8f5fd9af7af6dec9ab282588e" category="inline-link">Azureポータルでキーローテーションを有効にする</block>
-  <block id="71b5648e677d1a5ebf3d343f3c10eb54" category="admonition">キーを設定したら、Cloud Volumes ONTAPが新しいキーを利用できるように、キーがあることを確認し<block ref="7b90d7bac505d4641bd5cd9a13a09c6c" category="inline-link-rx"></block>ます。</block>
-  <block id="5b41754d54a59a01d58e45b59544d3a6" category="paragraph">新しいバージョンのキーを作成して有効にすると、Cloud Volumes ONTAPは自動的に最新バージョンを検出して暗号化に使用するため、手動更新を必要とせずにデータの安全性を確保できます。</block>
   <block id="5f2734b84896bdabcf7fd3574325d116" category="section-title">2025年3月28日</block>
   <block id="636ef76d7d40e5ba70916ad429d2aeae" category="paragraph">AzureのCloud Volumes ONTAPシステムのストレージアカウントへのパブリックアクセスを制限できるようになりました。アクセスを無効にすると、組織のセキュリティポリシーに準拠する必要がある場合に、同じVNet内であってもプライベートIPアドレスが公開されないように保護できます。このオプションは、Cloud Volumes ONTAPシステムのデータ階層化も無効になり、シングルノードペアとハイアベイラビリティペアの両方に適用されます。</block>
   <block id="523a76885920f04b0204fea8be782600" category="list-text">Cloud Volumes ONTAPライセンス情報には、* Governance &gt; Digital Wallet &gt; Overview / Direct Licenses *タブから簡単にアクセスできます。</block>
@@ -5866,4 +5862,8 @@ HAペアの場合、BlueXPでCloud Volumes ONTAP作業環境を作成すると�
   <block id="6e4a8826a7235b545d2d29f084c73624" category="sidebar">ファイル署名の検証について学ぶ</block>
   <block id="56f9ff2318475a5d2c7b23d83297197e" category="sidebar">Linuxでファイル署名を検証する</block>
   <block id="408c48907cb6a04176683305086c1ce2" category="sidebar">macOSでファイル署名を検証する</block>
+  <block id="16af504cff5f9ca785ae3fbcae2c3d7b" category="paragraph">暗号化キーを構成する際は、Azureポータルを使用して自動キーローテーションを設定および有効化する必要があります。新しいバージョンの暗号化キーを作成して有効化することで、Cloud Volumes ONTAPは最新のキーバージョンを自動的に検出し、暗号化に使用できるようになり、手動による介入を必要とせずにデータのセキュリティを確保できます。</block>
+  <block id="6505562134574bd5ec457f8041b5b41b" category="paragraph">キーの設定とキーローテーションの設定の詳細については、Microsoft Azureの次のドキュメントトピックを参照してください。</block>
+  <block id="f630598948a04f18a70fded14127468d" category="inline-link">_自動回転を有効にする_</block>
+  <block id="57d9892a3d271d27b26e51e3f7d04d90" category="admonition">キーを設定したら、次の項目を選択したことを確認してください。 <block ref="864eb32f5dc808f575a1395e038bf9e3" category="inline-link-rx"></block> 、これにより、Cloud Volumes ONTAPは以前のキーの有効期限が切れたときに新しいキーを使用できるようになります。Azureポータルでこのオプションを有効にしないと、Cloud Volumes ONTAPは新しいキーを自動的に検出できず、ストレージのプロビジョニングで問題が発生する可能性があります。</block>
 </blocks>
