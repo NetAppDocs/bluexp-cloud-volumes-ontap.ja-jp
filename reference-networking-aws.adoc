@@ -82,35 +82,23 @@ BlueXP  認証に使用されます。
 |===
 
 
-==== NetApp AutoSupportのアウトバウンドインターネットアクセス
-
-Cloud Volumes ONTAPノードは、さまざまな機能のために外部エンドポイントにアクセスするためのアウトバウンドインターネットアクセスを必要とします。セキュリティ要件が厳しい環境でこれらのエンドポイントがブロックされていると、Cloud Volumes ONTAPは正常に動作しません。
-
-Cloud Volumes ONTAP ノードには、NetApp AutoSupport へのアウトバウンドインターネットアクセスが必要です。ネットアップは、システムの健常性をプロアクティブに監視し、ネットアップテクニカルサポートにメッセージを送信します。
-
-Cloud Volumes ONTAPがAutoSupportメッセージを送信できるように、ルーティングおよびファイアウォールポリシーで次のエンドポイントへのHTTPSトラフィックを許可する必要があります。
-
-* \ https://support.netapp.com/aods/asupmessage
-* \ https://support.netapp.com/asupprod/post/1.0/postAsup
-
-
-NAT インスタンスがある場合は、プライベートサブネットからインターネットへの HTTPS トラフィックを許可する着信セキュリティグループルールを定義する必要があります。
-
-AutoSupport メッセージの送信にアウトバウンドのインターネット接続が使用できない場合、Cloud Volumes ONTAP システムは自動的にコネクタをプロキシサーバとして使用するように設定されます。唯一の要件は、コネクタのセキュリティグループがポート3128で_ inbound_connectionsを許可することです。コネクタを展開した後、このポートを開く必要があります。
-
-Cloud Volumes ONTAP に厳密なアウトバウンドルールを定義した場合は、Cloud Volumes ONTAP セキュリティグループがポート3128で_OUTBOUND接続を許可する必要もあります。
-
-アウトバウンドのインターネットアクセスが使用可能であることを確認したら、 AutoSupport をテストしてメッセージを送信できることを確認します。手順については、を参照して https://docs.netapp.com/us-en/ontap/system-admin/setup-autosupport-task.html["ONTAPのマニュアル：AutoSupportのセットアップ"^]ください。
-
-AutoSupport メッセージを送信できないことがBlueXPから通知された場合は、 link:task-verify-autosupport.html#troubleshoot-your-autosupport-configuration["AutoSupport 構成のトラブルシューティングを行います"]。
-
-
-
 === HA メディエータのアウトバウンドインターネットアクセス
 
 HA メディエータインスタンスは、 AWS EC2 サービスへのアウトバウンド接続を持っている必要があります。これにより、ストレージのフェイルオーバーを支援できます。接続を提供するには、パブリック IP アドレスを追加するか、プロキシサーバを指定するか、または手動オプションを使用します。
 
 手動オプションには、 NAT ゲートウェイまたはターゲットサブネットから AWS EC2 サービスへのインターフェイス VPC エンドポイントを指定できます。VPCエンドポイントの詳細については、を参照して http://docs.aws.amazon.com/AmazonVPC/latest/UserGuide/vpce-interface.html["AWS ドキュメント：「 Interface VPC Endpoints 」（ AWS PrivateLink ）"^]ください。
+
+
+
+=== コネクタプロキシをサポートするためのネットワーク構成
+
+BlueXPコネクタ用に設定されたプロキシサーバーを使用して、 Cloud Volumes ONTAPからのアウトバウンドインターネットアクセスを有効にすることができます。BlueXPは次の2種類のプロキシをサポートしています。
+
+* *明示的プロキシ*： Cloud Volumes ONTAPからの送信トラフィックは、コネクタプロキシ設定時に指定されたプロキシサーバのHTTPアドレスを使用します。コネクタ管理者は、追加の認証のためにユーザー認証情報とルートCA証明書を設定している場合もあります。明示的プロキシでルートCA証明書を利用できる場合は、以下のコマンドを使用して、同じ証明書を取得し、 Cloud Volumes ONTAPの作業環境にアップロードしてください。  https://docs.netapp.com/us-en/ontap-cli/security-certificate-install.html["ONTAP CLI: セキュリティ証明書のインストール"^]指示。
+* *透過プロキシ*：ネットワークは、 Cloud Volumes ONTAPからの送信トラフィックをコネクタプロキシ経由で自動的にルーティングするように設定されています。透過プロキシを設定する場合、コネクタ管理者は、プロキシサーバーのHTTPアドレスではなく、 Cloud Volumes ONTAPからの接続用のルートCA証明書のみを提供する必要があります。  https://docs.netapp.com/us-en/ontap-cli/security-certificate-install.html["ONTAP CLI: セキュリティ証明書のインストール"^]指示。
+
+
+BlueXPコネクタのプロキシサーバーの設定については、  https://docs.netapp.com/us-en/bluexp-setup-admin/task-configuring-proxy.html["プロキシサーバを使用するようにコネクタを設定します"^] 。
 
 
 
@@ -162,10 +150,6 @@ HA ペアに必要なプライベート IP アドレスの数は、選択する�
 
 次の表に、各プライベート IP アドレスに関連付けられている LIF の詳細を示します。
 
-
-
-===== 単一の AZ にある HA ペアの LIF
-
 [cols="20,20,20,40"]
 |===
 | LIF | インターフェイス | ノード | 目的 
@@ -197,10 +181,6 @@ HA ペアに必要なプライベート IP アドレスの数は、選択する�
 
 | メディエーター | eth0 | メディエーター | ストレージのテイクオーバーとギブバックのプロセスを支援するための、ノードとメディエーターの間の通信チャネル。 
 |===
-
-
-===== 複数の AZ にまたがる HA ペア用の LIF です
-
 [cols="20,20,20,40"]
 |===
 | LIF | インターフェイス | ノード | 目的 
@@ -343,4 +323,9 @@ image:diagram_ha_networking.png["この概念図は、 Cloud Volumes ONTAP HA �
 
 * https://docs.netapp.com/us-en/bluexp-setup-admin/task-quick-start-connector-aws.html["コネクタのネットワーク要件を確認します"^]
 * https://docs.netapp.com/us-en/bluexp-setup-admin/reference-ports-aws.html["AWSのセキュリティグループのルール"^]
+
+
+.関連トピック
+* link:task-verify-autosupport.html["Cloud Volumes ONTAPのAutoSupportセットアップの確認"]
+* https://docs.netapp.com/us-en/ontap/networking/ontap_internal_ports.html["ONTAP内部ポートの詳細"^]です。
 

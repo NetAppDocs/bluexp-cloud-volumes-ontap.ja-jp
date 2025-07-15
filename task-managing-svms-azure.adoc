@@ -147,4 +147,6 @@ Storage VMの名前を変更するには、既存のStorage VMと新しいStorag
 .関連情報
 * https://docs.netapp.com/us-en/bluexp-automation/cm/prepare.html["API を使用する準備をします"^]
 * https://docs.netapp.com/us-en/bluexp-automation/cm/workflow_processes.html#organization-of-cloud-volumes-ontap-workflows["Cloud Volumes ONTAPワークフロー"^]
+* https://docs.netapp.com/us-en/bluexp-automation/platform/get_identifiers.html#get-the-connector-identifier["必要な識別子を取得する"^]
+* https://docs.netapp.com/us-en/bluexp-automation/platform/use_rest_apis.html["BlueXP REST APIを使用する"^]
 

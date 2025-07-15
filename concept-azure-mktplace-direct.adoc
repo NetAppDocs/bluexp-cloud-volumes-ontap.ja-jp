@@ -32,9 +32,6 @@ Azure Marketplaceでの導入が完了すると、BlueXP  でこれらのシス
 
 | *サポートされる仮想マシン（VM）タイプ*  a| 
 EDS_V5およびLS_v3インスタンスタイプ
-
-
-NOTE: L8s_v3インスタンスタイプは、Azure MarketplaceでHA構成がサポートされますが、BlueXP  ではサポートされません。BlueXP  は検出中に正しく検出できません。
 | あらゆる種類のVMhttps://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-configs-azure.html["Azure でサポートされる構成"^] 
 
 

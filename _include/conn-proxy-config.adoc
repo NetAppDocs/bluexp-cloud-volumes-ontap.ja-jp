@@ -1,0 +1,15 @@
+= コネクタプロキシをサポートするためのネットワーク構成
+:allow-uri-read: 
+
+
+
+
+=== コネクタプロキシをサポートするためのネットワーク構成
+
+BlueXPコネクタ用に設定されたプロキシサーバーを使用して、 Cloud Volumes ONTAPからのアウトバウンドインターネットアクセスを有効にすることができます。BlueXPは次の2種類のプロキシをサポートしています。
+
+* *明示的プロキシ*： Cloud Volumes ONTAPからの送信トラフィックは、コネクタプロキシ設定時に指定されたプロキシサーバのHTTPアドレスを使用します。コネクタ管理者は、追加の認証のためにユーザー認証情報とルートCA証明書を設定している場合もあります。明示的プロキシでルートCA証明書を利用できる場合は、以下のコマンドを使用して、同じ証明書を取得し、 Cloud Volumes ONTAPの作業環境にアップロードしてください。  https://docs.netapp.com/us-en/ontap-cli/security-certificate-install.html["ONTAP CLI: セキュリティ証明書のインストール"^]指示。
+* *透過プロキシ*：ネットワークは、 Cloud Volumes ONTAPからの送信トラフィックをコネクタプロキシ経由で自動的にルーティングするように設定されています。透過プロキシを設定する場合、コネクタ管理者は、プロキシサーバーのHTTPアドレスではなく、 Cloud Volumes ONTAPからの接続用のルートCA証明書のみを提供する必要があります。  https://docs.netapp.com/us-en/ontap-cli/security-certificate-install.html["ONTAP CLI: セキュリティ証明書のインストール"^]指示。
+
+
+BlueXPコネクタのプロキシサーバーの設定については、  https://docs.netapp.com/us-en/bluexp-setup-admin/task-configuring-proxy.html["プロキシサーバを使用するようにコネクタを設定します"^] 。

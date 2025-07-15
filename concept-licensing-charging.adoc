@@ -102,7 +102,7 @@ HA ペアの場合、ノードのプロビジョニング済み容量に対し�
 
 == システムの最大数
 
-容量単位のライセンスを使用する場合、Cloud Volumes ONTAP システムの最大数はネットアップアカウントあたり20個に制限されます。a_system_は、Cloud Volumes ONTAP HAペア、Cloud Volumes ONTAP シングルノードシステム、またはユーザが作成した追加のStorage VMです。デフォルトのStorage VMはカウントされません。これにより、環境 のすべてのライセンスモデルが制限されます。
+容量ベースのライセンスでは、 Cloud Volumes ONTAPシステムの最大数はBlueXPアカウントごとに 24 に制限されます。a_system_は、Cloud Volumes ONTAP HAペア、Cloud Volumes ONTAP シングルノードシステム、またはユーザが作成した追加のStorage VMです。デフォルトのStorage VMはカウントされません。これにより、環境 のすべてのライセンスモデルが制限されます。
 
 たとえば、次の3つの作業環境があるとします。
 
@@ -122,9 +122,11 @@ HA ペアの場合、ノードのプロビジョニング済み容量に対し�
 
 合計6つのシステムです。その後、アカウントに14台のシステムを追加するためのスペースを確保します。
 
-20台以上のシステムを必要とする大規模な導入環境の場合は、アカウント担当者または営業チームにお問い合わせください。
+24台以上のシステムを必要とする大規模な導入環境の場合は、アカウント担当者または営業チームにお問い合わせください。
 
-https://docs.netapp.com/us-en/bluexp-setup-admin/concept-netapp-accounts.html["ネットアップアカウントの詳細については、こちらをご覧ください"^]。
+https://docs.netapp.com/us-en/bluexp-setup-admin/concept-netapp-accounts.html["BlueXPアカウントについて詳しくはこちら"^]です。
+
+https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/index.html["AWS、Azure、Google Cloud のストレージ制限について学ぶ"^]です。
 
 
 

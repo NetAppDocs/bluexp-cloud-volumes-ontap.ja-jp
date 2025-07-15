@@ -78,23 +78,15 @@ BlueXP  認証に使用されます。
 |===
 
 
-==== NetApp AutoSupportのアウトバウンドインターネットアクセス
+=== コネクタプロキシをサポートするためのネットワーク構成
 
-Cloud Volumes ONTAP ノードには、NetApp AutoSupport へのアウトバウンドインターネットアクセスが必要です。ネットアップは、システムの健常性をプロアクティブに監視し、ネットアップテクニカルサポートにメッセージを送信します。
+BlueXPコネクタ用に設定されたプロキシサーバーを使用して、 Cloud Volumes ONTAPからのアウトバウンドインターネットアクセスを有効にすることができます。BlueXPは次の2種類のプロキシをサポートしています。
 
-Cloud Volumes ONTAPがAutoSupportメッセージを送信できるように、ルーティングおよびファイアウォールポリシーで次のエンドポイントへのHTTPSトラフィックを許可する必要があります。
-
-* \ https://support.netapp.com/aods/asupmessage
-* \ https://support.netapp.com/asupprod/post/1.0/postAsup
+* *明示的プロキシ*： Cloud Volumes ONTAPからの送信トラフィックは、コネクタプロキシ設定時に指定されたプロキシサーバのHTTPアドレスを使用します。コネクタ管理者は、追加の認証のためにユーザー認証情報とルートCA証明書を設定している場合もあります。明示的プロキシでルートCA証明書を利用できる場合は、以下のコマンドを使用して、同じ証明書を取得し、 Cloud Volumes ONTAPの作業環境にアップロードしてください。  https://docs.netapp.com/us-en/ontap-cli/security-certificate-install.html["ONTAP CLI: セキュリティ証明書のインストール"^]指示。
+* *透過プロキシ*：ネットワークは、 Cloud Volumes ONTAPからの送信トラフィックをコネクタプロキシ経由で自動的にルーティングするように設定されています。透過プロキシを設定する場合、コネクタ管理者は、プロキシサーバーのHTTPアドレスではなく、 Cloud Volumes ONTAPからの接続用のルートCA証明書のみを提供する必要があります。  https://docs.netapp.com/us-en/ontap-cli/security-certificate-install.html["ONTAP CLI: セキュリティ証明書のインストール"^]指示。
 
 
-AutoSupport メッセージの送信にアウトバウンドのインターネット接続が使用できない場合、Cloud Volumes ONTAP システムは自動的にコネクタをプロキシサーバとして使用するように設定されます。唯一の要件は、コネクタのセキュリティグループがポート3128で_ inbound_connectionsを許可することです。コネクタを展開した後、このポートを開く必要があります。
-
-Cloud Volumes ONTAP に厳密なアウトバウンドルールを定義した場合は、Cloud Volumes ONTAP セキュリティグループがポート3128で_OUTBOUND接続を許可する必要もあります。
-
-アウトバウンドのインターネットアクセスが使用可能であることを確認したら、 AutoSupport をテストしてメッセージを送信できることを確認します。手順については、を参照して https://docs.netapp.com/us-en/ontap/system-admin/setup-autosupport-task.html["ONTAPのマニュアル：AutoSupportのセットアップ"^]ください。
-
-AutoSupport メッセージを送信できないことがBlueXPから通知された場合は、 link:task-verify-autosupport.html#troubleshoot-your-autosupport-configuration["AutoSupport 構成のトラブルシューティングを行います"]。
+BlueXPコネクタのプロキシサーバーの設定については、  https://docs.netapp.com/us-en/bluexp-setup-admin/task-configuring-proxy.html["プロキシサーバを使用するようにコネクタを設定します"^] 。
 
 
 
@@ -494,4 +486,9 @@ NOTE: source は、 Cloud Volumes ONTAP システムのインターフェイス�
 
 * https://docs.netapp.com/us-en/bluexp-setup-admin/task-quick-start-connector-azure.html["コネクタのネットワーク要件を確認します"^]
 * https://docs.netapp.com/us-en/bluexp-setup-admin/reference-ports-azure.html["Azureのセキュリティグループルール"^]
+
+
+.関連トピック
+* link:task-verify-autosupport.html["Cloud Volumes ONTAPのAutoSupportセットアップの確認"]
+* https://docs.netapp.com/us-en/ontap/networking/ontap_internal_ports.html["ONTAP内部ポートの詳細"^]です。
 

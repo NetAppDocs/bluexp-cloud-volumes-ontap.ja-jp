@@ -135,9 +135,6 @@ Azure Marketplaceの直接導入を使用して導入されたCloud Volumes ONTA
 .作業を開始する前に
 Azure Marketplaceでの導入が完了していることを確認BlueXP  Connectorでシステムを検出できるのは、導入が完了して検出可能になった場合のみです。
 
-
-NOTE: Azure Marketplaceの直接導入では、L8s_v3インスタンスタイプがサポートされます。ただし、のBlueXP  はHA構成でこのインスタンスタイプをサポートしておらず、検出時にこのインスタンスタイプを正しく検出できません。
-
 .手順
 BlueXP  では、既存のシステムを検出するための標準の手順に従います。を参照してください link:task-adding-systems.html["既存のCloud Volumes ONTAPシステムをBlueXP  に追加する"]。
 
