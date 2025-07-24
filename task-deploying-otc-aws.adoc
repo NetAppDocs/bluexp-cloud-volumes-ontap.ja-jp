@@ -326,7 +326,7 @@ AWSローカルゾーンを使用する前に、ローカルゾーンを有効�
 | ユーザ名とパスワード | Cloud Volumes ONTAP クラスタ管理者アカウントのクレデンシャルです。これらのクレデンシャルを使用して、ONTAPシステムマネージャまたはONTAP CLIからCloud Volumes ONTAPに接続できます。default_admin_user の名前をそのまま使用するか ' カスタム・ユーザー名に変更します 
 
 
-| 資格情報を編集します | この Cloud Volumes ONTAP システムで使用する AWS クレデンシャルと Marketplace サブスクリプションを選択します。選択した認証情報を新しい AWS マーケットプレイスサブスクリプションに関連付けるには、「サブスクリプションの追加」をクリックします。サブスクリプションは、年間契約の場合と、 Cloud Volumes ONTAP の料金を 1 時間ごとに支払う場合があります。NetAppからライセンスを直接購入した場合（お客様所有のライセンスを使用（BYOL））、AWSサブスクリプションは必要ありません。https://docs.netapp.com/us-en/bluexp-setup-admin/task-adding-aws-accounts.html["BlueXPにAWSクレデンシャルを追加する方法について説明します"^]です。 
+| 資格情報を編集します | このCloud Volumes ONTAPシステムで使用するAWS認証情報とマーケットプレイスサブスクリプションを選択してください。「サブスクリプションを追加」をクリックすると、選択した認証情報が新しいAWSマーケットプレイスサブスクリプションに関連付けられます。サブスクリプションは年間契約または時間単位でCloud Volumes ONTAPをお支払いいただくことができます。NetAppから直接ライセンスを購入された場合（ NetApp （Bring Your Own License））、AWSサブスクリプションは不要です。NetAppはBYOLライセンスの購入、延長、および更新を制限しています。 https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/whats-new.html#restricted-availability-of-byol-licensing-for-cloud-volumes-ontap["Cloud Volumes ONTAPの BYOL ライセンスの利用制限"^] 。https://docs.netapp.com/us-en/bluexp-setup-admin/task-adding-aws-accounts.html["BlueXPにAWSクレデンシャルを追加する方法について説明します"^] 。 
 |===
 +
 次のビデオでは、従量課金制マーケットプレイスサブスクリプションを AWS 認証情報に関連付ける方法を示します。

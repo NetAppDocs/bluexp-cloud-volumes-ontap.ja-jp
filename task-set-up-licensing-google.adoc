@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: task-set-up-licensing-google.html 
-keywords: freemium, professional, essentials, licensing, licenses, cloud volumes ontap charging, cloud volumes ontap licenses, cloud volumes ontap licensing, cvo licenses, cvo licensing, byol, bring your own license, optimized, paygo, pay as you go, keystone flex, keystone, digital wallet 
+keywords: freemium, professional, essentials, licensing, licenses, cloud volumes ontap charging, cloud volumes ontap licenses, cloud volumes ontap licensing, cvo licenses, cvo licensing, bring your own license, optimized, paygo, pay as you go, keystone flex, keystone, digital wallet 
 summary: Cloud Volumes ONTAP で使用するライセンスオプションを決定したら、新しいシステムを導入する際にそのライセンスオプションを選択する前に、いくつかの手順を実行する必要があります。 
 ---
 = Google CloudでCloud Volumes ONTAP のライセンスを設定します
@@ -62,6 +62,9 @@ link:concept-licensing.html#capacity-based-licensing["容量単位のライセ�
 === BYOL
 
 ネットアップからライセンスを購入（BYOL）して前払いし、任意のクラウドプロバイダにCloud Volumes ONTAP システムを導入できます。
+
+
+NOTE: NetAppはBYOLライセンスの購入、延長、更新を制限しています。詳細については、  https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/whats-new.html#restricted-availability-of-byol-licensing-for-cloud-volumes-ontap["Cloud Volumes ONTAPの BYOL ライセンスの利用制限"^] 。
 
 .手順
 . https://bluexp.netapp.com/contact-cds["ライセンスの取得については、ネットアップの営業部門にお問い合わせください"^]

@@ -66,6 +66,9 @@ link:concept-licensing.html["容量単位のライセンスに関する詳細は
 
 ネットアップからライセンスを購入（BYOL）して前払いし、任意のクラウドプロバイダにCloud Volumes ONTAP システムを導入できます。
 
+
+NOTE: NetAppはBYOLライセンスの購入、延長、更新を制限しています。詳細については、  https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/whats-new.html#restricted-availability-of-byol-licensing-for-cloud-volumes-ontap["Cloud Volumes ONTAPの BYOL ライセンスの利用制限"^] 。
+
 .手順
 . https://bluexp.netapp.com/contact-cds["ライセンスの取得については、ネットアップの営業部門にお問い合わせください"^]
 . https://docs.netapp.com/us-en/bluexp-setup-admin/task-adding-nss-accounts.html#add-an-nss-account["NetApp Support Site アカウントをBlueXPに追加します"^]

@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: task-planning-your-config-azure.html 
-keywords: license, disk, storage, size, write speed, volume usage, byol, capacity, limit, configurations, virtual machine, vm, regions, supported disks, disk types, premium storage, standard storage, use profile, thin provisioning, deduplication, compression, shared instance, dedicated instance, write speed, high write speed, normal write speed, network information, worksheet, limit, limits, storage limits, volume limit, aggregate limit, maximum volume size, maximum aggregate size, supported vm type, supported virtual machines, supported virtual machine types, supported instances, space, size, azure, disk size 
+keywords: license, disk, storage, size, write speed, volume usage, capacity, limit, configurations, virtual machine, vm, regions, supported disks, disk types, premium storage, standard storage, use profile, thin provisioning, deduplication, compression, shared instance, dedicated instance, write speed, high write speed, normal write speed, network information, worksheet, limit, limits, storage limits, volume limit, aggregate limit, maximum volume size, maximum aggregate size, supported vm type, supported virtual machines, supported virtual machine types, supported instances, space, size, azure, disk size 
 summary: Azure で Cloud Volumes ONTAP を導入する場合は、ワークロード要件に一致する事前設定済みのシステムを選択するか、または独自の設定を作成できます。独自の設定を選択する場合は、使用可能なオプションを理解しておく必要があります。 
 ---
 = AzureでCloud Volumes ONTAP 構成を計画

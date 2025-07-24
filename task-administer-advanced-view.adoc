@@ -14,43 +14,31 @@ summary: Cloud Volumes ONTAP の高度な管理が必要な場合は、ONTAP シ
 
 
 [role="lead"]
-Cloud Volumes ONTAP の高度な管理が必要な場合は、ONTAP システムに付属の管理インターフェイスであるONTAP System Managerを使用して実行できます。BlueXPにはSystem Managerインターフェイスが搭載されているので、高度な管理のためにBlueXPを残す必要はありません。
+Cloud Volumes ONTAPの高度なストレージ管理機能は、 ONTAPシステムに付属の管理インターフェースであるONTAP System Managerを通じて利用できます。SystemManagerにはBlueXPから直接アクセスできます。
 
 
 
 == の機能
 
-次の管理機能を実行できます。
+BlueXPのONTAP System Manager を使用すると、さまざまなストレージ管理機能を実行できます。以下に、それらの機能の一部を示しますが、網羅的なものではありません。
 
-* 高度なストレージ管理
-+
-整合グループ、共有、qtree、クォータ、およびStorage VMの管理
-
-* ネットワーク管理
-+
-IPspace、ネットワークインターフェイス、ポートセット、およびイーサネットポートを管理します。
-
-* イベントとジョブ
-+
-イベントログ、システムアラート、ジョブ、および監査ログを表示します。
-
-* 高度なデータ保護
-+
-Storage VM、LUN、および整合グループを保護する。
-
-* ホスト管理
-+
-SANイニシエータグループとNFSクライアントを設定します。
-
+* 高度なストレージ管理: 整合性グループ、共有、qtree、クォータ、およびストレージ VM を管理します。
+* ボリューム移動: link:task-manage-volumes.html#move-a-volume["ボリュームを別のアグリゲートに移動します。"]
+* ネットワーク管理: IPspace、ネットワーク インターフェイス、ポートセット、イーサネット ポートを管理します。
+* FlexGroupボリュームの管理： FlexGroupボリュームの作成と管理は、System Managerからのみ行えます。BlueXPはFlexGroupボリュームの作成をサポートしていません。
+* イベントとジョブ: イベント ログ、システム アラート、ジョブ、監査ログを表示します。
+* 高度なデータ保護: ストレージ VM、LUN、整合性グループを保護します。
+* ホスト管理: SAN イニシエーター グループと NFS クライアントを設定します。
+* S3 オブジェクト ストレージ管理: Cloud Volumes ONTAPの S3 ストレージ管理機能は System Manager でのみ使用でき、 BlueXPでは使用できません。
 
 
 
 
 == サポートされている構成
 
-Cloud Volumes ONTAP 9.10.0以降では、標準のクラウドリージョンでONTAP System Managerを使用した高度な管理がサポートされます。
+* ONTAP System Manager による高度なストレージ管理は、標準クラウド リージョンのCloud Volumes ONTAP 9.10.0 以降で利用できます。
+* GovCloudリージョンまたはアウトバウンドのインターネットアクセスがないリージョンでは、System Managerの統合はサポートされません。
 
-GovCloudリージョンまたはアウトバウンドのインターネットアクセスがないリージョンでは、System Managerの統合はサポートされません。
 
 
 
@@ -58,21 +46,11 @@ GovCloudリージョンまたはアウトバウンドのインターネットア
 
 System Managerインターフェイスに表示されるいくつかの機能は、Cloud Volumes ONTAP ではサポートされません。
 
-* BlueXPの階層化
-+
-Cloud Volumes ONTAPでは、BlueXP  階層化サービスはサポートされていません。ボリュームを作成するときは、BlueXP  の標準ビューからオブジェクトストレージへのデータの階層化を直接設定する必要があります。
+* BlueXP tiering： Cloud Volumes ONTAPはBlueXP tieringサービスをサポートしていません。ボリューム作成時に、BlueXPの標準ビューからオブジェクトストレージへのデータ階層化を直接設定する必要があります。
+* 階層：System Managerではアグリゲート管理（ローカル階層とクラウド階層を含む）はサポートされていません。アグリゲートはBlueXPの標準ビューから直接管理する必要があります。
+* ファームウェアのアップグレード: Cloud Volumes ONTAP は、 [クラスタ] > [設定] ページからの自動ファームウェア更新をサポートしていません。
+* ロールベースのアクセス制御: System Manager からのロールベースのアクセス制御はサポートされていません。
 
-* 階層
-+
-アグリゲートの管理（ローカル階層とクラウド階層を含む）はSystem Managerではサポートされていません。アグリゲートは、BlueXPのStandard Viewから直接管理する必要があります。
-
-* ファームウェアのアップグレード
-+
-Cloud Volumes ONTAPでは、*[クラスタ]>[設定]*ページからの自動ファームウェア更新はサポートされていません。
-
-
-
-また、System Managerからのロールベースアクセス制御はサポートされていません。
 
 
 
