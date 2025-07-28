@@ -2839,7 +2839,6 @@
   <block id="7e177185e7eddff33dd8f3aeb7551132" category="paragraph">NSSアカウントをお持ちのネットアップのお客様は、BlueXPからサポートに登録するだけで済みます。</block>
   <block id="5226d4ec1f4f81b740cbbd27635b441f" category="list-text">必ず、上記のシリアル番号フィールドに使用されているBlueXPアカウントのシリアル番号(960xxxx)をコピーしてください。これにより、アカウント処理が高速化されます。</block>
   <block id="c9df4195a305212ffd7b56d24f67129d" category="summary">ネットアップでは、さまざまな方法でBlueXPをサポートしています。ナレッジベース（ KB ）記事やコミュニティフォーラムなど、 24 時間 365 日利用可能な幅広いセルフサポートオプションをご用意しています。サポート登録には、 Web チケット処理によるリモートテクニカルサポートが含まれます。</block>
-  <block id="7c5661ab6b39ee901cea00a6e7020a49" category="paragraph">ネットアップでは、BlueXPとその クラウド サービス をさまざまな方法でサポートしています。ナレッジベース（ KB ）記事やコミュニティフォーラムなど、 24 時間 365 日利用可能な幅広いセルフサポートオプションをご用意しています。サポート登録には、 Web チケット処理によるリモートテクニカルサポートが含まれます。</block>
   <block id="9a3db1abe5491d0eb9bb5d125981356c" category="paragraph">BlueXPナレッジベースで問題のトラブルシューティングに役立つ記事を検索します。</block>
   <block id="00c5fef3bb9d593ae96bf5d2ee60354a" category="paragraph">BlueXPコミュニティに参加して、進行中のディスカッションをフォローしたり、新しいディスカッションを作成したりできます。</block>
   <block id="a4a6c2ea0078252eac2d74ef3e6c917c" category="paragraph">現在表示しているBlueXPのマニュアル。</block>
@@ -3900,8 +3899,6 @@
   <block id="25c3dcdd6e2c69b30eba973a10e656d8" category="paragraph">Upgrade Cloud Volumes ONTAPページで、Cloud Volumes ONTAPの最新バージョンまたは古いバージョンへのアップグレードを選択できるようになりました。</block>
   <block id="28164bf9e881ddc9e7ff74744bfce180" category="paragraph">両方のタイプのシリアル番号を登録することで、サポートチケットのオープンやケースの自動生成などの機能を利用できます。登録を完了するには、以下の手順でNetApp Support Site（NSS）アカウントをBlueXPに追加してください。</block>
   <block id="0c788a722f31f8f0cf36539ee04615cf" category="list-text">[NSSクレデンシャルの追加]*を選択し、NetApp Support Site（NSS）認証プロンプトに従います。</block>
-  <block id="10c56875db7a47f791d653e5d5bff0e9" category="inline-image-macro">アカウントのシリアル番号、緑のチェックボックス、サポート登録済みのテキストを示すスクリーンショット。</block>
-  <block id="3d183819a15163ef2e2e7d9d764254a9" category="paragraph"><block ref="3d183819a15163ef2e2e7d9d764254a9" category="inline-image-macro-rx" type="image"></block></block>
   <block id="bdd862f49d428a850400bcf2f53cdaf2" category="paragraph">NetAppの既存のお客様で、ライセンスとシリアル番号は_NO_NSSアカウントしかお持ちでない場合は、NSSアカウントを作成してBlueXPログインに関連付ける必要があります。</block>
   <block id="0499bba105f8a891a2c671f1ba99dd34" category="list-text">の手順を実行して、新しいNSSアカウントをBlueXPログインに関連付けます <block ref="2f3aba04ec49ee5f0573a6c80a1b9df2" category="inline-xref-macro-rx"></block>。</block>
   <block id="5cdee814e2d9ba3490a8f16d00c65759" category="paragraph">NetApp Support Siteアカウントを作成したら、の手順を実行してアカウントをBlueXPログインに関連付けます <block ref="2f3aba04ec49ee5f0573a6c80a1b9df2" category="inline-xref-macro-rx"></block>。</block>
@@ -5895,4 +5892,11 @@ HAペアの場合、BlueXPでCloud Volumes ONTAP作業環境を作成すると�
   <block id="cb4bf32603c89d08cad17e7e7dd302f2" category="list-text"><block ref="cb4bf32603c89d08cad17e7e7dd302f2" category="inline-link-macro-rx"></block></block>
   <block id="1001b88d8ff7d289c57c8816aa6ffa49" category="paragraph">NetAppの担当者に連絡してBYOLサブスクリプションを更新すると、 BlueXPはNetAppから新しいライセンスを自動的に取得し、 Cloud Volumes ONTAPシステムにインストールします。BlueXPが安全なインターネット接続経由でライセンスファイルにアクセスできない場合は、お客様ご自身でファイルを取得し、 BlueXPに手動でアップロードしてください。</block>
   <block id="98d06a8873f74ad318a67a8dee1dcd5f" category="section-title">2025年6月25日</block>
+  <block id="b28e17a832bc8e68788cc78dfac834c6" category="inline-link">継続的に利用可能なSMB共有</block>
+  <block id="2d16ba999fad830caa372d4b033671ac" category="list-text">SMB継続的可用性（CA）： Cloud Volumes ONTAPはサポートしていません<block ref="4426c61d85afebe3004ecaea7b6795d6" category="inline-link-rx"></block>中断のない運用を実現します。</block>
+  <block id="9d3b47003b8e5970426abfe5a07a9c53" category="inline-link">継続的可用性を備えたSMB共有の作成</block>
+  <block id="4c47e334b7cc175e1cb9081ba027f23e" category="list-text"><block ref="4c47e334b7cc175e1cb9081ba027f23e" category="inline-link-rx"></block></block>
+  <block id="bbbc9b55f08bfe80f146b5207bdb7728" category="paragraph">NetAppは、 BlueXPとそのクラウドサービスに対して、様々なサポートを提供しています。ナレッジベース（KB）記事やコミュニティフォーラムなど、充実した無料のセルフサポートオプションを24時間365日ご利用いただけます。サポート登録には、Webチケットによるリモートテクニカルサポートも含まれます。</block>
+  <block id="759d32287efdf88cd8ac71dccc0ecf8d" category="inline-image-macro">アカウントのシリアル番号、緑色のチェックボックス、および「サポートに登録済み」というテキストが表示されているスクリーンショット。</block>
+  <block id="4c441b388bebcddf8c08fb782095b864" category="paragraph"><block ref="4c441b388bebcddf8c08fb782095b864" category="inline-image-macro-rx" type="image"></block></block>
 </blocks>

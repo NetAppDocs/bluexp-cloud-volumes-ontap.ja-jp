@@ -50,6 +50,7 @@ System Managerインターフェイスに表示されるいくつかの機能は
 * 階層：System Managerではアグリゲート管理（ローカル階層とクラウド階層を含む）はサポートされていません。アグリゲートはBlueXPの標準ビューから直接管理する必要があります。
 * ファームウェアのアップグレード: Cloud Volumes ONTAP は、 [クラスタ] > [設定] ページからの自動ファームウェア更新をサポートしていません。
 * ロールベースのアクセス制御: System Manager からのロールベースのアクセス制御はサポートされていません。
+* SMB継続的可用性（CA）： Cloud Volumes ONTAPはサポートしていません https://kb.netapp.com/on-prem/ontap/da/NAS/NAS-KBs/What_are_SMB_Continuous_Availability_CA_Shares["継続的に利用可能なSMB共有"^]中断のない運用を実現します。
 
 
 
@@ -103,4 +104,5 @@ Cloud Volumes ONTAPでSystem Managerを使用する際の詳細な手順につ�
 * https://docs.netapp.com/us-en/ontap/volume-admin-overview-concept.html["ボリュームとLUNの管理"^]
 * https://docs.netapp.com/us-en/ontap/network-manage-overview-concept.html["Network Management の略"^]
 * https://docs.netapp.com/us-en/ontap/concept_dp_overview.html["データ保護"^]
+* https://docs.netapp.com/us-en/ontap/smb-hyper-v-sql/create-continuously-available-shares-task.html["継続的可用性を備えたSMB共有の作成"^]
 
