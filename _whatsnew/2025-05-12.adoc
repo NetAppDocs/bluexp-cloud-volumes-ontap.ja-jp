@@ -9,11 +9,3 @@
 BlueXP  では、Azure Marketplaceから直接導入されたCloud Volumes ONTAPシステムを検出できるようになりました。つまり、これらのシステムを他のCloud Volumes ONTAPシステムと同様に、BlueXP  で作業環境として追加および管理できるようになりました。
 
 https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-deploy-cvo-azure-mktplc.html["Azure MarketplaceからCloud Volumes ONTAPを導入"^]
-
-
-
-=== Azureテナントのデータを階層化する機能
-
-Cloud Volumes ONTAP作業環境をあるテナントで作成し、BlueXP  Connectorを別のテナントで作成するシナリオで、Azureテナントの階層化を有効にできるようになりました。この機能を使用すると、同じコネクタを使用して複数のAzureテナントのデータを階層化できます。
-
-https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-tiering.html#requirements-to-tier-data-for-an-azure-tenant["Azureテナントのデータを階層化するための要件"^]
