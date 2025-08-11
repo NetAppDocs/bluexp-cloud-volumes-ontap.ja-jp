@@ -2695,9 +2695,6 @@
   <block id="0982661f22694d2c8b62e37a8cbea7d6" category="list-text">それぞれ10GiBの標準的な永続ディスク2本</block>
   <block id="6ebde9b80ea03f71d125a635cb158add" category="cell">ポリシーが生成されました</block>
   <block id="0b392f872171569e5244ad16ea2616d4" category="cell">既存のを使用します</block>
-  <block id="6e539d2ea7d82ed0e31c450e64ff8c04" category="section-title">最適化</block>
-  <block id="a131e5df30c445534883b2b08d3f9e4e" category="paragraph">プロビジョニングされた容量とI/O処理の料金は別途お支払いください。</block>
-  <block id="258f58bf86a685fa4951f45a75224c86" category="list-text">Cloud Volumes ONTAP のシングルノードまたはHA</block>
   <block id="69ab7c49a4285d04bdc7e75b51a4a476" category="section-title">パッケージの変更</block>
   <block id="5bdd4028830bea76f4939d67baa460ff" category="paragraph">導入後、容量ベースのライセンスを使用するCloud Volumes ONTAP システムのパッケージを変更できます。たとえば、Essentialsパッケージを含むCloud Volumes ONTAP システムを導入した場合、ビジネスニーズの変化に応じて、そのシステムをProfessionalパッケージに変更できます。</block>
   <block id="ec3e25d80cfc0e5561493729eadecef7" category="paragraph"><block ref="ea19fa0e06a6047bcaabb9af62b066c3" category="inline-link-macro-rx"></block>。</block>
@@ -3749,7 +3746,6 @@
   <block id="de33988c687dff633cec70e80a05f959" category="paragraph">Keystoneサブスクリプションは、CAPEX（設備投資）やリースよりもOPEX（運用コスト）消費モデルを希望するお客様に、シームレスなハイブリッドクラウドエクスペリエンスを提供する、従量課金制のサブスクリプションベースのサービスです。</block>
   <block id="8765b8141289c553bb6583d305152f50" category="paragraph">Keystoneサブスクリプションは、BlueXPから導入できるすべての新しいバージョンのCloud Volumes ONTAP でサポートされます。</block>
   <block id="47e98d8abdf6a91192cff6466b616ce4" category="inline-link-macro">BlueXPでKeystoneサブスクリプションの利用を開始する方法をご紹介します</block>
-  <block id="e0277b8d41546d47637400507bf0f9f5" category="paragraph">BlueXPのバックアップとリカバリのバックアップやBlueXP分類のインスタンスなど、他のサービスで管理されるリソースは、作業環境を削除しても削除されません。手動で削除する必要があります。そうしないと、これらのリソースの料金が引き続き請求されます。</block>
   <block id="6994b2fbca796c979abed69e3bd6275c" category="paragraph">BlueXPのバックアップとリカバリは、設計上Cloud Volumes ONTAP から独立しています。Cloud Volumes ONTAP システムを削除しても、BlueXPのバックアップとリカバリではバックアップが自動的に削除されません。また、システムの削除後にバックアップを削除する機能は現在UIでサポートされていません。</block>
   <block id="62a206849a655c43470ec1fbe25e35c1" category="list-text">この作業環境でBlueXPの分類を有効にし、他の作業環境でこのサービスを使用していない場合は、サービスのインスタンスを削除する必要があります。</block>
   <block id="a69f417641ff2d2784782a6898f8f2de" category="inline-link">BlueXP分類インスタンスの詳細については、こちらをご覧ください</block>
@@ -4215,8 +4211,6 @@
   <block id="9e06c986efeeff600f0b04c67d5d6354" category="paragraph">サウジアラビアリージョンは、Google Cloud for Cloud Volumes ONTAPおよびConnector for Cloud Volumes ONTAP 9.12.1 GA以降でサポートされるようになりました。</block>
   <block id="2bc724993144e8002899059117620062" category="inline-link">Google Cloudのグローバルリージョンマップ</block>
   <block id="e8b16e899245eb584f98d48e087aa975" category="paragraph">Azureの次のリージョンでは、Cloud Volumes ONTAP 9.12.1 GA以降で可用性の高い複数アベイラビリティゾーン環境がサポートされるようになりました。</block>
-  <block id="0679d11689909adae41f54cfc8c6ef53" category="list-text">充電は、ストレージと使用量（I/O）の2つのコストコンポーネントに基づいて行われます。</block>
-  <block id="992a45bae33fb9769eb5bc8c6317149c" category="paragraph">データレプリケーション（SnapMirror）、バックアップ（SnapVault）、NDMPに関連するI/Oは課金されません。</block>
   <block id="0b8c1e660d75aa2bec12f002f097dcab" category="list-title">複数のアベイラビリティゾーンに共有管理対象ディスクを配置したHAペア</block>
   <block id="a710c8d7ee654ea3241f1b07f9f7de05" category="list-text"><block ref="de989a17a1629831650b134e00461edd" category="inline-xref-macro-rx"></block></block>
   <block id="6d09b3b7b0c828e4faaa038218afc509" category="section-title">すべてのLIFがホームポートにあることを確認する</block>
@@ -4620,8 +4614,6 @@ HAペアの場合、BlueXPでCloud Volumes ONTAP作業環境を作成すると�
   <block id="9a06593a786548bb3b7320df7c76e7f1" category="paragraph">[K8s]タブは以前のリリースで廃止され、現在は削除されています。</block>
   <block id="526b16be728da42dd3eb25f5c378e218" category="list-text">AKVではNAEは使用できません。NAEには、外部でサポートされるKMIPサーバが必要です。</block>
   <block id="70004026f1ac6c7f08784ebf0a55c142" category="list-text">Cloud Volumes ONTAPノードは、アクセス性とキーの可用性を確認するために、15分ごとにAKVをポーリングします。このポーリング期間は設定できません。ポーリング試行で連続して4回失敗（合計1時間）すると、ボリュームはオフラインになります。</block>
-  <block id="f21def4319b19574f5ca7ab45389822b" category="paragraph">+ BYOLではOptimizedパッケージを使用できないことに注意してください。</block>
-  <block id="e2299e8e355a9b503858d1f8d800ccaa" category="paragraph">Essentialsパッケージの場合、4TiBの最小容量料金は、セカンダリ（データ保護）ボリュームのみを含むStorage VMには適用されません。たとえば、1TiBのセカンダリデータが格納されたStorage VMがある場合、その1TiBのデータに対してのみ課金されます。Essentials以外のパッケージタイプ（OptimizedおよびProfessional）では、ボリュームタイプに関係なく、最小容量4TiBが適用されます。</block>
   <block id="ea4ba4158f6b2b895b0418072f2ba06d" category="paragraph">ノードベースのライセンスは、 Cloud Volumes ONTAP のライセンスをノード単位で付与することが可能になった旧世代のライセンスモデルです。このライセンスモデルは新規のお客様にはご利用いただけません。ノード単位の充電は、前述のキャパシティ単位の充電方法に置き換えられました。</block>
   <block id="9cc3df8e0a65f95d62b0d0dc557d0fa9" category="section-title">2024 年 8 月 8 日</block>
   <block id="e84c1e70dc9a2186ec21e22a3e9cbda0" category="section-title">Edge Cacheライセンスパッケージの廃止</block>
@@ -4993,7 +4985,6 @@ HAペアの場合、BlueXPでCloud Volumes ONTAP作業環境を作成すると�
   <block id="a9949f1e97b05bac6285563868b6954a" category="admonition">BlueXP  のバックアップとリカバリには従量課金制（PAYGO）サブスクリプションが必要ですが、このサービスの使用料金は発生しません。BlueXP  バックアップ/リカバリのライセンス設定の詳細については、を参照してください<block ref="c958f229a6c4d788e19159c7ba08a48b" category="inline-link-rx"></block>。</block>
   <block id="05e7dd258874d61cb2bb985c9da9a17d" category="paragraph">NetAppでは、ノードベースのライセンスの販売終了（EOA）とサポート終了（EOS）を計画しています。EOAおよびEOS後は、ノードベースのライセンスを容量ベースのライセンスに変換する必要があります。</block>
   <block id="8c6aee7f6d39fa3bea95c2ae09851a7a" category="paragraph">詳細については、を参照して<block ref="f09d1138443525e41476e551a1dde747" category="inline-link-rx"></block>ください。</block>
-  <block id="5b4d3df9f94e27cca9f34f152bff2940" category="paragraph">2024年11月11日より、ノードベースライセンスの限定的な可用性が終了しました。ノードベースのライセンスのサポートは2024年12月31日に終了します。</block>
   <block id="f61f8b3c935630ec8f0486cee8916013" category="paragraph">有効なノードベースの契約がEOA日を超えている場合は、契約が期限切れになるまでライセンスを引き続き使用できます。契約が期限切れになったら、容量ベースのライセンスモデルに移行する必要があります。Cloud Volumes ONTAPノードの長期契約をお持ちでない場合は、EOS日までに変換を計画することが重要です。</block>
   <block id="bf2b1d7970167b534d54bc96e7402716" category="paragraph">各ライセンスタイプの詳細と、EOAがライセンスタイプに与える影響については、次の表を参照してください。</block>
   <block id="82060d81b7ce43c57280e879899f9a2c" category="cell">ライセンスタイプ</block>
@@ -5049,7 +5040,6 @@ HAペアの場合、BlueXPでCloud Volumes ONTAP作業環境を作成すると�
   <block id="a906cad1e2bd71c3fd41efc1424f282e" category="list-text">アカウントに容量ベースのBYOLライセンスがある場合は、アカウントのBYOL容量ベースライセンスと一致するデスティネーションパッケージを選択する必要があります。</block>
   <block id="6905efe5cff8820565676d6d40bbc083" category="list-text">がデスティネーションパッケージとして選択されている場合、<block ref="9e8b160226c9fe22a910c782ce5076e2" prefix=" " category="inline-code"></block>アカウントにはプロフェッショナルパッケージを含むBYOLライセンスが必要です。</block>
   <block id="3074c4231dd896cfd0c588f36eae9ca4" category="list-text">がデスティネーションパッケージとして選択されている場合、<block ref="4d55f77f062bf48891bd0f749c36a36d" prefix=" " category="inline-code"></block>アカウントにはEssentialsパッケージのBYOLライセンスが必要です。</block>
-  <block id="a69a8ea18d8053f3a86291dc9d373615" category="list-text">がデスティネーションパッケージとして選択されている場合<block ref="6e539d2ea7d82ed0e31c450e64ff8c04" prefix=" " category="inline-code"></block>、アカウントには最適化パッケージのBYOLライセンスが必要です。</block>
   <block id="bd37a5a3b2ad6bc210a3a7eaa1a44b64" category="list-text">デスティネーションパッケージがアカウントのBYOLライセンスと一致しない場合は、容量ベースライセンスに選択したパッケージが含まれていない可能性があります。この場合、マーケットプレイスのサブスクリプションを通じて課金されます。</block>
   <block id="29de10157e38deb8ae7d4bcf417d7bca" category="list-text">容量ベースのBYOLライセンスではなく、マーケットプレイスのサブスクリプションのみの場合、選択したパッケージが容量ベースのマーケットプレイスのサブスクリプションに含まれることを確認する必要があります。</block>
   <block id="2ff79b1cb99d3f2339a1ba9f8784b183" category="list-text">既存の容量ベースライセンスに十分な容量がない場合や、追加の容量使用量に対して課金するMarketplaceのサブスクリプションをお持ちの場合は、Marketplaceのサブスクリプションを通じて追加の容量に対して課金されます。</block>
@@ -5063,8 +5053,6 @@ HAペアの場合、BlueXPでCloud Volumes ONTAP作業環境を作成すると�
   <block id="b168f6cc04ffcf2dda599d1ba73d94c2" category="list-text">[Convert Node-based licenses to Capacity-based]*画面で、作業環境名とソースライセンスの詳細を確認します。</block>
   <block id="cd2d0eea05654ca89f4d05184b605a3f" category="list-text">既存のライセンスを変換するデスティネーションパッケージを選択してください：</block>
   <block id="ad55f0eebc5068e31eecc1bc08fae252" category="list-text">エッセンシャル。デフォルト値はです<block ref="4d55f77f062bf48891bd0f749c36a36d" prefix=" " category="inline-code"></block>。</block>
-  <block id="954b5977f70cfdad6145a9a16edd2fed" category="list-text">最適化（Azure向け）</block>
-  <block id="6a9b652c3f19ffc2d3128d21e07dc641" category="list-text">最適化（Google Cloud向け）</block>
   <block id="0913524919eac0f6e05917a28ac0868a" category="list-text">BYOLライセンスをお持ちの場合は、チェックボックスをオンにして、変換後にBlueXP  デジタルウォレットからノードベースのライセンスを削除できます。変換が完了していない場合は、このチェックボックスをオンにしても、ライセンスはデジタルウォレットから削除されません。Marketplaceサブスクリプションをお持ちの場合、このオプションは利用できません。</block>
   <block id="a42381ccb4c9b07d94af68aac09b97db" category="list-text">チェックボックスを選択して、変更の影響を理解したことを確認し、*[続行]*をクリックします。</block>
   <block id="54173685d0a19dc27fc7d74a0b1348f0" category="paragraph">新しいライセンスシリアル番号を表示し、BlueXP  デジタルウォレットの変更を確認します。</block>
@@ -5106,8 +5094,6 @@ HAペアの場合、BlueXPでCloud Volumes ONTAP作業環境を作成すると�
   <block id="ee7f44a3ee50a804694c28101731c80b" category="paragraph">詳細については<block ref="24fc9da0f00ff5ec38c6b3fffe9cc77c" category="inline-link-macro-rx"></block>、、、<block ref="1e62300500e1ad0802bb2b24113c7036" category="inline-link-macro-rx"></block>およびを<block ref="9af56c326a803ff09c4af3da1cdbc4e2" category="inline-link-rx"></block>参照してください。</block>
   <block id="9b5ca9f023a445b9980873fe985b03c2" category="paragraph">詳細については<block ref="b12f776b16b59fa8d20c1c83946e77ac" category="inline-link-macro-rx"></block>、、、<block ref="1e62300500e1ad0802bb2b24113c7036" category="inline-link-macro-rx"></block>およびを<block ref="9af56c326a803ff09c4af3da1cdbc4e2" category="inline-link-rx"></block>参照してください。</block>
   <block id="1d7416ead0f5e395552a7bea35bb1485" category="paragraph">ifdef：：aws[] endif：：aws[] ifdef：：azure[] endif：：gcp[] endif：：gcp[] endif：：aws[] endif：：azure[] endif：：azure[] endif：：gcp[] endif：：：gcp[] endif：：：gcp[]</block>
-  <block id="86402869cd4d06d1574d76517f21f563" category="paragraph">容量単位のライセンスでは、 TiB 単位の Cloud Volumes ONTAP に対して料金を支払うことができます。容量ベースのライセンスは、a_package_：Essentials、Optimized、Professionalのいずれかのパッケージ形式で提供されます。</block>
-  <block id="318162ad2b4d0154510a1c3fe1ca774b" category="paragraph">Essentials、Optimized、Professionalの各パッケージには、次の消費モデルが用意されています。</block>
   <block id="c54232d574f50dfd33c3e6ddb7fab829" category="paragraph">年間契約または長期契約の場合は、NetApp EOA日またはライセンスの有効期限前にNetApp担当者に連絡して、移行の前提条件が満たされていることを確認することを推奨します。Cloud Volumes ONTAPノードの長期契約がなく、オンデマンドの従量課金制（PAYGO）サブスクリプションに対してシステムを運用している場合は、EOS日までに変換を計画することが重要です。長期契約とPAYGOサブスクリプションの両方で、BlueXP  ライセンス変換ツールを使用してシームレスな変換を行うことができます。</block>
   <block id="4bbac1ba6da1fae98898078ee927d707" category="doc">容量ベースのライセンスに関する詳細情報</block>
   <block id="b9ed893da654234e8fac88c7419c277f" category="list-text">信頼できるストレージ管理者モデルに加えて、 Cloud Volumes ONTAP の WORM ストレージも「信頼できるクラウド管理者」モデルで暗黙的に動作します。クラウド管理者は、クラウドプロバイダからクラウドストレージを直接削除または編集することで、WORMデータを有効期限前に削除できます。</block>
@@ -5215,7 +5201,6 @@ HAペアの場合、BlueXPでCloud Volumes ONTAP作業環境を作成すると�
   <block id="2daabc6822724771970f17e8ae6a4cee" category="list-text">[* Overview * （概要 * ） ] タブを選択します。</block>
   <block id="5b37c7034b369fcc6d9b931180eef46f" category="list-text">Cloud Volumes ONTAPタイルで、* View *を選択します。</block>
   <block id="a9bcc09a5114887c29b3f365ee72e9e5" category="list-text">*使用状況の概要*：このレポートには、次の情報が含まれています。</block>
-  <block id="4600869c8040d8603fe9dbe6d56a2b2a" category="list-text">* Cloud Volumes ONTAPパッケージの使用状況*：このレポートには、最適化されたI/Oパッケージを除く各パッケージに関する次の情報が含まれています。</block>
   <block id="a65d4ec7ff2941ad2ea2bc688a6dbbb3" category="list-text">* Storage VMの使用量*：このレポートは、Cloud Volumes ONTAP システムとStorage Virtual Machine（SVM）全体で、課金された容量の内訳を表示します。この情報は、レポートでのみ使用できます。次の情報が含まれています。</block>
   <block id="b2b74732b80350970fadfac4db3ba17e" category="list-text">[概要（Overview）]*タブで、[表示（Cloud Volumes ONTAP）]タイルから*[表示（View）]*を選択します。</block>
   <block id="f4c2ce2a853a74c3742ccc54482c074e" category="list-text">[Usage report]*を選択します。</block>
@@ -5280,7 +5265,6 @@ HAペアの場合、BlueXPでCloud Volumes ONTAP作業環境を作成すると�
   <block id="0beeb4ae08209eddf791d03de9fcf654" category="paragraph"><block ref="47bbca2f135630a58718ba92e2c739ed" category="inline-link-macro-rx"></block>です。<block ref="3c369a9b68ac3984a3598ff92fe5ee61" category="inline-link-macro-rx"></block>です。</block>
   <block id="0c4ab7dbbb0c4e5098fca90084a314bb" category="inline-link">ONTAPのドキュメント：NVMe用のStorage VMの設定</block>
   <block id="86658a348e09419591c8b4b3fa13e84e" category="paragraph">ONTAPを使用したNVMeの設定の詳細については、を参照して<block ref="0585d9dca18b467d388c2056c53b835d" category="inline-link-rx"></block>ください。</block>
-  <block id="52906f1209df0124eec881e5eb61417c" category="paragraph">価格設定の詳細については、を参照してください<block ref="e895de279f6fc60faafa4c289938d19f" category="inline-link-rx"></block>。</block>
   <block id="28c15f6c1c01609f6c18ebd86b65b462" category="paragraph"><block ref="28c15f6c1c01609f6c18ebd86b65b462" category="inline-link-rx"></block></block>
   <block id="49e35df1608bc4ec8dda47be9031b77e" category="inline-link">SnapLockに関するONTAPのドキュメント</block>
   <block id="a30d432611fbd01e1559279ca4b99466" category="paragraph">Cloud Volumes ONTAP システムで WORM ストレージをアクティブにした後は、 WORM ストレージのすべての管理に ONTAP CLI を使用する必要があります。手順については、を参照して<block ref="4043230af2751621c7cbfb902f557f9b" category="inline-link-rx"></block>ください。</block>
@@ -5625,10 +5609,6 @@ HAペアの場合、BlueXPでCloud Volumes ONTAP作業環境を作成すると�
   <block id="0551862e260539a3a516b4868d9bcead" category="paragraph">Essentialsパッケージに変換されたCloud Volumes ONTAPシステムは、プロビジョニングされた容量が500GiB未満に減少しても、Freemiumに戻すことはできません。プロビジョニングされた容量が500GiB未満の他のシステムは、Freemiumサービスを使用して導入されている限り、Freemiumに残ります。</block>
   <block id="462848e89fbcd7fc117ed7c36b47f6f3" category="doc">Azure Marketplaceを通じたBlueXP  の導入環境の調査</block>
   <block id="cb52ca43108f98673f7dcc6c4bc528f6" category="paragraph">BlueXP  では、Azure Marketplaceから直接導入されたCloud Volumes ONTAPシステムを検出できるようになりました。つまり、これらのシステムを他のCloud Volumes ONTAPシステムと同様に、BlueXP  で作業環境として追加および管理できるようになりました。</block>
-  <block id="d2e69d0efb90eba181fe1aff16489eba" category="section-title">Azureテナントのデータを階層化する機能</block>
-  <block id="6a86c1cc6c3338bb337a5e643e80da8e" category="paragraph">Cloud Volumes ONTAP作業環境をあるテナントで作成し、BlueXP  Connectorを別のテナントで作成するシナリオで、Azureテナントの階層化を有効にできるようになりました。この機能を使用すると、同じコネクタを使用して複数のAzureテナントのデータを階層化できます。</block>
-  <block id="879e91c0a0fa09577c58d0330291ff06" category="inline-link">Azureテナントのデータを階層化するための要件</block>
-  <block id="215678b43321c729a07cabb64971f83c" category="paragraph"><block ref="215678b43321c729a07cabb64971f83c" category="inline-link-rx"></block></block>
   <block id="b8177b5e9e7ab48db3ab8624b3c82510" category="inline-link-macro">BlueXP  で導入されたシステムを検出する</block>
   <block id="b2c6aab3a91ad13c906bdd0aa040d62a" category="paragraph">Azure Marketplaceでの導入が完了すると、BlueXP  でこれらのシステムを検出できます。検出が完了したら、それらを作業環境として管理し、BlueXP  のすべての機能を活用できます。を参照してください <block ref="2692dc6f425f7eb6cb61608c1e797cfb" category="inline-link-macro-rx"></block>。</block>
   <block id="73c413c9be642ae1dcba807da01ed9c1" category="paragraph">ここでは、2つのオプションの機能比較を示します。Azure Marketplaceを介して導入されたスタンドアロンインスタンスの機能は、BlueXP  で検出されると変更されます。</block>
@@ -5732,8 +5712,6 @@ HAペアの場合、BlueXPでCloud Volumes ONTAP作業環境を作成すると�
   <block id="2449165dac49eeffc4339a03758e395d" category="paragraph">この例では、VHD ファイルは 10GB です。NetAppが署名した部分は緑色でマークされています (10GB - 1MB - 512 バイト)。</block>
   <block id="b844697174ebc8c2c2eaadf0ae1954ea" category="summary">Cloud Volumes ONTAP イメージ ダイジェスト ファイル ツールを使用して、エクスポートされた Google Cloud イメージ ファイルの署名を検証します。</block>
   <block id="916ff508220cd0f9544ff8e1a1538bc5" category="admonition">BlueXPで管理される製品とサービスの実際の使用量と計測値は常にGiBとTiBで計算されますが、GB / GiBとTB / TiBという用語は同じ意味で使用されます。これは、クラウド マーケットプレイスのリスト、価格見積、リストの説明、およびその他のサポート ドキュメントに反映されます。</block>
-  <block id="1718fe47f5ecc10fa0621d52cd8fcb44" category="list-text">Azure マーケットプレイスで従量課金制または年間契約として利用可能</block>
-  <block id="2def4bff61cd7bfa9062cc47d2c7968d" category="list-text">Google Cloud Marketplace で従量課金制または年間契約としてご利用いただけます</block>
   <block id="b510d73bf4b9be5f22afae8b4d44a0c8" category="summary">Azure イメージ ダイジェスト ファイルは、NetApp サポート サイトからダウンロードできます。</block>
   <block id="6638f6b622b4f4b4d37c4f1a1fe019bb" category="doc">Cloud Volumes ONTAP の Azure イメージ ファイルをダウンロードします</block>
   <block id="8092c5aca0172beb3a5b74f7c0b1d012" category="paragraph">Azureイメージファイルは以下からダウンロードできます。 <block ref="3725c06f412bedb14ffd610de312875d" category="inline-link-rx"></block> 。</block>
@@ -5899,4 +5877,24 @@ HAペアの場合、BlueXPでCloud Volumes ONTAP作業環境を作成すると�
   <block id="bbbc9b55f08bfe80f146b5207bdb7728" category="paragraph">NetAppは、 BlueXPとそのクラウドサービスに対して、様々なサポートを提供しています。ナレッジベース（KB）記事やコミュニティフォーラムなど、充実した無料のセルフサポートオプションを24時間365日ご利用いただけます。サポート登録には、Webチケットによるリモートテクニカルサポートも含まれます。</block>
   <block id="759d32287efdf88cd8ac71dccc0ecf8d" category="inline-image-macro">アカウントのシリアル番号、緑色のチェックボックス、および「サポートに登録済み」というテキストが表示されているスクリーンショット。</block>
   <block id="4c441b388bebcddf8c08fb782095b864" category="paragraph"><block ref="4c441b388bebcddf8c08fb782095b864" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="9def883103b7b964dcbb0993e3f8a065" category="doc">最適化ライセンスの提供終了</block>
+  <block id="cf4dd05cf065c9ae01bc836c5033bb63" category="paragraph">2025 年 8 月 11 日以降、 Cloud Volumes ONTAP Optimized ライセンスは廃止され、Azure および Google Cloud マーケットプレイスの従量課金制 (PAYGO) サブスクリプションで購入または更新できなくなります。  Optimized ライセンスの年間契約を既に締結している場合は、契約終了までライセンスを引き続きご利用いただけます。  Optimized ライセンスの有効期限が切れた場合は、 Cloud Volumes ONTAP Essentials または Professional ライセンスを選択できます。</block>
+  <block id="4e106c84c3dd2cbdc5b24d055fe09562" category="paragraph">ただし、最適化されたライセンスを追加または更新する機能は、API を通じて利用できるようになります。</block>
+  <block id="2b8e43c95c1d15bc0824064c3dc0f993" category="paragraph">ライセンスパッケージの詳細については、以下を参照してください。<block ref="4b2776d787a70224c2441f63d3888380" category="inline-link-rx"></block> 。</block>
+  <block id="ed1f600d01a229b43b3196dd2f2e48ca" category="inline-link">容量ベースのライセンスを管理する</block>
+  <block id="1d4a9a37e700957e9d79664f032cf5ec" category="paragraph">別の充電方法への切り替えについては、<block ref="eeeecd1116eaf4db26e064552c04366d" category="inline-link-rx"></block> 。</block>
+  <block id="bde173c4d202e7128f1f4d5ccf94c5d3" category="paragraph">価格の詳細については、<block ref="e895de279f6fc60faafa4c289938d19f" category="inline-link-rx"></block> 。</block>
+  <block id="c8801b0c6482a893a4d0f8e56ed92a42" category="paragraph">Essentials パッケージの場合、4 TiB の最小容量料金は、セカンダリ (データ保護) ボリュームのみを含むストレージ VM には適用されません。たとえば、1 TiB のセカンダリ データを持つストレージ VM がある場合、その 1 TiB のデータに対してのみ課金されます。プロフェッショナル パッケージ タイプでは、ボリューム タイプに関係なく、4 TiB の最小容量課金が適用されます。</block>
+  <block id="c6a7496d4215672f20a5c16d5d50154c" category="paragraph">2024 年 11 月 11 日以降、ノードベースのライセンスの限定的な提供は終了しました。ノードベースのライセンスのサポートは、2024 年 12 月 31 日に終了します。</block>
+  <block id="64561f2ec1b6edafb724a07913dbf5b1" category="section-title">さまざまなハイパースカラーの価格設定</block>
+  <block id="02bba40b2a75e6e8a972bfca5857188e" category="paragraph">価格の詳細については、<block ref="e895de279f6fc60faafa4c289938d19f" category="inline-link-rx"></block> 。</block>
+  <block id="26592e143987ab40aba1ac379c886b8d" category="paragraph">特定のハイパースカラーのプライベートオファーに関する情報については、下記までお問い合わせください。</block>
+  <block id="02aa25b6391acbf0686328f16ae332fb" category="list-text">AWS - awspo@netapp.com</block>
+  <block id="85c059aa21da31379ed4d7db9071d482" category="list-text">Azure - azurepo@netapp.com</block>
+  <block id="cd1e3346ba31e1b5b50a5b69c256dee8" category="list-text">Google Cloud - gcppo@netapp.com</block>
+  <block id="518654c5190961c2a1fa6b07f225daff" category="admonition">作業環境を削除しても、 BlueXP backup and recoveryによって管理されるバックアップやBlueXP classificationのインスタンスなどの他のリソースは削除されません。手動で削除する必要があります。そうしないと、これらのリソースに対して引き続き料金が発生します。</block>
+  <block id="3b62a4d8285fe12b7beba942744aeb3a" category="admonition">BlueXP backup and recoveryは、 Cloud Volumes ONTAP Professional ライセンスに対してのみ無料です。この無料特典は削除された環境には適用されません。  Cloud Volumes ONTAP環境のバックアップ コピーがBlueXP backup and recoveryインスタンスに保持されている場合、バックアップ コピーは削除されるまで課金されます。</block>
+  <block id="219fa750a13ad456df1d25524d9f6ad9" category="list-text">* Cloud Volumes ONTAPパッケージの使用状況*: このレポートには、各パッケージに関する次の情報が含まれます。</block>
+  <block id="cfba7e7177c8f36e5c073175ecdcec93" category="paragraph">容量ベースのライセンスでは、容量 1 TiB ごとにCloud Volumes ONTAPの料金を支払うことができます。容量ベースのライセンスは、Essentials パッケージまたは Professional パッケージというパッケージ形式で提供されます。</block>
+  <block id="b9d888f58b09c4007db0247286e392b5" category="section-title">2025年8月11日</block>
 </blocks>

@@ -18,10 +18,10 @@ summary: クラウドプロバイダのコンソールからではなく、Cloud
 
 作業環境を削除すると'BlueXPはCloud Volumes ONTAP インスタンスを終了し'ディスクとスナップショットを削除します
 
-BlueXPのバックアップとリカバリのバックアップやBlueXP分類のインスタンスなど、他のサービスで管理されるリソースは、作業環境を削除しても削除されません。手動で削除する必要があります。そうしないと、これらのリソースの料金が引き続き請求されます。
 
+NOTE: 作業環境を削除しても、 BlueXP backup and recoveryによって管理されるバックアップやBlueXP classificationのインスタンスなどの他のリソースは削除されません。手動で削除する必要があります。そうしないと、これらのリソースに対して引き続き料金が発生します。
 
-NOTE: クラウドプロバイダにCloud Volumes ONTAP を導入すると、BlueXPはインスタンスでの終端保護を有効にします。このオプションを使用すると、偶発的な終了を防止できます
+クラウドプロバイダにCloud Volumes ONTAP を導入すると、BlueXPはインスタンスでの終端保護を有効にします。このオプションを使用すると、偶発的な終了を防止できます
 
 .手順
 . 作業環境でBlueXPのバックアップとリカバリを有効にした場合は、バックアップデータが引き続き必要かどうかを確認し、実行します https://docs.netapp.com/us-en/bluexp-backup-recovery/task-manage-backups-ontap.html#deleting-backups["必要に応じて、バックアップを削除します"^]。
@@ -46,3 +46,6 @@ image:screenshot_settings_delete.png["削除アクションを含む作業環境
 
 
 
+
+
+NOTE: BlueXP backup and recoveryは、 Cloud Volumes ONTAP Professional ライセンスに対してのみ無料です。この無料特典は削除された環境には適用されません。  Cloud Volumes ONTAP環境のバックアップ コピーがBlueXP backup and recoveryインスタンスに保持されている場合、バックアップ コピーは削除されるまで課金されます。

@@ -31,8 +31,6 @@ NOTE: NetAppはBYOLライセンスの購入、延長、更新を制限してい�
 
 ifdef::azure[]
 
-+ BYOLではOptimizedパッケージを使用できないことに注意してください。
-
 endif::azure[]
 
 * * PAYGO *：従量課金制（PAYGO）サブスクリプションは、クラウドプロバイダのマーケットプレイスから提供される時間単位のサブスクリプションです。
@@ -68,7 +66,7 @@ link:task-manage-capacity-licenses.html["充電方法を変更する方法につ
 
 == 価格設定とサポートされる構成
 
-価格設定の詳細については、を参照してください https://bluexp.netapp.com/pricing/["NetApp BlueXPのWebサイト"^]。
+価格の詳細については、 https://bluexp.netapp.com/pricing/["NetApp BlueXPのWebサイト"^] 。
 
 容量ベースのライセンスパッケージは Cloud Volumes ONTAP 9.7 以降で利用できます。
 
@@ -146,7 +144,7 @@ https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/index.html["AWS、Azu
 
 まだボリュームをプロビジョニングしていない場合は、最小料金は適用されません。
 
-Essentialsパッケージの場合、4TiBの最小容量料金は、セカンダリ（データ保護）ボリュームのみを含むStorage VMには適用されません。たとえば、1TiBのセカンダリデータが格納されたStorage VMがある場合、その1TiBのデータに対してのみ課金されます。Essentials以外のパッケージタイプ（OptimizedおよびProfessional）では、ボリュームタイプに関係なく、最小容量4TiBが適用されます。
+Essentials パッケージの場合、4 TiB の最小容量料金は、セカンダリ (データ保護) ボリュームのみを含むストレージ VM には適用されません。たとえば、1 TiB のセカンダリ データを持つストレージ VM がある場合、その 1 TiB のデータに対してのみ課金されます。プロフェッショナル パッケージ タイプでは、ボリューム タイプに関係なく、4 TiB の最小容量課金が適用されます。
 
 
 
