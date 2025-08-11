@@ -8,7 +8,7 @@ summary: サードパーティのキー管理サービスにGoogleのキー管�
 :hardbreaks:
 :allow-uri-read: 
 :icons: font
-:imagesdir: ../media/
+:imagesdir: ./media/
 
 
 [role="lead"]

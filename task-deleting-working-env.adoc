@@ -39,10 +39,7 @@ https://docs.netapp.com/us-en/bluexp-classification/concept-cloud-compliance.htm
 +
 image:screenshot_settings_delete.png["削除アクションを含む作業環境で使用可能なメニューを示すスクリーンショット。"]
 
-.. [Delete Working Environment]ウィンドウで、作業環境の名前を入力し、*[Delete]*をクリックします。
-+
-作業環境を削除するには、最大 5 分かかります。
-
+.. 「作業環境の削除」ウィンドウで、作業環境の名前を入力し、「削除」をクリックします。作業環境を削除するには最大 5 分かかる場合があります。
 
 
 

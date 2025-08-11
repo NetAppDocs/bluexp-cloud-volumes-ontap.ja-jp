@@ -296,7 +296,6 @@
   <block id="57cbefe39109ab51b31e818f9ce6d9c4" category="list-text">Cloud Volumes ONTAP 作業環境を削除します。</block>
   <block id="deacec910b77251dad4f11490aa93221" category="list-text">キャンバスページで、削除する Cloud Volumes ONTAP 作業環境の名前をダブルクリックします。</block>
   <block id="4a9ee4aa88ebf38223ea447fe291d222" category="inline-image-macro">削除アクションを含む作業環境で使用可能なメニューを示すスクリーンショット。</block>
-  <block id="7d73be13421466d5cf5d832329f74c79" category="paragraph">作業環境を削除するには、最大 5 分かかります。</block>
   <block id="bfd15aa26ba0ced782240c4a8b7e517e" category="doc">ストレージ管理</block>
   <block id="6ba6ceafe8bda6d338b883b2b39f45f1" category="section-title">ストレージのプロビジョニング</block>
   <block id="4b5003aeb61c493667398318fcd5d2c9" category="section-title">プロビジョニングの簡素化</block>
@@ -2042,7 +2041,6 @@
   <block id="06c86f2b2f40c7b5ae916f820dace6f3" category="inline-link">Cloud Volumes ONTAP のリリースノートに移動します</block>
   <block id="eaae0996b48caf454deb2608523a1af2" category="paragraph"><block ref="a3830f1e68e521753c115aa90de96c67" category="inline-link-rx"></block>。</block>
   <block id="cd46020b2ca09f66f5c79bd35fe2da2e" category="paragraph"><block ref="4107f790de2a45bc9a00a9b75db49bc5" category="inline-link-rx"></block>。</block>
-  <block id="17f0fae3c5e44f9a095562194f423343" category="paragraph"><block ref="17f0fae3c5e44f9a095562194f423343" category="inline-link-rx"></block></block>
   <block id="82defe4f45724f0ce17f1a11c6980420" category="paragraph"><block ref="82defe4f45724f0ce17f1a11c6980420" category="inline-link-rx"></block></block>
   <block id="96e9eb313ea17571fd2fc456a82b6862" category="list-text"><block ref="96e9eb313ea17571fd2fc456a82b6862" category="inline-link-rx"></block></block>
   <block id="ff9c48728746d281c6db8cc1fcc3bbc0" category="list-text"><block ref="ff9c48728746d281c6db8cc1fcc3bbc0" category="inline-link-rx"></block></block>
@@ -3586,7 +3584,6 @@
   <block id="78cffa6560689ac98432ba58e17e78ff" category="inline-image-macro">ボリュームの階層化ポリシーの変更に使用できるオプションを示すスクリーンショット。</block>
   <block id="e0e0725f5ef956857b33c008a39af157" category="paragraph"><block ref="e0e0725f5ef956857b33c008a39af157" category="inline-image-macro-rx" type="image"></block></block>
   <block id="ec8e04c7758ae04f1375383b387929a1" category="paragraph"><block ref="ec8e04c7758ae04f1375383b387929a1" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="e46b959133eadbb0d00ac0a308843f30" category="list-text">[Delete Working Environment]ウィンドウで、作業環境の名前を入力し、*[Delete]*をクリックします。</block>
   <block id="c4bd89564dafc82c9b2027b549fa45f2" category="list-text">作業環境で、*[ボリューム]*タブをクリックします。</block>
   <block id="31fe088c17d984a78f5027d2b8428e18" category="list-text">[Volumes]タブで、目的のボリュームタイトルに移動し、*[Manage volume]*をクリックして[Manage Volumes]右側パネルにアクセスします。</block>
   <block id="2142690a2d1ae8bd820983b7911914d5" category="list-text">[Target IQN]*をクリックします。</block>
@@ -5413,7 +5410,6 @@ HAペアの場合、BlueXPでCloud Volumes ONTAP作業環境を作成すると�
   <block id="cded3209819889817786a4170eb0e49c" category="inline-link">Cloud Volumes ONTAP向けNetAppランサムウェア対策ソリューションを有効にする</block>
   <block id="d2675df83ff2fbafe199fb06a1fd5d56" category="list-text"><block ref="d2675df83ff2fbafe199fb06a1fd5d56" category="inline-link-rx"></block></block>
   <block id="c2e10e9222f5db93eded2cefa02c0ef5" category="inline-link">Cloud Volumes ONTAPノードベースライセンスを容量ベースライセンスに変換する</block>
-  <block id="0fc6c6e7c7c886fe493ee21e8e7be67d" category="paragraph"><block ref="677ce77d69762bd9f63d8a2760e6a0c4" category="inline-link-rx"></block> <block ref="b3c563b157608d2aec77c4e8d2c32e61" category="inline-link-rx"></block></block>
   <block id="322a339b221056f32120ffd18077d44d" category="doc">AzureのAPIを使用してStorage VMを自動作成</block>
   <block id="aa1c2167957b1092da7e43e77867748c" category="paragraph">BlueXP  APIを使用して、AzureでCloud Volumes ONTAP用に追加データを提供するStorage VMを作成、名前変更、削除できるようになりました。Storage VMを管理目的で使用する必要がある場合は、APIを使用すると、必要なネットワークインターフェイス、LIF、管理LIFの設定など、Storage VMの作成プロセスが自動化されます。</block>
   <block id="4a688a36b1b8761ed6587867f87a2cc3" category="inline-link">AzureのCloud Volumes ONTAP用のデータ提供用Storage VMを管理します。</block>
@@ -5879,7 +5875,6 @@ HAペアの場合、BlueXPでCloud Volumes ONTAP作業環境を作成すると�
   <block id="4c441b388bebcddf8c08fb782095b864" category="paragraph"><block ref="4c441b388bebcddf8c08fb782095b864" category="inline-image-macro-rx" type="image"></block></block>
   <block id="9def883103b7b964dcbb0993e3f8a065" category="doc">最適化ライセンスの提供終了</block>
   <block id="cf4dd05cf065c9ae01bc836c5033bb63" category="paragraph">2025 年 8 月 11 日以降、 Cloud Volumes ONTAP Optimized ライセンスは廃止され、Azure および Google Cloud マーケットプレイスの従量課金制 (PAYGO) サブスクリプションで購入または更新できなくなります。  Optimized ライセンスの年間契約を既に締結している場合は、契約終了までライセンスを引き続きご利用いただけます。  Optimized ライセンスの有効期限が切れた場合は、 Cloud Volumes ONTAP Essentials または Professional ライセンスを選択できます。</block>
-  <block id="4e106c84c3dd2cbdc5b24d055fe09562" category="paragraph">ただし、最適化されたライセンスを追加または更新する機能は、API を通じて利用できるようになります。</block>
   <block id="2b8e43c95c1d15bc0824064c3dc0f993" category="paragraph">ライセンスパッケージの詳細については、以下を参照してください。<block ref="4b2776d787a70224c2441f63d3888380" category="inline-link-rx"></block> 。</block>
   <block id="ed1f600d01a229b43b3196dd2f2e48ca" category="inline-link">容量ベースのライセンスを管理する</block>
   <block id="1d4a9a37e700957e9d79664f032cf5ec" category="paragraph">別の充電方法への切り替えについては、<block ref="eeeecd1116eaf4db26e064552c04366d" category="inline-link-rx"></block> 。</block>
@@ -5897,4 +5892,9 @@ HAペアの場合、BlueXPでCloud Volumes ONTAP作業環境を作成すると�
   <block id="219fa750a13ad456df1d25524d9f6ad9" category="list-text">* Cloud Volumes ONTAPパッケージの使用状況*: このレポートには、各パッケージに関する次の情報が含まれます。</block>
   <block id="cfba7e7177c8f36e5c073175ecdcec93" category="paragraph">容量ベースのライセンスでは、容量 1 TiB ごとにCloud Volumes ONTAPの料金を支払うことができます。容量ベースのライセンスは、Essentials パッケージまたは Professional パッケージというパッケージ形式で提供されます。</block>
   <block id="b9d888f58b09c4007db0247286e392b5" category="section-title">2025年8月11日</block>
+  <block id="d7541fdf3e0094adec62a7042b5512d9" category="inline-link">Cloud Volumes ONTAPノードベースのライセンスを容量ベースのライセンスに変換する</block>
+  <block id="249c33a7057b26f2c17f912ee1675174" category="paragraph"><block ref="677ce77d69762bd9f63d8a2760e6a0c4" category="inline-link-rx"></block> <block ref="c718c65e9665241afe238019ab334376" category="inline-link-rx"></block></block>
+  <block id="09027718866a8a3a2edb0bb0eb53c926" category="paragraph">ただし、最適化されたライセンスを追加または更新する機能は、API を通じて利用できるようになります。</block>
+  <block id="064c8585f26a6a9766e55da306b39425" category="paragraph"><block ref="064c8585f26a6a9766e55da306b39425" category="inline-link-rx"></block></block>
+  <block id="42f21a40b3b95c1fc1fe699b458d9f4f" category="list-text">「作業環境の削除」ウィンドウで、作業環境の名前を入力し、「削除」をクリックします。作業環境を削除するには最大 5 分かかる場合があります。</block>
 </blocks>

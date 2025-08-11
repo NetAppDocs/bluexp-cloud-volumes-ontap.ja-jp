@@ -8,7 +8,7 @@ summary: AWSのキー管理サービスをサードパーティのキー管理�
 :hardbreaks:
 :allow-uri-read: 
 :icons: font
-:imagesdir: ../media/
+:imagesdir: ./media/
 
 
 [role="lead"]
