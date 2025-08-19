@@ -69,7 +69,7 @@ BlueXPがAzureにCloud Volumes ONTAP を導入すると、リソースグルー�
 
 VNet へのプライベート VPN 接続または ExpressRoute 接続を使用する場合、クライアントが Cloud Volumes ONTAP と同じ VNet 内、ピア VNet 内、またはオンプレミスネットワーク内にある場合、クライアントアクセスはプライベートリンクを経由します。
 
-次の例は、同じ VNet 内およびプライベート VPN 接続または ExpressRoute 接続が確立されたオンプレミスネットワークから、プライベートリンクを介したクライアントアクセスを示しています。
+以下は、同じ VNet 内およびプライベート VPN または ExpressRoute 接続を持つオンプレミス ネットワークからのプライベート リンク経由のクライアント アクセスを示す例です。
 
 image:diagram_azure_private_link.png["この概念図は、 Cloud Volumes ONTAP へのデータアクセスと、プライベートエンドポイントを介したストレージアカウントへのプライベートリンクを示しています。"]
 

@@ -545,7 +545,6 @@
   <block id="0e3cb01898d99d0091e2a6f5a7572390" category="paragraph">このタイプのマシンで既存のシステムを実行している場合は、引き続き使用できますが、 n2 標準 -4 マシンタイプに切り替えることをお勧めします。</block>
   <block id="346b156b62b438feb8aca3c528a7173c" category="inline-link">GCP で Cloud Volumes ONTAP のサポートされている構成を表示します</block>
   <block id="29edc853696ed1638805579b54eb4028" category="section-title">AWS での新しいプロフェッショナルパッケージ</block>
-  <block id="e7ef0d5bcd1ca0f8f5763e59e8a0fd1b" category="paragraph">新しいプロフェッショナルパッケージでは、 AWS Marketplace で毎年契約を締結し、 Cloud Volumes ONTAP と Cloud Backup Service をバンドルできます。支払いは TiB あたりです。このサブスクリプションでは、オンプレミスのデータをバックアップすることはできません。</block>
   <block id="1827d61b158ce26d89c3b3ae6638d1a7" category="paragraph">この支払いオプションを選択すると、 EBS ディスクを介して Cloud Volumes ONTAP システムあたり最大 2PiB をプロビジョニングし、 S3 オブジェクトストレージ（シングルノードまたは HA ）に階層化することができます。</block>
   <block id="2351127acb653fd60dafc73c8efcb79d" category="inline-link">AWS Marketplace のページ</block>
   <block id="d4fcabbc33266b3ab9bb15073b182bd8" category="paragraph">にアクセスします<block ref="85c21eb306ec4bcbda7252ca6117fc5c" category="inline-link-rx"></block> 価格の詳細を表示するには、を参照してください<block ref="0968fd3305fe992c33f9c307fe831560" category="inline-link-rx"></block> このライセンスオプションの詳細については、を参照してください。</block>
@@ -699,7 +698,6 @@
   <block id="ce501a2e9d8b238043619a3db4abc141" category="list-text">選択したルーティングテーブルのリストを変更し、 * 保存 * をクリックします。</block>
   <block id="573514d5de621ecfe56c91e7c665d73d" category="inline-link">Azure リージョンペア</block>
   <block id="b2de829903c040e99b02d3d155ca0528" category="paragraph">VNet へのプライベート VPN 接続または ExpressRoute 接続を使用する場合、クライアントが Cloud Volumes ONTAP と同じ VNet 内、ピア VNet 内、またはオンプレミスネットワーク内にある場合、クライアントアクセスはプライベートリンクを経由します。</block>
-  <block id="6b29a9cbfcf35db30ad6d2c78c52db5e" category="paragraph">次の例は、同じ VNet 内およびプライベート VPN 接続または ExpressRoute 接続が確立されたオンプレミスネットワークから、プライベートリンクを介したクライアントアクセスを示しています。</block>
   <block id="52fbf2576ac1dc00b418ef95b320599d" category="inline-image-macro">この概念図は、 Cloud Volumes ONTAP へのデータアクセスと、プライベートエンドポイントを介したストレージアカウントへのプライベートリンクを示しています。</block>
   <block id="9d1991f365ae3121bda2428edb322a71" category="paragraph"><block ref="9d1991f365ae3121bda2428edb322a71" category="inline-image-macro-rx" type="image"></block></block>
   <block id="c282550cf66f3e7abadfcda591f3b41f" category="inline-link">Azure プライベート DNS</block>
@@ -861,7 +859,6 @@
   <block id="a97184b57d4c599265a6c857744616a6" category="paragraph"><block ref="a97184b57d4c599265a6c857744616a6" category="inline-image-macro-rx" type="image"></block></block>
   <block id="24c0cd8b26bb96fcfde0ec7aa356e67c" category="paragraph">障害が発生した場合、外部 VPC アクセスに使用される NAS データ IP はノード間で移行できません。ノードがオフラインになった場合は、もう一方のノードの IP アドレスを使用して、 VPC 外のクライアントにボリュームを手動で再マウントする必要があります。</block>
   <block id="59cd6fed99392db807d679317017b518" category="paragraph">障害の発生したノードがオンラインに戻ったら、元の IP アドレスを使用してクライアントをボリュームに再マウントします。この手順は、 2 つの HA ノード間で不要なデータが転送されないようにするために必要です。これは、パフォーマンスと安定性に大きな影響を与える可能性があります。</block>
-  <block id="31ac8d1ac9d098205b95d495a0a3f93a" category="inline-link">AWS 分散配置グループ</block>
   <block id="7f87e6839b7919bf607ad546427cfbe1" category="section-title">データアクセス</block>
   <block id="c60d8180a8553c026163df72ec4bf40d" category="paragraph">この構成は単一の AZ 内にあるため、フローティング IP アドレスは必要ありません。同じ IP アドレスを使用して、 vPC 内からのデータアクセスと、 vPC 外部からのデータアクセスを行うことができます。</block>
   <block id="db164e8195792d0ba62a45d2c6b14f10" category="paragraph">次の図は、単一の AZ での HA 構成を示しています。データには、 vPC 内および vPC 外部からアクセスできます。</block>
@@ -1679,8 +1676,6 @@
   <block id="1f0b82560627b660c6c6958a1df834b8" category="section-title">サポートされている構成</block>
   <block id="4e4c431843fe55f93c074808800bf7d0" category="paragraph">容量ベースのライセンスパッケージは Cloud Volumes ONTAP 9.7 以降で利用できます。</block>
   <block id="37040d43404231d8205705e4353af733" category="section-title">容量制限</block>
-  <block id="30603aec25d6436b9b4c18f5e88da521" category="paragraph">このライセンスモデルでは、個々の Cloud Volumes ONTAP システムでディスクとオブジェクトストレージへの階層化によって、最大 2 PiB の容量をサポートします。</block>
-  <block id="28d17a1ec8598824eb0c46f1ef2668af" category="paragraph">ライセンス自体にに関しては、最大容量制限はありません。</block>
   <block id="25827e83a178b9b140976a356e0ea48a" category="section-title">充電に関するメモ</block>
   <block id="55675f6a5328a3c661aa2daa971f7c76" category="list-text">HA ペアの場合、ノードのプロビジョニング済み容量に対してのみ料金が発生します。パートナーノードに同期ミラーリングされるデータには料金は発生しません。</block>
   <block id="e61eacf9a2b260a46a8935478c8a063d" category="list-text">FlexClone ボリュームで使用される容量に対する料金は発生しません。</block>
@@ -1688,7 +1683,6 @@
   <block id="07e1d66babe77070cc76a4e637c9f26d" category="section-title">開始方法</block>
   <block id="e8e4b0657c553a7e676cdc5f933acb44" category="inline-link">ライセンスの取得については、ネットアップの営業部門にお問い合わせください</block>
   <block id="69c3857459c8cf827b42c61c1b02fdd2" category="paragraph">成長に合わせて拡張できるサブスクリプションベースのサービス。運用コストの消費モデルを希望するお客様に、設備投資やリースを先行するお客様にシームレスなハイブリッドクラウドエクスペリエンスを提供します。</block>
-  <block id="aad2b08c0103cffcbb5efae0a56ee747" category="paragraph">個々の Cloud Volumes ONTAP システムでは、ディスクとオブジェクトストレージへの階層化によって、最大 2 PiB の容量をサポートしています。</block>
   <block id="b2e75bbfb9933bc21b7f875e8676641d" category="inline-link">ネットアップにお問い合わせください</block>
   <block id="a2f6a3e98ea1849ed1ab07d821bf6a18" category="section-title">ノードベースのライセンス</block>
   <block id="170d227d215fb560bb4c8ad4e345183a" category="section-title">システムの最大数</block>
@@ -1845,13 +1839,10 @@
   <block id="e0b41f490805e1c9225e568015dbb110" category="list-text">読み取りが多いアプリケーションがある場合は、十分な RAM が搭載されたシステムを選択します。</block>
   <block id="c14377eab733f3bf25cbcceb23f9d56e" category="inline-link">AWS ドキュメント：「 Amazon EC2 Instance Types</block>
   <block id="580354b1f24fa8ef966c9b03534fbb27" category="list-text"><block ref="580354b1f24fa8ef966c9b03534fbb27" category="inline-link-rx"></block></block>
-  <block id="95045aac3f1a0a529db1b12967a0963f" category="inline-link">AWS のドキュメント：「 Amazon EBS – Optimized instances</block>
-  <block id="0e6ebd054c797aebeb43572f74eb0011" category="list-text"><block ref="0e6ebd054c797aebeb43572f74eb0011" category="inline-link-rx"></block></block>
   <block id="d757cc41a0a4e6e6b194e80049cbf2a0" category="list-text">EBS ディスクタイプ</block>
   <block id="0a3f1d7ca2daafbb02df2bbde2bafc6c" category="inline-link">AWS ドキュメント：「 EBS Volume Types</block>
   <block id="581bdd28d4bb550c63e17b66214a79cd" category="list-text">EBS ディスクタイプの違いは次のとおりです。EBS ディスクのユースケースの詳細については、を参照してください<block ref="5f00b7f6405ad1bb7d391aa3c3ef6190" category="inline-link-rx"></block>。</block>
   <block id="c0fab06b29c5ec6deb5e6576db484b1d" category="list-text">_General Purpose SSD （ GP3 ） _ ディスクは、幅広いワークロードに対してコストとパフォーマンスのバランスを取る最も低コストの SSD です。パフォーマンスは、 IOPS とスループットを基準に定義されます。GP3 ディスクは Cloud Volumes ONTAP 9.7 以降でサポートされています。</block>
-  <block id="132b864ab2e72e06afdebdb7f860125d" category="inline-link">GP3 ディスクとそのパフォーマンスについては、こちらをご覧ください</block>
   <block id="b695a27bd7c4adeb91651c42c9966f81" category="list-text">_ 汎用 SSD （ gp2 ） _ ディスクは、幅広いワークロードに対してコストとパフォーマンスのバランスを取ります。パフォーマンスは IOPS の観点から定義されます。</block>
   <block id="95d8da7b19238cf835ee8f03b98b04ab" category="list-text">_Provisioned IOPS SSD （ io1 ） _disks は、コストが高くても最高のパフォーマンスが求められる重要なアプリケーション用です。</block>
   <block id="42774f56e2ae4256cc8d123f6d4fe958" category="list-text">_Throughput Optimized HDD （ st1 ） _disks は、高速で安定したスループットを必要とする、アクセス頻度の高いワークロード用です。価格は低くなります。</block>
@@ -2876,7 +2867,6 @@
   <block id="9bbd37e84837176d57b75e5c110f2b2c" category="paragraph">BlueXPでバケットを作成すると、次のデフォルト設定が使用されます。</block>
   <block id="a537e075b6170e0feb1554813847b4da" category="paragraph">BlueXPでは、ボリュームを作成または変更するときに、次のボリューム階層化ポリシーから選択できます。</block>
   <block id="6d72a23e6da58612ee3673aacb0babba" category="paragraph">ボリュームをレプリケートする場合、データをオブジェクトストレージに階層化するかどうかを選択できます。その場合は、データ保護ボリュームに*Backup*ポリシーが適用されます。Cloud Volumes ONTAP 9.6 以降では、「 * all * 」階層化ポリシーがバックアップポリシーに置き換えられます。</block>
-  <block id="a0b61f3f2e5543edaf18db4fd7dcc835" category="paragraph">GP3ディスクを選択すると、選択したディスクサイズに基づいて、gp2ディスクに相当するパフォーマンスを提供するデフォルトのIOPSとスループットの値がBlueXPによって設定されます。この値を増やすと、コストを高くしてもパフォーマンスを向上させることができますが、パフォーマンスが低下する可能性があるため、値を小さくすることはできません。つまり、デフォルト値をそのまま使用するか、値を大きくします。低くしないでください。<block ref="924ae8d46e82b0d529ccc08c02c469ce" category="inline-link-rx"></block>。</block>
   <block id="7577758eae44c278e88d86f7c865246d" category="inline-link-macro">システムの容量をBlueXPが管理できるようにします</block>
   <block id="a1edc673be7ef5921ecf741e6c943e02" category="list-text">をサポートしない構成を選択した場合 <block ref="7e60e4380cdf7fba407eb852e8889870" category="inline-link-macro-rx"></block>を選択した場合、Cloud Volumes ONTAP システムの起動時に初期ディスクサイズを選択する必要があります。その後、次の操作を実行できます <block ref="4f620eb3af9c34a5c0738dd7675dd9a9" category="inline-link-macro-rx"></block>必要に応じて <block ref="aeb7edffc7af212c1371b19a0140cdff" category="inline-link-macro-rx"></block>、次の点に注意してください。</block>
   <block id="517adf13c213fe430c918b57256c8ab3" category="paragraph">ユーザデータ用のストレージに加えて、BlueXPはCloud Volumes ONTAP システムデータ（ブートデータ、ルートデータ、コアデータ、NVRAM）用のクラウドストレージも購入します。計画を立てる場合は、 Cloud Volumes ONTAP を導入する前にこれらの詳細を確認すると役立つ場合があります。</block>
@@ -2919,7 +2909,6 @@
   <block id="3ef69cb41da937aa60ab5fbab53eb42a" category="list-text">Cloud Volumes ONTAP をアップグレードすると、必要に応じてメディエーターインスタンスも更新されます。</block>
   <block id="5d345d14f8662bfe45d8562fba90c487" category="list-text">BlueXPからCloud Volumes ONTAP HAペアを作成すると、メディエーターインスタンスのキーペアを指定するように求められます。このキーペアは、を使用したSSHアクセスに使用できます<block ref="21232f297a57a5a743894a0e4a801fc3" prefix=" " category="inline-code"></block> ユーザ：</block>
   <block id="bf20805083b34c4479e326ea7f16966f" category="paragraph">BlueXPから正しいIPアドレスを簡単に特定するには、ボリュームを選択して、*コマンドのマウント*をクリックします。</block>
-  <block id="bf75afe84fa4d8e8637d67f46da78447" category="admonition">BlueXPはを作成します<block ref="69dad99e4ae4952ff167137be3a42452" category="inline-link-rx"></block> をクリックすると、その配置グループ内の 2 つの HA ノードが起動します。配置グループは、インスタンスを別々の基盤ハードウェアに分散することで、同時障害のリスクを軽減します。この機能により、ディスク障害ではなく、コンピューティングの観点から冗長性が向上します。</block>
   <block id="c884e72132fe774e964d45203b2dda4d" category="paragraph">新しいボリュームの作成時に追加のディスクが必要な場合、BlueXPは両方のノードに同じ数のディスクを割り当て、ミラーされたアグリゲートを作成し、新しいボリュームを作成します。たとえば、ボリュームに2つのディスクが必要な場合、BlueXPはノードごとに2つのディスクを割り当て、合計4つのディスクを割り当てます。</block>
   <block id="6b014a111978e615d8d143759130afe1" category="admonition">アクティブ/アクティブ構成は、ストレージシステムビューでBlueXPを使用している場合にのみセットアップできます。</block>
   <block id="da6a1a281804977deca79ae615d580d8" category="paragraph">作業環境を作成した直後に、指定されたVPCでテストインスタンスを起動して接続を検証します。成功すると、すぐにインスタンスが終了し、Cloud Volumes ONTAP システムの導入が開始されます。BlueXPが接続を検証できない場合は'作業環境の作成に失敗しますテストインスタンスは、 t2.nano （デフォルトの vPC テナンシーの場合）または m3.medium （専用の vPC テナンシーの場合）のいずれかです。</block>
@@ -4475,11 +4464,6 @@ HAペアの場合、BlueXPでCloud Volumes ONTAP作業環境を作成すると�
   <block id="21374a20e08d3e0c8ca328133d8fe5f4" category="list-text">BlueXPコンソールの右上にある省略記号アイコンをクリックし、*[ワークスペースから削除]*を選択します。</block>
   <block id="b724364be6320cfd44126523f60ef584" category="inline-link">Marketplace製品のプログラムによる導入</block>
   <block id="64d1ac557c8992bc5d65b98a95e0b497" category="section-title">サポートされるローカルゾーンの選択</block>
-  <block id="b1968c5681446da9bdcedadbf7a34131" category="inline-link-macro">ローカルゾーンの完全なリストを表示する</block>
-  <block id="a455e3549f40e60e4a9c2e8c6580a6a2" category="paragraph"><block ref="27bdb425ba8206d688a379332282fbb4" category="inline-link-macro-rx"></block>。
-ローカルゾーンでリソースを作成および管理するには、ローカルゾーンを有効にする必要があります。</block>
-  <block id="7d273ac4682ff6458339567063ef099c" category="inline-link-macro">ローカルゾーンを有効にする方法</block>
-  <block id="9d27b872e974d3d08bf3a26f3677a159" category="paragraph"><block ref="4d81cb3a41369feab014b9955336458e" category="inline-link-macro-rx"></block>。</block>
   <block id="14f93e26a64410a779a8f05ff019c578" category="paragraph">複数のアベイラビリティゾーン（AZ）または単一のアベイラビリティゾーン（AZ）にHA構成を導入することで、データの高可用性を確保できます。各構成の詳細を確認して、ニーズに最適な構成を選択してください。</block>
   <block id="086e808bdf46a8027609222c8bc2ae0b" category="section-title">複数のアベイラビリティゾーン</block>
   <block id="1f0c75dd86d99f8dd501e6ad73083cb9" category="paragraph">複数のアベイラビリティゾーン（AZ）にHA構成を導入すると、AZまたはCloud Volumes ONTAPノードを実行するインスタンスで障害が発生した場合にデータの高可用性を確保できます。NAS IP アドレスがデータアクセスとストレージフェイルオーバーに与える影響を理解しておく必要があります。</block>
@@ -4643,7 +4627,6 @@ HAペアの場合、BlueXPでCloud Volumes ONTAP作業環境を作成すると�
   <block id="f2641e1d9c3f5013d69975200b40be1e" category="paragraph">Cloud Volumes ONTAPのパフォーマンスの詳細については、を参照してください<block ref="d3c67840cf1b5c6202877acdceabb00c" category="inline-link-macro-rx"></block>。</block>
   <block id="1a08696b6a25e68d9e9c3ade6c185546" category="admonition">HA ペアのノード間でボリュームを移動する場合は、もう一方のノードの IP アドレスを使用してボリュームを再マウントする必要があります。そうしないと、パフォーマンスが低下する可能性があります。クライアントが CIFS の NFSv4 リファールまたはフォルダリダイレクションをサポートしている場合は、ボリュームの再マウントを回避するために、 Cloud Volumes ONTAP システムでこれらの機能を有効にできます。詳細については、ONTAPのドキュメントを参照してください。</block>
   <block id="a9c5983e35ef10e7675e8d4743ca9b78" category="paragraph">詳細については、を参照してください <block ref="e677af9e7ca6c446fefd39f21658da89" category="inline-link-macro-rx"></block>。</block>
-  <block id="13adeba04a9bbea1e4724de79afe951f" category="inline-link-macro">ローカルゾーンのEC2インスタンスタイプ</block>
   <block id="973154cd70a812583853f9af98175e4b" category="admonition">HA ペアのノード間でボリュームを移動する場合は、もう一方のノードの IP アドレスを使用してボリュームを再マウントする必要があります。そうしないと、パフォーマンスが低下する可能性があります。クライアントが CIFS の NFSv4 リファールまたはフォルダリダイレクションをサポートしている場合は、ボリュームの再マウントを回避するために、 Cloud Volumes ONTAP システムでこれらの機能を有効にできます。詳細については、ONTAPのドキュメントを参照してください。</block>
   <block id="1598bd897bc443f364d77a0ead2b386d" category="paragraph">詳細については、<block ref="07e6a6e4814dabc1a0870a10a70c4b44" category="inline-link-rx"></block></block>
   <block id="e35f4f28f28dcf48ae9d3ccf0f0cefa5" category="paragraph">この暗号化オプションを使用する場合は、 AWS KMS が適切に設定されていることを確認する必要があります。詳細については、を参照して <block ref="01123efe4d08d28ad1b6d58169335a21" category="inline-link-macro-rx"></block>ください。</block>
@@ -4844,8 +4827,6 @@ HAペアの場合、BlueXPでCloud Volumes ONTAP作業環境を作成すると�
   <block id="02531491f0d0247a340a45ad3a6032bf" category="cell">AWSサービスとの通信。</block>
   <block id="381e070260ac3be2e38deaa9e933f870" category="cell">標準モードとプライベートモード。</block>
   <block id="976c42b7559c0a758617695729b92226" category="inline-link">AWS SDK</block>
-  <block id="ca6c1b8dd23dea0cefa49ccce01e7bf6" category="inline-link">Amazonのドキュメント</block>
-  <block id="6ac9d9128a75fd3ed101cf091ff7b6cd" category="cell">AWSサービスの政府機関のエンドポイントは、使用しているAWSリージョンによって異なります。エンドポイントには<block ref="3441ddb447d90616fe905a033c8acc75" prefix=" " category="inline-code"></block>、サフィックスとが<block ref="9418634abcbc8743a13685b8ac2ee79b" prefix=" " category="inline-code"></block>付加されます。<block ref="a5c675e1d96015bd51012d29ec2a093b" category="inline-link-rx"></block><block ref="681746188c4b856bd684247ebb305be7" category="inline-link-rx"></block>詳細については、およびを参照してください。</block>
   <block id="f01dcf4246a1f130eae10e4fb90b9fed" category="cell">制限モード。</block>
   <block id="6486582264c3651aad9b7bb2237218eb" category="cell">使用できない場合の影響</block>
   <block id="7dfb843f052469a3cc66d13554feb0f4" category="cell">https://management.azure.com https://login.microsoftonline.com https://blob.core.windows.net https://core.windows.net</block>
@@ -4971,7 +4952,6 @@ HAペアの場合、BlueXPでCloud Volumes ONTAP作業環境を作成すると�
   <block id="eb99da0ddbfd6f5a24a511ef8df7c577" category="paragraph">Cloud Volumes ONTAPでは、データ階層化、クラウド階層化、およびAWSローカルゾーンでの非認定インスタンスはサポートされていません。</block>
   <block id="19af59a268c506bb19268e318e2e9e5f" category="paragraph">次に、設定例を示します。</block>
   <block id="02648096bf738946ffc4d338cb4e9d59" category="admonition">Cloud Volumes ONTAPは、これらの構成のみをサポートします。AWSローカルゾーン構成でサポートされないディスクタイプや認定されていないインスタンスを選択すると、導入に失敗することがあります。接続がないため、AWSローカルゾーンでAWS S3へのデータ階層化を使用できません。</block>
-  <block id="54a223dbcc3dca4a58e9e5bc292e0c6b" category="paragraph">の最新の詳細情報については、AWSのドキュメントを参照して<block ref="a4408f4d4cfd81ced6d2ec2b8da89160" category="inline-link-macro-rx"></block>ください。</block>
   <block id="8d4ac812d0760131bc0db9a92eb2b512" category="paragraph">ノードベースのお客様所有のライセンスの使用（BYOL）がある各Cloud Volumes ONTAPシステムには、アクティブなサブスクリプションとともにシステムライセンスをインストールする必要があります。BlueXPは、ライセンスを管理し、期限が切れる前に警告を表示することで、プロセスを簡素化します。</block>
   <block id="2316a1561b1b51c9eb0f231cb338cf48" category="summary">容量ベースのライセンスの充電、消費モデル、価格設定、構成について理解しておく必要があります。</block>
   <block id="24382072604813ac4ccf773eac088de7" category="paragraph">容量ベースのライセンスの課金と使用容量について理解しておく必要があります。</block>
@@ -5874,7 +5854,6 @@ HAペアの場合、BlueXPでCloud Volumes ONTAP作業環境を作成すると�
   <block id="759d32287efdf88cd8ac71dccc0ecf8d" category="inline-image-macro">アカウントのシリアル番号、緑色のチェックボックス、および「サポートに登録済み」というテキストが表示されているスクリーンショット。</block>
   <block id="4c441b388bebcddf8c08fb782095b864" category="paragraph"><block ref="4c441b388bebcddf8c08fb782095b864" category="inline-image-macro-rx" type="image"></block></block>
   <block id="9def883103b7b964dcbb0993e3f8a065" category="doc">最適化ライセンスの提供終了</block>
-  <block id="cf4dd05cf065c9ae01bc836c5033bb63" category="paragraph">2025 年 8 月 11 日以降、 Cloud Volumes ONTAP Optimized ライセンスは廃止され、Azure および Google Cloud マーケットプレイスの従量課金制 (PAYGO) サブスクリプションで購入または更新できなくなります。  Optimized ライセンスの年間契約を既に締結している場合は、契約終了までライセンスを引き続きご利用いただけます。  Optimized ライセンスの有効期限が切れた場合は、 Cloud Volumes ONTAP Essentials または Professional ライセンスを選択できます。</block>
   <block id="2b8e43c95c1d15bc0824064c3dc0f993" category="paragraph">ライセンスパッケージの詳細については、以下を参照してください。<block ref="4b2776d787a70224c2441f63d3888380" category="inline-link-rx"></block> 。</block>
   <block id="ed1f600d01a229b43b3196dd2f2e48ca" category="inline-link">容量ベースのライセンスを管理する</block>
   <block id="1d4a9a37e700957e9d79664f032cf5ec" category="paragraph">別の充電方法への切り替えについては、<block ref="eeeecd1116eaf4db26e064552c04366d" category="inline-link-rx"></block> 。</block>
@@ -5897,4 +5876,30 @@ HAペアの場合、BlueXPでCloud Volumes ONTAP作業環境を作成すると�
   <block id="09027718866a8a3a2edb0bb0eb53c926" category="paragraph">ただし、最適化されたライセンスを追加または更新する機能は、API を通じて利用できるようになります。</block>
   <block id="064c8585f26a6a9766e55da306b39425" category="paragraph"><block ref="064c8585f26a6a9766e55da306b39425" category="inline-link-rx"></block></block>
   <block id="42f21a40b3b95c1fc1fe699b458d9f4f" category="list-text">「作業環境の削除」ウィンドウで、作業環境の名前を入力し、「削除」をクリックします。作業環境を削除するには最大 5 分かかる場合があります。</block>
+  <block id="667b631b672b77239becd955ba1e71e7" category="paragraph">2025 年 8 月 11 日以降、 Cloud Volumes ONTAP Optimized ライセンスは廃止され、Azure および Google Cloud マーケットプレイスの従量課金制 (PAYGO) サブスクリプションで購入または更新できなくなります。Optimized ライセンスの年間契約を既に締結している場合は、契約終了までライセンスを引き続きご利用いただけます。Optimized ライセンスの有効期限が切れると、 BlueXPでCloud Volumes ONTAP Essentials または Professional ライセンスを選択できます。</block>
+  <block id="dbbc36d23f7abd4cb5ee6cd227f80498" category="inline-link">AWS ドキュメント: AWS スプレッド配置グループ</block>
+  <block id="cd41314faa85609018950af8861cbfbe" category="admonition">BlueXPは<block ref="5f59c976d9fdf96b4a8b798a6d54af26" category="inline-link-rx"></block>そして、その配置グループ内の 2 つの HA ノードを起動します。配置グループは、インスタンスを異なる基盤ハードウェアに分散させることで、同時障害のリスクを軽減します。この機能は、ディスク障害の観点ではなく、コンピューティングの観点から冗長性を向上させます。</block>
+  <block id="86a51cf4972711c5446e99e4b2c11833" category="inline-link-macro">AWS ドキュメント: ローカルゾーンの EC2 インスタンスタイプ</block>
+  <block id="afaa46a6555847e8d8780777da6ca9f9" category="paragraph">最新の完全な詳細についてはAWSドキュメントを参照してください。<block ref="a26b1323c095461019edf21935f6a169" category="inline-link-macro-rx"></block> 。</block>
+  <block id="8d051a62e2d203f6829d7d7282bfaad2" category="inline-link">『FabricPoolのベストプラクティス』</block>
+  <block id="9eac799f777e7aff4284a547242d2767" category="paragraph">容量ベースのライセンス モデルでは、各Cloud Volumes ONTAPシステムはオブジェクト ストレージへの階層化をサポートし、階層化された合計容量はクラウド プロバイダーのバケット制限まで拡張できます。ライセンスには容量制限はありませんが、<block ref="c6ca22161b60218024eaf899637cc82e" category="inline-link-rx"></block>階層化を構成および管理する際に最適なパフォーマンス、信頼性、コスト効率を確保します。</block>
+  <block id="325a399a390a2918a7f4f1fec2390521" category="paragraph">各クラウド プロバイダーの容量制限については、各プロバイダーのドキュメントを参照してください。</block>
+  <block id="b419b4d9d3feb2661e6902f993f2c5e4" category="list-text"><block ref="b419b4d9d3feb2661e6902f993f2c5e4" category="inline-link-rx"></block></block>
+  <block id="6b209360b200c08a554735be2c77d1ca" category="inline-link">マネージド ディスクに関する Azure ドキュメント</block>
+  <block id="531b133840ee35cf5193230121ea7443" category="inline-link">BLOB ストレージに関する Azure ドキュメント</block>
+  <block id="84cdcf6be1c07f6c7a4c6848232c0828" category="list-text"><block ref="045f40e684cda6ce174737ffede86f97" category="inline-link-rx"></block>そして<block ref="6782e281e8536503245f524b6778618f" category="inline-link-rx"></block></block>
+  <block id="b0cd7667098b2a3439c52ba1f9334faa" category="inline-link">Google Cloud ドキュメント</block>
+  <block id="9ccfe59c1252cf7f615b4c7dab763516" category="list-text"><block ref="9ccfe59c1252cf7f615b4c7dab763516" category="inline-link-rx"></block></block>
+  <block id="6bcfb21e09554dca2e39878feec63052" category="inline-link">AWS ドキュメント</block>
+  <block id="63e61f9cfd9e23981290df95189a0086" category="cell">AWS サービスの正確な政府エンドポイントは、使用している AWS リージョンによって異なります。エンドポイントには、<block ref="3441ddb447d90616fe905a033c8acc75" prefix=" " category="inline-code"></block>そして<block ref="9418634abcbc8743a13685b8ac2ee79b" prefix=" " category="inline-code"></block>。参照<block ref="0cc7482cfbec9986689ea592901ca08d" category="inline-link-rx"></block>そして<block ref="7b952d7c295132574b9db83c5815e1b6" category="inline-link-rx"></block>詳細についてはこちらをご覧ください。</block>
+  <block id="b52031f66d3dc59a36e6259c1d35e489" category="paragraph">以下は、同じ VNet 内およびプライベート VPN または ExpressRoute 接続を持つオンプレミス ネットワークからのプライベート リンク経由のクライアント アクセスを示す例です。</block>
+  <block id="e1e38dd53f910aed9fe6abf379cf94d3" category="inline-link-macro">AWSドキュメント: ローカルゾーンの完全なリストを見る</block>
+  <block id="01e332ff22fad5ad1f6aef2188fc573c" category="paragraph"><block ref="cf9ca53790fde0f765a118e90595e587" category="inline-link-macro-rx"></block> 。ローカル ゾーンでリソースを作成および管理するには、ローカル ゾーンを有効にする必要があります。</block>
+  <block id="ee0ced7b2e597237ee0377d3791326a5" category="inline-link-macro">AWS ドキュメント: AWS Local Zones の使用開始</block>
+  <block id="1e6a5fa11b69ede855d9a6997e9787b5" category="paragraph"><block ref="3650844966a3c53f0c75a4d3cbd94e54" category="inline-link-macro-rx"></block> 。</block>
+  <block id="87c06bc8df4d2016deb28f10522c8c27" category="inline-link">AWS ドキュメント: Amazon EBS 最適化インスタンス</block>
+  <block id="abe48585876db48e8f9c628335adc4ae" category="list-text"><block ref="abe48585876db48e8f9c628335adc4ae" category="inline-link-rx"></block></block>
+  <block id="e0770826536ddaadf0db71e22667d483" category="inline-link">AWSドキュメント: gp3ディスクとそのパフォーマンスについて詳しく知る</block>
+  <block id="2fdd250d12304ba30564106a823a4d07" category="paragraph">gp3 ディスクを選択すると、 BlueXP は選択したディスク サイズに基づいて、gp2 ディスクと同等のパフォーマンスを提供するデフォルトの IOPS とスループット値を入力します。値を大きくするとコストは高くなりますが、パフォーマンスが向上する可能性があります。ただし、値を小さくするとパフォーマンスが低下する可能性があるため、値はサポートされていません。つまり、デフォルト値をそのまま使用するか、値を増やします。下げないでください。<block ref="7f8ffa6c4a580a433518ebbbf51360b2" category="inline-link-rx"></block> 。</block>
+  <block id="556df0c07cbea0b78af68a3a3c052441" category="paragraph">新しいプロフェッショナル パッケージでは、AWS Marketplace からの年間契約を使用して、 Cloud Volumes ONTAPとCloud Backup Service をバンドルできます。支払いは TiB 単位となります。このサブスクリプションでは、オンプレミスのデータをバックアップすることはできません。</block>
 </blocks>

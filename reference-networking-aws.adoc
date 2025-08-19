@@ -70,7 +70,7 @@ BlueXP  認証に使用されます。
 | AWSサービスとの通信。 | 標準モードとプライベートモード。 | Cloud Volumes ONTAPがAWSサービスと通信してAWSで特定のBlueXP  処理を実行することはできません。 
 
 
-| AWSサービスの政府機関のエンドポイントは、使用しているAWSリージョンによって異なります。エンドポイントには `amazonaws.com`、サフィックスとが `c2s.ic.gov`付加されます。	https://docs.aws.amazon.com/AWSJavaSDK/latest/javadoc/com/amazonaws/services/s3/model/Region.html["AWS SDK"] https://docs.aws.amazon.com/general/latest/gr/rande.html["Amazonのドキュメント"]詳細については、およびを参照してください。  a| 
+| AWS サービスの正確な政府エンドポイントは、使用している AWS リージョンによって異なります。エンドポイントには、 `amazonaws.com`そして `c2s.ic.gov`。参照	https://docs.aws.amazon.com/AWSJavaSDK/latest/javadoc/com/amazonaws/services/s3/model/Region.html["AWS SDK"^]そして https://docs.aws.amazon.com/general/latest/gr/rande.html["AWS ドキュメント"^]詳細についてはこちらをご覧ください。  a| 
 * クラウド形成
 * 柔軟なコンピューティングクラウド（ EC2 ）
 * IDおよびアクセス管理（IAM）

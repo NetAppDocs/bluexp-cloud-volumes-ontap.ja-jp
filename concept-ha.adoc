@@ -126,7 +126,7 @@ BlueXPから正しいIPアドレスを簡単に特定するには、ボリュー
 単一のアベイラビリティゾーン（AZ）にHA構成を導入すると、Cloud Volumes ONTAPノードを実行するインスタンスで障害が発生した場合にデータの高可用性を確保できます。すべてのデータは、 vPC の外部からネイティブにアクセスできます。
 
 
-NOTE: BlueXPはを作成します https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/placement-groups.html["AWS 分散配置グループ"^] をクリックすると、その配置グループ内の 2 つの HA ノードが起動します。配置グループは、インスタンスを別々の基盤ハードウェアに分散することで、同時障害のリスクを軽減します。この機能により、ディスク障害ではなく、コンピューティングの観点から冗長性が向上します。
+NOTE: BlueXPは https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/placement-groups.html["AWS ドキュメント: AWS スプレッド配置グループ"^]そして、その配置グループ内の 2 つの HA ノードを起動します。配置グループは、インスタンスを異なる基盤ハードウェアに分散させることで、同時障害のリスクを軽減します。この機能は、ディスク障害の観点ではなく、コンピューティングの観点から冗長性を向上させます。
 
 
 
@@ -200,7 +200,7 @@ Cloud Volumes ONTAPでは、データ階層化、クラウド階層化、およ�
 
 NOTE: Cloud Volumes ONTAPは、これらの構成のみをサポートします。AWSローカルゾーン構成でサポートされないディスクタイプや認定されていないインスタンスを選択すると、導入に失敗することがあります。接続がないため、AWSローカルゾーンでAWS S3へのデータ階層化を使用できません。
 
-の最新の詳細情報については、AWSのドキュメントを参照してlink:https://aws.amazon.com/about-aws/global-infrastructure/localzones/features/?nc=sn&loc=2["ローカルゾーンのEC2インスタンスタイプ"^]ください。
+最新の完全な詳細についてはAWSドキュメントを参照してください。link:https://aws.amazon.com/about-aws/global-infrastructure/localzones/features/?nc=sn&loc=2["AWS ドキュメント: ローカルゾーンの EC2 インスタンスタイプ"^] 。
 
 
 

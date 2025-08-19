@@ -26,7 +26,7 @@ BlueXPのCloud Volumes ONTAP Managementの新機能をご紹介します。
 
 === 最適化ライセンスの提供終了
 
-2025 年 8 月 11 日以降、 Cloud Volumes ONTAP Optimized ライセンスは廃止され、Azure および Google Cloud マーケットプレイスの従量課金制 (PAYGO) サブスクリプションで購入または更新できなくなります。  Optimized ライセンスの年間契約を既に締結している場合は、契約終了までライセンスを引き続きご利用いただけます。  Optimized ライセンスの有効期限が切れた場合は、 Cloud Volumes ONTAP Essentials または Professional ライセンスを選択できます。
+2025 年 8 月 11 日以降、 Cloud Volumes ONTAP Optimized ライセンスは廃止され、Azure および Google Cloud マーケットプレイスの従量課金制 (PAYGO) サブスクリプションで購入または更新できなくなります。Optimized ライセンスの年間契約を既に締結している場合は、契約終了までライセンスを引き続きご利用いただけます。Optimized ライセンスの有効期限が切れると、 BlueXPでCloud Volumes ONTAP Essentials または Professional ライセンスを選択できます。
 
 ただし、最適化されたライセンスを追加または更新する機能は、API を通じて利用できるようになります。
 
@@ -1762,7 +1762,7 @@ https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-configs-gcp
 
 === AWS での新しいプロフェッショナルパッケージ
 
-新しいプロフェッショナルパッケージでは、 AWS Marketplace で毎年契約を締結し、 Cloud Volumes ONTAP と Cloud Backup Service をバンドルできます。支払いは TiB あたりです。このサブスクリプションでは、オンプレミスのデータをバックアップすることはできません。
+新しいプロフェッショナル パッケージでは、AWS Marketplace からの年間契約を使用して、 Cloud Volumes ONTAPとCloud Backup Service をバンドルできます。支払いは TiB 単位となります。このサブスクリプションでは、オンプレミスのデータをバックアップすることはできません。
 
 この支払いオプションを選択すると、 EBS ディスクを介して Cloud Volumes ONTAP システムあたり最大 2PiB をプロビジョニングし、 S3 オブジェクトストレージ（シングルノードまたは HA ）に階層化することができます。
 

@@ -96,9 +96,14 @@ HA ペアの場合、ノードのプロビジョニング済み容量に対し�
 
 == 容量制限
 
-このライセンスモデルでは、個々の Cloud Volumes ONTAP システムでディスクとオブジェクトストレージへの階層化によって、最大 2 PiB の容量をサポートします。
+容量ベースのライセンス モデルでは、各Cloud Volumes ONTAPシステムはオブジェクト ストレージへの階層化をサポートし、階層化された合計容量はクラウド プロバイダーのバケット制限まで拡張できます。ライセンスには容量制限はありませんが、 https://www.netapp.com/pdf.html?item=/media/17239-tr-4598.pdf["『FabricPoolのベストプラクティス』"^]階層化を構成および管理する際に最適なパフォーマンス、信頼性、コスト効率を確保します。
 
-ライセンス自体にに関しては、最大容量制限はありません。
+各クラウド プロバイダーの容量制限については、各プロバイダーのドキュメントを参照してください。
+
+* https://docs.aws.amazon.com/AmazonS3/latest/userguide/BucketRestrictions.html["AWS のドキュメント"^]
+* https://learn.microsoft.com/en-us/azure/storage/common/scalability-targets-standard-account["マネージド ディスクに関する Azure ドキュメント"^]そして https://learn.microsoft.com/en-us/azure/storage/blobs/scalability-targets["BLOB ストレージに関する Azure ドキュメント"^]
+* https://cloud.google.com/storage/docs/buckets["Google Cloud ドキュメント"^]
+
 
 
 
