@@ -8,4 +8,4 @@
 
 BlueXP  を使用して、AzureとGoogle CloudでCloud Volumes ONTAP 9.16.1 General Availabilityリリースを導入、管理できるようになりました。ただし、このバージョンは、AWSでの導入およびアップグレードには使用できません。
 
-link:https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/["このリリースのに含まれる新機能について説明します Cloud Volumes ONTAP"^]。
+link:https://docs.netapp.com/us-en/cloud-volumes-ontap-9161-relnotes/["このリリースのに含まれる新機能について説明します Cloud Volumes ONTAP"^] 。

@@ -63,22 +63,28 @@ South Central US          southcentralus       (US) South Central US
 |===
 
 
-| * Cloud Volumes ONTAPバージョン* | *仮想マシンの導入方法* | * SKU名* 
+| * Cloud Volumes ONTAPバージョン* | *VMの展開* | * SKU名* 
 
 
-| 9.16.1以降 | Marketplaceの直接導入方式を使用 | ONTAPクラウドダイレクト 
+| 9.17.1以降 | Azureマーケットプレイス | ontap_cloud_direct_gen2 
 
 
-| 9.16.1以降 | BlueXP  を使用したすべての導入 | ONTAPクラウド 
+| 9.17.1以降 | BlueXP | ontap_cloud_gen2 
 
 
-| 9.15.1 | BlueXP  を使用したすべての導入 | ONTAPクラウド 
+| 9.16.1 | Azureマーケットプレイス | ONTAPクラウドダイレクト 
 
 
-| 9.15.0 | シングルノード | ONTAP_CLOUD_BYOL 
+| 9.16.1 | BlueXP | ONTAPクラウド 
 
 
-| 9.15.0 | 高可用性 | ONTAP_CLOUD_BYOL_HA 
+| 9.15.1 | BlueXP | ONTAPクラウド 
+
+
+| 9.15.0 | BlueXP、単一ノードのデプロイメント | ONTAP_CLOUD_BYOL 
+
+
+| 9.15.0 | BlueXP、高可用性（HA）デプロイメント | ONTAP_CLOUD_BYOL_HA 
 |===
 . ONTAP バージョンと Azure マーケットプレイス イメージをマッピングした後、Azure Cloud Shell または Azure CLI を使用して、Azure マーケットプレイスから VHD ファイルをエクスポートします。
 

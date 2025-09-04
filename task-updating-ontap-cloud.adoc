@@ -49,6 +49,9 @@ BlueXPには、Cloud Volumes ONTAP をアップグレードする2つの方法�
 | 現在のバージョン | に直接アップグレードできるバージョン 
 
 
+| 9.16.1（AzureおよびGoogle Cloudのみ） | 9.17.1 (Azure および Google Cloud のみ) 
+
+
 | 9.15.1 | 9.16.1（AzureおよびGoogle Cloudのみ） 
 
 
