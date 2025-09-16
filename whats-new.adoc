@@ -145,7 +145,7 @@ https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-managing-svms-gcp.
 
 === AWSでのCloud Volumes ONTAP 9.13.1の中国リージョンのサポート
 
-中国リージョンのAWSにCloud Volumes ONTAP 9.13.1を導入できるようになりました。これには、シングルノード環境とハイアベイラビリティ（HA）環境の両方がサポートされます。Cloud Volumes ONTAP 9.13.1を導入したら、それ以降のバージョンにアップグレードできます。NetAppから直接購入したライセンスのみがサポートされます。
+中国リージョンの AWS にCloud Volumes ONTAP 9.13.1 をデプロイできるようになりました。これには、単一ノードと高可用性 (HA) の両方の展開のサポートが含まれます。  NetAppから直接購入したライセンスのみがサポートされます。
 
 地域によって利用可能な場合は、を参照して https://bluexp.netapp.com/cloud-volumes-global-regions["Cloud Volumes ONTAP のグローバルリージョンマップ"^]ください。
 

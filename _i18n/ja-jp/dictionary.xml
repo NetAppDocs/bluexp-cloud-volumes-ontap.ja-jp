@@ -5563,7 +5563,6 @@ HAペアの場合、BlueXPでCloud Volumes ONTAP作業環境を作成すると�
   <block id="fdcb4cfaa6fda318a31e37ce29a14e92" category="section-title">AzureでサポートされるFlash Cacheの最小バージョン</block>
   <block id="d05c6d51d7a4b0bd019498131ff00f16" category="paragraph">AzureでFlash Cacheを設定するには、9.13.1 GA以上のCloud Volumes ONTAPバージョンが必要です。ONTAP 9.13.1 GA以降のバージョンは、AzureのCloud Volumes ONTAPシステムへのFlash Cacheの導入にのみ使用できます。</block>
   <block id="b77891a5294c25aca8a6fda943805ecf" category="doc">AWSでのCloud Volumes ONTAP 9.13.1の中国リージョンのサポート</block>
-  <block id="3899c7c0df13a38296f1334779a1dfe7" category="paragraph">中国リージョンのAWSにCloud Volumes ONTAP 9.13.1を導入できるようになりました。これには、シングルノード環境とハイアベイラビリティ（HA）環境の両方がサポートされます。Cloud Volumes ONTAP 9.13.1を導入したら、それ以降のバージョンにアップグレードできます。NetAppから直接購入したライセンスのみがサポートされます。</block>
   <block id="abe88f95b23156cb29c433c9ebe92a00" category="inline-link">Cloud Volumes ONTAP のグローバルリージョンマップ</block>
   <block id="10df570a0447a18b299f516b2e8498c2" category="paragraph">地域によって利用可能な場合は、を参照して<block ref="f76c632bc8b9c4e032a9d48fcbfa8dc1" category="inline-link-rx"></block>ください。</block>
   <block id="aa3bf76b3589430467bef386eaec9486" category="doc">Azureでサポートされる新しいリージョン</block>
@@ -5913,4 +5912,5 @@ HAペアの場合、BlueXPでCloud Volumes ONTAP作業環境を作成すると�
   <block id="eeea8782a887558399361aec836b75d0" category="cell">BlueXP、高可用性（HA）デプロイメント</block>
   <block id="36991a14fecff3acb300e7240e20124a" category="cell">9.17.1 (Azure および Google Cloud のみ)</block>
   <block id="ba3c0cba3a3d15ce8426fc737476a59c" category="section-title">2025年9月4日</block>
+  <block id="a3f77d8413628b40c09a649cd79a6e02" category="paragraph">中国リージョンの AWS にCloud Volumes ONTAP 9.13.1 をデプロイできるようになりました。これには、単一ノードと高可用性 (HA) の両方の展開のサポートが含まれます。  NetAppから直接購入したライセンスのみがサポートされます。</block>
 </blocks>
